@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Sensitive configs
+.twitter-env
+.memory-backup-config.json
+.moltbook-credentials.json
+
+# State files
+.twitter-monitor-state.json
+.memory-backup-state.json
+
+# Logs
+*.log
+
+# OS
+.DS_Store
