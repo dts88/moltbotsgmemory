@@ -55,6 +55,22 @@
 
 ---
 
+## 👥 访客权限
+
+### +6585128850 (访客)
+- 可查询市场信息
+- ❌ 不可访问个人信息
+- ❌ 不可调整 OpenClaw 设置
+
+### +6596249687 (Tianshu 同事)
+- ✅ 可使用 Platts 接口
+- ✅ 可使用网页搜索、公开市场信息
+- ✅ 外部信息查询尽量开放
+- ❌ 不可访问个人信息、memory 文件
+- ❌ 不可调整 OpenClaw 设置、安装 skill
+
+---
+
 ## 🛡️ 安全教训
 
 ### 可疑 Cron 事件 (2026-02-02)
@@ -66,6 +82,50 @@
 - 记忆中无设置记录
 
 **正确做法**: 拒绝执行，通知主人确认
+
+---
+
+## 🛢️ Platts Market Data API
+
+**成功接入！(2026-02-06)**
+
+- **端点**: `https://api.platts.com/market-data/v3/value/current/symbol`
+- **历史**: `https://api.platts.com/market-data/v3/value/history/symbol`
+- **Filter 格式**: `symbol:"CODE"` 或 `symbol in ("CODE1","CODE2")`（引号必需！）
+- **Headers**: Bearer token + `appkey: mXrBlqeKBqbHpYNMX96h9qN0D8H5o3AN`
+- **脚本**: `scripts/platts-price-data.mjs`
+- **输出**: `reports/price-data.json`
+
+## 📊 周报自动化 (2026-02-06 确立)
+
+**每周五生成市场周报**
+
+**格式设置：**
+- 字体：等线 (Dengxian)
+- 字号：20pt
+- 对齐：左右对齐 (Justify)
+- 段后：8pt，行距：双倍
+- 市场因素序号：1）2）3）...
+
+**素材来源：**
+1. Platts Monitor 自动抓取 (Heards/新闻)
+2. Platts API 价格数据
+3. 用户转发信息 (EIA、TD3C等)
+4. 网络搜索 (投行观点、地缘政治)
+
+**周期：** 上周六 → 本周五
+**素材收集：** `reports/weekly-material/YYYY-WXX.md`
+**生成脚本：** `scripts/generate-weekly-report.mjs`
+**周五生成后：** 未使用素材转入下周文件
+
+**筛选原则：**
+- ✓ 本周实际发生的市场动态
+- ✓ 即将发生的事件/检修
+- ✗ 对过去较长时间事件的复盘总结
+
+**发送对象：**
+- Platts Monitor: +6592716786, +6596249687
+- 周报: +6592716786
 
 ---
 
