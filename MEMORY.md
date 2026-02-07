@@ -137,4 +137,23 @@
 
 ---
 
-*最后更新: 2026-02-03 22:10 SGT*
+## 🎤 语音转文字 (2026-02-07)
+
+- **脚本**: `scripts/transcribe.mjs`
+- **模型**: Xenova/whisper-small (量化版)
+- **依赖**: `@xenova/transformers`, `ogg-opus-decoder`
+- **支持**: 中文、英文等多语言
+- **用法**: 自动解码 WhatsApp 语音消息
+
+---
+
+## 📅 日历集成 (待配置)
+
+**推荐方案**: Google Service Account + 日历共享
+- 创建 Service Account（免费）
+- 只共享一个日历给它
+- 实现硬隔离，保护其他日历隐私
+
+---
+
+*最后更新: 2026-02-07 23:59 SGT*
