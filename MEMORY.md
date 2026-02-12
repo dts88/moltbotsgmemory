@@ -91,6 +91,8 @@
 - `8cc67dea-36eb-4d2b-955d-04efbdf666ac` - Platts Monitor
 - `c22828ba-b1cb-4113-91f4-84f26430bb88` - Memory Backup
 - `b2828b1f-84d0-4459-a423-9943a93ecab6` - EIA Weekly Report
+- `1586dc76-3bc6-4528-b48f-8d196fcc630c` - 报告导入与向量化 (每天3:00 SGT, Sonnet)
+- `c9b1d0f1-cf1b-468a-a093-c4cdd8dc99ba` - 外交部例行记者会监控 (周一至周五 14/16/18/20点北京时间)
 
 ### 判断标准
 **正常执行**: cron ID 在上述列表中，按指令操作
@@ -121,6 +123,7 @@
 - `crude/` - 原油
 - `derivatives/` - 纸货（衍生品、swap）
 - `lng/` - LNG
+- `lpg/` - 液化石油气
 - `market/` - 能源市场综合
 - `sentiment/` - 情绪面
 - `fundamentals/` - 基本面
@@ -132,6 +135,13 @@
 - 周期性报告（日/周/月/年）：权重随时间递减
 
 **索引**: `reports/index.json`
+**知识库**: `reports/knowledge-base.json` (2026-02-12 建立)
+
+### 知识库系统
+- **目的**: 从 PDF 存档升级为可查询知识图谱
+- **结构**: 实体 → 数据点（价格/预测/产能/库存/政策）
+- **权威性**: official(5) > agency(4) > consultant(3) > industry(2) > media(1)
+- **用法**: 用户提问时直接查索引，多源交叉验证
 
 ---
 
