@@ -138,6 +138,57 @@ node scripts/ha.mjs scene scene.living_room_relax
 
 ---
 
+## WLED 灯带
+
+**脚本:** `scripts/wled.mjs`
+**固件:** 全部 0.15.3
+
+### 设备
+| 名称 | IP | LED | 分段 | 备注 |
+|------|-----|-----|------|------|
+| AP1 | 192.168.1.143 | 78 | 1 | RGBW |
+| AP2 | 192.168.1.144 | 328 | 4 | 三段灯带 |
+| AP4 | 192.168.1.140 | 254 | 1 | 🔒 厨房灯，勿改 |
+| AP3 | ? | ? | ? | ⚠️ 待修复 |
+
+### 启动预设
+- **AP1/AP2**: 预设2 "Chinese new year" 🧧
+- **AP4**: 预设9 "Kitchen White" (RGB纯白)
+- **AP4 紧急**: 预设10 "Emergency Alert" (红色闪烁)
+
+### 常用命令
+```bash
+node scripts/wled.mjs status              # 查看所有设备
+node scripts/wled.mjs effect fire ap2     # 火焰效果
+node scripts/wled.mjs effect rainbow all  # 全部彩虹
+node scripts/wled.mjs color "#FF6B35" ap1 # 设置颜色
+node scripts/wled.mjs brightness 128 all  # 半亮度
+node scripts/wled.mjs demo ap2            # 演示各种效果
+node scripts/wled.mjs emergency           # AP4紧急警示
+node scripts/wled.mjs emergency off       # 恢复AP4正常
+```
+
+### 统一灯光控制 (Hue + WLED)
+```bash
+node scripts/lights.mjs scenes            # 查看场景
+node scripts/lights.mjs scene relax       # 激活场景
+node scripts/lights.mjs all-off           # 全关(不含AP4)
+```
+
+### 分段控制 (AP2)
+```bash
+# 每段不同效果
+node scripts/wled.mjs segment 0 '{"fx":66,"pal":35}' ap2  # 火焰
+node scripts/wled.mjs segment 1 '{"fx":9,"pal":5}' ap2    # 彩虹
+node scripts/wled.mjs segment 2 '{"fx":113}' ap2          # 极光
+```
+
+### 效果 ID 速查
+- 0: Solid | 9: Rainbow | 66: Fire | 90: Fireworks
+- 94: Meteor | 101: Pacifica | 113: Aurora
+
+---
+
 ## 能源单位换算
 
 **石脑油**: 1吨 ≈ 7.3桶
