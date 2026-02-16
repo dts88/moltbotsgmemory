@@ -109,6 +109,35 @@ Add whatever helps you do your job. This is your cheat sheet.
 
 ---
 
+## Home Assistant 智能家居
+
+**地址:** http://192.168.1.101:8123
+**脚本:** `scripts/ha.mjs`
+**配置:** `.config/homeassistant/config.json`
+
+### 快捷命令
+```bash
+# 列出设备
+node scripts/ha.mjs list light
+node scripts/ha.mjs list switch
+node scripts/ha.mjs list scene
+
+# 控制灯
+node scripts/ha.mjs turn_on light.living_room
+node scripts/ha.mjs turn_off light.living_room
+node scripts/ha.mjs brightness light.living_room 128
+
+# 激活场景
+node scripts/ha.mjs scene scene.living_room_relax
+```
+
+### 主要设备
+- **客厅灯:** light.living_room (整体), light.tv_l1/l2/r1/r2, light.dining_1-4, light.pantry_1-3
+- **场景:** Relax, Energize, Concentrate, Nightlight, Miami 等
+- **3D打印机:** P1S (Bambu Lab)
+
+---
+
 ## 能源单位换算
 
 **石脑油**: 1吨 ≈ 7.3桶

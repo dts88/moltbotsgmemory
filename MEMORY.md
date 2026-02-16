@@ -231,4 +231,35 @@ node scripts/calendar.mjs add <id> <title> <start> [end]  # 创建事件
 
 ---
 
-*最后更新: 2026-02-14 16:32 SGT*
+## 🏠 Home Assistant 智能家居 (2026-02-16)
+
+**地址**: http://192.168.1.101:8123
+**配置**: `.config/homeassistant/config.json`
+**脚本**: `scripts/ha.mjs`
+
+### 安全规则
+- **Bambu P1S 打印机**: 只读，禁止控制
+- **MA-20WOD 热水器**: 只读，禁止控制
+- **Hue 灯**: 在 Aqara 开关后面，灯离线时需先开 Aqara 开关
+
+### Hue 控制策略
+- Hue 已集成到 HA，场景从 Hue 同步
+- 统一通过 HA 控制，不要在 Hue 和 HA 重复调整
+
+### 设备概览
+- 灯: 22 个 (Hue)
+- 开关: 22 个 (Aqara + WLED)
+- 场景: 15 个 (从 Hue 同步)
+- 传感器: 95 个
+- Apple TV: 1 个
+
+### Hue 灯 → Aqara 开关映射 (待补充)
+| Hue 灯组 | Aqara 开关 |
+|----------|-----------|
+| TV L1/L2/R1/R2 | *(待补充)* |
+| Dining 1-4 | *(待补充)* |
+| Pantry 1-3 | *(待补充)* |
+
+---
+
+*最后更新: 2026-02-16 21:30 SGT*
