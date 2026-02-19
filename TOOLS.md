@@ -183,9 +183,39 @@ node scripts/wled.mjs segment 1 '{"fx":9,"pal":5}' ap2    # 彩虹
 node scripts/wled.mjs segment 2 '{"fx":113}' ap2          # 极光
 ```
 
-### 效果 ID 速查
-- 0: Solid | 9: Rainbow | 66: Fire | 90: Fireworks
-- 94: Meteor | 101: Pacifica | 113: Aurora
+### 灯光控制原则
+- **必须同步启动**: 所有命令准备好后并行发送 (`&` + `wait`)，确保同时生效
+- **效果可以不统一**: 不同灯/灯带可用不同颜色或效果
+- **AP2 有 4 段**: id 0-3，每段需单独设置
+
+### 效果 ID 速查 (WLED 0.15.3)
+- 0: Solid | 9: Rainbow | 12: Fade | 38: Aurora
+- 42: Fireworks | 45: Rain | 66: Fire Flicker
+- 87: Glitter ✨ | 103: Solid Glitter
+- 速度参数 sx: 0-255，越低越慢（推荐 80 为适中）
+
+---
+
+## Twilio 电话
+
+**号码**: +1 659-999-9681
+**脚本**: `scripts/twilio-voice.mjs`
+
+### 命令
+```bash
+node scripts/twilio-voice.mjs call <号码> <消息>  # 打电话
+node scripts/twilio-voice.mjs status              # 账户状态
+node scripts/twilio-voice.mjs calls               # 通话记录
+```
+
+### 示例
+```bash
+node scripts/twilio-voice.mjs call +6592716786 "你好，这是测试消息"
+```
+
+### 注意
+- 试用账户只能打给已验证号码
+- 接听方需按任意键跳过试用提示
 
 ---
 
