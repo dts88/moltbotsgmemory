@@ -331,4 +331,31 @@ node scripts/twilio-voice.mjs calls
 
 ---
 
-*最后更新: 2026-02-19 22:18 SGT*
+---
+
+## 📧 Gmail 邮箱 (2026-02-23)
+
+**邮箱**: openclawsg@gmail.com
+**配置**: `.config/gmail/credentials.json`
+**脚本**: `scripts/gmail.mjs`
+
+### 功能
+- 发送邮件 (SMTP)
+- 读取收件箱 (IMAP)
+- 监控新邮件
+
+### 命令
+```bash
+node scripts/gmail.mjs test                    # 测试连接
+node scripts/gmail.mjs send <to> <sub> <body>  # 发送
+node scripts/gmail.mjs inbox [n] [--unseen]    # 读取
+```
+
+### 用途
+- 对外沟通渠道
+- 接收报告/通知
+- 自动化邮件处理
+
+---
+
+*最后更新: 2026-02-23 11:50 SGT*
