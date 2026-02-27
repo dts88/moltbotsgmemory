@@ -119,6 +119,61 @@
 - **脚本**: `scripts/platts-price-data.mjs`
 - **输出**: `reports/price-data.json`
 
+## 🔍 Platts Structured Heards API (2026-02-27) ✅
+
+**结构化交易信息接口 - 完整接入**
+
+### 端点
+| 端点 | 功能 |
+|------|------|
+| `/structured-heards/v1/markets` | 市场列表及可用字段 |
+| `/structured-heards/v1/metadata` | 字段定义与类型 |
+| `/structured-heards/v1/data` | 交易数据查询 |
+
+### 可用市场 (已验证)
+| 市场 | 记录数 | 特点 |
+|------|--------|------|
+| Americas crude oil | 19,885 | 最完整，有 volume |
+| Asia crude oil | 935 | 亚洲原油 |
+| Platts Carbon | 14,953 | 碳信用 |
+
+### 核心字段
+- `heard_type`: Trade/Bid/Offer/Indicative value
+- `grade`: 油种 (WTI MEH, Mars, Basrah Medium...)
+- `price`: 价差 (+0.95, -1.00...)
+- `pricing_basis`: 基准 (WTI, Dated Brent, Dubai...)
+- `volume`: 货量 (仅美洲原油)
+- `laycan`: 装期 (March, April...)
+- `location`: 交割地
+
+### 脚本 `scripts/platts-structured-heards.mjs`
+```bash
+# 市场列表
+node scripts/platts-structured-heards.mjs markets
+
+# 字段定义
+node scripts/platts-structured-heards.mjs metadata
+
+# 交易数据
+node scripts/platts-structured-heards.mjs heards "Asia crude oil"
+node scripts/platts-structured-heards.mjs table "Americas crude oil" --type=Trade
+
+# 导出
+node scripts/platts-structured-heards.mjs export "Asia crude oil"
+```
+
+### Filter 语法
+```
+market:"Asia crude oil" AND heard_type:"Trade" AND updatedDate>="2026-02-20"
+```
+
+### 元数据
+`reports/structured-heards-metadata.json` - 142个字段定义
+
+### ⚠️ 限制
+- **仅限原油和碳市场** - 成品油 (汽油/柴油/航煤) 不在此 API 中
+- EMEA crude oil 暂无数据
+
 ## 📚 报告管理 (2026-02-10 建立)
 
 **存储位置**: `reports/`
