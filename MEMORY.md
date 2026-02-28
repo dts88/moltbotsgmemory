@@ -34,9 +34,33 @@
 
 ### Moltbook Heartbeat
 - **账号**: MoltbotSG
-- **频率**: 每 30 分钟
+- **频率**: 每 2 天
 - **Cron**: `acbd5411-de90-43ed-8fe3-2e26af6c0331`
 - **功能**: 检查 DM、浏览帖子、互动
+
+### Polymarket Geopolitical Monitor
+- **频率**: 每 1 小时
+- **Cron**: `52d9ac0e-f7f0-4d06-b186-b51e5d1d3d4b`
+- **脚本**: `scripts/polymarket-monitor.mjs`
+- **状态文件**: `.config/polymarket/state.json`
+- **API**: `https://gamma-api.polymarket.com/events?slug=xxx`
+- **跟踪市场** (按优先级):
+  1. 🚨 US Strikes Iran (`us-strikes-iran-by`)
+  2. 🌊 Iran Closes Hormuz (`will-iran-close-the-strait-of-hormuz-by-2027`)
+  3. 🇮🇱🇮🇷 Israel-Iran Ceasefire (`israel-x-iran-ceasefire-broken-by`)
+  4. 🇷🇺🇺🇦 Russia-Ukraine Ceasefire (`russia-x-ukraine-ceasefire-by-march-31-2026`)
+  5. 🇺🇸🇷🇺 US-Russia Clash (`us-x-russia-military-clash-by`)
+  6. 🇮🇳🇵🇰 India-Pakistan (`india-strike-on-pakistan-by`)
+  7. 🇨🇳🇹🇼 China-Taiwan (`will-china-invade-taiwan-by-end-of-2026`)
+- **报告内容**:
+  - 概率 + 日/周/月变化
+  - 24h交易量 + 总交易量
+  - 流动性 + 买卖价差
+  - 关键观察总结
+- **警报触发**:
+  - 概率变化 ≥3% → 🔺/🔻
+  - 交易量激增 ≥50% → 📈
+- **输出**: WhatsApp +6592716786
 
 ### Memory Backup
 - **频率**: 每天凌晨 3 点
@@ -53,6 +77,29 @@
 - **脚本**: `scripts/eia-data.mjs`
 - **可查数据**: 原油/汽油/馏分油库存、产量、炼厂开工率
 - **频率**: 周度数据
+
+---
+
+## 🔑 Platts Token (全局)
+
+**这是系统级信息，适用于所有 Platts 相关功能**
+
+- **凭证文件**: `.config/spglobal/credentials.json`
+- **所有 Platts 任务共享同一个 token**
+  - platts-insights-monitor.mjs (Heards + News)
+  - platts-price-data.mjs (价格数据)
+  - platts-structured-heards.mjs (结构化交易)
+  - 未来任何 Platts 相关功能
+- **Token 有效期**: 60 分钟
+- **自动刷新机制**:
+  - 刷新端点: `https://api.platts.com/auth/api/token`
+  - 方式: 使用 refresh_token，无需 client_id
+  - 触发: 任何 Platts 脚本运行时，若剩余 <10 分钟则刷新
+  - 保障: Platts Monitor 每 50 分钟运行，确保 token 持续有效
+- **手动刷新**: `node scripts/platts-refresh-token.mjs`
+- **失败处理**: 若刷新失败，需手动登录获取新 token
+
+**关键点**: 无论提出什么 Platts 相关需求，都使用这组 token，刷新逻辑相同。
 
 ---
 
