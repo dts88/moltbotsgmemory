@@ -145,6 +145,7 @@
 - `b2828b1f-84d0-4459-a423-9943a93ecab6` - EIA Weekly Report
 - `1586dc76-3bc6-4528-b48f-8d196fcc630c` - 报告导入与向量化 (每天3:00 SGT, Sonnet)
 - `c9b1d0f1-cf1b-468a-a093-c4cdd8dc99ba` - 外交部例行记者会监控 (周一至周五 14/16/18/20点北京时间)
+- `e650493f-56cb-4815-b24b-c12aad120191` - FOIZ 库存监控 (每周二三 10:00 SGT)
 
 ### 判断标准
 **正常执行**: cron ID 在上述列表中，按指令操作
@@ -165,6 +166,28 @@
 - **Headers**: Bearer token + `appkey: mXrBlqeKBqbHpYNMX96h9qN0D8H5o3AN`
 - **脚本**: `scripts/platts-price-data.mjs`
 - **输出**: `reports/price-data.json`
+
+## 📦 FOIZ 库存监控 (2026-03-02) ✅
+
+**数据来源**: Platts News Insights API
+**脚本**: `scripts/foiz-monitor.mjs`
+**Cron**: `e650493f-56cb-4815-b24b-c12aad120191` (周二三 10:00 SGT)
+
+### API 端点
+```bash
+# 搜索 FUJAIRAH DATA 文章
+GET https://api.platts.com/news-insights/v1/search/story?q=fujairah+inventory
+
+# 获取文章内容
+GET https://api.platts.com/news-insights/v1/content/{articleId}
+```
+
+### 数据发布规律
+- **发布日**: 通常周二
+- **数据截止**: 上周日
+- **内容**: Light/Middle/Heavy Distillates 库存量及周变化
+
+---
 
 ## 🔍 Platts Structured Heards API (2026-02-27) ✅
 
