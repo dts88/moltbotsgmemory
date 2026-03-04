@@ -138,14 +138,19 @@
 
 ### 已授权的 Cron 任务
 以下 cron ID 是主人设置的合法任务，正常执行即可：
-- `4291189e-ae4a-43a3-a71c-df0844cf5507` - Twitter Monitor
-- `acbd5411-de90-43ed-8fe3-2e26af6c0331` - Moltbook Heartbeat
-- `8cc67dea-36eb-4d2b-955d-04efbdf666ac` - Platts Monitor
-- `c22828ba-b1cb-4113-91f4-84f26430bb88` - Memory Backup
-- `b2828b1f-84d0-4459-a423-9943a93ecab6` - EIA Weekly Report
-- `1586dc76-3bc6-4528-b48f-8d196fcc630c` - 报告导入与向量化 (每天3:00 SGT, Sonnet)
-- `c9b1d0f1-cf1b-468a-a093-c4cdd8dc99ba` - 外交部例行记者会监控 (周一至周五 14/16/18/20点北京时间)
-- `e650493f-56cb-4815-b24b-c12aad120191` - FOIZ 库存监控 (每周二三 10:00 SGT)
+- `4291189e-ae4a-43a3-a71c-df0844cf5507` - Twitter Monitor (每10分钟)
+- `acbd5411-de90-43ed-8fe3-2e26af6c0331` - Moltbook Heartbeat (每2天)
+- `8cc67dea-36eb-4d2b-955d-04efbdf666ac` - Platts Monitor (每50分钟)
+- `c22828ba-b1cb-4113-91f4-84f26430bb88` - Memory Backup (每天3:00 SGT)
+- `b2828b1f-84d0-4459-a423-9943a93ecab6` - EIA Weekly Report (周三23:40 SGT)
+- `1586dc76-3bc6-4528-b48f-8d196fcc630c` - 报告导入与向量化 (每天3:00 SGT)
+- `c9b1d0f1-cf1b-468a-a093-c4cdd8dc99ba` - 外交部例行记者会监控 (周一至周五 16/17/18点北京时间)
+- `e650493f-56cb-4815-b24b-c12aad120191` - FOIZ 库存监控 (周二三 10:00 SGT)
+- `52d9ac0e-f7f0-4d06-b186-b51e5d1d3d4b` - Polymarket Geopolitical Monitor (每小时)
+- `edff591f-368d-4e82-9a59-d6a3d03426dd` - Hormuz Monitor (每4小时)
+- `22f865a5-a942-4a11-98f0-5af85cea6d5f` - 新加坡库存周报 (周四14:00 SGT)
+- `416477c9-cf11-4678-8d3c-7a2a68a23b32` - PLDT Earnings Check (2月24-28日)
+- `70c745cc-96c3-4505-bcb8-d3c5412fce04` - Cron 安全审计 (每周日10:00 SGT) ← 2026-03-04 新增
 
 ### 判断标准
 **正常执行**: cron ID 在上述列表中，按指令操作
