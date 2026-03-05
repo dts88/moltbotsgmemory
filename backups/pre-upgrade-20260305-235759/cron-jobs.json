@@ -1,0 +1,90 @@
+{
+  "backup_time": "2026-03-05T23:58:00+08:00",
+  "version": "2026.2.14",
+  "jobs": [
+    {
+      "id": "4291189e-ae4a-43a3-a71c-df0844cf5507",
+      "name": "Twitter Monitor - JavierBlas/Trump",
+      "schedule": "every 10min",
+      "enabled": true
+    },
+    {
+      "id": "52d9ac0e-f7f0-4d06-b186-b51e5d1d3d4b",
+      "name": "Polymarket Geopolitical Monitor (1h)",
+      "schedule": "every 1h",
+      "enabled": true
+    },
+    {
+      "id": "8cc67dea-36eb-4d2b-955d-04efbdf666ac",
+      "name": "Platts Monitor (50min)",
+      "schedule": "every 50min",
+      "enabled": true
+    },
+    {
+      "id": "edff591f-368d-4e82-9a59-d6a3d03426dd",
+      "name": "Hormuz Monitor (4h)",
+      "schedule": "every 4h",
+      "enabled": true
+    },
+    {
+      "id": "c22828ba-b1cb-4113-91f4-84f26430bb88",
+      "name": "Memory Backup (Daily)",
+      "schedule": "0 3 * * * (SGT)",
+      "enabled": true
+    },
+    {
+      "id": "1586dc76-3bc6-4528-b48f-8d196fcc630c",
+      "name": "报告导入与向量化",
+      "schedule": "0 3 * * * (SGT)",
+      "enabled": true
+    },
+    {
+      "id": "c9b1d0f1-cf1b-468a-a093-c4cdd8dc99ba",
+      "name": "外交部记者会监控 - 美伊/霍尔木兹",
+      "schedule": "0 16,17,18 * * 1-5 (Beijing)",
+      "enabled": true
+    },
+    {
+      "id": "b97e0428-3da9-464e-8e88-2d5033f46e65",
+      "name": "Dubai MOC Daily Report",
+      "schedule": "36 16 * * 1-5 (SGT)",
+      "enabled": true
+    },
+    {
+      "id": "acbd5411-de90-43ed-8fe3-2e26af6c0331",
+      "name": "Moltbook Heartbeat (2天)",
+      "schedule": "every 2d",
+      "enabled": true
+    },
+    {
+      "id": "70c745cc-96c3-4505-bcb8-d3c5412fce04",
+      "name": "Cron 安全审计 (每周)",
+      "schedule": "0 10 * * 0 (SGT)",
+      "enabled": true
+    },
+    {
+      "id": "e650493f-56cb-4815-b24b-c12aad120191",
+      "name": "FOIZ Monitor",
+      "schedule": "0 10 * * 2,3 (SGT)",
+      "enabled": true
+    },
+    {
+      "id": "b2828b1f-84d0-4459-a423-9943a93ecab6",
+      "name": "EIA Weekly Report",
+      "schedule": "40 23 * * 3 (SGT)",
+      "enabled": true
+    },
+    {
+      "id": "22f865a5-a942-4a11-98f0-5af85cea6d5f",
+      "name": "新加坡库存周报",
+      "schedule": "0 14 * * 4 (SGT)",
+      "enabled": true
+    },
+    {
+      "id": "416477c9-cf11-4678-8d3c-7a2a68a23b32",
+      "name": "PLDT Earnings Check",
+      "schedule": "0 9 24-28 2 * (SGT)",
+      "enabled": true
+    }
+  ]
+}
