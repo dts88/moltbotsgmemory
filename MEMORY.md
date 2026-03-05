@@ -131,9 +131,10 @@
 
 ## 👥 用户权限
 
-### +6597777239 (Tianshu 太太)
+### +6597777239 / Telegram: 803963798 (Tianshu 太太)
 - 独立 session
 - 一般查询
+- Telegram DM 已开通 (2026-03-06)
 
 ### +6592311196 (Tianshu 同事)
 - 独立 session
@@ -506,4 +507,34 @@ node scripts/gmail.mjs inbox [n] [--unseen]    # 读取
 
 ---
 
-*最后更新: 2026-02-23 11:50 SGT*
+## 🔧 Telegram 配置 (2026-03-06)
+
+### MoltbotSG 群组 (-1003727952836)
+| Topic ID | 名称 | 需要@ | 用途 |
+|----------|------|-------|------|
+| 1 | General | 是 | 通用 |
+| 2 | Platts MOC | 否 | MOC 交易 |
+| 7 | Moltbot 🤖 | 否 | 系统管理 |
+| 22 | Email | 否 | Gmail 管理 |
+
+### 功能配置
+- **streaming**: partial (实时流预览)
+- **ackReaction**: 👀 (处理中反应，完成后自动消失)
+- **replyToMode**: first (自动回复用户消息)
+- **inlineButtons**: all (内联按钮)
+- **sticker**: 已启用
+- **customCommands**: /status, /cron, /email, /weather, /search
+- **removeAckAfterReply**: true
+
+### Reaction 使用原则
+- 有意义时才加（确认、庆祝、幽默），不刷屏
+- 🦞 不是 Telegram 支持的反应表情
+- 支持的: 👍 ❤️ 🔥 🎉 👀 😂 等
+
+### 全局模型
+- **主模型**: claude-opus-4-6
+- **Fallback**: Sonnet 4.6 → Opus 4.5 → Sonnet 4.5
+
+---
+
+*最后更新: 2026-03-06 00:52 SGT*
