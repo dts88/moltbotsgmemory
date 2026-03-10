@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117"/>
+      <stop offset="100%" style="stop-color:#161b22"/>
+    </linearGradient>
+    <linearGradient id="drop" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1c1c1c"/>
+      <stop offset="60%" style="stop-color:#2a2a2a"/>
+      <stop offset="100%" style="stop-color:#1a1a1a"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c9a84c"/>
+      <stop offset="50%" style="stop-color:#d4af37"/>
+      <stop offset="100%" style="stop-color:#b8962e"/>
+    </linearGradient>
+    <linearGradient id="steel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#8a8a8a"/>
+      <stop offset="100%" style="stop-color:#5a5a5a"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" fill="url(#bg)"/>
+  
+  <!-- Outer border -->
+  <rect x="8" y="8" width="496" height="496" fill="none" stroke="#d4af37" stroke-width="1.5" opacity="0.4"/>
+  <rect x="16" y="16" width="480" height="480" fill="none" stroke="#d4af37" stroke-width="0.5" opacity="0.2"/>
+  
+  <!-- Oil drop - minimal, geometric -->
+  <path d="M256 100 C256 100 330 210 330 275 C330 316 297 345 256 345 C215 345 182 316 182 275 C182 210 256 100 256 100Z" 
+        fill="url(#drop)" stroke="url(#gold)" stroke-width="2"/>
+  
+  <!-- Claw marks - three diagonal slashes across the drop -->
+  <line x1="220" y1="190" x2="250" y2="310" stroke="url(#gold)" stroke-width="4" stroke-linecap="square"/>
+  <line x1="240" y1="180" x2="270" y2="300" stroke="url(#gold)" stroke-width="4" stroke-linecap="square"/>
+  <line x1="260" y1="185" x2="290" y2="305" stroke="url(#gold)" stroke-width="4" stroke-linecap="square"/>
+  
+  <!-- Company name -->
+  <text x="256" y="400" font-family="Georgia, Times New Roman, serif" font-weight="400" 
+        font-size="42" fill="#d4af37" text-anchor="middle" letter-spacing="12">
+    OILCLAW
+  </text>
+  
+  <!-- Divider lines -->
+  <line x1="100" y1="415" x2="412" y2="415" stroke="#d4af37" stroke-width="0.5" opacity="0.4"/>
+  
+  <!-- Tagline -->
+  <text x="256" y="440" font-family="Georgia, Times New Roman, serif" font-weight="400" 
+        font-size="14" fill="#8a8a8a" text-anchor="middle" letter-spacing="6">
+    ENERGY INTELLIGENCE
+  </text>
+</svg>

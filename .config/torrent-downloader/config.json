@@ -1,0 +1,11 @@
+{
+  "jackett": {
+    "url": "http://192.168.1.101:9117",
+    "apiKey": "73j12is12u4cg6yndb959w6ahyi33ct4"
+  },
+  "aria2": {
+    "url": "http://192.168.1.101:6800/jsonrpc",
+    "secret": "8583039"
+  },
+  "downloadDir": "/downloads"
+}

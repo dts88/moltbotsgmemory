@@ -1,0 +1,66 @@
+{
+  "backupTime": "2026-02-14T16:56:00+08:00",
+  "version": "2026.2.6",
+  "jobs": [
+    {
+      "id": "8cc67dea-36eb-4d2b-955d-04efbdf666ac",
+      "name": "Platts Monitor (50min)",
+      "schedule": "every 50min",
+      "enabled": true
+    },
+    {
+      "id": "4291189e-ae4a-43a3-a71c-df0844cf5507",
+      "name": "Twitter Monitor - JavierBlas/Trump",
+      "schedule": "every 10min",
+      "enabled": true
+    },
+    {
+      "id": "c22828ba-b1cb-4113-91f4-84f26430bb88",
+      "name": "Memory Backup (Daily)",
+      "schedule": "0 3 * * * (SGT)",
+      "enabled": true
+    },
+    {
+      "id": "1586dc76-3bc6-4528-b48f-8d196fcc630c",
+      "name": "报告导入与向量化",
+      "schedule": "0 3 * * * (SGT)",
+      "enabled": true
+    },
+    {
+      "id": "897c7f38-0e77-49d7-99d5-e7661450778b",
+      "name": "富查伊拉库存周报",
+      "schedule": "周一 14:00 (SGT)",
+      "enabled": true
+    },
+    {
+      "id": "acbd5411-de90-43ed-8fe3-2e26af6c0331",
+      "name": "Moltbook Heartbeat",
+      "schedule": "every 2 days",
+      "enabled": true
+    },
+    {
+      "id": "c9b1d0f1-cf1b-468a-a093-c4cdd8dc99ba",
+      "name": "外交部例行记者会监控",
+      "schedule": "周一-周五 17:00/17:30/18:00/18:30/20:00/20:30 (北京)",
+      "enabled": true
+    },
+    {
+      "id": "b2828b1f-84d0-4459-a423-9943a93ecab6",
+      "name": "EIA Weekly Report",
+      "schedule": "周三 23:40 (SGT)",
+      "enabled": true
+    },
+    {
+      "id": "22f865a5-a942-4a11-98f0-5af85cea6d5f",
+      "name": "新加坡库存周报",
+      "schedule": "周四 14:00 (SGT)",
+      "enabled": true
+    },
+    {
+      "id": "416477c9-cf11-4678-8d3c-7a2a68a23b32",
+      "name": "PLDT Earnings Check",
+      "schedule": "2月24-28日 9:00 (SGT)",
+      "enabled": true
+    }
+  ]
+}

@@ -56,14 +56,17 @@ async function makeCall(to, message) {
   console.log(`📞 正在拨打 ${toNumber}...`);
   console.log(`   ⚠️ 试用账户: 接听后需按任意键才能听到消息`);
   
-  // 使用 TwiML 播报消息
+  // 使用 TwiML 播报消息，然后录音（支持中文）
+  const webhookBase = 'https://voice.ews.sg';
   const twiml = `<?xml version="1.0" encoding="UTF-8"?>
 <Response>
   <Say language="zh-CN" voice="Google.cmn-CN-Standard-A">${message}</Say>
   <Pause length="1"/>
-  <Say language="zh-CN" voice="Google.cmn-CN-Standard-A">如需回复，请在提示音后留言。</Say>
-  <Record maxLength="60" transcribe="false" />
-  <Say language="zh-CN">谢谢，再见。</Say>
+  <Record maxLength="30" 
+          action="${webhookBase}/recording-complete" 
+          playBeep="true"
+          timeout="3" />
+  <Say language="zh-CN" voice="Google.cmn-CN-Standard-A">没有听到您说话，再见。</Say>
 </Response>`;
   
   const result = await twilioRequest('/Calls.json', 'POST', {

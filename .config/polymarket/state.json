@@ -1,0 +1,79 @@
+{
+  "lastCheck": "2026-03-10T06:06:57.543Z",
+  "markets": {
+    "us-strikes-iran-by": {
+      "March 14": {
+        "probability": 42,
+        "volume24h": 0,
+        "timestamp": "2026-03-10T06:06:57.543Z"
+      }
+    },
+    "will-iran-close-the-strait-of-hormuz-by-2027": {
+      "March 31": {
+        "probability": 97.2,
+        "volume24h": 2188214.354007001,
+        "timestamp": "2026-03-10T06:06:57.543Z"
+      },
+      "December 31": {
+        "probability": 97.8,
+        "volume24h": 248478.08153599987,
+        "timestamp": "2026-03-10T06:06:57.543Z"
+      },
+      "June 30": {
+        "probability": 97.9,
+        "volume24h": 313041.495307,
+        "timestamp": "2026-03-10T06:06:57.543Z"
+      }
+    },
+    "israel-x-iran-ceasefire-broken-by": {
+      "March 31, 2026": {
+        "probability": 99.4,
+        "volume24h": 151755.52576899994,
+        "timestamp": "2026-02-28T09:08:43.712Z"
+      },
+      "June 30, 2026": {
+        "probability": 99.8,
+        "volume24h": 19615.982925000004,
+        "timestamp": "2026-02-28T09:08:43.712Z"
+      }
+    },
+    "russia-x-ukraine-ceasefire-by-march-31-2026": {
+      "Russia x Ukraine ceasefire by March 31, 2026?": {
+        "probability": 2,
+        "volume24h": 312336.667263,
+        "timestamp": "2026-03-10T06:06:57.543Z"
+      }
+    },
+    "us-x-russia-military-clash-by": {
+      "June 30, 2026": {
+        "probability": 6.7,
+        "volume24h": 134.10057,
+        "timestamp": "2026-03-10T06:06:57.543Z"
+      },
+      "December 31, 2026": {
+        "probability": 14.3,
+        "volume24h": 21.896546999999998,
+        "timestamp": "2026-03-10T06:06:57.543Z"
+      }
+    },
+    "india-strike-on-pakistan-by": {
+      "March 31, 2026": {
+        "probability": 5.7,
+        "volume24h": 667.872314,
+        "timestamp": "2026-03-10T06:06:57.543Z"
+      },
+      "December 31, 2026": {
+        "probability": 27.5,
+        "volume24h": 0,
+        "timestamp": "2026-03-10T06:06:57.543Z"
+      }
+    },
+    "will-china-blockade-taiwan-by-june-30": {
+      "Will China blockade Taiwan by June 30?": {
+        "probability": 7.5,
+        "volume24h": 816.64,
+        "timestamp": "2026-03-10T06:06:57.543Z"
+      }
+    }
+  }
+}

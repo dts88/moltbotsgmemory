@@ -299,6 +299,46 @@ curl -s "https://gamma-api.polymarket.com/markets?closed=false&limit=100"
 
 ---
 
+## 📈 股票查询
+
+**脚本**: `scripts/stock.mjs`
+**数据源**: 新浪财经(A股实时/分时) + 东方财富(A股历史/搜索) + Yahoo Finance(美股)
+**认证**: 无需
+
+### 命令
+```bash
+# 实时行情
+node scripts/stock.mjs quote 600519              # A股
+node scripts/stock.mjs quote AAPL --market=us    # 美股
+node scripts/stock.mjs quote 600519,000001,300750 # 批量
+
+# 历史K线
+node scripts/stock.mjs history 600519             # 默认120天
+node scripts/stock.mjs history 600519 --days=30   # 指定天数
+node scripts/stock.mjs history 600519 --klt=102   # 周K线 (101日/102周/103月)
+node scripts/stock.mjs history AAPL --market=us   # 美股历史
+
+# 分时数据
+node scripts/stock.mjs intraday 600519            # 1分钟K线
+node scripts/stock.mjs intraday 600519 --scale=5  # 5分钟K线
+node scripts/stock.mjs intraday AAPL --market=us  # 美股分时
+
+# 搜索
+node scripts/stock.mjs search 茅台               # 搜索A股
+node scripts/stock.mjs search apple --market=us   # 搜索美股
+node scripts/stock.mjs search 茅台 --market=all   # 搜索全部
+
+# JSON输出 (供脚本使用)
+node scripts/stock.mjs quote 600519 --json
+```
+
+### 市场自动检测
+- 6位纯数字 → A股
+- 中文关键词 → A股搜索
+- 其他 → 美股
+
+---
+
 ## 能源单位换算
 
 **石脑油**: 1吨 ≈ 7.3桶

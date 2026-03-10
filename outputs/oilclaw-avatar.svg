@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#16213e"/>
+    </linearGradient>
+    <linearGradient id="oil" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2d3436"/>
+      <stop offset="100%" style="stop-color:#636e72"/>
+    </linearGradient>
+    <linearGradient id="claw" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e17055"/>
+      <stop offset="100%" style="stop-color:#d63031"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="256" cy="256" r="256" fill="url(#bg)"/>
+  
+  <!-- Oil drop shape -->
+  <path d="M256 80 C256 80 340 200 340 280 C340 326 302 360 256 360 C210 360 172 326 172 280 C172 200 256 80 256 80Z" 
+        fill="url(#oil)" opacity="0.9" stroke="#4a4a5a" stroke-width="2"/>
+  
+  <!-- Oil shine -->
+  <ellipse cx="230" cy="240" rx="25" ry="45" fill="white" opacity="0.08" transform="rotate(-15 230 240)"/>
+  
+  <!-- Crab claw - left -->
+  <g filter="url(#glow)">
+    <path d="M155 230 C120 200 90 210 80 240 C70 270 90 290 110 280 L140 260" 
+          fill="none" stroke="url(#claw)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M80 240 C65 225 50 230 55 250" 
+          fill="none" stroke="url(#claw)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M80 240 C75 215 85 205 100 215" 
+          fill="none" stroke="url(#claw)" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Crab claw - right -->
+  <g filter="url(#glow)">
+    <path d="M357 230 C392 200 422 210 432 240 C442 270 422 290 402 280 L372 260" 
+          fill="none" stroke="url(#claw)" stroke-width="14" stroke-linecap="round"/>
+    <path d="M432 240 C447 225 462 230 457 250" 
+          fill="none" stroke="url(#claw)" stroke-width="12" stroke-linecap="round"/>
+    <path d="M432 240 C437 215 427 205 412 215" 
+          fill="none" stroke="url(#claw)" stroke-width="12" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Text "OIL" -->
+  <text x="256" y="310" font-family="Arial Black, Arial, sans-serif" font-weight="900" 
+        font-size="48" fill="#ffeaa7" text-anchor="middle" letter-spacing="8" filter="url(#glow)">
+    OIL
+  </text>
+  
+  <!-- Text "CLAW" -->
+  <text x="256" y="350" font-family="Arial Black, Arial, sans-serif" font-weight="900" 
+        font-size="36" fill="#e17055" text-anchor="middle" letter-spacing="6" filter="url(#glow)">
+    CLAW
+  </text>
+  
+  <!-- Subtle ring -->
+  <circle cx="256" cy="256" r="245" fill="none" stroke="#e17055" stroke-width="1.5" opacity="0.3"/>
+</svg>

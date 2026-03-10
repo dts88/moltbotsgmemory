@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "clients": [],
+  "notes": "Managed by Moltbot. Each client entry: { id, name, phone, purpose, declared, status, plan, started, expires, sessions[], usage[] }"
+}

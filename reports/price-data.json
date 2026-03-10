@@ -1,0 +1,157 @@
+{
+  "fetchedAt": "2026-03-09T04:49:58.802Z",
+  "dates": {
+    "today": "2026-03-09",
+    "yesterday": "2026-03-08",
+    "thisFriday": "2026-03-06",
+    "lastFriday": "2026-02-27",
+    "thisThursday": "2026-03-05",
+    "lastThursday": "2026-02-26"
+  },
+  "priceSection": {
+    "symbols": {
+      "PCAAT00": "Dubai Mo01 (NextGen MOC)",
+      "PCAJG00": "Brent Mo01 Spore",
+      "AAFFU00": "WTI Spore Mo01",
+      "PGAEY00": "Gasoline Unl 92 FOB Spore Cargo",
+      "AAOVC00": "Gasoil .001%S (10ppm) FOB Spore Cargo",
+      "PJABF00": "Jet Kero FOB Spore Cargo",
+      "PPXDK00": "FO 380 CST 3.5%S FOB Spore Cargo",
+      "AAWFW00": "US Dollar-Chinese Yuan"
+    },
+    "data": {
+      "PCAAT00": {
+        "name": "Dubai Mo01 (NextGen MOC)",
+        "thisFriday": 100.45,
+        "lastFriday": 71.23,
+        "weekChange": 29.22
+      },
+      "PCAJG00": {
+        "name": "Brent Mo01 Spore",
+        "thisFriday": 85.83,
+        "lastFriday": 71.15,
+        "weekChange": 14.679999999999993
+      },
+      "AAFFU00": {
+        "name": "WTI Spore Mo01",
+        "thisFriday": 81.64,
+        "lastFriday": 65.94,
+        "weekChange": 15.700000000000003
+      },
+      "PGAEY00": {
+        "name": "Gasoline Unl 92 FOB Spore Cargo",
+        "thisFriday": 113.16,
+        "lastFriday": 79.63,
+        "weekChange": 33.53
+      },
+      "AAOVC00": {
+        "name": "Gasoil .001%S (10ppm) FOB Spore Cargo",
+        "thisFriday": 155.76,
+        "lastFriday": 92.88,
+        "weekChange": 62.879999999999995
+      },
+      "PJABF00": {
+        "name": "Jet Kero FOB Spore Cargo",
+        "thisFriday": 160.57,
+        "lastFriday": 93.57,
+        "weekChange": 67
+      },
+      "PPXDK00": {
+        "name": "FO 380 CST 3.5%S FOB Spore Cargo",
+        "thisFriday": 647.53,
+        "lastFriday": 425.66,
+        "weekChange": 221.86999999999995
+      },
+      "AAWFW00": {
+        "name": "US Dollar-Chinese Yuan",
+        "thisFriday": 6.9025,
+        "lastFriday": 6.9228,
+        "weekChange": -0.020299999999999763
+      }
+    }
+  },
+  "marginSection": {
+    "symbols": {
+      "PCAAT00": "Dubai Mo01 (NextGen MOC)",
+      "DBSCM00": "Dubai Singapore Cracking Netback Margin",
+      "AAVUD00": "Naphtha C+F Japan Cargo Dubai Crack Financial Mo01",
+      "NBSSM01": "Naphtha FOB Spore Cargo Brent Crack at Spore MOC Financial Mo01",
+      "AAYED00": "Gasoline 92 RON FOB Spore Dubai Crack Financial Mo01",
+      "AAHCL00": "Jet Kero FOB Spore Cargo Dubai Crack Financial Mo01",
+      "AAHCE00": "Gasoil FOB Spore Cargo Dubai Crack Financial Mo01",
+      "AAHBX00": "FO 180 CST 3.5%S FOB Spore Cargo Dubai Crack Financial Mo01",
+      "AAWHA00": "FO 380 CST 3.5% FOB Spore Cargo Dubai Crack Financial Mo01",
+      "MFFOB01": "Marine Fuel 0.5% FOB Fujairah Cargo Dubai Crack Financial Mo01",
+      "AAVAN00": "Butane Refrigerated CFR North Asia 30-45 days",
+      "AAVAK00": "Propane Refrigerated CFR North Asia 30-45 days"
+    },
+    "data": {
+      "DBSCM00": {
+        "name": "Dubai Singapore Cracking Netback Margin",
+        "thisThursday": 21.07,
+        "lastThursday": 4.22,
+        "change": 16.85
+      },
+      "AAVUD00": {
+        "name": "Naphtha C+F Japan Cargo Dubai Crack Financial Mo01",
+        "thisThursday": 1.46,
+        "lastThursday": -0.64,
+        "change": 2.1
+      },
+      "NBSSM01": {
+        "name": "Naphtha FOB Spore Cargo Brent Crack at Spore MOC Financial Mo01",
+        "thisThursday": -1.16,
+        "lastThursday": -3.31,
+        "change": 2.1500000000000004
+      },
+      "AAYED00": {
+        "name": "Gasoline 92 RON FOB Spore Dubai Crack Financial Mo01",
+        "thisThursday": 21.74,
+        "lastThursday": 9.56,
+        "change": 12.179999999999998
+      },
+      "AAHCL00": {
+        "name": "Jet Kero FOB Spore Cargo Dubai Crack Financial Mo01",
+        "thisThursday": 79.38,
+        "lastThursday": 22,
+        "change": 57.379999999999995
+      },
+      "AAHCE00": {
+        "name": "Gasoil FOB Spore Cargo Dubai Crack Financial Mo01",
+        "thisThursday": 42.89,
+        "lastThursday": 22.24,
+        "change": 20.650000000000002
+      },
+      "AAHBX00": {
+        "name": "FO 180 CST 3.5%S FOB Spore Cargo Dubai Crack Financial Mo01",
+        "thisThursday": 9.561,
+        "lastThursday": -2.7,
+        "change": 12.261
+      },
+      "AAWHA00": {
+        "name": "FO 380 CST 3.5% FOB Spore Cargo Dubai Crack Financial Mo01",
+        "thisThursday": 8.262,
+        "lastThursday": -3.417,
+        "change": 11.679
+      },
+      "MFFOB01": {
+        "name": "Marine Fuel 0.5% FOB Fujairah Cargo Dubai Crack Financial Mo01",
+        "thisThursday": 17.592,
+        "lastThursday": 7.859,
+        "change": 9.732999999999999
+      },
+      "AAVAN00": {
+        "name": "Butane Refrigerated CFR North Asia 30-45 days",
+        "thisThursday": 787,
+        "lastThursday": 635.5,
+        "change": 151.5
+      },
+      "AAVAK00": {
+        "name": "Propane Refrigerated CFR North Asia 30-45 days",
+        "thisThursday": 765,
+        "lastThursday": 620.5,
+        "change": 144.5
+      }
+    }
+  }
+}

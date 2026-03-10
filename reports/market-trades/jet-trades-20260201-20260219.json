@@ -1,0 +1,237 @@
+{
+  "period": "20260201-20260219",
+  "extractedAt": "2026-02-20T03:30:43.657Z",
+  "deals": [
+    {
+      "date": "20260202",
+      "market": "USGC Colonial",
+      "spec": "Jet A",
+      "timing": "cycle 9",
+      "basis": "Mar Nymex",
+      "price": "-16.50",
+      "volume": "25000",
+      "raw": "Spot market deals done Market   Spec   Timing   Basis   Price   Volume  fob NWE   Jet A-1   12-16 Feb   Ice gasoil Mar   +65.50   4000 t USGC Colonial   Jet A   cycle 9   Mar Nymex   -16.50   25000 bl"
+    },
+    {
+      "date": "20260203",
+      "market": "USGC Colonial",
+      "spec": "Jet A",
+      "timing": "cycle 10",
+      "basis": "Mar Nymex",
+      "price": "-23.00",
+      "volume": "25000",
+      "raw": "Spot market deals done Market   Spec   Timing   Basis   Price   Volume  MPL Group 3   Jet A   prompt   Mar Nymex   -20.00   5000 bl MPL Group 3   Jet A   prompt   Mar Nymex   -15.00   10000 bl MPL Gro"
+    },
+    {
+      "date": "20260204",
+      "market": "USGC Colonial",
+      "spec": "Jet A",
+      "timing": "cycle 10",
+      "basis": "Mar Nymex",
+      "price": "-23.50",
+      "volume": "50000",
+      "raw": "Spot market deals done Market   Spec   Timing   Basis   Price   Volume  fob NWE   Jet A-1   13-17 Feb   Ice gasoil Mar   +69.00   4000 t fob NWE   Jet A-1   10-14 Feb   Ice gasoil Feb   +65.00   4000 "
+    },
+    {
+      "date": "20260205",
+      "market": "USGC Colonial",
+      "spec": "Jet A",
+      "timing": "cycle 10",
+      "basis": "Mar Nymex",
+      "price": "-15.50",
+      "volume": "25000",
+      "raw": "Spot market deals done Market   Spec   Timing   Basis   Price   Volume  USGC Colonial   Jet A   cycle 10   Mar Nymex   -15.50   25000 bl USGC Colonial   Jet A   cycle 10   Mar Nymex   -15.50   25000 b"
+    },
+    {
+      "date": "20260206",
+      "market": "USGC Colonial",
+      "spec": "Jet A",
+      "timing": "cycle 11",
+      "basis": "Mar Nymex",
+      "price": "-16.00",
+      "volume": "75000",
+      "raw": "Spot market deals done Market   Spec   Timing   Basis   Price   Volume  fob NWE   Jet A-1   14-18 Feb   Ice gasoil Mar   +76.00   4000 t cif NWE   Jet A-1   25 Feb-1 Mar   Mop   +3.00   27000 t USGC C"
+    },
+    {
+      "date": "20260209",
+      "market": "USGC Colonial",
+      "spec": "Jet A",
+      "timing": "cycle 11",
+      "basis": "Mar Nymex",
+      "price": "-16.50",
+      "volume": "25000",
+      "raw": "Spot market deals done Market   Spec   Timing   Basis   Price   Volume  LA   Jet A   Feb   Nymex   -4.00   25000 bl USGC Colonial   Jet A   cycle 11   cycle 12   +1.00   25000 bl USGC Colonial   Jet A"
+    },
+    {
+      "date": "20260210",
+      "market": "USGC Colonial",
+      "spec": "Jet A",
+      "timing": "cycle 11",
+      "basis": "Mar Nymex",
+      "price": "-19.75",
+      "volume": "25000",
+      "raw": "Spot market deals done Market   Spec   Timing   Basis   Price   Volume  fob NWE   Jet A-1   13-17 Feb   Mop   +6.00   4000 t USGC Colonial   Jet A   cycle 11   cycle 12   +0.50   25000 bl USGC Colonia"
+    },
+    {
+      "date": "20260211",
+      "market": "USGC Colonial",
+      "spec": "Jet A",
+      "timing": "cycle 12",
+      "basis": "Mar Nymex",
+      "price": "-21.00",
+      "volume": "25000",
+      "raw": "Spot market deals done Market   Spec   Timing   Basis   Price   Volume  USGC Colonial   Jet A   cycle 12   Mar Nymex   -21.00   25000 bl USGC Colonial   Jet A   cycle 12   Mar Nymex   -20.75   25000 b"
+    },
+    {
+      "date": "20260212",
+      "market": "USGC Colonial",
+      "spec": "Jet A",
+      "timing": "cycle 12",
+      "basis": "Mar Nymex",
+      "price": "-21.50",
+      "volume": "25000",
+      "raw": "Spot market deals done Market   Spec   Timing   Basis   Price   Volume  USGC Colonial   Jet A   cycle 12   cycle 13   +0.50   25000 bl USGC Colonial   Jet A   cycle 12   Mar Nymex   -21.50   25000 bl "
+    },
+    {
+      "date": "20260213",
+      "market": "USGC Colonial",
+      "spec": "Jet A",
+      "timing": "cycle 12",
+      "basis": "Mar Nymex",
+      "price": "-22.00",
+      "volume": "25000",
+      "raw": "Spot market deals done Market   Spec   Timing   Basis   Price   Volume  USGC Colonial   Jet A   cycle 12   Mar Nymex   -22.00   25000 bl USGC Colonial   Jet A   cycle 12   Mar Nymex   -21.00   25000 b"
+    },
+    {
+      "date": "20260217",
+      "market": "USGC Colonial",
+      "spec": "Jet A",
+      "timing": "cycle 12",
+      "basis": "Mar Nymex",
+      "price": "-19.50",
+      "volume": "25000",
+      "raw": "Spot market deals done Market   Spec   Timing   Basis   Price   Volume  NYH Colonial   Jet A   cycle 8   Mar Nymex   -5.00   25000 bl NYH Colonial   Jet A   cycle 9   Mar Nymex   -5.00   25000 bl USGC"
+    },
+    {
+      "date": "20260218",
+      "market": "USGC Colonial",
+      "spec": "Jet A",
+      "timing": "cycle 13",
+      "basis": "Apr Nymex",
+      "price": "-12.25",
+      "volume": "25000",
+      "raw": "Spot market deals done Market   Spec   Timing   Basis   Price   Volume  cif NWE   Jet A-1   7-11 Mar   Mop   +1.00   27000 t USGC Colonial   Jet A   cycle 13   Apr Nymex   -12.25   25000 bl USGC Colon"
+    },
+    {
+      "date": "20260219",
+      "market": "USGC Colonial",
+      "spec": "Jet A",
+      "timing": "cycle 13",
+      "basis": "Apr Nymex",
+      "price": "-13.75",
+      "volume": "25000",
+      "raw": "Spot market deals done Market   Spec   Timing   Basis   Price   Volume  USGC Colonial   Jet A   cycle 13   Apr Nymex   -13.75   25000 bl USGC Colonial   Jet A   cycle 13   Apr Nymex   -13.75   25000 b"
+    }
+  ],
+  "tenders": [
+    {
+      "date": "20260202",
+      "issuer": "tender is",
+      "action": "issued",
+      "volume": "-",
+      "unit": "-",
+      "product": "jet fuel",
+      "raw": "tender before 1 October. Details such as the tender’s pric - ing structure and EA registry are still being worked out, and information on SAF volumes and origin will be shared when the  tender is issu"
+    },
+    {
+      "date": "20260203",
+      "issuer": "The tender",
+      "action": "closed",
+      "volume": "-",
+      "unit": "-",
+      "product": "jet fuel",
+      "raw": "tender, seeking 280,000 bl jet A-1 fuel cargo for  single berth discharge at Dolphin Tanker Berth, Colombo dur -  ing 4-5 March. Offers are to be submitted by 3 February, and  to remain valid until 6 "
+    },
+    {
+      "date": "20260204",
+      "issuer": "company is",
+      "action": "seeking",
+      "volume": "-",
+      "unit": "-",
+      "product": "jet fuel",
+      "raw": "tender to buy jet A-1 fuel for delivery in March. The company is seeking"
+    },
+    {
+      "date": "20260211",
+      "issuer": "The tender",
+      "action": "closed",
+      "volume": "-",
+      "unit": "-",
+      "product": "jet fuel",
+      "raw": "tender sales, South Korea's GS Caltex offered through a spot tender one jet fuel cargo for late-March loading. The refiner is looking to sell 300,000 bl jet fuel for 26-30 March loading from Yeosu. Bi"
+    },
+    {
+      "date": "20260211",
+      "issuer": "tender was",
+      "action": "awarded",
+      "volume": "-",
+      "unit": "-",
+      "product": "jet fuel",
+      "raw": "tender to develop a €1bn ($1.19bn) e-fuels plant at the former L’Ardoise industrial site in southern France’s Occitanie region. The project aims to produce up to 70,000 t/yr of e-SAF and 50,000 t/yr o"
+    },
+    {
+      "date": "20260216",
+      "issuer": "CPC",
+      "action": "bought",
+      "volume": "300,000",
+      "unit": "bl",
+      "product": "jet A-1",
+      "raw": "CPC bought at least 300,000 bl of jet A-1"
+    },
+    {
+      "date": "20260216",
+      "issuer": "spot tender",
+      "action": "closed",
+      "volume": "-",
+      "unit": "-",
+      "product": "jet fuel",
+      "raw": "tender news, Taiwan’s public-sector refiner CPC  bought its March-delivery cargo of jet fuel. CPC bought at least 300,000 bl of jet A-1 fuel for delivery to either Shen-Ao  or Kaohsiung between 5-25 M"
+    },
+    {
+      "date": "20260216",
+      "issuer": "ministry has",
+      "action": "issued",
+      "volume": "-",
+      "unit": "-",
+      "product": "jet fuel",
+      "raw": "tenders for Apr-Aug  Syria’s energy ministry has issued"
+    },
+    {
+      "date": "20260216",
+      "issuer": "ministry is",
+      "action": "seeking",
+      "volume": "-",
+      "unit": "-",
+      "product": "jet fuel",
+      "raw": "tenders to import gasoil, gasoline and fuel oil for April–August, as the country resumes product imports after receiving no deliveries between September and December last year. The ministry is seeking"
+    },
+    {
+      "date": "20260219",
+      "issuer": "was",
+      "action": "seeking",
+      "volume": "-",
+      "unit": "-",
+      "product": "jet fuel",
+      "raw": "tender activity, Qatar’s state-owned QatarEnergy (QE) was seeking"
+    },
+    {
+      "date": "20260219",
+      "issuer": "tender having",
+      "action": "closed",
+      "volume": "-",
+      "unit": "-",
+      "product": "jet fuel",
+      "raw": "tender closed on 18 Febru -  ary, although the results could not be confirmed at the time of writing. Market participants said the buying interest appeared to be part of QE’s regular spot procurement "
+    }
+  ]
+}

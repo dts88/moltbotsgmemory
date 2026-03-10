@@ -1,0 +1,67 @@
+{
+  "period": "20260224-20260302",
+  "generatedAt": "2026-03-03T06:30:00.000Z",
+  "source": "Argus Asia-Pacific Products Daily",
+  "deals": {
+    "gasoline": [
+      {"date": "2026-02-24", "seller": "Aramco Trading", "buyer": "Petrochina", "product": "92R Singapore", "volume": "100,000 bl", "basis": "-", "premium": "78.80", "timing": "17-21 Mar"},
+      {"date": "2026-02-24", "seller": "PTT Trading", "buyer": "Sietco", "product": "95R Singapore", "volume": "50,000 bl", "basis": "Mops", "premium": "+0.20", "timing": "18-22 Mar"},
+      {"date": "2026-02-24", "seller": "PTT Trading", "buyer": "Sietco", "product": "95R Singapore", "volume": "50,000 bl", "basis": "Mops", "premium": "+0.40", "timing": "12-16 Mar"},
+      {"date": "2026-02-25", "seller": "MRPL", "buyer": "Vitol", "product": "Gasoline", "volume": "35,000t", "basis": "Argus+Platts avg", "premium": "+1.25", "timing": "13-14 Mar"},
+      {"date": "2026-02-25", "seller": "PTT Trading", "buyer": "RGES", "product": "92R Singapore", "volume": "100,000 bl", "basis": "-", "premium": "79.20", "timing": "12-16 Mar"},
+      {"date": "2026-02-25", "seller": "OTI", "buyer": "RGES", "product": "92R Singapore", "volume": "100,000 bl", "basis": "-", "premium": "79.10", "timing": "12-16 Mar"},
+      {"date": "2026-02-25", "seller": "Trafigura", "buyer": "TotalEnergies", "product": "92R Singapore", "volume": "100,000 bl", "basis": "-", "premium": "78.60", "timing": "12-16 Mar"},
+      {"date": "2026-02-25", "seller": "Sinochem", "buyer": "Unipec", "product": "92R Singapore", "volume": "100,000 bl", "basis": "-", "premium": "78.90", "timing": "15-19 Mar"},
+      {"date": "2026-02-26", "seller": "Petrochina", "buyer": "Unknown", "product": "Gasoline", "volume": "300,000 bl", "basis": "Mops", "premium": "+2.50", "timing": "21-25 Mar"},
+      {"date": "2026-02-26", "seller": "Vitol", "buyer": "RGES", "product": "92R Singapore", "volume": "100,000 bl", "basis": "-", "premium": "79.30", "timing": "24-28 Mar"},
+      {"date": "2026-03-02", "seller": "Trafigura", "buyer": "Gunvor", "product": "92R Singapore", "volume": "100,000 bl", "basis": "-", "premium": "90.10", "timing": "19-23 Mar"},
+      {"date": "2026-03-02", "seller": "SK Energy", "buyer": "BP", "product": "92R Singapore", "volume": "100,000 bl", "basis": "-", "premium": "90.40", "timing": "27-31 Mar"}
+    ],
+    "naphtha": [
+      {"date": "2026-02-25", "seller": "Unknown", "buyer": "Lotte Chemical Indonesia", "product": "Naphtha", "volume": "50,000t", "basis": "MOPJ", "premium": "+0.90", "timing": "01-15 Apr"},
+      {"date": "2026-02-25", "seller": "Unknown", "buyer": "PCS", "product": "Naphtha", "volume": "50,000t", "basis": "MOPJ", "premium": "+7.00", "timing": "01-15 Apr"},
+      {"date": "2026-02-25", "seller": "Unknown", "buyer": "SCG", "product": "Naphtha", "volume": "25,000t", "basis": "MOPJ", "premium": "+6.00", "timing": "01-15 Apr"},
+      {"date": "2026-02-25", "seller": "Chevron", "buyer": "Vitol", "product": "Open spec Japan c+f", "volume": "25,000t", "basis": "-", "premium": "619.00", "timing": "16-30 Apr"},
+      {"date": "2026-02-26", "seller": "Unknown", "buyer": "Hanwha TotalEnergies", "product": "Naphtha", "volume": "25,000t", "basis": "MOPJ", "premium": "+17.00", "timing": "01-15 Apr"},
+      {"date": "2026-02-26", "seller": "Unknown", "buyer": "GS Caltex", "product": "Naphtha", "volume": "50,000t", "basis": "MOPJ", "premium": "+17.00/+17.50", "timing": "01-15 Apr"},
+      {"date": "2026-02-26", "seller": "Unknown", "buyer": "CNOOC", "product": "Naphtha", "volume": "25,000t", "basis": "MOPJ", "premium": "+9.00", "timing": "01-15 Apr"},
+      {"date": "2026-02-27", "seller": "Unknown", "buyer": "LG Chem", "product": "Naphtha", "volume": "50,000t", "basis": "MOPJ", "premium": "+11.00/+12.00", "timing": "01-15 Apr"},
+      {"date": "2026-02-27", "seller": "Unknown", "buyer": "KPIC", "product": "Naphtha", "volume": "25,000t", "basis": "MOPJ", "premium": "+11.00", "timing": "01-15 Apr"},
+      {"date": "2026-02-27", "seller": "Chevron", "buyer": "BP", "product": "Open spec Japan c+f", "volume": "25,000t", "basis": "-", "premium": "640.00", "timing": "15-30 Apr"},
+      {"date": "2026-02-27", "seller": "Adnoc", "buyer": "TotalEnergies", "product": "Open spec Japan c+f", "volume": "25,000t", "basis": "-", "premium": "640.00", "timing": "15-30 Apr"}
+    ],
+    "jet": [
+      {"date": "2026-02-24", "seller": "Union International Trading", "buyer": "Vitol", "product": "Jet-kerosine Singapore", "volume": "100,000 bl", "basis": "Mops", "premium": "+1.00", "timing": "11-15 Mar"},
+      {"date": "2026-02-24", "seller": "Gunvor", "buyer": "Vitol", "product": "Jet-kerosine Singapore", "volume": "100,000 bl", "basis": "Mops", "premium": "+1.20", "timing": "16-20 Mar"},
+      {"date": "2026-02-25", "seller": "Gunvor", "buyer": "Union International Trading", "product": "Jet-kerosine Singapore", "volume": "100,000 bl", "basis": "Mops", "premium": "+1.00", "timing": "19-23 Mar"},
+      {"date": "2026-02-26", "seller": "Wepec", "buyer": "Unknown", "product": "Jet Fuel", "volume": "40,000t", "basis": "Mops", "premium": "-0.65", "timing": "16-18 Mar"}
+    ],
+    "gasoil": [
+      {"date": "2026-02-25", "seller": "BP", "buyer": "Vitol", "product": "Gasoil 10ppm Singapore", "volume": "150,000 bl", "basis": "Mops", "premium": "+0.80", "timing": "12-16 Mar"},
+      {"date": "2026-02-27", "seller": "Ampol", "buyer": "Vitol", "product": "Gasoil 10ppm Singapore", "volume": "150,000 bl", "basis": "Mops", "premium": "+0.80", "timing": "14-18 Mar"}
+    ],
+    "fuelOil": [
+      {"date": "2026-02-24", "seller": "Mercuria", "buyer": "Petrochina", "product": "HS 380cst Singapore", "volume": "20,000t", "basis": "Mops", "premium": "+6.00", "timing": "11-15 Mar"},
+      {"date": "2026-02-24", "seller": "Mercuria", "buyer": "Petrochina", "product": "HS 380cst Singapore", "volume": "20,000t", "basis": "Mops", "premium": "+3.00", "timing": "16-20 Mar"},
+      {"date": "2026-02-26", "seller": "HPCL", "buyer": "Shell", "product": "HSFO", "volume": "33,000t", "basis": "Mops", "premium": "-18.00", "timing": "03-05 Mar"},
+      {"date": "2026-02-26", "seller": "Dangote", "buyer": "Phillips 66", "product": "LSFO", "volume": "130,000t", "basis": "Mops", "premium": "+7.50", "timing": "23-25 Feb"},
+      {"date": "2026-02-27", "seller": "Trafigura", "buyer": "Chimbusco", "product": "HS 180cst Singapore", "volume": "20,000t", "basis": "Mops", "premium": "+4.00", "timing": "18-22 Mar"},
+      {"date": "2026-03-02", "seller": "BP", "buyer": "Trafigura", "product": "HS 180cst Singapore", "volume": "20,000t", "basis": "Mops", "premium": "+11.00", "timing": "17-21 Mar"},
+      {"date": "2026-03-02", "seller": "Glencore", "buyer": "Petrochina", "product": "HS 380cst Singapore", "volume": "20,000t", "basis": "Mops", "premium": "+9.00", "timing": "27-31 Mar"},
+      {"date": "2026-03-02", "seller": "PTT Trading", "buyer": "Unknown", "product": "HSFO", "volume": "18,000t", "basis": "Mops", "premium": "-22.50", "timing": "24-28 Mar"},
+      {"date": "2026-03-02", "seller": "PTT Trading", "buyer": "Unknown", "product": "LSFO", "volume": "35,000t", "basis": "Mops", "premium": "-10.00", "timing": "25-27 Mar"}
+    ]
+  },
+  "summary": {
+    "totalDeals": 38,
+    "byCategory": {
+      "gasoline": 12,
+      "naphtha": 11,
+      "jet": 4,
+      "gasoil": 2,
+      "fuelOil": 9
+    },
+    "keyBuyers": ["Petrochina", "Vitol", "RGES", "TotalEnergies", "BP", "LG Chem", "GS Caltex"],
+    "keySellers": ["PTT Trading", "Trafigura", "Mercuria", "Gunvor", "BP", "Glencore"]
+  }
+}

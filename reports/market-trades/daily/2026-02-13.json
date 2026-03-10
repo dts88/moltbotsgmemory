@@ -1,0 +1,181 @@
+{
+  "date": "2026-02-13",
+  "sources": ["Argus Asia-Pacific Products", "Argus Crude"],
+  "lastUpdated": "2026-02-14T11:05:00+08:00",
+  "trades": [
+    {
+      "category": "gasoline",
+      "product": "Gasoline",
+      "seller": "IOC",
+      "buyer": "-",
+      "volume": "35,000t",
+      "basis": "Argus and Platts average",
+      "premium": "+1.25",
+      "period": "26 Feb-01 Mar",
+      "source": "Argus APP"
+    },
+    {
+      "category": "gasoline",
+      "product": "Gasoline 92R",
+      "seller": "SK Energy",
+      "buyer": "OTI",
+      "volume": "200,000bl",
+      "basis": "-",
+      "premium": "$71.49",
+      "period": "08 Mar-12 Mar",
+      "location": "Singapore",
+      "source": "Argus APP"
+    },
+    {
+      "category": "fuel_oil",
+      "product": "HS Fuel Oil",
+      "seller": "PARCO",
+      "buyer": "E3 Energy",
+      "volume": "50,000t",
+      "basis": "Mopag",
+      "premium": "+2.18",
+      "period": "20 Feb-22 Feb",
+      "source": "Argus APP"
+    },
+    {
+      "category": "fuel_oil",
+      "product": "HS Fuel Oil",
+      "seller": "National Refinery Limited",
+      "buyer": "E3 Energy",
+      "volume": "40,000t",
+      "basis": "Mopag",
+      "premium": "+6.00",
+      "period": "18 Feb-25 Feb",
+      "source": "Argus APP"
+    },
+    {
+      "category": "naphtha",
+      "product": "Naphtha",
+      "seller": "-",
+      "buyer": "Mitsui Chemical",
+      "volume": "-",
+      "basis": "MOPJ",
+      "premium": "+9.00",
+      "period": "01 Apr-15 Apr",
+      "source": "Argus APP"
+    },
+    {
+      "category": "naphtha",
+      "product": "Naphtha",
+      "seller": "-",
+      "buyer": "Formosa Petrochemical",
+      "volume": "-",
+      "basis": "MOPJ",
+      "premium": "+7.75",
+      "period": "16 Mar-31 Mar",
+      "source": "Argus APP"
+    },
+    {
+      "category": "naphtha",
+      "product": "Naphtha",
+      "seller": "QatarEnergy",
+      "buyer": "-",
+      "volume": "50,000t",
+      "basis": "Mopag",
+      "premium": "+35.00",
+      "period": "11 Mar-12 Mar",
+      "location": "Ras Laffan",
+      "source": "Argus APP"
+    }
+  ],
+  "crude_pipeline_trades": [
+    {
+      "grade": "WTI Houston",
+      "location": "Magellan East Houston",
+      "basis": "WTI",
+      "premium_range": "+1.00 to +1.05",
+      "total_volume": "~30,000 b/d",
+      "month": "Mar"
+    },
+    {
+      "grade": "WTI Midland",
+      "location": "Midland Enterprise",
+      "basis": "WTI",
+      "premium_range": "+0.55 to +0.65",
+      "total_volume": "~50,000 b/d",
+      "month": "Mar"
+    },
+    {
+      "grade": "Mars",
+      "location": "Clovelly Louisiana",
+      "basis": "WTI",
+      "premium_range": "-0.80 to -0.25",
+      "total_volume": "~35,000 b/d",
+      "month": "Mar"
+    },
+    {
+      "grade": "LLS",
+      "location": "St. James Louisiana",
+      "basis": "WTI",
+      "premium": "+1.75",
+      "total_volume": "3,000 b/d",
+      "month": "Mar"
+    },
+    {
+      "grade": "Cold Lake Houston",
+      "location": "Houston area",
+      "basis": "CMA Nymex",
+      "premium_range": "-8.30 to -8.20",
+      "total_volume": "~14,500 b/d",
+      "month": "Mar"
+    }
+  ],
+  "tenders": [
+    {
+      "issuer": "GS Caltex",
+      "direction": "sell",
+      "product": "50/500ppm gasoil",
+      "volume": "300,000/260,000bl",
+      "period": "14-28 Mar",
+      "location": "fob Yeosu",
+      "closeDate": "13 Feb"
+    },
+    {
+      "issuer": "GS Caltex",
+      "direction": "sell",
+      "product": "10ppm gasoil",
+      "volume": "300,000bl",
+      "period": "29-31 Mar",
+      "location": "fob Yeosu",
+      "closeDate": "13 Feb"
+    },
+    {
+      "issuer": "IOC",
+      "direction": "sell",
+      "product": "Naphtha",
+      "volume": "45,000-55,000t",
+      "period": "12-13 Mar",
+      "location": "Paradip/Chennai",
+      "closeDate": "13 Feb"
+    },
+    {
+      "issuer": "MRPL",
+      "direction": "sell",
+      "product": "92R Non Oxy gasoline",
+      "volume": "35,000/40,000t",
+      "period": "25-26 Feb",
+      "location": "fob New Mangalore",
+      "closeDate": "13 Feb"
+    },
+    {
+      "issuer": "LG Chem",
+      "direction": "buy",
+      "product": "Light naphtha",
+      "volume": "-",
+      "period": "1-15 Mar / 1-15 Apr",
+      "location": "-",
+      "closeDate": "-"
+    }
+  ],
+  "market_news": [
+    "Saudi Aramco 3月对中国供货量将达到1.85-1.87百万桶/日，创三年新高",
+    "Bangchak 收购 Chevron Hong Kong，交易价约2.7亿美元",
+    "新加坡轻馏分库存达到近三年高位1800万桶",
+    "S-Oil 将于3月4日至4月24日对芳烃装置进行检修"
+  ]
+}

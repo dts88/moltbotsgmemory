@@ -23,3 +23,4 @@ reports/**/*.xlsx
 -e 
 # Twilio credentials
 .config/twilio/
+.config/gmail/

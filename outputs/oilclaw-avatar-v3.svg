@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0a0e14"/>
+      <stop offset="100%" stop-color="#0f1318"/>
+    </linearGradient>
+    <linearGradient id="goldShine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b7332"/>
+      <stop offset="25%" stop-color="#c9a84c"/>
+      <stop offset="50%" stop-color="#e8d48b"/>
+      <stop offset="75%" stop-color="#c9a84c"/>
+      <stop offset="100%" stop-color="#8b7332"/>
+    </linearGradient>
+    <linearGradient id="goldDark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6b5a28"/>
+      <stop offset="50%" stop-color="#9a8540"/>
+      <stop offset="100%" stop-color="#6b5a28"/>
+    </linearGradient>
+    <clipPath id="circleClip">
+      <circle cx="256" cy="220" r="130"/>
+    </clipPath>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="512" height="512" fill="url(#bg)"/>
+  
+  <!-- Outer ring - double line -->
+  <circle cx="256" cy="220" r="148" fill="none" stroke="url(#goldShine)" stroke-width="1.2" opacity="0.6"/>
+  <circle cx="256" cy="220" r="142" fill="none" stroke="url(#goldShine)" stroke-width="0.4" opacity="0.3"/>
+  
+  <!-- Shield / emblem shape -->
+  <path d="M256 82 C256 82 392 100 392 200 C392 300 256 365 256 365 C256 365 120 300 120 200 C120 100 256 82 256 82Z" 
+        fill="none" stroke="url(#goldShine)" stroke-width="2" opacity="0.8"/>
+  
+  <!-- Oil drop - centered in shield -->
+  <path d="M256 125 C256 125 310 200 310 245 C310 275 286 300 256 300 C226 300 202 275 202 245 C202 200 256 125 256 125Z" 
+        fill="none" stroke="url(#goldShine)" stroke-width="2.5"/>
+  
+  <!-- Three claw marks inside drop -->
+  <g opacity="0.9">
+    <path d="M232 175 L238 275" fill="none" stroke="url(#goldShine)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M250 168 L256 268" fill="none" stroke="url(#goldShine)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M268 172 L274 272" fill="none" stroke="url(#goldShine)" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Small decorative dots at shield corners -->
+  <circle cx="256" cy="88" r="3" fill="url(#goldShine)" opacity="0.7"/>
+  <circle cx="140" cy="150" r="2" fill="url(#goldShine)" opacity="0.5"/>
+  <circle cx="372" cy="150" r="2" fill="url(#goldShine)" opacity="0.5"/>
+  
+  <!-- Horizontal dividers -->
+  <line x1="120" y1="390" x2="200" y2="390" stroke="url(#goldShine)" stroke-width="0.6" opacity="0.5"/>
+  <line x1="312" y1="390" x2="392" y2="390" stroke="url(#goldShine)" stroke-width="0.6" opacity="0.5"/>
+  
+  <!-- Diamond separator -->
+  <polygon points="256,386 260,390 256,394 252,390" fill="url(#goldShine)" opacity="0.6"/>
+  
+  <!-- Company name - serif, spaced -->
+  <text x="256" y="430" font-family="Georgia, 'Times New Roman', serif" font-weight="400" 
+        font-size="38" fill="url(#goldShine)" text-anchor="middle" letter-spacing="10" opacity="0.9">
+    OILCLAW
+  </text>
+  
+  <!-- Bottom line -->
+  <line x1="160" y1="448" x2="352" y2="448" stroke="url(#goldShine)" stroke-width="0.4" opacity="0.3"/>
+  
+  <!-- Established text -->
+  <text x="256" y="470" font-family="Georgia, 'Times New Roman', serif" font-weight="400" 
+        font-size="11" fill="#6b6b6b" text-anchor="middle" letter-spacing="5">
+    EST. 2026 SINGAPORE
+  </text>
+</svg>

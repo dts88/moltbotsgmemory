@@ -1,0 +1,5693 @@
+{
+  "version": 2,
+  "lastUpdated": "2026-03-06T02:12:17.765Z",
+  "categories": {
+    "knowledge": "长期知识型（方法论、产能、政策）",
+    "crude": "原油",
+    "products": "成品油（汽柴航煤石脑油燃料油）",
+    "freight": "运费/油轮",
+    "derivatives": "纸货（衍生品、swap）",
+    "lng": "LNG",
+    "lpg": "LPG/液化石油气",
+    "market": "能源市场综合",
+    "sentiment": "情绪面",
+    "fundamentals": "基本面"
+  },
+  "reports": [
+    {
+      "id": "vitol-oil-outlook-202602",
+      "title": "Long Term Oil Demand Outlook",
+      "source": "Vitol",
+      "date": "2026-02-05",
+      "category": "knowledge",
+      "path": "knowledge/20260205_Vitol_Long_Term_Oil_Demand_Outlook.pdf",
+      "pages": 24,
+      "type": "special",
+      "timeliness": "long-term"
+    },
+    {
+      "id": "eprinc-venezuela-202109",
+      "title": "The Future of Venezuela's Oil Industry",
+      "source": "EPRINC",
+      "date": "2021-09",
+      "category": "knowledge",
+      "path": "knowledge/20210901_EPRINC_Venezuela_Oil_Industry_Future.pdf",
+      "pages": 27,
+      "type": "special",
+      "timeliness": "long-term"
+    },
+    {
+      "id": "baker-venezuela-fdi-202002",
+      "title": "Venezuela Oil Collapse: The Role of Above-Ground Risks",
+      "source": "Baker Institute",
+      "date": "2020-02",
+      "category": "knowledge",
+      "path": "knowledge/20200201_BakerInstitute_Venezuela_Oil_Collapse_FDI.pdf",
+      "type": "special",
+      "timeliness": "long-term"
+    },
+    {
+      "id": "longzhong-lpg-annual-2025",
+      "title": "液化石油气2025-2026年度报告",
+      "source": "隆众资讯",
+      "date": "2025-01",
+      "category": "lpg",
+      "path": "lpg/20250101_隆众资讯_液化石油气年度报告_2025-2026.pdf",
+      "pages": 149,
+      "type": "annual",
+      "timeliness": "annual"
+    },
+    {
+      "id": "argus-crude-20260209",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-09",
+      "path": "crude/20260209_Argus_crd.pdf",
+      "pages": 36,
+      "importedAt": "2026-02-12T10:21:00+08:00"
+    },
+    {
+      "id": "argus-crude-20260210",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-10",
+      "path": "crude/20260210_Argus_crd.pdf",
+      "pages": 39,
+      "importedAt": "2026-02-12T10:21:00+08:00"
+    },
+    {
+      "id": "argus-crude-20260211",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-11",
+      "path": "crude/20260211_Argus_crd.pdf",
+      "pages": 42,
+      "importedAt": "2026-02-12T10:21:00+08:00"
+    },
+    {
+      "id": "argus-freight-20260211",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-02-11",
+      "path": "freight/20260211_Argus_freighttanker.pdf",
+      "pages": 31,
+      "importedAt": "2026-02-12T10:21:00+08:00"
+    },
+    {
+      "id": "argus-jet-20260211",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-11",
+      "path": "products/20260211_Argus_jet.pdf",
+      "pages": 14,
+      "importedAt": "2026-02-12T10:21:00+08:00"
+    },
+    {
+      "path": "products/20260119_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-19",
+      "pages": 15,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "crude/20260119_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-19",
+      "pages": 17,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "crude/20260119_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-19",
+      "pages": 28,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260119_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-19",
+      "pages": 23,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "freight/20260119_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "freight",
+      "date": "2026-01-19",
+      "pages": 24,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260119_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-19",
+      "pages": 13,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260120_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-20",
+      "pages": 21,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260120_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-20",
+      "pages": 3,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260120_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-20",
+      "pages": 15,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "crude/20260120_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-20",
+      "pages": 17,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "crude/20260120_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-20",
+      "pages": 39,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260120_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-20",
+      "pages": 20,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "freight/20260120_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-01-20",
+      "pages": 31,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260120_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-20",
+      "pages": 14,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "lng/20260120_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-01-20",
+      "pages": 22,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260120_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-20",
+      "pages": 6,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260120_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-20",
+      "pages": 27,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260120_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-20",
+      "pages": 3,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260121_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-21",
+      "pages": 24,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260121_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-21",
+      "pages": 3,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260121_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-21",
+      "pages": 15,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "crude/20260121_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-21",
+      "pages": 16,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260121_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-21",
+      "pages": 19,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "lng/20260121_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-01-21",
+      "pages": 20,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260121_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-21",
+      "pages": 6,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260209_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-09",
+      "pages": 19,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260209_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-02-09",
+      "pages": 2,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260209_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-09",
+      "pages": 15,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "crude/20260209_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-09",
+      "pages": 18,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260209_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-09",
+      "pages": 20,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "freight/20260209_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-02-09",
+      "pages": 31,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260209_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-09",
+      "pages": 14,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "lng/20260209_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-02-09",
+      "pages": 20,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260209_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-02-09",
+      "pages": 6,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260209_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-09",
+      "pages": 29,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260209_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-09",
+      "pages": 3,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260210_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-10",
+      "pages": 20,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260210_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-02-10",
+      "pages": 2,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260210_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-10",
+      "pages": 14,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "crude/20260210_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-10",
+      "pages": 17,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260210_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-10",
+      "pages": 19,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "freight/20260210_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-02-10",
+      "pages": 31,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260210_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-10",
+      "pages": 14,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "lng/20260210_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-02-10",
+      "pages": 20,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260210_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-02-10",
+      "pages": 6,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260210_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-10",
+      "pages": 28,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260210_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-10",
+      "pages": 3,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "lng/20260211_Argus_aggm.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "lng",
+      "date": "2026-02-11",
+      "pages": 30,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260211_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-11",
+      "pages": 19,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260211_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-02-11",
+      "pages": 2,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260211_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-11",
+      "pages": 15,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "crude/20260211_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-11",
+      "pages": 16,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260211_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-11",
+      "pages": 17,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "lng/20260211_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-02-11",
+      "pages": 20,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260211_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "products",
+      "date": "2026-02-11",
+      "pages": 6,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260211_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-11",
+      "pages": 27,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260211_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-11",
+      "pages": 3,
+      "importedAt": "2026-02-12T02:54:07.102Z"
+    },
+    {
+      "path": "products/20260116_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-16",
+      "pages": 19,
+      "importedAt": "2026-02-12T02:54:21.083Z"
+    },
+    {
+      "path": "products/20260116_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-16",
+      "pages": 3,
+      "importedAt": "2026-02-12T02:54:21.083Z"
+    },
+    {
+      "path": "products/20260116_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-16",
+      "pages": 18,
+      "importedAt": "2026-02-12T02:54:21.083Z"
+    },
+    {
+      "path": "crude/20260116_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-16",
+      "pages": 21,
+      "importedAt": "2026-02-12T02:54:21.083Z"
+    },
+    {
+      "path": "crude/20260116_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-16",
+      "pages": 39,
+      "importedAt": "2026-02-12T02:54:21.083Z"
+    },
+    {
+      "path": "products/20260116_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-16",
+      "pages": 20,
+      "importedAt": "2026-02-12T02:54:21.083Z"
+    },
+    {
+      "path": "freight/20260116_Argus_freightspecial.pdf",
+      "source": "Argus",
+      "type": "special",
+      "category": "freight",
+      "date": "2026-01-16",
+      "pages": 14,
+      "importedAt": "2026-02-12T02:54:21.083Z"
+    },
+    {
+      "path": "freight/20260116_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-01-16",
+      "pages": 31,
+      "importedAt": "2026-02-12T02:54:21.083Z"
+    },
+    {
+      "path": "products/20260116_Argus_ici.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-16",
+      "pages": 2,
+      "importedAt": "2026-02-12T02:54:21.083Z"
+    },
+    {
+      "path": "products/20260116_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-16",
+      "pages": 13,
+      "importedAt": "2026-02-12T02:54:21.083Z"
+    },
+    {
+      "path": "lng/20260116_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-01-16",
+      "pages": 23,
+      "importedAt": "2026-02-12T02:54:21.083Z"
+    },
+    {
+      "path": "products/20260116_Argus_mck.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-16",
+      "pages": 2,
+      "importedAt": "2026-02-12T02:54:21.083Z"
+    },
+    {
+      "path": "products/20260116_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "special",
+      "category": "products",
+      "date": "2026-01-16",
+      "pages": 6,
+      "importedAt": "2026-02-12T02:54:21.083Z"
+    },
+    {
+      "path": "products/20260116_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-16",
+      "pages": 26,
+      "importedAt": "2026-02-12T02:54:21.083Z"
+    },
+    {
+      "path": "products/20260116_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-16",
+      "pages": 3,
+      "importedAt": "2026-02-12T02:54:21.083Z"
+    },
+    {
+      "path": "products/20260119_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-19",
+      "pages": 3,
+      "importedAt": "2026-02-12T02:54:21.083Z"
+    },
+    {
+      "path": "products/20260119_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-19",
+      "pages": 16,
+      "importedAt": "2026-02-12T02:54:21.083Z"
+    },
+    {
+      "path": "lng/20260119_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-01-19",
+      "pages": 21,
+      "importedAt": "2026-02-12T02:54:21.083Z"
+    },
+    {
+      "path": "products/20260119_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-19",
+      "pages": 6,
+      "importedAt": "2026-02-12T02:54:21.083Z"
+    },
+    {
+      "path": "products/20260115_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-15",
+      "pages": 17,
+      "importedAt": "2026-02-12T02:54:29.789Z"
+    },
+    {
+      "path": "products/20260115_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-15",
+      "pages": 16,
+      "importedAt": "2026-02-12T02:54:29.790Z"
+    },
+    {
+      "path": "products/20260115_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-15",
+      "pages": 17,
+      "importedAt": "2026-02-12T02:54:29.790Z"
+    },
+    {
+      "path": "crude/20260115_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-15",
+      "pages": 17,
+      "importedAt": "2026-02-12T02:54:29.790Z"
+    },
+    {
+      "path": "crude/20260115_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-15",
+      "pages": 37,
+      "importedAt": "2026-02-12T02:54:29.790Z"
+    },
+    {
+      "path": "products/20260115_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-15",
+      "pages": 19,
+      "importedAt": "2026-02-12T02:54:29.790Z"
+    },
+    {
+      "path": "freight/20260115_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-01-15",
+      "pages": 31,
+      "importedAt": "2026-02-12T02:54:29.790Z"
+    },
+    {
+      "path": "products/20260114_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-14",
+      "pages": 3,
+      "importedAt": "2026-02-12T02:54:33.780Z"
+    },
+    {
+      "path": "products/20260115_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-15",
+      "pages": 13,
+      "importedAt": "2026-02-12T02:54:33.781Z"
+    },
+    {
+      "path": "lng/20260115_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-01-15",
+      "pages": 25,
+      "importedAt": "2026-02-12T02:54:33.781Z"
+    },
+    {
+      "path": "products/20260115_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "monthly",
+      "category": "products",
+      "date": "2026-01-15",
+      "pages": 6,
+      "importedAt": "2026-02-12T02:54:33.781Z"
+    },
+    {
+      "path": "products/20260115_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-15",
+      "pages": 3,
+      "importedAt": "2026-02-12T02:54:33.781Z"
+    },
+    {
+      "path": "crude/20260114_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-14",
+      "pages": 40,
+      "importedAt": "2026-02-12T02:54:40.280Z"
+    },
+    {
+      "path": "freight/20260114_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-01-14",
+      "pages": 31,
+      "importedAt": "2026-02-12T02:54:40.280Z"
+    },
+    {
+      "path": "products/20260114_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-14",
+      "pages": 14,
+      "importedAt": "2026-02-12T02:54:40.280Z"
+    },
+    {
+      "path": "products/20260114_Unknown_amarinef.pdf",
+      "source": "Unknown",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-14",
+      "pages": 0,
+      "importedAt": "2026-02-12T02:54:40.529Z"
+    },
+    {
+      "path": "products/20251231_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2025-12-31",
+      "pages": 18,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20251231_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2025-12-31",
+      "pages": 3,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20251231_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2025-12-31",
+      "pages": 16,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "crude/20251231_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2025-12-31",
+      "pages": 14,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "crude/20251231_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "crude",
+      "date": "2025-12-31",
+      "pages": 34,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20251231_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2025-12-31",
+      "pages": 16,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "freight/20251231_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2025-12-31",
+      "pages": 31,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20251231_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2025-12-31",
+      "pages": 14,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "lng/20251231_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2025-12-31",
+      "pages": 18,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20251231_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2025-12-31",
+      "pages": 6,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20251231_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "products",
+      "date": "2025-12-31",
+      "pages": 27,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20251231_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2025-12-31",
+      "pages": 3,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260102_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-02",
+      "pages": 19,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260102_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-02",
+      "pages": 3,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260102_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-02",
+      "pages": 16,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "crude/20260102_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-02",
+      "pages": 17,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "crude/20260102_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-02",
+      "pages": 26,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260102_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-02",
+      "pages": 18,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "freight/20260102_Argus_freightspecial.pdf",
+      "source": "Argus",
+      "type": "special",
+      "category": "freight",
+      "date": "2026-01-02",
+      "pages": 14,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "freight/20260102_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-01-02",
+      "pages": 31,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260102_Argus_ici.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-02",
+      "pages": 2,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260102_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-02",
+      "pages": 13,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "lng/20260102_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-01-02",
+      "pages": 21,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260102_Argus_mck.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-02",
+      "pages": 2,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260102_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "monthly",
+      "category": "products",
+      "date": "2026-01-02",
+      "pages": 6,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260102_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "monthly",
+      "category": "products",
+      "date": "2026-01-02",
+      "pages": 27,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260102_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-02",
+      "pages": 3,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260105_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-05",
+      "pages": 21,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260105_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-05",
+      "pages": 3,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260105_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-05",
+      "pages": 17,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "crude/20260105_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-05",
+      "pages": 16,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "crude/20260105_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-05",
+      "pages": 43,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260105_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-05",
+      "pages": 20,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "freight/20260105_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-01-05",
+      "pages": 31,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260105_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-05",
+      "pages": 13,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "lng/20260105_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-01-05",
+      "pages": 19,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260105_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-05",
+      "pages": 6,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260105_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-05",
+      "pages": 26,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260105_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-05",
+      "pages": 3,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260106_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-06",
+      "pages": 23,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260106_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-06",
+      "pages": 3,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260106_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-06",
+      "pages": 17,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "crude/20260106_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-06",
+      "pages": 16,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "crude/20260106_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-06",
+      "pages": 40,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260106_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-06",
+      "pages": 21,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "freight/20260106_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-01-06",
+      "pages": 31,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260106_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-06",
+      "pages": 13,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "lng/20260106_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-01-06",
+      "pages": 22,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260106_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-06",
+      "pages": 6,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260106_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-06",
+      "pages": 27,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260106_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-06",
+      "pages": 3,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260107_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-07",
+      "pages": 22,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260107_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-07",
+      "pages": 3,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260107_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-07",
+      "pages": 16,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "crude/20260107_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-07",
+      "pages": 15,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "crude/20260107_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-07",
+      "pages": 42,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260107_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-07",
+      "pages": 20,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "freight/20260107_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-01-07",
+      "pages": 31,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260107_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-07",
+      "pages": 13,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "lng/20260107_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-01-07",
+      "pages": 20,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260107_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "monthly",
+      "category": "products",
+      "date": "2026-01-07",
+      "pages": 6,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260107_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-07",
+      "pages": 27,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260107_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-07",
+      "pages": 3,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260108_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-08",
+      "pages": 24,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260108_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "products",
+      "date": "2026-01-08",
+      "pages": 16,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260108_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-08",
+      "pages": 17,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "crude/20260108_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-08",
+      "pages": 16,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "crude/20260108_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-08",
+      "pages": 39,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260108_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-08",
+      "pages": 22,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "freight/20260108_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-01-08",
+      "pages": 30,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260108_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-08",
+      "pages": 14,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "lng/20260108_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-01-08",
+      "pages": 22,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260108_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "special",
+      "category": "products",
+      "date": "2026-01-08",
+      "pages": 6,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260108_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-08",
+      "pages": 29,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260108_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-08",
+      "pages": 3,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260109_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-09",
+      "pages": 23,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260109_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-09",
+      "pages": 3,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260109_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-09",
+      "pages": 17,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "crude/20260109_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-09",
+      "pages": 20,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "crude/20260109_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-09",
+      "pages": 40,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260109_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-09",
+      "pages": 21,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "freight/20260109_Argus_freightspecial.pdf",
+      "source": "Argus",
+      "type": "special",
+      "category": "freight",
+      "date": "2026-01-09",
+      "pages": 14,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "freight/20260109_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-01-09",
+      "pages": 31,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260109_Argus_ici.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-09",
+      "pages": 2,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260109_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-09",
+      "pages": 14,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "lng/20260109_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-01-09",
+      "pages": 23,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260109_Argus_mck.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-09",
+      "pages": 2,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260109_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "annual",
+      "category": "products",
+      "date": "2026-01-09",
+      "pages": 6,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260109_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-09",
+      "pages": 29,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260109_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-09",
+      "pages": 3,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260112_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-12",
+      "pages": 21,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260112_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-12",
+      "pages": 3,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260112_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-12",
+      "pages": 17,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "crude/20260112_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-12",
+      "pages": 16,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "crude/20260112_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-12",
+      "pages": 43,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260112_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-12",
+      "pages": 22,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "freight/20260112_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-01-12",
+      "pages": 30,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260112_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-12",
+      "pages": 13,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "lng/20260112_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-01-12",
+      "pages": 19,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260112_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-12",
+      "pages": 6,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260112_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-12",
+      "pages": 29,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260112_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-12",
+      "pages": 3,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260113_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-13",
+      "pages": 20,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260113_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-13",
+      "pages": 3,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260113_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-13",
+      "pages": 16,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "crude/20260113_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-13",
+      "pages": 15,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "crude/20260113_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-13",
+      "pages": 40,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260113_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-13",
+      "pages": 21,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "freight/20260113_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-01-13",
+      "pages": 31,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260113_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-13",
+      "pages": 15,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "lng/20260113_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-01-13",
+      "pages": 20,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260113_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-13",
+      "pages": 6,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260113_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-13",
+      "pages": 27,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260113_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-13",
+      "pages": 3,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "lng/20260114_Argus_aggm.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-01-14",
+      "pages": 28,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260114_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-14",
+      "pages": 3,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260114_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-14",
+      "pages": 17,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "crude/20260114_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-14",
+      "pages": 17,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260114_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-01-14",
+      "pages": 21,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "lng/20260114_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-01-14",
+      "pages": 20,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "path": "products/20260114_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-01-14",
+      "pages": 6,
+      "importedAt": "2026-02-12T03:02:42.534Z"
+    },
+    {
+      "id": "cnpc-energy-handbook-2025",
+      "title": "CNPC ETRI Energy Statistical Review 2025",
+      "source": "CNPC ETRI",
+      "date": "2025-01-23",
+      "category": "knowledge",
+      "path": "knowledge/20250123_CNPC_Energy_Data_Handbook_2025.pdf",
+      "pages": 103,
+      "type": "annual",
+      "timeliness": "long-term",
+      "description": "中石油经研院能源数据手册，涵盖世界和中国能源消费/生产/贸易/价格/展望数据(2000-2024年实际+2060年预测)",
+      "importedAt": "2026-02-12T03:52:31.439Z"
+    },
+    {
+      "id": "cnpc-energy-handbook-2025-xlsx",
+      "title": "CNPC ETRI Energy Statistical Review 2025 (Excel)",
+      "source": "CNPC ETRI",
+      "date": "2025-01-23",
+      "category": "knowledge",
+      "path": "knowledge/20250123_CNPC_Energy_Data_Handbook_2025.xlsx",
+      "type": "annual",
+      "timeliness": "long-term",
+      "description": "中石油经研院能源数据手册Excel版，66个数据表",
+      "importedAt": "2026-02-12T03:54:12.860Z",
+      "linkedTo": "cnpc-energy-handbook-2025"
+    },
+    {
+      "path": "products/20260212_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-12",
+      "pages": 21,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "products/20260212_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-02-12",
+      "pages": 18,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "products/20260212_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-12",
+      "pages": 14,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "crude/20260212_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-12",
+      "pages": 16,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "crude/20260212_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-12",
+      "pages": 41,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "products/20260212_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-12",
+      "pages": 18,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "freight/20260212_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-02-12",
+      "pages": 31,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "products/20260212_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-12",
+      "pages": 16,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "lng/20260212_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-02-12",
+      "pages": 21,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "products/20260212_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "monthly",
+      "category": "products",
+      "date": "2026-02-12",
+      "pages": 6,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "products/20260212_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-12",
+      "pages": 28,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "products/20260212_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-02-12",
+      "pages": 3,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "products/20260213_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-13",
+      "pages": 20,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "products/20260213_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-02-13",
+      "pages": 2,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "products/20260213_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-13",
+      "pages": 15,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "crude/20260213_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-13",
+      "pages": 19,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "crude/20260213_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-13",
+      "pages": 40,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "products/20260213_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-13",
+      "pages": 22,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "freight/20260213_Argus_freightspecial.pdf",
+      "source": "Argus",
+      "type": "special",
+      "category": "freight",
+      "date": "2026-02-13",
+      "pages": 15,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "freight/20260213_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-02-13",
+      "pages": 31,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "products/20260213_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-13",
+      "pages": 13,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "lng/20260213_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-02-13",
+      "pages": 23,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "products/20260213_Argus_mck.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-13",
+      "pages": 2,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "products/20260213_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "monthly",
+      "category": "products",
+      "date": "2026-02-13",
+      "pages": 6,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "products/20260213_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-13",
+      "pages": 26,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "products/20260213_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-13",
+      "pages": 3,
+      "importedAt": "2026-02-14T19:01:25.368Z"
+    },
+    {
+      "path": "products/20260216_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-16",
+      "pages": 17,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "products/20260216_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-16",
+      "pages": 2,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "products/20260216_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-16",
+      "pages": 16,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "crude/20260216_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-16",
+      "pages": 16,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "crude/20260216_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-16",
+      "pages": 27,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "products/20260216_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-16",
+      "pages": 20,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "freight/20260216_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "freight",
+      "date": "2026-02-16",
+      "pages": 22,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "products/20260216_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-16",
+      "pages": 14,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "lng/20260216_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-02-16",
+      "pages": 20,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "products/20260216_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "special",
+      "category": "products",
+      "date": "2026-02-16",
+      "pages": 6,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "products/20260217_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-17",
+      "pages": 21,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "crude/20260217_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-17",
+      "pages": 15,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "crude/20260217_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-17",
+      "pages": 38,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "freight/20260217_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "freight",
+      "date": "2026-02-17",
+      "pages": 28,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "products/20260217_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-17",
+      "pages": 14,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "lng/20260217_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-02-17",
+      "pages": 18,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "products/20260217_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-02-17",
+      "pages": 28,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "products/20260217_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-17",
+      "pages": 3,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "products/20260218_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-18",
+      "pages": 21,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "crude/20260218_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-18",
+      "pages": 15,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "crude/20260218_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-18",
+      "pages": 36,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "products/20260218_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-18",
+      "pages": 18,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "freight/20260218_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "freight",
+      "date": "2026-02-18",
+      "pages": 28,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "products/20260218_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-18",
+      "pages": 12,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "lng/20260218_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-02-18",
+      "pages": 17,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "products/20260218_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-18",
+      "pages": 27,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "products/20260218_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-18",
+      "pages": 3,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "products/20260219_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-19",
+      "pages": 25,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "products/20260219_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-02-19",
+      "pages": 2,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "products/20260219_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-19",
+      "pages": 14,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "crude/20260219_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-19",
+      "pages": 15,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "crude/20260219_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-19",
+      "pages": 44,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "products/20260219_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-19",
+      "pages": 18,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "freight/20260219_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-02-19",
+      "pages": 31,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "products/20260219_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-19",
+      "pages": 14,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "lng/20260219_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-02-19",
+      "pages": 23,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "products/20260219_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "monthly",
+      "category": "products",
+      "date": "2026-02-19",
+      "pages": 6,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "products/20260219_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-02-19",
+      "pages": 32,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "path": "products/20260219_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-19",
+      "pages": 3,
+      "importedAt": "2026-02-20T03:29:42.811Z"
+    },
+    {
+      "id": "gs-oil-price-forecast-20260222",
+      "title": "Raising Our Price Forecast on Lower OECD Stocks",
+      "source": "Goldman Sachs",
+      "date": "2026-02-22",
+      "category": "sentiment",
+      "path": "crude/20260222_GS_Oil_Price_Forecast_Update.pdf",
+      "pages": 4,
+      "type": "special",
+      "timeliness": "quarterly",
+      "importedAt": "2026-02-23T02:17:04.937Z",
+      "summary": "GS上调2026Q4 Brent预测至$60（+$6），维持2.3mb/d过剩预期。OECD库存未累积，25%过剩体现为俄伊原油海上积压。风险：伊朗中断+$8，制裁放松-$5~8。"
+    },
+    {
+      "id": "citrini-2028-gic-202602",
+      "title": "THE 2028 GLOBAL INTELLIGENCE CRISIS",
+      "source": "CitriniResearch",
+      "date": "2026-02-22",
+      "category": "knowledge",
+      "path": "knowledge/20260222_CitriniResearch_2028_Global_Intelligence_Crisis.md",
+      "type": "special",
+      "timeliness": "medium-term",
+      "importedAt": "2026-02-23T02:59:55.214Z",
+      "url": "https://www.citriniresearch.com/p/2028gic",
+      "summary": "AI导致白领失业的情景分析：人类智能位移螺旋、私人信贷危机、抵押贷款风险、政策困境"
+    },
+    {
+      "path": "products/20260220_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-20",
+      "pages": 22,
+      "importedAt": "2026-02-23T10:21:22.009Z"
+    },
+    {
+      "path": "products/20260220_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-02-20",
+      "pages": 2,
+      "importedAt": "2026-02-23T10:21:22.009Z"
+    },
+    {
+      "path": "products/20260220_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-20",
+      "pages": 16,
+      "importedAt": "2026-02-23T10:21:22.009Z"
+    },
+    {
+      "path": "crude/20260220_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-20",
+      "pages": 20,
+      "importedAt": "2026-02-23T10:21:22.009Z"
+    },
+    {
+      "path": "crude/20260220_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-20",
+      "pages": 39,
+      "importedAt": "2026-02-23T10:21:22.009Z"
+    },
+    {
+      "path": "products/20260220_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-20",
+      "pages": 21,
+      "importedAt": "2026-02-23T10:21:22.009Z"
+    },
+    {
+      "path": "freight/20260220_Argus_freightspecial.pdf",
+      "source": "Argus",
+      "type": "special",
+      "category": "freight",
+      "date": "2026-02-20",
+      "pages": 14,
+      "importedAt": "2026-02-23T10:21:22.009Z"
+    },
+    {
+      "path": "freight/20260220_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-02-20",
+      "pages": 31,
+      "importedAt": "2026-02-23T10:21:22.009Z"
+    },
+    {
+      "path": "products/20260220_Argus_ici.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-20",
+      "pages": 2,
+      "importedAt": "2026-02-23T10:21:22.009Z"
+    },
+    {
+      "path": "products/20260220_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-20",
+      "pages": 13,
+      "importedAt": "2026-02-23T10:21:22.009Z"
+    },
+    {
+      "path": "lng/20260220_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-02-20",
+      "pages": 23,
+      "importedAt": "2026-02-23T10:21:22.009Z"
+    },
+    {
+      "path": "products/20260220_Argus_mck.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-20",
+      "pages": 2,
+      "importedAt": "2026-02-23T10:21:22.009Z"
+    },
+    {
+      "path": "products/20260220_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "monthly",
+      "category": "products",
+      "date": "2026-02-20",
+      "pages": 6,
+      "importedAt": "2026-02-23T10:21:22.009Z"
+    },
+    {
+      "path": "products/20260220_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-20",
+      "pages": 27,
+      "importedAt": "2026-02-23T10:21:22.009Z"
+    },
+    {
+      "path": "products/20260220_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-02-20",
+      "pages": 3,
+      "importedAt": "2026-02-23T10:21:22.009Z"
+    },
+    {
+      "id": "ea-oil-quant-weekly-20260223",
+      "title": "Oil Quant Weekly",
+      "source": "Energy Aspects",
+      "date": "2026-02-23",
+      "category": "sentiment",
+      "path": "sentiment/20260223_EnergyAspects_Oil_Quant_Weekly.pdf",
+      "pages": 5,
+      "type": "weekly",
+      "timeliness": "weekly",
+      "importedAt": "2026-02-24T01:49:12.192Z",
+      "summary": "CTA持仓82%多头，均值翻转距离$6；Brent看涨期权增6万手；M2-M3多头1.45万手@$0.55；WTI需跌破$63.50触发卖盘"
+    },
+    {
+      "path": "products/20260223_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-23",
+      "pages": 19,
+      "importedAt": "2026-02-25T10:12:37.541Z"
+    },
+    {
+      "path": "crude/20260223_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-23",
+      "pages": 15,
+      "importedAt": "2026-02-25T10:12:37.541Z"
+    },
+    {
+      "path": "crude/20260223_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-23",
+      "pages": 41,
+      "importedAt": "2026-02-25T10:12:37.541Z"
+    },
+    {
+      "path": "freight/20260223_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-02-23",
+      "pages": 30,
+      "importedAt": "2026-02-25T10:12:37.541Z"
+    },
+    {
+      "path": "products/20260223_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-23",
+      "pages": 14,
+      "importedAt": "2026-02-25T10:12:37.541Z"
+    },
+    {
+      "path": "products/20260223_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-23",
+      "pages": 23,
+      "importedAt": "2026-02-25T10:12:37.541Z"
+    },
+    {
+      "path": "products/20260223_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-23",
+      "pages": 3,
+      "importedAt": "2026-02-25T10:12:37.541Z"
+    },
+    {
+      "path": "products/20260224_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-24",
+      "pages": 19,
+      "importedAt": "2026-02-25T10:12:37.541Z"
+    },
+    {
+      "path": "products/20260224_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-02-24",
+      "pages": 2,
+      "importedAt": "2026-02-25T10:12:37.541Z"
+    },
+    {
+      "path": "products/20260224_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-24",
+      "pages": 16,
+      "importedAt": "2026-02-25T10:12:37.541Z"
+    },
+    {
+      "path": "crude/20260224_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-24",
+      "pages": 17,
+      "importedAt": "2026-02-25T10:12:37.541Z"
+    },
+    {
+      "path": "crude/20260224_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-24",
+      "pages": 42,
+      "importedAt": "2026-02-25T10:12:37.541Z"
+    },
+    {
+      "path": "products/20260224_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-24",
+      "pages": 18,
+      "importedAt": "2026-02-25T10:12:37.541Z"
+    },
+    {
+      "path": "freight/20260224_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-02-24",
+      "pages": 30,
+      "importedAt": "2026-02-25T10:12:37.541Z"
+    },
+    {
+      "path": "products/20260224_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-24",
+      "pages": 13,
+      "importedAt": "2026-02-25T10:12:37.541Z"
+    },
+    {
+      "path": "lng/20260224_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-02-24",
+      "pages": 20,
+      "importedAt": "2026-02-25T10:12:37.541Z"
+    },
+    {
+      "path": "products/20260224_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-24",
+      "pages": 6,
+      "importedAt": "2026-02-25T10:12:37.541Z"
+    },
+    {
+      "path": "products/20260224_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-02-24",
+      "pages": 27,
+      "importedAt": "2026-02-25T10:12:37.541Z"
+    },
+    {
+      "path": "products/20260224_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-24",
+      "pages": 3,
+      "importedAt": "2026-02-25T10:12:37.541Z"
+    },
+    {
+      "path": "products/20260223_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-02-23",
+      "pages": 2,
+      "importedAt": "2026-02-25T10:15:40.000Z"
+    },
+    {
+      "path": "products/20260223_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-23",
+      "pages": 16,
+      "importedAt": "2026-02-25T10:15:40.000Z"
+    },
+    {
+      "path": "products/20260223_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-23",
+      "pages": 22,
+      "importedAt": "2026-02-25T10:15:40.000Z"
+    },
+    {
+      "path": "lng/20260223_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-02-23",
+      "pages": 19,
+      "importedAt": "2026-02-25T10:15:40.000Z"
+    },
+    {
+      "path": "products/20260223_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "monthly",
+      "category": "products",
+      "date": "2026-02-23",
+      "pages": 6,
+      "importedAt": "2026-02-25T10:15:40.000Z"
+    },
+    {
+      "path": "lng/20260225_Argus_aggm.pdf",
+      "source": "Argus",
+      "type": "annual",
+      "category": "lng",
+      "date": "2026-02-25",
+      "pages": 28,
+      "importedAt": "2026-02-27T06:54:28.621Z"
+    },
+    {
+      "path": "products/20260225_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-25",
+      "pages": 19,
+      "importedAt": "2026-02-27T06:54:28.621Z"
+    },
+    {
+      "path": "products/20260225_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-02-25",
+      "pages": 2,
+      "importedAt": "2026-02-27T06:54:28.621Z"
+    },
+    {
+      "path": "products/20260225_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-25",
+      "pages": 15,
+      "importedAt": "2026-02-27T06:54:28.621Z"
+    },
+    {
+      "path": "crude/20260225_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-25",
+      "pages": 15,
+      "importedAt": "2026-02-27T06:54:28.621Z"
+    },
+    {
+      "path": "crude/20260225_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-25",
+      "pages": 41,
+      "importedAt": "2026-02-27T06:54:28.621Z"
+    },
+    {
+      "path": "products/20260225_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-25",
+      "pages": 22,
+      "importedAt": "2026-02-27T06:54:28.621Z"
+    },
+    {
+      "path": "freight/20260225_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-02-25",
+      "pages": 31,
+      "importedAt": "2026-02-27T06:54:28.621Z"
+    },
+    {
+      "path": "products/20260225_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-25",
+      "pages": 16,
+      "importedAt": "2026-02-27T06:54:28.621Z"
+    },
+    {
+      "path": "lng/20260225_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-02-25",
+      "pages": 19,
+      "importedAt": "2026-02-27T06:54:28.621Z"
+    },
+    {
+      "path": "products/20260225_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-02-25",
+      "pages": 6,
+      "importedAt": "2026-02-27T06:54:28.621Z"
+    },
+    {
+      "path": "products/20260225_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-02-25",
+      "pages": 30,
+      "importedAt": "2026-02-27T06:54:28.621Z"
+    },
+    {
+      "path": "products/20260225_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-25",
+      "pages": 3,
+      "importedAt": "2026-02-27T06:54:28.621Z"
+    },
+    {
+      "path": "products/20260226_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-26",
+      "pages": 20,
+      "importedAt": "2026-02-27T06:54:28.621Z"
+    },
+    {
+      "path": "products/20260226_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "products",
+      "date": "2026-02-26",
+      "pages": 17,
+      "importedAt": "2026-02-27T06:54:28.621Z"
+    },
+    {
+      "path": "products/20260226_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-26",
+      "pages": 15,
+      "importedAt": "2026-02-27T06:54:28.621Z"
+    },
+    {
+      "path": "crude/20260226_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-26",
+      "pages": 15,
+      "importedAt": "2026-02-27T06:54:28.621Z"
+    },
+    {
+      "path": "crude/20260226_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-26",
+      "pages": 41,
+      "importedAt": "2026-02-27T06:54:28.621Z"
+    },
+    {
+      "path": "products/20260226_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-26",
+      "pages": 19,
+      "importedAt": "2026-02-27T06:54:28.621Z"
+    },
+    {
+      "path": "freight/20260226_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-02-26",
+      "pages": 31,
+      "importedAt": "2026-02-27T06:54:28.621Z"
+    },
+    {
+      "path": "products/20260226_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-26",
+      "pages": 16,
+      "importedAt": "2026-02-27T06:54:28.621Z"
+    },
+    {
+      "path": "lng/20260226_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-02-26",
+      "pages": 23,
+      "importedAt": "2026-02-27T06:54:28.621Z"
+    },
+    {
+      "path": "products/20260226_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-02-26",
+      "pages": 6,
+      "importedAt": "2026-02-27T06:54:28.621Z"
+    },
+    {
+      "path": "products/20260226_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "products",
+      "date": "2026-02-26",
+      "pages": 25,
+      "importedAt": "2026-02-27T06:54:28.621Z"
+    },
+    {
+      "path": "products/20260226_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-26",
+      "pages": 3,
+      "importedAt": "2026-02-27T06:54:28.621Z"
+    },
+    {
+      "path": "derivatives/20260227_Argus_acedb.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "derivatives",
+      "date": "2026-02-27",
+      "pages": 1,
+      "importedAt": "2026-03-02T02:27:26.809Z"
+    },
+    {
+      "path": "products/20260227_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-27",
+      "pages": 22,
+      "importedAt": "2026-03-02T02:27:26.809Z"
+    },
+    {
+      "path": "products/20260227_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-02-27",
+      "pages": 2,
+      "importedAt": "2026-03-02T02:27:26.809Z"
+    },
+    {
+      "path": "products/20260227_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-27",
+      "pages": 16,
+      "importedAt": "2026-03-02T02:27:26.809Z"
+    },
+    {
+      "path": "crude/20260227_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-27",
+      "pages": 18,
+      "importedAt": "2026-03-02T02:27:26.809Z"
+    },
+    {
+      "path": "crude/20260227_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-02-27",
+      "pages": 42,
+      "importedAt": "2026-03-02T02:27:26.809Z"
+    },
+    {
+      "path": "products/20260227_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-27",
+      "pages": 21,
+      "importedAt": "2026-03-02T02:27:26.809Z"
+    },
+    {
+      "path": "freight/20260227_Argus_freightspecial.pdf",
+      "source": "Argus",
+      "type": "special",
+      "category": "freight",
+      "date": "2026-02-27",
+      "pages": 13,
+      "importedAt": "2026-03-02T02:27:26.809Z"
+    },
+    {
+      "path": "freight/20260227_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-02-27",
+      "pages": 30,
+      "importedAt": "2026-03-02T02:27:26.809Z"
+    },
+    {
+      "path": "products/20260227_Argus_ici.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-27",
+      "pages": 2,
+      "importedAt": "2026-03-02T02:27:26.809Z"
+    },
+    {
+      "path": "products/20260227_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-27",
+      "pages": 15,
+      "importedAt": "2026-03-02T02:27:26.809Z"
+    },
+    {
+      "path": "lng/20260227_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-02-27",
+      "pages": 23,
+      "importedAt": "2026-03-02T02:27:26.809Z"
+    },
+    {
+      "path": "products/20260227_Argus_mck.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-27",
+      "pages": 2,
+      "importedAt": "2026-03-02T02:27:26.809Z"
+    },
+    {
+      "path": "products/20260227_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-27",
+      "pages": 6,
+      "importedAt": "2026-03-02T02:27:26.809Z"
+    },
+    {
+      "path": "products/20260227_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "monthly",
+      "category": "products",
+      "date": "2026-02-27",
+      "pages": 29,
+      "importedAt": "2026-03-02T02:27:26.809Z"
+    },
+    {
+      "path": "products/20260227_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-02-27",
+      "pages": 3,
+      "importedAt": "2026-03-02T02:27:26.809Z"
+    },
+    {
+      "path": "products/20260302_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-02",
+      "pages": 29,
+      "importedAt": "2026-03-03T06:29:33.797Z"
+    },
+    {
+      "path": "products/20260302_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-03-02",
+      "pages": 2,
+      "importedAt": "2026-03-03T06:29:33.797Z"
+    },
+    {
+      "path": "products/20260302_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-02",
+      "pages": 24,
+      "importedAt": "2026-03-03T06:29:33.797Z"
+    },
+    {
+      "path": "crude/20260302_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-03-02",
+      "pages": 17,
+      "importedAt": "2026-03-03T06:29:33.797Z"
+    },
+    {
+      "path": "crude/20260302_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-03-02",
+      "pages": 53,
+      "importedAt": "2026-03-03T06:29:33.797Z"
+    },
+    {
+      "path": "products/20260302_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-02",
+      "pages": 22,
+      "importedAt": "2026-03-03T06:29:33.797Z"
+    },
+    {
+      "path": "freight/20260302_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-03-02",
+      "pages": 31,
+      "importedAt": "2026-03-03T06:29:33.797Z"
+    },
+    {
+      "path": "products/20260302_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-02",
+      "pages": 14,
+      "importedAt": "2026-03-03T06:29:33.797Z"
+    },
+    {
+      "path": "lng/20260302_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-03-02",
+      "pages": 27,
+      "importedAt": "2026-03-03T06:29:33.797Z"
+    },
+    {
+      "path": "products/20260302_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "monthly",
+      "category": "products",
+      "date": "2026-03-02",
+      "pages": 6,
+      "importedAt": "2026-03-03T06:29:33.797Z"
+    },
+    {
+      "path": "products/20260302_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "monthly",
+      "category": "products",
+      "date": "2026-03-02",
+      "pages": 26,
+      "importedAt": "2026-03-03T06:29:33.797Z"
+    },
+    {
+      "path": "products/20260302_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-02",
+      "pages": 3,
+      "importedAt": "2026-03-03T06:29:33.797Z"
+    },
+    {
+      "path": "products/20260303_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-03",
+      "pages": 25,
+      "importedAt": "2026-03-05T07:18:05.637Z"
+    },
+    {
+      "path": "products/20260303_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-03",
+      "pages": 16,
+      "importedAt": "2026-03-05T07:18:05.637Z"
+    },
+    {
+      "path": "crude/20260303_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-03-03",
+      "pages": 16,
+      "importedAt": "2026-03-05T07:18:05.637Z"
+    },
+    {
+      "path": "crude/20260303_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-03-03",
+      "pages": 48,
+      "importedAt": "2026-03-05T07:18:05.637Z"
+    },
+    {
+      "path": "products/20260303_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-03",
+      "pages": 23,
+      "importedAt": "2026-03-05T07:18:05.637Z"
+    },
+    {
+      "path": "freight/20260303_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "freight",
+      "date": "2026-03-03",
+      "pages": 32,
+      "importedAt": "2026-03-05T07:18:05.637Z"
+    },
+    {
+      "path": "products/20260303_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-03",
+      "pages": 15,
+      "importedAt": "2026-03-05T07:18:05.637Z"
+    },
+    {
+      "path": "lng/20260303_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-03-03",
+      "pages": 29,
+      "importedAt": "2026-03-05T07:18:05.637Z"
+    },
+    {
+      "path": "products/20260303_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-03-03",
+      "pages": 6,
+      "importedAt": "2026-03-05T07:18:05.637Z"
+    },
+    {
+      "path": "products/20260303_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-03-03",
+      "pages": 29,
+      "importedAt": "2026-03-05T07:18:05.637Z"
+    },
+    {
+      "path": "products/20260303_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-03",
+      "pages": 3,
+      "importedAt": "2026-03-05T07:18:05.637Z"
+    },
+    {
+      "path": "products/20260304_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-04",
+      "pages": 27,
+      "importedAt": "2026-03-06T02:10:28.703Z"
+    },
+    {
+      "path": "products/20260304_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-03-04",
+      "pages": 2,
+      "importedAt": "2026-03-06T02:10:28.703Z"
+    },
+    {
+      "path": "products/20260304_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-04",
+      "pages": 20,
+      "importedAt": "2026-03-06T02:10:28.703Z"
+    },
+    {
+      "path": "crude/20260304_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-03-04",
+      "pages": 17,
+      "importedAt": "2026-03-06T02:10:28.703Z"
+    },
+    {
+      "path": "crude/20260304_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-03-04",
+      "pages": 47,
+      "importedAt": "2026-03-06T02:10:28.703Z"
+    },
+    {
+      "path": "products/20260304_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-04",
+      "pages": 22,
+      "importedAt": "2026-03-06T02:10:28.703Z"
+    },
+    {
+      "path": "freight/20260304_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-03-04",
+      "pages": 33,
+      "importedAt": "2026-03-06T02:10:28.703Z"
+    },
+    {
+      "path": "products/20260304_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-04",
+      "pages": 16,
+      "importedAt": "2026-03-06T02:10:28.703Z"
+    },
+    {
+      "path": "lng/20260304_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-03-04",
+      "pages": 29,
+      "importedAt": "2026-03-06T02:10:28.703Z"
+    },
+    {
+      "path": "products/20260304_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "monthly",
+      "category": "products",
+      "date": "2026-03-04",
+      "pages": 6,
+      "importedAt": "2026-03-06T02:10:28.703Z"
+    },
+    {
+      "path": "products/20260304_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "products",
+      "date": "2026-03-04",
+      "pages": 29,
+      "importedAt": "2026-03-06T02:10:28.703Z"
+    },
+    {
+      "path": "products/20260304_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-04",
+      "pages": 3,
+      "importedAt": "2026-03-06T02:10:28.703Z"
+    },
+    {
+      "path": "products/20260305_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-05",
+      "pages": 29,
+      "importedAt": "2026-03-06T02:10:28.703Z"
+    },
+    {
+      "path": "products/20260305_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "monthly",
+      "category": "products",
+      "date": "2026-03-05",
+      "pages": 20,
+      "importedAt": "2026-03-06T02:10:28.703Z"
+    },
+    {
+      "path": "products/20260305_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-05",
+      "pages": 19,
+      "importedAt": "2026-03-06T02:10:28.703Z"
+    },
+    {
+      "path": "crude/20260305_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-03-05",
+      "pages": 19,
+      "importedAt": "2026-03-06T02:10:28.703Z"
+    },
+    {
+      "path": "products/20260305_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-05",
+      "pages": 20,
+      "importedAt": "2026-03-06T02:10:28.703Z"
+    },
+    {
+      "path": "freight/20260305_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-03-05",
+      "pages": 31,
+      "importedAt": "2026-03-06T02:10:28.703Z"
+    },
+    {
+      "path": "products/20260305_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-05",
+      "pages": 16,
+      "importedAt": "2026-03-06T02:10:28.703Z"
+    },
+    {
+      "path": "lng/20260305_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-03-05",
+      "pages": 27,
+      "importedAt": "2026-03-06T02:10:28.703Z"
+    },
+    {
+      "path": "products/20260305_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "monthly",
+      "category": "products",
+      "date": "2026-03-05",
+      "pages": 6,
+      "importedAt": "2026-03-06T02:10:28.703Z"
+    },
+    {
+      "path": "products/20260305_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "products",
+      "date": "2026-03-05",
+      "pages": 28,
+      "importedAt": "2026-03-06T02:10:28.703Z"
+    },
+    {
+      "path": "products/20260305_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-05",
+      "pages": 3,
+      "importedAt": "2026-03-06T02:10:28.703Z"
+    },
+    {
+      "id": "goldman_sachs_iran_energy_risks_2026-03-01",
+      "title": "Goldman Sachs Iran Energy Risks 2026-03-01",
+      "source": "Goldman Sachs",
+      "date": "2026-01-01",
+      "category": "Goldman_Sachs_Iran_Energy_Risks_2026-03-01.pdf",
+      "path": "Goldman_Sachs_Iran_Energy_Risks_2026-03-01.pdf",
+      "pages": 0,
+      "type": "report"
+    },
+    {
+      "id": "crude-20260121_argus_crd",
+      "title": "Argus crd",
+      "source": "Argus",
+      "date": "2026-01-21",
+      "category": "crude",
+      "path": "crude/20260121_Argus_crd.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "crude-20260122_argus_cdi",
+      "title": "Argus cdi",
+      "source": "Argus",
+      "date": "2026-01-22",
+      "category": "crude",
+      "path": "crude/20260122_Argus_cdi.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "crude-20260122_argus_crd",
+      "title": "Argus crd",
+      "source": "Argus",
+      "date": "2026-01-22",
+      "category": "crude",
+      "path": "crude/20260122_Argus_crd.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "crude-20260123_argus_cdi",
+      "title": "Argus cdi",
+      "source": "Argus",
+      "date": "2026-01-23",
+      "category": "crude",
+      "path": "crude/20260123_Argus_cdi.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "crude-20260126_argus_cdi",
+      "title": "Argus cdi",
+      "source": "Argus",
+      "date": "2026-01-26",
+      "category": "crude",
+      "path": "crude/20260126_Argus_cdi.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "crude-20260126_argus_crd",
+      "title": "Argus crd",
+      "source": "Argus",
+      "date": "2026-01-26",
+      "category": "crude",
+      "path": "crude/20260126_Argus_crd.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "crude-20260127_argus_cdi",
+      "title": "Argus cdi",
+      "source": "Argus",
+      "date": "2026-01-27",
+      "category": "crude",
+      "path": "crude/20260127_Argus_cdi.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "crude-20260127_argus_crd",
+      "title": "Argus crd",
+      "source": "Argus",
+      "date": "2026-01-27",
+      "category": "crude",
+      "path": "crude/20260127_Argus_crd.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "crude-20260128_argus_cdi",
+      "title": "Argus cdi",
+      "source": "Argus",
+      "date": "2026-01-28",
+      "category": "crude",
+      "path": "crude/20260128_Argus_cdi.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "crude-20260128_argus_crd",
+      "title": "Argus crd",
+      "source": "Argus",
+      "date": "2026-01-28",
+      "category": "crude",
+      "path": "crude/20260128_Argus_crd.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "crude-20260129_argus_cdi",
+      "title": "Argus cdi",
+      "source": "Argus",
+      "date": "2026-01-29",
+      "category": "crude",
+      "path": "crude/20260129_Argus_cdi.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "crude-20260129_argus_crd",
+      "title": "Argus crd",
+      "source": "Argus",
+      "date": "2026-01-29",
+      "category": "crude",
+      "path": "crude/20260129_Argus_crd.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "crude-20260130_argus_cdi",
+      "title": "Argus cdi",
+      "source": "Argus",
+      "date": "2026-01-30",
+      "category": "crude",
+      "path": "crude/20260130_Argus_cdi.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "crude-20260130_argus_crd",
+      "title": "Argus crd",
+      "source": "Argus",
+      "date": "2026-01-30",
+      "category": "crude",
+      "path": "crude/20260130_Argus_crd.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "crude-20260202_argus_cdi",
+      "title": "Argus cdi",
+      "source": "Argus",
+      "date": "2026-02-02",
+      "category": "crude",
+      "path": "crude/20260202_Argus_cdi.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "crude-20260202_argus_crd",
+      "title": "Argus crd",
+      "source": "Argus",
+      "date": "2026-02-02",
+      "category": "crude",
+      "path": "crude/20260202_Argus_crd.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "crude-20260203_argus_cdi",
+      "title": "Argus cdi",
+      "source": "Argus",
+      "date": "2026-02-03",
+      "category": "crude",
+      "path": "crude/20260203_Argus_cdi.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "crude-20260203_argus_crd",
+      "title": "Argus crd",
+      "source": "Argus",
+      "date": "2026-02-03",
+      "category": "crude",
+      "path": "crude/20260203_Argus_crd.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "crude-20260204_argus_cdi",
+      "title": "Argus cdi",
+      "source": "Argus",
+      "date": "2026-02-04",
+      "category": "crude",
+      "path": "crude/20260204_Argus_cdi.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "crude-20260204_argus_crd",
+      "title": "Argus crd",
+      "source": "Argus",
+      "date": "2026-02-04",
+      "category": "crude",
+      "path": "crude/20260204_Argus_crd.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "crude-20260205_argus_cdi",
+      "title": "Argus cdi",
+      "source": "Argus",
+      "date": "2026-02-05",
+      "category": "crude",
+      "path": "crude/20260205_Argus_cdi.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "crude-20260205_argus_crd",
+      "title": "Argus crd",
+      "source": "Argus",
+      "date": "2026-02-05",
+      "category": "crude",
+      "path": "crude/20260205_Argus_crd.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "crude-20260206_argus_cdi",
+      "title": "Argus cdi",
+      "source": "Argus",
+      "date": "2026-02-06",
+      "category": "crude",
+      "path": "crude/20260206_Argus_cdi.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "crude-20260206_argus_crd",
+      "title": "Argus crd",
+      "source": "Argus",
+      "date": "2026-02-06",
+      "category": "crude",
+      "path": "crude/20260206_Argus_crd.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "derivatives-20260130_argus_acedb",
+      "title": "Argus acedb",
+      "source": "Argus",
+      "date": "2026-01-30",
+      "category": "derivatives",
+      "path": "derivatives/20260130_Argus_acedb.pdf",
+      "pages": 0,
+      "type": "report"
+    },
+    {
+      "id": "freight-20260121_argus_freighttanker",
+      "title": "Argus freighttanker",
+      "source": "Argus",
+      "date": "2026-01-21",
+      "category": "freight",
+      "path": "freight/20260121_Argus_freighttanker.pdf",
+      "pages": 0,
+      "type": "weekly"
+    },
+    {
+      "id": "freight-20260122_argus_freighttanker",
+      "title": "Argus freighttanker",
+      "source": "Argus",
+      "date": "2026-01-22",
+      "category": "freight",
+      "path": "freight/20260122_Argus_freighttanker.pdf",
+      "pages": 0,
+      "type": "weekly"
+    },
+    {
+      "id": "freight-20260123_argus_freightspecial",
+      "title": "Argus freightspecial",
+      "source": "Argus",
+      "date": "2026-01-23",
+      "category": "freight",
+      "path": "freight/20260123_Argus_freightspecial.pdf",
+      "pages": 0,
+      "type": "weekly"
+    },
+    {
+      "id": "freight-20260123_argus_freighttanker",
+      "title": "Argus freighttanker",
+      "source": "Argus",
+      "date": "2026-01-23",
+      "category": "freight",
+      "path": "freight/20260123_Argus_freighttanker.pdf",
+      "pages": 0,
+      "type": "weekly"
+    },
+    {
+      "id": "freight-20260126_argus_freighttanker",
+      "title": "Argus freighttanker",
+      "source": "Argus",
+      "date": "2026-01-26",
+      "category": "freight",
+      "path": "freight/20260126_Argus_freighttanker.pdf",
+      "pages": 0,
+      "type": "weekly"
+    },
+    {
+      "id": "freight-20260127_argus_freighttanker",
+      "title": "Argus freighttanker",
+      "source": "Argus",
+      "date": "2026-01-27",
+      "category": "freight",
+      "path": "freight/20260127_Argus_freighttanker.pdf",
+      "pages": 0,
+      "type": "weekly"
+    },
+    {
+      "id": "freight-20260128_argus_freighttanker",
+      "title": "Argus freighttanker",
+      "source": "Argus",
+      "date": "2026-01-28",
+      "category": "freight",
+      "path": "freight/20260128_Argus_freighttanker.pdf",
+      "pages": 0,
+      "type": "weekly"
+    },
+    {
+      "id": "freight-20260129_argus_freighttanker",
+      "title": "Argus freighttanker",
+      "source": "Argus",
+      "date": "2026-01-29",
+      "category": "freight",
+      "path": "freight/20260129_Argus_freighttanker.pdf",
+      "pages": 0,
+      "type": "weekly"
+    },
+    {
+      "id": "freight-20260130_argus_freightspecial",
+      "title": "Argus freightspecial",
+      "source": "Argus",
+      "date": "2026-01-30",
+      "category": "freight",
+      "path": "freight/20260130_Argus_freightspecial.pdf",
+      "pages": 0,
+      "type": "weekly"
+    },
+    {
+      "id": "freight-20260130_argus_freighttanker",
+      "title": "Argus freighttanker",
+      "source": "Argus",
+      "date": "2026-01-30",
+      "category": "freight",
+      "path": "freight/20260130_Argus_freighttanker.pdf",
+      "pages": 0,
+      "type": "weekly"
+    },
+    {
+      "id": "freight-20260202_argus_freighttanker",
+      "title": "Argus freighttanker",
+      "source": "Argus",
+      "date": "2026-02-02",
+      "category": "freight",
+      "path": "freight/20260202_Argus_freighttanker.pdf",
+      "pages": 0,
+      "type": "weekly"
+    },
+    {
+      "id": "freight-20260203_argus_freighttanker",
+      "title": "Argus freighttanker",
+      "source": "Argus",
+      "date": "2026-02-03",
+      "category": "freight",
+      "path": "freight/20260203_Argus_freighttanker.pdf",
+      "pages": 0,
+      "type": "weekly"
+    },
+    {
+      "id": "freight-20260204_argus_freighttanker",
+      "title": "Argus freighttanker",
+      "source": "Argus",
+      "date": "2026-02-04",
+      "category": "freight",
+      "path": "freight/20260204_Argus_freighttanker.pdf",
+      "pages": 0,
+      "type": "weekly"
+    },
+    {
+      "id": "freight-20260205_argus_freighttanker",
+      "title": "Argus freighttanker",
+      "source": "Argus",
+      "date": "2026-02-05",
+      "category": "freight",
+      "path": "freight/20260205_Argus_freighttanker.pdf",
+      "pages": 0,
+      "type": "weekly"
+    },
+    {
+      "id": "freight-20260206_argus_freightspecial",
+      "title": "Argus freightspecial",
+      "source": "Argus",
+      "date": "2026-02-06",
+      "category": "freight",
+      "path": "freight/20260206_Argus_freightspecial.pdf",
+      "pages": 0,
+      "type": "weekly"
+    },
+    {
+      "id": "freight-20260206_argus_freighttanker",
+      "title": "Argus freighttanker",
+      "source": "Argus",
+      "date": "2026-02-06",
+      "category": "freight",
+      "path": "freight/20260206_Argus_freighttanker.pdf",
+      "pages": 0,
+      "type": "weekly"
+    },
+    {
+      "id": "knowledge-20260113_cnpc_------2026",
+      "title": "CNPC 能源数据手册2026",
+      "source": "CNPC",
+      "date": "2026-01-13",
+      "category": "knowledge",
+      "path": "knowledge/20260113_CNPC_能源数据手册2026.pdf",
+      "pages": 0,
+      "type": "report"
+    },
+    {
+      "id": "knowledge-20260209_energyintel_vitol_peak_oil_commentary",
+      "title": "EnergyIntel Vitol Peak Oil Commentary",
+      "source": "Vitol",
+      "date": "2026-02-09",
+      "category": "knowledge",
+      "path": "knowledge/20260209_EnergyIntel_Vitol_Peak_Oil_Commentary.pdf",
+      "pages": 0,
+      "type": "report"
+    },
+    {
+      "id": "lng-20260122_argus_lngd",
+      "title": "Argus lngd",
+      "source": "Argus",
+      "date": "2026-01-22",
+      "category": "lng",
+      "path": "lng/20260122_Argus_lngd.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "lng-20260123_argus_lngd",
+      "title": "Argus lngd",
+      "source": "Argus",
+      "date": "2026-01-23",
+      "category": "lng",
+      "path": "lng/20260123_Argus_lngd.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "lng-20260126_argus_lngd",
+      "title": "Argus lngd",
+      "source": "Argus",
+      "date": "2026-01-26",
+      "category": "lng",
+      "path": "lng/20260126_Argus_lngd.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "lng-20260127_argus_lngd",
+      "title": "Argus lngd",
+      "source": "Argus",
+      "date": "2026-01-27",
+      "category": "lng",
+      "path": "lng/20260127_Argus_lngd.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "lng-20260128_argus_aggm",
+      "title": "Argus aggm",
+      "source": "Argus",
+      "date": "2026-01-28",
+      "category": "lng",
+      "path": "lng/20260128_Argus_aggm.pdf",
+      "pages": 0,
+      "type": "report"
+    },
+    {
+      "id": "lng-20260128_argus_lngd",
+      "title": "Argus lngd",
+      "source": "Argus",
+      "date": "2026-01-28",
+      "category": "lng",
+      "path": "lng/20260128_Argus_lngd.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "lng-20260129_argus_lngd",
+      "title": "Argus lngd",
+      "source": "Argus",
+      "date": "2026-01-29",
+      "category": "lng",
+      "path": "lng/20260129_Argus_lngd.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "lng-20260130_argus_lngd",
+      "title": "Argus lngd",
+      "source": "Argus",
+      "date": "2026-01-30",
+      "category": "lng",
+      "path": "lng/20260130_Argus_lngd.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "lng-20260202_argus_lngd",
+      "title": "Argus lngd",
+      "source": "Argus",
+      "date": "2026-02-02",
+      "category": "lng",
+      "path": "lng/20260202_Argus_lngd.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "lng-20260203_argus_lngd",
+      "title": "Argus lngd",
+      "source": "Argus",
+      "date": "2026-02-03",
+      "category": "lng",
+      "path": "lng/20260203_Argus_lngd.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "lng-20260204_argus_lngd",
+      "title": "Argus lngd",
+      "source": "Argus",
+      "date": "2026-02-04",
+      "category": "lng",
+      "path": "lng/20260204_Argus_lngd.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "lng-20260205_argus_lngd",
+      "title": "Argus lngd",
+      "source": "Argus",
+      "date": "2026-02-05",
+      "category": "lng",
+      "path": "lng/20260205_Argus_lngd.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "lng-20260206_argus_lngd",
+      "title": "Argus lngd",
+      "source": "Argus",
+      "date": "2026-02-06",
+      "category": "lng",
+      "path": "lng/20260206_Argus_lngd.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "market-20260201_citi_supply_chain_financing_2026",
+      "title": "Citi Supply Chain Financing 2026",
+      "source": "Citi",
+      "date": "2026-02-01",
+      "category": "market",
+      "path": "market/20260201_Citi_Supply_Chain_Financing_2026.pdf",
+      "pages": 0,
+      "type": "report"
+    },
+    {
+      "id": "products-20260121_argus_jet",
+      "title": "Argus jet",
+      "source": "Argus",
+      "date": "2026-01-21",
+      "category": "products",
+      "path": "products/20260121_Argus_jet.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260121_argus_usp",
+      "title": "Argus usp",
+      "source": "Argus",
+      "date": "2026-01-21",
+      "category": "products",
+      "path": "products/20260121_Argus_usp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260121_argus_wcp",
+      "title": "Argus wcp",
+      "source": "Argus",
+      "date": "2026-01-21",
+      "category": "products",
+      "path": "products/20260121_Argus_wcp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260122_argus_amarinef",
+      "title": "Argus amarinef",
+      "source": "Argus",
+      "date": "2026-01-22",
+      "category": "products",
+      "path": "products/20260122_Argus_amarinef.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260122_argus_amgio",
+      "title": "Argus amgio",
+      "source": "Argus",
+      "date": "2026-01-22",
+      "category": "products",
+      "path": "products/20260122_Argus_amgio.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260122_argus_app",
+      "title": "Argus app",
+      "source": "Argus",
+      "date": "2026-01-22",
+      "category": "products",
+      "path": "products/20260122_Argus_app.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260122_argus_epr",
+      "title": "Argus epr",
+      "source": "Argus",
+      "date": "2026-01-22",
+      "category": "products",
+      "path": "products/20260122_Argus_epr.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260122_argus_jet",
+      "title": "Argus jet",
+      "source": "Argus",
+      "date": "2026-01-22",
+      "category": "products",
+      "path": "products/20260122_Argus_jet.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260122_argus_mid",
+      "title": "Argus mid",
+      "source": "Argus",
+      "date": "2026-01-22",
+      "category": "products",
+      "path": "products/20260122_Argus_mid.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260122_argus_usp",
+      "title": "Argus usp",
+      "source": "Argus",
+      "date": "2026-01-22",
+      "category": "products",
+      "path": "products/20260122_Argus_usp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260122_argus_wcp",
+      "title": "Argus wcp",
+      "source": "Argus",
+      "date": "2026-01-22",
+      "category": "products",
+      "path": "products/20260122_Argus_wcp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260123_argus_amarinef",
+      "title": "Argus amarinef",
+      "source": "Argus",
+      "date": "2026-01-23",
+      "category": "products",
+      "path": "products/20260123_Argus_amarinef.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260123_argus_amgio",
+      "title": "Argus amgio",
+      "source": "Argus",
+      "date": "2026-01-23",
+      "category": "products",
+      "path": "products/20260123_Argus_amgio.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260123_argus_app",
+      "title": "Argus app",
+      "source": "Argus",
+      "date": "2026-01-23",
+      "category": "products",
+      "path": "products/20260123_Argus_app.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260123_argus_epr",
+      "title": "Argus epr",
+      "source": "Argus",
+      "date": "2026-01-23",
+      "category": "products",
+      "path": "products/20260123_Argus_epr.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260123_argus_ici",
+      "title": "Argus ici",
+      "source": "Argus",
+      "date": "2026-01-23",
+      "category": "products",
+      "path": "products/20260123_Argus_ici.pdf",
+      "pages": 0,
+      "type": "report"
+    },
+    {
+      "id": "products-20260123_argus_jet",
+      "title": "Argus jet",
+      "source": "Argus",
+      "date": "2026-01-23",
+      "category": "products",
+      "path": "products/20260123_Argus_jet.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260123_argus_mck",
+      "title": "Argus mck",
+      "source": "Argus",
+      "date": "2026-01-23",
+      "category": "products",
+      "path": "products/20260123_Argus_mck.pdf",
+      "pages": 0,
+      "type": "report"
+    },
+    {
+      "id": "products-20260123_argus_mid",
+      "title": "Argus mid",
+      "source": "Argus",
+      "date": "2026-01-23",
+      "category": "products",
+      "path": "products/20260123_Argus_mid.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260123_argus_usp",
+      "title": "Argus usp",
+      "source": "Argus",
+      "date": "2026-01-23",
+      "category": "products",
+      "path": "products/20260123_Argus_usp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260123_argus_wcp",
+      "title": "Argus wcp",
+      "source": "Argus",
+      "date": "2026-01-23",
+      "category": "products",
+      "path": "products/20260123_Argus_wcp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260126_argus_amarinef",
+      "title": "Argus amarinef",
+      "source": "Argus",
+      "date": "2026-01-26",
+      "category": "products",
+      "path": "products/20260126_Argus_amarinef.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260126_argus_amgio",
+      "title": "Argus amgio",
+      "source": "Argus",
+      "date": "2026-01-26",
+      "category": "products",
+      "path": "products/20260126_Argus_amgio.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260126_argus_app",
+      "title": "Argus app",
+      "source": "Argus",
+      "date": "2026-01-26",
+      "category": "products",
+      "path": "products/20260126_Argus_app.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260126_argus_epr",
+      "title": "Argus epr",
+      "source": "Argus",
+      "date": "2026-01-26",
+      "category": "products",
+      "path": "products/20260126_Argus_epr.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260126_argus_jet",
+      "title": "Argus jet",
+      "source": "Argus",
+      "date": "2026-01-26",
+      "category": "products",
+      "path": "products/20260126_Argus_jet.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260126_argus_mid",
+      "title": "Argus mid",
+      "source": "Argus",
+      "date": "2026-01-26",
+      "category": "products",
+      "path": "products/20260126_Argus_mid.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260126_argus_usp",
+      "title": "Argus usp",
+      "source": "Argus",
+      "date": "2026-01-26",
+      "category": "products",
+      "path": "products/20260126_Argus_usp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260126_argus_wcp",
+      "title": "Argus wcp",
+      "source": "Argus",
+      "date": "2026-01-26",
+      "category": "products",
+      "path": "products/20260126_Argus_wcp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260127_argus_amarinef",
+      "title": "Argus amarinef",
+      "source": "Argus",
+      "date": "2026-01-27",
+      "category": "products",
+      "path": "products/20260127_Argus_amarinef.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260127_argus_amgio",
+      "title": "Argus amgio",
+      "source": "Argus",
+      "date": "2026-01-27",
+      "category": "products",
+      "path": "products/20260127_Argus_amgio.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260127_argus_app",
+      "title": "Argus app",
+      "source": "Argus",
+      "date": "2026-01-27",
+      "category": "products",
+      "path": "products/20260127_Argus_app.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260127_argus_epr",
+      "title": "Argus epr",
+      "source": "Argus",
+      "date": "2026-01-27",
+      "category": "products",
+      "path": "products/20260127_Argus_epr.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260127_argus_jet",
+      "title": "Argus jet",
+      "source": "Argus",
+      "date": "2026-01-27",
+      "category": "products",
+      "path": "products/20260127_Argus_jet.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260127_argus_mid",
+      "title": "Argus mid",
+      "source": "Argus",
+      "date": "2026-01-27",
+      "category": "products",
+      "path": "products/20260127_Argus_mid.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260127_argus_usp",
+      "title": "Argus usp",
+      "source": "Argus",
+      "date": "2026-01-27",
+      "category": "products",
+      "path": "products/20260127_Argus_usp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260127_argus_wcp",
+      "title": "Argus wcp",
+      "source": "Argus",
+      "date": "2026-01-27",
+      "category": "products",
+      "path": "products/20260127_Argus_wcp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260128_argus_amarinef",
+      "title": "Argus amarinef",
+      "source": "Argus",
+      "date": "2026-01-28",
+      "category": "products",
+      "path": "products/20260128_Argus_amarinef.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260128_argus_amgio",
+      "title": "Argus amgio",
+      "source": "Argus",
+      "date": "2026-01-28",
+      "category": "products",
+      "path": "products/20260128_Argus_amgio.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260128_argus_app",
+      "title": "Argus app",
+      "source": "Argus",
+      "date": "2026-01-28",
+      "category": "products",
+      "path": "products/20260128_Argus_app.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260128_argus_epr",
+      "title": "Argus epr",
+      "source": "Argus",
+      "date": "2026-01-28",
+      "category": "products",
+      "path": "products/20260128_Argus_epr.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260128_argus_jet",
+      "title": "Argus jet",
+      "source": "Argus",
+      "date": "2026-01-28",
+      "category": "products",
+      "path": "products/20260128_Argus_jet.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260128_argus_mid",
+      "title": "Argus mid",
+      "source": "Argus",
+      "date": "2026-01-28",
+      "category": "products",
+      "path": "products/20260128_Argus_mid.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260128_argus_usp",
+      "title": "Argus usp",
+      "source": "Argus",
+      "date": "2026-01-28",
+      "category": "products",
+      "path": "products/20260128_Argus_usp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260128_argus_wcp",
+      "title": "Argus wcp",
+      "source": "Argus",
+      "date": "2026-01-28",
+      "category": "products",
+      "path": "products/20260128_Argus_wcp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260129_argus_amarinef",
+      "title": "Argus amarinef",
+      "source": "Argus",
+      "date": "2026-01-29",
+      "category": "products",
+      "path": "products/20260129_Argus_amarinef.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260129_argus_amgio",
+      "title": "Argus amgio",
+      "source": "Argus",
+      "date": "2026-01-29",
+      "category": "products",
+      "path": "products/20260129_Argus_amgio.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260129_argus_epr",
+      "title": "Argus epr",
+      "source": "Argus",
+      "date": "2026-01-29",
+      "category": "products",
+      "path": "products/20260129_Argus_epr.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260129_argus_jet",
+      "title": "Argus jet",
+      "source": "Argus",
+      "date": "2026-01-29",
+      "category": "products",
+      "path": "products/20260129_Argus_jet.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260129_argus_mid",
+      "title": "Argus mid",
+      "source": "Argus",
+      "date": "2026-01-29",
+      "category": "products",
+      "path": "products/20260129_Argus_mid.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260129_argus_usp",
+      "title": "Argus usp",
+      "source": "Argus",
+      "date": "2026-01-29",
+      "category": "products",
+      "path": "products/20260129_Argus_usp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260129_argus_wcp",
+      "title": "Argus wcp",
+      "source": "Argus",
+      "date": "2026-01-29",
+      "category": "products",
+      "path": "products/20260129_Argus_wcp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260130_argus_amarinef",
+      "title": "Argus amarinef",
+      "source": "Argus",
+      "date": "2026-01-30",
+      "category": "products",
+      "path": "products/20260130_Argus_amarinef.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260130_argus_amgio",
+      "title": "Argus amgio",
+      "source": "Argus",
+      "date": "2026-01-30",
+      "category": "products",
+      "path": "products/20260130_Argus_amgio.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260130_argus_app",
+      "title": "Argus app",
+      "source": "Argus",
+      "date": "2026-01-30",
+      "category": "products",
+      "path": "products/20260130_Argus_app.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260130_argus_epr",
+      "title": "Argus epr",
+      "source": "Argus",
+      "date": "2026-01-30",
+      "category": "products",
+      "path": "products/20260130_Argus_epr.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260130_argus_ici",
+      "title": "Argus ici",
+      "source": "Argus",
+      "date": "2026-01-30",
+      "category": "products",
+      "path": "products/20260130_Argus_ici.pdf",
+      "pages": 0,
+      "type": "report"
+    },
+    {
+      "id": "products-20260130_argus_jet",
+      "title": "Argus jet",
+      "source": "Argus",
+      "date": "2026-01-30",
+      "category": "products",
+      "path": "products/20260130_Argus_jet.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260130_argus_mck",
+      "title": "Argus mck",
+      "source": "Argus",
+      "date": "2026-01-30",
+      "category": "products",
+      "path": "products/20260130_Argus_mck.pdf",
+      "pages": 0,
+      "type": "report"
+    },
+    {
+      "id": "products-20260130_argus_mid",
+      "title": "Argus mid",
+      "source": "Argus",
+      "date": "2026-01-30",
+      "category": "products",
+      "path": "products/20260130_Argus_mid.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260130_argus_usp",
+      "title": "Argus usp",
+      "source": "Argus",
+      "date": "2026-01-30",
+      "category": "products",
+      "path": "products/20260130_Argus_usp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260130_argus_wcp",
+      "title": "Argus wcp",
+      "source": "Argus",
+      "date": "2026-01-30",
+      "category": "products",
+      "path": "products/20260130_Argus_wcp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260202_argus_amarinef",
+      "title": "Argus amarinef",
+      "source": "Argus",
+      "date": "2026-02-02",
+      "category": "products",
+      "path": "products/20260202_Argus_amarinef.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260202_argus_amgio",
+      "title": "Argus amgio",
+      "source": "Argus",
+      "date": "2026-02-02",
+      "category": "products",
+      "path": "products/20260202_Argus_amgio.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260202_argus_app",
+      "title": "Argus app",
+      "source": "Argus",
+      "date": "2026-02-02",
+      "category": "products",
+      "path": "products/20260202_Argus_app.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260202_argus_epr",
+      "title": "Argus epr",
+      "source": "Argus",
+      "date": "2026-02-02",
+      "category": "products",
+      "path": "products/20260202_Argus_epr.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260202_argus_jet",
+      "title": "Argus jet",
+      "source": "Argus",
+      "date": "2026-02-02",
+      "category": "products",
+      "path": "products/20260202_Argus_jet.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260202_argus_mid",
+      "title": "Argus mid",
+      "source": "Argus",
+      "date": "2026-02-02",
+      "category": "products",
+      "path": "products/20260202_Argus_mid.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260202_argus_usp",
+      "title": "Argus usp",
+      "source": "Argus",
+      "date": "2026-02-02",
+      "category": "products",
+      "path": "products/20260202_Argus_usp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260202_argus_wcp",
+      "title": "Argus wcp",
+      "source": "Argus",
+      "date": "2026-02-02",
+      "category": "products",
+      "path": "products/20260202_Argus_wcp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260203_argus_amarinef",
+      "title": "Argus amarinef",
+      "source": "Argus",
+      "date": "2026-02-03",
+      "category": "products",
+      "path": "products/20260203_Argus_amarinef.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260203_argus_amgio",
+      "title": "Argus amgio",
+      "source": "Argus",
+      "date": "2026-02-03",
+      "category": "products",
+      "path": "products/20260203_Argus_amgio.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260203_argus_app",
+      "title": "Argus app",
+      "source": "Argus",
+      "date": "2026-02-03",
+      "category": "products",
+      "path": "products/20260203_Argus_app.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260203_argus_epr",
+      "title": "Argus epr",
+      "source": "Argus",
+      "date": "2026-02-03",
+      "category": "products",
+      "path": "products/20260203_Argus_epr.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260203_argus_jet",
+      "title": "Argus jet",
+      "source": "Argus",
+      "date": "2026-02-03",
+      "category": "products",
+      "path": "products/20260203_Argus_jet.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260203_argus_mid",
+      "title": "Argus mid",
+      "source": "Argus",
+      "date": "2026-02-03",
+      "category": "products",
+      "path": "products/20260203_Argus_mid.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260203_argus_usp",
+      "title": "Argus usp",
+      "source": "Argus",
+      "date": "2026-02-03",
+      "category": "products",
+      "path": "products/20260203_Argus_usp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260203_argus_wcp",
+      "title": "Argus wcp",
+      "source": "Argus",
+      "date": "2026-02-03",
+      "category": "products",
+      "path": "products/20260203_Argus_wcp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260204_argus_amarinef",
+      "title": "Argus amarinef",
+      "source": "Argus",
+      "date": "2026-02-04",
+      "category": "products",
+      "path": "products/20260204_Argus_amarinef.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260204_argus_amgio",
+      "title": "Argus amgio",
+      "source": "Argus",
+      "date": "2026-02-04",
+      "category": "products",
+      "path": "products/20260204_Argus_amgio.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260204_argus_app",
+      "title": "Argus app",
+      "source": "Argus",
+      "date": "2026-02-04",
+      "category": "products",
+      "path": "products/20260204_Argus_app.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260204_argus_epr",
+      "title": "Argus epr",
+      "source": "Argus",
+      "date": "2026-02-04",
+      "category": "products",
+      "path": "products/20260204_Argus_epr.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260204_argus_jet",
+      "title": "Argus jet",
+      "source": "Argus",
+      "date": "2026-02-04",
+      "category": "products",
+      "path": "products/20260204_Argus_jet.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260204_argus_mid",
+      "title": "Argus mid",
+      "source": "Argus",
+      "date": "2026-02-04",
+      "category": "products",
+      "path": "products/20260204_Argus_mid.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260204_argus_usp",
+      "title": "Argus usp",
+      "source": "Argus",
+      "date": "2026-02-04",
+      "category": "products",
+      "path": "products/20260204_Argus_usp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260204_argus_wcp",
+      "title": "Argus wcp",
+      "source": "Argus",
+      "date": "2026-02-04",
+      "category": "products",
+      "path": "products/20260204_Argus_wcp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260205_argus_amarinef",
+      "title": "Argus amarinef",
+      "source": "Argus",
+      "date": "2026-02-05",
+      "category": "products",
+      "path": "products/20260205_Argus_amarinef.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260205_argus_amgio",
+      "title": "Argus amgio",
+      "source": "Argus",
+      "date": "2026-02-05",
+      "category": "products",
+      "path": "products/20260205_Argus_amgio.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260205_argus_app",
+      "title": "Argus app",
+      "source": "Argus",
+      "date": "2026-02-05",
+      "category": "products",
+      "path": "products/20260205_Argus_app.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260205_argus_epr",
+      "title": "Argus epr",
+      "source": "Argus",
+      "date": "2026-02-05",
+      "category": "products",
+      "path": "products/20260205_Argus_epr.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260205_argus_jet",
+      "title": "Argus jet",
+      "source": "Argus",
+      "date": "2026-02-05",
+      "category": "products",
+      "path": "products/20260205_Argus_jet.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260205_argus_mid",
+      "title": "Argus mid",
+      "source": "Argus",
+      "date": "2026-02-05",
+      "category": "products",
+      "path": "products/20260205_Argus_mid.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260205_argus_usp",
+      "title": "Argus usp",
+      "source": "Argus",
+      "date": "2026-02-05",
+      "category": "products",
+      "path": "products/20260205_Argus_usp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260205_argus_wcp",
+      "title": "Argus wcp",
+      "source": "Argus",
+      "date": "2026-02-05",
+      "category": "products",
+      "path": "products/20260205_Argus_wcp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260206_argus_amarinef",
+      "title": "Argus amarinef",
+      "source": "Argus",
+      "date": "2026-02-06",
+      "category": "products",
+      "path": "products/20260206_Argus_amarinef.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260206_argus_amgio",
+      "title": "Argus amgio",
+      "source": "Argus",
+      "date": "2026-02-06",
+      "category": "products",
+      "path": "products/20260206_Argus_amgio.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260206_argus_app",
+      "title": "Argus app",
+      "source": "Argus",
+      "date": "2026-02-06",
+      "category": "products",
+      "path": "products/20260206_Argus_app.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260206_argus_epr",
+      "title": "Argus epr",
+      "source": "Argus",
+      "date": "2026-02-06",
+      "category": "products",
+      "path": "products/20260206_Argus_epr.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260206_argus_ici",
+      "title": "Argus ici",
+      "source": "Argus",
+      "date": "2026-02-06",
+      "category": "products",
+      "path": "products/20260206_Argus_ici.pdf",
+      "pages": 0,
+      "type": "report"
+    },
+    {
+      "id": "products-20260206_argus_jet",
+      "title": "Argus jet",
+      "source": "Argus",
+      "date": "2026-02-06",
+      "category": "products",
+      "path": "products/20260206_Argus_jet.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260206_argus_mck",
+      "title": "Argus mck",
+      "source": "Argus",
+      "date": "2026-02-06",
+      "category": "products",
+      "path": "products/20260206_Argus_mck.pdf",
+      "pages": 0,
+      "type": "report"
+    },
+    {
+      "id": "products-20260206_argus_mid",
+      "title": "Argus mid",
+      "source": "Argus",
+      "date": "2026-02-06",
+      "category": "products",
+      "path": "products/20260206_Argus_mid.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260206_argus_usp",
+      "title": "Argus usp",
+      "source": "Argus",
+      "date": "2026-02-06",
+      "category": "products",
+      "path": "products/20260206_Argus_usp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "id": "products-20260206_argus_wcp",
+      "title": "Argus wcp",
+      "source": "Argus",
+      "date": "2026-02-06",
+      "category": "products",
+      "path": "products/20260206_Argus_wcp.pdf",
+      "pages": 0,
+      "type": "daily"
+    },
+    {
+      "path": "products/20260115_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "products",
+      "date": "2026-01-15",
+      "pages": 26,
+      "importedAt": "2026-03-10T02:16:01.027Z"
+    },
+    {
+      "path": "crude/20260123_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-01-23",
+      "pages": 39,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "products/20260306_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-06",
+      "pages": 28,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "products/20260306_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-03-06",
+      "pages": 2,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "products/20260306_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-06",
+      "pages": 19,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "crude/20260306_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-03-06",
+      "pages": 20,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "crude/20260306_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-03-06",
+      "pages": 47,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "products/20260306_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-06",
+      "pages": 20,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "freight/20260306_Argus_freightspecial.pdf",
+      "source": "Argus",
+      "type": "special",
+      "category": "freight",
+      "date": "2026-03-06",
+      "pages": 13,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "freight/20260306_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-03-06",
+      "pages": 35,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "products/20260306_Argus_ici.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-06",
+      "pages": 2,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "products/20260306_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-06",
+      "pages": 16,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "lng/20260306_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-03-06",
+      "pages": 25,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "products/20260306_Argus_mck.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-06",
+      "pages": 3,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "products/20260306_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "monthly",
+      "category": "products",
+      "date": "2026-03-06",
+      "pages": 6,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "products/20260306_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-06",
+      "pages": 27,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "products/20260306_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-06",
+      "pages": 3,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "products/20260309_Argus_amarinef.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-09",
+      "pages": 26,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "products/20260309_Argus_amgio.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-03-09",
+      "pages": 2,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "products/20260309_Argus_app.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-09",
+      "pages": 21,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "crude/20260309_Argus_cdi.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-03-09",
+      "pages": 16,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "crude/20260309_Argus_crd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "crude",
+      "date": "2026-03-09",
+      "pages": 49,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "products/20260309_Argus_epr.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-09",
+      "pages": 22,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "freight/20260309_Argus_freighttanker.pdf",
+      "source": "Argus",
+      "type": "weekly",
+      "category": "freight",
+      "date": "2026-03-09",
+      "pages": 32,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "products/20260309_Argus_jet.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-09",
+      "pages": 14,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "lng/20260309_Argus_lngd.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "lng",
+      "date": "2026-03-09",
+      "pages": 19,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "products/20260309_Argus_mid.pdf",
+      "source": "Argus",
+      "type": "monthly",
+      "category": "products",
+      "date": "2026-03-09",
+      "pages": 6,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "products/20260309_Argus_usp.pdf",
+      "source": "Argus",
+      "type": "report",
+      "category": "products",
+      "date": "2026-03-09",
+      "pages": 26,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    },
+    {
+      "path": "products/20260309_Argus_wcp.pdf",
+      "source": "Argus",
+      "type": "daily",
+      "category": "products",
+      "date": "2026-03-09",
+      "pages": 3,
+      "importedAt": "2026-03-10T02:16:01.028Z"
+    }
+  ]
+}
