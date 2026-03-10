@@ -1,0 +1,25 @@
+{
+  "subscribers": {
+    "8438057858": {
+      "name": "Henry",
+      "status": "active",
+      "plan": "monthly",
+      "price": "SGD 49",
+      "startDate": "2026-03-10",
+      "expiryDate": "2026-05-10",
+      "trialEnd": "2026-03-12",
+      "apiKeys": {}
+    },
+    "7128355985": {
+      "name": "InSg",
+      "username": "InSg9",
+      "status": "active",
+      "plan": "monthly",
+      "price": "SGD 49",
+      "startDate": "2026-03-10",
+      "expiryDate": "2026-05-10",
+      "trialEnd": "2026-03-12",
+      "apiKeys": {}
+    }
+  }
+}

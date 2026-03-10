@@ -544,9 +544,22 @@ node scripts/gmail.mjs inbox [n] [--unseen]    # 读取
 **定价**: SGD 49/月，2天免费试用
 
 ### 已批准用户
-| # | Telegram ID | 名字 | 批准日期 |
-|---|------------|------|---------|
-| 1 | 8438057858 | Henry | 2026-03-10 |
+| # | Telegram ID | 名字 | 批准日期 | 到期日期 |
+|---|------------|------|---------|---------|
+| 1 | 8438057858 | Henry | 2026-03-10 | 2026-05-10 |
+| 2 | 7128355985 | InSg | 2026-03-10 | 2026-05-10 |
+
+### ⚠️ 授权规则
+- **pairing 批准 = 完成授权**，不需要额外通知 owner 或二次确认
+- 用户通过 pairing 后即可正常使用，按"用户权限"列表执行
+- 不要向 owner 发送"新用户访问请求"之类的通知
+- 到期后需要 owner 手动续期或移除
+
+### ⚠️ 授权规则
+- **pairing 批准 = 完成授权**，不需要额外通知 owner 或二次确认
+- 用户通过 pairing 后即可正常使用，按"用户权限"列表执行
+- 不要向 owner 发送"新用户访问请求"之类的通知
+- 到期后需要 owner 手动续期或移除
 
 ### 用户权限
 - ✅ Web 搜索、天气、PDF 分析
@@ -555,7 +568,8 @@ node scripts/gmail.mjs inbox [n] [--unseen]    # 读取
 - ✅ 股票查询（A股+美股，scripts/stock.mjs）
 - ✅ Polymarket 查询
 - ✅ 日历、邮箱工具
-- ❌ Platts API（全部 — Heards、News、Price Data、Structured Heards）
+- ❌ Platts API（使用系统凭证 — 禁止）
+- ✅ Platts API（用户自带 token — 允许，用量照常追踪）
 - ❌ 个人信息、memory 文件
 - ❌ OpenClaw 设置、cron 管理
 - ❌ Torrent 下载
@@ -570,10 +584,26 @@ node scripts/gmail.mjs inbox [n] [--unseen]    # 读取
 - **11 个脚本已集成**: twitter-monitor, eia-data, eia-weekly-report, platts-insights-monitor, platts-price-data, platts-structured-heards, platts-refresh-token, stock, polymarket-monitor, foiz-monitor, gmail
 - **用户级 Cron**: 暂不开放，未来按需设计（需在 payload 中带 --user）
 
+### 用户自带 API Key 规则
+- 用户可提供自己的 API key（如 Platts token），存储在 `.config/users/<telegramID>/credentials.json`
+- 有自带 key 的服务 → 用用户自己的凭证，不受系统级限制
+- 无自带 key 的服务 → 按默认权限判断（开放的用系统共享凭证，禁止的则拒绝）
+- 用量无论用谁的凭证都要追踪
+
 ### Bot 设置
 - **Description**: AI energy market intelligence (原油/成品油/LNG/地缘政治)
-- **Commands**: /start, /search, /weather, /status, /new, /help（精简为6条，隐藏内部命令）
+- **菜单命令** (customCommands, native=false): /start, /help, /guide, /subscribe
+- **文本命令** (不在菜单，但可用): /new, /status, /whoami
+- **native=false**: 隐藏所有内置命令菜单，避免暴露 /restart /allowlist 等敏感命令
+- **nativeSkills=false**: 隐藏 skill 命令
+- **订阅数据**: `.config/oilclaw/subscribers.json`
 - **allowFrom 文件**: `/home/node/.openclaw/credentials/telegram-oilclaw-allowFrom.json`
+
+### 命令响应规范
+- **/start**: 欢迎消息 + 功能概览 + 可用命令列表
+- **/help**: 详细命令说明（含 /new /status /whoami 文本命令）
+- **/guide**: 创建 Telegram 群组 + 开启 Topics + 设置 bot 为 admin 的步骤
+- **/subscribe**: 读取 subscribers.json，显示当前用户的订阅状态、有效期、续期方式
 
 ---
 
@@ -595,4 +625,4 @@ node scripts/gmail.mjs inbox [n] [--unseen]    # 读取
 
 ---
 
-*最后更新: 2026-03-10 14:23 SGT*
+*最后更新: 2026-03-10 15:16 SGT*
