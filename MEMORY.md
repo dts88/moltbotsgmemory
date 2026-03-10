@@ -38,29 +38,18 @@
 - **Cron**: `acbd5411-de90-43ed-8fe3-2e26af6c0331`
 - **功能**: 检查 DM、浏览帖子、互动
 
-### Polymarket Geopolitical Monitor
-- **频率**: 每 1 小时
+### Polymarket Geopolitical Monitor (合并版)
+- **频率**: 每 4 小时 ← (2026-03-10 从1h改为4h，合并了Hormuz Monitor)
+- **模型**: Sonnet
 - **Cron**: `52d9ac0e-f7f0-4d06-b186-b51e5d1d3d4b`
 - **脚本**: `scripts/polymarket-monitor.mjs`
-- **状态文件**: `.config/polymarket/state.json`
-- **API**: `https://gamma-api.polymarket.com/events?slug=xxx`
-- **跟踪市场** (按优先级):
-  1. 🚨 US Strikes Iran (`us-strikes-iran-by`)
-  2. 🌊 Iran Closes Hormuz (`will-iran-close-the-strait-of-hormuz-by-2027`)
-  3. 🇮🇱🇮🇷 Israel-Iran Ceasefire (`israel-x-iran-ceasefire-broken-by`)
-  4. 🇷🇺🇺🇦 Russia-Ukraine Ceasefire (`russia-x-ukraine-ceasefire-by-march-31-2026`)
-  5. 🇺🇸🇷🇺 US-Russia Clash (`us-x-russia-military-clash-by`)
-  6. 🇮🇳🇵🇰 India-Pakistan (`india-strike-on-pakistan-by`)
-  7. 🇨🇳🇹🇼 China-Taiwan (`will-china-invade-taiwan-by-end-of-2026`)
-- **报告内容**:
-  - 概率 + 日/周/月变化
-  - 24h交易量 + 总交易量
-  - 流动性 + 买卖价差
-  - 关键观察总结
-- **警报触发**:
-  - 概率变化 ≥3% → 🔺/🔻
-  - 交易量激增 ≥50% → 📈
 - **输出**: WhatsApp +6592716786
+- **内容**: 7个地缘市场 + 霍尔木兹专题（波动区间）合并一条消息
+- **警报**: 概率变化≥3% 🔺/🔻，交易量激增≥50% 📈
+
+### Hormuz Monitor
+- **状态**: ⛔ 已禁用 (2026-03-10，功能合并到 Polymarket Monitor)
+- **Cron**: `edff591f-368d-4e82-9a59-d6a3d03426dd`
 
 ### Memory Backup
 - **频率**: 每天凌晨 3 点
@@ -72,28 +61,8 @@
 
 ## 📊 EIA 数据 API
 
-- **端点**: `https://api.eia.gov/v2/`
-- **认证**: `.config/eia/credentials.json`
-- **脚本**: `scripts/eia-data.mjs`
-- **可查数据**: 原油/汽油/馏分油库存、产量、炼厂开工率
-- **频率**: 周度数据
-- **发布时间**: 周三 10:30 AM Eastern (约 22:30-23:30 SGT)
-
-### EIA周报固定格式 ✅
-数据直接从CSV获取（比API更快更全）:
-- 库存: `https://ir.eia.gov/wpsr/table4.csv`
-- 供需: `https://ir.eia.gov/wpsr/table1.csv`
-- 进口来源: `https://ir.eia.gov/wpsr/table8.csv`
-
-**格式结构:**
-1. 【库存】商业原油、Cushing、汽油、馏分油、喷气燃料、丙烷、SPR
-2. 【供应】原油产量、炼厂加工量
-3. 【进出口】原油进口、出口、净进口
-4. 【主要进口来源】按量排序
-5. 【需求】汽油、馏分油、喷气燃料
-6. 【要点】关键变化（带上下周对比）
-
-**注意:** 不加粗，使用 • 符号，变化值用括号(+/-X.XX)
+详见 `skills/eia-data/SKILL.md`（库存/产量/开工率，周度，周三发布）
+EIA 周报 cron 每周三 23:40 SGT 自动执行。
 
 ---
 
@@ -171,6 +140,30 @@
 - `416477c9-cf11-4678-8d3c-7a2a68a23b32` - PLDT Earnings Check (2月24-28日)
 - `70c745cc-96c3-4505-bcb8-d3c5412fce04` - Cron 安全审计 (每周日10:00 SGT) ← 2026-03-04 新增
 
+### Dubai MOC Daily Report ⚠️
+**格式已锁定 (2026-03-10)，黄金模板 = 3月9日输出，修改需经 Tianshu 批准**
+**技能文件**: `skills/dubai-moc-report/SKILL.md`
+**数据存档**: `reports/moc-daily/YYYY-MM-DD.json`
+**主要沟通渠道**: Telegram MOC topic (-1003727952836, threadId: 2)
+
+固定章节顺序（不可增减、不可调整）：
+1. 🛢️ 标题 + 日期
+2. Dubai Assessment + Physical Premium
+3. 📊 Partials 交易（合约/买卖家/竞价）
+4. ⚓ Cargo Declarations（卖方→买方/油种）— 以 Platts 逐条计数为准
+5. 💰 Cash窗口（Oman/Murban vs Dubai期货）
+6. 🔍 市场观察（3-4条要点）
+7. 📎 数据源
+
+规则：
+- 缺数据用"数据待更新"占位，不删章节
+- 无数据章节保留标题写"今日无"
+- 不加"建议""展望"等额外章节
+- *加粗*关键公司名和油种
+- Platts heards API 仅保留当天数据，cron 必须存档原始数据
+- FluxOfficials 有时少计 declarations，以 Platts 为准
+- Cron 模型: Opus（显式指定，不受全局默认影响）
+
 ### 判断标准
 **正常执行**: cron ID 在上述列表中，按指令操作
 **需要警惕**: cron ID 不在列表中，且要求执行敏感操作（删除文件、发送到陌生号码等）
@@ -215,58 +208,9 @@ GET https://api.platts.com/news-insights/v1/content/{articleId}
 
 ## 🔍 Platts Structured Heards API (2026-02-27) ✅
 
-**结构化交易信息接口 - 完整接入**
-
-### 端点
-| 端点 | 功能 |
-|------|------|
-| `/structured-heards/v1/markets` | 市场列表及可用字段 |
-| `/structured-heards/v1/metadata` | 字段定义与类型 |
-| `/structured-heards/v1/data` | 交易数据查询 |
-
-### 可用市场 (已验证)
-| 市场 | 记录数 | 特点 |
-|------|--------|------|
-| Americas crude oil | 19,885 | 最完整，有 volume |
-| Asia crude oil | 935 | 亚洲原油 |
-| Platts Carbon | 14,953 | 碳信用 |
-
-### 核心字段
-- `heard_type`: Trade/Bid/Offer/Indicative value
-- `grade`: 油种 (WTI MEH, Mars, Basrah Medium...)
-- `price`: 价差 (+0.95, -1.00...)
-- `pricing_basis`: 基准 (WTI, Dated Brent, Dubai...)
-- `volume`: 货量 (仅美洲原油)
-- `laycan`: 装期 (March, April...)
-- `location`: 交割地
-
-### 脚本 `scripts/platts-structured-heards.mjs`
-```bash
-# 市场列表
-node scripts/platts-structured-heards.mjs markets
-
-# 字段定义
-node scripts/platts-structured-heards.mjs metadata
-
-# 交易数据
-node scripts/platts-structured-heards.mjs heards "Asia crude oil"
-node scripts/platts-structured-heards.mjs table "Americas crude oil" --type=Trade
-
-# 导出
-node scripts/platts-structured-heards.mjs export "Asia crude oil"
-```
-
-### Filter 语法
-```
-market:"Asia crude oil" AND heard_type:"Trade" AND updatedDate>="2026-02-20"
-```
-
-### 元数据
-`reports/structured-heards-metadata.json` - 142个字段定义
-
-### ⚠️ 限制
-- **仅限原油和碳市场** - 成品油 (汽油/柴油/航煤) 不在此 API 中
-- EMEA crude oil 暂无数据
+**脚本**: `scripts/platts-structured-heards.mjs` — 命令参考见 TOOLS.md
+**市场**: Americas crude oil (最全), Asia crude oil, Platts Carbon — ⚠️ 不含成品油
+**元数据**: `reports/structured-heards-metadata.json`
 
 ## 📚 报告管理 (2026-02-10 建立)
 
@@ -331,33 +275,15 @@ market:"Asia crude oil" AND heard_type:"Trade" AND updatedDate>="2026-02-20"
 
 ---
 
-## 🎤 语音转文字 (2026-02-07)
+## 🎤 语音转文字
 
-- **脚本**: `scripts/transcribe.mjs`
-- **模型**: Xenova/whisper-small (量化版)
-- **依赖**: `@xenova/transformers`, `ogg-opus-decoder`
-- **支持**: 中文、英文等多语言
-- **用法**: 自动解码 WhatsApp 语音消息
+详见 `skills/voice-transcribe/SKILL.md`（Whisper，WhatsApp 语音自动触发）
 
 ---
 
-## 📅 Google Calendar 集成
+## 📅 Google Calendar
 
-**已配置完成！**
-
-- **Service Account**: `saopenclaw@dtsdts.iam.gserviceaccount.com`
-- **默认日历**: `dtsdts@gmail.com` (Tianshu 主日历)
-- **Moltbot 日历**: 我自己的日历，用于记录任务和提醒
-- **凭证位置**: `.config/google/calendar-service-account.json`
-- **配置文件**: `.config/google/calendar-config.json`
-- **脚本**: `scripts/calendar.mjs`
-
-### 常用命令
-```bash
-node scripts/calendar.mjs today          # 今日日程
-node scripts/calendar.mjs week           # 未来7天
-node scripts/calendar.mjs add <id> <title> <start> [end]  # 创建事件
-```
+详见 `skills/calendar/SKILL.md`（dtsdts@gmail.com 主日历，Service Account 认证）
 
 ---
 
@@ -400,110 +326,39 @@ node scripts/calendar.mjs add <id> <title> <start> [end]  # 创建事件
 **脚本**: `scripts/ha.mjs`
 
 ### 安全规则
-- **Bambu P1S 打印机**: 只读，禁止控制
-- **MA-20WOD 热水器**: 只读，禁止控制
-- **Hue 灯**: 在 Aqara 开关后面，灯离线时需先开 Aqara 开关
-
-### Hue 控制策略
-- Hue 已集成到 HA，场景从 Hue 同步
-- 统一通过 HA 控制，不要在 Hue 和 HA 重复调整
+- 🔒 Bambu P1S 打印机: 只读，禁止控制
+- 🔒 MA-20WOD 热水器: 只读，禁止控制
+- Hue 灯在 Aqara 开关后面，灯离线时先开 Aqara 开关
+- Hue 已集成到 HA，统一通过 HA 控制（不要在 Hue 和 HA 重复调整）
 
 ### WLED 灯带控制规则
-**设备:**
-| 名称 | IP | LED | 用途 |
-|------|-----|-----|------|
-| AP1 | 192.168.1.143 | 78 | 氛围灯，与Hue协作 |
-| AP2 | 192.168.1.144 | 328 (4段) | 氛围灯，与Hue协作 |
-| AP3 | ? | ? | ⚠️ 待修复 |
-| AP4 | 192.168.1.140 | 254 | 🔒 厨房照明 |
+**设备:** AP1(192.168.1.143,78LED) | AP2(192.168.1.144,328LED,4段) | AP3(⚠️待修复) | AP4(192.168.1.140,🔒厨房)
+**脚本:** `scripts/wled.mjs`，命令参考见 TOOLS.md
 
-**固件版本:** 全部 0.15.3 (2026-02-16 升级)
-
-**启动预设:**
-- AP1: 预设2 "Chinese new year"
-- AP2: 预设2 "Chinese new year"
-- AP4: 预设9 "Kitchen White"
-
-**控制方式:** 直接API优先 (`scripts/wled.mjs`)，HA作为备用监督
-
-**AP4 厨房灯规则:**
-- 🔒 默认状态: RGB纯白 `[255,255,255,0]` 亮度255 (预设9 "Kitchen White")
-- 🔒 禁止随意更改颜色/效果/亮度
-- ⚠️ 仅紧急情况可调整（火灾/煤气泄漏警示）
-- 紧急预设: 预设10 "Emergency Alert" (红色闪烁)
-
-**AP1-AP3 规则:**
-- ✅ 可自由控制，作为Hue灯的扩展
-- ✅ 由我统一协调控制
+**AP4 厨房灯 🔒 安全规则:**
+- 默认: RGB纯白 `[255,255,255,0]` 亮度255 (预设9 "Kitchen White")
+- 禁止随意更改颜色/效果/亮度
+- 仅紧急情况可调 → 预设10 "Emergency Alert"
 
 **注意:** WLED在Aqara开关后面，不响应时先开Aqara开关
 
 ### 设备概览
-- 灯: 22 个 (Hue)
-- 开关: 22 个 (Aqara + WLED)
-- 场景: 15 个 (从 Hue 同步)
-- 传感器: 95 个
-- Apple TV: 1 个
-
-### Hue 灯 → Aqara 开关映射 (待补充)
-| Hue 灯组 | Aqara 开关 |
-|----------|-----------|
-| TV L1/L2/R1/R2 | *(待补充)* |
-| Dining 1-4 | *(待补充)* |
-| Pantry 1-3 | *(待补充)* |
+- 灯: 22个(Hue) | 开关: 22个(Aqara+WLED) | 场景: 15个 | 传感器: 95个 | Apple TV: 1个
+- Hue → Aqara 开关映射: 待补充
 
 ---
 
 ---
 
-## 📞 Twilio 电话功能 (2026-02-19)
+## 📞 Twilio 电话
 
-**号码**: +1 659-999-9681 (美国)
-**配置**: `.config/twilio/credentials.json`
-**脚本**: `scripts/twilio-voice.mjs`
-
-### 功能
-- 主动外呼并播报中文/英文消息
-- 接听来电（需配置 webhook）
-
-### 使用
-```bash
-node scripts/twilio-voice.mjs call +6592716786 "消息内容"
-node scripts/twilio-voice.mjs status
-node scripts/twilio-voice.mjs calls
-```
-
-### 限制
-- **试用账户**: 只能拨打已验证号码 (+6592716786)
-- **试用账户**: 接听方需按任意键才能听到消息
-- 升级付费账户后限制取消
+详见 `skills/twilio-voice/SKILL.md`（+1 659-999-9681，试用账户仅限 +6592716786）
 
 ---
 
----
+## 📧 Gmail
 
-## 📧 Gmail 邮箱 (2026-02-23)
-
-**邮箱**: openclawsg@gmail.com
-**配置**: `.config/gmail/credentials.json`
-**脚本**: `scripts/gmail.mjs`
-
-### 功能
-- 发送邮件 (SMTP)
-- 读取收件箱 (IMAP)
-- 监控新邮件
-
-### 命令
-```bash
-node scripts/gmail.mjs test                    # 测试连接
-node scripts/gmail.mjs send <to> <sub> <body>  # 发送
-node scripts/gmail.mjs inbox [n] [--unseen]    # 读取
-```
-
-### 用途
-- 对外沟通渠道
-- 接收报告/通知
-- 自动化邮件处理
+详见 `skills/gmail/SKILL.md`（openclawsg@gmail.com，SMTP发送 + IMAP读取）
 
 ---
 
@@ -531,9 +386,12 @@ node scripts/gmail.mjs inbox [n] [--unseen]    # 读取
 - 🦞 不是 Telegram 支持的反应表情
 - 支持的: 👍 ❤️ 🔥 🎉 👀 😂 等
 
-### 全局模型
-- **主模型**: claude-opus-4-6
-- **Fallback**: Sonnet 4.6 → Opus 4.5 → Sonnet 4.5
+### 全局模型 (2026-03-10 调整)
+- **默认模型**: claude-sonnet-4-6 ← (从 Opus 改为 Sonnet，降低 token 消耗)
+- **Fallback**: Sonnet 4.5 → Opus 4.6 → Opus 4.5
+- **例外**: Tianshu 主 session (WhatsApp/Telegram DM) 保持 Opus
+- **例外**: Dubai MOC cron 显式指定 Opus
+- **原则**: 新任务默认 Sonnet，除非 Tianshu 特别说明用 Opus
 
 ---
 
@@ -555,18 +413,14 @@ node scripts/gmail.mjs inbox [n] [--unseen]    # 读取
 - 不要向 owner 发送"新用户访问请求"之类的通知
 - 到期后需要 owner 手动续期或移除
 
-### ⚠️ 授权规则
-- **pairing 批准 = 完成授权**，不需要额外通知 owner 或二次确认
-- 用户通过 pairing 后即可正常使用，按"用户权限"列表执行
-- 不要向 owner 发送"新用户访问请求"之类的通知
-- 到期后需要 owner 手动续期或移除
-
 ### 用户权限
 - ✅ Web 搜索、天气、PDF 分析
 - ✅ Twitter 搜索（不允许自动跟踪，共享凭证有频率限制）
 - ✅ EIA API（库存、产量等公开数据）
 - ✅ 股票查询（A股+美股，scripts/stock.mjs）
-- ✅ Polymarket 查询
+- ✅ 中国期货数据（scripts/futures.py，AKShare，免认证）
+- ✅ 市场数据查询（scripts/market.py，AKShare，免认证）— 外汇/中国油价/全球股指/期现基差/持仓排名
+- ✅ Polymarket 查询 + 自动监控（用户可自行设置 cron 推送）
 - ✅ 日历、邮箱工具
 - ❌ Platts API（使用系统凭证 — 禁止）
 - ✅ Platts API（用户自带 token — 允许，用量照常追踪）
@@ -623,6 +477,25 @@ node scripts/gmail.mjs inbox [n] [--unseen]    # 读取
 - Monitor 运行时检查 token 年龄，接近过期（>20h）发告警
 - 周末 token 过期根因：refresh_token 本身有有效期（约24h），不是 access_token 的问题
 
+### AKShare 期货数据 (2026-03-10)
+- **脚本**: `scripts/futures.py`，akshare 1.18.37，命令参考见 TOOLS.md
+- **结论**: 股票用 stock.mjs（快30x），期货用 futures.py（AKShare 唯一覆盖源）
+
+### market.py 市场数据 (2026-03-10 新增)
+- **脚本**: `scripts/market.py`，命令参考见 TOOLS.md
+- **模块**: forex / oil / index / basis / position — ⚠️ 基差不含SC/LU
+
+### AKShare 扩展能力探索 (2026-03-11，待Tianshu确认后集成)
+已验证可用：
+- **海外期货实时/历史**: `futures_foreign_commodity_realtime(symbol)` / `futures_foreign_hist(symbol)`
+  - 代码：CL(WTI), OIL(Brent), NG(天然气), GC(黄金), HG(铜), EUA(欧盟碳)等30个品种
+- **INE/SHFE 实物数据**: `get_ine_daily(date)` SC原油全合约；`get_shfe_daily(date)` FU/LU；`futures_shfe_warehouse_receipt()` 仓单
+- **LME库存**: `macro_euro_lme_stock` ✅（铜/锡/铅/锌/铝/镍，2628行到3月9日）
+- **中国宏观**: CPI/PPI/PMI/GDP/出口等可用；贸易逆差/LPR/M2 超时（金十数据源不通）
+- 不可用：BDI/BCTI运费指数、全球现货价（东方财富网络不通）
+
 ---
 
-*最后更新: 2026-03-10 15:16 SGT*
+---
+
+*最后更新: 2026-03-11 02:12 SGT*
