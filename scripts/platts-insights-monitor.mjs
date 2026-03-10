@@ -9,6 +9,10 @@
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { trackUsage } from './usage-tracker.mjs';
+
+const userArg = process.argv.find(a => a.startsWith('--user='));
+const TRACK_USER = userArg ? userArg.split('=')[1] : 'system';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const WORKSPACE = join(__dirname, '..');
@@ -435,6 +439,7 @@ async function main() {
     state.seenStoryIds = relevantStories.map(item => item.id).slice(0, 100);
     state.lastCheckTime = new Date().toISOString();
     saveState(state);
+    try { trackUsage(TRACK_USER, 'platts', { action: 'insights-monitor' }); } catch {}
     
   } catch (e) {
     if (e.message === 'TOKEN_EXPIRED' || e.message.includes('401')) {

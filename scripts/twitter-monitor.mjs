@@ -11,6 +11,10 @@ import { execSync } from 'child_process';
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { trackUsage } from './usage-tracker.mjs';
+
+const userArg = process.argv.find(a => a.startsWith('--user='));
+const TRACK_USER = userArg ? userArg.split('=')[1] : 'system';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const WORKSPACE = join(__dirname, '..');
@@ -128,6 +132,7 @@ async function main() {
           url: `https://x.com/${t.author?.username || username}/status/${t.id}`
         });
       }
+      try { trackUsage(TRACK_USER, 'twitter', { action: 'fetch-tweets', account: username }); } catch {}
     }
   }
 

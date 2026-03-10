@@ -8,6 +8,7 @@ import https from 'https';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { trackUsage } from './usage-tracker.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const credPath = path.join(__dirname, '../.config/eia/credentials.json');
@@ -351,9 +352,12 @@ async function generateReport() {
 }
 
 // CLI
+const userArg = process.argv.find(a => a.startsWith('--user='));
+const TRACK_USER = userArg ? userArg.split('=')[1] : 'system';
 if (process.argv[2] === 'run') {
   generateReport().then(({ report }) => {
     console.log(report);
+    try { trackUsage(TRACK_USER, 'eia', { action: 'weekly-report' }); } catch {}
   }).catch(e => {
     console.error('Error:', e.message);
     process.exit(1);
@@ -361,6 +365,7 @@ if (process.argv[2] === 'run') {
 } else if (process.argv[2] === 'json') {
   generateReport().then(({ results }) => {
     console.log(JSON.stringify(results, null, 2));
+    try { trackUsage(TRACK_USER, 'eia', { action: 'weekly-report' }); } catch {}
   }).catch(e => {
     console.error('Error:', e.message);
     process.exit(1);

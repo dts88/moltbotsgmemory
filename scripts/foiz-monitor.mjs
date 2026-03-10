@@ -8,6 +8,10 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { trackUsage } from './usage-tracker.mjs';
+
+const userArg = process.argv.find(a => a.startsWith('--user='));
+const TRACK_USER = userArg ? userArg.split('=')[1] : 'system';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const WORKSPACE = join(__dirname, '..');
@@ -251,6 +255,7 @@ async function monitor() {
   state.lastData = data;
   state.lastUpdate = new Date().toISOString();
   saveState(state);
+  try { trackUsage(TRACK_USER, 'platts', { action: 'foiz-monitor' }); } catch {}
   
   // 7. 输出
   console.log(JSON.stringify({

@@ -32,6 +32,7 @@
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { trackUsage } from './usage-tracker.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const WORKSPACE = join(__dirname, '..');
@@ -424,15 +425,19 @@ async function main() {
       positionalArgs.push(arg);
     }
   });
+
+  const TRACK_USER = options.user && typeof options.user === 'string' ? options.user : 'system';
   
   try {
     switch (command) {
       case 'markets':
         await cmdMarkets();
+        try { trackUsage(TRACK_USER, 'platts-heards', { action: 'markets' }); } catch {}
         break;
         
       case 'metadata':
         await cmdMetadata();
+        try { trackUsage(TRACK_USER, 'platts-heards', { action: 'metadata' }); } catch {}
         break;
         
       case 'heards':
@@ -442,6 +447,7 @@ async function main() {
           process.exit(1);
         }
         await cmdHeards(positionalArgs[0], options);
+        try { trackUsage(TRACK_USER, 'platts-heards', { action: 'heards', market: positionalArgs[0] }); } catch {}
         break;
         
       case 'table':
@@ -450,6 +456,7 @@ async function main() {
           process.exit(1);
         }
         await cmdTable(positionalArgs[0], options);
+        try { trackUsage(TRACK_USER, 'platts-heards', { action: 'table', market: positionalArgs[0] }); } catch {}
         break;
         
       case 'export':
@@ -458,6 +465,7 @@ async function main() {
           process.exit(1);
         }
         await exportHeards(positionalArgs[0], options);
+        try { trackUsage(TRACK_USER, 'platts-heards', { action: 'export', market: positionalArgs[0] }); } catch {}
         break;
         
       default:

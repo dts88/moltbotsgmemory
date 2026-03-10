@@ -9,6 +9,10 @@
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { trackUsage } from './usage-tracker.mjs';
+
+const userArg = process.argv.find(a => a.startsWith('--user='));
+const TRACK_USER = userArg ? userArg.split('=')[1] : 'system';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const WORKSPACE = join(__dirname, '..');
@@ -94,6 +98,7 @@ async function refreshToken() {
 
     console.log(`✅ Token refreshed successfully!`);
     console.log(`   New expiry: ${localTime} SGT`);
+    try { trackUsage(TRACK_USER, 'platts', { action: 'token-refresh' }); } catch {}
     
     return { 
       success: true, 

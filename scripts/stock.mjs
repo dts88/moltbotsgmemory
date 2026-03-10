@@ -26,6 +26,7 @@
 import https from 'https';
 import http from 'http';
 import { Buffer } from 'buffer';
+import { trackUsage } from './usage-tracker.mjs';
 
 // ============================================================
 // Helpers
@@ -486,6 +487,7 @@ function outputJSON(data) {
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));
+  const TRACK_USER = typeof args.user === 'string' ? args.user : 'system';
   const command = args._[0];
   const target = args._[1];
   const market = args.market || (target ? detectMarket(target.split(',')[0]) : 'cn');
@@ -517,6 +519,7 @@ async function main() {
         if (!target) throw new Error('请指定股票代码');
         const codes = target.split(',');
         const results = market === 'us' ? await quoteUS(codes) : await quoteCN(codes);
+        if (results.length) { try { trackUsage(TRACK_USER, 'stock', { action: 'quote', market }); } catch {} }
         if (json) { outputJSON(results); break; }
         if (!results.length) { console.log('未获取到数据'); break; }
         for (const q of results) printQuote(q);
@@ -532,6 +535,7 @@ async function main() {
         const data = market === 'us'
           ? await historyUS(target, days)
           : await historyCN(target, days, klt);
+        try { trackUsage(TRACK_USER, 'stock', { action: 'history', market }); } catch {}
         if (json) { outputJSON(data); break; }
         printHistory(data, limit);
         break;
@@ -550,6 +554,7 @@ async function main() {
           const count = parseInt(args.count) || 250;
           result = await intradayCN(target, scale, count);
         }
+        try { trackUsage(TRACK_USER, 'stock', { action: 'intraday', market }); } catch {}
         if (json) { outputJSON(result); break; }
         printIntraday(result, limit);
         break;
@@ -560,16 +565,19 @@ async function main() {
         if (!target) throw new Error('请指定搜索关键词');
         if (market === 'all') {
           const [cn, us] = await Promise.all([searchCN(target), searchUS(target)]);
+          if (cn.length || us.length) { try { trackUsage(TRACK_USER, 'stock', { action: 'search', market }); } catch {} }
           if (json) { outputJSON({ cn, us }); break; }
           if (cn.length) printSearch(cn, 'cn');
           if (us.length) { console.log(); printSearch(us, 'us'); }
           if (!cn.length && !us.length) console.log('未找到结果');
         } else if (market === 'us') {
           const results = await searchUS(target);
+          if (results.length) { try { trackUsage(TRACK_USER, 'stock', { action: 'search', market }); } catch {} }
           if (json) { outputJSON(results); break; }
           printSearch(results, 'us');
         } else {
           const results = await searchCN(target);
+          if (results.length) { try { trackUsage(TRACK_USER, 'stock', { action: 'search', market }); } catch {} }
           if (json) { outputJSON(results); break; }
           printSearch(results, 'cn');
         }

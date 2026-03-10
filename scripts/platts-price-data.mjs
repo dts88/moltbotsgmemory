@@ -7,6 +7,10 @@
 import { readFileSync, writeFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { trackUsage } from './usage-tracker.mjs';
+
+const userArg = process.argv.find(a => a.startsWith('--user='));
+const TRACK_USER = userArg ? userArg.split('=')[1] : 'system';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const WORKSPACE = join(__dirname, '..');
@@ -207,6 +211,7 @@ async function main() {
   
   writeFileSync(OUTPUT_FILE, JSON.stringify(output, null, 2));
   console.log(`\n[Platts] 已保存到 ${OUTPUT_FILE}`);
+  try { trackUsage(TRACK_USER, 'platts', { action: 'price-data' }); } catch {}
   
   return output;
 }

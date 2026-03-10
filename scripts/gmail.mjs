@@ -8,6 +8,7 @@ import nodemailer from 'nodemailer';
 import Imap from 'imap';
 import { simpleParser } from 'mailparser';
 import { readFileSync } from 'fs';
+import { trackUsage } from './usage-tracker.mjs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -42,6 +43,7 @@ async function sendMail(to, subject, text, html = null) {
   
   const result = await transporter.sendMail(mailOptions);
   console.log('✅ 邮件已发送:', result.messageId);
+  try { trackUsage(TRACK_USER, 'gmail', { action: 'send', to }); } catch {}
   return result;
 }
 
@@ -121,6 +123,7 @@ async function fetchInbox(limit = 10, unseen = false) {
     imap.once('end', () => {
       // 按日期排序，最新的在前
       messages.sort((a, b) => new Date(b.date) - new Date(a.date));
+      try { trackUsage(TRACK_USER, 'gmail', { action: 'inbox', count: messages.length }); } catch {}
       resolve(messages);
     });
     
@@ -168,6 +171,8 @@ async function testConnection() {
 
 // CLI
 const args = process.argv.slice(2);
+const userArgG = args.find(a => a.startsWith('--user='));
+const TRACK_USER = userArgG ? userArgG.split('=')[1] : 'system';
 const cmd = args[0];
 
 switch (cmd) {

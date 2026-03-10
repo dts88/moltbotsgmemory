@@ -8,6 +8,7 @@ import https from 'https';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { trackUsage } from './usage-tracker.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const credPath = path.join(__dirname, '../.config/eia/credentials.json');
@@ -119,14 +120,16 @@ async function getWeeklyReport() {
 }
 
 // CLI
+const userArg = process.argv.find(a => a.startsWith('--user='));
+const TRACK_USER = userArg ? userArg.split('=')[1] : 'system';
 const cmd = process.argv[2];
 
 if (cmd === 'weekly') {
-  getWeeklyReport().then(r => console.log(JSON.stringify(r, null, 2)));
+  getWeeklyReport().then(r => { console.log(JSON.stringify(r, null, 2)); try { trackUsage(TRACK_USER, 'eia', { action: 'weekly', series: 'weekly-summary' }); } catch {} });
 } else if (cmd === 'series') {
   const key = process.argv[3];
   const weeks = parseInt(process.argv[4]) || 4;
-  fetchEIA(key, weeks).then(r => console.log(JSON.stringify(r, null, 2)));
+  fetchEIA(key, weeks).then(r => { console.log(JSON.stringify(r, null, 2)); try { trackUsage(TRACK_USER, 'eia', { action: 'series', series: key }); } catch {} });
 } else {
   console.log(`Usage:
   node eia-data.mjs weekly              # 获取周报摘要
