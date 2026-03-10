@@ -8,7 +8,7 @@
 
 - **名字**: Moltbot
 - **诞生**: 2026-01-29，新加坡
-- **运行环境**: Unraid 服务器 → OpenClaw 2026.2.1
+- **运行环境**: Unraid 服务器 → OpenClaw 2026.3.8
 - **主人**: Tianshu (+6592716786)
 
 ---
@@ -537,4 +537,62 @@ node scripts/gmail.mjs inbox [n] [--unseen]    # 读取
 
 ---
 
-*最后更新: 2026-03-06 00:52 SGT*
+## 🛢️ OilClaw 商业服务 (2026-03-10)
+
+**Bot**: @OilClaw_bot
+**模式**: `dmPolicy: "pairing"` (用户需批准)
+**定价**: SGD 49/月，2天免费试用
+
+### 已批准用户
+| # | Telegram ID | 名字 | 批准日期 |
+|---|------------|------|---------|
+| 1 | 8438057858 | Henry | 2026-03-10 |
+
+### 用户权限
+- ✅ Web 搜索、天气、PDF 分析
+- ✅ Twitter 搜索（不允许自动跟踪，共享凭证有频率限制）
+- ✅ EIA API（库存、产量等公开数据）
+- ✅ 股票查询（A股+美股，scripts/stock.mjs）
+- ✅ Polymarket 查询
+- ✅ 日历、邮箱工具
+- ❌ Platts API（全部 — Heards、News、Price Data、Structured Heards）
+- ❌ 个人信息、memory 文件
+- ❌ OpenClaw 设置、cron 管理
+- ❌ Torrent 下载
+- ❌ Home Assistant 智能家居
+
+### 用量追踪
+- **脚本**: `scripts/usage-tracker.mjs`
+- **日志**: `.config/usage/usage-log.jsonl`
+- **命令**: `node scripts/usage-tracker.mjs report|summary|limits`
+- **追踪服务**: Claude tokens, Twitter, EIA, Platts, Brave Search, Polymarket, Stock, Gmail
+- **per-user 追踪**: 所有脚本支持 `--user=telegramID`，为用户执行时必须带上
+- **11 个脚本已集成**: twitter-monitor, eia-data, eia-weekly-report, platts-insights-monitor, platts-price-data, platts-structured-heards, platts-refresh-token, stock, polymarket-monitor, foiz-monitor, gmail
+- **用户级 Cron**: 暂不开放，未来按需设计（需在 payload 中带 --user）
+
+### Bot 设置
+- **Description**: AI energy market intelligence (原油/成品油/LNG/地缘政治)
+- **Commands**: /start, /search, /weather, /status, /new, /help（精简为6条，隐藏内部命令）
+- **allowFrom 文件**: `/home/node/.openclaw/credentials/telegram-oilclaw-allowFrom.json`
+
+---
+
+## 🔧 系统调整 (2026-03-10)
+
+### Heartbeat
+- **频率**: 6小时一次（从1小时调整）
+- **模型**: Opus（不变）
+- **任务**: Memory 整理
+
+### Twitter Monitor
+- **模型**: Sonnet（从 Opus 调整，省 token）
+- **频率**: 每10分钟（不变）
+
+### Platts Token 监控增强
+- refresh_token 追踪获取时间（`refresh_token_obtained_at`）
+- Monitor 运行时检查 token 年龄，接近过期（>20h）发告警
+- 周末 token 过期根因：refresh_token 本身有有效期（约24h），不是 access_token 的问题
+
+---
+
+*最后更新: 2026-03-10 14:23 SGT*
