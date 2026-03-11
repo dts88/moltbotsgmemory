@@ -156,7 +156,9 @@ EIA 周报 cron 每周三 23:40 SGT 自动执行。
 7. 📎 数据源
 
 规则：
+- **不可推迟发布**，数据不全照样按时出报告
 - 缺数据用"数据待更新"占位，不删章节
+- 后续数据到位后可以补充发一条更新
 - 无数据章节保留标题写"今日无"
 - 不加"建议""展望"等额外章节
 - *加粗*关键公司名和油种
@@ -485,17 +487,39 @@ GET https://api.platts.com/news-insights/v1/content/{articleId}
 - **脚本**: `scripts/market.py`，命令参考见 TOOLS.md
 - **模块**: forex / oil / index / basis / position — ⚠️ 基差不含SC/LU
 
-### AKShare 扩展能力探索 (2026-03-11，待Tianshu确认后集成)
-已验证可用：
-- **海外期货实时/历史**: `futures_foreign_commodity_realtime(symbol)` / `futures_foreign_hist(symbol)`
-  - 代码：CL(WTI), OIL(Brent), NG(天然气), GC(黄金), HG(铜), EUA(欧盟碳)等30个品种
-- **INE/SHFE 实物数据**: `get_ine_daily(date)` SC原油全合约；`get_shfe_daily(date)` FU/LU；`futures_shfe_warehouse_receipt()` 仓单
-- **LME库存**: `macro_euro_lme_stock` ✅（铜/锡/铅/锌/铝/镍，2628行到3月9日）
-- **中国宏观**: CPI/PPI/PMI/GDP/出口等可用；贸易逆差/LPR/M2 超时（金十数据源不通）
-- 不可用：BDI/BCTI运费指数、全球现货价（东方财富网络不通）
+### market.py 完整命令 (2026-03-11 完成)
+**脚本**: `scripts/market.py`，命令参考见 TOOLS.md
+
+| 命令 | 数据 | 备注 |
+|------|------|------|
+| forex | 中行即期汇率 | USD/CNY返回nan属正常 |
+| oil | 中国成品油价格（最新/历史/地区） | - |
+| index | 全球股指 | 东方财富源 |
+| basis | 期现基差 | 不含SC原油 |
+| position | SHFE/DCE/INE/GFEX持仓排名 | DCE偶发超时；SHFE盘中无数 |
+| ~~rig~~ | ~~美国钻井数~~ | ⛔已删除（贝克休斯AKShare源停更2024-02） |
+| cftc | CFTC非商业持仓（原油净仓） | 最新到2026-03-03 |
+| usaprod | 美国原油产量EIA周报 | 最新到2026-02-27 |
+| shibor | 中国银行间利率 | - |
+| fedrate | 美联储利率决议 | - |
+| overseas | 海外期货实时 CL/OIL/NG/EUA | ~1s 实时 |
+| lme | LME金属库存 | 铜铝锌镍铅锡 |
+| wci | 德鲁里集运指数 | 周度 |
+
+**待探索**（已告知Tianshu）：奇货可查(qhkc)、债券收益率、波动率(VIX)、高频数据
+
+### AKShare INE/SHFE 实物数据 (2026-03-11 发现) ✅
+可直接调用（未集成到 market.py，按需 scripts 内使用）：
+```python
+import akshare as ak
+ak.get_ine_daily(date="20260310")          # SC原油全合约日行情
+ak.get_shfe_daily(date="20260310")         # FU/LU/BU全合约
+ak.futures_shfe_warehouse_receipt()        # 仓单（含中质含硫原油+燃料油）
+ak.futures_settle_ine(date="20260310")     # INE结算价+保证金
+```
 
 ---
 
 ---
 
-*最后更新: 2026-03-11 02:12 SGT*
+*最后更新: 2026-03-11 18:24 SGT*
