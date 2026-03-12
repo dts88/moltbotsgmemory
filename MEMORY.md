@@ -64,6 +64,12 @@
 详见 `skills/eia-data/SKILL.md`（库存/产量/开工率，周度，周三发布）
 EIA 周报 cron 每周三 23:40 SGT 自动执行。
 
+### ⚠️ 已知 Bug（2026-03-12 已修复）
+`eia-weekly-report.mjs` `fetchCountryImports()` 中 `length` 参数原为 `weeks * 15`（太小），
+EIA wimpc 端点每期约19个国家，30条记录导致上一周期只能覆盖11个国家，
+Venezuela/沙特/伊拉克等排序靠后的国家上周值显示为0，变化幅度严重偏大。
+已修复为 `weeks * 50`。
+
 ---
 
 ## 🔑 Platts Token (全局)
@@ -133,11 +139,10 @@ EIA 周报 cron 每周三 23:40 SGT 自动执行。
 - `1586dc76-3bc6-4528-b48f-8d196fcc630c` - 报告导入与向量化 (每天3:00 SGT)
 - `c9b1d0f1-cf1b-468a-a093-c4cdd8dc99ba` - 外交部例行记者会监控 (周一至周五 16/17/18点北京时间)
 - `e650493f-56cb-4815-b24b-c12aad120191` - FOIZ 库存监控 (周二三 10:00 SGT)
-- `52d9ac0e-f7f0-4d06-b186-b51e5d1d3d4b` - Polymarket Geopolitical Monitor (每小时)
-- `edff591f-368d-4e82-9a59-d6a3d03426dd` - Hormuz Monitor (每4小时)
+- `52d9ac0e-f7f0-4d06-b186-b51e5d1d3d4b` - Polymarket Geopolitical Monitor (每4小时，2026-03-10 从1h改)
+- `edff591f-368d-4e82-9a59-d6a3d03426dd` - Hormuz Monitor ⛔已禁用 (2026-03-10，合并至Polymarket Monitor)
 - `22f865a5-a942-4a11-98f0-5af85cea6d5f` - 新加坡库存周报 (周四14:00 SGT)
 - `b97e0428-3da9-464e-8e88-2d5033f46e65` - Dubai MOC Daily Report (周一至周五 16:36 SGT)
-- `416477c9-cf11-4678-8d3c-7a2a68a23b32` - PLDT Earnings Check (2月24-28日)
 - `70c745cc-96c3-4505-bcb8-d3c5412fce04` - Cron 安全审计 (每周日10:00 SGT) ← 2026-03-04 新增
 
 ### Dubai MOC Daily Report ⚠️
@@ -185,6 +190,37 @@ EIA 周报 cron 每周三 23:40 SGT 自动执行。
 - **Headers**: Bearer token + `appkey: mXrBlqeKBqbHpYNMX96h9qN0D8H5o3AN`
 - **脚本**: `scripts/platts-price-data.mjs`
 - **输出**: `reports/price-data.json`
+
+## 🛢️ Singapore Mogas MOC (2026-03-12) ✅
+
+**Skill**: `skills/mogas-moc-report/SKILL.md`
+
+### eWindow API
+- **Base URL**: `https://api.platts.com/tradedata/v3/ewindowdata`
+- **认证**: Platts Bearer Token（共用，无需 appkey）
+- 成交：`order_state="consummated"`（非 order_type="Trade"！）
+- Spread 成交生3条记录（1 spread + 2 derived outrights）→ VWAP 只用 `order_spread="F"`
+- ⚠️ 全天 900+ 条，分页截断 → 必须按 product/type **分开查询**，不能一次拉全量
+- 收盘订单簿：`order_state in ("active","inactive")`
+
+### MOPS Assessment 方法论
+- PRFEY00 = outright consummated VWAP，Heards 为权威来源（不含 derived legs）
+- Daily Structure = Bal Month/M1 spread ÷ days between mid-months → **KDC 是唯一精确来源**
+- MOPS Strip = Bal Month − Daily Structure × (mid_window − mid_earlier)
+- mid 计算：floor((today + last_day) / 2)；切换 Bal/M1→M1/M2 约每月 16-17 日
+
+### 脚本
+- `scripts/mogas-moc-ewindow.mjs` — 完整 MOC 分析
+- `scripts/mogas-mops-strip.mjs` — MOPS Strip 计算器（bid/offer 0-100% 分位）
+
+### 2026-03-12 基准数据（回测用）
+- MOPS 92 M1: $117.57（Heards 7笔/200kb）；含 derived legs 为 $117.58
+- Daily Structure: $0.48/b（KDC）；bid=$0.40/b, offer=$0.93/b → KDC 约在 15% 分位
+- MOPS Strip: $123.12（KDC）；Bal Month: $129.60，spread: $12.00，days: 25，daysToMid: 13.5
+- 92 RON physical bid: $130.10（VITOLSG）；physical premium vs strip: +$6.98/b
+- 95 RON: SKEISG→UNIPECSG $143.50/b Apr1-5；95/92: +$13.40/b
+
+---
 
 ## 📦 FOIZ 库存监控 (2026-03-02) ✅
 
@@ -522,4 +558,4 @@ ak.futures_settle_ine(date="20260310")     # INE结算价+保证金
 
 ---
 
-*最后更新: 2026-03-11 18:24 SGT*
+*最后更新: 2026-03-12 18:27 SGT*
