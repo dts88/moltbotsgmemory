@@ -54,6 +54,21 @@
 - **Cron**: `edff591f-368d-4e82-9a59-d6a3d03426dd`
 - **Polymarket 霍尔木兹合约**: 3月/6月/年底三合约 2026-03-14 全部 settled YES（1月合约 NO）；总交易量 ~$5.77M；Polymarket 报告不再显示霍尔木兹板块（市场关闭）
 
+### ICE Brent Daily Report
+- **内容**: ICE Brent Crude Futures 每日结算价 PDF（report/10）
+- **频率**: 周一至周五 04:30 SGT（UTC 20:30）
+- **Cron**: `9ddf0631-1725-4af9-93cb-8a4c911a815a`
+- **脚本**: `scripts/ice-brent-report.mjs`
+- **输出**: WhatsApp +6592716786 + Telegram 8689396037（摘要文字 + PDF）
+- **Session 缓存**: `.config/ice/session.json`（有效期 ~8小时）
+- **登录方式**: `appKey=ICE`，触发邮件 2FA（`api/authenticateTfa`）
+- **下载 API**: `POST https://www.ice.com/marketdata/api/reports/10/download/pdf`
+  - 参数: `exchangeCodeAndContract=IFEU,B&selectedDate=YYYY-MM-DD`
+  - 需要: `iceSsoCookie` + `iceSsoJSessionId` + `reportCenterCookie`
+- **⚠️ Session 管理**: iceSsoCookie 约8小时过期，过期后需重新登录（有 2FA）
+  - Session 过期时 cron 会发 WhatsApp 告警，Tianshu 需回复验证码
+  - 手动刷新: `node scripts/ice-brent-report.mjs <YYYY-MM-DD> <OTP>`
+
 ### Memory Backup
 - **频率**: 每天凌晨 3 点
 - **Cron**: `c22828ba-b1cb-4113-91f4-84f26430bb88`
