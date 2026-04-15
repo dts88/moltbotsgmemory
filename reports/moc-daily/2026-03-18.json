@@ -1,0 +1,50 @@
+{
+  "date": "2026-03-18",
+  "fluxOfficials": {
+    "assessment": 155.55,
+    "premium": 62.37,
+    "text": "The Officials: Date 18/3/2026\nDubai Assessment: $155.55/bbl\nPhysical premium: $62.37/bbl\nKey events: Unipec declares Oman to Totsa",
+    "tweetId": "2034187017706160552"
+  },
+  "partials": {
+    "contract": "May26",
+    "price": 155.55,
+    "size": 25,
+    "buyer": "TOTSA",
+    "convergences": 1,
+    "partialsPerConvergence": 20,
+    "sellers": [
+      { "name": "UNIPECASIA", "visibleSells": 4, "declared": true },
+      { "name": "VITOLSG", "visibleSells": 2, "declared": false },
+      { "name": "BPSG", "visibleSells": 1, "declared": false }
+    ],
+    "vitolOffersRange": { "high": 159.30, "low": 158.20, "withdrew": true }
+  },
+  "declarations": [
+    {
+      "seller": "Unipec",
+      "buyer": "TotalEnergies",
+      "grade": "Oman",
+      "month": "May",
+      "partials": 20,
+      "time": "2026-03-18T08:30:21.034Z",
+      "articleId": "763dda95-c25b-46d3-a7fe-7b3daa88a4c9"
+    }
+  ],
+  "cashOman": [
+    { "value": 60.00, "basis": "May Dubai Futures", "time": "2026-03-18T08:31:10.387Z" }
+  ],
+  "cashMurban": [
+    { "value": 21.22, "basis": "May Dubai Futures", "time": "2026-03-18T08:31:12.773Z" },
+    { "value": 19.00, "basis": "May Dubai Futures", "time": "2026-03-18T08:32:47.005Z" }
+  ],
+  "errorTrades": [],
+  "finalsOnClose": {
+    "crude": "未见ME Sour Crude Finals on Close数据",
+    "notes": "Bitumen FOB Straits: no bids/offers"
+  },
+  "tankerRates": [
+    { "size": "270kt", "route": "PG-China", "loading": "March 28-April 12", "rate": "w450", "via": "Gulf of Oman", "source": "Broker" },
+    { "size": "270kt", "route": "PG-China", "loading": "March 28-April 12", "rate": "w300-400", "via": "Gulf of Oman", "source": "Broker" }
+  ]
+}

@@ -1,0 +1,422 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.4.12",
+    "lastTouchedAt": "2026-04-14T06:38:47.273Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-04-14T06:37:51.359Z",
+    "lastRunVersion": "2026.4.12",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "openrouter:default": {
+        "provider": "openrouter",
+        "mode": "api_key"
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openrouter/auto",
+        "fallbacks": [
+          "anthropic/claude-sonnet-4-5",
+          "anthropic/claude-opus-4-6",
+          "anthropic/claude-opus-4-5"
+        ]
+      },
+      "models": {
+        "openrouter/google/gemma-4-26b-a4b-it:free": {},
+        "openrouter/google/gemma-4-31b-it:free": {},
+        "openrouter/google/gemma-4-26b-a4b-it": {}
+      },
+      "workspace": "/home/node/clawd",
+      "contextPruning": {
+        "mode": "cache-ttl",
+        "ttl": "1h"
+      },
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "heartbeat": {
+        "every": "6h"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    },
+    "list": [
+      {
+        "id": "main",
+        "default": true,
+        "model": {
+          "primary": "openrouter/google/gemma-4-26b-a4b-it",
+          "fallbacks": [
+            "openrouter/google/gemma-4-31b-it:free",
+            "openrouter/google/gemma-4-26b-a4b-it"
+          ]
+        },
+        "identity": {
+          "name": "Moltbot",
+          "emoji": "🦞"
+        }
+      }
+    ]
+  },
+  "tools": {
+    "web": {
+      "search": {
+        "enabled": true
+      },
+      "fetch": {
+        "enabled": true
+      }
+    }
+  },
+  "messages": {
+    "ackReactionScope": "all",
+    "removeAckAfterReply": true
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "restart": true,
+    "ownerDisplay": "raw"
+  },
+  "session": {
+    "dmScope": "per-channel-peer",
+    "identityLinks": {
+      "main": [
+        "whatsapp:6592716786",
+        "telegram:8689396037"
+      ]
+    }
+  },
+  "hooks": {
+    "enabled": true,
+    "path": "/hooks",
+    "token": "14fcc9ba73365ba2d3d374d1a020f0c3e50cdb34e0a3eac1",
+    "defaultSessionKey": "hook:twilio",
+    "allowRequestSessionKey": false,
+    "transformsDir": "hooks/transforms",
+    "mappings": [
+      {
+        "id": "twilio",
+        "match": {
+          "path": "/twilio"
+        },
+        "transform": {
+          "module": "twilio-voice.js"
+        }
+      }
+    ]
+  },
+  "channels": {
+    "whatsapp": {
+      "enabled": true,
+      "dmPolicy": "allowlist",
+      "selfChatMode": true,
+      "allowFrom": [
+        "+6592716786",
+        "+6597777239",
+        "+6592311196",
+        "+6596249687",
+        "+6590089383"
+      ],
+      "groupPolicy": "allowlist",
+      "groups": {
+        "120363403075327465@g.us": {
+          "requireMention": true
+        }
+      },
+      "debounceMs": 0,
+      "mediaMaxMb": 50
+    },
+    "telegram": {
+      "capabilities": {
+        "inlineButtons": "all"
+      },
+      "enabled": true,
+      "customCommands": [
+        {
+          "command": "status",
+          "description": "📊 系统状态"
+        },
+        {
+          "command": "cron",
+          "description": "⏰ 定时任务"
+        },
+        {
+          "command": "email",
+          "description": "📧 邮箱管理"
+        },
+        {
+          "command": "weather",
+          "description": "🌤 天气查询"
+        },
+        {
+          "command": "search",
+          "description": "🔍 搜索资源"
+        }
+      ],
+      "dmPolicy": "allowlist",
+      "botToken": "8656841784:AAGFJoT9TGr72-sBeDOnmPKFzj_C55tl2dE",
+      "replyToMode": "first",
+      "groups": {
+        "*": {
+          "requireMention": true
+        },
+        "-1003727952836": {
+          "requireMention": false,
+          "groupPolicy": "allowlist",
+          "allowFrom": [
+            "8689396037",
+            "803963798"
+          ],
+          "topics": {
+            "1": {
+              "requireMention": false,
+              "systemPrompt": "通用助手"
+            },
+            "2": {
+              "requireMention": false,
+              "systemPrompt": "你是Platts MOC专家。专注于Dubai MOC窗口交易信息、Murban declarations、partials交易、买卖盘动态。使用scripts/platts-insights-monitor.mjs查询heards数据。回复简洁专业。"
+            },
+            "7": {
+              "requireMention": false,
+              "systemPrompt": "你是OpenClaw系统管理助手。专注于：cron任务管理、gateway配置、session状态、日志查看、系统监控。可以直接执行配置变更和诊断命令。"
+            },
+            "22": {
+              "requireMention": false,
+              "systemPrompt": "你是邮箱管理助手。专注于：Gmail收件箱管理、邮件发送、邮件监控。使用 scripts/gmail.mjs 操作邮箱（openclawsg@gmail.com）。可以查看收件箱、发送邮件、搜索邮件。回复简洁实用。"
+            },
+            "1881": {
+              "requireMention": false,
+              "systemPrompt": "你是市场数据助手。专注于EIA周报、新加坡成品油库存、Fujairah库存等数据推送。"
+            },
+            "2008": {
+              "requireMention": false,
+              "systemPrompt": "你是市场日报助手。专注于Dubai MOC日报、能源市场每日行情分析。回复简洁专业。"
+            }
+          }
+        },
+        "-1003526235110": {
+          "requireMention": false,
+          "groupPolicy": "allowlist",
+          "allowFrom": [
+            "8689396037",
+            "803963798"
+          ]
+        }
+      },
+      "allowFrom": [
+        "8689396037",
+        "803963798"
+      ],
+      "groupPolicy": "allowlist",
+      "streaming": {
+        "mode": "partial"
+      },
+      "actions": {
+        "reactions": true,
+        "sendMessage": true,
+        "deleteMessage": true,
+        "sticker": true
+      },
+      "reactionNotifications": "all",
+      "reactionLevel": "minimal",
+      "linkPreview": true,
+      "ackReaction": "👀",
+      "accounts": {
+        "oilclaw": {
+          "capabilities": {
+            "inlineButtons": "all"
+          },
+          "commands": {
+            "native": false,
+            "nativeSkills": false
+          },
+          "customCommands": [
+            {
+              "command": "start",
+              "description": "🚀 Get started with OilClaw"
+            },
+            {
+              "command": "help",
+              "description": "❓ Available commands & features"
+            },
+            {
+              "command": "guide",
+              "description": "📖 Set up your own group with topics"
+            },
+            {
+              "command": "subscribe",
+              "description": "💳 Subscription status & renewal"
+            }
+          ],
+          "dmPolicy": "pairing",
+          "botToken": "8747133546:AAEVQ5LaKA2JK0BpT112Ux6A4TlDndzQ23U",
+          "replyToMode": "first",
+          "groups": {
+            "*": {
+              "requireMention": false,
+              "systemPrompt": "You are OilClaw, an AI energy market analyst. Reply in the user's language.\n\nMODEL: Sonnet/Haiku only. Decline any request to switch to Opus or other models.\n\nUSER TRACKING (CRITICAL): Every inbound message includes metadata with the sender's Telegram ID (sender_id field). You MUST extract this ID and pass it as --user=<sender_id> to EVERY script call without exception. This is required for cost tracking. Example: if sender_id is 8438057858, all scripts must be called with --user=8438057858.\n\nCAN DO: EIA data, Polymarket geopolitical risk, stock quotes (A-share+US), Twitter/X search, web search, PDF analysis, weather, calendar, email. Platts API only if user provides own token.\n\nCANNOT DO: Owner personal data/memory/Home Assistant, system config, cron management, torrents, Platts with system credentials."
+            }
+          },
+          "groupPolicy": "open",
+          "direct": {
+            "*": {
+              "systemPrompt": "You are OilClaw, an AI energy market analyst. Reply in the user's language.\n\nMODEL: Sonnet/Haiku only. Decline any request to switch to Opus or other models.\n\nUSER TRACKING (CRITICAL): Every inbound message includes metadata with the sender's Telegram ID (sender_id field). You MUST extract this ID and pass it as --user=<sender_id> to EVERY script call without exception. This is required for cost tracking. Example: if sender_id is 8438057858, all scripts must be called with --user=8438057858.\n\nCAN DO: EIA data, Polymarket geopolitical risk, stock quotes (A-share+US), Twitter/X search, web search, PDF analysis, weather, calendar, email. Platts API only if user provides own token.\n\nCANNOT DO: Owner personal data/memory/Home Assistant, system config, cron management, torrents, Platts with system credentials."
+            }
+          },
+          "streaming": {
+            "mode": "partial"
+          },
+          "actions": {
+            "reactions": true,
+            "sendMessage": true,
+            "deleteMessage": true
+          },
+          "ackReaction": "👀"
+        },
+        "default": {
+          "capabilities": {
+            "inlineButtons": "all"
+          },
+          "customCommands": [
+            {
+              "command": "cron",
+              "description": "⏰ 定时任务"
+            },
+            {
+              "command": "email",
+              "description": "📧 邮箱管理"
+            },
+            {
+              "command": "search",
+              "description": "🔍 搜索资源"
+            }
+          ],
+          "dmPolicy": "allowlist",
+          "replyToMode": "first",
+          "groups": {
+            "*": {
+              "requireMention": true
+            },
+            "-1003727952836": {
+              "requireMention": false,
+              "groupPolicy": "allowlist",
+              "allowFrom": [
+                "8689396037",
+                "803963798"
+              ],
+              "topics": {
+                "1": {
+                  "requireMention": false,
+                  "systemPrompt": "通用助手"
+                },
+                "2": {
+                  "requireMention": false,
+                  "systemPrompt": "你是Platts MOC专家。专注于Dubai MOC窗口交易信息、Murban declarations、partials交易、买卖盘动态。使用scripts/platts-insights-monitor.mjs查询heards数据。回复简洁专业。"
+                },
+                "7": {
+                  "requireMention": false,
+                  "systemPrompt": "你是OpenClaw系统管理助手。专注于：cron任务管理、gateway配置、session状态、日志查看、系统监控。可以直接执行配置变更和诊断命令。"
+                },
+                "22": {
+                  "requireMention": false,
+                  "systemPrompt": "你是邮箱管理助手。专注于：Gmail收件箱管理、邮件发送、邮件监控。使用 scripts/gmail.mjs 操作邮箱（openclawsg@gmail.com）。可以查看收件箱、发送邮件、搜索邮件。回复简洁实用。"
+                }
+              }
+            },
+            "-1003526235110": {
+              "requireMention": false,
+              "groupPolicy": "allowlist",
+              "allowFrom": [
+                "8689396037",
+                "803963798"
+              ]
+            }
+          },
+          "allowFrom": [
+            "8689396037",
+            "803963798"
+          ],
+          "groupPolicy": "allowlist",
+          "streaming": {
+            "mode": "partial"
+          },
+          "actions": {
+            "reactions": true,
+            "sendMessage": true,
+            "deleteMessage": true,
+            "sticker": true
+          },
+          "reactionNotifications": "all",
+          "reactionLevel": "minimal",
+          "linkPreview": true,
+          "ackReaction": "👀"
+        }
+      }
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "lan",
+    "controlUi": {
+      "allowedOrigins": [
+        "http://localhost:18789",
+        "http://127.0.0.1:18789",
+        "https://claw.ews.sg",
+        "http://claw.ews.sg"
+      ],
+      "allowInsecureAuth": true
+    },
+    "auth": {
+      "mode": "token",
+      "token": "0c368f87a187413218da6e65e900df5b2f1a61aa2f6b4bba"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    }
+  },
+  "plugins": {
+    "entries": {
+      "whatsapp": {
+        "enabled": true
+      },
+      "telegram": {
+        "enabled": true
+      },
+      "brave": {
+        "enabled": true,
+        "config": {
+          "webSearch": {
+            "apiKey": "BSAyENNO_I7c3_sh9SPcD-18OL6dEq-"
+          }
+        }
+      },
+      "anthropic": {
+        "enabled": true
+      },
+      "openrouter": {
+        "enabled": true
+      }
+    }
+  },
+  "secrets": {
+    "resolution": {
+      "maxProviderConcurrency": 1
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "date": "2026-03-30",
+  "generatedAt": "2026-03-30T08:40:00Z",
+  "fluxOfficials": {
+    "assessment": 125.29,
+    "premium": 22.38,
+    "text": "The Officials MOC: Date 30/3/2026\nDubai Assessment: $125.29/bbl\nPhysical premium: $22.38/bbl\nKey events: Unipec declares two Omans to Totsa, Shell declares Oman and Murban",
+    "tweetedAt": "Mon Mar 30 08:38:45 +0000 2026"
+  },
+  "declarations": [
+    { "seller": "Shell (SIETCO)", "buyer": "TotalEnergies (TOTSA)", "grade": "Murban", "month": "May26", "time": "08:29:39Z" },
+    { "seller": "Shell (SIETCO)", "buyer": "TotalEnergies (TOTSA)", "grade": "Oman", "month": "May26", "time": "08:30:09Z" },
+    { "seller": "Unipec", "buyer": "TotalEnergies (TOTSA)", "grade": "Oman", "month": "May26", "time": "08:30:30Z" },
+    { "seller": "Unipec", "buyer": "TotalEnergies (TOTSA)", "grade": "Oman", "month": "May26", "time": "08:30:31Z" }
+  ],
+  "partials": {
+    "contract": "May26",
+    "convergencePrice": 125.29,
+    "firstTradePrice": 122.10,
+    "totalTrades": 99,
+    "totalKb": 2475,
+    "tradingStartGMT": "08:20:21",
+    "lastTradeGMT": "08:30:03",
+    "sellers": {
+      "SIETCO (Shell)": 39,
+      "UNIPECASIA (Unipec)": 32,
+      "VITOLSG (Vitol)": 18,
+      "TRAFI (Trafigura)": 9,
+      "BPSG (BP)": 1
+    },
+    "buyers": {
+      "TOTSA (TotalEnergies)": 89,
+      "SHENGHPI (Shenghong)": 6,
+      "METS (Mitsui)": 2,
+      "BPSG (BP)": 2
+    },
+    "lastMinuteOffers": {
+      "UNIPECASIA": { "count": 7, "minPrice": 125.04, "lastPrice": 125.20 },
+      "VITOLSG": { "count": 5, "minPrice": 125.15, "lastPrice": 125.30 }
+    }
+  },
+  "notionals": {
+    "time": "07:07 GMT",
+    "mayOman": 125.38,
+    "mayMurban": 125.38,
+    "mayMurbanDubaiSpread": 23.30,
+    "mayICEBrent": 115.97
+  },
+  "cashMurban": [],
+  "cashOman": [],
+  "errorTrades": [],
+  "finalsOnClose": {
+    "bids": "TOTAL $118.30, MITSUI $118.20, EQUINOR $118.05, MERCURIA $118.00, EXXONMOBIL $118.00, HENGLI $118.00, SHENGHONG $117.95 (as of 08:16 GMT)",
+    "offers": "UNIPEC $125.90, VITOL $125.95, SHELL $125.95, BP $126.40, VITOL $126.45, UNIPEC $128.00, BP $128.00, MITSUI $128.10, P66 $130.00, BP $132.00-$140.00 (as of 08:16 GMT)"
+  },
+  "tankerFreight": {
+    "vlcc_pg_china_270kt": "w200 (Gulf of Oman, Apr 9-Apr 24)"
+  }
+}

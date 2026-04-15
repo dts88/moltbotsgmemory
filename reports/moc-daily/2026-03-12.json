@@ -1,0 +1,47 @@
+{
+  "date": "2026-03-12",
+  "generatedAt": "2026-03-12T08:36:00Z",
+  "fluxOfficials": {
+    "assessment": null,
+    "premium": null,
+    "text": "The Dubai partials market opened well bid, with Totsa bidding at $127.50 and not an offer in sight. Meanwhile, by 8:00 GMT Oman had $46 bid/offer spread and Murban was around $106.20. Most oil installations are out of commission and even Mina Al Fahal temporarily suspended loadings.",
+    "note": "Today's Dubai Assessment NOT yet posted by FluxOfficials as of report generation time (08:36 UTC)"
+  },
+  "declarations": [
+    { "seller": "Chevron", "buyer": "TotalEnergies", "grade": "Murban", "month": "May", "time": "08:29:12Z", "price": 134.40 },
+    { "seller": "BP", "buyer": "TotalEnergies", "grade": "Murban", "month": "May", "time": "08:30:25Z", "price": 134.40 },
+    { "seller": "Shell", "buyer": "TotalEnergies", "grade": "Murban", "month": "May", "time": "08:32:34Z", "price": 134.40 }
+  ],
+  "cashOman": [
+    { "value": 46.00, "basis": "May Dubai Futures", "time": "08:32:25Z" },
+    { "value": 43.94, "basis": "May Dubai Futures", "time": "08:32:56Z" }
+  ],
+  "cashMurban": [
+    { "value": 29.00, "basis": "May Dubai Futures", "time": "08:32:27Z" },
+    { "value": 29.06, "basis": "May Dubai Futures", "time": "08:32:58Z" }
+  ],
+  "partialsActivity": {
+    "contract": "May26 Dubai Partial",
+    "primaryBuyer": "TOTSA",
+    "convergences": 3,
+    "handsPerConvergence": 20,
+    "totalHands": 60,
+    "totalKb": 1500,
+    "convergencePrice": 134.40,
+    "sellers_at_134_40": ["CHEVRONUSASB", "BPSG", "SHENGHPI(Shell)", "SIETCO"],
+    "sietcoHighOffer": 139.90,
+    "totsa_also_bought_from_SIETCO_at": [139.95, 139.90],
+    "equinor_bought_from_SIETCO_at": 140.00,
+    "p66_offer_not_hit": 144.90
+  },
+  "errorTrades": [],
+  "finalsOnClose": {
+    "note": "ME Sour Crude Finals on Close not yet published as of report generation time"
+  },
+  "marketContext": [
+    "Iran attacked Oman oil tanks (reported 11 Mar)",
+    "Mina Al Fahal temporarily suspended loadings",
+    "Most oil installations out of commission",
+    "Shell declared force majeure on LNG deliveries to Asia"
+  ]
+}

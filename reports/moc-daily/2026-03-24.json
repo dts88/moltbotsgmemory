@@ -1,0 +1,47 @@
+{
+  "date": "2026-03-24",
+  "fluxOfficials": {
+    "assessment": 157.025,
+    "premium": 61.085,
+    "text": "The Officials MOC: Date 24/3/2026\nDubai Assessment: $157.025/bbl\nPhysical premium: $61.085/bbl\nKey events: Unipec declares 3 Omans to Totsa, Shell and P66 declare Murban to Totsa, Vitol declares Oman to Totsa"
+  },
+  "declarations": [
+    { "seller": "Phillips 66", "buyer": "TotalEnergies", "grade": "Murban", "month": "May26", "time": "2026-03-24T08:24:13Z" },
+    { "seller": "Shell", "buyer": "TotalEnergies", "grade": "Murban", "month": "May26", "time": "2026-03-24T08:27:14Z" },
+    { "seller": "Unipec", "buyer": "TotalEnergies", "grade": "Oman", "month": "May26", "time": "2026-03-24T08:31:12Z" },
+    { "seller": "Unipec", "buyer": "TotalEnergies", "grade": "Oman", "month": "May26", "time": "2026-03-24T08:31:13Z" },
+    { "seller": "Unipec", "buyer": "TotalEnergies", "grade": "Oman", "month": "May26", "time": "2026-03-24T08:31:14Z" },
+    { "seller": "Vitol", "buyer": "TotalEnergies", "grade": "Oman", "month": "May26", "time": "2026-03-24T08:32:20Z" }
+  ],
+  "cashMurban": [{ "value": 17.86, "unit": "$/B over May Dubai Futures", "time": "2026-03-24T08:31:38Z" }],
+  "cashOman": [{ "value": 32.00, "unit": "$/B over May Dubai Futures", "time": "2026-03-24T08:31:36Z" }],
+  "errorTrades": [],
+  "partialsConvergence": {
+    "contract": "May26",
+    "priceRange": [157.00, 157.05],
+    "assessment": 157.025,
+    "buyer": "TOTSA",
+    "sellers": ["Vitol", "Unipec", "Sinochem", "METS"]
+  },
+  "preMOCBids": [
+    { "company": "Total", "grade": "Dubai", "price": 154.85, "size": "25kb" },
+    { "company": "Total", "grade": "Dubai", "price": 154.75, "size": "25kb" },
+    { "company": "Mercuria", "grade": "Dubai", "price": 154.65, "size": "25kb" },
+    { "company": "Hengli", "grade": "Dubai", "price": 153.60, "size": "25kb" },
+    { "company": "Total", "grade": "Oman", "price": 151.00, "size": "25kb" }
+  ],
+  "preMOCOffers": [
+    { "company": "Unipec", "price": 160.00, "size": "25kb" },
+    { "company": "Trafigura", "price": 160.00, "size": "25kb" },
+    { "company": "Vitol", "price": 160.00, "size": "25kb" },
+    { "company": "Shell", "price": 160.00, "size": "25kb" },
+    { "company": "Gunvor", "price": 160.00, "size": "25kb" },
+    { "company": "Shenghong", "price": 160.00, "size": "25kb" },
+    { "company": "Phillips 66", "price": 162.00, "size": "25kb" },
+    { "company": "Vitol", "price": 162.00, "size": "25kb" }
+  ],
+  "finalsOnClose": {
+    "bids": "无 ME Sour Crude 收盘买卖盘数据",
+    "offers": "无 ME Sour Crude 收盘买卖盘数据"
+  }
+}

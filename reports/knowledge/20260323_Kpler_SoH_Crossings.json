@@ -1,0 +1,2618 @@
+{
+  "source": "Kpler",
+  "title": "Strait of Hormuz Vessel Crossings (Kpler)",
+  "dataDate": "2026-03-23T04:00:00Z",
+  "sheets": {
+    "Liquids": {
+      "total_vessels": 129,
+      "cargo_breakdown": {
+        "CPP": 11,
+        "DPP": 12,
+        "Crude": 36,
+        "Chemicals": 5
+      },
+      "by_date": {
+        "2026-03-21": {
+          "total": 4,
+          "laden": 2,
+          "ballast": 2,
+          "W_to_E": 3,
+          "E_to_W": 1
+        },
+        "2026-03-20": {
+          "total": 1,
+          "laden": 1,
+          "ballast": 0,
+          "W_to_E": 1,
+          "E_to_W": 0
+        },
+        "2026-03-19": {
+          "total": 1,
+          "laden": 0,
+          "ballast": 1,
+          "W_to_E": 0,
+          "E_to_W": 1
+        },
+        "2026-03-18": {
+          "total": 5,
+          "laden": 4,
+          "ballast": 1,
+          "W_to_E": 4,
+          "E_to_W": 1
+        },
+        "2026-03-17": {
+          "total": 3,
+          "laden": 1,
+          "ballast": 2,
+          "W_to_E": 1,
+          "E_to_W": 2
+        },
+        "2026-03-16": {
+          "total": 2,
+          "laden": 1,
+          "ballast": 1,
+          "W_to_E": 1,
+          "E_to_W": 1
+        },
+        "2026-03-15": {
+          "total": 5,
+          "laden": 5,
+          "ballast": 0,
+          "W_to_E": 5,
+          "E_to_W": 0
+        },
+        "2026-03-14": {
+          "total": 3,
+          "laden": 2,
+          "ballast": 1,
+          "W_to_E": 2,
+          "E_to_W": 1
+        },
+        "2026-03-12": {
+          "total": 1,
+          "laden": 1,
+          "ballast": 0,
+          "W_to_E": 1,
+          "E_to_W": 0
+        },
+        "2026-03-11": {
+          "total": 7,
+          "laden": 5,
+          "ballast": 2,
+          "W_to_E": 4,
+          "E_to_W": 3
+        },
+        "2026-03-10": {
+          "total": 3,
+          "laden": 2,
+          "ballast": 1,
+          "W_to_E": 2,
+          "E_to_W": 1
+        },
+        "2026-03-09": {
+          "total": 2,
+          "laden": 2,
+          "ballast": 0,
+          "W_to_E": 2,
+          "E_to_W": 0
+        },
+        "2026-03-08": {
+          "total": 2,
+          "laden": 0,
+          "ballast": 2,
+          "W_to_E": 0,
+          "E_to_W": 2
+        },
+        "2026-03-07": {
+          "total": 1,
+          "laden": 0,
+          "ballast": 1,
+          "W_to_E": 1,
+          "E_to_W": 0
+        },
+        "2026-03-06": {
+          "total": 2,
+          "laden": 2,
+          "ballast": 0,
+          "W_to_E": 2,
+          "E_to_W": 0
+        },
+        "2026-03-05": {
+          "total": 3,
+          "laden": 0,
+          "ballast": 3,
+          "W_to_E": 2,
+          "E_to_W": 1
+        },
+        "2026-03-04": {
+          "total": 5,
+          "laden": 3,
+          "ballast": 2,
+          "W_to_E": 4,
+          "E_to_W": 1
+        },
+        "2026-03-03": {
+          "total": 3,
+          "laden": 3,
+          "ballast": 0,
+          "W_to_E": 3,
+          "E_to_W": 0
+        },
+        "2026-03-02": {
+          "total": 5,
+          "laden": 1,
+          "ballast": 4,
+          "W_to_E": 2,
+          "E_to_W": 3
+        },
+        "2026-03-01": {
+          "total": 16,
+          "laden": 5,
+          "ballast": 11,
+          "W_to_E": 10,
+          "E_to_W": 6
+        },
+        "2026-02-28": {
+          "total": 55,
+          "laden": 24,
+          "ballast": 31,
+          "W_to_E": 37,
+          "E_to_W": 18
+        }
+      },
+      "vessels": [
+        {
+          "vessel": "Abu Dhabi-Iii",
+          "imo": 9489027,
+          "dwt": 105131,
+          "flag": "Liberia",
+          "direction": "West -> East",
+          "date": "2026-03-21",
+          "loading": "laden",
+          "cargo": "CPP"
+        },
+        {
+          "vessel": "Reef",
+          "imo": 9263382,
+          "dwt": 18376,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-03-21",
+          "loading": "laden",
+          "cargo": "CPP"
+        },
+        {
+          "vessel": "Oceana Kai",
+          "imo": 9221267,
+          "dwt": 14796,
+          "flag": "Palau",
+          "direction": "West -> East",
+          "date": "2026-03-21",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Elpis",
+          "imo": 9212400,
+          "dwt": 33775,
+          "flag": "Panama",
+          "direction": "East -> West",
+          "date": "2026-03-21",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "North Star",
+          "imo": 9299563,
+          "dwt": 72808,
+          "flag": "Bahamas",
+          "direction": "West -> East",
+          "date": "2026-03-20",
+          "loading": "laden",
+          "cargo": "DPP"
+        },
+        {
+          "vessel": "Helm",
+          "imo": 9357391,
+          "dwt": 317356,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "East -> West",
+          "date": "2026-03-19",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Dalia",
+          "imo": 9820324,
+          "dwt": 49000,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "West -> East",
+          "date": "2026-03-18",
+          "loading": "laden",
+          "cargo": "DPP"
+        },
+        {
+          "vessel": "Noble",
+          "imo": 9162928,
+          "dwt": 47198,
+          "flag": "Gabon",
+          "direction": "West -> East",
+          "date": "2026-03-18",
+          "loading": "laden",
+          "cargo": "DPP"
+        },
+        {
+          "vessel": "Lbs",
+          "imo": 9271406,
+          "dwt": 105817,
+          "flag": "Panama",
+          "direction": "East -> West",
+          "date": "2026-03-18",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Titan",
+          "imo": 9293741,
+          "dwt": 299097,
+          "flag": "Cameroon",
+          "direction": "West -> East",
+          "date": "2026-03-18",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Ping Shun",
+          "imo": 9231901,
+          "dwt": 112668,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-03-18",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Al Ruwais",
+          "imo": 9828405,
+          "dwt": 114717,
+          "flag": "Liberia",
+          "direction": "West -> East",
+          "date": "2026-03-17",
+          "loading": "laden",
+          "cargo": "CPP"
+        },
+        {
+          "vessel": "Halti",
+          "imo": 9212890,
+          "dwt": 299261,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "East -> West",
+          "date": "2026-03-17",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Anabel",
+          "imo": 9246279,
+          "dwt": 299997,
+          "flag": "Gambia",
+          "direction": "East -> West",
+          "date": "2026-03-17",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Hawk",
+          "imo": 9362061,
+          "dwt": 317367,
+          "flag": "iran (Islamic Republic of)",
+          "direction": "East -> West",
+          "date": "2026-03-16",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Serena",
+          "imo": 9569645,
+          "dwt": 317536,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "West -> East",
+          "date": "2026-03-16",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Stream",
+          "imo": 9569633,
+          "dwt": 317534,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "West -> East",
+          "date": "2026-03-15",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Sinopa",
+          "imo": 9172038,
+          "dwt": 159681,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "West -> East",
+          "date": "2026-03-15",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Stellann",
+          "imo": 9277761,
+          "dwt": 74999,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-03-15",
+          "loading": "laden",
+          "cargo": "Chemicals"
+        },
+        {
+          "vessel": "Nora",
+          "imo": 9237539,
+          "dwt": 298414,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "West -> East",
+          "date": "2026-03-15",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Karachi",
+          "imo": 9903413,
+          "dwt": 109990,
+          "flag": "Pakistan",
+          "direction": "West -> East",
+          "date": "2026-03-15",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Ocean Guardian",
+          "imo": 9267948,
+          "dwt": 46101,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-03-14",
+          "loading": "laden",
+          "cargo": "CPP"
+        },
+        {
+          "vessel": "Al Safa",
+          "imo": 9222649,
+          "dwt": 47087,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-03-14",
+          "loading": "laden",
+          "cargo": "DPP"
+        },
+        {
+          "vessel": "Sea Cliff",
+          "imo": 9569657,
+          "dwt": 317536,
+          "flag": "Panama",
+          "direction": "East -> West",
+          "date": "2026-03-14",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Smyrni",
+          "imo": 9493779,
+          "dwt": 149998,
+          "flag": "Liberia",
+          "direction": "West -> East",
+          "date": "2026-03-12",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Omega Trader",
+          "imo": 9567659,
+          "dwt": 305206,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-03-11",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Serengeti",
+          "imo": 9403554,
+          "dwt": 74999,
+          "flag": "Liberia",
+          "direction": "East -> West",
+          "date": "2026-03-11",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Breez",
+          "imo": 9247778,
+          "dwt": 47038,
+          "flag": "Palau",
+          "direction": "East -> West",
+          "date": "2026-03-11",
+          "loading": "laden",
+          "cargo": "CPP"
+        },
+        {
+          "vessel": "Skywave",
+          "imo": 9328716,
+          "dwt": 302481,
+          "flag": "Palau",
+          "direction": "West -> East",
+          "date": "2026-03-11",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Wen Yao",
+          "imo": 9288095,
+          "dwt": 298972,
+          "flag": "San Marino",
+          "direction": "West -> East",
+          "date": "2026-03-11",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "P. Aliki",
+          "imo": 9460136,
+          "dwt": 105304,
+          "flag": "Marshall Islands",
+          "direction": "West -> East",
+          "date": "2026-03-11",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Salina",
+          "imo": 9357377,
+          "dwt": 164154,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "East -> West",
+          "date": "2026-03-11",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Humanity",
+          "imo": 9180281,
+          "dwt": 299990,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "East -> West",
+          "date": "2026-03-10",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Hasna",
+          "imo": 9212917,
+          "dwt": 299229,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "West -> East",
+          "date": "2026-03-10",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Herby",
+          "imo": 9362059,
+          "dwt": 317367,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "West -> East",
+          "date": "2026-03-10",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Sanmar Herald",
+          "imo": 9330563,
+          "dwt": 309000,
+          "flag": "Greece",
+          "direction": "West -> East",
+          "date": "2026-03-09",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Cume",
+          "imo": 9379703,
+          "dwt": 296068,
+          "flag": "Barbados",
+          "direction": "West -> East",
+          "date": "2026-03-09",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Dalia",
+          "imo": 9820324,
+          "dwt": 49000,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "East -> West",
+          "date": "2026-03-08",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Felicity",
+          "imo": 9183934,
+          "dwt": 299990,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "East -> West",
+          "date": "2026-03-08",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Parimal",
+          "imo": 9308766,
+          "dwt": 12887,
+          "flag": "Palau",
+          "direction": "West -> East",
+          "date": "2026-03-07",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Amber",
+          "imo": 9357406,
+          "dwt": 317356,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "West -> East",
+          "date": "2026-03-06",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Shenlong",
+          "imo": 9379210,
+          "dwt": 159021,
+          "flag": "Liberia",
+          "direction": "West -> East",
+          "date": "2026-03-06",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Destiny",
+          "imo": 9177155,
+          "dwt": 281050,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "East -> West",
+          "date": "2026-03-05",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Torm Hermia",
+          "imo": 9797993,
+          "dwt": 114939,
+          "flag": "Singapore",
+          "direction": "West -> East",
+          "date": "2026-03-05",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Rajtilak",
+          "imo": 9383340,
+          "dwt": 6143,
+          "flag": "Cook Islands",
+          "direction": "West -> East",
+          "date": "2026-03-05",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Hilda I",
+          "imo": 9357389,
+          "dwt": 317367,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "West -> East",
+          "date": "2026-03-04",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Stark I",
+          "imo": 9171450,
+          "dwt": 159681,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "West -> East",
+          "date": "2026-03-04",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Celeste I",
+          "imo": 9250488,
+          "dwt": 45950,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-03-04",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Kavomaleas",
+          "imo": 1042823,
+          "dwt": 75000,
+          "flag": "Malta",
+          "direction": "East -> West",
+          "date": "2026-03-04",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Padmanabh",
+          "imo": 9483774,
+          "dwt": 5887,
+          "flag": "Cook Islands",
+          "direction": "West -> East",
+          "date": "2026-03-04",
+          "loading": "laden",
+          "cargo": "DPP"
+        },
+        {
+          "vessel": "Jaya",
+          "imo": 9410387,
+          "dwt": 310084,
+          "flag": "Marshall Islands",
+          "direction": "West -> East",
+          "date": "2026-03-03",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Silvia 1",
+          "imo": 9172052,
+          "dwt": 159711,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "West -> East",
+          "date": "2026-03-03",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Blooming Dale",
+          "imo": 9125724,
+          "dwt": 12083,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-03-03",
+          "loading": "laden",
+          "cargo": "DPP"
+        },
+        {
+          "vessel": "Pola",
+          "imo": 9493767,
+          "dwt": 149996,
+          "flag": "Liberia",
+          "direction": "East -> West",
+          "date": "2026-03-02",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Puffin Two",
+          "imo": 9438274,
+          "dwt": 6981,
+          "flag": "Liberia",
+          "direction": "East -> West",
+          "date": "2026-03-02",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Athe Nova",
+          "imo": 9188116,
+          "dwt": 2915,
+          "flag": "Honduras",
+          "direction": "West -> East",
+          "date": "2026-03-02",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Shiva",
+          "imo": 9427146,
+          "dwt": 12000,
+          "flag": "Cook Islands",
+          "direction": "West -> East",
+          "date": "2026-03-02",
+          "loading": "laden",
+          "cargo": "DPP"
+        },
+        {
+          "vessel": "Smyrni",
+          "imo": 9493779,
+          "dwt": 149998,
+          "flag": "Liberia",
+          "direction": "East -> West",
+          "date": "2026-03-02",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Kerala",
+          "imo": 9390927,
+          "dwt": 74964,
+          "flag": "Liberia",
+          "direction": "East -> West",
+          "date": "2026-03-01",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Dalia",
+          "imo": 9820324,
+          "dwt": 49000,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "West -> East",
+          "date": "2026-03-01",
+          "loading": "laden",
+          "cargo": "DPP"
+        },
+        {
+          "vessel": "Songa Neptune",
+          "imo": 9565766,
+          "dwt": 19802,
+          "flag": "Marshall Islands",
+          "direction": "West -> East",
+          "date": "2026-03-01",
+          "loading": "laden",
+          "cargo": "Chemicals"
+        },
+        {
+          "vessel": "Divine Power",
+          "imo": 9171357,
+          "dwt": 44990,
+          "flag": "Palau",
+          "direction": "West -> East",
+          "date": "2026-03-01",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Capetan Andreas",
+          "imo": 9284374,
+          "dwt": 74045,
+          "flag": "Liberia",
+          "direction": "West -> East",
+          "date": "2026-03-01",
+          "loading": "laden",
+          "cargo": "CPP"
+        },
+        {
+          "vessel": "Chios",
+          "imo": 7113375,
+          "dwt": 3184,
+          "flag": "Comoros",
+          "direction": "West -> East",
+          "date": "2026-03-01",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Loanna",
+          "imo": 9251884,
+          "dwt": 46764,
+          "flag": "Palau",
+          "direction": "East -> West",
+          "date": "2026-03-01",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Valor",
+          "imo": 9258179,
+          "dwt": 47199,
+          "flag": "Liberia",
+          "direction": "West -> East",
+          "date": "2026-03-01",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Athina",
+          "imo": 9389564,
+          "dwt": 74999,
+          "flag": "Liberia",
+          "direction": "East -> West",
+          "date": "2026-03-01",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Nordic Pollux",
+          "imo": 9239848,
+          "dwt": 150103,
+          "flag": "Cayman Islands",
+          "direction": "East -> West",
+          "date": "2026-03-01",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Torm Astrid",
+          "imo": 9510682,
+          "dwt": 49999,
+          "flag": "Denmark",
+          "direction": "West -> East",
+          "date": "2026-03-01",
+          "loading": "laden",
+          "cargo": "CPP"
+        },
+        {
+          "vessel": "New Vision",
+          "imo": 9799202,
+          "dwt": 307434,
+          "flag": "Hong Kong",
+          "direction": "West -> East",
+          "date": "2026-03-01",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Bow Summer",
+          "imo": 9215270,
+          "dwt": 49592,
+          "flag": "Norway",
+          "direction": "West -> East",
+          "date": "2026-03-01",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Puffin Two",
+          "imo": 9438274,
+          "dwt": 6981,
+          "flag": "Liberia",
+          "direction": "West -> East",
+          "date": "2026-03-01",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Sinopa",
+          "imo": 9172038,
+          "dwt": 159681,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "East -> West",
+          "date": "2026-03-01",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Dover",
+          "imo": 9218466,
+          "dwt": 296977,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "East -> West",
+          "date": "2026-03-01",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Rudra",
+          "imo": 9571064,
+          "dwt": 5884,
+          "flag": "Palau",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Ocean Koi",
+          "imo": 9255933,
+          "dwt": 72768,
+          "flag": "Barbados",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "DPP"
+        },
+        {
+          "vessel": "Marathi",
+          "imo": 9772357,
+          "dwt": 149992,
+          "flag": "Malta",
+          "direction": "East -> West",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Pk Marit",
+          "imo": 9235464,
+          "dwt": 22820,
+          "flag": "Cook Islands",
+          "direction": "East -> West",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Trima",
+          "imo": 9252072,
+          "dwt": 47355,
+          "flag": "Cook Islands",
+          "direction": "East -> West",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Bentley",
+          "imo": 9220914,
+          "dwt": 42721,
+          "flag": "Cook Islands",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "DPP"
+        },
+        {
+          "vessel": "Serifos",
+          "imo": 9410399,
+          "dwt": 309774,
+          "flag": "Liberia",
+          "direction": "East -> West",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Dm Condor",
+          "imo": 9441659,
+          "dwt": 14583,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "Chemicals"
+        },
+        {
+          "vessel": "Tm Hai Ha 818",
+          "imo": 9382499,
+          "dwt": 16900,
+          "flag": "Viet Nam",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "CPP"
+        },
+        {
+          "vessel": "Estia",
+          "imo": 9327035,
+          "dwt": 73711,
+          "flag": "Bahamas",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Modeste",
+          "imo": 9220938,
+          "dwt": 42721,
+          "flag": "Gambia",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Rudra",
+          "imo": 9571064,
+          "dwt": 5884,
+          "flag": "Palau",
+          "direction": "East -> West",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Xin Long Yang",
+          "imo": 9761463,
+          "dwt": 308376,
+          "flag": "Singapore",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Nissos Nikouria",
+          "imo": 9920760,
+          "dwt": 300323,
+          "flag": "Marshall Islands",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Selenia",
+          "imo": 9286437,
+          "dwt": 5765,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Prince Ix",
+          "imo": 9133599,
+          "dwt": 4450,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Desh Abhimaan",
+          "imo": 9326809,
+          "dwt": 158710,
+          "flag": "India",
+          "direction": "East -> West",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "MADI",
+          "imo": 9282625,
+          "dwt": 72825,
+          "flag": "Bahamas",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "DPP"
+        },
+        {
+          "vessel": "Khk Empress",
+          "imo": 9830965,
+          "dwt": 314014,
+          "flag": "Singapore",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Pearl Kenzo",
+          "imo": 9948346,
+          "dwt": 7999,
+          "flag": "Singapore",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Eagle Vellore",
+          "imo": 9933602,
+          "dwt": 299554,
+          "flag": "Malaysia",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Aegean Nobility",
+          "imo": 9345441,
+          "dwt": 115814,
+          "flag": "Greece",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "The Diplomat",
+          "imo": 9659672,
+          "dwt": 30158,
+          "flag": "Marshall Islands",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Star Line",
+          "imo": 9237618,
+          "dwt": 105716,
+          "flag": "Panama",
+          "direction": "East -> West",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Kashimasan",
+          "imo": 9329863,
+          "dwt": 306033,
+          "flag": "India",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Palamas",
+          "imo": 9938042,
+          "dwt": 115462,
+          "flag": "Malta",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Shalamar",
+          "imo": 9336842,
+          "dwt": 105315,
+          "flag": "Pakistan",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Burri",
+          "imo": 9787948,
+          "dwt": 115019,
+          "flag": "Cayman Islands",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "CPP"
+        },
+        {
+          "vessel": "Mona",
+          "imo": 9917880,
+          "dwt": 54500,
+          "flag": "Saudi Arabia",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Minerva Doxa",
+          "imo": 9304617,
+          "dwt": 159438,
+          "flag": "Greece",
+          "direction": "East -> West",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Impalas",
+          "imo": 9171448,
+          "dwt": 299167,
+          "flag": "Sao Tome and Principe",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Berg 1",
+          "imo": 9262168,
+          "dwt": 299984,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Sofia Ii",
+          "imo": 9364239,
+          "dwt": 105400,
+          "flag": "Liberia",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Fs Bitumen No. 2",
+          "imo": 9796559,
+          "dwt": 7769,
+          "flag": "Panama",
+          "direction": "East -> West",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "DPP"
+        },
+        {
+          "vessel": "Al Maha",
+          "imo": 9406740,
+          "dwt": 4172,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "New Corolla",
+          "imo": 9900679,
+          "dwt": 307551,
+          "flag": "Hong Kong",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Stallion",
+          "imo": 9399478,
+          "dwt": 157048,
+          "flag": "Bahamas",
+          "direction": "East -> West",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Maymei",
+          "imo": 9133082,
+          "dwt": 44936,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "Chemicals"
+        },
+        {
+          "vessel": "Shenlong",
+          "imo": 9379210,
+          "dwt": 159021,
+          "flag": "Liberia",
+          "direction": "East -> West",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Palamas",
+          "imo": 9938042,
+          "dwt": 115462,
+          "flag": "Malta",
+          "direction": "East -> West",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Vesuvio",
+          "imo": 9740330,
+          "dwt": 297639,
+          "flag": "Denmark",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Pontus",
+          "imo": 9511179,
+          "dwt": 5752,
+          "flag": "Palau",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Loanna",
+          "imo": 9239977,
+          "dwt": 46764,
+          "flag": "Saint Kitts and Nevis",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "Chemicals"
+        },
+        {
+          "vessel": "Monjasa Shipper",
+          "imo": 9825025,
+          "dwt": 7991,
+          "flag": "Liberia",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Marine Charge",
+          "imo": 9956707,
+          "dwt": 8286,
+          "flag": "Singapore",
+          "direction": "East -> West",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Grand Bonanza",
+          "imo": 9915569,
+          "dwt": 299988,
+          "flag": "Panama",
+          "direction": "East -> West",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Ds Ocean",
+          "imo": 9330587,
+          "dwt": 19940,
+          "flag": "Korea, Republic of",
+          "direction": "East -> West",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "C. Primacy",
+          "imo": 9422160,
+          "dwt": 316427,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Khk Empress",
+          "imo": 9830965,
+          "dwt": 314014,
+          "flag": "Singapore",
+          "direction": "East -> West",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "Crude"
+        },
+        {
+          "vessel": "Happy Camper",
+          "imo": 9277773,
+          "dwt": 74999,
+          "flag": "Marshall Islands",
+          "direction": "East -> West",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Mei Lin Wan",
+          "imo": 9614074,
+          "dwt": 109485,
+          "flag": "China",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "CPP"
+        },
+        {
+          "vessel": "M K A",
+          "imo": 9269403,
+          "dwt": 29524,
+          "flag": "Cook Islands",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Elka Apollon",
+          "imo": 9299111,
+          "dwt": 101970,
+          "flag": "Liberia",
+          "direction": "East -> West",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Rong Lin Wan",
+          "imo": 9783423,
+          "dwt": 109783,
+          "flag": "Singapore",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "CPP"
+        },
+        {
+          "vessel": "Dalia",
+          "imo": 9322982,
+          "dwt": 11316,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        }
+      ]
+    },
+    "LPG": {
+      "total_vessels": 19,
+      "cargo_breakdown": {
+        "LPG": 14
+      },
+      "by_date": {
+        "2026-03-21": {
+          "total": 1,
+          "laden": 1,
+          "ballast": 0,
+          "W_to_E": 1,
+          "E_to_W": 0
+        },
+        "2026-03-20": {
+          "total": 1,
+          "laden": 1,
+          "ballast": 0,
+          "W_to_E": 1,
+          "E_to_W": 0
+        },
+        "2026-03-19": {
+          "total": 1,
+          "laden": 0,
+          "ballast": 1,
+          "W_to_E": 0,
+          "E_to_W": 1
+        },
+        "2026-03-18": {
+          "total": 2,
+          "laden": 1,
+          "ballast": 1,
+          "W_to_E": 1,
+          "E_to_W": 1
+        },
+        "2026-03-14": {
+          "total": 4,
+          "laden": 3,
+          "ballast": 1,
+          "W_to_E": 3,
+          "E_to_W": 1
+        },
+        "2026-03-10": {
+          "total": 1,
+          "laden": 1,
+          "ballast": 0,
+          "W_to_E": 1,
+          "E_to_W": 0
+        },
+        "2026-03-06": {
+          "total": 1,
+          "laden": 1,
+          "ballast": 0,
+          "W_to_E": 1,
+          "E_to_W": 0
+        },
+        "2026-03-04": {
+          "total": 1,
+          "laden": 1,
+          "ballast": 0,
+          "W_to_E": 1,
+          "E_to_W": 0
+        },
+        "2026-03-01": {
+          "total": 1,
+          "laden": 1,
+          "ballast": 0,
+          "W_to_E": 1,
+          "E_to_W": 0
+        },
+        "2026-02-28": {
+          "total": 6,
+          "laden": 4,
+          "ballast": 2,
+          "W_to_E": 4,
+          "E_to_W": 2
+        }
+      },
+      "vessels": [
+        {
+          "vessel": "Aira",
+          "imo": 8818219,
+          "dwt": 49996,
+          "flag": "Palau",
+          "direction": "East -> West",
+          "date": "2026-03-19",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Aura",
+          "imo": 9274563,
+          "dwt": 53395,
+          "flag": "Cook Islands",
+          "direction": "West -> East",
+          "date": "2026-03-21",
+          "loading": "loaded",
+          "cargo": "LPG"
+        },
+        {
+          "vessel": "Astra",
+          "imo": 9350422,
+          "dwt": 54368,
+          "flag": "Comoros",
+          "direction": "West -> East",
+          "date": "2026-03-20",
+          "loading": "loaded",
+          "cargo": "LPG"
+        },
+        {
+          "vessel": "Sea Bird",
+          "imo": 9088536,
+          "dwt": 49679,
+          "flag": "Palau",
+          "direction": "West -> East",
+          "date": "2026-03-18",
+          "loading": "loaded",
+          "cargo": "LPG"
+        },
+        {
+          "vessel": "Tower Rise",
+          "imo": 8912546,
+          "dwt": 49301,
+          "flag": "Cook Islands",
+          "direction": "East -> West",
+          "date": "2026-03-18",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Navixon",
+          "imo": 9115303,
+          "dwt": 49849,
+          "flag": "Tanzania",
+          "direction": "West -> East",
+          "date": "2026-03-14",
+          "loading": "loaded",
+          "cargo": "LPG"
+        },
+        {
+          "vessel": "Astra",
+          "imo": 9350422,
+          "dwt": 54368,
+          "flag": "Comoros",
+          "direction": "East -> West",
+          "date": "2026-03-14",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Nanda Devi",
+          "imo": 9232503,
+          "dwt": 53503,
+          "flag": "India",
+          "direction": "West -> East",
+          "date": "2026-03-14",
+          "loading": "loaded",
+          "cargo": "LPG"
+        },
+        {
+          "vessel": "Shivalik",
+          "imo": 9356892,
+          "dwt": 53999,
+          "flag": "India",
+          "direction": "West -> East",
+          "date": "2026-03-14",
+          "loading": "loaded",
+          "cargo": "LPG"
+        },
+        {
+          "vessel": "Sea Hermes",
+          "imo": 9031519,
+          "dwt": 49242,
+          "flag": "Palau",
+          "direction": "West -> East",
+          "date": "2026-03-10",
+          "loading": "loaded",
+          "cargo": "LPG"
+        },
+        {
+          "vessel": "Danuta I",
+          "imo": 9193721,
+          "dwt": 56824,
+          "flag": "Cook Islands",
+          "direction": "West -> East",
+          "date": "2026-03-06",
+          "loading": "loaded",
+          "cargo": "LPG"
+        },
+        {
+          "vessel": "Pamir",
+          "imo": 9208239,
+          "dwt": 54800,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-03-04",
+          "loading": "loaded",
+          "cargo": "LPG"
+        },
+        {
+          "vessel": "Hh Glory",
+          "imo": 9534614,
+          "dwt": 54867,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-03-01",
+          "loading": "loaded",
+          "cargo": "LPG"
+        },
+        {
+          "vessel": "Bogazici",
+          "imo": 9237747,
+          "dwt": 26616,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "loaded",
+          "cargo": "LPG"
+        },
+        {
+          "vessel": "Navigator Leo",
+          "imo": 9482574,
+          "dwt": 22844,
+          "flag": "Liberia",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "loaded",
+          "cargo": "LPG"
+        },
+        {
+          "vessel": "Epic Sentosa",
+          "imo": 9733533,
+          "dwt": 9052,
+          "flag": "Singapore",
+          "direction": "East -> West",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Berge Nantong",
+          "imo": 9317987,
+          "dwt": 58757,
+          "flag": "Hong Kong",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "loaded",
+          "cargo": "LPG"
+        },
+        {
+          "vessel": "Ullswater",
+          "imo": 9139945,
+          "dwt": 7678,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "loaded",
+          "cargo": "LPG"
+        },
+        {
+          "vessel": "Green Asha",
+          "imo": 9326598,
+          "dwt": 26424,
+          "flag": "India",
+          "direction": "East -> West",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        }
+      ]
+    },
+    "LNG": {
+      "total_vessels": 3,
+      "cargo_breakdown": {
+        "LNG": 1
+      },
+      "by_date": {
+        "2026-02-28": {
+          "total": 3,
+          "laden": 1,
+          "ballast": 2,
+          "W_to_E": 1,
+          "E_to_W": 2
+        }
+      },
+      "vessels": [
+        {
+          "vessel": "Gaslog Shanghai",
+          "imo": 9600528,
+          "dwt": 82104,
+          "flag": "Bermuda",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "loaded",
+          "cargo": "LNG"
+        },
+        {
+          "vessel": "Disha",
+          "imo": 9250713,
+          "dwt": 81097,
+          "flag": "Malta",
+          "direction": "East -> West",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Lebrethah",
+          "imo": 9976927,
+          "dwt": 95000,
+          "flag": "Liberia",
+          "direction": "East -> West",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        }
+      ]
+    },
+    "Dry": {
+      "total_vessels": 70,
+      "cargo_breakdown": {
+        "Dry Bulk": 18,
+        "Iron Ore Pellets": 1
+      },
+      "by_date": {
+        "2026-03-22": {
+          "total": 2,
+          "laden": 1,
+          "ballast": 1,
+          "W_to_E": 2,
+          "E_to_W": 0
+        },
+        "2026-03-21": {
+          "total": 2,
+          "laden": 1,
+          "ballast": 1,
+          "W_to_E": 2,
+          "E_to_W": 0
+        },
+        "2026-03-19": {
+          "total": 1,
+          "laden": 1,
+          "ballast": 0,
+          "W_to_E": 0,
+          "E_to_W": 1
+        },
+        "2026-03-16": {
+          "total": 5,
+          "laden": 0,
+          "ballast": 5,
+          "W_to_E": 4,
+          "E_to_W": 1
+        },
+        "2026-03-15": {
+          "total": 3,
+          "laden": 0,
+          "ballast": 3,
+          "W_to_E": 3,
+          "E_to_W": 0
+        },
+        "2026-03-14": {
+          "total": 1,
+          "laden": 0,
+          "ballast": 1,
+          "W_to_E": 1,
+          "E_to_W": 0
+        },
+        "2026-03-13": {
+          "total": 1,
+          "laden": 0,
+          "ballast": 1,
+          "W_to_E": 0,
+          "E_to_W": 1
+        },
+        "2026-03-12": {
+          "total": 1,
+          "laden": 0,
+          "ballast": 1,
+          "W_to_E": 1,
+          "E_to_W": 0
+        },
+        "2026-03-11": {
+          "total": 4,
+          "laden": 1,
+          "ballast": 3,
+          "W_to_E": 3,
+          "E_to_W": 1
+        },
+        "2026-03-10": {
+          "total": 3,
+          "laden": 0,
+          "ballast": 3,
+          "W_to_E": 3,
+          "E_to_W": 0
+        },
+        "2026-03-09": {
+          "total": 1,
+          "laden": 1,
+          "ballast": 0,
+          "W_to_E": 0,
+          "E_to_W": 1
+        },
+        "2026-03-08": {
+          "total": 2,
+          "laden": 1,
+          "ballast": 1,
+          "W_to_E": 2,
+          "E_to_W": 0
+        },
+        "2026-03-07": {
+          "total": 3,
+          "laden": 1,
+          "ballast": 2,
+          "W_to_E": 3,
+          "E_to_W": 0
+        },
+        "2026-03-05": {
+          "total": 2,
+          "laden": 1,
+          "ballast": 1,
+          "W_to_E": 2,
+          "E_to_W": 0
+        },
+        "2026-03-04": {
+          "total": 2,
+          "laden": 1,
+          "ballast": 1,
+          "W_to_E": 1,
+          "E_to_W": 1
+        },
+        "2026-03-03": {
+          "total": 1,
+          "laden": 0,
+          "ballast": 1,
+          "W_to_E": 1,
+          "E_to_W": 0
+        },
+        "2026-03-02": {
+          "total": 4,
+          "laden": 1,
+          "ballast": 3,
+          "W_to_E": 3,
+          "E_to_W": 1
+        },
+        "2026-03-01": {
+          "total": 13,
+          "laden": 4,
+          "ballast": 9,
+          "W_to_E": 11,
+          "E_to_W": 2
+        },
+        "2026-02-28": {
+          "total": 19,
+          "laden": 5,
+          "ballast": 14,
+          "W_to_E": 16,
+          "E_to_W": 3
+        }
+      },
+      "vessels": [
+        {
+          "vessel": "Nadab",
+          "imo": 9106699,
+          "dwt": 23716,
+          "flag": "Palau",
+          "direction": "West -> East",
+          "date": "2026-03-22",
+          "loading": "laden",
+          "cargo": "Dry Bulk"
+        },
+        {
+          "vessel": "Star Kamila",
+          "imo": 9285043,
+          "dwt": 82597,
+          "flag": "Marshall Islands",
+          "direction": "West -> East",
+          "date": "2026-03-22",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Arvin",
+          "imo": 9193202,
+          "dwt": 72600,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "West -> East",
+          "date": "2026-03-21",
+          "loading": "laden",
+          "cargo": "Iron Ore Pellets"
+        },
+        {
+          "vessel": "Hamgam",
+          "imo": 9226956,
+          "dwt": 72149,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "West -> East",
+          "date": "2026-03-21",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Giacometti",
+          "imo": 9615377,
+          "dwt": 81713,
+          "flag": "Liberia",
+          "direction": "East -> West",
+          "date": "2026-03-19",
+          "loading": "laden",
+          "cargo": "Dry Bulk"
+        },
+        {
+          "vessel": "Mdl Kamran",
+          "imo": 9189770,
+          "dwt": 72493,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-03-16",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Lacon",
+          "imo": 9277565,
+          "dwt": 88279,
+          "flag": "Liberia",
+          "direction": "West -> East",
+          "date": "2026-03-16",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Anthea",
+          "imo": 9317729,
+          "dwt": 76781,
+          "flag": "Marshall Islands",
+          "direction": "West -> East",
+          "date": "2026-03-16",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Star Flame",
+          "imo": 9470076,
+          "dwt": 80448,
+          "flag": "Cayman Islands",
+          "direction": "West -> East",
+          "date": "2026-03-16",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Jia Xiang Da",
+          "imo": 9287962,
+          "dwt": 53299,
+          "flag": "Panama",
+          "direction": "East -> West",
+          "date": "2026-03-16",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Georgia T",
+          "imo": 9583756,
+          "dwt": 80416,
+          "flag": "Liberia",
+          "direction": "West -> East",
+          "date": "2026-03-15",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Minoan Sky",
+          "imo": 9422328,
+          "dwt": 75118,
+          "flag": "Liberia",
+          "direction": "West -> East",
+          "date": "2026-03-15",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Star Gwyneth",
+          "imo": 9301031,
+          "dwt": 82790,
+          "flag": "Marshall Islands",
+          "direction": "West -> East",
+          "date": "2026-03-15",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Bailian Star",
+          "imo": 9250218,
+          "dwt": 76634,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-03-14",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Oura",
+          "imo": 9387815,
+          "dwt": 62921,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "East -> West",
+          "date": "2026-03-13",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Minoan Dignity",
+          "imo": 9294484,
+          "dwt": 76801,
+          "flag": "Liberia",
+          "direction": "West -> East",
+          "date": "2026-03-12",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Mayuree Naree",
+          "imo": 9323649,
+          "dwt": 30197,
+          "flag": "Thailand",
+          "direction": "East -> West",
+          "date": "2026-03-11",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Star Maria",
+          "imo": 9401489,
+          "dwt": 82191,
+          "flag": "Marshall Islands",
+          "direction": "West -> East",
+          "date": "2026-03-11",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Ksl Laiyang",
+          "imo": 9555163,
+          "dwt": 56617,
+          "flag": "Marshall Islands",
+          "direction": "West -> East",
+          "date": "2026-03-11",
+          "loading": "laden",
+          "cargo": "Dry Bulk"
+        },
+        {
+          "vessel": "Guan Yuan Fu Xing",
+          "imo": 9179696,
+          "dwt": 72867,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-03-11",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Honestar",
+          "imo": 9187368,
+          "dwt": 48913,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-03-10",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Run Chen 2",
+          "imo": 9611618,
+          "dwt": 32709,
+          "flag": "China",
+          "direction": "West -> East",
+          "date": "2026-03-10",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Broad Rich",
+          "imo": 9285562,
+          "dwt": 77598,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-03-10",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Yara J",
+          "imo": 9118147,
+          "dwt": 34167,
+          "flag": "Saint Kitts and Nevis",
+          "direction": "East -> West",
+          "date": "2026-03-09",
+          "loading": "laden",
+          "cargo": "Dry Bulk"
+        },
+        {
+          "vessel": "Rozana",
+          "imo": 9198381,
+          "dwt": 45572,
+          "flag": "Belize",
+          "direction": "West -> East",
+          "date": "2026-03-08",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Ksl Hengyang",
+          "imo": 9333931,
+          "dwt": 53395,
+          "flag": "Marshall Islands",
+          "direction": "West -> East",
+          "date": "2026-03-08",
+          "loading": "laden",
+          "cargo": "Dry Bulk"
+        },
+        {
+          "vessel": "Parshad",
+          "imo": 9387786,
+          "dwt": 53500,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "West -> East",
+          "date": "2026-03-07",
+          "loading": "laden",
+          "cargo": "Dry Bulk"
+        },
+        {
+          "vessel": "Sino Ocean",
+          "imo": 9222338,
+          "dwt": 53733,
+          "flag": "Liberia",
+          "direction": "West -> East",
+          "date": "2026-03-07",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Iolcos Fighter",
+          "imo": 9664964,
+          "dwt": 76102,
+          "flag": "Malta",
+          "direction": "West -> East",
+          "date": "2026-03-07",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Iron Maiden",
+          "imo": 9691149,
+          "dwt": 36371,
+          "flag": "Marshall Islands",
+          "direction": "West -> East",
+          "date": "2026-03-05",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Parisan",
+          "imo": 9465851,
+          "dwt": 53100,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "West -> East",
+          "date": "2026-03-05",
+          "loading": "laden",
+          "cargo": "Dry Bulk"
+        },
+        {
+          "vessel": "Al Watan",
+          "imo": 9615030,
+          "dwt": 28214,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-03-04",
+          "loading": "laden",
+          "cargo": "Dry Bulk"
+        },
+        {
+          "vessel": "Mls Onyx",
+          "imo": 9373618,
+          "dwt": 53393,
+          "flag": "Panama",
+          "direction": "East -> West",
+          "date": "2026-03-04",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Galaxy Globe",
+          "imo": 9723629,
+          "dwt": 81167,
+          "flag": "Marshall Islands",
+          "direction": "West -> East",
+          "date": "2026-03-03",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Victoria",
+          "imo": 9336828,
+          "dwt": 50223,
+          "flag": "Liberia",
+          "direction": "East -> West",
+          "date": "2026-03-02",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Union Trader",
+          "imo": 9989314,
+          "dwt": 40552,
+          "flag": "Philippines",
+          "direction": "West -> East",
+          "date": "2026-03-02",
+          "loading": "laden",
+          "cargo": "Dry Bulk"
+        },
+        {
+          "vessel": "Lady Ayana",
+          "imo": 9196395,
+          "dwt": 27797,
+          "flag": "Barbados",
+          "direction": "West -> East",
+          "date": "2026-03-02",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Mahnam",
+          "imo": 9213387,
+          "dwt": 75245,
+          "flag": "Iran (Islamic Republic of)",
+          "direction": "West -> East",
+          "date": "2026-03-02",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "V Bravo",
+          "imo": 9598713,
+          "dwt": 56659,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-03-01",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Saraca",
+          "imo": 9300764,
+          "dwt": 37832,
+          "flag": null,
+          "direction": "East -> West",
+          "date": "2026-03-01",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Jin Hai Wo",
+          "imo": 1043839,
+          "dwt": 63864,
+          "flag": "China",
+          "direction": "West -> East",
+          "date": "2026-03-01",
+          "loading": "laden",
+          "cargo": "Dry Bulk"
+        },
+        {
+          "vessel": "Bunun Miracle",
+          "imo": 9867372,
+          "dwt": 37655,
+          "flag": "Panama",
+          "direction": "East -> West",
+          "date": "2026-03-01",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Anastasiia",
+          "imo": 9349291,
+          "dwt": 12744,
+          "flag": null,
+          "direction": "West -> East",
+          "date": "2026-03-01",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Corelit",
+          "imo": 9573799,
+          "dwt": 28189,
+          "flag": "Barbados",
+          "direction": "West -> East",
+          "date": "2026-03-01",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Yasa Unsal Sunar",
+          "imo": 9396206,
+          "dwt": 55526,
+          "flag": "Marshall Islands",
+          "direction": "West -> East",
+          "date": "2026-03-01",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Gloria Del Mare",
+          "imo": 1016769,
+          "dwt": 63300,
+          "flag": "Liberia",
+          "direction": "West -> East",
+          "date": "2026-03-01",
+          "loading": "laden",
+          "cargo": "Dry Bulk"
+        },
+        {
+          "vessel": "Industrial Ruby",
+          "imo": 9277292,
+          "dwt": 10538,
+          "flag": null,
+          "direction": "West -> East",
+          "date": "2026-03-01",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Jal Kundan",
+          "imo": 9990363,
+          "dwt": 65950,
+          "flag": "Singapore",
+          "direction": "West -> East",
+          "date": "2026-03-01",
+          "loading": "laden",
+          "cargo": "Dry Bulk"
+        },
+        {
+          "vessel": "Lyric Poet",
+          "imo": 9590577,
+          "dwt": 81276,
+          "flag": "Portugal",
+          "direction": "West -> East",
+          "date": "2026-03-01",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Newsun",
+          "imo": 9218301,
+          "dwt": 31877,
+          "flag": "Sao Tome and Principe",
+          "direction": "West -> East",
+          "date": "2026-03-01",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Majesty",
+          "imo": 9181027,
+          "dwt": 46667,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-03-01",
+          "loading": "laden",
+          "cargo": "Dry Bulk"
+        },
+        {
+          "vessel": "Silver Peace",
+          "imo": 9607655,
+          "dwt": 12267,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Propel Success",
+          "imo": 9640607,
+          "dwt": 58665,
+          "flag": "Singapore",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Star Altair",
+          "imo": 9828314,
+          "dwt": 81600,
+          "flag": "Bahamas",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "Dry Bulk"
+        },
+        {
+          "vessel": "Stellina",
+          "imo": 9674933,
+          "dwt": 26052,
+          "flag": "Liberia",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Cape Trader",
+          "imo": 9469962,
+          "dwt": 169237,
+          "flag": "Liberia",
+          "direction": "East -> West",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "Dry Bulk"
+        },
+        {
+          "vessel": "Abdali",
+          "imo": 9294472,
+          "dwt": 76801,
+          "flag": "Liberia",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Anthemis",
+          "imo": 9587441,
+          "dwt": 93291,
+          "flag": "Liberia",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Chang Hang Hui Hai",
+          "imo": 9436109,
+          "dwt": 57066,
+          "flag": "China",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "East King",
+          "imo": 9204685,
+          "dwt": 75681,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Ghousta",
+          "imo": 9254836,
+          "dwt": 50339,
+          "flag": "Panama",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Hao Yun",
+          "imo": 9205914,
+          "dwt": 48220,
+          "flag": "Liberia",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Jns Harmony",
+          "imo": 1061532,
+          "dwt": 40500,
+          "flag": "Hong Kong",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Lila Fuji",
+          "imo": 9658680,
+          "dwt": 82938,
+          "flag": "Liberia",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "Dry Bulk"
+        },
+        {
+          "vessel": "Lucky Finder",
+          "imo": 9393620,
+          "dwt": 37268,
+          "flag": "Marshall Islands",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "Dry Bulk"
+        },
+        {
+          "vessel": "Mayuree Naree",
+          "imo": 9323649,
+          "dwt": 30197,
+          "flag": "Thailand",
+          "direction": "East -> West",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Nada",
+          "imo": 9197088,
+          "dwt": 24993,
+          "flag": "Saint Kitts and Nevis",
+          "direction": "East -> West",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "New Legend",
+          "imo": 9562037,
+          "dwt": 93079,
+          "flag": "Hong Kong",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        },
+        {
+          "vessel": "Odysseus N",
+          "imo": 9490442,
+          "dwt": 79641,
+          "flag": "Marshall Islands",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "laden",
+          "cargo": "Dry Bulk"
+        },
+        {
+          "vessel": "Panopi",
+          "imo": 9554183,
+          "dwt": 88299,
+          "flag": "Liberia",
+          "direction": "West -> East",
+          "date": "2026-02-28",
+          "loading": "ballast",
+          "cargo": null
+        }
+      ]
+    }
+  }
+}

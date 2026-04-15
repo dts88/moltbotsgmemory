@@ -1,0 +1,188 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.14",
+    "lastTouchedAt": "2026-03-05T15:46:21.668Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-02-10T06:20:10.178Z",
+    "lastRunVersion": "2026.2.6",
+    "lastRunCommand": "onboard",
+    "lastRunMode": "local"
+  },
+  "auth": {
+    "profiles": {
+      "anthropic:claudemax": {
+        "provider": "anthropic",
+        "mode": "token"
+      },
+      "anthropic:default": {
+        "provider": "anthropic",
+        "mode": "token"
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "anthropic/claude-opus-4-5",
+        "fallbacks": [
+          "anthropic/claude-sonnet-4-5",
+          "anthropic/claude-haiku-4-5"
+        ]
+      },
+      "models": {
+        "anthropic/claude-sonnet-4-5": {
+          "alias": "sonnet"
+        },
+        "anthropic/claude-opus-4-5": {
+          "alias": "opus"
+        },
+        "anthropic/claude-haiku-4-5": {}
+      },
+      "workspace": "/home/node/clawd",
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8
+      }
+    }
+  },
+  "tools": {
+    "web": {
+      "search": {
+        "enabled": true,
+        "apiKey": "BSAyENNO_I7c3_sh9SPcD-18OL6dEq-"
+      },
+      "fetch": {
+        "enabled": true
+      }
+    }
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions"
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto"
+  },
+  "session": {
+    "dmScope": "per-channel-peer",
+    "identityLinks": {
+      "main": [
+        "whatsapp:6592716786",
+        "telegram:8689396037"
+      ]
+    }
+  },
+  "hooks": {
+    "enabled": true,
+    "path": "/hooks",
+    "token": "14fcc9ba73365ba2d3d374d1a020f0c3e50cdb34e0a3eac1",
+    "defaultSessionKey": "hook:twilio",
+    "allowRequestSessionKey": false,
+    "transformsDir": "hooks/transforms",
+    "mappings": [
+      {
+        "id": "twilio",
+        "match": {
+          "path": "/twilio"
+        },
+        "transform": {
+          "module": "twilio-voice.js"
+        }
+      }
+    ]
+  },
+  "channels": {
+    "whatsapp": {
+      "dmPolicy": "allowlist",
+      "selfChatMode": true,
+      "allowFrom": [
+        "+6592716786",
+        "+6597777239",
+        "+6592311196",
+        "+6596249687"
+      ],
+      "groupPolicy": "allowlist",
+      "groups": {
+        "120363403075327465@g.us": {
+          "requireMention": true
+        }
+      },
+      "debounceMs": 0,
+      "mediaMaxMb": 50
+    },
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "allowlist",
+      "botToken": "8656841784:AAGFJoT9TGr72-sBeDOnmPKFzj_C55tl2dE",
+      "groups": {
+        "*": {
+          "requireMention": true
+        },
+        "-1003727952836": {
+          "requireMention": true,
+          "groupPolicy": "allowlist",
+          "allowFrom": [
+            "8689396037",
+            "803963798"
+          ],
+          "topics": {
+            "1": {
+              "requireMention": true,
+              "systemPrompt": "通用助手，需要@才响应"
+            },
+            "2": {
+              "requireMention": false,
+              "systemPrompt": "你是Platts MOC专家。专注于Dubai MOC窗口交易信息、Murban declarations、partials交易、买卖盘动态。使用scripts/platts-insights-monitor.mjs查询heards数据。回复简洁专业。"
+            },
+            "7": {
+              "requireMention": false,
+              "systemPrompt": "你是OpenClaw系统管理助手。专注于：cron任务管理、gateway配置、session状态、日志查看、系统监控。可以直接执行配置变更和诊断命令。"
+            },
+            "22": {
+              "requireMention": false,
+              "systemPrompt": "你是邮箱管理助手。专注于：Gmail收件箱管理、邮件发送、邮件监控。使用 scripts/gmail.mjs 操作邮箱（openclawsg@gmail.com）。可以查看收件箱、发送邮件、搜索邮件。回复简洁实用。"
+            }
+          }
+        }
+      },
+      "allowFrom": [
+        "8689396037",
+        "803963798"
+      ],
+      "groupPolicy": "allowlist",
+      "streamMode": "partial"
+    }
+  },
+  "gateway": {
+    "port": 18789,
+    "mode": "local",
+    "bind": "lan",
+    "controlUi": {
+      "allowInsecureAuth": true
+    },
+    "auth": {
+      "mode": "token",
+      "token": "0c368f87a187413218da6e65e900df5b2f1a61aa2f6b4bba"
+    },
+    "tailscale": {
+      "mode": "off",
+      "resetOnExit": false
+    }
+  },
+  "skills": {
+    "install": {
+      "nodeManager": "npm"
+    }
+  },
+  "plugins": {
+    "entries": {
+      "whatsapp": {
+        "enabled": true
+      },
+      "telegram": {
+        "enabled": true
+      }
+    }
+  }
+}

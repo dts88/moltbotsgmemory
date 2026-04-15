@@ -1,0 +1,21 @@
+{
+  "date": "2026-03-18",
+  "sources": ["Platts Heards", "Manual Entry"],
+  "lastUpdated": "2026-03-18T13:30:00+08:00",
+  "trades": [
+    {
+      "category": "crude",
+      "product": "ESPO Blend",
+      "seller": "-",
+      "buyer": "Chinese state-owned refiners",
+      "volume": "10 cargoes",
+      "basis": "ICE Brent",
+      "premium": "+$10/b",
+      "period": "May loading",
+      "location": "ESPO",
+      "heard_date": "mid-March 2026",
+      "note": "Heard: Chinese SOEs bought 10 cargoes ESPO for May loading at ICE+10",
+      "source": "Heard / Tianshu"
+    }
+  ]
+}

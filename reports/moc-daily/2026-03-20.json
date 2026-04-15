@@ -1,0 +1,44 @@
+{
+  "date": "2026-03-20",
+  "fluxOfficials": {
+    "assessment": 158.85,
+    "premium": 61.03,
+    "note": "first significant decline of the month",
+    "text": "The Officials: Date 20/3/2026\nDubai Assessment: $158.85/bbl\nPhysical premium: $61.03/bbl - first significant decline of the month\nKey events: Gunvor, Vitol declare Oman to Totsa"
+  },
+  "declarations": [
+    { "seller": "Gunvor", "sellerCode": "GUNVORSG", "buyer": "TotalEnergies", "buyerCode": "TOTSA", "grade": "Oman", "month": "May26", "time": "2026-03-20T08:29:30.888Z" },
+    { "seller": "Vitol", "sellerCode": "VITOLSG", "buyer": "TotalEnergies", "buyerCode": "TOTSA", "grade": "Oman", "month": "May26", "time": "2026-03-20T08:31:05.691Z" },
+    { "seller": "Shell", "sellerCode": "SIETCO", "buyer": "TotalEnergies", "buyerCode": "TOTSA", "grade": "Murban", "month": "May26", "time": "2026-03-20T08:31:42.953Z" },
+    { "seller": "Shell", "sellerCode": "SIETCO", "buyer": "TotalEnergies", "buyerCode": "TOTSA", "grade": "Murban", "month": "May26", "time": "2026-03-20T08:31:44.314Z" },
+    { "seller": "Shell", "sellerCode": "SIETCO", "buyer": "TotalEnergies", "buyerCode": "TOTSA", "grade": "Oman", "month": "May26", "time": "2026-03-20T08:31:50.45Z" },
+    { "seller": "Unipec", "sellerCode": "UNIPECASIA", "buyer": "TotalEnergies", "buyerCode": "TOTSA", "grade": "Oman", "month": "May26", "time": "2026-03-20T08:32:04.619Z" },
+    { "seller": "Unipec", "sellerCode": "UNIPECASIA", "buyer": "TotalEnergies", "buyerCode": "TOTSA", "grade": "Oman", "month": "May26", "time": "2026-03-20T08:32:05.682Z" },
+    { "seller": "Unipec", "sellerCode": "UNIPECASIA", "buyer": "TotalEnergies", "buyerCode": "TOTSA", "grade": "Murban", "month": "May26", "time": "2026-03-20T08:32:09.998Z" }
+  ],
+  "partialsWindow": {
+    "contract": "May26",
+    "buyer": "TOTSA",
+    "sellers": ["UNIPECASIA", "VITOLSG", "SIETCO", "METS", "GUNVORSG"],
+    "priceRange": { "low": 158.55, "high": 158.85 },
+    "convergencePrice": 158.85,
+    "partialSize_kb": 25,
+    "totalDeclarations": 8,
+    "totalPartials": 160
+  },
+  "cashMurban": [
+    { "value": 36.12, "unit": "$/B over May Dubai Futures", "time": "2026-03-20T08:33:31.666Z" }
+  ],
+  "cashOman": [
+    { "value": 59.78, "unit": "$/B over May Dubai Futures", "time": "2026-03-20T08:33:29.533Z" }
+  ],
+  "errorTrades": [],
+  "finalsOnClose": {
+    "bids": "数据待更新",
+    "offers": "数据待更新"
+  },
+  "previousDay": {
+    "assessment": 166.79,
+    "premium": 65.46
+  }
+}

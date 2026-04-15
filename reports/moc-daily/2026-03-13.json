@@ -1,0 +1,34 @@
+{
+  "date": "2026-03-13",
+  "fluxOfficials": {
+    "assessment": 145.50,
+    "premium": 50.73,
+    "note": "another record!",
+    "text": "The Officials: Date 13/3/2026\nDubai Assessment: $145.50/bbl\nPhysical premium: $50.73/bbl - another record! \nKey events: Shell and Chevron declare Murban to Totsa, Vitol and Unipec declare Oman to Totsa",
+    "tweetId": "2032374855752917249",
+    "createdAt": "Fri Mar 13 08:34:59 +0000 2026"
+  },
+  "declarations": [
+    { "seller": "Shell", "buyer": "TotalEnergies", "grade": "Murban", "month": "May", "time": "2026-03-13T08:30:44.138Z", "articleId": "d5f2a22f-70b2-413e-a696-75d02932f1c2" },
+    { "seller": "Unipec", "buyer": "TotalEnergies", "grade": "Oman", "month": "May", "time": "2026-03-13T08:31:24.988Z", "articleId": "e1097c5a-45b9-42a5-b393-9b18ec6c475c" },
+    { "seller": "Chevron", "buyer": "TotalEnergies", "grade": "Murban", "month": "May", "time": "2026-03-13T08:31:33.367Z", "articleId": "5b5c71be-c954-4760-aa6f-b9139de3e2b0" },
+    { "seller": "Vitol", "buyer": "TotalEnergies", "grade": "Oman", "month": "May", "time": "2026-03-13T08:31:43.964Z", "articleId": "f4d37b63-dedc-4c68-a8e1-5bcacc33960b" }
+  ],
+  "cashMurban": [
+    { "value": 19.25, "basis": "May Dubai Futures", "time": "2026-03-13T08:36:44.458Z" },
+    { "value": 21.00, "basis": "May Dubai Futures", "time": "2026-03-13T08:36:47.37Z" }
+  ],
+  "cashOman": [],
+  "errorTrades": [],
+  "partials": {
+    "contract": "May26",
+    "assessmentPrice": 145.50,
+    "partialSize": 25,
+    "priceRange": { "open": 145.00, "high": 146.50, "close": 145.50 },
+    "convergenceBuyer": "TOTSA",
+    "sellers": ["PCHK", "UNIPECASIA", "SIETCO", "VITOLSG", "TRAFI"],
+    "otherBuyers": ["RGES", "MERCURIARESOURCES", "CHEVRONUSASB"],
+    "competitors": [{ "name": "METS", "maxBid": 145.00, "result": "no_convergence" }]
+  },
+  "finalsOnClose": { "bids": "数据待更新", "offers": "数据待更新" }
+}

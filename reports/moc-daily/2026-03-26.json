@@ -1,0 +1,40 @@
+{
+  "date": "2026-03-26",
+  "fluxOfficials": {
+    "assessment": 113.04,
+    "premium": 17.11,
+    "text": "The Officials MOC: Date 26/3/2026\nDubai Assessment: $113.04/bbl\nPhysical premium: $17.11/bbl - down from near $52 yesterday! Running month average now $40.40\nKey events: Very early activity. Sinochem, Shell, Gunvor, Vitol declare Oman, Shell declares Murban - all to Totsa. Month total 69 convergences",
+    "tweetTime": "2026-03-26T08:38:12Z"
+  },
+  "declarations": [
+    { "seller": "Sinochem", "buyer": "Total", "grade": "Oman", "month": "May", "time": "2026-03-26T07:40:57Z" },
+    { "seller": "Shell", "buyer": "Total", "grade": "Oman", "month": "May", "time": "2026-03-26T08:21:56Z" },
+    { "seller": "Gunvor", "buyer": "Total", "grade": "Oman", "month": "May", "time": "2026-03-26T08:30:37Z" },
+    { "seller": "Vitol", "buyer": "Total", "grade": "Oman", "month": "May", "time": "2026-03-26T08:31:02Z" },
+    { "seller": "Shell", "buyer": "Total", "grade": "Murban", "month": "May", "time": "2026-03-26T08:31:24Z" }
+  ],
+  "partialsTrades": {
+    "contract": "May26 Dubai Partials",
+    "buyer": "TOTSA",
+    "sellers": ["SIETCO", "UNIPECASIA", "GUNVORSG", "VITOLSG", "TRAFI", "METS"],
+    "mainPrice": 113.04,
+    "priceRange": { "low": 112.96, "high": 113.04 },
+    "shenghpiTrades": { "seller": "VITOLSG", "buyer": "SHENGHPI", "price": 114.25 },
+    "trafiTrades": { "seller": "UNIPECASIA", "buyer": "TRAFI", "price": 113.00 }
+  },
+  "cashMurban": [
+    { "value": "+$12.90/B", "basis": "May Dubai Futures", "time": "2026-03-26T08:35:33Z" }
+  ],
+  "cashOman": [
+    { "value": "+$13.50/B", "basis": "May Dubai Futures", "time": "2026-03-26T08:35:29Z" }
+  ],
+  "errorTrades": [],
+  "bidsOnOpen": {
+    "topBid": "TOTSA @ $110.10",
+    "others": ["Hengli @ $110.10", "Trafigura @ $110.05/$109.90", "Gunvor @ $109.90", "BP @ $100.00", "Vitol @ $95.60"]
+  },
+  "offersOnOpen": {
+    "topOffer": "Vitol @ $120.65",
+    "others": ["Gunvor @ $120.70", "Shell @ $120.95", "Unipec @ $120.95", "Gunvor @ $121.05", "Shell @ $121.10", "Unipec @ $121.40", "BP @ $121.75"]
+  }
+}

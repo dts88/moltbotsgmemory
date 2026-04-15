@@ -1,0 +1,32 @@
+{
+  "date": "2026-03-19",
+  "fluxOfficials": {
+    "assessment": null,
+    "premium": null,
+    "text": "No March 19 tweet yet as of 08:36 UTC. Last: Date 18/3/2026 Dubai Assessment $155.55/bbl Physical premium $62.37/bbl",
+    "note": "FluxOfficials @FluxOfficials post for Mar 19 not yet published at time of report generation"
+  },
+  "declarations": [
+    { "seller": "Shell", "buyer": "TOTSA", "grade": "Murban", "month": "May", "time": "2026-03-19T08:28:41.751Z" },
+    { "seller": "BP", "buyer": "TOTSA", "grade": "Oman", "month": "May", "time": "2026-03-19T08:30:27.217Z" },
+    { "seller": "Unipec", "buyer": "TOTSA", "grade": "Oman", "month": "May", "time": "2026-03-19T08:30:35.782Z" }
+  ],
+  "partialsConvergencePrice": 166.80,
+  "partialsUnit": 25,
+  "partialsSellers": ["UNIPECASIA", "SIETCO", "BPSG", "GUNVORSG", "VITOLSG"],
+  "partialsBuyer": "TOTSA",
+  "cashMurban": [
+    { "value": 25.25, "time": "2026-03-19T08:31:05.981Z" },
+    { "value": 25.06, "time": "2026-03-19T08:32:44.324Z" },
+    { "value": 25.00, "time": "2026-03-19T08:35:40.093Z" }
+  ],
+  "cashOman": [
+    { "value": 65.60, "time": "2026-03-19T08:31:03.597Z" }
+  ],
+  "errorTrades": [],
+  "finalsOnClose": {
+    "bids": "数据待更新",
+    "offers": "数据待更新"
+  },
+  "withdrawals": ["P66SG", "EQUINORAPPL", "SHENGHPI"]
+}

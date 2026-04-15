@@ -1,0 +1,35 @@
+{
+  "date": "2026-03-23",
+  "fluxOfficials": {
+    "assessment": 168.75,
+    "premium": 63.44,
+    "text": "The Officials: Date 23/3/2026\nDubai Assessment: $168.75/bbl\nPhysical premium: $63.44/bbl\nKey events: Unipec declares 2 Omans to Totsa, Vitol declares Oman to Totsa",
+    "tweetId": "2035998658450071623"
+  },
+  "declarations": [
+    { "seller": "Unipec", "buyer": "TotalEnergies", "grade": "Oman", "month": "May", "time": "2026-03-23T08:30:28.525Z" },
+    { "seller": "Unipec", "buyer": "TotalEnergies", "grade": "Oman", "month": "May", "time": "2026-03-23T08:30:29.947Z" },
+    { "seller": "Vitol", "buyer": "TotalEnergies", "grade": "Oman", "month": "May", "time": "2026-03-23T08:31:07.826Z" }
+  ],
+  "partials": {
+    "contract": "May26",
+    "convergencePrice": 169.75,
+    "buyer": "TOTSA",
+    "sellers": ["METS", "VITOLSG", "UNIPECASIA", "P66SG", "SIETCO"],
+    "priceRange": "169.75-169.78",
+    "notes": "SIETCO offered as high as 170.65, stepped down gradually to 170.40 before selling at 169.75. VITOLSG sold some trades at 169.78."
+  },
+  "cashMurban": [
+    { "value": 53.80, "time": "2026-03-23T08:31:50.833Z" },
+    { "value": 53.60, "time": "2026-03-23T08:32:06.458Z" },
+    { "value": 53.70, "time": "2026-03-23T08:34:12.953Z" }
+  ],
+  "cashOman": [
+    { "value": 54.80, "time": "2026-03-23T08:31:47.915Z" }
+  ],
+  "errorTrades": [],
+  "finalsOnClose": {
+    "bids": "数据待更新",
+    "offers": "数据待更新"
+  }
+}

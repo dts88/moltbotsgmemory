@@ -1,0 +1,32 @@
+{
+  "inventory": [
+    {
+      "asOfDate": "2026-03-23",
+      "publishTime": "Wed, 25 Mar 2026 11:00:00 +0400",
+      "light": 6803,
+      "medium": 1865,
+      "heavy": 5353,
+      "savedAt": "2026-03-30T05:13:01.672Z"
+    },
+    {
+      "asOfDate": "2026-04-06",
+      "publishTime": "Wed, 8 Apr 2026 11:00:00 +0400",
+      "light": 6170,
+      "medium": 1476,
+      "heavy": 4909,
+      "savedAt": "2026-04-14T18:00:37.007Z"
+    }
+  ],
+  "bunker": [
+    {
+      "asOfDate": "2026-02-28",
+      "symbol1": 421,
+      "symbol2": 365285,
+      "symbol3": 146989,
+      "symbol4": 36888,
+      "symbol5": 4679,
+      "symbol6": 182,
+      "savedAt": "2026-03-30T05:13:01.673Z"
+    }
+  ]
+}

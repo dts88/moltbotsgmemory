@@ -1,0 +1,55 @@
+{
+  "date": "2026-03-27",
+  "fluxOfficials": {
+    "assessment": 113.04,
+    "premium": 17.11,
+    "text": "Dubai Assessment: $113.04/bbl | Physical premium: $17.11/bbl | Key events: Very early activity. Sinochem, Shell, Gunvor, Vitol declare Oman, Shell declares Murban - all to Totsa. Month total 69 convergences to date!",
+    "tweetId": "2037086705505784096"
+  },
+  "eWindowPartials": {
+    "totalTrades": 50,
+    "finalPrice": 122.15,
+    "contract": "May26",
+    "lastMinuteOffers": [
+      { "company": "UNIPECASIA", "price": 122.15, "count": 18 }
+    ],
+    "tradeSummary": {
+      "sellers": {
+        "UNIPECASIA": 35,
+        "SIETCO": 9,
+        "VITOLSG": 5,
+        "METS": 1
+      },
+      "buyers": {
+        "MERCURIARESOURCES": 20,
+        "TOTSA": 11,
+        "TRAFI": 6,
+        "GUNVORSG": 12,
+        "EXTAP": 1
+      }
+    }
+  },
+  "declarations": [
+    { "seller": "Sinochem", "buyer": "Totsa", "grade": "Oman", "month": "May" },
+    { "seller": "Shell", "buyer": "Totsa", "grade": "Oman", "month": "May" },
+    { "seller": "Shell", "buyer": "Totsa", "grade": "Murban", "month": "May" },
+    { "seller": "Gunvor", "buyer": "Totsa", "grade": "Oman", "month": "May" },
+    { "seller": "Vitol", "buyer": "Totsa", "grade": "Oman", "month": "May" }
+  ],
+  "cashMurban": [],
+  "cashOman": [],
+  "errorTrades": [
+    {
+      "seller": "Unipec",
+      "buyer": "Gunvor",
+      "prices": [122.0, 129.7],
+      "status": "unwound",
+      "time": "08:16:07 & 08:16:11 GMT",
+      "details": "Both counterparties have agreed to unwind the trade"
+    }
+  ],
+  "finalsOnClose": {
+    "bids": null,
+    "offers": null
+  }
+}

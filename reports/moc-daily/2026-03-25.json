@@ -1,0 +1,54 @@
+{
+  "date": "2026-03-25",
+  "fluxOfficials": {
+    "assessment": 142.55,
+    "premium": 51.73,
+    "keyEvents": "Buyside all but disappears, Totsa only lifts one Sinochem offer just before close",
+    "tweetId": "2036723591065063532",
+    "tweetTime": "2026-03-25T08:35:19Z"
+  },
+  "partials": {
+    "contract": "May26",
+    "convergencePrice": 142.55,
+    "convergenceHandsKb": 25,
+    "buyer": "TOTSA",
+    "seller": "SINOCHEMSG",
+    "tradeTime": "08:29:58 UTC",
+    "offersAtClose": [
+      {"seller": "SHELL", "price": 148.85, "hands": 25},
+      {"seller": "BP", "price": 148.90, "hands": 25},
+      {"seller": "VITOL", "price": 148.90, "hands": 25},
+      {"seller": "SINOCHEM", "price": 149.00, "hands": 25},
+      {"seller": "SHELL", "price": 149.50, "hands": 25},
+      {"seller": "UNIPEC", "price": 151.20, "hands": 25},
+      {"seller": "PHILLIPS66", "price": 151.35, "hands": 25},
+      {"seller": "MITSUI", "price": 151.45, "hands": 25},
+      {"seller": "SINOCHEM", "price": 151.50, "hands": 25},
+      {"seller": "GUNVOR", "price": 151.50, "hands": 25},
+      {"seller": "VITOL", "price": 151.60, "hands": 25},
+      {"seller": "CHEVRON", "price": 151.70, "hands": 25},
+      {"seller": "GUNVOR", "price": 151.75, "hands": 25},
+      {"seller": "TRAFIGURA", "price": 151.95, "hands": 25},
+      {"seller": "BP", "price": 152.00, "hands": 25},
+      {"seller": "CHEVRON", "price": 152.00, "hands": 25}
+    ],
+    "bidsAtClose": [
+      {"buyer": "TRAFIGURA", "price": 112.00, "hands": 25, "note": "withdrawn at 08:15:06"}
+    ]
+  },
+  "declarations": "数据待更新 — Platts declarations heards not yet published for 2026-03-25 at time of report generation (convergence article typically posted ~40min after close)",
+  "cashMurban": [
+    {"value": "+10.11", "basis": "May Dubai Futures", "time": "08:31:45Z"},
+    {"value": "+9.50", "basis": "May Dubai Futures", "time": "08:33:21Z"}
+  ],
+  "cashOman": [
+    {"value": "+18.25", "basis": "May Dubai Futures", "time": "08:31:42Z"},
+    {"value": "+19.00", "basis": "May Dubai Futures", "time": "08:33:19Z"}
+  ],
+  "errorTrades": [],
+  "rawHeadlines": {
+    "partialsBuy": "TOTSA BUYS FROM SINOCHEMSG $142.55 for 25 08:29:58 UTC",
+    "meOffersNote": "16 sellers offering from $148.85 to $152.00/bbl at window close",
+    "meBidsNote": "Trafigura withdrew bid at $112.00 (08:15:06)"
+  }
+}

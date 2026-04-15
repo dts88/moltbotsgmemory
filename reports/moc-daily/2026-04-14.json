@@ -1,0 +1,16 @@
+{
+  "date": "2026-04-14",
+  "fluxOfficials": {
+    "assessment": 103.20,
+    "premium": 12.89,
+    "text": "The Officials MOC: Date 14/4/2026\nDubai Assessment: $103.20/bbl\nPhysical premium: $12.89/bbl\nKey events: Unipec declares Oman to Vitol - first convergence of the month"
+  },
+  "declarations": [
+    { "seller": "Unipec", "buyer": "Vitol", "grade": "Oman", "time": "08:32:57Z" }
+  ],
+  "cashMurban": [],
+  "cashOman": [],
+  "errorTrades": [],
+  "finalsOnClose": { "bids": "N/A", "offers": "N/A" },
+  "status": "Platts API unavailable (Unauthorized). Using @FluxOfficials tweet."
+}

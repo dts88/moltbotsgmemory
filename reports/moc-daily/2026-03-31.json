@@ -1,0 +1,197 @@
+{
+  "date": "2026-03-31",
+  "generatedAt": "2026-03-31T08:36:00Z",
+  "fluxOfficials": {
+    "assessment": null,
+    "premium": null,
+    "text": "No March 31 tweet available at report time (06min post-close). Previous day (March 30): Dubai $125.29/bbl, Physical premium $22.38/bbl"
+  },
+  "partials": {
+    "contract": "May26",
+    "product": "Platts Cash Dubai Partials (Fateh)",
+    "priceRangeVisible": {
+      "low": 121.1,
+      "high": 121.65,
+      "note": "Last-minute trades 08:26-08:30 GMT; earlier convergences (08:03-08:18 GMT) traded at higher prices not visible in eWindow query window"
+    },
+    "totalTrades": "93+ (visible in 08:26-08:30 window; ~4 more convergences prior estimated)",
+    "buyers": [
+      "TOTSA",
+      "MERCURIARESOURCES",
+      "EQUINORAPPL",
+      "HENGLIPET",
+      "EXTAP",
+      "METS"
+    ],
+    "sellers": [
+      "UNIPECASIA",
+      "SIETCO",
+      "BPSG",
+      "VITOLSG",
+      "GUNVORSG"
+    ]
+  },
+  "declarations": [
+    {
+      "seller": "Unipec",
+      "buyer": "Mercuria",
+      "grade": "Oman",
+      "month": "May",
+      "time": "2026-03-31T08:03:55Z"
+    },
+    {
+      "seller": "Unipec",
+      "buyer": "TotalEnergies",
+      "grade": "Oman",
+      "month": "May",
+      "time": "2026-03-31T08:06:48Z"
+    },
+    {
+      "seller": "Unipec",
+      "buyer": "TotalEnergies",
+      "grade": "Oman",
+      "month": "May",
+      "time": "2026-03-31T08:12:15Z"
+    },
+    {
+      "seller": "Vitol",
+      "buyer": "TotalEnergies",
+      "grade": "Oman",
+      "month": "May",
+      "time": "2026-03-31T08:18:49Z"
+    },
+    {
+      "seller": "Unipec",
+      "buyer": "Mercuria",
+      "grade": "Oman",
+      "month": "May",
+      "time": "2026-03-31T08:29:xx"
+    },
+    {
+      "seller": "Unipec",
+      "buyer": "TotalEnergies",
+      "grade": "Oman",
+      "month": "May",
+      "time": "2026-03-31T08:31:06Z"
+    },
+    {
+      "seller": "Unipec",
+      "buyer": "Mercuria",
+      "grade": "Oman",
+      "month": "May",
+      "time": "2026-03-31T08:31:07Z"
+    },
+    {
+      "seller": "Vitol",
+      "buyer": "Mercuria",
+      "grade": "Oman",
+      "month": "May",
+      "time": "2026-03-31T08:29:42Z"
+    },
+    {
+      "seller": "Shell",
+      "buyer": "Equinor",
+      "grade": "Oman",
+      "month": "May",
+      "time": "2026-03-31T08:30:40Z"
+    }
+  ],
+  "cashMurban": [],
+  "cashOman": [],
+  "errorTrades": [],
+  "finalsOnClose": {
+    "bids": [
+      {
+        "company": "Equinor",
+        "price": 123.55,
+        "qty": 25,
+        "product": "MAY26 Dubai"
+      },
+      {
+        "company": "Hengli",
+        "price": 123.5,
+        "qty": 25,
+        "product": "MAY26 Dubai"
+      },
+      {
+        "company": "Total",
+        "price": 123.5,
+        "qty": 25,
+        "product": "MAY26 Dubai"
+      },
+      {
+        "company": "Mitsui",
+        "price": 123.45,
+        "qty": 25,
+        "product": "MAY26 Dubai"
+      },
+      {
+        "company": "Total",
+        "price": 123.4,
+        "qty": 25,
+        "product": "MAY26 Dubai"
+      },
+      {
+        "company": "Mercuria",
+        "price": 123.3,
+        "qty": 25,
+        "product": "MAY26 Dubai"
+      },
+      {
+        "company": "ExxonMobil",
+        "price": 123.3,
+        "qty": 25,
+        "product": "MAY26 Dubai"
+      }
+    ],
+    "offers": [
+      {
+        "company": "Unipec",
+        "price": 124.25,
+        "qty": 25,
+        "product": "MAY26 Dubai"
+      },
+      {
+        "company": "BP",
+        "price": 124.6,
+        "qty": 25,
+        "product": "MAY26 Dubai"
+      },
+      {
+        "company": "Shell",
+        "price": 124.6,
+        "qty": 25,
+        "product": "MAY26 Dubai"
+      },
+      {
+        "company": "Vitol",
+        "price": 124.6,
+        "qty": 25,
+        "product": "MAY26 Dubai"
+      },
+      {
+        "company": "Gunvor",
+        "price": 124.65,
+        "qty": 25,
+        "product": "MAY26 Dubai"
+      },
+      {
+        "company": "Reliance",
+        "price": 127.0,
+        "qty": 25,
+        "product": "MAY26 Dubai"
+      }
+    ],
+    "bidTime": "2026-03-31T08:15:48Z",
+    "offerTime": "2026-03-31T08:15:50Z"
+  },
+  "sources": {
+    "eWindow": "https://api.platts.com/tradedata/v3/ewindowdata",
+    "heards": "https://api.platts.com/news-insights/v1/search/heards",
+    "fluxOfficials": "https://twitter.com/FluxOfficials"
+  },
+  "assessment": 121.1,
+  "physicalPremium": 20.81,
+  "fluxTweet": "The Officials MOC: Date 31/3/2026\nDubai Assessment: $121.10/bbl\nPhysical premium: $20.81/bbl\nKey events: 9 convergences - Unipec declares 3 Omans to Totsa and 3 to Merc, Shell Oman to Equinor, Vitol Oman to Merc and Totsa",
+  "updatedAt": "2026-03-31T10:35:00Z"
+}

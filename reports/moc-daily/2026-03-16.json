@@ -1,0 +1,64 @@
+{
+  "date": "2026-03-16",
+  "fluxOfficials": {
+    "assessment": 153.23,
+    "premium": 55.72,
+    "premiumNote": "another record!",
+    "text": "The Officials: Date 16/3/2026\nDubai Assessment: $153.23/bbl\nPhysical premium: $55.72/bbl - another record!\nKey events: Shell declares Murban to Totsa",
+    "tweetId": "2033462141848531196",
+    "tweetTime": "2026-03-16T08:35:29Z"
+  },
+  "declarations": [
+    {
+      "seller": "Shell",
+      "buyer": "TotalEnergies (TOTSA)",
+      "grade": "Murban",
+      "month": "May",
+      "cargos": 1,
+      "trigger": "20 partials convergence",
+      "time": "2026-03-16T08:30:32Z"
+    }
+  ],
+  "partials": {
+    "contract": "May26 Dubai Partials",
+    "unit": "25kb",
+    "buyers": {
+      "TOTSA": {"count": 13, "priceRange": [152.85, 153.24]},
+      "METS": {"count": 6, "priceRange": [152.95, 153.23]},
+      "EQUINORAPPL": {"count": 2, "priceRange": [152.95, 153.10]}
+    },
+    "sellers": ["BPSG", "VITOLSG", "P66SG", "SIETCO", "UNIPECASIA", "SHENGHPI"],
+    "offerers": {
+      "VITOLSG": {"rangeHigh": 160.00, "rangeLow": 158.70, "withdrew": "2026-03-16T08:30:11Z"},
+      "P66SG": {"rangeHigh": 160.15, "rangeLow": 160.00},
+      "BPSG": {"rangeHigh": 160.00, "rangeLow": 159.80}
+    },
+    "otherBidders": ["HENGLIPET"],
+    "convergencePrice": 153.23,
+    "windowOpenNote": "Dubai partials bid over $150/bbl at 08:15 UTC with no offers initially"
+  },
+  "cashMurban": [
+    {"value": 15.20, "unit": "$/B over May Dubai Futures", "time": "2026-03-16T08:32:46Z"},
+    {"value": 14.50, "unit": "$/B over May Dubai Futures", "time": "2026-03-16T08:33:26Z"}
+  ],
+  "cashOman": [
+    {"value": 50.00, "unit": "$/B over May Dubai Futures", "time": "2026-03-16T08:32:44Z"},
+    {"value": 51.00, "unit": "$/B over May Dubai Futures", "time": "2026-03-16T08:33:24Z"}
+  ],
+  "errorTrades": [],
+  "finalsOnClose": {
+    "bids": "TOTSA at $153.24 (last visible bid at 08:30:04); METS withdrew at $153.23 (08:30:17)",
+    "offers": "VITOLSG withdrew at $158.70 (08:30:11); P66SG and BPSG no withdrawal recorded"
+  },
+  "upperZakum": {
+    "offerer": "BPSG",
+    "basis": "100% Front Month Cash Dubai Full Month May",
+    "premRange": [6.6, 6.9],
+    "withdrew": "2026-03-16T08:30:11Z"
+  },
+  "marketContext": "US attacked Kharg Island on Sat 14 Mar; Iran retaliated by attacking Fujairah port (key UAE oil terminal), all loadings suspended. Brent settled ~$103/bbl Fri, Dubai partials surged to record $153+ levels Monday.",
+  "source": {
+    "plattsHeards": "2026-03-16 ~08:27-08:35 UTC window",
+    "fluxOfficials": "@FluxOfficials tweet 2026-03-16T08:35:29Z"
+  }
+}

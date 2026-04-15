@@ -1,0 +1,90 @@
+{
+  "date": "2026-03-17",
+  "fluxOfficials": {
+    "assessment": null,
+    "premium": null,
+    "latestTweet": "Dubai partials quickly bid up to near $154, trading begins in high-$153 range",
+    "tweetTime": "Tue Mar 17 08:16:30 +0000 2026",
+    "note": "No official assessment published yet for today. Yesterday's: $153.23/bbl, premium $55.72/bbl"
+  },
+  "declarations": [
+    {
+      "seller": "BP",
+      "buyer": "TotalEnergies",
+      "grade": "Oman",
+      "month": "May",
+      "time": "2026-03-17T08:28:09.122Z",
+      "articleId": "932ea4f7-df08-473a-8121-14477a49dd38"
+    },
+    {
+      "seller": "Shell",
+      "buyer": "TotalEnergies",
+      "grade": "Murban",
+      "month": "May",
+      "time": "2026-03-17T08:28:54.034Z",
+      "articleId": "8d036964-ffd8-491c-8d1d-bdbe401f87d0"
+    },
+    {
+      "seller": "Shell",
+      "buyer": "TotalEnergies",
+      "grade": "Murban",
+      "month": "May",
+      "time": "2026-03-17T08:28:55.593Z",
+      "articleId": "5561e9e8-b43c-4373-a25c-dc2aba012d63"
+    },
+    {
+      "seller": "Vitol",
+      "buyer": "TotalEnergies",
+      "grade": "Oman",
+      "month": "May",
+      "time": "2026-03-17T08:30:59.708Z",
+      "articleId": "f5f797ef-e748-4c6e-8e30-3527e9ebe1ce"
+    },
+    {
+      "seller": "Trafigura",
+      "buyer": "TotalEnergies",
+      "grade": "Oman",
+      "month": "May",
+      "time": "2026-03-17T08:31:02.163Z",
+      "articleId": "19a41c4a-1778-486f-8074-f897933241ee"
+    }
+  ],
+  "cashOman": [
+    {
+      "value": 58.98,
+      "time": "2026-03-17T08:32:02.481Z",
+      "articleId": "0f388aae-c667-4b00-8734-5d6191f1980c"
+    },
+    {
+      "value": 58.00,
+      "time": "2026-03-17T08:32:40.49Z",
+      "articleId": "457dd30d-1711-44be-94c0-581e078a0b42"
+    }
+  ],
+  "cashMurban": [
+    {
+      "value": 18.63,
+      "time": "2026-03-17T08:32:04.63Z",
+      "articleId": "1145ca59-dfb3-44dc-b750-1f1b28a737f2"
+    },
+    {
+      "value": 18.50,
+      "time": "2026-03-17T08:32:43.102Z",
+      "articleId": "357359c9-f4b8-4fad-8170-08f75ed1f843"
+    }
+  ],
+  "partials": {
+    "contract": "May26 Dubai Partials",
+    "buyer": "TOTSA",
+    "priceRange": "$157.55-$157.75/bbl",
+    "sellers": ["BP", "Trafigura", "Vitol", "P66", "Gunvor", "Unipec Asia", "Shenghpi", "SIETCO"],
+    "lotSize": "25kb",
+    "totalTrades": "30+",
+    "note": "TOTSA was the only buyer, aggressive bidding starting near $154/bbl"
+  },
+  "errorTrades": [],
+  "finalsOnClose": {
+    "bids": "数据待更新",
+    "offers": "数据待更新"
+  }
+}
