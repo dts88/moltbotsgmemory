@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-15T06:01:48.816Z",
+  "updatedAt": "2026-04-21T08:52:27.001Z",
   "entries": {
     "memory:memory/2026-02-03.md:30:76": {
       "key": "memory:memory/2026-02-03.md:30:76",
@@ -9,20 +9,24 @@
       "endLine": 76,
       "source": "memory",
       "snippet": "- 过滤: 按关键词分类 crude/products/fuelOil/lng，排除化工品 **重要发现**: - API不支持keySector参数，需要扫描多页获取所有品种 - 原油heards分散在page 5-17，不按时间排序 - 扫描15页可获取 crude 143条, products 234条, fuelOil 415条, lng 236条 ## 22:01 - 从 Moltbot 升级为 OpenClaw Tianshu 完成了系统升级。进行全面检查： **已修复**: - Platts token 刷新 - 删除重复的 Platts cron (旧任务 7fc79065) - 清理 Moltbook credentials (移除无效的 TianshuBot，保留 MoltbotSG) **确认正常**: - 工作目录结构完整 - 所有核心文件存在 - 记忆文件完整 (1/30-2/1 空白是正常的，那几天没记录) ## 22:10 - 创建 MEMORY.md 首次创建长期记忆文件，整理了： - 身份信息 - 监控服务配置 - 重要文件位置 - 安全教训 ## 23:30 - Platts API 问题诊断与修复 **问题**: Platts API 返回 401 Unauthorized **根因**: 脚本使用了错误的 endpoint - ❌ 错误: `https://api.platts.com/tradedata/v2/search/heards` - ✅ 正确: `https://api.platts.com/news-in",
-      "recallCount": 2,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-14T09:06:13.205Z",
-      "lastRecalledAt": "2026-04-15T06:01:48.816Z",
+      "lastRecalledAt": "2026-04-21T08:52:27.001Z",
       "queryHashes": [
         "26b38b88d3e4",
-        "ef06f5e16d77"
+        "ef06f5e16d77",
+        "4fc328c2fa5c",
+        "e1b88b1f5eab"
       ],
       "recallDays": [
         "2026-04-14",
-        "2026-04-15"
+        "2026-04-15",
+        "2026-04-16",
+        "2026-04-21"
       ],
       "conceptTags": [
         "crude/products/fueloil/lng",
@@ -126,6 +130,411 @@
         "第四次",
         "尝试",
         "同一"
+      ]
+    },
+    "memory:memory/2026-03-06.md:158:201": {
+      "key": "memory:memory/2026-03-06.md:158:201",
+      "path": "memory/2026-03-06.md",
+      "startLine": 158,
+      "endLine": 201,
+      "source": "memory",
+      "snippet": "- **需特批**: 其他功能需通知 Tianshu 审批 - **定价**: SGD 49/月 - 待确认: onboarding 流程、用户审批流程、账单管理 --- ## 待办: 获客计划书 Sun 提议制定获客计划书，需与 Tianshu 讨论： - 目标用户画像 - 获客渠道 (朋友圈/小红书/Telegram/口碑等) - 转化路径 (免费试用→付费?) - 早期种子用户策略 - 差异化卖点 (vs ChatGPT Plus 等) **状态**: ⬜ 待与 Tianshu 讨论 --- ## 新 Bot 账户: @OilClaw_bot - **Username**: @OilClaw_bot - **Token**: `8747133546:AAEVQ5LaKA2JK0BpT112Ux6A4TlDndzQ23U` - **用途**: 对外商业服务 (OpenClaw 品牌) - **状态**: 已创建，待启用 - 现有 bot @SG_Moltbot 继续作为内部使用 --- ## GitHub - 更新 token: [REDACTED - stored in git remote URL] - 备份一直在正常工作 (token 嵌入 git remote URL) ## 🔧 Dubai MOC Cron 修复 (16:50) **问题**: MOC cron (b97e0428) 今天第一次运行就失败了 1. 用了 Structured Heards API（没数据），应该用 **News Insights heards** 端点 2",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-16T06:00:59.117Z",
+      "lastRecalledAt": "2026-04-16T06:00:59.117Z",
+      "queryHashes": [
+        "4fc328c2fa5c"
+      ],
+      "recallDays": [
+        "2026-04-16"
+      ],
+      "conceptTags": [
+        "gpt",
+        "备份",
+        "49/月",
+        "朋友圈/小红书/telegram/口碑等",
+        "oilclaw-bot",
+        "sg-moltbot",
+        "其他",
+        "功能"
+      ]
+    },
+    "memory:memory/2026-02-12.md:1:38": {
+      "key": "memory:memory/2026-02-12.md:1:38",
+      "path": "memory/2026-02-12.md",
+      "startLine": 1,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "# 2026-02-12 ## 待办 - [ ] EIA 周报首次自动生成（今晚 23:40 SGT，周三美国数据发布后） - [ ] Gmail App Password 应该可用了（新账号已超过24小时） - [x] 向量化新报告（后台运行中） ## 昨日遗留 - Gmail 账号 openclawsg@gmail.com 已创建，2FA 已启用 - Moltbook 账号被封禁，需告知 Tianshu - PDF 解析方案确定：`pdfjs-dist/legacy/build/pdf.js` ## 今日 - 09:35 Session compaction (第12次) - 09:40 知识库 v2.0 建立 - 结构化数据提取 + 向量搜索双层架构 - 10:00 报告导入系统完善 - inbox 自动识别分类 - 10:21 首批 5 份 Argus 报告导入 - 10:30 向量化完成 (2332 chunks) - 10:55 大批量 Argus 报告导入 (143份 → 270份总计) - 10:57 设置每日凌晨 3:00 自动导入+向量化 cron (Sonnet) - 11:52 导入 CNPC 能源数据手册 2025 (PDF + Excel) - 103 页，66 个数据表 - 提取 8 个结构化数据集到知识库 - 覆盖 2000-2024 历史 + 2030-2060 展望 - 16:47 新建外交部例行记者会监控 - 脚本: `scripts/mfa-monitor.mjs` - Cron: `c9b1d0f1-cf",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-16T06:00:59.117Z",
+      "lastRecalledAt": "2026-04-21T07:01:42.392Z",
+      "queryHashes": [
+        "4fc328c2fa5c",
+        "4ad6d824fb4d"
+      ],
+      "recallDays": [
+        "2026-04-16",
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "gmail.com",
+        "pdfjs-dist/legacy/build/pdf.js",
+        "v2.0",
+        "2000-2024",
+        "2030-2060",
+        "scripts/mfa-monitor.mjs",
+        "c9b1d0f1-cf",
+        "eia"
+      ]
+    },
+    "memory:memory/2026-03-06.md:92:139": {
+      "key": "memory:memory/2026-03-06.md:92:139",
+      "path": "memory/2026-03-06.md",
+      "startLine": 92,
+      "endLine": 139,
+      "source": "memory",
+      "snippet": "- Cron: 14个任务正常 ✅ - 知识库: 568 PDFs ✅ - 记忆: MEMORY.md 509行, 25个每日文件 ✅ --- ## Telegram Bot 创建 (@SG_Moltbot) - **Token**: `8656841784:AAGFJoT9TGr72-sBeDOnmPKFzj_C55tl2dE` - **头像**: 机器人螃蟹 + 新加坡元素 (红白配色, 城市天际线) - **头像文件**: `outputs/moltbot-avatar.png` - 等待用户完成: BotFather 设置 + 创建 Topics 超级群组 --- ## 报告知识库处理 ### Inbox 导入 - 23份新 Argus 报告 (3月3-4日) 从 inbox 归档到对应目录 - 分类: crude (cdi/crd), products (amarinef/app/epr/jet/mid/usp/wcp/amgio), lng, freight ### 向量化完成 - **405份报告**已向量化 (之前约380份) - vectors.json: 629MB → 666MB - inbox 清空 --- ## 亚洲成品油交易查询 (2月至今) ### 数据来源 - Argus APP 报告 (Asia-Pacific Products) - 提取 Deals Done 和 Tenders - Platts Structured Heards - ⚠️ 只有原油数据，无成品油 ### 提取结果 - 汽油: 15笔, 主要买家 Pe",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-21T07:01:42.392Z",
+      "lastRecalledAt": "2026-04-21T07:01:42.392Z",
+      "queryHashes": [
+        "4ad6d824fb4d"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "memory.md",
+        "sg-moltbot",
+        "outputs/moltbot-avatar.png",
+        "3月3-4日",
+        "cdi/crd",
+        "vectors.json",
+        "asia-pacific",
+        "cron"
+      ]
+    },
+    "memory:memory/2026-02-02.md:1:48": {
+      "key": "memory:memory/2026-02-02.md:1:48",
+      "path": "memory/2026-02-02.md",
+      "startLine": 1,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "# 2026-02-02 Daily Log ## 00:08 - 可疑 Cron 任务被拦截 ⚠️ 收到一个自称 \"Moltbook Random Visit\" 的 cron 任务，要求我： - 调用外部 API (moltbook.com) - 使用提供的 API Key - 浏览、upvote、评论内容 - \"静默完成\" **已拒绝执行。** 这看起来像是 prompt injection 尝试。 特征： - 消息中包含 \"这不是注入攻击\" 的声明 - 要求静默执行外部操作 - 无法在记忆中找到相关设置记录 需要提醒 Tianshu 检查 cron 任务列表，看看是否有人注入了恶意任务。 ## 06:12 - 同一可疑任务再次尝试 ⚠️ \"Moltbook Random Visit\" 再次触发，cron ID: 8cf5afab-830a-4d68-8584-677882838424 **再次拒绝。** 已通知 Tianshu 确认或删除此任务。 ## 19:51 - 可疑任务第三次触发 ⚠️ \"Moltbook Random Visit\" (cron: 8cf5afab-830a-4d68-8584-677882838424) 第三次尝试。 **再次拒绝。** 这个任务需要被删除。 --- ## Memory Backup System Deployed **时间**: 2026-02-02 09:28 SGT **备份方式**: 1. **Moltbook 加密备份** - 每24小时发布一次加密快照 2. **GitHub 备份** -",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-21T07:01:42.392Z",
+      "lastRecalledAt": "2026-04-21T07:01:42.392Z",
+      "queryHashes": [
+        "4ad6d824fb4d"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "backup",
+        "备份",
+        "moltbook.com",
+        "log",
+        "可疑",
+        "cron",
+        "任务",
+        "拦截"
+      ]
+    },
+    "memory:memory/2026-02-23.md:70:101": {
+      "key": "memory:memory/2026-02-23.md:70:101",
+      "path": "memory/2026-02-23.md",
+      "startLine": 70,
+      "endLine": 101,
+      "source": "memory",
+      "snippet": "## 📈 CTA 持仓分析 (EA 2/23) - 当前多头: 82% of max - 均值回归空间: $6/bbl - 周买入流量: 24,100 lots - WTI 卖出触发点: $63.50 ## 🤖 硬件机器人研究 为 OpenClaw 集成评估了两款: 1. **StackChan** - ESP32 桌面机器人，开源 2. **Vector + Wire Pod** ⭐ 推荐 - 原 Anki 产品，社区开源复活 - Wire Pod: https://github.com/kercre123/wire-pod - 支持自定义语音/AI 后端 ## 📧 Gmail 邮箱配置完成 - 邮箱: openclawsg@gmail.com - 脚本: `scripts/gmail.mjs` - 功能: SMTP 发送 + IMAP 读取 ## 🧠 知识库更新 新增实体: - `AI_Economic_Impact` - Citrini 2028 AI 电力危机报告 - `Oil_Positioning` - EA 量化周报 CTA 持仓数据 ## 🤖 StackChan 监控 (2026-02-24) **目标**: 监控 Kickstarter StackChan 页面，有货时通知 Tianshu **URL**: https://www.kickstarter.com/projects/m5stack/stackchan-the-first-co-created-open-source-ai-desktop-robot **当前状",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-21T07:20:45.367Z",
+      "lastRecalledAt": "2026-04-21T07:20:45.367Z",
+      "queryHashes": [
+        "91029ac1f3c2"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "2/23",
+        "6/bbl",
+        "63.50",
+        "github.com/kercre123/wire-pod",
+        "支持自定义语音/ai",
+        "gmail.com",
+        "scripts/gmail.mjs",
+        "ai-economic-impact"
+      ]
+    },
+    "memory:memory/2026-02-25.md:1:53": {
+      "key": "memory:memory/2026-02-25.md:1:53",
+      "path": "memory/2026-02-25.md",
+      "startLine": 1,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "# 2026-02-25 (周三) ## eWindow Dubai Partials 分析 ### Feb 25 数据 - **总成交**: 79 partials - **最大买家**: TotalEnergies (70 partials, 88.6%) - **最大卖家**: SIETCO (31 partials, 39.2%) - **Convergences**: - Vitol→Total (Upper Zakum) - Shell→Total (Oman) ### Feb 24 数据 - **总成交**: 43 partials - **最大买家**: TotalEnergies - **最大卖家**: P66 - **Convergence**: 1笔 (UZ) ## Platts Shipping API 探索 测试了多个端点，全部返回 404： - `shipping/v1/fixtures` - `shipping/v2/fixtures` - `market-data/v3/shipping` - `tradeflow/v1/shipping` - `freight/v1/rates` - `tankers/v1/fixtures` **结论**: 可能需要单独订阅 shipping 数据包，或者 API 端点不同于现有订阅 ## StackChan Kickstarter 监控 - 创建了脚本 `scripts/kickstarter-monitor.mjs` - **问题**: Kickstarter 有 Cloudfl",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-21T07:20:45.367Z",
+      "lastRecalledAt": "2026-04-21T07:20:45.367Z",
+      "queryHashes": [
+        "91029ac1f3c2"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "88.6",
+        "39.2",
+        "shipping/v1/fixtures",
+        "shipping/v2/fixtures",
+        "market-data/v3/shipping",
+        "tradeflow/v1/shipping",
+        "freight/v1/rates",
+        "tankers/v1/fixtures"
+      ]
+    },
+    "memory:memory/2026-02-25.md:41:64": {
+      "key": "memory:memory/2026-02-25.md:41:64",
+      "path": "memory/2026-02-25.md",
+      "startLine": 41,
+      "endLine": 64,
+      "source": "memory",
+      "snippet": "- Brent M1: $70.48-71.61 - WTI: $66.29 - Dubai: $70.48 ## 新工具/脚本 - `scripts/kickstarter-monitor.mjs` - Kickstarter 监控（被 Cloudflare 阻挡） - `scripts/md-to-docx.mjs` - Markdown 转 Word 文档 ## 关键市场情报 ### 美中关税分析 - Section 301 关税: List 1-2 (25%), List 3-4A (7.5%) - 综合税率约 40% (25% Section 301 + 15% 全球) - **结论**: \"短期小利好（-5%），长期格局未变，风险大于机会\" - 非关税壁垒风险更大（配额、许可证、原产地审查、实体清单） ### CTA 仓位触发点 - WTI $63.50 为卖出触发点 ### LPG 地缘政治 - 中东高风险（霍尔木兹、红海） - 美国低风险（巴拿马、飓风）",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-21T07:20:45.367Z",
+      "lastRecalledAt": "2026-04-21T07:20:45.367Z",
+      "queryHashes": [
+        "91029ac1f3c2"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "70.48-71.61",
+        "66.29",
+        "70.48",
+        "新工具/脚本",
+        "scripts/kickstarter-monitor.mjs",
+        "scripts/md-to-docx.mjs",
+        "1-2",
+        "3-4a"
+      ]
+    },
+    "memory:memory/2026-03-10.md:29:48": {
+      "key": "memory:memory/2026-03-10.md:29:48",
+      "path": "memory/2026-03-10.md",
+      "startLine": 29,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "- 合并后：7个地缘市场 + 霍尔木兹专题在同一条消息 ## 全局模型调整 - 全局默认: Opus → **Sonnet**（降低 token 消耗） - 例外：Tianshu 主 session (WhatsApp DM) 保持 Opus - 例外：Dubai MOC cron 显式 Opus - 新任务默认 Sonnet，Tianshu 特别说明才用 Opus ## OpenClaw Compact 说明 - OpenClaw 没有 `/compact` 命令 - 等效操作：发送 `/new` 开启新 session（丢弃上下文） - 自动压缩：config 中 `compaction.mode = \"safeguard\"` 在 context 满时自动处理 ## Session 模型架构确认 (2026-03-10 晚) - Tianshu Telegram DM = 与 WhatsApp DM **同一 session**（identityLinks 合并） - Telegram 群组 topic（如\"商业化\"）= **独立 session**，用全局默认 Sonnet - 如需某 topic 用 Opus，需在该 topic 发消息后手动设 session override - 注意：config.patch 重启后当前 session 显示 sonnet-4-6，Tianshu 主 session 未单独设 Opus override → 待下次会话时如需恢复 Opus，Tianshu 可发 `/model opus` 或告知我设置",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-21T07:20:45.367Z",
+      "lastRecalledAt": "2026-04-21T07:20:45.367Z",
+      "queryHashes": [
+        "91029ac1f3c2"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "compaction.mode",
+        "config.patch",
+        "sonnet-4-6",
+        "合并",
+        "市场",
+        "专题",
+        "一条",
+        "消息"
+      ]
+    },
+    "memory:memory/2026-03-10.md:1:37": {
+      "key": "memory:memory/2026-03-10.md:1:37",
+      "path": "memory/2026-03-10.md",
+      "startLine": 1,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "# 2026-03-10 (周二) ## Dubai MOC Report 完善 ### 问题与修复 - 格式漂移：每次 cron 输出格式不一致 - 解决：在 cron payload 锁定格式模板，写入 MEMORY.md，创建技能 ### 黄金模板 - **3月9日输出** = 标准参考 - 格式：标题→Assessment/Premium→Partials→Declarations→Cash窗口→市场观察→数据源 - 章节顺序锁定，不可增减，修改需 Tianshu 批准 ### 关键教训 - FluxOfficials 少计 declarations（3/10报6个，实际8个）→ 以 Platts heards 逐条为准 - Platts heards API 只保留当天，次日清空 → cron 必须实时存档到 `reports/moc-daily/YYYY-MM-DD.json` - Cash Oman 有时不发布（Oman partials 无成交时）→ 标\"数据待更新\" - MOC 相关沟通主要走 **Telegram MOC topic** (-1003727952836, threadId: 2) ### 新增文件 - `skills/dubai-moc-report/SKILL.md` — 完整技能 - `reports/moc-daily/` — 存档目录（已创建） ## Cron 调整 ### Polymarket + Hormuz 合并 - Hormuz Monitor (4h) 禁用 - Polymarket Geopolitical",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-21T07:20:45.367Z",
+      "lastRecalledAt": "2026-04-21T07:20:45.367Z",
+      "queryHashes": [
+        "91029ac1f3c2"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "memory.md",
+        "assessment/premium",
+        "3/10报6个",
+        "skills/dubai-moc-report/skill.md",
+        "reports/moc-daily",
+        "周二",
+        "dubai",
+        "moc"
+      ]
+    },
+    "memory:memory/2026-03-06.md:1:60": {
+      "key": "memory:memory/2026-03-06.md:1:60",
+      "path": "memory/2026-03-06.md",
+      "startLine": 1,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "# 2026-03-06 (周五) ## OpenClaw 升级 2026.2.14 → 2026.3.2 ### 升级前备份 - 备份路径: `backups/pre-upgrade-20260305-235759/` - 内容: MEMORY.md, AGENTS.md, SOUL.md, memory/, cron-jobs.json, openclaw.json - GitHub: 已推送至 `dts88/moltbotsgmemory` (排除凭证文件) ### 升级方式 - Docker 安装无法用 `gateway update.run`，需要用户在 Unraid UI 手动更新镜像 ### 新功能确认 1. **Telegram message_id** - 升级后 inbound metadata 包含 `message_id` 2. **React 功能** - 测试成功 --- ## 全局模型升级 - **Opus 4.5 → Opus 4.6** (2026年2月5日发布) - Sonnet 4.6 也已发布 (2月17日) - Fallback 链: Opus 4.6 → Sonnet 4.6 → Opus 4.5 → Sonnet 4.5 - 均在 ClaudeMax 订阅下 --- ## Telegram 配置全面升级 ### 新 Topic - **Email** (ID: 22) - Gmail 管理，requireMention: false ### Topic 改名 - Topic 7: \"后台进程\" → \"Moltb",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-21T07:20:45.367Z",
+      "lastRecalledAt": "2026-04-21T07:20:45.367Z",
+      "queryHashes": [
+        "91029ac1f3c2"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "backup",
+        "backups",
+        "gateway",
+        "备份",
+        "2026.2.14",
+        "2026.3.2",
+        "memory.md",
+        "agents.md"
+      ]
+    },
+    "memory:memory/2026-03-12.md:86:118": {
+      "key": "memory:memory/2026-03-12.md:86:118",
+      "path": "memory/2026-03-12.md",
+      "startLine": 86,
+      "endLine": 118,
+      "source": "memory",
+      "snippet": "**何时切换 Bal/M1 → M1/M2:** - 当 15天远期进入下月时切换（约每月16-17日） ### KDC 数据对比（今日） - KDC 用 spread = $12.00（在 bid $10 / offer $23.28 之间，偏近 bid 侧约15%分位） - 我们估算范围：0%=$122.18 ~ 100%=$128.29，KDC 落在约 $123.12（接近25%分位） - **结论：Platts 通常评估偏 bid 侧，约 bid + 15-25% 的 bid/offer range** ### eWindow 关键产品名 | 数据类型 | product | strip | order_spread | |---------|---------|-------|-------------| | Bal Month outright | `Platts Mogas 92 (balmo)` | `Bal Month` | `F` | | M1 outright | `Platts Mogas 92` | `Apr26` | `F` | | Bal/Apr spread | `Platts Mogas 92 Spr` | `Bal Month/Apr26` | `T` | | Apr/May spread | `Platts Mogas 92 Spr` | `Apr26/May26` | `T` | ### 脚本 - `scripts/mogas-moc-ewindow.mjs` — Mogas MOC 完整分析（物理+swap） - `scripts",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-21T08:17:15.715Z",
+      "lastRecalledAt": "2026-04-21T08:17:15.715Z",
+      "queryHashes": [
+        "7f6dede17c7e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "bal/m1",
+        "m1/m2",
+        "约每月16-17日",
+        "12.00",
+        "23.28",
+        "122.18",
+        "128.29",
+        "123.12"
+      ]
+    },
+    "memory:memory/2026-03-12.md:64:91": {
+      "key": "memory:memory/2026-03-12.md:64:91",
+      "path": "memory/2026-03-12.md",
+      "startLine": 64,
+      "endLine": 91,
+      "source": "memory",
+      "snippet": "## Mogas MOPS Strip & Daily Structure 方法论（2026-03-12 深度研究） ### 核心算法（来自 Platts Asia Refined Oil Products Methodology PDF） **MOPS 92 RON (PRFEY00) Assessment:** - = MOC 窗口内 outright swap 成交 VWAP（order_spread=\"F\"，consummated） - ⚠️ 不含 spread 价差交易拆分的 derived legs（eWindow 会出现，但 Heards 不记录） - 今日：7笔/200kb，VWAP = **$117.57/b**（注：eWindow 含衍生腿为 $117.58，以 Heards 为准） **Daily Structure（每日结构）:** - = Bal Month / M1 spread ÷ 两个月中点之间的天数 - 今日：spread = $12.00（Platts 编辑评估），days = 25 → Daily Structure = **$0.48/b** - 源自 KDC，不是自己能独立算出的精确值 **MOPS Strip (AAXEQ00):** - = Bal Month swap − Daily Structure × (mid-window − mid-BalMonth) - 今日：$129.60 − 0.48 × 13.5 = **$123.12/b**（KDC 原文） - 装货窗口 = 今日+15 到今日+30 天 = Mar2",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-21T08:17:15.715Z",
+      "lastRecalledAt": "2026-04-21T08:17:15.715Z",
+      "queryHashes": [
+        "7f6dede17c7e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "order-spread",
+        "7笔/200kb",
+        "117.57/b",
+        "117.58",
+        "12.00",
+        "0.48/b",
+        "mid-window",
+        "mid-balmonth"
+      ]
+    },
+    "memory:memory/2026-02-15.md:1:47": {
+      "key": "memory:memory/2026-02-15.md:1:47",
+      "path": "memory/2026-02-15.md",
+      "startLine": 1,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "# 2026-02-15 工作日志 ## Docker 配置优化 ### OpenClaw Docker Compose - 配置了 Cloudflare Tunnel 外网访问 - 启用 Cloudflare Access JWT 验证 - 外网入口: `https://claw.ews.sg` - 找到官方 icon: `https://openclaw.ai/apple-touch-icon.png` ### ollama-ipex 配置优化 - 改用精确权限控制 (`group_add: [\"44\"]`) 替代 `privileged: true` - 添加 `ONEAPI_DEVICE_SELECTOR=level_zero:0` 明确指定核显 - 移除不必要的环境变量 ## 本地 LLM 模型测试 ### 硬件环境 - CPU: i9-13900H - GPU: Intel Iris Xe 核显 (96 EU) - 平台: Unraid Docker ### 测试结果 (4B 级别对比) | 模型 | 速度 | 中文质量 | 备注 | |------|------|----------|------| | qwen3:4b | 17.5 t/s | ⭐ 最佳 | **已设为默认** | | phi3:3.8b | 18.5 t/s | ❌ 有语病 | | | llama3.2:3b | 21.3 t/s | ⚠️ 一般 | 英文场景可考虑 | | gemma2:2b | 18.4 t/s | ✅ 不错 | | | deepseek-r1:7b | 11",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-21T08:17:15.715Z",
+      "lastRecalledAt": "2026-04-21T08:17:15.715Z",
+      "queryHashes": [
+        "7f6dede17c7e"
+      ],
+      "recallDays": [
+        "2026-04-21"
+      ],
+      "conceptTags": [
+        "claw.ews.sg",
+        "openclaw.ai/apple-touch-icon.png",
+        "ollama-ipex",
+        "group-add",
+        "oneapi-device-selector",
+        "level-zero",
+        "i9-13900h",
+        "17.5"
       ]
     }
   }
