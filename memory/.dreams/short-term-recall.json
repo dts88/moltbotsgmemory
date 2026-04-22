@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-21T08:52:27.001Z",
+  "updatedAt": "2026-04-22T09:10:40.784Z",
   "entries": {
     "memory:memory/2026-02-03.md:30:76": {
       "key": "memory:memory/2026-02-03.md:30:76",
@@ -535,6 +535,68 @@
         "level-zero",
         "i9-13900h",
         "17.5"
+      ]
+    },
+    "memory:memory/2026-03-27.md:45:82": {
+      "key": "memory:memory/2026-03-27.md:45:82",
+      "path": "memory/2026-03-27.md",
+      "startLine": 45,
+      "endLine": 82,
+      "source": "memory",
+      "snippet": "- 删除布伦特119→110→105价格走势（信息已在价格表体现） - 市场因素重新排序：产业(EIA+地缘+LNG+贸易+LPG+制度) → 机构观点(StanChart/REG/高盛) → 宏观(美联储) --- ## 跨渠道消息限制 ### 问题 - 从 Telegram context 启动的任务无法发送到 WhatsApp - 子任务 (subagent) 也继承父任务的 channel binding - 错误: `\"Cross-context messaging denied: action=send target provider \\\"whatsapp\\\" while bound to \\\"telegram\\\".\"` ### 解决方式 - 直接在 Telegram topic 发送文件 - 或从 WhatsApp 发起任务 - 或 shell 直接调用 API（绕过 channel binding） --- ## 新加坡库存周报 cron (2026-03-27 检查) ### 现状 - **cron ID**: `22f865a5-a942-4a11-98f0-5af85cea6d5f` - **时间**: 每周四 14:00 SGT - **问题**: Enterprise Singapore 官网库存页面 3月26日未发布数据 ### 最新可得数据 - Residual Fuels: 24.04百万桶 (截至3月18日) - Middle Distillates: 7.47百万桶 (3月平均，**持续低位**) - Light Distil",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-22T09:10:40.784Z",
+      "lastRecalledAt": "2026-04-22T09:10:40.784Z",
+      "queryHashes": [
+        "e4f5fee2955d"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "stanchart/reg/高盛",
+        "cross-context",
+        "24.04百万桶",
+        "7.47百万桶",
+        "删除",
+        "价格",
+        "信息",
+        "体现"
+      ]
+    },
+    "memory:memory/2026-03-31.md:1:33": {
+      "key": "memory:memory/2026-03-31.md:1:33",
+      "path": "memory/2026-03-31.md",
+      "startLine": 1,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "# 2026-03-31 日志 ## Dubai MOC 报告问题与修复 ### 数据错误（严重） - 3/27 报告：cron 存档里的数据是 3/26 的（FluxOfficials assessment $113.04，5船 declarations） - 直接发出了错误报告，被 Tianshu 发现纠正 - 根本原因：存档 `reports/moc-daily/2026-03-27.json` 的 FluxOfficials 数据用了前一天的推文 - 教训：**生成报告前必须验证数据日期戳** ### Cron 时间问题 - 3/31 cron 在 16:36 SGT 触发，FluxOfficials 推文 16:38 才发 - 结果：assessment/premium 为 null，报告不完整 - 需要将 cron 时间改为 **16:45 SGT**（待执行） ### Dubai MOC Topic 迁移（3/30 执行） - 推送目标从 threadId:2008 改回 threadId:**2**（本 topic） - SKILL.md 和 MEMORY.md 均已更新 - 发送方式统一用 CLI：`openclaw message send --channel telegram --target \"-1003727952836\" --thread-id 2 --message \"...\"` ## Products MOC 研究（3/30-3/31） ### 预估 vs 官方对比（3/30） | 品种 | 我们估算 | Platts 官方 | 误差",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-22T09:10:40.784Z",
+      "lastRecalledAt": "2026-04-22T09:10:40.784Z",
+      "queryHashes": [
+        "e4f5fee2955d"
+      ],
+      "recallDays": [
+        "2026-04-22"
+      ],
+      "conceptTags": [
+        "3/27",
+        "3/26",
+        "113.04",
+        "3/31",
+        "assessment/premium",
+        "3/30",
+        "skill.md",
+        "memory.md"
       ]
     }
   }
