@@ -36,9 +36,13 @@
   - 触发: 任何 Platts 脚本运行时，若剩余 <10 分钟则刷新
   - 保障: Platts Monitor 每 50 分钟运行，确保 token 持续有效
 - **手动刷新**: `node scripts/platts-refresh-token.mjs`
-- **失败处理**: 若刷新失败，需手动登录获取新 token
+- **失败处理**:
+  - 先走 `refresh_token` 自动刷新
+  - 若 token 已过期且 refresh 也失败，可用环境变量 `Platts_ACCOUNT` / `Platts_PASSWORD` 通过 TokenGeneration `/auth/api` 自动重登获取新 token
+  - **密码兜底要保守使用**：最少间隔 60 分钟；若连续 2 次密码兜底失败，进入 12 小时冷却期，避免短时间反复登录触发风控
+  - 仅当上述两层都失败时，才需要人工干预
 
-**关键点**: 无论提出什么 Platts 相关需求，都使用这组 token，刷新逻辑相同。
+**关键点**: 无论提出什么 Platts 相关需求，都使用这组 token，刷新逻辑相同；密码兜底不写入 memory，只从环境变量读取。
 
 ---
 

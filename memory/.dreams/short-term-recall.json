@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-23T11:39:21.629Z",
+  "updatedAt": "2026-04-29T10:35:15.119Z",
   "entries": {
     "memory:memory/2026-02-03.md:30:76": {
       "key": "memory:memory/2026-02-03.md:30:76",
@@ -639,18 +639,20 @@
       "endLine": 156,
       "source": "memory",
       "snippet": "**为何单产品crack正 但综合毛利负**: 1. 单产品crack（AAYED00=23.79, NBSSM01=16.5）可能是 vs Brent，DBSCM00 用 Dubai 作成本 2. 伊朗冲突后 Dubai 仍高溢价 vs Brent，产品已跟随 Brent 回落但 Dubai 未完全跌下来 3. 石脑油 crack 强烈拖后腿（产率13%，但 crack vs Dubai 很负） 4. 还需扣除运费+加工成本（约$3.5-4.5/bbl） ## Dubai MOC报告纰漏总结（2026-03-19） ### 1. Premium倒推错误 **错误**：用Cash Oman溢价（+$65.60）来估算Dubai Physical Premium，并标注\"~\"含糊带过 **根因**：Cash Oman（Oman原油 vs Dubai期货）≠ Dubai Physical Premium（Dubai partials vs Dubai期货），两者是不同概念，数字碰巧接近 **教训**：没有数据就写\"数据待更新\"，不要用相关但不等价的数字倒推并装作是合理估算 ### 2. Twitter --force 缓存bug **错误**：运行`twitter-monitor.mjs --force`仍返回NO_NEW_TWEETS，导致FluxOfficials数据无法手动刷新 **根因**：脚本没有实现--force逻辑，仍走lastSeenId缓存路径 **修复**：已修复，--force现在绕过lastSeenId直接返回最新3条 ### 3. Declarat",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-23T11:39:21.629Z",
-      "lastRecalledAt": "2026-04-23T11:39:21.629Z",
+      "lastRecalledAt": "2026-04-29T10:35:15.119Z",
       "queryHashes": [
-        "728fd4aed9f7"
+        "728fd4aed9f7",
+        "8f7d473508c7"
       ],
       "recallDays": [
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-29"
       ],
       "conceptTags": [
         "23.79",
@@ -670,18 +672,20 @@
       "endLine": 61,
       "source": "memory",
       "snippet": "### 确认的 Platts 符号映射（全部 vs Dubai crack $/bbl） | 符号 | 产品 | 3/18值 | |------|------|-------| | AAHCS00 | Naphtha FOB Spore Cargo Dubai Crack | +12.06 | | AAYED00 | Gasoline 92 RON FOB Spore Dubai Crack | +22.16 | | AAHCL00 | Jet Kero FOB Spore Cargo Dubai Crack | +59.86 | | AAHCE00 | Gasoil 10ppm FOB Spore Dubai Crack | +50.31 | | AAHCM00 | 疑似 Gasoil 500ppm Dubai Crack | +42.38 | | AAHCN00 | 疑似 Gasoil 2500ppm Dubai Crack | +32.84 | | AAHCO00 | 未识别（45.02，高于 500ppm）| +45.02 | | AAHCP00 | 未识别（~27-28，可能 LSWR 相关）| +27.99 | | AAHCQ00 | 未识别 | +25.59 | | AAHCR00 | 未识别 | +24.56 | | AAHBX00 | FO 180 CST 3.5%S FOB Spore Dubai Crack | +2.057 | | AAWHA00 | FO 380 CST 3.5% FOB Spore Dubai Crack | +1.458 | | M",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-23T11:39:21.629Z",
-      "lastRecalledAt": "2026-04-23T11:39:21.629Z",
+      "lastRecalledAt": "2026-04-29T10:35:15.119Z",
       "queryHashes": [
-        "728fd4aed9f7"
+        "728fd4aed9f7",
+        "8f7d473508c7"
       ],
       "recallDays": [
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-29"
       ],
       "conceptTags": [
         "3/18值",
@@ -701,18 +705,20 @@
       "endLine": 36,
       "source": "memory",
       "snippet": "# 2026-03-19 ## 03:00 - 每日记忆备份 (Cron) 脚本输出 BACKUP_COMPLETE，本地备份成功（11个文件）。 ⚠️ **已知问题，需 Tianshu 处理：** 1. **GitHub push 失败** — `reports/vectors.json` 文件达 892MB，超过 GitHub 100MB 限制。 - 解决方案选项：使用 Git LFS，或将该文件加入 `.gitignore` 排除备份 2. **Moltbook 备份失败** — API 返回 HTML（非 JSON），可能是服务不可用或 endpoint 变更。 以上问题已持续存在，建议尽快处理 GitHub 的大文件问题以恢复云端备份功能。 ## 购物清单 - **Sun YX 想买**: Linbsunne 圆珠笔 12支装+3替换芯 - Amazon.sg 链接: https://amzn.asia/d/0f2GiqCw - 价格: S$25.50 --- ## 下午 - DBSCM00 分析深潜 (Tianshu 对话) ### 数据背景 - Platts Dubai M01 (PCAAT00) 近期走势：$134.4 (3/12) → $145.5 (3/13) → $153.2 (3/16) → $157.7 (3/17) → $155.6 (3/18) → **$166.8 (3/19)** - DBSCM00 (Dubai Singapore Cracking Netback Margin)：+9.25 → +1",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-23T11:39:21.629Z",
-      "lastRecalledAt": "2026-04-23T11:39:21.629Z",
+      "lastRecalledAt": "2026-04-29T10:35:15.119Z",
       "queryHashes": [
-        "728fd4aed9f7"
+        "728fd4aed9f7",
+        "8f7d473508c7"
       ],
       "recallDays": [
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-29"
       ],
       "conceptTags": [
         "backup",
@@ -732,18 +738,20 @@
       "endLine": 137,
       "source": "memory",
       "snippet": "- **Managed Money**: 净多头 +55,865 → 228,015（对冲基金追多，非做空方） - **Swap Dealer**: 空头 **+74,584**，多头 -13,425（净空头增加 +88,009 张） - **Other Reportables**: 空头 +4,702（相对小） - ICE WTI Other Reportables 空头 +20,424（值得关注） - Brent Last Day (NYMEX): Swap Dealer 空头 **减少** -1,923（Brent 无异常） **关键结论**: 如果财政部入场，路径是通过 Swap Dealer（银行中介），且只做空 WTI 不碰 Brent，与\"定向压低美国油价\"的猜测一致。但无法从 CFTC 数据直接证实（政府行为可能豁免报告）。 ICE Brent 主力合约（伦敦）不在 CFTC 管辖，无法通过 CFTC 核查。 ## DBSCM00 Dubai Singapore Cracking Margin **符号**: DBSCM00 = Dubai Singapore Cracking Margin（**复杂炼厂**综合毛利） - 今日数值: -7.11 $/bbl（负值） - 计算 = (全产品加权收入) - Dubai原油成本 - 运费($1.5) - 可变加工成本($2-3) - 复杂炼厂产率: 柴油35%, 航煤12%, 石脑油13%, LPG3%, LSFO5% **为何单产品crack正 但综合毛利负**: 1. 单产品crack（AAYED00=",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-23T11:39:21.629Z",
-      "lastRecalledAt": "2026-04-23T11:39:21.629Z",
+      "lastRecalledAt": "2026-04-29T10:35:15.119Z",
       "queryHashes": [
-        "728fd4aed9f7"
+        "728fd4aed9f7",
+        "8f7d473508c7"
       ],
       "recallDays": [
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-29"
       ],
       "conceptTags": [
         "7.11",
@@ -763,18 +771,20 @@
       "endLine": 258,
       "source": "memory",
       "snippet": "- Declarations: 4船（Unipec×2 Oman, BP Oman, Shell Murban → 全部TOTSA） - Cash Oman: +$65.60 / Cash Murban: $25.25→$25.00 --- ## twitter-monitor.mjs --force bug 修复（2026-03-19） - 问题：--force参数未实现，仍走lastSeenId缓存，返回NO_NEW_TWEETS - 修复：FORCE_MODE绕过lastSeenId，直接返回最新3条 - 文件：scripts/twitter-monitor.mjs --- ## DBSCM00 深度分析续（18:00-18:43 SGT） ### 关键新发现：LSWR Platts 代码确认 **AALRX00 = LSWR FOB Indonesia（绝对价格，$/bbl）** - 3/12: $89.46/bbl | crack vs Dubai = -44.94 - 3/13: $92.29/bbl | crack vs Dubai = -53.22 - 3/16: $88.05/bbl | crack vs Dubai = -65.19 - 3/17: $87.85/bbl | crack vs Dubai = -69.81 - 3/18: $88.81/bbl | crack vs Dubai = -66.74 **特征**：Dubai 涨了 $21（3/12→3/18），LSWR 几乎不动（+$0.65），导致 crack 从 -$45 急速扩",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-23T11:39:21.629Z",
-      "lastRecalledAt": "2026-04-23T11:39:21.629Z",
+      "lastRecalledAt": "2026-04-29T10:35:15.119Z",
       "queryHashes": [
-        "728fd4aed9f7"
+        "728fd4aed9f7",
+        "8f7d473508c7"
       ],
       "recallDays": [
-        "2026-04-23"
+        "2026-04-23",
+        "2026-04-29"
       ],
       "conceptTags": [
         "65.60",
