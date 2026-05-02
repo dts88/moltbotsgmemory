@@ -1,0 +1,10 @@
+[main/sessions/35b310a4-2bef-49c7-80a9-975b110c39fb.jsonl#L10] Assistant: 📦 新加坡成品油库存周报 数据截至: 2026-04-24（Enterprise Singapore） Light Distillates（轻馏分）: 16.92 MB (-6% WoW) Middle Distillates（中间馏分）: 数据待更新 Fuel Oil / Residual（燃料油）: Fuel oil stocks fall to two-week low despite highe 数据来源: Platts / Enterprise Singapore
+[main/sessions/35b310a4-2bef-49c7-80a9-975b110c39fb.jsonl#L15] Assistant: 📦 新加坡成品油库存周报 数据截至: 2026-04-24（Enterprise Singapore） Light Distillates（轻馏分）: 16.92 MB (-6% WoW) Middle Distillates（中间馏分）: 数据待更新 Fuel Oil / Residual（燃料油）: Fuel oil stocks fall to two-week low despite highe 数据来源: Platts / Enterprise Singapore
+[main/sessions/4f490377-acb3-4427-9c61-335f3f479446.jsonl#L5] User: 今后，请过滤掉这种“DEALS SUMMARY: RECAP”，并且是“NO TRADES”的情况，不再显示。 更新技能。不要让这种琐碎的信息占用主记忆。
+[main/sessions/4f490377-acb3-4427-9c61-335f3f479446.jsonl#L21] Assistant: 我直接改掉。这个过滤很合理，确实不该占主输出，更不该进长期记忆。
+[main/sessions/4f490377-acb3-4427-9c61-335f3f479446.jsonl#L34] Assistant: [[reply_to_current]] 已改好。 - 已更新 `scripts/platts-insights-monitor.mjs` - 已更新 `skills/dubai-moc-report/SKILL.md` - 现在会过滤 `DEALS SUMMARY: RECAP` 且 `NO TRADES` 的条目，不再出现在快报里 - 这条偏好只记到今天的 daily memory，没有写进 `MEMORY.md` 这个确实该过滤，太碎了。
+[main/sessions/4f490377-acb3-4427-9c61-335f3f479446.jsonl#L38] User: 继续更新这个定时任务的filter, 这种Bunker Delivered Bids, Offers, Trades，内容是no bids, no offers, no trades的情况，也请直接过滤掉，减少系统token的占用。 更新技能。不要让这种琐碎的信息占用主记忆。
+[main/sessions/4f490377-acb3-4427-9c61-335f3f479446.jsonl#L46] Assistant: 这类也该砍，纯噪音。直接一起收掉。
+[main/sessions/4f490377-acb3-4427-9c61-335f3f479446.jsonl#L59] Assistant: [[reply_to_current]] 已更新。 - 已给定时任务加 filter - `Bunker Delivered Bids, Offers, Trades` 这类如果正文是 `no bids / no offers / no trades`，现在会直接过滤 - 已同步更新 `skills/dubai-moc-report/SKILL.md` - 只记到今天的 daily memory，没有写进 `MEMORY.md` 这样更干净，也更省 token。
+[main/sessions/84faad0f-161d-425e-b4e9-6b7787c4cba0.jsonl#L5] User: then pls stop trying atm
+[main/sessions/84faad0f-161d-425e-b4e9-6b7787c4cba0.jsonl#L6] Assistant: 收到，我先停，不再继续尝试。
