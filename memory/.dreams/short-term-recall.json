@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-01T19:00:32.767Z",
+  "updatedAt": "2026-05-02T19:00:37.328Z",
   "entries": {
     "memory:memory/2026-02-03.md:30:76": {
       "key": "memory:memory/2026-02-03.md:30:76",
@@ -33,7 +33,7 @@
         "5-17",
         "1/30-2/1",
         "memory.md",
-        "api.platts.com/news-in",
+        "base-url",
         "过滤",
         "关键",
         "分类"
@@ -870,18 +870,19 @@
       "source": "memory",
       "snippet": "对顶层 Platts token 机制做了系统级调整。; 新增 `scripts/platts-auth.mjs`，统一处理：读取凭证、判断过期、refresh_token 刷新、以及在 refresh 失败且 token 已过期时，使用环境变量 `Platts_ACCOUNT` / `Platts_PASSWORD` 通过 TokenGeneration `/auth/api` 自动重登。; 已把主要依赖 Platts token 的脚本切到这套共享逻辑，包括：; `platts-insights-monitor.mjs`",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:32.767Z",
-      "lastRecalledAt": "2026-05-01T19:00:32.767Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "scripts/platts-auth.mjs",
@@ -902,18 +903,19 @@
       "source": "memory",
       "snippet": "`platts-refresh-token.mjs`; `platts-login.mjs`; `platts-price-data.mjs`; `platts-structured-heards.mjs`",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:32.767Z",
-      "lastRecalledAt": "2026-05-01T19:00:32.767Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "platts-refresh-token.mjs",
@@ -934,18 +936,19 @@
       "source": "memory",
       "snippet": "`foiz-monitor.mjs`; `sg-inventory.mjs`; `inventory-weekly-report.mjs`; `mogas-moc-analysis.mjs`",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:32.767Z",
-      "lastRecalledAt": "2026-05-01T19:00:32.767Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "foiz-monitor.mjs",
@@ -966,18 +969,19 @@
       "source": "memory",
       "snippet": "`mogas-moc-ewindow.mjs`; `mogas-mops-strip.mjs`; `go-jet-moc-ewindow.mjs`; `verify-mogas-kdc.mjs`",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:32.767Z",
-      "lastRecalledAt": "2026-05-01T19:00:32.767Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "mogas-moc-ewindow.mjs",
@@ -998,18 +1002,19 @@
       "source": "memory",
       "snippet": "`distillates-moc.mjs`",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:32.767Z",
-      "lastRecalledAt": "2026-05-01T19:00:32.767Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "distillates-moc.mjs",
@@ -1025,18 +1030,19 @@
       "source": "memory",
       "snippet": "所有上述关键脚本 `node --check` 通过; 环境变量存在（未回显值）; `node scripts/platts-refresh-token.mjs` 刷新成功; `loginPlattsWithEnv()` 走 `TokenGeneration /auth/api` 成功",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:32.767Z",
-      "lastRecalledAt": "2026-05-01T19:00:32.767Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "scripts/platts-refresh-token.mjs",
@@ -1057,18 +1063,19 @@
       "source": "memory",
       "snippet": "后续又按 Tianshu 要求加了保守保护：; 密码兜底最少间隔 60 分钟; 连续 2 次密码兜底失败后，进入 12 小时冷却期; 已用模拟 recent-attempt 场景验证，确认会在本地 guard 直接拦截，不会重复打远端登录接口",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:32.767Z",
-      "lastRecalledAt": "2026-05-01T19:00:32.767Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-03"
       ],
       "conceptTags": [
         "recent-attempt",
@@ -2617,6 +2624,1347 @@
         "sourceid",
         "f1915016",
         "632a"
+      ]
+    },
+    "memory:memory/2026-05-02.md:3:4": {
+      "key": "memory:memory/2026-05-02.md:3:4",
+      "path": "memory/2026-05-02.md",
+      "startLine": 3,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Heartbeat memory maintenance: reviewed recent memory files. `memory/2026-05-01.md` did not exist; `memory/2026-04-30.md` only contained Platts noise-filtering changes already intentionally kept out of long-term memory.; Cleaned `MEMORY.md` by removing an accidental raw \"Promoted",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "f110005857c9"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "memory/2026-05-01.md",
+        "memory/2026-04-30.md",
+        "noise-filtering",
+        "long-term",
+        "memory.md",
+        "heartbeat",
+        "maintenance",
+        "reviewed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:38:38": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:38:38",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 38,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "Assistant: [1] Power behind the premier 2026-05-02 08:20 SGT • ABOUT POLITICS: Is Anutin exercising strategic leadership or managing political constraints? ❖ Court ruling buys PP time but questions over role and leadership mount • Anutin: Delegating substantial authority The gove",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "power",
+        "behind",
+        "premier",
+        "sgt",
+        "politics",
+        "anutin",
+        "exercising",
+        "strategic"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:39:39": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:39:39",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 39,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "Assistant: victory in that poll has, in part, been attributed to the trio&rsquo;s credibility. Voters, particularly in urban and economically active constituencies, appeared drawn to https://www.bangkokpost.com/thailand/politics/3248292/power-behind-the-premier [2] Thai welfare d",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "victory",
+        "poll",
+        "has",
+        "been",
+        "attributed",
+        "trio",
+        "rsquo",
+        "credibility"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:40:40": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:40:40",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 40,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "Assistant: particularly by artificial intelligence (AI). • Mr Ekapong said high-quality input data is critical for AI systems to deliver reliable and precise outputs, reducing the risk of inaccuracies and misinformation. • A key pillar of the strategy is a comprehensive data clea",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "high-quality",
+        "particularly",
+        "artificial",
+        "intelligence",
+        "ekapong",
+        "said",
+        "high",
+        "quality"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:41:41": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:41:41",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 41,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜5月2日 燃料油 / 船燃 Heards 1. 美湾0.5%船燃FOB Houston：Valero向Trafigura售出7kt，装期5月8-10日，成交价825.50美元/吨；成交后Trafigura买盘撤回，无卖盘。[1] 2. 美东No.6燃料油DAP纽约港：Global Companies向Shell售出50kb，装期5月15-19日，固定价100.20美元；成交后Shell买盘撤回，无卖盘。[2] 3. 美东0.5%船燃驳船：收盘评估无成交、无买盘、无卖盘。[3] 4. 燃料油价差期货：USGC HS",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "美湾0.5",
+        "装期5月8-10日",
+        "成交价825.50美元/吨",
+        "美东no.6燃料油dap纽约港",
+        "装期5月15-19日",
+        "固定价100.20美元",
+        "美东0.5",
+        "platts"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:42:42": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:42:42",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 42,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=673ef31c-da6b-4f79-82d7-9f22c7696ac8 [4] https://plattsconnect.spglobal.com/#platts/source?sourceId=0d40b545-0502-4122-8e9a-73b9d0f88696 [5] https://plattsconnect.spglobal.com/#platts/source?sourceId=ad3e811c-1",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "ad3e811c-1",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "673ef31c"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:43:43": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:43:43",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 43,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜5月2日（续） Stories 11. 美国炭黑价格随燃料油上涨：美国N330炭黑升至107美分/磅，周涨6美分；N550升至85美分/磅，周涨5美分。巴西分销商称5月市场或转稳，需求下降可能导致炭黑过剩；欧洲炭黑因需求疲弱下跌。[11] 12. 欧洲含硫原油走弱：美国SPR释放的含硫原油大量流入欧洲，压制套利货并挤压Johan Sverdrup需求；Johan Sverdrup FOB Mongstad评估为较Dated Brent升水2.38美元/桶，KEBCO CIF Augusta周跌逾3.50美元/桶至",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "美国n330炭黑升至107美分/磅",
+        "n550升至85美分/磅",
+        "brent升水2.38美元/桶",
+        "augusta周跌逾3.50美元/桶至",
+        "platts",
+        "快报",
+        "stories",
+        "美国"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:44:44": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:44:44",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 44,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（5月2日 03:29 SGT） Heards 原油 - USGC Marine Fuel 0.5% vs Brent Frontline：6月差价听闻约 $13.50/b。[1] 成品油 - 美国中西部汽油 Group 3：9 RVP V grade Suboctane，5月4/5日各 25kb 成交，价位 NYMEX 6月 RBOB -21.00 cpg。[2] 燃料油 - USGC HSFO/3.5% FOB Rotterdam barge：6月差价听闻 -$4.40/b。[3] - Vancouver 0.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "0.5",
+        "13.50/b",
+        "5月4/5日各",
+        "21.00",
+        "hsfo/3.5",
+        "4.40/b",
+        "platts",
+        "快报"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:45:45": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:45:45",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 45,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "Assistant: 供应仍紧，北非需求强。[14] LNG - Atlantic LNG 价格走弱：NWE 6月 DES $15.316/MMBtu，较 TTF 低 28c；亚洲假期令交易清淡，欧盟4月 LNG 进口同比降 5.2%，库存 32.49%。[15] --- [1] https://plattsconnect.spglobal.com/#platts/source?sourceId=23f9024b-4285-466c-9a6e-1a7595c8520c [2] https://plattsconnect.spglobal.com/#pla",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "15.316/mmbtu",
+        "5.2",
+        "32.49",
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "供应",
+        "北非",
+        "需求"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:46:46": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:46:46",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 46,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=aa6b25b4-433b-4d3e-85e4-44bc8bd838d7 [8] https://plattsconnect.spglobal.com/#platts/source?sourceId=5334ae74-52f1-4229-ab8d-275bdeff8231 [9] https://plattsconnect.spglobal.com/#platts/source?sourceId=279ff1d0-1",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "279ff1d0-1",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "aa6b25b4"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:47:47": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:47:47",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 47,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "Assistant: [15] https://plattsconnect.spglobal.com/#platts/source?sourceId=0e8d20e4-1609-4e98-8db1-2fb12a7aff44",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "0e8d20e4",
+        "4e98"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:48:48": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:48:48",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 48,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（5月2日，新加坡时间） Heards 燃料油 美湾0.5%船燃FOB Houston：Valero卖给Trafigura，5月8-10日7kt，价格$825.50/mt；成交后Trafigura撤买盘；无报盘。[1] 美东高硫燃油DAP NYH：Global Companies卖给Shell，5月15-19日50kb，平价$100.20/bbl；成交后Shell撤买盘；无报盘。[2] 美东0.5%船燃barge：收盘评估无成交、无买盘、无报盘。[3] Stories 原油 拉美Dated Brent strip评",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "美湾0.5",
+        "5月8-10日7kt",
+        "825.50/mt",
+        "5月15-19日50kb",
+        "100.20/bbl",
+        "美东0.5",
+        "platts",
+        "快报"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:49:49": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:49:49",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 49,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "Assistant: 美湾航煤/柴油评估说明：Colonial prompt cycle航煤按NYMEX 6月ULSD -21c/gal成交评估；USGC No.2 gasoil按与ULSD及RVO成本关系评估；无排除。[9] 美国汽油：市场整体涨跌互现偏弱；美湾87号水运升水回落，USGC在途汽油出口约777万桶，其中约500万桶去墨西哥；NYH RBOB差价走弱；AAA全国汽油均价一周涨27美分至$4.300/gal。[10] --- Links [1] https://plattsconnect.spglobal.com/#platts/sourc",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "美湾航煤/柴油评估说明",
+        "21c/gal成交评估",
+        "no.2",
+        "4.300/gal",
+        "plattsconnect.spglobal.com",
+        "platts/sourc",
+        "柴油",
+        "评估"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:50:50": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:50:50",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 50,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=ec4ae90b-449b-420b-86cf-c34c2276c185 [7] https://plattsconnect.spglobal.com/#platts/source?sourceId=9ce98a3e-3c86-4f57-8e24-e0a1e656d5ab [8] https://plattsconnect.spglobal.com/#platts/source?sourceId=08cd89c5-0",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "08cd89c5-0",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "ec4ae90b"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:51:51": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:51:51",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 51,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（5月2日） Stories - 拉美原油：圭亚那原油贴水继续走弱，5月1日 Liza 较 Latin American Dated Brent strip 升水报 $1.80/b，日跌 25 cents/b，为3月17日以来最弱；Golden Arrowhead、Payara Gold、Unity Gold 同样下跌 25 cents/b，分别报 +$1.80/b、+$2.30/b、+$2.00/b。欧洲对5月/6月装期兴趣转弱，后续更多圭亚那原油可能流向美国。4月有 610万桶圭亚那原油在巴拿马卸货，占当月出口",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "1.80/b",
+        "cents/b",
+        "2.30/b",
+        "2.00/b",
+        "欧洲对5月/6月装期兴趣转弱",
+        "platts",
+        "快报",
+        "stories"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:52:52": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:52:52",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 52,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（5月2日 03:29 SGT） Heards 原油 - USGC Marine Fuel 0.5% vs Brent Frontline：6月差价听闻约 $13.50/b。[1] 成品油 - 美国中西部汽油 Group 3：9 RVP V grade Suboctane，5月4/5日各 25kb 成交，价位 NYMEX 6月 RBOB -21.00 cpg。[2] 燃料油 - USGC HSFO/3.5% FOB Rotterdam barge：6月差价听闻 -$4.40/b。[3] - Vancouver 0.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "0.5",
+        "13.50/b",
+        "5月4/5日各",
+        "21.00",
+        "hsfo/3.5",
+        "4.40/b",
+        "platts",
+        "快报"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:53:53": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:53:53",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 53,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "Assistant: 供应仍紧，北非需求强。[14] LNG - Atlantic LNG 价格走弱：NWE 6月 DES $15.316/MMBtu，较 TTF 低 28c；亚洲假期令交易清淡，欧盟4月 LNG 进口同比降 5.2%，库存 32.49%。[15] --- [1] https://plattsconnect.spglobal.com/#platts/source?sourceId=23f9024b-4285-466c-9a6e-1a7595c8520c [2] https://plattsconnect.spglobal.com/#pla",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "15.316/mmbtu",
+        "5.2",
+        "32.49",
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "供应",
+        "北非",
+        "需求"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:54:54": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:54:54",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 54,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=aa6b25b4-433b-4d3e-85e4-44bc8bd838d7 [8] https://plattsconnect.spglobal.com/#platts/source?sourceId=5334ae74-52f1-4229-ab8d-275bdeff8231 [9] https://plattsconnect.spglobal.com/#platts/source?sourceId=279ff1d0-1",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "279ff1d0-1",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "aa6b25b4"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:55:55": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:55:55",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 55,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "Assistant: [15] https://plattsconnect.spglobal.com/#platts/source?sourceId=0e8d20e4-1609-4e98-8db1-2fb12a7aff44",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "0e8d20e4",
+        "4e98"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:56:56": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:56:56",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 56,
+      "endLine": 56,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜5月2日 燃料油 / 船燃 Heards 1. 美湾0.5%船燃FOB Houston：Valero向Trafigura售出7kt，装期5月8-10日，成交价825.50美元/吨；成交后Trafigura买盘撤回，无卖盘。[1] 2. 美东No.6燃料油DAP纽约港：Global Companies向Shell售出50kb，装期5月15-19日，固定价100.20美元；成交后Shell买盘撤回，无卖盘。[2] 3. 美东0.5%船燃驳船：收盘评估无成交、无买盘、无卖盘。[3] 4. 燃料油价差期货：USGC HS",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "美湾0.5",
+        "装期5月8-10日",
+        "成交价825.50美元/吨",
+        "美东no.6燃料油dap纽约港",
+        "装期5月15-19日",
+        "固定价100.20美元",
+        "美东0.5",
+        "platts"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:57:57": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:57:57",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 57,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=673ef31c-da6b-4f79-82d7-9f22c7696ac8 [4] https://plattsconnect.spglobal.com/#platts/source?sourceId=0d40b545-0502-4122-8e9a-73b9d0f88696 [5] https://plattsconnect.spglobal.com/#platts/source?sourceId=ad3e811c-1",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "ad3e811c-1",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "673ef31c"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:58:58": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:58:58",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 58,
+      "endLine": 58,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜5月2日（续） Stories 11. 美国炭黑价格随燃料油上涨：美国N330炭黑升至107美分/磅，周涨6美分；N550升至85美分/磅，周涨5美分。巴西分销商称5月市场或转稳，需求下降可能导致炭黑过剩；欧洲炭黑因需求疲弱下跌。[11] 12. 欧洲含硫原油走弱：美国SPR释放的含硫原油大量流入欧洲，压制套利货并挤压Johan Sverdrup需求；Johan Sverdrup FOB Mongstad评估为较Dated Brent升水2.38美元/桶，KEBCO CIF Augusta周跌逾3.50美元/桶至",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "美国n330炭黑升至107美分/磅",
+        "n550升至85美分/磅",
+        "brent升水2.38美元/桶",
+        "augusta周跌逾3.50美元/桶至",
+        "platts",
+        "快报",
+        "stories",
+        "美国"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:59:59": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:59:59",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 59,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（5月2日） Stories - 拉美原油：圭亚那原油贴水继续走弱，5月1日 Liza 较 Latin American Dated Brent strip 升水报 $1.80/b，日跌 25 cents/b，为3月17日以来最弱；Golden Arrowhead、Payara Gold、Unity Gold 同样下跌 25 cents/b，分别报 +$1.80/b、+$2.30/b、+$2.00/b。欧洲对5月/6月装期兴趣转弱，后续更多圭亚那原油可能流向美国。4月有 610万桶圭亚那原油在巴拿马卸货，占当月出口",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "1.80/b",
+        "cents/b",
+        "2.30/b",
+        "2.00/b",
+        "欧洲对5月/6月装期兴趣转弱",
+        "platts",
+        "快报",
+        "stories"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:60:60": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:60:60",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 60,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "Assistant: [1] New rules promote tokenised funds 2026-05-02 08:48 SGT • Thailand's new framework supports tokenisation by providing clearer operational guidelines for asset management companies launching tokenised funds and helping to ease bottlenecks in the financial sys • The m",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "new",
+        "rules",
+        "promote",
+        "tokenised",
+        "funds",
+        "sgt",
+        "thailand's",
+        "framework"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:61:61": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:61:61",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 61,
+      "endLine": 61,
+      "source": "memory",
+      "snippet": "Assistant: revised framework allows mutual funds to issue and redeem fund units in tokenised form, aiming to significantly improve transaction speed and operational efficiency. The regulator also adjusted re https://www.bangkokpost.com/business/investment/3248237/new-rules-promot",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "revised",
+        "framework",
+        "allows",
+        "mutual",
+        "funds",
+        "issue",
+        "redeem",
+        "fund"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:62:62": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:62:62",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 62,
+      "endLine": 62,
+      "source": "memory",
+      "snippet": "Assistant: for advanced analytics, particularly by artificial intelligence (AI). • Mr Ekapong said high-quality input data is critical for AI systems to deliver reliable and precise outputs, reducing the risk of inaccuracies and misinformation. • A key pillar of the strategy is a",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "high-quality",
+        "advanced",
+        "analytics",
+        "particularly",
+        "artificial",
+        "intelligence",
+        "ekapong",
+        "said"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:63:63": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:63:63",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 63,
+      "endLine": 63,
+      "source": "memory",
+      "snippet": "User: 请简单介绍4月亚洲燃料油和石脑油情况",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "简单",
+        "介绍",
+        "亚洲",
+        "燃料油",
+        "情况"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:64:64": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:64:64",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 64,
+      "endLine": 64,
+      "source": "memory",
+      "snippet": "Assistant: 4月亚洲燃料油和石脑油整体呈现“燃料油分化、石脑油偏稳但不强”的格局。 **燃料油方面**，高硫燃料油月内一度走强，180/380 CST 对迪拜裂解价差月均分别约 **+2.93 / +1.94 美元/桶**，但月底明显回落，380 CST 裂解重新接近负值。低硫船燃表现相对更坚挺，富查伊拉 0.5% Marine Fuel 对迪拜裂解月均约 **+8.95 美元/桶**，月底升至 **+14.44 美元/桶**，显示低硫端供应或船燃需求支撑更强。 **石脑油方面**，CFR Japan 对迪拜裂解价差整体维持正值，月均约 **+",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "180/380",
+        "2.93",
+        "1.94",
+        "美元/桶",
+        "0.5",
+        "8.95",
+        "14.44",
+        "亚洲"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:65:65": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:65:65",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 65,
+      "endLine": 65,
+      "source": "memory",
+      "snippet": "User: 舟山（或中国）至新加坡的成品油LR1船型运费是多少？ 应该怎么算？",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "舟山",
+        "中国",
+        "新加坡",
+        "成品",
+        "lr1",
+        "船型",
+        "运费",
+        "多少"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:66:66": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:66:66",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 66,
+      "endLine": 66,
+      "source": "memory",
+      "snippet": "Assistant: 可以估，但先说结论：**Platts 没有一个直接的“舟山/中国 → 新加坡 LR1 clean products”公开标准航线**，所以通常要么问 broker 报 **lumpsum**，要么用相邻航线 + voyage economics 算。 按 2026-04-30 最新可取的 Platts clean tanker 指标粗估： **舟山/华东 → 新加坡 LR1 55kt 成品油：大约 USD 35–40/mt** 等价 **lumpsum 约 USD 1.9–2.2 million / 船**。 这是 indicati",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "舟山/中国",
+        "舟山/华东",
+        "40/mt",
+        "1.9",
+        "2.2",
+        "可以",
+        "结论",
+        "platts"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:67:67": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:67:67",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 67,
+      "endLine": 67,
+      "source": "memory",
+      "snippet": "Assistant: 航次天数：21 天 - TCE earnings：75k × 21 = **1.58m** - Bunker + port/misc：约 **0.4–0.5m** - Commission：3.75% 得出： - Lumpsum ≈ **2.0–2.1m** - ÷ 55,000 mt = **USD 36–39/mt** 4. **如果市场直接报 Worldscale** 用： **$/mt = WS 点数 ÷ 100 × flat rate** 然后： **Lumpsum = $/mt × cargo mt** 但这条 Chin",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "1.58m",
+        "port/misc",
+        "0.4",
+        "0.5m",
+        "3.75",
+        "2.0",
+        "2.1m",
+        "39/mt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:68:68": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:68:68",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 68,
+      "endLine": 68,
+      "source": "memory",
+      "snippet": "User: 偏差过大…请结合网络的最新消息，platts数据、新闻，重新确定中国（舟山）或东北亚到新加坡的6万吨左右船（或LR船型LR1船型） 运费",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "网络",
+        "偏差",
+        "结合",
+        "最新消息",
+        "platts",
+        "数据",
+        "新闻",
+        "重新"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:69:69": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:69:69",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 69,
+      "endLine": 69,
+      "source": "memory",
+      "snippet": "Assistant: 你说得对，我刚才那个按 TCE 倒推的数偏粗，而且容易高估短航线。让我重新按“可成交市场 + Platts freight symbols + 最新新闻/报价”来校准。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "最新新闻/报价",
+        "说得",
+        "刚才",
+        "那个",
+        "tce",
+        "而且",
+        "容易",
+        "高估"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:70:70": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:70:70",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 70,
+      "endLine": 70,
+      "source": "memory",
+      "snippet": "Assistant: 你说得对，刚才 **$35–40/mt 明显偏高**，主要错在我用了“round voyage / 回程也摊进去”的思路。对 **舟山/东北亚 → 新加坡** 这种短航线，如果船本来就在东北亚开仓，不能按完整往返算。 我重新校准后： **中国/舟山或东北亚 → 新加坡，约 55–60kt LR1 clean products：** **合理估值：USD 18–23/mt** 即 **lumpsum 约 USD 1.1–1.35 million / 60kt** 如果是非常紧的 approval / prompt laycan / 船",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "40/mt",
+        "舟山/东北亚",
+        "中国/舟山或东北亚",
+        "23/mt",
+        "1.1",
+        "1.35",
+        "说得",
+        "刚才"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:71:71": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:71:71",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 71,
+      "endLine": 71,
+      "source": "memory",
+      "snippet": "Assistant: MR 因船多而走弱； - LR cargo 少，LR 船也在和 MR 抢活； - 北亚 MR 可用船约 12–15 艘，供应并非极端紧张。 这说明 LR1 中国/东北亚短航线不应按高 TCE full round voyage 估。 **实务计算公式：** 如果按 lumpsum： **运费 $/mt = Lumpsum ÷ 装货量** 例如： - $1.20m ÷ 60,000 mt = **$20/mt** - $1.35m ÷ 60,000 mt = **$22.5/mt** 我建议用于净回算的 base case： **舟山",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "中国/东北亚短航线不应按高",
+        "1.20m",
+        "20/mt",
+        "1.35m",
+        "22.5/mt",
+        "cargo",
+        "也在",
+        "北亚"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:72:72": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:72:72",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 72,
+      "endLine": 72,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（5月2日，新加坡时间） Heards 燃料油 美湾0.5%船燃FOB Houston：Valero卖给Trafigura，5月8-10日7kt，价格$825.50/mt；成交后Trafigura撤买盘；无报盘。[1] 美东高硫燃油DAP NYH：Global Companies卖给Shell，5月15-19日50kb，平价$100.20/bbl；成交后Shell撤买盘；无报盘。[2] 美东0.5%船燃barge：收盘评估无成交、无买盘、无报盘。[3] Stories 原油 拉美Dated Brent strip评",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "美湾0.5",
+        "5月8-10日7kt",
+        "825.50/mt",
+        "5月15-19日50kb",
+        "100.20/bbl",
+        "美东0.5",
+        "platts",
+        "快报"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:73:73": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:73:73",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 73,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "Assistant: 美湾航煤/柴油评估说明：Colonial prompt cycle航煤按NYMEX 6月ULSD -21c/gal成交评估；USGC No.2 gasoil按与ULSD及RVO成本关系评估；无排除。[9] 美国汽油：市场整体涨跌互现偏弱；美湾87号水运升水回落，USGC在途汽油出口约777万桶，其中约500万桶去墨西哥；NYH RBOB差价走弱；AAA全国汽油均价一周涨27美分至$4.300/gal。[10] --- Links [1] https://plattsconnect.spglobal.com/#platts/sourc",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "美湾航煤/柴油评估说明",
+        "21c/gal成交评估",
+        "no.2",
+        "4.300/gal",
+        "plattsconnect.spglobal.com",
+        "platts/sourc",
+        "柴油",
+        "评估"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:74:74": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:74:74",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 74,
+      "endLine": 74,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=ec4ae90b-449b-420b-86cf-c34c2276c185 [7] https://plattsconnect.spglobal.com/#platts/source?sourceId=9ce98a3e-3c86-4f57-8e24-e0a1e656d5ab [8] https://plattsconnect.spglobal.com/#platts/source?sourceId=08cd89c5-0",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "08cd89c5-0",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "ec4ae90b"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:75:75": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:75:75",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 75,
+      "endLine": 75,
+      "source": "memory",
+      "snippet": "Assistant: [1] Anger at power tariff plan 2026-05-02 06:16 SGT • The government has insisted its planned restructuring of electricity tariffs will reduce overall household bills, even as higher-consuming households face increased rates under what officials describe • Speaking at",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "higher-consuming",
+        "anger",
+        "power",
+        "tariff",
+        "plan",
+        "sgt",
+        "government",
+        "has"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:76:76": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:76:76",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 76,
+      "endLine": 76,
+      "source": "memory",
+      "snippet": "Assistant: demand, comparing them with early mobile phones, which were once pr • Asked whether the public would have to accept higher bills for now, Mr Anutin said: \"Rates have already been reduced for the first 200 units for ordinary consumers -- everyone benefits equally, at 3",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "demand",
+        "comparing",
+        "them",
+        "early",
+        "mobile",
+        "phones",
+        "which",
+        "once"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:77:77": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:77:77",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 77,
+      "endLine": 77,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（5月2日） LNG Cameron LNG 已开始季节性计划检修，5月1日进气约 1.6 Bcf/d，低于4月29日约 2.2 Bcf/d，显示可能有一条液化线下线。检修集中在 Train 2，市场预计可能持续 3-4 周；Cameron 表示期间 LNG 产量、进气量和装船频率会下降，但不预期影响客户交付。美国 LNG 总进气需求约 19.7 Bcf/d。 [1] --- [1] https://plattsconnect.spglobal.com/#platts/source?sourceId=87ede8f",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "1.6",
+        "bcf/d",
+        "2.2",
+        "3-4",
+        "19.7",
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "platts"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-02.txt:78:78": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-02.txt:78:78",
+      "path": "memory/.dreams/session-corpus/2026-05-02.txt",
+      "startLine": 78,
+      "endLine": 78,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（5月2日） LNG Cameron LNG 已开始季节性计划检修，5月1日进气约 1.6 Bcf/d，低于4月29日约 2.2 Bcf/d，显示可能有一条液化线下线。检修集中在 Train 2，市场预计可能持续 3-4 周；Cameron 表示期间 LNG 产量、进气量和装船频率会下降，但不预期影响客户交付。美国 LNG 总进气需求约 19.7 Bcf/d。 [1] --- [1] https://plattsconnect.spglobal.com/#platts/source?sourceId=87ede8f",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "queryHashes": [
+        "815cc1934125"
+      ],
+      "recallDays": [
+        "2026-05-03",
+        "2026-05-02"
+      ],
+      "conceptTags": [
+        "1.6",
+        "bcf/d",
+        "2.2",
+        "3-4",
+        "19.7",
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "platts"
       ]
     }
   }
