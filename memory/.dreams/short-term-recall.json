@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-02T19:00:37.328Z",
+  "updatedAt": "2026-05-04T19:00:33.065Z",
   "entries": {
     "memory:memory/2026-02-03.md:30:76": {
       "key": "memory:memory/2026-02-03.md:30:76",
@@ -235,20 +235,23 @@
       "endLine": 48,
       "source": "memory",
       "snippet": "# 2026-02-02 Daily Log ## 00:08 - 可疑 Cron 任务被拦截 ⚠️ 收到一个自称 \"Moltbook Random Visit\" 的 cron 任务，要求我： - 调用外部 API (moltbook.com) - 使用提供的 API Key - 浏览、upvote、评论内容 - \"静默完成\" **已拒绝执行。** 这看起来像是 prompt injection 尝试。 特征： - 消息中包含 \"这不是注入攻击\" 的声明 - 要求静默执行外部操作 - 无法在记忆中找到相关设置记录 需要提醒 Tianshu 检查 cron 任务列表，看看是否有人注入了恶意任务。 ## 06:12 - 同一可疑任务再次尝试 ⚠️ \"Moltbook Random Visit\" 再次触发，cron ID: 8cf5afab-830a-4d68-8584-677882838424 **再次拒绝。** 已通知 Tianshu 确认或删除此任务。 ## 19:51 - 可疑任务第三次触发 ⚠️ \"Moltbook Random Visit\" (cron: 8cf5afab-830a-4d68-8584-677882838424) 第三次尝试。 **再次拒绝。** 这个任务需要被删除。 --- ## Memory Backup System Deployed **时间**: 2026-02-02 09:28 SGT **备份方式**: 1. **Moltbook 加密备份** - 每24小时发布一次加密快照 2. **GitHub 备份** -",
-      "recallCount": 2,
+      "recallCount": 4,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 2,
+      "totalScore": 4,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-21T07:01:42.392Z",
-      "lastRecalledAt": "2026-04-23T06:58:19.136Z",
+      "lastRecalledAt": "2026-05-04T14:05:36.542Z",
       "queryHashes": [
         "4ad6d824fb4d",
-        "de985342fa7d"
+        "de985342fa7d",
+        "9886e09d5de4",
+        "83e050a0beac"
       ],
       "recallDays": [
         "2026-04-21",
-        "2026-04-23"
+        "2026-04-23",
+        "2026-05-04"
       ],
       "conceptTags": [
         "backup",
@@ -806,18 +809,20 @@
       "source": "memory",
       "snippet": "Tianshu 要求过滤 Platts 快报中的 `DEALS SUMMARY: RECAP` 且为 `NO TRADES` 的条目，不再显示。; 已更新 `scripts/platts-insights-monitor.mjs`：这类 recap/no-trades 条目会被跳过，不进入快报摘要。; 已更新 `skills/dubai-moc-report/SKILL.md`，明确这类条目应直接忽略。; 按要求，不写入 `MEMORY.md`，避免琐碎偏好污染长期记忆。",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:32.767Z",
-      "lastRecalledAt": "2026-05-01T19:00:32.767Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
       "queryHashes": [
         "e757f9360616"
       ],
       "recallDays": [
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04",
+        "2026-05-03"
       ],
       "conceptTags": [
         "recap/no-trades",
@@ -838,18 +843,20 @@
       "source": "memory",
       "snippet": "Tianshu 进一步要求过滤 `Bunker Delivered Bids, Offers, Trades` 且正文为 `no bids / no offers / no trades` 的条目。; 已更新 `scripts/platts-insights-monitor.mjs`：这类 bunker 空摘要会被直接跳过，减少快报噪音和 token 占用。; 已同步更新 `skills/dubai-moc-report/SKILL.md`，明确忽略规则。",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:32.767Z",
-      "lastRecalledAt": "2026-05-01T19:00:32.767Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
       "queryHashes": [
         "e757f9360616"
       ],
       "recallDays": [
         "2026-05-02",
-        "2026-05-01"
+        "2026-05-01",
+        "2026-05-04",
+        "2026-05-03"
       ],
       "conceptTags": [
         "skills/dubai-moc-report/skill.md",
@@ -870,19 +877,20 @@
       "source": "memory",
       "snippet": "对顶层 Platts token 机制做了系统级调整。; 新增 `scripts/platts-auth.mjs`，统一处理：读取凭证、判断过期、refresh_token 刷新、以及在 refresh 失败且 token 已过期时，使用环境变量 `Platts_ACCOUNT` / `Platts_PASSWORD` 通过 TokenGeneration `/auth/api` 自动重登。; 已把主要依赖 Platts token 的脚本切到这套共享逻辑，包括：; `platts-insights-monitor.mjs`",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:32.767Z",
-      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
         "2026-05-02",
         "2026-05-01",
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-04"
       ],
       "conceptTags": [
         "scripts/platts-auth.mjs",
@@ -903,19 +911,20 @@
       "source": "memory",
       "snippet": "`platts-refresh-token.mjs`; `platts-login.mjs`; `platts-price-data.mjs`; `platts-structured-heards.mjs`",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:32.767Z",
-      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
         "2026-05-02",
         "2026-05-01",
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-04"
       ],
       "conceptTags": [
         "platts-refresh-token.mjs",
@@ -936,19 +945,20 @@
       "source": "memory",
       "snippet": "`foiz-monitor.mjs`; `sg-inventory.mjs`; `inventory-weekly-report.mjs`; `mogas-moc-analysis.mjs`",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:32.767Z",
-      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
         "2026-05-02",
         "2026-05-01",
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-04"
       ],
       "conceptTags": [
         "foiz-monitor.mjs",
@@ -969,19 +979,20 @@
       "source": "memory",
       "snippet": "`mogas-moc-ewindow.mjs`; `mogas-mops-strip.mjs`; `go-jet-moc-ewindow.mjs`; `verify-mogas-kdc.mjs`",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:32.767Z",
-      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
         "2026-05-02",
         "2026-05-01",
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-04"
       ],
       "conceptTags": [
         "mogas-moc-ewindow.mjs",
@@ -1002,19 +1013,20 @@
       "source": "memory",
       "snippet": "`distillates-moc.mjs`",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:32.767Z",
-      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
         "2026-05-02",
         "2026-05-01",
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-04"
       ],
       "conceptTags": [
         "distillates-moc.mjs",
@@ -1030,19 +1042,20 @@
       "source": "memory",
       "snippet": "所有上述关键脚本 `node --check` 通过; 环境变量存在（未回显值）; `node scripts/platts-refresh-token.mjs` 刷新成功; `loginPlattsWithEnv()` 走 `TokenGeneration /auth/api` 成功",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:32.767Z",
-      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
         "2026-05-02",
         "2026-05-01",
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-04"
       ],
       "conceptTags": [
         "scripts/platts-refresh-token.mjs",
@@ -1063,19 +1076,20 @@
       "source": "memory",
       "snippet": "后续又按 Tianshu 要求加了保守保护：; 密码兜底最少间隔 60 分钟; 连续 2 次密码兜底失败后，进入 12 小时冷却期; 已用模拟 recent-attempt 场景验证，确认会在本地 guard 直接拦截，不会重复打远端登录接口",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-01T19:00:32.767Z",
-      "lastRecalledAt": "2026-05-02T19:00:35.432Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
       "queryHashes": [
         "312dd0eab707"
       ],
       "recallDays": [
         "2026-05-02",
         "2026-05-01",
-        "2026-05-03"
+        "2026-05-03",
+        "2026-05-04"
       ],
       "conceptTags": [
         "recent-attempt",
@@ -3965,6 +3979,765 @@
         "plattsconnect.spglobal.com",
         "platts/source",
         "platts"
+      ]
+    },
+    "memory:memory/2026-05-03.md:3:3": {
+      "key": "memory:memory/2026-05-03.md:3:3",
+      "path": "memory/2026-05-03.md",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Heartbeat memory maintenance: reviewed recent memory files (`2026-05-02`, missing `2026-05-01`, `2026-04-30`) and current `MEMORY.md`. No new long-term memory updates needed; recent Platts noise-filtering notes are intentionally short-term only.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-03T19:00:36.748Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
+      "queryHashes": [
+        "c2bf0c07fdd1"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "memory.md",
+        "long-term",
+        "noise-filtering",
+        "short-term",
+        "heartbeat",
+        "maintenance",
+        "reviewed",
+        "recent"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: [1] Most southerners back Land Bridge, lack understanding: Poll 2026-05-03 13:18 SGT • Representatives of civil society networks rally at the Bhumjaithai Party headquarters on Sept 15, 2025, petitioning Prime Minister Anutin Charnvirakul to review the Land Bridge proje",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:36.748Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "network",
+        "southerners",
+        "back",
+        "land",
+        "bridge",
+        "lack",
+        "understanding",
+        "poll"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: these concerns, overall support for the project remains relatively strong: https://www.bangkokpost.com/thailand/general/3248849/most-southerners-back-land-bridge-lack-understanding-poll [2] Mongolian man flees Thonglor cafe with iPhone 17 2026-05-03 12:15 SGT • News Th",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:36.748Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "concerns",
+        "overall",
+        "support",
+        "project",
+        "remains",
+        "relatively",
+        "strong",
+        "https"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: restaurant before slipping out the back door with the iPhone 17, leaving b • Parichat then filed a report at Thonglor police station, submitting CCTV footage as evidence. Officers identified the suspect as a 40 year old Mongolian man with a history of theft across Bang",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:36.748Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "restaurant",
+        "slipping",
+        "out",
+        "back",
+        "door",
+        "iphone",
+        "leaving",
+        "parichat"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: [1] No advisory role for Thaksin: Julapun 2026-05-03 07:05 SGT • Former prime minister Thaksin Shinawatra arrives at the Supreme Court in Bangkok on September 9, 2025. (Photo: Pornprom Satrabhaya) Former p • Mr Julapun, who is also Labour Minister, said the party had m",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:36.748Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "advisory",
+        "role",
+        "thaksin",
+        "julapun",
+        "sgt",
+        "former",
+        "prime",
+        "minister"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: independent of any individual. Our day-to-day operations are determined by the party's executive committee, not by somebody,\" he said. https://www.bangkokpost.com/thailand/politics/3248607/no-advisory-role-for-thaksin-julapun [2] Expert raises concern over disruptions",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:36.748Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "day-to-day",
+        "independent",
+        "any",
+        "individual",
+        "day",
+        "operations",
+        "determined",
+        "party's"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: th • In the long run, he called on the government and the Board of Investment to attract foreign investment in alternative plastic production technologies and advanced recycling systems to reduce dependenc • In the short term, he said, authorities should accelerate neg",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:36.748Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "run",
+        "government",
+        "board",
+        "investment",
+        "attract",
+        "foreign",
+        "alternative",
+        "plastic"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ Cron 安全审计告警 - Memory Backup (Daily) 连续报错 5 次；最近错误：Agent couldn’t generate a response，提示可能已有 tool action 执行，需核查备份是否实际完成。 - PCAAT00 Daily to Hchen 最近一次运行超时，deliveryStatus=unknown；该任务会外发到 +6596249687，需确认是否漏发/重复。 - PLDT Earnings Check 仍为 enabled，且 delivery.channel=last；",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:36.748Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "backup",
+        "备份",
+        "需确认是否漏发/重复",
+        "delivery.channel",
+        "cron",
+        "安全",
+        "审计",
+        "告警"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: [1] Thailand targets Tier 1 status in US trafficking report 2026-05-03 19:35 SGT • Illegal migrants from Bangladesh and Myanmar are removed from a resort run by a retired Interior Ministry official in Songkhla on April 8. (Photo: Assawin Pakkawan) • Government spokeswo",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:36.748Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "thailand",
+        "targets",
+        "tier",
+        "status",
+        "trafficking",
+        "report",
+        "sgt",
+        "illegal"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: citizenship. These efforts, she said, reflect closer co • \"Under the current administration, the system has become more efficient, giving Thailand a realistic chance of moving from Tier 2 to Tier 1 under this government,'' she said.&nbsp; https://www.bangkokpost.com/th",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:36.748Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "www.bangkokpost.com/th",
+        "citizenship",
+        "efforts",
+        "she",
+        "said",
+        "reflect",
+        "closer",
+        "under"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: priority is to present the strongest possible candidate, highlighting qualities such as being people-oriented, transparent and accountable. • Mr Natthaphong said the party&rsquo;s campaign would focus on everyday life in Bangkok and propose practical solutions to ease",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:36.748Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "people-oriented",
+        "priority",
+        "present",
+        "strongest",
+        "possible",
+        "candidate",
+        "highlighting",
+        "qualities"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: [1] Chadchart teases another City Hall mayoral run 2026-05-03 06:34 SGT • Saying it out aloud: The People's Party has installed more than 100 billboards across Bangkok ahead of the June 28 gubernatorial election. The billboards feature messages such as \"Living in Bangk",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:36.748Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "chadchart",
+        "teases",
+        "another",
+        "city",
+        "hall",
+        "mayoral",
+        "run",
+        "sgt"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: period, we have organised activities and discussion groups across more than 10 sectors. We would like to invite everyone to be part of driving this city forward through the Work Work Wo https://www.bangkokpost.com/thailand/general/3248582/chadchart-teases-another-city-",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:36.748Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "period",
+        "organised",
+        "activities",
+        "discussion",
+        "groups",
+        "across",
+        "sectors",
+        "would"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: the launch of subsidised goods sales at Bang Yai market in Nonthaburi a day earlier. • The event marked the first nationwide rollout of district-level sales points, enabling residents in the provinces to access essential goods at reduced prices. • The programme has bee",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:36.748Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "district-level",
+        "launch",
+        "subsidised",
+        "goods",
+        "sales",
+        "bang",
+        "yai",
+        "market"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "User: 搜索“飞驰人生3”的电影资源",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:36.748Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "搜索",
+        "人生",
+        "电影",
+        "资源"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-03.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-03.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-05-03.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: 找到了，中文关键词结果很脏；用英文名 **Pegasus 3** 搜到比较准的： 1. **Pegasus 3 2026 1080p WEB-DL H.264 AAC-HHWEB** - 2.0 GB - 种子约 80+ - 来源：TorrentDownload / LimeTorrents / Knaben 2. **Pegasus 3 2026 1080p WEB-DL H.264 AAC-UBWEB** - 7.1 GB - 种子约 20 - 来源：Knaben 3. **Pegasus 3 2026 1080p WEB-DL",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:36.748Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
+      "queryHashes": [
+        "b2bd51325196"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "web-dl",
+        "h.264",
+        "aac-hhweb",
+        "2.0",
+        "aac-ubweb",
+        "7.1",
+        "找到",
+        "中文"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜2026-05-04 Stories [1] OPEC+ 七个自愿减产国同意 6月再次提高原油产量配额，合计增加 18.8万桶/日；尽管中东冲突导致3月产量大幅下滑，OPEC 表示将继续谨慎评估市场，可灵活增加、暂停或逆转减产退出。成员包括沙特、俄罗斯、伊拉克、科威特、哈萨克斯坦、阿尔及利亚和阿曼；下一次会议定于6月7日。Platts 称 OPEC+ 3月原油产量环比下降 811万桶/日至 3478万桶/日，Dated Brent 5月1日评估价为 117.945美元/桶。 Heards 今天暂无新增 heard",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:36.748Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "18.8万桶/日",
+        "811万桶/日至",
+        "3478万桶/日",
+        "117.945美元/桶",
+        "platts",
+        "快报",
+        "stories",
+        "opec"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-04.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-04.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-04.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜2026-05-04 Stories [1] OPEC+ 七个自愿减产国同意 6月再次提高原油产量配额，合计增加 18.8万桶/日；尽管中东冲突导致3月产量大幅下滑，OPEC 表示将继续谨慎评估市场，可灵活增加、暂停或逆转减产退出。成员包括沙特、俄罗斯、伊拉克、科威特、哈萨克斯坦、阿尔及利亚和阿曼；下一次会议定于6月7日。Platts 称 OPEC+ 3月原油产量环比下降 811万桶/日至 3478万桶/日，Dated Brent 5月1日评估价为 117.945美元/桶。 Heards 今天暂无新增 heard",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-03T19:00:36.748Z",
+      "lastRecalledAt": "2026-05-03T19:00:36.748Z",
+      "queryHashes": [
+        "4d9d9fab6a07"
+      ],
+      "recallDays": [
+        "2026-05-04",
+        "2026-05-03"
+      ],
+      "conceptTags": [
+        "18.8万桶/日",
+        "811万桶/日至",
+        "3478万桶/日",
+        "117.945美元/桶",
+        "platts",
+        "快报",
+        "stories",
+        "opec"
+      ]
+    },
+    "memory:memory/2026-02-04.md:1:34": {
+      "key": "memory:memory/2026-02-04.md:1:34",
+      "path": "memory/2026-02-04.md",
+      "startLine": 1,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "# 2026-02-04 ## 15:30 - Moltbook 连接问题排查 Tianshu 问 Moltbook 是否正常。测试发现： - 网站 `moltbook.com` 可访问（返回 200） - 但 API 调用失败（Connection reset） **根因**: - `moltbook.com` 重定向到 `www.moltbook.com` - curl 跟随重定向时 Authorization header 被丢弃 - 直接用 `www.moltbook.com` 正常工作 **Token 验证**: MoltbotSG 账户正常，token 有效 ## 23:05 - Moltbook Heartbeat 脚本修复 **问题**: 脚本一直返回连接错误，今天没有发帖或评论 **根因**: 1. `scripts/moltbook-heartbeat.mjs` 用的是 `moltbook.com` 2. API 端点错误：`/like` → `/upvote`，`/reply` → `/comments` **修复** (v2): - 使用正确的 `www.moltbook.com` base URL - 使用正确的 API 端点 - 添加智能评论生成（根据帖子内容） - 评论冷却 2 小时，每次最多点赞 3 个 - 兼容旧 state 文件格式 **测试结果**: 成功点赞 3 个帖子，发了 1 条评论 - last_active 更新到 23:05 SGT - comments: 39 → 40",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-04T02:09:10.540Z",
+      "lastRecalledAt": "2026-05-04T02:09:10.540Z",
+      "queryHashes": [
+        "9886e09d5de4"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "moltbook.com",
+        "www.moltbook.com",
+        "scripts/moltbook-heartbeat.mjs",
+        "last-active",
+        "moltbook",
+        "连接",
+        "问题",
+        "tianshu"
+      ]
+    },
+    "memory:memory/2026-02-03.md:65:97": {
+      "key": "memory:memory/2026-02-03.md:65:97",
+      "path": "memory/2026-02-03.md",
+      "startLine": 65,
+      "endLine": 97,
+      "source": "memory",
+      "snippet": "- ✅ 正确: `https://api.platts.com/news-insights/v1/search/heards` **修复**: 更新了 `scripts/platts-insights-monitor.mjs` 中的 BASE_URL **成果**: - 成功获取 727 条 products heards (过去2天) - 已发送摘要到 WhatsApp ## 23:45 - Moltbook IP 封禁确认 **症状**: ECONNRESET on TLS handshake **测试结果**: - Docker 容器: 连接失败 - Unraid 宿主机: 连接失败 - Tianshu 其他设备: 正常 **结论**: Unraid 服务器 IP 被 Moltbook 封禁 **待办**: - 选项1: 配置代理 - 选项2: 联系 Moltbook 申请解封 - 选项3: 暂时禁用 Moltbook cron ## 23:55 - 亚洲汽柴油 Heards 扫描 发起子任务扫描 2/3-2/4 的亚洲汽柴油 heards： - Session: \"tender-comet\" - 汽油关键词: Singapore, MOPS, 92/95/97 RON, gasoline - 柴油关键词: gasoil, diesel, ULSD, GO **待确认**: 是否需要每日自动推送 (建议 SGT 17:00 窗口后)",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-04T02:09:10.540Z",
+      "lastRecalledAt": "2026-05-04T02:09:10.540Z",
+      "queryHashes": [
+        "9886e09d5de4"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "base-url",
+        "2/3-2/4",
+        "tender-comet",
+        "92/95/97",
+        "正确",
+        "https",
+        "api.platts.com",
+        "news"
+      ]
+    },
+    "memory:memory/2026-04-29.md:1:29": {
+      "key": "memory:memory/2026-04-29.md:1:29",
+      "path": "memory/2026-04-29.md",
+      "startLine": 1,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "# 2026-04-29 - 对顶层 Platts token 机制做了系统级调整。 - 新增 `scripts/platts-auth.mjs`，统一处理：读取凭证、判断过期、refresh_token 刷新、以及在 refresh 失败且 token 已过期时，使用环境变量 `Platts_ACCOUNT` / `Platts_PASSWORD` 通过 TokenGeneration `/auth/api` 自动重登。 - 已把主要依赖 Platts token 的脚本切到这套共享逻辑，包括： - `platts-insights-monitor.mjs` - `platts-refresh-token.mjs` - `platts-login.mjs` - `platts-price-data.mjs` - `platts-structured-heards.mjs` - `foiz-monitor.mjs` - `sg-inventory.mjs` - `inventory-weekly-report.mjs` - `mogas-moc-analysis.mjs` - `mogas-moc-ewindow.mjs` - `mogas-mops-strip.mjs` - `go-jet-moc-ewindow.mjs` - `verify-mogas-kdc.mjs` - `distillates-moc.mjs` - 已验证： - 所有上述关键脚本 `node --check` 通过 - 环境变量存在（未",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-04T03:30:29.995Z",
+      "lastRecalledAt": "2026-05-04T15:32:51.564Z",
+      "queryHashes": [
+        "85716757f789",
+        "48d50ab3d6a7"
+      ],
+      "recallDays": [
+        "2026-05-04"
+      ],
+      "conceptTags": [
+        "scripts/platts-auth.mjs",
+        "refresh-token",
+        "platts-account",
+        "platts-password",
+        "auth/api",
+        "platts-insights-monitor.mjs",
+        "platts-refresh-token.mjs",
+        "platts-login.mjs"
+      ]
+    },
+    "memory:memory/2026-05-02.md:1:5": {
+      "key": "memory:memory/2026-05-02.md:1:5",
+      "path": "memory/2026-05-02.md",
+      "startLine": 1,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "# 2026-05-02 - Heartbeat memory maintenance: reviewed recent memory files. `memory/2026-05-01.md` did not exist; `memory/2026-04-30.md` only contained Platts noise-filtering changes already intentionally kept out of long-term memory. - Cleaned `MEMORY.md` by removing an accidental raw \"Promoted From Short-Term Memory\" block that duplicated old 2026-02-03 notes in uncurated form.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-04T19:00:33.065Z",
+      "lastRecalledAt": "2026-05-04T19:00:33.065Z",
+      "queryHashes": [
+        "0e1797f3dbcc"
+      ],
+      "recallDays": [
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "memory/2026-05-01.md",
+        "memory/2026-04-30.md",
+        "noise-filtering",
+        "long-term",
+        "memory.md",
+        "short-term",
+        "heartbeat",
+        "maintenance"
+      ]
+    },
+    "memory:memory/2026-05-05.md:1:4": {
+      "key": "memory:memory/2026-05-05.md:1:4",
+      "path": "memory/2026-05-05.md",
+      "startLine": 1,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "# 2026-05-05 - Heartbeat memory maintenance: reviewed recent memory files (`2026-05-05` newly created, `2026-05-04`, `2026-05-03`, `2026-05-02`) and current `MEMORY.md`. No long-term memory updates needed.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-04T19:00:33.065Z",
+      "lastRecalledAt": "2026-05-04T19:00:33.065Z",
+      "queryHashes": [
+        "0e1797f3dbcc"
+      ],
+      "recallDays": [
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "memory.md",
+        "long-term",
+        "heartbeat",
+        "maintenance",
+        "reviewed",
+        "recent",
+        "newly",
+        "created"
+      ]
+    },
+    "memory:memory/2026-05-03.md:1:4": {
+      "key": "memory:memory/2026-05-03.md:1:4",
+      "path": "memory/2026-05-03.md",
+      "startLine": 1,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "# 2026-05-03 - Heartbeat memory maintenance: reviewed recent memory files (`2026-05-02`, missing `2026-05-01`, `2026-04-30`) and current `MEMORY.md`. No new long-term memory updates needed; recent Platts noise-filtering notes are intentionally short-term only.",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-04T19:00:33.065Z",
+      "lastRecalledAt": "2026-05-04T19:00:33.065Z",
+      "queryHashes": [
+        "0e1797f3dbcc"
+      ],
+      "recallDays": [
+        "2026-05-05"
+      ],
+      "conceptTags": [
+        "memory.md",
+        "long-term",
+        "noise-filtering",
+        "short-term",
+        "heartbeat",
+        "maintenance",
+        "reviewed",
+        "recent"
       ]
     }
   }
