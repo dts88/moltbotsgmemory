@@ -235,3 +235,10 @@ MEMORY.md 这里只保留入口，不再保存 API 端点、目录说明、信�
 
 <!-- openclaw-memory-promotion:memory:memory/2026-02-23.md:70:101 -->
 - ## 📈 CTA 持仓分析 (EA 2/23) - 当前多头: 82% of max - 均值回归空间: $6/bbl - 周买入流量: 24,100 lots - WTI 卖出触发点: $63.50 ## 🤖 硬件机器人研究 为 OpenClaw 集成评估了两款: 1. **StackChan** - ESP32 桌面机器人，开源 2. **Vector + Wire Pod** ⭐ 推荐 - 原 Anki 产品，社区开源复活 - Wire Pod: https://github.com/kercre123/wire-pod - 支持自定义语音/AI 后端 ## 📧 Gmail 邮箱配置完成 - 邮箱: openclawsg@gmail.com - 脚本: `scripts/gmail.mjs` - 功能: SMTP 发送 + IMAP 读取 ## 🧠 知识库更新 新增实体: - `AI_Economic_Impact` - Citrini 2028 AI 电力危机报告 - `Oil_Positioning` - EA 量化周报 CTA 持仓数据 ## 🤖 StackChan 监控 (2026-02-24) **目标**: 监控 Kickstarter StackChan 页面，有货时通知 Tianshu **URL**: https://www.kickstarter.com/projects/m5stack/stackchan-the-first-co-created-open-source-ai-desktop-robot **当前状态**: All gone (售罄) **脚本**: `scripts/kickstarter-monitor.mjs` **问题**: Kickstarter 有 Cloudflare 保护，需要浏览器访问 **临时方案**: 建议使用 Visualping.io 外部监控 [score=0.851 recalls=3 avg=1.000 source=memory/2026-02-23.md:70-101]
+
+## Promoted From Short-Term Memory (2026-05-09)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-05-03.md:3:3 -->
+- - Heartbeat memory maintenance: reviewed recent memory files (`2026-05-02`, missing `2026-05-01`, `2026-04-30`) and current `MEMORY.md`. No new long-term memory updates needed; recent Platts noise-filtering notes are intentionally short-term only. [score=0.817 recalls=0 avg=0.620 source=memory/2026-05-03.md:3-3]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-05.md:3:3 -->
+- - Heartbeat memory maintenance: reviewed recent memory files (`2026-05-05` newly created, `2026-05-04`, `2026-05-03`, `2026-05-02`) and current `MEMORY.md`. No long-term memory updates needed. [score=0.801 recalls=0 avg=0.620 source=memory/2026-05-05.md:3-3]
