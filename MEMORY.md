@@ -242,3 +242,8 @@ MEMORY.md 这里只保留入口，不再保存 API 端点、目录说明、信�
 - - Heartbeat memory maintenance: reviewed recent memory files (`2026-05-02`, missing `2026-05-01`, `2026-04-30`) and current `MEMORY.md`. No new long-term memory updates needed; recent Platts noise-filtering notes are intentionally short-term only. [score=0.817 recalls=0 avg=0.620 source=memory/2026-05-03.md:3-3]
 <!-- openclaw-memory-promotion:memory:memory/2026-05-05.md:3:3 -->
 - - Heartbeat memory maintenance: reviewed recent memory files (`2026-05-05` newly created, `2026-05-04`, `2026-05-03`, `2026-05-02`) and current `MEMORY.md`. No long-term memory updates needed. [score=0.801 recalls=0 avg=0.620 source=memory/2026-05-05.md:3-3]
+
+## Promoted From Short-Term Memory (2026-05-11)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-05-06.md:3:3 -->
+- - Heartbeat memory maintenance: reviewed recent memory files (`2026-05-05`, `2026-05-04`, `2026-05-03`) and current `MEMORY.md`. No new long-term memory updates needed; Platts/Hchen forwarding timeout/cache notes remain short-term operational context. [score=0.843 recalls=0 avg=0.620 source=memory/2026-05-06.md:3-3]

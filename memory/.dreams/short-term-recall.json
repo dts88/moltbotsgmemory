@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-09T00:54:12.851Z",
+  "updatedAt": "2026-05-11T10:42:34.952Z",
   "entries": {
     "memory:memory/2026-02-03.md:30:76": {
       "key": "memory:memory/2026-02-03.md:30:76",
@@ -379,18 +379,20 @@
       "endLine": 48,
       "source": "memory",
       "snippet": "- 合并后：7个地缘市场 + 霍尔木兹专题在同一条消息 ## 全局模型调整 - 全局默认: Opus → **Sonnet**（降低 token 消耗） - 例外：Tianshu 主 session (WhatsApp DM) 保持 Opus - 例外：Dubai MOC cron 显式 Opus - 新任务默认 Sonnet，Tianshu 特别说明才用 Opus ## OpenClaw Compact 说明 - OpenClaw 没有 `/compact` 命令 - 等效操作：发送 `/new` 开启新 session（丢弃上下文） - 自动压缩：config 中 `compaction.mode = \"safeguard\"` 在 context 满时自动处理 ## Session 模型架构确认 (2026-03-10 晚) - Tianshu Telegram DM = 与 WhatsApp DM **同一 session**（identityLinks 合并） - Telegram 群组 topic（如\"商业化\"）= **独立 session**，用全局默认 Sonnet - 如需某 topic 用 Opus，需在该 topic 发消息后手动设 session override - 注意：config.patch 重启后当前 session 显示 sonnet-4-6，Tianshu 主 session 未单独设 Opus override → 待下次会话时如需恢复 Opus，Tianshu 可发 `/model opus` 或告知我设置",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-21T07:20:45.367Z",
-      "lastRecalledAt": "2026-04-21T07:20:45.367Z",
+      "lastRecalledAt": "2026-05-11T01:36:53.940Z",
       "queryHashes": [
-        "91029ac1f3c2"
+        "91029ac1f3c2",
+        "c33876595690"
       ],
       "recallDays": [
-        "2026-04-21"
+        "2026-04-21",
+        "2026-05-11"
       ],
       "conceptTags": [
         "compaction.mode",
@@ -441,18 +443,20 @@
       "endLine": 60,
       "source": "memory",
       "snippet": "# 2026-03-06 (周五) ## OpenClaw 升级 2026.2.14 → 2026.3.2 ### 升级前备份 - 备份路径: `backups/pre-upgrade-20260305-235759/` - 内容: MEMORY.md, AGENTS.md, SOUL.md, memory/, cron-jobs.json, openclaw.json - GitHub: 已推送至 `dts88/moltbotsgmemory` (排除凭证文件) ### 升级方式 - Docker 安装无法用 `gateway update.run`，需要用户在 Unraid UI 手动更新镜像 ### 新功能确认 1. **Telegram message_id** - 升级后 inbound metadata 包含 `message_id` 2. **React 功能** - 测试成功 --- ## 全局模型升级 - **Opus 4.5 → Opus 4.6** (2026年2月5日发布) - Sonnet 4.6 也已发布 (2月17日) - Fallback 链: Opus 4.6 → Sonnet 4.6 → Opus 4.5 → Sonnet 4.5 - 均在 ClaudeMax 订阅下 --- ## Telegram 配置全面升级 ### 新 Topic - **Email** (ID: 22) - Gmail 管理，requireMention: false ### Topic 改名 - Topic 7: \"后台进程\" → \"Moltb",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-04-21T07:20:45.367Z",
-      "lastRecalledAt": "2026-04-21T07:20:45.367Z",
+      "lastRecalledAt": "2026-05-11T01:36:53.940Z",
       "queryHashes": [
-        "91029ac1f3c2"
+        "91029ac1f3c2",
+        "c33876595690"
       ],
       "recallDays": [
-        "2026-04-21"
+        "2026-04-21",
+        "2026-05-11"
       ],
       "conceptTags": [
         "backup",
@@ -2693,12 +2697,12 @@
       "source": "memory",
       "snippet": "Heartbeat memory maintenance: reviewed recent memory files. `memory/2026-05-01.md` did not exist; `memory/2026-04-30.md` only contained Platts noise-filtering changes already intentionally kept out of long-term memory.; Cleaned `MEMORY.md` by removing an accidental raw \"Promoted",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-02T19:00:35.432Z",
-      "lastRecalledAt": "2026-05-08T19:00:37.398Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
       "queryHashes": [
         "f110005857c9"
       ],
@@ -2709,7 +2713,8 @@
         "2026-05-05",
         "2026-05-07",
         "2026-05-08",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-10"
       ],
       "conceptTags": [
         "memory/2026-05-01.md",
@@ -4037,14 +4042,14 @@
       "startLine": 3,
       "endLine": 3,
       "source": "memory",
-      "snippet": "- Heartbeat memory maintenance: reviewed recent memory files (`2026-05-02`, missing `2026-05-01`, `2026-04-30`) and current `MEMORY.md`. No new long-term memory updates needed; recent Platts noise-filtering notes are intentionally short-term only.",
+      "snippet": "Heartbeat memory maintenance: reviewed recent memory files (`2026-05-02`, missing `2026-05-01`, `2026-04-30`) and current `MEMORY.md`. No new long-term memory updates needed; recent Platts noise-filtering notes are intentionally short-term only.",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-03T19:00:36.748Z",
-      "lastRecalledAt": "2026-05-08T19:00:37.398Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
       "queryHashes": [
         "c2bf0c07fdd1"
       ],
@@ -4054,7 +4059,9 @@
         "2026-05-07",
         "2026-05-06",
         "2026-05-08",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-10",
+        "2026-05-11"
       ],
       "conceptTags": [
         "memory.md",
@@ -4782,19 +4789,21 @@
       "endLine": 4,
       "source": "memory",
       "snippet": "# 2026-05-03 - Heartbeat memory maintenance: reviewed recent memory files (`2026-05-02`, missing `2026-05-01`, `2026-04-30`) and current `MEMORY.md`. No new long-term memory updates needed; recent Platts noise-filtering notes are intentionally short-term only.",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T19:00:33.065Z",
-      "lastRecalledAt": "2026-05-04T19:00:33.065Z",
+      "lastRecalledAt": "2026-05-11T10:42:34.952Z",
       "queryHashes": [
-        "0e1797f3dbcc"
+        "0e1797f3dbcc",
+        "2d6baae07f90"
       ],
       "recallDays": [
         "2026-05-05",
-        "2026-05-04"
+        "2026-05-04",
+        "2026-05-11"
       ],
       "conceptTags": [
         "memory.md",
@@ -4813,14 +4822,14 @@
       "startLine": 3,
       "endLine": 3,
       "source": "memory",
-      "snippet": "- Heartbeat memory maintenance: reviewed recent memory files (`2026-05-05` newly created, `2026-05-04`, `2026-05-03`, `2026-05-02`) and current `MEMORY.md`. No long-term memory updates needed.",
+      "snippet": "Heartbeat memory maintenance: reviewed recent memory files (`2026-05-05` newly created, `2026-05-04`, `2026-05-03`, `2026-05-02`) and current `MEMORY.md`. No long-term memory updates needed.",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-04T19:00:45.712Z",
-      "lastRecalledAt": "2026-05-08T19:00:37.398Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
       "queryHashes": [
         "b3222f2b9fdf"
       ],
@@ -4829,7 +4838,9 @@
         "2026-05-04",
         "2026-05-06",
         "2026-05-09",
-        "2026-05-08"
+        "2026-05-08",
+        "2026-05-10",
+        "2026-05-11"
       ],
       "conceptTags": [
         "memory.md",
@@ -4851,12 +4862,12 @@
       "source": "memory",
       "snippet": "Heartbeat memory maintenance: reviewed recent memory files (`2026-05-03`, `2026-05-02`, missing `2026-05-01`) and current `MEMORY.md`. No new long-term memory updates needed.; Platts monitor: upgraded `scripts/platts-insights-monitor.mjs` noise filtering with configurable `.confi",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-04T19:00:45.712Z",
-      "lastRecalledAt": "2026-05-08T19:00:37.398Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
       "queryHashes": [
         "ad6c7e6ef235"
       ],
@@ -4865,7 +4876,9 @@
         "2026-05-04",
         "2026-05-08",
         "2026-05-07",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-10",
+        "2026-05-11"
       ],
       "conceptTags": [
         "memory.md",
@@ -4886,12 +4899,12 @@
       "source": "memory",
       "snippet": "Heartbeat memory maintenance: reviewed recent memory files (`2026-05-04`, `2026-05-03`, `2026-05-02`) and current `MEMORY.md`. No new long-term memory updates needed.; Platts Monitor Forward to Hchen: created `scripts/platts-monitor-forward-hchen.mjs` to do cache-based forwarding",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-04T19:00:45.712Z",
-      "lastRecalledAt": "2026-05-08T19:00:37.398Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
       "queryHashes": [
         "ad6c7e6ef235"
       ],
@@ -4900,7 +4913,9 @@
         "2026-05-04",
         "2026-05-08",
         "2026-05-07",
-        "2026-05-09"
+        "2026-05-09",
+        "2026-05-10",
+        "2026-05-11"
       ],
       "conceptTags": [
         "memory.md",
@@ -10957,21 +10972,24 @@
       "startLine": 3,
       "endLine": 3,
       "source": "memory",
-      "snippet": "Heartbeat memory maintenance: reviewed recent memory files (`2026-05-05`, `2026-05-04`, `2026-05-03`) and current `MEMORY.md`. No new long-term memory updates needed; Platts/Hchen forwarding timeout/cache notes remain short-term operational context.",
+      "snippet": "- Heartbeat memory maintenance: reviewed recent memory files (`2026-05-05`, `2026-05-04`, `2026-05-03`) and current `MEMORY.md`. No new long-term memory updates needed; Platts/Hchen forwarding timeout/cache notes remain short-term operational context.",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-05T19:00:38.120Z",
-      "lastRecalledAt": "2026-05-06T19:00:38.118Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
       "queryHashes": [
         "0429bc3c0eff"
       ],
       "recallDays": [
         "2026-05-06",
         "2026-05-05",
-        "2026-05-07"
+        "2026-05-07",
+        "2026-05-10",
+        "2026-05-09",
+        "2026-05-11"
       ],
       "conceptTags": [
         "memory.md",
@@ -10982,7 +11000,8 @@
         "heartbeat",
         "maintenance",
         "reviewed"
-      ]
+      ],
+      "promotedAt": "2026-05-10T19:00:47.768Z"
     },
     "memory:memory/2026-05-05.md:8:11": {
       "key": "memory:memory/2026-05-05.md:8:11",
@@ -10992,12 +11011,12 @@
       "source": "memory",
       "snippet": "Platts Monitor Forward to Hchen 调整: 用户反馈 `Platts Monitor Forward to Hchen` 在 15:49 失败：`cron: job execution timed out`。; 诊断结论：15:41 主 Platts Monitor 输出很长，主任务耗时约 192 秒；Hchen 转发任务 timeout 只有 180 秒，isolated agent 复述长正文时被 cron 杀掉。问题不是 Platts 抓取失败，而是转发层超时。; 已更新 `/home/node/clawd/script",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-05T19:00:38.120Z",
-      "lastRecalledAt": "2026-05-08T19:00:37.398Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
       "queryHashes": [
         "b3222f2b9fdf"
       ],
@@ -11005,7 +11024,9 @@
         "2026-05-06",
         "2026-05-05",
         "2026-05-09",
-        "2026-05-08"
+        "2026-05-08",
+        "2026-05-10",
+        "2026-05-11"
       ],
       "conceptTags": [
         "home/node/clawd/script",
@@ -11026,12 +11047,12 @@
       "source": "memory",
       "snippet": "Platts Monitor Forward to Hchen 调整: 已告知用户：把 Hchen 转发任务 timeout 从 180 秒提高到 600 秒，并手动重新触发了一次补发；若后续仍有漏发，优先检查主任务是否稳定写 `.cache/platts-monitor/latest.json` 以及 forwarding cron payload/timeout 是否已生效。",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-05T19:00:38.120Z",
-      "lastRecalledAt": "2026-05-08T19:00:37.398Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
       "queryHashes": [
         "b3222f2b9fdf"
       ],
@@ -11039,7 +11060,9 @@
         "2026-05-06",
         "2026-05-05",
         "2026-05-09",
-        "2026-05-08"
+        "2026-05-08",
+        "2026-05-10",
+        "2026-05-11"
       ],
       "conceptTags": [
         "cache/platts-monitor/latest.json",
@@ -11060,12 +11083,12 @@
       "source": "memory",
       "snippet": "Platts Monitor Forward to Hchen 调整: Heartbeat memory maintenance: reviewed recent memory files (`2026-05-05`, `2026-05-04`, `2026-05-03`) and current `MEMORY.md`. No new long-term memory updates needed; recent Platts/Hchen forwarding notes remain short-term operational context.",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-05T19:00:38.120Z",
-      "lastRecalledAt": "2026-05-08T19:00:37.398Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
       "queryHashes": [
         "b3222f2b9fdf"
       ],
@@ -11073,7 +11096,9 @@
         "2026-05-06",
         "2026-05-05",
         "2026-05-09",
-        "2026-05-08"
+        "2026-05-08",
+        "2026-05-10",
+        "2026-05-11"
       ],
       "conceptTags": [
         "memory.md",
@@ -20876,18 +20901,21 @@
       "source": "memory",
       "snippet": "18:59 - Polymarket cron 调整: 按 Tianshu 要求，将 18:00 SGT 的 `Polymarket US-Iran Ceasefire Monitor` cron (`1e1216d8-138a-4243-a126-70797ed8f89a`) 替换为监控 `Strait of Hormuz traffic returns to normal by May 15?`。; 新增脚本：`scripts/polymarket-single-market-monitor.mjs`，按 market slug 拉取 Polymar",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-06T19:00:38.118Z",
-      "lastRecalledAt": "2026-05-06T19:00:38.118Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
       "queryHashes": [
         "0429bc3c0eff"
       ],
       "recallDays": [
         "2026-05-07",
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-10",
+        "2026-05-09",
+        "2026-05-11"
       ],
       "conceptTags": [
         "us-iran",
@@ -20908,18 +20936,21 @@
       "source": "memory",
       "snippet": "18:59 - Polymarket cron 调整: Heartbeat memory maintenance: reviewed recent memory files (`2026-05-06`, `2026-05-05`, `2026-05-04`) and current `MEMORY.md`. No new long-term MEMORY.md changes needed; recent Platts filter/forwarding and Polymarket monitor changes are already capture",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-06T19:00:38.118Z",
-      "lastRecalledAt": "2026-05-06T19:00:38.118Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
       "queryHashes": [
         "0429bc3c0eff"
       ],
       "recallDays": [
         "2026-05-07",
-        "2026-05-06"
+        "2026-05-06",
+        "2026-05-10",
+        "2026-05-09",
+        "2026-05-11"
       ],
       "conceptTags": [
         "memory.md",
@@ -30310,18 +30341,20 @@
       "source": "memory",
       "snippet": "Heartbeat memory maintenance: reviewed recent memory files (`2026-05-07`, `2026-05-06`, `2026-05-05`, `2026-05-04`) and current `MEMORY.md`. No new long-term MEMORY.md updates needed; recent Polymarket monitor changes are already captured in `TOOLS.md`, and Platts/Thai-news fixes",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-07T19:00:34.677Z",
-      "lastRecalledAt": "2026-05-07T19:00:34.677Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
       "queryHashes": [
         "edcbe8c19953"
       ],
       "recallDays": [
         "2026-05-08",
-        "2026-05-07"
+        "2026-05-07",
+        "2026-05-11",
+        "2026-05-10"
       ],
       "conceptTags": [
         "memory.md",
@@ -45833,6 +45866,3493 @@
         "source",
         "sourceid",
         "d72276d1"
+      ]
+    },
+    "memory:memory/2026-05-10.md:3:3": {
+      "key": "memory:memory/2026-05-10.md:3:3",
+      "path": "memory/2026-05-10.md",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Heartbeat memory maintenance: reviewed `HEARTBEAT.md`, recent memory files (`2026-05-09`, `2026-05-08`, `2026-05-07`) and current `MEMORY.md`. No long-term MEMORY.md update needed; recent notes remain repetitive maintenance/status items and existing Platts/Polymarket/GitHub conte",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "b86467cd03ca"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "memory.md",
+        "long-term",
+        "maintenance/status",
+        "platts/polymarket/github",
+        "heartbeat",
+        "maintenance",
+        "reviewed"
+      ]
+    },
+    "memory:memory/2026-05-09.md:3:5": {
+      "key": "memory:memory/2026-05-09.md:3:5",
+      "path": "memory/2026-05-09.md",
+      "startLine": 3,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Heartbeat memory maintenance: reviewed recent memory files (`2026-05-09` newly created, `2026-05-08`, `2026-05-07`, `2026-05-06`) and current `MEMORY.md`. No new long-term MEMORY.md update needed; recent notes are repetitive maintenance logs and existing open issues (GitHub large",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "f9349cbeaf46"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "memory.md",
+        "long-term",
+        "heartbeat",
+        "maintenance",
+        "reviewed",
+        "recent",
+        "newly",
+        "created"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:36:36": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:36:36",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 36,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（5月9日，新加坡时间） Heards 原油 - Tupi 8月到货中国听闻在7月Dated Brent +$7.50/b 至 +$9/b 区间商谈。 [1] - WTI MEH 7月纸货听闻成交在 WTI +$3.10/b。 [2] - 加拿大原油：Pacific Cold Lake / Dilbit 等相关窗口无买盘、无卖盘、无成交。 [3] - Mars 6月 3万桶听闻在 Clovelly 成交，价差 WTI flat。 [4] - WTI MEH 6月 24万桶 Houston 成交，价差 WTI +$2",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "7.50/b",
+        "9/b",
+        "3.10/b",
+        "platts",
+        "快报",
+        "新加坡",
+        "时间",
+        "heards"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:37:37": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:37:37",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 37,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "Assistant: RVP：BCX CBOB 5月16日买盘 NYMEX 6月RBOB +30.00 cpg。 [14] - Chicago C2 9 RVP：BCX CBOB 5月16日买盘 NYMEX 6月RBOB +15.00 cpg。 [15] - Chicago C2 9 RVP：West Shore RBOB/Wolverine CBOB regrade 卖盘 +8.00 cpg。 [16] - Chicago C2 9 RVP：Badger RBOB/Wolverine CBOB regrade 买盘 +5.00 cpg。 [17] -",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "30.00",
+        "15.00",
+        "rbob/wolverine",
+        "8.00",
+        "5.00",
+        "rvp:bcx",
+        "cbob",
+        "nymex"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:38:38": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:38:38",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 38,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "Assistant: USGC HSFO FOB Houston：Novum 从 VIT 买入 BE，45kb，$87.20/bbl。 [25] - Vancouver 船燃：0.1%S MGO 现货指示价 $1350/mt ex-wharf。 [26] - Vancouver 船燃：0.5%S VLSFO 现货指示价 $1070-$1100/mt ex-wharf。 [27] LNG - 无新增。 Stories - 北海原油日评：Prompt WTI Midland 继续重新定价以寻找买家；交易商认为6月北海结构可能改善，因预期进入欧洲的WTI Mi",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "87.20/bbl",
+        "0.1",
+        "1350/mt",
+        "ex-wharf",
+        "0.5",
+        "1100/mt",
+        "usgc",
+        "hsfo"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:39:39": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:39:39",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 39,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=327d505a-3f8c-4897-a7fc-789b212d83f1 [5] https://plattsconnect.spglobal.com/#platts/source?sourceId=25985108-f87d-42f4-b9e6-c656b949fc81 [6] https://plattsconnect.spglobal.com/#platts/source?sourceId=b95d3548-a",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "b95d3548-a",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "327d505a"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:40:40": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:40:40",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 40,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "Assistant: [12] https://plattsconnect.spglobal.com/#platts/source?sourceId=347997b3-ef7b-4869-b2ee-5aa91f64c058 [13] https://plattsconnect.spglobal.com/#platts/source?sourceId=c7d7b6d3-1d0c-4c20-bb7c-f79a797a3b29 [14] https://plattsconnect.spglobal.com/#platts/source?sourceId=9ec",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "347997b3",
+        "ef7b"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:41:41": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:41:41",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 41,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=4e48bf2f-2d66-4341-9970-775cb19c45ff [20] https://plattsconnect.spglobal.com/#platts/source?sourceId=b88a1198-a0c2-4f7f-ad25-6bef9bb99032 [21] https://plattsconnect.spglobal.com/#platts/source?sourceId=31f84a22",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "4e48bf2f",
+        "2d66"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:42:42": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:42:42",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 42,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=a0ed5ab3-699b-44b7-9d9d-35499ef77cf8 [27] https://plattsconnect.spglobal.com/#platts/source?sourceId=aaa0ffa9-e020-4917-8d66-6124d56373aa [28] https://plattsconnect.spglobal.com/#platts/source?sourceId=605fa9b7",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "a0ed5ab3",
+        "699b"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:43:43": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:43:43",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 43,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "Assistant: 🌊 Polymarket 监控：Strait of Hormuz traffic returns to normal by May 15? 09/05/2026, 06:00 pm SGT Yes: 1.7% 🔻 No: 98.3% 变化: -1.8pt vs上次 24h: -1.8pt；7d: -3.8pt 24h成交量: $441K 总成交量: $11.12M 流动性: $459K Bid/Ask: 1.6% / 1.8%（spread 0.2pt）",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "09/05/2026",
+        "1.7",
+        "98.3",
+        "1.8pt",
+        "3.8pt",
+        "11.12m",
+        "bid/ask",
+        "1.6"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:44:44": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:44:44",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 44,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-09 22:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:45:45": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:45:45",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 45,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜2026-05-09 早间 成品油 • 巴西汽油：Prompt FCA Paranaguá 卖兴听闻在 Petrobras EXA Araucária +R$1800/cu m，BRT 16:30 后听闻。 [1] • 巴西汽油：Prompt FCA Santos 卖兴听闻在 Petrobras EXA Paulínia +R$1800/cu m，BRT 16:30 后听闻。 [2] • USAC 航煤/柴油：Buckeye Pipeline 航煤按 NYMEX 6月 ULSD -14 cents/gal 报价评",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "1800/cu",
+        "航煤/柴油",
+        "cents/gal",
+        "platts",
+        "快报",
+        "成品",
+        "巴西",
+        "汽油"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:46:46": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:46:46",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 46,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "Assistant: 升水降 75 cents/b 至 +$2.95/b；Napo 贴水扩大至 -$6.75/b。美国4月进口厄瓜多尔原油 283.4万桶，环比降 20%；哥伦比亚 Vasconia/Castilla 与委内瑞拉 Merey 16 价差持稳。 [8] • 拉美 Dated Brent strip：Platts 说明拉美 Dated Brent strip 反映装期对应远期 Dated Brent 价值，相关原油价差均相对装期时的 forward Dated Brent 计价。 [9] LNG • Freeport LNG：因技术问题及5月",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "cents/b",
+        "2.95/b",
+        "6.75/b",
+        "283.4万桶",
+        "vasconia/castilla",
+        "升水",
+        "cents",
+        "2.95"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:47:47": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:47:47",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 47,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=49db016e-6cad-4996-9ad9-1017ce534a49 [6] https://plattsconnect.spglobal.com/#platts/source?sourceId=e3887c3e-f783-4fa0-b4e2-3f219610f660 [7] https://plattsconnect.spglobal.com/#platts/source?sourceId=bca06343-2",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "bca06343-2",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "49db016e"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:48:48": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:48:48",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 48,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-09 08:04 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:49:49": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:49:49",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 49,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-09 14:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:50:50": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:50:50",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 50,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-09 16:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:51:51": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:51:51",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 51,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "User: platts 的api除了 heards之外，是否还能拿到最新的news？",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "platts",
+        "api",
+        "除了",
+        "heards",
+        "之外",
+        "是否",
+        "拿到",
+        "最新"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:52:52": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:52:52",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 52,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "Assistant: 可以。Platts 除了 `heards` 之外，还能通过 **News Insights API** 拿到最新 news/story。 我刚刚实测了这个端点，返回 `200`： ```text https://api.platts.com/news-insights/v1/search/story?pageSize=5 ``` 最新返回里有类似： - `2026-05-08T23:25:53Z | Platts USGC Gasoline ... Rationales & Exclusions` - `2026-05-08T23:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "news/story",
+        "2026-05-08t23",
+        "可以",
+        "platts",
+        "除了",
+        "heards",
+        "之外",
+        "通过"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:53:53": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:53:53",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 53,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "User: 好的先按照hormuz为关键词，查找最新的5篇文章",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "好的",
+        "按照",
+        "hormuz",
+        "关键",
+        "查找",
+        "最新",
+        "文章"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:54:54": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:54:54",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 54,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "Assistant: 查到了，关键词 `hormuz` 最新 5 篇 Platts story 如下： 1. **Platts Latin American Middle Distillate Daily Commentary** 时间：2026-05-08 23:06 UTC 要点：拉美成品油随油价上涨；文中提到伊朗与美国船只在霍尔木兹海峡附近冲突持续。 2. **Platts US Pipeline Crude Daily Commentary** 时间：2026-05-08 22:54 UTC 要点：美国湾区原油价差涨跌互现；酸性原油受霍尔木兹附近",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "查到",
+        "关键",
+        "hormuz",
+        "最新",
+        "platts",
+        "story",
+        "如下",
+        "latin"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:55:55": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:55:55",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 55,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "User: 过滤掉commentary，再查一遍",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "过滤",
+        "commentary",
+        "一遍"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:56:56": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:56:56",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 56,
+      "endLine": 56,
+      "source": "memory",
+      "snippet": "Assistant: 过滤掉 `commentary / daily market analysis / rationale` 后，`hormuz` 最新 5 篇是： 1. **Platts US Gulf Benzene: Prices hold steady amid Iranian tanker tensions** 2026-05-08 22:21 UTC 要点：美国 Gulf 苯价格持稳；提到美国在霍尔木兹附近 disable 三艘伊朗油轮，油价小幅上行。 2. **April US polyethylene contract settles",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "过滤",
+        "commentary",
+        "market",
+        "analysis",
+        "rationale",
+        "hormuz",
+        "最新",
+        "platts"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:57:57": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:57:57",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 57,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "Assistant: A-1，应对霍尔木兹中断带来的航煤供应风险。文中称该通道约占全球航煤产量 16%。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "a-1",
+        "应对",
+        "中断",
+        "带来",
+        "供应",
+        "风险",
+        "文中",
+        "通道"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:58:58": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:58:58",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 58,
+      "endLine": 58,
+      "source": "memory",
+      "snippet": "User: 给我这些文章的详细内容",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "这些",
+        "文章",
+        "详细",
+        "内容"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:59:59": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:59:59",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 59,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "Assistant: 可以，我不整篇原文直贴，给你按文章做**详细中文摘要**： **1) Platts US Gulf Benzene: Prices hold steady amid Iranian tanker tensions** - USGC 近月苯现货价格 5月8日持稳，能源盘面因霍尔木兹附近紧张局势小幅上行。 - Platts 评估： - 5月苯 FOB/DDP：457 cents/gal，日持平 - 6月苯 FOB/DDP：444 cents/gal，日持平 - 7月苯 FOB/DDP：442 cents/gal，日持平 - 背景：报道称",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "fob/ddp",
+        "cents/gal",
+        "可以",
+        "我不",
+        "整篇",
+        "原文",
+        "文章",
+        "详细"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:60:60": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:60:60",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 60,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "Assistant: 一位分销商称，4月 +30 cents 后，国内合约价和现货价已接近。 - 另一位称出口需求回落后，国内现货市场开始吸收这部分货。 - 供应方面，某些 PE grades 仍偏紧，额外货源难拿，供应商只承诺月底前补一些量。 - 5月价格： - ExxonMobil、Dow、Nova Chemical 均宣布 5月1日起全 PE 树脂涨 20 cents/lb。 - 市场人士认为 20 cents 很难完全落地，更可能只实现 5-10 cents/lb。 - Platts 5月8日评估： - HDPE blow molding：$1,",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "cents/lb",
+        "5-10",
+        "一位",
+        "分销",
+        "cents",
+        "国内",
+        "合约",
+        "现货"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:61:61": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:61:61",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 61,
+      "endLine": 61,
+      "source": "memory",
+      "snippet": "Assistant: 前一个月中东出口份额还比美国高 28 个百分点左右 **4) US MTBE: Differential holds despite spot interest** - USGC MTBE 价格 5月8日反弹，主要受 NYMEX RBOB 大涨带动，同时市场仍处于 laycan backwardation。 - Platts 评估： - USGC spot MTBE：320.04 cents/gal FOB USG，日涨 7.07 cents/gal - MTBE 对 6月 RBOB 价差：-32.63 cents/gal，日持稳",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "320.04",
+        "cents/gal",
+        "7.07",
+        "32.63",
+        "一个",
+        "中东",
+        "出口",
+        "份额"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:62:62": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:62:62",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 62,
+      "endLine": 62,
+      "source": "memory",
+      "snippet": "Assistant: 欧盟委员会明确：在供应链转换被妥善管理的前提下，**美国规格 Jet A 可以替代欧洲标准 Jet A-1**，不存在监管障碍。 - 这是对 US-Israel-Iran 冲突扰乱霍尔木兹航运后的直接回应。 - CERA 数据： - 霍尔木兹相关流量占全球航煤生产约 16% - 若按全球水运航煤供应计算，影响更大：约 50% 全球水运 traded jet supply 被移出市场 - 欧盟目前尚未报告实货短缺，但欧委会警告，若冲突持续，扰动可能转化为真实供应短缺，需要替代供应。 - EASA 风险提示： - Jet A 主要用于美",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "a-1",
+        "us-israel-iran",
+        "欧盟",
+        "委员",
+        "明确",
+        "供应",
+        "转换",
+        "妥善"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:63:63": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:63:63",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 63,
+      "endLine": 63,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜2026-05-09 早间 成品油 • 巴西汽油：Prompt FCA Paranaguá 卖兴听闻在 Petrobras EXA Araucária +R$1800/cu m，BRT 16:30 后听闻。 [1] • 巴西汽油：Prompt FCA Santos 卖兴听闻在 Petrobras EXA Paulínia +R$1800/cu m，BRT 16:30 后听闻。 [2] • USAC 航煤/柴油：Buckeye Pipeline 航煤按 NYMEX 6月 ULSD -14 cents/gal 报价评",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "1800/cu",
+        "航煤/柴油",
+        "cents/gal",
+        "platts",
+        "快报",
+        "成品",
+        "巴西",
+        "汽油"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:64:64": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:64:64",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 64,
+      "endLine": 64,
+      "source": "memory",
+      "snippet": "Assistant: 升水降 75 cents/b 至 +$2.95/b；Napo 贴水扩大至 -$6.75/b。美国4月进口厄瓜多尔原油 283.4万桶，环比降 20%；哥伦比亚 Vasconia/Castilla 与委内瑞拉 Merey 16 价差持稳。 [8] • 拉美 Dated Brent strip：Platts 说明拉美 Dated Brent strip 反映装期对应远期 Dated Brent 价值，相关原油价差均相对装期时的 forward Dated Brent 计价。 [9] LNG • Freeport LNG：因技术问题及5月",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "cents/b",
+        "2.95/b",
+        "6.75/b",
+        "283.4万桶",
+        "vasconia/castilla",
+        "升水",
+        "cents",
+        "2.95"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:65:65": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:65:65",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 65,
+      "endLine": 65,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=49db016e-6cad-4996-9ad9-1017ce534a49 [6] https://plattsconnect.spglobal.com/#platts/source?sourceId=e3887c3e-f783-4fa0-b4e2-3f219610f660 [7] https://plattsconnect.spglobal.com/#platts/source?sourceId=bca06343-2",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "bca06343-2",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "49db016e"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:66:66": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:66:66",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 66,
+      "endLine": 66,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-09 12:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:67:67": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:67:67",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 67,
+      "endLine": 67,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（5月9日） 成品油 1. 欧洲航空燃油供应可能因中东战争持续而吃紧，IATA 警告若冲突延续，部分地区“不久后”可能出现燃料短缺；欧洲监管方已发布指引，允许在安全管理前提下用美国 Jet A 补充传统 Jet A-1 供应。欧洲航煤价格自2月底冲突开始以来上涨约50%，ARA 库存降至六年低位，霍尔木兹海峡持续关闭令海湾出口大幅受限。[1] 原油 2. 欧洲含硫原油价差继续承压，主要受美国战略石油储备（SPR）含硫原油流入欧洲影响。5月8日 Platts 评估 Johan Sverdrup FOB Mongsta",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "a-1",
+        "platts",
+        "快报",
+        "成品",
+        "欧洲",
+        "航空",
+        "燃油",
+        "供应"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:68:68": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:68:68",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 68,
+      "endLine": 68,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（5月9日 07:12 SGT） Heards 燃料油 1. 美湾 0.5% Marine Fuel：Trafigura 从 GCC 买入 7kt，FOB Houston，5月15-17日装期，成交价 $740.00/mt；GCC 仍报卖盘 $740.25/mt。[1] 2. 美国大西洋沿岸 No.6 燃料油：收盘评估无成交、无买盘；NY Harbor DAP HSFO 5月24-28日装期，Phillips 66 撤回两个 50kb 卖盘，撤回后平价分别为 $94.10/b 和 $93.20/b。[2] 3. 美",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "0.5",
+        "5月15-17日装期",
+        "740.00/mt",
+        "740.25/mt",
+        "no.6",
+        "5月24-28日装期",
+        "94.10/b",
+        "93.20/b"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:69:69": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:69:69",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 69,
+      "endLine": 69,
+      "source": "memory",
+      "snippet": "Assistant: 汽油；截至5月23日巴西预计至少进口 82,055 m³ 汽油，5月总进口量预估约 280,472 m³。Abicom 称汽油进口套利窗口已关闭 72 天；中东冲突推高全球汽油价格，限制巴西进口可行性。[6] --- [1] https://plattsconnect.spglobal.com/#platts/source?sourceId=fe163a03-b6d2-412e-a126-9fb49e52d3f0 [2] https://plattsconnect.spglobal.com/#platts/source?source",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "汽油",
+        "截至",
+        "巴西",
+        "预计",
+        "至少",
+        "进口"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:70:70": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:70:70",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 70,
+      "endLine": 70,
+      "source": "memory",
+      "snippet": "Assistant: 今日 Platts 快报（5月9日，新加坡时间） 原油 [6] 加拿大管道原油：WCS Hardisty 贴水走弱至 WTI CMA -15.80美元/桶，日降65美分；报道称美国在霍尔木兹附近使三艘伊朗油轮失能，中东冲突和航运受阻继续影响原油市场。 成品油 [4] 美国汽油：中东紧张推升美国汽油价格，NYMEX 6月RBOB上涨7.07美分/加仑；纽约港驳船价差因近端供应紧张大涨，西海岸 California CARBOB 因库存稳定走弱。 [5] 巴西汽油：现货市场分化，卖盘升高、买兴偏低，买卖价差明显；Itaqui、Suape",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "15.80美元/桶",
+        "6月rbob上涨7.07美分/加仑",
+        "今日",
+        "platts",
+        "快报",
+        "新加坡",
+        "时间",
+        "原油"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:71:71": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:71:71",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 71,
+      "endLine": 71,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=fe163a03-b6d2-412e-a126-9fb49e52d3f0 [2] https://plattsconnect.spglobal.com/#platts/source?sourceId=970760d4-4c49-44ba-b5a9-392dd49380e9 [3] https://plattsconnect.spglobal.com/#platts/source?sourceId=49db016e-6",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "49db016e-6",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "fe163a03"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:72:72": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:72:72",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 72,
+      "endLine": 72,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（5月9日，新加坡时间） Heards 原油 - Tupi 8月到货中国听闻在7月Dated Brent +$7.50/b 至 +$9/b 区间商谈。 [1] - WTI MEH 7月纸货听闻成交在 WTI +$3.10/b。 [2] - 加拿大原油：Pacific Cold Lake / Dilbit 等相关窗口无买盘、无卖盘、无成交。 [3] - Mars 6月 3万桶听闻在 Clovelly 成交，价差 WTI flat。 [4] - WTI MEH 6月 24万桶 Houston 成交，价差 WTI +$2",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "7.50/b",
+        "9/b",
+        "3.10/b",
+        "platts",
+        "快报",
+        "新加坡",
+        "时间",
+        "heards"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:73:73": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:73:73",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 73,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "Assistant: RVP：BCX CBOB 5月16日买盘 NYMEX 6月RBOB +30.00 cpg。 [14] - Chicago C2 9 RVP：BCX CBOB 5月16日买盘 NYMEX 6月RBOB +15.00 cpg。 [15] - Chicago C2 9 RVP：West Shore RBOB/Wolverine CBOB regrade 卖盘 +8.00 cpg。 [16] - Chicago C2 9 RVP：Badger RBOB/Wolverine CBOB regrade 买盘 +5.00 cpg。 [17] -",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "30.00",
+        "15.00",
+        "rbob/wolverine",
+        "8.00",
+        "5.00",
+        "rvp:bcx",
+        "cbob",
+        "nymex"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:74:74": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:74:74",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 74,
+      "endLine": 74,
+      "source": "memory",
+      "snippet": "Assistant: USGC HSFO FOB Houston：Novum 从 VIT 买入 BE，45kb，$87.20/bbl。 [25] - Vancouver 船燃：0.1%S MGO 现货指示价 $1350/mt ex-wharf。 [26] - Vancouver 船燃：0.5%S VLSFO 现货指示价 $1070-$1100/mt ex-wharf。 [27] LNG - 无新增。 Stories - 北海原油日评：Prompt WTI Midland 继续重新定价以寻找买家；交易商认为6月北海结构可能改善，因预期进入欧洲的WTI Mi",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "87.20/bbl",
+        "0.1",
+        "1350/mt",
+        "ex-wharf",
+        "0.5",
+        "1100/mt",
+        "usgc",
+        "hsfo"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:75:75": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:75:75",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 75,
+      "endLine": 75,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=327d505a-3f8c-4897-a7fc-789b212d83f1 [5] https://plattsconnect.spglobal.com/#platts/source?sourceId=25985108-f87d-42f4-b9e6-c656b949fc81 [6] https://plattsconnect.spglobal.com/#platts/source?sourceId=b95d3548-a",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "b95d3548-a",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "327d505a"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:76:76": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:76:76",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 76,
+      "endLine": 76,
+      "source": "memory",
+      "snippet": "Assistant: [12] https://plattsconnect.spglobal.com/#platts/source?sourceId=347997b3-ef7b-4869-b2ee-5aa91f64c058 [13] https://plattsconnect.spglobal.com/#platts/source?sourceId=c7d7b6d3-1d0c-4c20-bb7c-f79a797a3b29 [14] https://plattsconnect.spglobal.com/#platts/source?sourceId=9ec",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "347997b3",
+        "ef7b"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:77:77": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:77:77",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 77,
+      "endLine": 77,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=4e48bf2f-2d66-4341-9970-775cb19c45ff [20] https://plattsconnect.spglobal.com/#platts/source?sourceId=b88a1198-a0c2-4f7f-ad25-6bef9bb99032 [21] https://plattsconnect.spglobal.com/#platts/source?sourceId=31f84a22",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "4e48bf2f",
+        "2d66"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:78:78": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:78:78",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 78,
+      "endLine": 78,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=a0ed5ab3-699b-44b7-9d9d-35499ef77cf8 [27] https://plattsconnect.spglobal.com/#platts/source?sourceId=aaa0ffa9-e020-4917-8d66-6124d56373aa [28] https://plattsconnect.spglobal.com/#platts/source?sourceId=605fa9b7",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "a0ed5ab3",
+        "699b"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:79:79": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:79:79",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 79,
+      "endLine": 79,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（5月9日） 成品油 1. 欧洲航空燃油供应可能因中东战争持续而吃紧，IATA 警告若冲突延续，部分地区“不久后”可能出现燃料短缺；欧洲监管方已发布指引，允许在安全管理前提下用美国 Jet A 补充传统 Jet A-1 供应。欧洲航煤价格自2月底冲突开始以来上涨约50%，ARA 库存降至六年低位，霍尔木兹海峡持续关闭令海湾出口大幅受限。[1] 原油 2. 欧洲含硫原油价差继续承压，主要受美国战略石油储备（SPR）含硫原油流入欧洲影响。5月8日 Platts 评估 Johan Sverdrup FOB Mongsta",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "a-1",
+        "platts",
+        "快报",
+        "成品",
+        "欧洲",
+        "航空",
+        "燃油",
+        "供应"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:80:80": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:80:80",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 80,
+      "endLine": 80,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-09 18:04 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:81:81": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:81:81",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 81,
+      "endLine": 81,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（5月9日 07:12 SGT） Heards 燃料油 1. 美湾 0.5% Marine Fuel：Trafigura 从 GCC 买入 7kt，FOB Houston，5月15-17日装期，成交价 $740.00/mt；GCC 仍报卖盘 $740.25/mt。[1] 2. 美国大西洋沿岸 No.6 燃料油：收盘评估无成交、无买盘；NY Harbor DAP HSFO 5月24-28日装期，Phillips 66 撤回两个 50kb 卖盘，撤回后平价分别为 $94.10/b 和 $93.20/b。[2] 3. 美",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "0.5",
+        "5月15-17日装期",
+        "740.00/mt",
+        "740.25/mt",
+        "no.6",
+        "5月24-28日装期",
+        "94.10/b",
+        "93.20/b"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:82:82": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:82:82",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 82,
+      "endLine": 82,
+      "source": "memory",
+      "snippet": "Assistant: 汽油；截至5月23日巴西预计至少进口 82,055 m³ 汽油，5月总进口量预估约 280,472 m³。Abicom 称汽油进口套利窗口已关闭 72 天；中东冲突推高全球汽油价格，限制巴西进口可行性。[6] --- [1] https://plattsconnect.spglobal.com/#platts/source?sourceId=fe163a03-b6d2-412e-a126-9fb49e52d3f0 [2] https://plattsconnect.spglobal.com/#platts/source?source",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "汽油",
+        "截至",
+        "巴西",
+        "预计",
+        "至少",
+        "进口"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:83:83": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:83:83",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 83,
+      "endLine": 83,
+      "source": "memory",
+      "snippet": "Assistant: 今日 Platts 快报（5月9日，新加坡时间） 原油 [6] 加拿大管道原油：WCS Hardisty 贴水走弱至 WTI CMA -15.80美元/桶，日降65美分；报道称美国在霍尔木兹附近使三艘伊朗油轮失能，中东冲突和航运受阻继续影响原油市场。 成品油 [4] 美国汽油：中东紧张推升美国汽油价格，NYMEX 6月RBOB上涨7.07美分/加仑；纽约港驳船价差因近端供应紧张大涨，西海岸 California CARBOB 因库存稳定走弱。 [5] 巴西汽油：现货市场分化，卖盘升高、买兴偏低，买卖价差明显；Itaqui、Suape",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "15.80美元/桶",
+        "6月rbob上涨7.07美分/加仑",
+        "今日",
+        "platts",
+        "快报",
+        "新加坡",
+        "时间",
+        "原油"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:84:84": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:84:84",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 84,
+      "endLine": 84,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=fe163a03-b6d2-412e-a126-9fb49e52d3f0 [2] https://plattsconnect.spglobal.com/#platts/source?sourceId=970760d4-4c49-44ba-b5a9-392dd49380e9 [3] https://plattsconnect.spglobal.com/#platts/source?sourceId=49db016e-6",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "49db016e-6",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "fe163a03"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:85:85": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:85:85",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 85,
+      "endLine": 85,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-09 06:04 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:86:86": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:86:86",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 86,
+      "endLine": 86,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-09 20:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:87:87": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:87:87",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 87,
+      "endLine": 87,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（5月8日） Heards 原油 - 无新增 heards。 成品油 - Midwest 汽油：C25 9 RVP Explorer CBOB 到芝加哥成交，价格为 NYMEX 6月 RBOB +30.00 cpg。[1] - USGC 汽油收盘评估：C29 A2 出现两笔窗口成交，Sunoco/USO 分别从 ATMI 买入 25kb，价格 -15.25 cpg；买盘集中在 -15.75 至 -16.50 cpg，卖盘集中在 -15.25 至 -12.00 cpg；M2/F1 也有买卖盘。[2] - 馏分油：MR",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "30.00",
+        "sunoco/uso",
+        "15.25",
+        "15.75",
+        "16.50",
+        "12.00",
+        "m2/f1",
+        "platts"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:88:88": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:88:88",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 88,
+      "endLine": 88,
+      "source": "memory",
+      "snippet": "Assistant: Houston BE，Vitol 向 Novum 卖出 45kb，价格 $87.20/bbl。[10] - USGC HSFO 收盘评估：无有效卖盘；Vitol 撤回 FOB Houston BE 45kb、$87.20/bbl 卖盘。[11] - USGC HSFO 收盘评估：无有效买盘；Gunvor USA 撤回 FOB Houston FE 45kb、$88.20/bbl 买盘。[12] - USGC HSFO：FOB Houston BE，Vitol 向 Novum 卖出 45kb，价格 $87.20/bbl。[13] -",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "87.20/bbl",
+        "88.20/bbl",
+        "houston",
+        "vitol",
+        "novum",
+        "45kb",
+        "价格",
+        "87.20"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:89:89": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:89:89",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 89,
+      "endLine": 89,
+      "source": "memory",
+      "snippet": "Assistant: 616,000 b/d。[21] - Liberty Bay FLNG 计划在墨西哥或阿根廷推进 140万 mt/年浮式 LNG 项目，目标 2029年底或2030年初投产，估算投资约 $10亿。[22] - 美国 LNG 行业组织 CLNG 称，欧盟 2027年甲烷排放规则即使有处罚暂缓草案，仍未解决合规时间表和技术指引不确定性，已影响合同签署。[23] - 欧洲汽油日评：实货和纸货价格反弹，ARA 汽油库存周降 6.3% 至 107.7万 mt；中东紧张和供应扰动支撑市场。[24] - 地中海/黑海轻质低硫原油：Azeri Li",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "b/d",
+        "mt/年浮式",
+        "6.3",
+        "107.7万",
+        "地中海/黑海轻质低硫原油",
+        "616,000",
+        "liberty",
+        "bay"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:90:90": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:90:90",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 90,
+      "endLine": 90,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=c50a3635-9212-45ce-97a9-49b27934ad3c [6] https://plattsconnect.spglobal.com/#platts/source?sourceId=777dbdf9-848b-4de5-801c-0d8f5022ffa8 [7] https://plattsconnect.spglobal.com/#platts/source?sourceId=1ead7aa4-4",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "1ead7aa4-4",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "c50a3635"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:91:91": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:91:91",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 91,
+      "endLine": 91,
+      "source": "memory",
+      "snippet": "Assistant: [13] https://plattsconnect.spglobal.com/#platts/source?sourceId=f6549470-7746-4822-a104-3ce8a1cf99da [14] https://plattsconnect.spglobal.com/#platts/source?sourceId=a1e35752-170a-44dd-b41e-3230a6564886 [15] https://plattsconnect.spglobal.com/#platts/source?sourceId=5fc",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "f6549470",
+        "a104"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:92:92": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:92:92",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 92,
+      "endLine": 92,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=74ab4daf-5948-4044-aa20-dea8a0d6bae6 [21] https://plattsconnect.spglobal.com/#platts/source?sourceId=05e43f08-76ee-4b6e-9261-b36daa1e1332 [22] https://plattsconnect.spglobal.com/#platts/source?sourceId=a800c836",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "74ab4daf",
+        "aa20"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:93:93": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:93:93",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 93,
+      "endLine": 93,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-09 10:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:94:94": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:94:94",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 94,
+      "endLine": 94,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（5月8日） Heards 原油 - 无新增 heards。 成品油 - Midwest 汽油：C25 9 RVP Explorer CBOB 到芝加哥成交，价格为 NYMEX 6月 RBOB +30.00 cpg。[1] - USGC 汽油收盘评估：C29 A2 出现两笔窗口成交，Sunoco/USO 分别从 ATMI 买入 25kb，价格 -15.25 cpg；买盘集中在 -15.75 至 -16.50 cpg，卖盘集中在 -15.25 至 -12.00 cpg；M2/F1 也有买卖盘。[2] - 馏分油：MR",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "30.00",
+        "sunoco/uso",
+        "15.25",
+        "15.75",
+        "16.50",
+        "12.00",
+        "m2/f1",
+        "platts"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:95:95": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:95:95",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 95,
+      "endLine": 95,
+      "source": "memory",
+      "snippet": "Assistant: Houston BE，Vitol 向 Novum 卖出 45kb，价格 $87.20/bbl。[10] - USGC HSFO 收盘评估：无有效卖盘；Vitol 撤回 FOB Houston BE 45kb、$87.20/bbl 卖盘。[11] - USGC HSFO 收盘评估：无有效买盘；Gunvor USA 撤回 FOB Houston FE 45kb、$88.20/bbl 买盘。[12] - USGC HSFO：FOB Houston BE，Vitol 向 Novum 卖出 45kb，价格 $87.20/bbl。[13] -",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "87.20/bbl",
+        "88.20/bbl",
+        "houston",
+        "vitol",
+        "novum",
+        "45kb",
+        "价格",
+        "87.20"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:96:96": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:96:96",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 96,
+      "endLine": 96,
+      "source": "memory",
+      "snippet": "Assistant: 616,000 b/d。[21] - Liberty Bay FLNG 计划在墨西哥或阿根廷推进 140万 mt/年浮式 LNG 项目，目标 2029年底或2030年初投产，估算投资约 $10亿。[22] - 美国 LNG 行业组织 CLNG 称，欧盟 2027年甲烷排放规则即使有处罚暂缓草案，仍未解决合规时间表和技术指引不确定性，已影响合同签署。[23] - 欧洲汽油日评：实货和纸货价格反弹，ARA 汽油库存周降 6.3% 至 107.7万 mt；中东紧张和供应扰动支撑市场。[24] - 地中海/黑海轻质低硫原油：Azeri Li",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "b/d",
+        "mt/年浮式",
+        "6.3",
+        "107.7万",
+        "地中海/黑海轻质低硫原油",
+        "616,000",
+        "liberty",
+        "bay"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:97:97": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:97:97",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 97,
+      "endLine": 97,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=c50a3635-9212-45ce-97a9-49b27934ad3c [6] https://plattsconnect.spglobal.com/#platts/source?sourceId=777dbdf9-848b-4de5-801c-0d8f5022ffa8 [7] https://plattsconnect.spglobal.com/#platts/source?sourceId=1ead7aa4-4",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "1ead7aa4-4",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "c50a3635"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:98:98": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:98:98",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 98,
+      "endLine": 98,
+      "source": "memory",
+      "snippet": "Assistant: [13] https://plattsconnect.spglobal.com/#platts/source?sourceId=f6549470-7746-4822-a104-3ce8a1cf99da [14] https://plattsconnect.spglobal.com/#platts/source?sourceId=a1e35752-170a-44dd-b41e-3230a6564886 [15] https://plattsconnect.spglobal.com/#platts/source?sourceId=5fc",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "f6549470",
+        "a104"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-09.txt:99:99": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-09.txt:99:99",
+      "path": "memory/.dreams/session-corpus/2026-05-09.txt",
+      "startLine": 99,
+      "endLine": 99,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=74ab4daf-5948-4044-aa20-dea8a0d6bae6 [21] https://plattsconnect.spglobal.com/#platts/source?sourceId=05e43f08-76ee-4b6e-9261-b36daa1e1332 [22] https://plattsconnect.spglobal.com/#platts/source?sourceId=a800c836",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "962844034959"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "74ab4daf",
+        "aa20"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-10 00:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-09T19:00:37.644Z",
+      "lastRecalledAt": "2026-05-09T19:00:37.644Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-10",
+        "2026-05-09"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（2026-05-10） 成品油 [1] NWE Jet Cargo CIF basis Avonmouth 10-25：PLATTSTEST 撤回 5月20-24日 offer，100% EFP ICE LS GO Apr +$11.00；Optol 0-6000，Jet CIF NWE Cargo COD +1 quote $200.00，数量 27kt。 [2] NWE Jet Cargo CIF basis Fawley 10-25：PLATTSTEST 撤回 5月26-30日 offer，100% Fla",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "10-25",
+        "5月20-24日",
+        "11.00",
+        "0-6000",
+        "200.00",
+        "5月26-30日",
+        "platts",
+        "快报"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=ec8d7170-7525-4d90-a494-d52ed62fffda",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "ec8d7170",
+        "4d90"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-10 16:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: 🌊 Polymarket 监控：Strait of Hormuz traffic returns to normal by May 15? 10/05/2026, 06:00 pm SGT Yes: 1.1% 🔻 No: 99.0% 变化: -0.7pt vs上次 24h: -0.5pt；7d: -3.5pt 24h成交量: $735K 总成交量: $11.85M 流动性: $487K Bid/Ask: 1.0% / 1.1%（spread 0.1pt）",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "10/05/2026",
+        "1.1",
+        "99.0",
+        "0.7pt",
+        "0.5pt",
+        "3.5pt",
+        "11.85m",
+        "bid/ask"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（2026-05-10） 成品油 [1] NWE Jet Cargo CIF basis Avonmouth 10-25：PLATTSTEST 撤回 5月20-24日 offer，100% EFP ICE LS GO Apr +$11.00；Optol 0-6000，Jet CIF NWE Cargo COD +1 quote $200.00，数量 27kt。 [2] NWE Jet Cargo CIF basis Fawley 10-25：PLATTSTEST 撤回 5月26-30日 offer，100% Fla",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "10-25",
+        "5月20-24日",
+        "11.00",
+        "0-6000",
+        "200.00",
+        "5月26-30日",
+        "platts",
+        "快报"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=ec8d7170-7525-4d90-a494-d52ed62fffda",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "ec8d7170",
+        "4d90"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-10 12:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（5月10日） 成品油 1. 西北欧航煤 CIF Fawley：PLATTSTEST 将5月26-30日装期卖盘下调至平价计价 $21.75，数量27,000吨。[1] 2. 西北欧航煤 CIF Shell Haven：PLATTSTEST 报5月20-24日装期卖盘，基准为Jet CIF NWE Cargo H2 Mar + $23.00，数量27,000吨。[2] 3. 西北欧航煤 CIF Avonmouth：PLATTSTEST 报5月20-24日装期卖盘，EFP ICE LS GO Apr + $11.00",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "将5月26-30日装期卖盘下调至平价计价",
+        "21.75",
+        "报5月20-24日装期卖盘",
+        "23.00",
+        "11.00",
+        "platts",
+        "快报",
+        "成品"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=725663d0-9ab6-4df7-9d4f-080435917b08 [2] https://plattsconnect.spglobal.com/#platts/source?sourceId=9592523f-5b3c-4dfc-be55-20f8139df1d1 [3] https://plattsconnect.spglobal.com/#platts/source?sourceId=737c9e21-0",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "737c9e21-0",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "725663d0"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-10 14:04 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ Cron 安全审计告警 - Memory Backup (Daily) 仍为 enabled，且连续报错 12 次；最近错误：Agent couldn’t generate a response，提示可能已有 tool action 执行，需核查备份是否实际完成、是否重复/部分执行。 - PLDT Earnings Check 仍为 enabled；这是 2026-02 财报一次性任务，结果已触发，但仍保留启用状态。delivery.channel=last，payload 内嵌“send alert to +65977772",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "backup",
+        "备份",
+        "是否重复/部分执行",
+        "2026-02",
+        "delivery.channel",
+        "cron",
+        "安全",
+        "审计"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-10 08:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（5月10日） 成品油 1. 西北欧航煤 CIF Fawley：PLATTSTEST 将5月26-30日装期卖盘下调至平价计价 $21.75，数量27,000吨。[1] 2. 西北欧航煤 CIF Shell Haven：PLATTSTEST 报5月20-24日装期卖盘，基准为Jet CIF NWE Cargo H2 Mar + $23.00，数量27,000吨。[2] 3. 西北欧航煤 CIF Avonmouth：PLATTSTEST 报5月20-24日装期卖盘，EFP ICE LS GO Apr + $11.00",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "将5月26-30日装期卖盘下调至平价计价",
+        "21.75",
+        "报5月20-24日装期卖盘",
+        "23.00",
+        "11.00",
+        "platts",
+        "快报",
+        "成品"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=725663d0-9ab6-4df7-9d4f-080435917b08 [2] https://plattsconnect.spglobal.com/#platts/source?sourceId=9592523f-5b3c-4dfc-be55-20f8139df1d1 [3] https://plattsconnect.spglobal.com/#platts/source?sourceId=737c9e21-0",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "737c9e21-0",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "725663d0"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:28:28": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:28:28",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 28,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:29:29": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:29:29",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 29,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-10 10:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:30:30": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:30:30",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-10 18:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:31:31": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:31:31",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-10 06:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:33:33": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:33:33",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-10.txt:34:34": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-10.txt:34:34",
+      "path": "memory/.dreams/session-corpus/2026-05-10.txt",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "0bd2888cfb05"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-11.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-11.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-11.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "aef940602c89"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-11.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-11.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-11.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "aef940602c89"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-11.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-11.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-11.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "aef940602c89"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-11.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-11.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-11.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "aef940602c89"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-11.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-11.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-11.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "aef940602c89"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-11.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-11.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-11.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "aef940602c89"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-11.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-11.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-11.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "aef940602c89"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-11.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-11.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-05-11.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "aef940602c89"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-11.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-11.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-05-11.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "aef940602c89"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-11.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-11.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-05-11.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "aef940602c89"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-11.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-11.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-05-11.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "aef940602c89"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-11.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-11.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-05-11.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: [assistant turn failed before producing content]",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-10T19:00:47.768Z",
+      "lastRecalledAt": "2026-05-10T19:00:47.768Z",
+      "queryHashes": [
+        "aef940602c89"
+      ],
+      "recallDays": [
+        "2026-05-11",
+        "2026-05-10"
+      ],
+      "conceptTags": [
+        "turn",
+        "failed",
+        "producing",
+        "content"
+      ]
+    },
+    "memory:memory/2026-05-09.md:1:6": {
+      "key": "memory:memory/2026-05-09.md:1:6",
+      "path": "memory/2026-05-09.md",
+      "startLine": 1,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "# 2026-05-09 - Heartbeat memory maintenance: reviewed recent memory files (`2026-05-09` newly created, `2026-05-08`, `2026-05-07`, `2026-05-06`) and current `MEMORY.md`. No new long-term MEMORY.md update needed; recent notes are repetitive maintenance logs and existing open issues (GitHub large file, Platts/Polymarket references) are already captured. - Heartbeat memory maintenance: reviewed recent memory files (`2026-05-09`, `2026-05-08`, `2026-05-07`) plus `MEMORY.md`. No long-term update needed; current notes remain repetitive maintenance/status items and existing unresolved issues are already captured. - Heartbeat memory maintenance: reviewed `HEARTBEAT.md`, recent memory files (`2026-0",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-11T10:42:34.952Z",
+      "lastRecalledAt": "2026-05-11T10:42:34.952Z",
+      "queryHashes": [
+        "2d6baae07f90"
+      ],
+      "recallDays": [
+        "2026-05-11"
+      ],
+      "conceptTags": [
+        "memory.md",
+        "long-term",
+        "platts/polymarket",
+        "maintenance/status",
+        "heartbeat.md",
+        "2026-0",
+        "heartbeat",
+        "maintenance"
+      ]
+    },
+    "memory:memory/2026-05-07.md:1:6": {
+      "key": "memory:memory/2026-05-07.md:1:6",
+      "path": "memory/2026-05-07.md",
+      "startLine": 1,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "# 2026-05-07 - Heartbeat memory maintenance: reviewed recent memory files (`2026-05-07`, `2026-05-06`, `2026-05-05`, `2026-05-04`) and current `MEMORY.md`. No new long-term MEMORY.md updates needed; recent Polymarket monitor changes are already captured in `TOOLS.md`, and Platts/Thai-news fixes remain in scripts/skills or short-term ops context. - Heartbeat memory maintenance: reviewed recent memory files (`2026-05-07`, `2026-05-06`, `2026-05-05`) and current `MEMORY.md`. No new long-term MEMORY.md updates needed. - Heartbeat memory maintenance: reviewed recent memory files (`2026-05-07`, `2026-05-06`, `2026-05-05`) and current `MEMORY.md`. No new long-term update needed; the only notable u",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-11T10:42:34.952Z",
+      "lastRecalledAt": "2026-05-11T10:42:34.952Z",
+      "queryHashes": [
+        "2d6baae07f90"
+      ],
+      "recallDays": [
+        "2026-05-11"
+      ],
+      "conceptTags": [
+        "memory.md",
+        "long-term",
+        "tools.md",
+        "platts/thai-news",
+        "scripts/skills",
+        "short-term",
+        "heartbeat",
+        "maintenance"
+      ]
+    },
+    "memory:memory/2026-05-08.md:1:6": {
+      "key": "memory:memory/2026-05-08.md:1:6",
+      "path": "memory/2026-05-08.md",
+      "startLine": 1,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "# 2026-05-08 - Heartbeat memory maintenance: reviewed recent memory files (`2026-05-08` newly created, `2026-05-07`, `2026-05-06`, `2026-05-05`) and current `MEMORY.md`. No new long-term MEMORY.md updates needed; recent Polymarket monitor, Platts forwarding, and Platts token/auth notes are already captured in `TOOLS.md`, scripts/skills, or existing `MEMORY.md`. - Heartbeat memory maintenance: reviewed recent memory files (`2026-05-08`, `2026-05-07`, `2026-05-06`) and current `MEMORY.md`. No long-term update needed; Polymarket monitor and Platts auth context are already captured in `TOOLS.md`/`MEMORY.md`, and the existing GitHub backup large-file issue remains awaiting user decision. - Heart",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-11T10:42:34.952Z",
+      "lastRecalledAt": "2026-05-11T10:42:34.952Z",
+      "queryHashes": [
+        "2d6baae07f90"
+      ],
+      "recallDays": [
+        "2026-05-11"
+      ],
+      "conceptTags": [
+        "backup",
+        "memory.md",
+        "long-term",
+        "token/auth",
+        "tools.md",
+        "scripts/skills",
+        "large-file",
+        "heartbeat"
       ]
     }
   }
