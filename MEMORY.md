@@ -236,14 +236,7 @@ MEMORY.md 这里只保留入口，不再保存 API 端点、目录说明、信�
 <!-- openclaw-memory-promotion:memory:memory/2026-02-23.md:70:101 -->
 - ## 📈 CTA 持仓分析 (EA 2/23) - 当前多头: 82% of max - 均值回归空间: $6/bbl - 周买入流量: 24,100 lots - WTI 卖出触发点: $63.50 ## 🤖 硬件机器人研究 为 OpenClaw 集成评估了两款: 1. **StackChan** - ESP32 桌面机器人，开源 2. **Vector + Wire Pod** ⭐ 推荐 - 原 Anki 产品，社区开源复活 - Wire Pod: https://github.com/kercre123/wire-pod - 支持自定义语音/AI 后端 ## 📧 Gmail 邮箱配置完成 - 邮箱: openclawsg@gmail.com - 脚本: `scripts/gmail.mjs` - 功能: SMTP 发送 + IMAP 读取 ## 🧠 知识库更新 新增实体: - `AI_Economic_Impact` - Citrini 2028 AI 电力危机报告 - `Oil_Positioning` - EA 量化周报 CTA 持仓数据 ## 🤖 StackChan 监控 (2026-02-24) **目标**: 监控 Kickstarter StackChan 页面，有货时通知 Tianshu **URL**: https://www.kickstarter.com/projects/m5stack/stackchan-the-first-co-created-open-source-ai-desktop-robot **当前状态**: All gone (售罄) **脚本**: `scripts/kickstarter-monitor.mjs` **问题**: Kickstarter 有 Cloudflare 保护，需要浏览器访问 **临时方案**: 建议使用 Visualping.io 外部监控 [score=0.851 recalls=3 avg=1.000 source=memory/2026-02-23.md:70-101]
 
-## Promoted From Short-Term Memory (2026-05-09)
+## Promoted From Short-Term Memory (2026-05-13)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-05-03.md:3:3 -->
-- - Heartbeat memory maintenance: reviewed recent memory files (`2026-05-02`, missing `2026-05-01`, `2026-04-30`) and current `MEMORY.md`. No new long-term memory updates needed; recent Platts noise-filtering notes are intentionally short-term only. [score=0.817 recalls=0 avg=0.620 source=memory/2026-05-03.md:3-3]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-05.md:3:3 -->
-- - Heartbeat memory maintenance: reviewed recent memory files (`2026-05-05` newly created, `2026-05-04`, `2026-05-03`, `2026-05-02`) and current `MEMORY.md`. No long-term memory updates needed. [score=0.801 recalls=0 avg=0.620 source=memory/2026-05-05.md:3-3]
-
-## Promoted From Short-Term Memory (2026-05-11)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-05-06.md:3:3 -->
-- - Heartbeat memory maintenance: reviewed recent memory files (`2026-05-05`, `2026-05-04`, `2026-05-03`) and current `MEMORY.md`. No new long-term memory updates needed; Platts/Hchen forwarding timeout/cache notes remain short-term operational context. [score=0.843 recalls=0 avg=0.620 source=memory/2026-05-06.md:3-3]
+<!-- openclaw-memory-promotion:memory:memory/2026-03-06.md:158:201 -->
+- - **需特批**: 其他功能需通知 Tianshu 审批 - **定价**: SGD 49/月 - 待确认: onboarding 流程、用户审批流程、账单管理 --- ## 待办: 获客计划书 Sun 提议制定获客计划书，需与 Tianshu 讨论： - 目标用户画像 - 获客渠道 (朋友圈/小红书/Telegram/口碑等) - 转化路径 (免费试用→付费?) - 早期种子用户策略 - 差异化卖点 (vs ChatGPT Plus 等) **状态**: ⬜ 待与 Tianshu 讨论 --- ## 新 Bot 账户: @OilClaw_bot - **Username**: @OilClaw_bot - **Token**: `[REDACTED - do not store bot tokens in memory]` - **用途**: 对外商业服务 (OpenClaw 品牌) - **状态**: 已创建，待启用 - 现有 bot @SG_Moltbot 继续作为内部使用 --- ## GitHub - 更新 token: [REDACTED - stored in git remote URL] - 备份一直在正常工作 (token 嵌入 git remote URL) ## 🔧 Dubai MOC Cron 修复 (16:50) **问题**: MOC cron (b97e0428) 今天第一次运行就失败了 1. 用了 Structured Heards API（没数据），应该用 **News Insights heards** 端点 2. `npx bird` 没加载 `.twitter-env`，Twitter 认证失败 3. payload 写得太模糊，sub-agent 不知道具体怎么执行 **修复**: - 步骤1: 直接用 News Insights API 查询 heards（和 platts-insights-monitor.mjs 同一个端点） - 步骤2: `source .twitter-env && npx bird user-tweets @FluxOfficials -n 3 --json --plain` [score=0.951 recalls=3 avg=1.000 source=memory/2026-03-06.md:158-201]
