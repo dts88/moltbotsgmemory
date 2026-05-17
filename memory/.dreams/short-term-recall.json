@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-16T18:11:22.713Z",
+  "updatedAt": "2026-05-17T18:12:57.913Z",
   "entries": {
     "memory:memory/2026-02-03.md:30:76": {
       "key": "memory:memory/2026-02-03.md:30:76",
@@ -4689,13 +4689,13 @@
       "endLine": 29,
       "source": "memory",
       "snippet": "# 2026-04-29 - 对顶层 Platts token 机制做了系统级调整。 - 新增 `scripts/platts-auth.mjs`，统一处理：读取凭证、判断过期、refresh_token 刷新、以及在 refresh 失败且 token 已过期时，使用环境变量 `Platts_ACCOUNT` / `Platts_PASSWORD` 通过 TokenGeneration `/auth/api` 自动重登。 - 已把主要依赖 Platts token 的脚本切到这套共享逻辑，包括： - `platts-insights-monitor.mjs` - `platts-refresh-token.mjs` - `platts-login.mjs` - `platts-price-data.mjs` - `platts-structured-heards.mjs` - `foiz-monitor.mjs` - `sg-inventory.mjs` - `inventory-weekly-report.mjs` - `mogas-moc-analysis.mjs` - `mogas-moc-ewindow.mjs` - `mogas-mops-strip.mjs` - `go-jet-moc-ewindow.mjs` - `verify-mogas-kdc.mjs` - `distillates-moc.mjs` - 已验证： - 所有上述关键脚本 `node --check` 通过 - 环境变量存在（未",
-      "recallCount": 12,
+      "recallCount": 14,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 12,
+      "totalScore": 14,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T03:30:29.995Z",
-      "lastRecalledAt": "2026-05-16T18:11:22.713Z",
+      "lastRecalledAt": "2026-05-17T12:32:29.298Z",
       "queryHashes": [
         "85716757f789",
         "48d50ab3d6a7",
@@ -4708,7 +4708,9 @@
         "5cee0038a051",
         "5b85b057b164",
         "b6fef557ac30",
-        "5f86b4b305f7"
+        "5f86b4b305f7",
+        "5f3c8c990576",
+        "5292f3ac2741"
       ],
       "recallDays": [
         "2026-05-04",
@@ -45917,14 +45919,14 @@
       "startLine": 3,
       "endLine": 3,
       "source": "memory",
-      "snippet": "- Heartbeat memory maintenance: reviewed `HEARTBEAT.md`, recent memory files (`2026-05-09`, `2026-05-08`, `2026-05-07`) and current `MEMORY.md`. No long-term MEMORY.md update needed; recent notes remain repetitive maintenance/status items and existing Platts/Polymarket/GitHub context is already captured.",
+      "snippet": "Heartbeat memory maintenance: reviewed `HEARTBEAT.md`, recent memory files (`2026-05-09`, `2026-05-08`, `2026-05-07`) and current `MEMORY.md`. No long-term MEMORY.md update needed; recent notes remain repetitive maintenance/status items and existing Platts/Polymarket/GitHub conte",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-09T19:00:37.644Z",
-      "lastRecalledAt": "2026-05-15T19:00:45.910Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
       "queryHashes": [
         "b86467cd03ca"
       ],
@@ -45934,7 +45936,8 @@
         "2026-05-14",
         "2026-05-13",
         "2026-05-15",
-        "2026-05-16"
+        "2026-05-16",
+        "2026-05-17"
       ],
       "conceptTags": [
         "heartbeat.md",
@@ -45956,12 +45959,12 @@
       "source": "memory",
       "snippet": "Heartbeat memory maintenance: reviewed recent memory files (`2026-05-09` newly created, `2026-05-08`, `2026-05-07`, `2026-05-06`) and current `MEMORY.md`. No new long-term MEMORY.md update needed; recent notes are repetitive maintenance logs and existing open issues (GitHub large",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-09T19:00:37.644Z",
-      "lastRecalledAt": "2026-05-15T19:00:45.910Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
       "queryHashes": [
         "f9349cbeaf46"
       ],
@@ -45972,7 +45975,8 @@
         "2026-05-12",
         "2026-05-14",
         "2026-05-15",
-        "2026-05-16"
+        "2026-05-16",
+        "2026-05-17"
       ],
       "conceptTags": [
         "memory.md",
@@ -49417,12 +49421,12 @@
       "source": "memory",
       "snippet": "2026-05-11 (Monday): Heartbeat memory maintenance: reviewed recent memory files (`2026-05-10`, `2026-05-09`, `2026-05-08`) and current `MEMORY.md`. No long-term update needed.",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-11T19:02:29.248Z",
-      "lastRecalledAt": "2026-05-15T19:00:45.910Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
       "queryHashes": [
         "28fb5afbbb34"
       ],
@@ -49431,7 +49435,8 @@
         "2026-05-11",
         "2026-05-15",
         "2026-05-14",
-        "2026-05-16"
+        "2026-05-16",
+        "2026-05-17"
       ],
       "conceptTags": [
         "memory.md",
@@ -55497,19 +55502,21 @@
       "endLine": 37,
       "source": "memory",
       "snippet": "# 2026-01-29 ## 今天发生了什么 - **12:55** - 首次启动！收到 Tianshu 的第一条消息 - **12:56** - 第一个任务：创建 `final_test.txt`，内容 \"Unraid Mapping Success\" - **12:59** - 查询新加坡天气（30°C，体感36°C，闷热） - **13:00** - 搜索 Grayce Tan 新闻（PLB 辞职事件） - **13:04** - 尝试访问 Elon Musk Twitter（浏览器不可用） - **13:13** - 检查配对设备（暂无） - **13:22** - 帮助解决 Control UI \"pairing required\" 问题 - 配置了 `gateway.controlUi.allowInsecureAuth: true` - 设置了 token 认证 - **13:24** - 正式认识！ - 我的名字：Moltbot - 我的人类：Tianshu ## 学到的 - Tianshu 在 Unraid 上运行我 - 他技术很强，喜欢用中文 - 局域网访问 Control UI 需要配置 allowInsecureAuth + token - bird CLI 需要用环境变量 AUTH_TOKEN 和 CT0，配置文件不被读取 ## Twitter 监控配置 - **监控账户**: - @JavierBlas (彭博社能源记者) - @realDonaldTrump (美国总统) - @elonmusk (Tes",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-12T18:11:48.562Z",
-      "lastRecalledAt": "2026-05-12T18:11:48.562Z",
+      "lastRecalledAt": "2026-05-17T18:12:57.913Z",
       "queryHashes": [
-        "946f10a77437"
+        "946f10a77437",
+        "055484333c66"
       ],
       "recallDays": [
         "2026-05-13",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-18"
       ],
       "conceptTags": [
         "gateway",
@@ -55529,19 +55536,21 @@
       "endLine": 230,
       "source": "memory",
       "snippet": "2. `npx bird` 没加载 `.twitter-env`，Twitter 认证失败 3. payload 写得太模糊，sub-agent 不知道具体怎么执行 **修复**: - 步骤1: 直接用 News Insights API 查询 heards（和 platts-insights-monitor.mjs 同一个端点） - 步骤2: `source .twitter-env && npx bird user-tweets @FluxOfficials -n 3 --json --plain` - payload 里写了完整可执行命令，不留模糊空间 **教训**: cron payload 必须写明具体命令和方法，不能假设 sub-agent 知道用什么工具。 --- ## 🔧 Telegram 主 Bot 修复 (15:30) **问题**: MoltbotSG 主 bot 没启动，只有 OilClaw bot 在运行 **原因**: 昨晚迁移到 accounts 结构时，主 bot token 留在顶层，没放进 accounts.default **修复**: config.patch 加了 accounts.default，包含完整的群组/topic/allowFrom 配置 **验证**: 重启后日志确认 `[default] starting provider (@SG_Moltbot)` ✅ --- ## W10 周报编写进展 (17:23 SGT) ### 草稿文件 - **路径**: `reports/周报草稿_2026-W10.m",
-      "recallCount": 1,
+      "recallCount": 2,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 1,
+      "totalScore": 2,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-12T18:11:48.562Z",
-      "lastRecalledAt": "2026-05-12T18:11:48.562Z",
+      "lastRecalledAt": "2026-05-17T18:12:57.913Z",
       "queryHashes": [
-        "946f10a77437"
+        "946f10a77437",
+        "055484333c66"
       ],
       "recallDays": [
         "2026-05-13",
-        "2026-05-12"
+        "2026-05-12",
+        "2026-05-18"
       ],
       "conceptTags": [
         "twitter-env",
@@ -55594,12 +55603,12 @@
       "source": "memory",
       "snippet": "2026-05-12 (Tuesday): Heartbeat memory maintenance: reviewed recent files and MEMORY.md. No long-term update needed.; Heartbeat memory maintenance: reviewed `HEARTBEAT.md`, recent memory files (`2026-05-12`, `2026-05-11`, `2026-05-10`) and current `MEMORY.md`. No long-term update",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-12T19:00:39.495Z",
-      "lastRecalledAt": "2026-05-15T19:00:45.910Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
       "queryHashes": [
         "a727ea7b8da3"
       ],
@@ -55607,7 +55616,8 @@
         "2026-05-13",
         "2026-05-12",
         "2026-05-16",
-        "2026-05-15"
+        "2026-05-15",
+        "2026-05-17"
       ],
       "conceptTags": [
         "memory.md",
@@ -61895,18 +61905,20 @@
       "source": "memory",
       "snippet": "2026-05-13 (Wednesday): Heartbeat memory maintenance: reviewed `HEARTBEAT.md`, recent memory files (`2026-05-13`, `2026-05-12`, `2026-05-11`) and current `MEMORY.md`; no long-term update needed.; Heartbeat memory maintenance: cleaned `MEMORY.md` by removing low-value promoted hea",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-13T19:00:37.630Z",
-      "lastRecalledAt": "2026-05-13T19:00:37.630Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
       "queryHashes": [
         "215866901dd9"
       ],
       "recallDays": [
         "2026-05-14",
-        "2026-05-13"
+        "2026-05-13",
+        "2026-05-17",
+        "2026-05-16"
       ],
       "conceptTags": [
         "heartbeat.md",
@@ -84224,6 +84236,1342 @@
         "sourceid",
         "b644b200",
         "492a"
+      ]
+    },
+    "memory:memory/2026-05-17.md:3:3": {
+      "key": "memory:memory/2026-05-17.md:3:3",
+      "path": "memory/2026-05-17.md",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "2026-05-17 (Sunday): Heartbeat memory maintenance: reviewed `HEARTBEAT.md`, recent memory files (`2026-05-17` newly created, `2026-05-16`, `2026-05-15`, `2026-05-14`) and current `MEMORY.md`; no new long-term update or cleanup needed.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "ca7d365d990f"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "memory.md",
+        "long-term",
+        "sunday",
+        "heartbeat",
+        "maintenance",
+        "reviewed",
+        "recent"
+      ]
+    },
+    "memory:memory/2026-05-16.md:3:4": {
+      "key": "memory:memory/2026-05-16.md:3:4",
+      "path": "memory/2026-05-16.md",
+      "startLine": 3,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "2026-05-16 (Saturday): Heartbeat memory maintenance: reviewed `HEARTBEAT.md`, recent memory files (`2026-05-16` newly created, `2026-05-15`, `2026-05-14`) and current `MEMORY.md`; cleaned one low-value promoted heartbeat-maintenance block from `MEMORY.md`.; Heartbeat memory maint",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "ccfae0e39afd"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "memory.md",
+        "low-value",
+        "heartbeat-maintenance",
+        "saturday",
+        "heartbeat",
+        "maintenance",
+        "reviewed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:43:43": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:43:43",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 43,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜5月16日（新加坡时间） 📰 Market Stories [1] 原油期货：WTI 收涨 $4.25/b 至 $105.42/b，ICE Brent 7月收涨 $3.54/b 至 $109.26/b。市场继续围绕霍尔木兹中断风险定价；美中峰会未给出明确解决路径。RBOB +9.62 c/gal，ULSD +14.78 c/gal。Platts CAS 数据显示 5月14日霍尔木兹至少 17 艘船通过，为5月至今最高。 [2] 美洲船燃：美国现货船燃整体上行，但洛杉矶走弱。Houston VLSFO $847/",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "4.25/b",
+        "105.42/b",
+        "3.54/b",
+        "109.26/b",
+        "9.62",
+        "c/gal",
+        "14.78",
+        "platts"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:44:44": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:44:44",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 44,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=939d7435-06c0-4af9-af46-8641e0604e32 [2] https://plattsconnect.spglobal.com/#platts/source?sourceId=7f9d02de-a04e-40a2-b407-6227a1dc96fc [3] https://plattsconnect.spglobal.com/#platts/source?sourceId=9145e6ee-d",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "9145e6ee-d",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "939d7435"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:45:45": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:45:45",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 45,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "Assistant: EPA diesel：最后名义听闻 NYMEX Jul ULSD +25.00 c/gal。 以上均为 5月15日 1:30pm 前 heard。 成品油｜Midwest Gasoline [14] Chicago C1/C2/C3 9 RVP：June BCX CBOB rate 成交 NYMEX Jul RBOB -12.00 cpg，10kb/cycle（5月15日 1:30pm CT 后 heard）。 链接： [5] https://plattsconnect.spglobal.com/#platts/source?sou",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "25.00",
+        "c/gal",
+        "c1/c2/c3",
+        "12.00",
+        "10kb/cycle",
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "epa"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:46:46": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:46:46",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 46,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=fbd81645-d959-4beb-8299-4a366d5e38b9 [11] https://plattsconnect.spglobal.com/#platts/source?sourceId=191cae09-c4bf-4c18-a30c-b9ca9946dcb1 [12] https://plattsconnect.spglobal.com/#platts/source?sourceId=19c23901",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "fbd81645",
+        "d959"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:47:47": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:47:47",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 47,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜5月16日早间更新 📰 Market Stories 1. 巴西 Santos 港 S10 超低硫柴油价格下跌。Platts 5月15日评估 FCA Santos S10 为 Real 5,272.60/立方米，日跌 Real 100；市场听闻买卖双方 offer 在 Petrobras EXA Paulinia 参考价上方约 Real 1,600/立方米。尽管 NYMEX ULSD 期货上涨，Santos 现货因补贴产品报价承压，暂未听闻成交。[1] 2. 美国柴油市场分化：Chicago ULSD 价差因本",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "272.60/立方米",
+        "600/立方米",
+        "platts",
+        "快报",
+        "更新",
+        "market",
+        "stories",
+        "巴西"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:48:48": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:48:48",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 48,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "Assistant: +$1.50/b，日跌 40 cents/b。含硫原油流向亚洲套利仍偏强：Mars medium sour 在 LOOP 装船运往韩国，另有6月船货订往韩国；Mars 评估为 cash WTI +$5/b，持平。[4] 📊 Heards 本次无新增 heards。 --- [1] https://plattsconnect.spglobal.com/#platts/source?sourceId=5b7528ea-0530-4ebc-80e8-a8bd8dd6f750 [2] https://plattsconnect.spglo",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "1.50/b",
+        "cents/b",
+        "5/b",
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "plattsconnect.spglo",
+        "1.50",
+        "cents"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:49:49": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:49:49",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 49,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜2026-05-16 05:21 SGT 🔥 Top News 1. Alberta 与加拿大联邦修订碳价协议，推进新的西海岸原油管道项目。协议为 2027 年 9 月 1 日最快启动、运力超 100 万桶/日的西海岸输油管道铺路，目标是扩大对亚洲等市场出口；Alberta 碳价将从当前 C$95/吨升至 2027 年 C$100/吨，2035 年升至 C$130/吨。[1] 📰 Market Stories 2. 美国汽油：5月15日汽油价格普遍上涨，受 NYMEX 6月 RBOB 期货强势反弹及供应风险支",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "万桶/日的西海岸输油管道铺路",
+        "95/吨升至",
+        "100/吨",
+        "130/吨",
+        "platts",
+        "快报",
+        "sgt",
+        "top"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:50:50": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:50:50",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 50,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "Assistant: Pipeline 5月15日按一笔成交评估在 NYMEX 6月 ULSD -29.25 cents/gal；USGC No.2 gasoil 评估参考与 ULSD 的最新 heard 关系及 RVO 成本。MOC 中一笔按 NYMEX 12月 ULSD -29 cents/gal 的 gap trade 被排除。[5] 6. USAC 航煤/柴油评估：New Jersey Buckeye Pipeline 航煤按一笔成交评估在 NYMEX 6月 ULSD -23 cents/gal；NYH 驳船航煤基于与 Buckeye Pipel",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "29.25",
+        "cents/gal",
+        "no.2",
+        "航煤/柴油评估",
+        "pipeline",
+        "成交",
+        "评估",
+        "nymex"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:51:51": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:51:51",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 51,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=453adbc5-b5c4-41f5-8e90-14d9e1e0f5db [4] https://plattsconnect.spglobal.com/#platts/source?sourceId=5dd931a4-0f31-4feb-b33d-fe059c75bd3b [5] https://plattsconnect.spglobal.com/#platts/source?sourceId=3a162d46-f",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "3a162d46-f",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "453adbc5"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:52:52": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:52:52",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 52,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜2026-05-16 02:50 SGT 🔥 重点新闻 / Stories 1. 美国 Commonwealth LNG 项目 FID 落地：Caturus 启动路易斯安那 130亿美元 LNG 出口项目，设计产能 950万吨/年，目标 2030投产；已锁定 850万吨/年长期承购，买家包括 Glencore、Mercuria、EQT、Aramco Trading、Petronas。Platts 评估 6月 JKM 为 $18.465/MMBtu，日涨约3%，较战前高约73%。[1] 📰 Market Sto",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "950万吨/年",
+        "850万吨/年长期承购",
+        "18.465/mmbtu",
+        "platts",
+        "快报",
+        "sgt",
+        "重点",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:53:53": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:53:53",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 53,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "Assistant: Rotterdam 27,500吨船型运费净回推。[5] 📊 Heards 原油 6. 美洲原油 WTI MEH：6月 Houston 货听闻多笔成交，主要在 WTI +$1.55 至 +$1.60/b；其中 150kb、60kb 等多笔成交。[6][7] 7. WTI Midland：6月 Midland 货听闻成交在 WTI +$1.10 至 +$1.35/b，成交量含 30kb、60kb。[8][9] 8. Cold Lake：6月 Houston 货 62kb 听闻成交在 NYMEX WTI CMA -$5.65/b。[1",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "1.55",
+        "1.60/b",
+        "1.10",
+        "1.35/b",
+        "5.65/b",
+        "rotterdam",
+        "27,500",
+        "船型"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:54:54": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:54:54",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 54,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "Assistant: May/June 期货月差听闻 $7.25/b。[20] LNG 15. 本轮无新增 LNG heards；LNG 相关新增为 Commonwealth LNG 项目 FID 新闻，见 [1]。 --- [1] https://plattsconnect.spglobal.com/#platts/source?sourceId=d6984444-f9bb-4c0c-a388-9978755df395 [2] https://plattsconnect.spglobal.com/#platts/source?sourceId=4517",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "may/june",
+        "7.25/b",
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "may",
+        "june",
+        "期货",
+        "听闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:55:55": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:55:55",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 55,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=44d70c60-729e-43b0-8028-396eaa6833e6 [8] https://plattsconnect.spglobal.com/#platts/source?sourceId=155fb617-5519-488c-ac6b-95f6ae4e9f27 [9] https://plattsconnect.spglobal.com/#platts/source?sourceId=d3ca9f5f-9",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "d3ca9f5f-9",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "44d70c60"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:56:56": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:56:56",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 56,
+      "endLine": 56,
+      "source": "memory",
+      "snippet": "Assistant: [15] https://plattsconnect.spglobal.com/#platts/source?sourceId=b395789b-25a0-45ff-973c-7e4418262764 [16] https://plattsconnect.spglobal.com/#platts/source?sourceId=b60a81d5-29a8-4584-bfae-d6561b613c99 [17] https://plattsconnect.spglobal.com/#platts/source?sourceId=d6e",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "b395789b",
+        "25a0"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:57:57": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:57:57",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 57,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-16 10:04 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:58:58": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:58:58",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 58,
+      "endLine": 58,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-16 12:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:59:59": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:59:59",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 59,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "Assistant: 📰 Market Stories [1] 拉美船燃日报：5月15日拉美船燃价格随油价上涨，Mercosur 港口 VLSFO 涨幅最大。Santos VLSFO 评估价 $823/mt，日涨 $22；Buenos Aires VLSFO $814/mt，日涨 $21。Panama 供需基本平衡，价格方向受地缘因素影响；Balboa VLSFO 涨至 $992/mt ex-wharf，MGO 涨至 $1,477/mt。 [2] 伊朗战争每日更新：霍尔木兹海峡仍处于近乎关闭状态，但5月14日有 17 艘船通过，为5月1日以来最高。2月",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "823/mt",
+        "814/mt",
+        "992/mt",
+        "ex-wharf",
+        "477/mt",
+        "market",
+        "stories",
+        "日报"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:60:60": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:60:60",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 60,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=285859fb-769b-4282-a679-be26187b97e8 [2] https://plattsconnect.spglobal.com/#platts/source?sourceId=02ea46b3-47e5-4ab4-953c-9d2896262b0a [3] https://plattsconnect.spglobal.com/#platts/source?sourceId=11d46322-7",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "11d46322-7",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "285859fb"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:61:61": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:61:61",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 61,
+      "endLine": 61,
+      "source": "memory",
+      "snippet": "Assistant: Platts 市场快报｜5月16日 06:10 SGT 📰 Market Stories 1. 美国航煤：USGC Colonial Pipeline 第30周期航煤评估为 NYMEX 6月 ULSD -29.25 cents/gal，日跌1.50 cents/gal，为2023年12月以来低位。Baytown 炼厂 FCCU 3 号装置 Reactor 501A 入口管道泄漏导致 SO2 排放；同时 USGC-欧洲航煤套利窗口扩大至 $4.49/b。洛杉矶管道航煤差价反弹至期货 +12.25 cents/gal，加州航煤库存降至",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "29.25",
+        "cents/gal",
+        "日跌1.50",
+        "usgc-欧洲航煤套利窗口扩大至",
+        "4.49/b",
+        "12.25",
+        "platts",
+        "市场"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:62:62": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:62:62",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 62,
+      "endLine": 62,
+      "source": "memory",
+      "snippet": "Assistant: $13/b。5月15日 VLSFO 6月 crack swap 成交 95,000 bbl。Brent 7月合约收 $109.36/b，日涨 $3.61/b。[4] 5. 拉美 Dated Brent strip 方法说明：AAXBR00 反映拉美原油装期对应的 forward Dated Brent 价值；例如6月1日评估7月装期拉美原油时，相关基准使用7月1-31日 Dated Brent swaps 平均水平。[5] 📊 Heards 暂无新增 heards。 --- 链接： [1] https://plattsconnec",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "13/b",
+        "109.36/b",
+        "3.61/b",
+        "相关基准使用7月1-31日",
+        "vlsfo",
+        "crack",
+        "swap",
+        "成交"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:63:63": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:63:63",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 63,
+      "endLine": 63,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-16 06:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:64:64": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:64:64",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 64,
+      "endLine": 64,
+      "source": "memory",
+      "snippet": "Assistant: Platts 市场快报｜5月16日 06:10 SGT 📰 Market Stories 1. 美国航煤：USGC Colonial Pipeline 第30周期航煤评估为 NYMEX 6月 ULSD -29.25 cents/gal，日跌1.50 cents/gal，为2023年12月以来低位。Baytown 炼厂 FCCU 3 号装置 Reactor 501A 入口管道泄漏导致 SO2 排放；同时 USGC-欧洲航煤套利窗口扩大至 $4.49/b。洛杉矶管道航煤差价反弹至期货 +12.25 cents/gal，加州航煤库存降至",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "29.25",
+        "cents/gal",
+        "日跌1.50",
+        "usgc-欧洲航煤套利窗口扩大至",
+        "4.49/b",
+        "12.25",
+        "platts",
+        "市场"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:65:65": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:65:65",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 65,
+      "endLine": 65,
+      "source": "memory",
+      "snippet": "Assistant: $13/b。5月15日 VLSFO 6月 crack swap 成交 95,000 bbl。Brent 7月合约收 $109.36/b，日涨 $3.61/b。[4] 5. 拉美 Dated Brent strip 方法说明：AAXBR00 反映拉美原油装期对应的 forward Dated Brent 价值；例如6月1日评估7月装期拉美原油时，相关基准使用7月1-31日 Dated Brent swaps 平均水平。[5] 📊 Heards 暂无新增 heards。 --- 链接： [1] https://plattsconnec",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "13/b",
+        "109.36/b",
+        "3.61/b",
+        "相关基准使用7月1-31日",
+        "vlsfo",
+        "crack",
+        "swap",
+        "成交"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:66:66": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:66:66",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 66,
+      "endLine": 66,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-16 16:04 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:67:67": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:67:67",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 67,
+      "endLine": 67,
+      "source": "memory",
+      "snippet": "Assistant: 📰 Market Stories [1] 拉美船燃日报：5月15日拉美船燃价格随油价上涨，Mercosur 港口 VLSFO 涨幅最大。Santos VLSFO 评估价 $823/mt，日涨 $22；Buenos Aires VLSFO $814/mt，日涨 $21。Panama 供需基本平衡，价格方向受地缘因素影响；Balboa VLSFO 涨至 $992/mt ex-wharf，MGO 涨至 $1,477/mt。 [2] 伊朗战争每日更新：霍尔木兹海峡仍处于近乎关闭状态，但5月14日有 17 艘船通过，为5月1日以来最高。2月",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "823/mt",
+        "814/mt",
+        "992/mt",
+        "ex-wharf",
+        "477/mt",
+        "market",
+        "stories",
+        "日报"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:68:68": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:68:68",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 68,
+      "endLine": 68,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=285859fb-769b-4282-a679-be26187b97e8 [2] https://plattsconnect.spglobal.com/#platts/source?sourceId=02ea46b3-47e5-4ab4-953c-9d2896262b0a [3] https://plattsconnect.spglobal.com/#platts/source?sourceId=11d46322-7",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "11d46322-7",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "285859fb"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:69:69": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:69:69",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 69,
+      "endLine": 69,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-16 22:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:70:70": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:70:70",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 70,
+      "endLine": 70,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-16 08:04 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:71:71": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:71:71",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 71,
+      "endLine": 71,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜5月16日（新加坡时间） 📰 Market Stories [1] 原油期货：WTI 收涨 $4.25/b 至 $105.42/b，ICE Brent 7月收涨 $3.54/b 至 $109.26/b。市场继续围绕霍尔木兹中断风险定价；美中峰会未给出明确解决路径。RBOB +9.62 c/gal，ULSD +14.78 c/gal。Platts CAS 数据显示 5月14日霍尔木兹至少 17 艘船通过，为5月至今最高。 [2] 美洲船燃：美国现货船燃整体上行，但洛杉矶走弱。Houston VLSFO $847/",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "4.25/b",
+        "105.42/b",
+        "3.54/b",
+        "109.26/b",
+        "9.62",
+        "c/gal",
+        "14.78",
+        "platts"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:72:72": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:72:72",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 72,
+      "endLine": 72,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=939d7435-06c0-4af9-af46-8641e0604e32 [2] https://plattsconnect.spglobal.com/#platts/source?sourceId=7f9d02de-a04e-40a2-b407-6227a1dc96fc [3] https://plattsconnect.spglobal.com/#platts/source?sourceId=9145e6ee-d",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "9145e6ee-d",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "939d7435"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:73:73": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:73:73",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 73,
+      "endLine": 73,
+      "source": "memory",
+      "snippet": "Assistant: EPA diesel：最后名义听闻 NYMEX Jul ULSD +25.00 c/gal。 以上均为 5月15日 1:30pm 前 heard。 成品油｜Midwest Gasoline [14] Chicago C1/C2/C3 9 RVP：June BCX CBOB rate 成交 NYMEX Jul RBOB -12.00 cpg，10kb/cycle（5月15日 1:30pm CT 后 heard）。 链接： [5] https://plattsconnect.spglobal.com/#platts/source?sou",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "25.00",
+        "c/gal",
+        "c1/c2/c3",
+        "12.00",
+        "10kb/cycle",
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "epa"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:74:74": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:74:74",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 74,
+      "endLine": 74,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=fbd81645-d959-4beb-8299-4a366d5e38b9 [11] https://plattsconnect.spglobal.com/#platts/source?sourceId=191cae09-c4bf-4c18-a30c-b9ca9946dcb1 [12] https://plattsconnect.spglobal.com/#platts/source?sourceId=19c23901",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "fbd81645",
+        "d959"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:75:75": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:75:75",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 75,
+      "endLine": 75,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜5月16日早间更新 📰 Market Stories 1. 巴西 Santos 港 S10 超低硫柴油价格下跌。Platts 5月15日评估 FCA Santos S10 为 Real 5,272.60/立方米，日跌 Real 100；市场听闻买卖双方 offer 在 Petrobras EXA Paulinia 参考价上方约 Real 1,600/立方米。尽管 NYMEX ULSD 期货上涨，Santos 现货因补贴产品报价承压，暂未听闻成交。[1] 2. 美国柴油市场分化：Chicago ULSD 价差因本",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "272.60/立方米",
+        "600/立方米",
+        "platts",
+        "快报",
+        "更新",
+        "market",
+        "stories",
+        "巴西"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:76:76": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:76:76",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 76,
+      "endLine": 76,
+      "source": "memory",
+      "snippet": "Assistant: +$1.50/b，日跌 40 cents/b。含硫原油流向亚洲套利仍偏强：Mars medium sour 在 LOOP 装船运往韩国，另有6月船货订往韩国；Mars 评估为 cash WTI +$5/b，持平。[4] 📊 Heards 本次无新增 heards。 --- [1] https://plattsconnect.spglobal.com/#platts/source?sourceId=5b7528ea-0530-4ebc-80e8-a8bd8dd6f750 [2] https://plattsconnect.spglo",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "1.50/b",
+        "cents/b",
+        "5/b",
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "plattsconnect.spglo",
+        "1.50",
+        "cents"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:77:77": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:77:77",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 77,
+      "endLine": 77,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜2026-05-16 05:21 SGT 🔥 Top News 1. Alberta 与加拿大联邦修订碳价协议，推进新的西海岸原油管道项目。协议为 2027 年 9 月 1 日最快启动、运力超 100 万桶/日的西海岸输油管道铺路，目标是扩大对亚洲等市场出口；Alberta 碳价将从当前 C$95/吨升至 2027 年 C$100/吨，2035 年升至 C$130/吨。[1] 📰 Market Stories 2. 美国汽油：5月15日汽油价格普遍上涨，受 NYMEX 6月 RBOB 期货强势反弹及供应风险支",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "万桶/日的西海岸输油管道铺路",
+        "95/吨升至",
+        "100/吨",
+        "130/吨",
+        "platts",
+        "快报",
+        "sgt",
+        "top"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:78:78": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:78:78",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 78,
+      "endLine": 78,
+      "source": "memory",
+      "snippet": "Assistant: Pipeline 5月15日按一笔成交评估在 NYMEX 6月 ULSD -29.25 cents/gal；USGC No.2 gasoil 评估参考与 ULSD 的最新 heard 关系及 RVO 成本。MOC 中一笔按 NYMEX 12月 ULSD -29 cents/gal 的 gap trade 被排除。[5] 6. USAC 航煤/柴油评估：New Jersey Buckeye Pipeline 航煤按一笔成交评估在 NYMEX 6月 ULSD -23 cents/gal；NYH 驳船航煤基于与 Buckeye Pipel",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "29.25",
+        "cents/gal",
+        "no.2",
+        "航煤/柴油评估",
+        "pipeline",
+        "成交",
+        "评估",
+        "nymex"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:79:79": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:79:79",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 79,
+      "endLine": 79,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=453adbc5-b5c4-41f5-8e90-14d9e1e0f5db [4] https://plattsconnect.spglobal.com/#platts/source?sourceId=5dd931a4-0f31-4feb-b33d-fe059c75bd3b [5] https://plattsconnect.spglobal.com/#platts/source?sourceId=3a162d46-f",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "3a162d46-f",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "453adbc5"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:80:80": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:80:80",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 80,
+      "endLine": 80,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-16 20:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:81:81": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:81:81",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 81,
+      "endLine": 81,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-16 18:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-16.txt:82:82": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-16.txt:82:82",
+      "path": "memory/.dreams/session-corpus/2026-05-16.txt",
+      "startLine": 82,
+      "endLine": 82,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-16 14:04 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "b43f3073c69a"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-17.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-17.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-17.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-17 00:04 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "queryHashes": [
+        "7c821d0b4905"
+      ],
+      "recallDays": [
+        "2026-05-17",
+        "2026-05-16"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
       ]
     }
   }
