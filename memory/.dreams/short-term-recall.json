@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-17T18:12:57.913Z",
+  "updatedAt": "2026-05-17T19:00:41.057Z",
   "entries": {
     "memory:memory/2026-02-03.md:30:76": {
       "key": "memory:memory/2026-02-03.md:30:76",
@@ -45921,12 +45921,12 @@
       "source": "memory",
       "snippet": "Heartbeat memory maintenance: reviewed `HEARTBEAT.md`, recent memory files (`2026-05-09`, `2026-05-08`, `2026-05-07`) and current `MEMORY.md`. No long-term MEMORY.md update needed; recent notes remain repetitive maintenance/status items and existing Platts/Polymarket/GitHub conte",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-09T19:00:37.644Z",
-      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-17T19:00:37.041Z",
       "queryHashes": [
         "b86467cd03ca"
       ],
@@ -45937,7 +45937,8 @@
         "2026-05-13",
         "2026-05-15",
         "2026-05-16",
-        "2026-05-17"
+        "2026-05-17",
+        "2026-05-18"
       ],
       "conceptTags": [
         "heartbeat.md",
@@ -49421,12 +49422,12 @@
       "source": "memory",
       "snippet": "2026-05-11 (Monday): Heartbeat memory maintenance: reviewed recent memory files (`2026-05-10`, `2026-05-09`, `2026-05-08`) and current `MEMORY.md`. No long-term update needed.",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-11T19:02:29.248Z",
-      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-17T19:00:37.041Z",
       "queryHashes": [
         "28fb5afbbb34"
       ],
@@ -49436,7 +49437,8 @@
         "2026-05-15",
         "2026-05-14",
         "2026-05-16",
-        "2026-05-17"
+        "2026-05-17",
+        "2026-05-18"
       ],
       "conceptTags": [
         "memory.md",
@@ -55516,7 +55518,8 @@
       "recallDays": [
         "2026-05-13",
         "2026-05-12",
-        "2026-05-18"
+        "2026-05-18",
+        "2026-05-17"
       ],
       "conceptTags": [
         "gateway",
@@ -55550,7 +55553,8 @@
       "recallDays": [
         "2026-05-13",
         "2026-05-12",
-        "2026-05-18"
+        "2026-05-18",
+        "2026-05-17"
       ],
       "conceptTags": [
         "twitter-env",
@@ -55603,12 +55607,12 @@
       "source": "memory",
       "snippet": "2026-05-12 (Tuesday): Heartbeat memory maintenance: reviewed recent files and MEMORY.md. No long-term update needed.; Heartbeat memory maintenance: reviewed `HEARTBEAT.md`, recent memory files (`2026-05-12`, `2026-05-11`, `2026-05-10`) and current `MEMORY.md`. No long-term update",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-12T19:00:39.495Z",
-      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-17T19:00:37.041Z",
       "queryHashes": [
         "a727ea7b8da3"
       ],
@@ -55617,7 +55621,8 @@
         "2026-05-12",
         "2026-05-16",
         "2026-05-15",
-        "2026-05-17"
+        "2026-05-17",
+        "2026-05-18"
       ],
       "conceptTags": [
         "memory.md",
@@ -61905,12 +61910,12 @@
       "source": "memory",
       "snippet": "2026-05-13 (Wednesday): Heartbeat memory maintenance: reviewed `HEARTBEAT.md`, recent memory files (`2026-05-13`, `2026-05-12`, `2026-05-11`) and current `MEMORY.md`; no long-term update needed.; Heartbeat memory maintenance: cleaned `MEMORY.md` by removing low-value promoted hea",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-13T19:00:37.630Z",
-      "lastRecalledAt": "2026-05-16T19:00:36.337Z",
+      "lastRecalledAt": "2026-05-17T19:00:37.041Z",
       "queryHashes": [
         "215866901dd9"
       ],
@@ -61918,7 +61923,8 @@
         "2026-05-14",
         "2026-05-13",
         "2026-05-17",
-        "2026-05-16"
+        "2026-05-16",
+        "2026-05-18"
       ],
       "conceptTags": [
         "heartbeat.md",
@@ -69663,18 +69669,20 @@
       "source": "memory",
       "snippet": "2026-05-14 (Thursday): Heartbeat memory maintenance: reviewed `HEARTBEAT.md`, recent memory files (`2026-05-14`, `2026-05-13`, `2026-05-12`) and current `MEMORY.md`; no new long-term update or cleanup needed.; Heartbeat memory maintenance: reviewed `HEARTBEAT.md`, recent memory f",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-14T19:00:38.620Z",
-      "lastRecalledAt": "2026-05-14T19:00:38.620Z",
+      "lastRecalledAt": "2026-05-17T19:00:37.041Z",
       "queryHashes": [
         "130e556d2bab"
       ],
       "recallDays": [
         "2026-05-15",
-        "2026-05-14"
+        "2026-05-14",
+        "2026-05-18",
+        "2026-05-17"
       ],
       "conceptTags": [
         "heartbeat.md",
@@ -85566,6 +85574,444 @@
       "recallDays": [
         "2026-05-17",
         "2026-05-16"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-17.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-17.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-05-17.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜5月17日 📰 Market Stories [1] Saudi Arabian Refineries 与中国 Ally Hydrogen Energy 签署非约束性 MOU，计划在沙特红海沿岸 Jazan 建设绿色氨生产厂，作为当地氨和氢生产枢纽的一部分。 该公司此前在2月已与英国 AGR Renewable Energy 签署 MOU，后者拟购买该工厂 100% 绿色氨产量。Platts 5月15日评估中东 FOB 氨价为 805美元/吨，较2月27日的 475美元/吨明显上涨。 📊 Heards 今日暂",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-17T19:00:37.041Z",
+      "lastRecalledAt": "2026-05-17T19:00:37.041Z",
+      "queryHashes": [
+        "7c821d0b4905"
+      ],
+      "recallDays": [
+        "2026-05-18",
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "805美元/吨",
+        "475美元/吨明显上涨",
+        "platts",
+        "快报",
+        "market",
+        "stories",
+        "saudi",
+        "arabian"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-17.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-17.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-17.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜5月17日 📰 Market Stories [1] Saudi Arabian Refineries 与中国 Ally Hydrogen Energy 签署非约束性 MOU，计划在沙特红海沿岸 Jazan 建设绿色氨生产厂，作为当地氨和氢生产枢纽的一部分。 该公司此前在2月已与英国 AGR Renewable Energy 签署 MOU，后者拟购买该工厂 100% 绿色氨产量。Platts 5月15日评估中东 FOB 氨价为 805美元/吨，较2月27日的 475美元/吨明显上涨。 📊 Heards 今日暂",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-17T19:00:37.041Z",
+      "lastRecalledAt": "2026-05-17T19:00:37.041Z",
+      "queryHashes": [
+        "7c821d0b4905"
+      ],
+      "recallDays": [
+        "2026-05-18",
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "805美元/吨",
+        "475美元/吨明显上涨",
+        "platts",
+        "快报",
+        "market",
+        "stories",
+        "saudi",
+        "arabian"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-17.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-17.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-17.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: 🌊 Polymarket 监控：Strait of Hormuz traffic returns to normal by May 15? 17/05/2026, 06:00 pm SGT Yes: 0.1% No: 99.9% 变化: +0.0pt vs上次 24h: +0.0pt；7d: -0.9pt 24h成交量: $86K 总成交量: $17.47M 流动性: $2.18M Bid/Ask: 0.1% / 0.2%（spread 0.1pt）",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-17T19:00:37.041Z",
+      "lastRecalledAt": "2026-05-17T19:00:37.041Z",
+      "queryHashes": [
+        "7c821d0b4905"
+      ],
+      "recallDays": [
+        "2026-05-18",
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "17/05/2026",
+        "0.1",
+        "99.9",
+        "0.0pt",
+        "0.9pt",
+        "17.47m",
+        "2.18m",
+        "bid/ask"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-17.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-17.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-17.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-17 20:04 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-17T19:00:37.041Z",
+      "lastRecalledAt": "2026-05-17T19:00:37.041Z",
+      "queryHashes": [
+        "7c821d0b4905"
+      ],
+      "recallDays": [
+        "2026-05-18",
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-17.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-17.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-17.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-17 12:04 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-17T19:00:37.041Z",
+      "lastRecalledAt": "2026-05-17T19:00:37.041Z",
+      "queryHashes": [
+        "7c821d0b4905"
+      ],
+      "recallDays": [
+        "2026-05-18",
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-17.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-17.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-17.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-17 08:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-17T19:00:37.041Z",
+      "lastRecalledAt": "2026-05-17T19:00:37.041Z",
+      "queryHashes": [
+        "7c821d0b4905"
+      ],
+      "recallDays": [
+        "2026-05-18",
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-17.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-17.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-05-17.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: 飞驰人生3 4K HDR 下载完成了，文件在 /downloads。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-17T19:00:37.041Z",
+      "lastRecalledAt": "2026-05-17T19:00:37.041Z",
+      "queryHashes": [
+        "7c821d0b4905"
+      ],
+      "recallDays": [
+        "2026-05-18",
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "人生",
+        "hdr",
+        "下载",
+        "完成",
+        "文件",
+        "downloads"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-17.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-17.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-05-17.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-17 16:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-17T19:00:37.041Z",
+      "lastRecalledAt": "2026-05-17T19:00:37.041Z",
+      "queryHashes": [
+        "7c821d0b4905"
+      ],
+      "recallDays": [
+        "2026-05-18",
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-17.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-17.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-05-17.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-17 22:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-17T19:00:37.041Z",
+      "lastRecalledAt": "2026-05-17T19:00:37.041Z",
+      "queryHashes": [
+        "7c821d0b4905"
+      ],
+      "recallDays": [
+        "2026-05-18",
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-17.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-17.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-05-17.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-17 18:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-17T19:00:37.041Z",
+      "lastRecalledAt": "2026-05-17T19:00:37.041Z",
+      "queryHashes": [
+        "7c821d0b4905"
+      ],
+      "recallDays": [
+        "2026-05-18",
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-17.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-17.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-05-17.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ Cron 安全审计告警 1. **Memory Backup (Daily)** - Job: `c22828ba-b1cb-4113-91f4-84f26430bb88` - 状态：enabled - 最近状态：连续 5 次 error - 最近错误：Agent couldn't generate a response - Delivery：none 建议检查备份任务是否仍正常执行，避免记忆备份长期失效。 2. **PLDT Earnings Check** - Job: `416477c9-cf11-4678-8d3c-7",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-17T19:00:37.041Z",
+      "lastRecalledAt": "2026-05-17T19:00:37.041Z",
+      "queryHashes": [
+        "7c821d0b4905"
+      ],
+      "recallDays": [
+        "2026-05-18",
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "backup",
+        "备份",
+        "416477c9-cf11-4678-8d3c-7",
+        "cron",
+        "安全",
+        "审计",
+        "告警",
+        "job"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-17.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-17.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-05-17.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-17 10:04 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-17T19:00:37.041Z",
+      "lastRecalledAt": "2026-05-17T19:00:37.041Z",
+      "queryHashes": [
+        "7c821d0b4905"
+      ],
+      "recallDays": [
+        "2026-05-18",
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-17.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-17.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-05-17.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-17 14:04 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-17T19:00:37.041Z",
+      "lastRecalledAt": "2026-05-17T19:00:37.041Z",
+      "queryHashes": [
+        "7c821d0b4905"
+      ],
+      "recallDays": [
+        "2026-05-18",
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-17.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-17.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-05-17.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-17 06:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-17T19:00:37.041Z",
+      "lastRecalledAt": "2026-05-17T19:00:37.041Z",
+      "queryHashes": [
+        "7c821d0b4905"
+      ],
+      "recallDays": [
+        "2026-05-18",
+        "2026-05-17"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-18.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-18.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-18.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-18 00:04 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-17T19:00:37.041Z",
+      "lastRecalledAt": "2026-05-17T19:00:37.041Z",
+      "queryHashes": [
+        "cda70fe5512d"
+      ],
+      "recallDays": [
+        "2026-05-18",
+        "2026-05-17"
       ],
       "conceptTags": [
         "sgt",
