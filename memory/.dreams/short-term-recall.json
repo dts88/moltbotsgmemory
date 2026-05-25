@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-05-24T02:06:21.230Z",
+  "updatedAt": "2026-05-25T16:49:27.537Z",
   "entries": {
     "memory:memory/2026-02-03.md:30:76": {
       "key": "memory:memory/2026-02-03.md:30:76",
@@ -4689,13 +4689,13 @@
       "endLine": 29,
       "source": "memory",
       "snippet": "# 2026-04-29 - 对顶层 Platts token 机制做了系统级调整。 - 新增 `scripts/platts-auth.mjs`，统一处理：读取凭证、判断过期、refresh_token 刷新、以及在 refresh 失败且 token 已过期时，使用环境变量 `Platts_ACCOUNT` / `Platts_PASSWORD` 通过 TokenGeneration `/auth/api` 自动重登。 - 已把主要依赖 Platts token 的脚本切到这套共享逻辑，包括： - `platts-insights-monitor.mjs` - `platts-refresh-token.mjs` - `platts-login.mjs` - `platts-price-data.mjs` - `platts-structured-heards.mjs` - `foiz-monitor.mjs` - `sg-inventory.mjs` - `inventory-weekly-report.mjs` - `mogas-moc-analysis.mjs` - `mogas-moc-ewindow.mjs` - `mogas-mops-strip.mjs` - `go-jet-moc-ewindow.mjs` - `verify-mogas-kdc.mjs` - `distillates-moc.mjs` - 已验证： - 所有上述关键脚本 `node --check` 通过 - 环境变量存在（未",
-      "recallCount": 15,
+      "recallCount": 19,
       "dailyCount": 0,
       "groundedCount": 0,
-      "totalScore": 15,
+      "totalScore": 19,
       "maxScore": 1,
       "firstRecalledAt": "2026-05-04T03:30:29.995Z",
-      "lastRecalledAt": "2026-05-24T02:06:21.230Z",
+      "lastRecalledAt": "2026-05-25T16:49:27.537Z",
       "queryHashes": [
         "85716757f789",
         "48d50ab3d6a7",
@@ -4710,7 +4710,11 @@
         "b6fef557ac30",
         "5f86b4b305f7",
         "5f3c8c990576",
-        "5292f3ac2741"
+        "5292f3ac2741",
+        "5b2c6bc3de8f",
+        "cd6589947ab7",
+        "fd059fc7fd8a",
+        "934407b31106"
       ],
       "recallDays": [
         "2026-05-04",
@@ -4719,7 +4723,9 @@
         "2026-05-14",
         "2026-05-16",
         "2026-05-17",
-        "2026-05-24"
+        "2026-05-24",
+        "2026-05-25",
+        "2026-05-26"
       ],
       "conceptTags": [
         "scripts/platts-auth.mjs",
@@ -84273,12 +84279,12 @@
       "source": "memory",
       "snippet": "2026-05-17 (Sunday): Heartbeat memory maintenance: reviewed `HEARTBEAT.md`, recent memory files (`2026-05-17` newly created, `2026-05-16`, `2026-05-15`, `2026-05-14`) and current `MEMORY.md`; no new long-term update or cleanup needed.",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-16T19:00:36.337Z",
-      "lastRecalledAt": "2026-05-23T19:00:42.517Z",
+      "lastRecalledAt": "2026-05-24T19:00:39.228Z",
       "queryHashes": [
         "ca7d365d990f"
       ],
@@ -84289,7 +84295,8 @@
         "2026-05-20",
         "2026-05-22",
         "2026-05-23",
-        "2026-05-24"
+        "2026-05-24",
+        "2026-05-25"
       ],
       "conceptTags": [
         "heartbeat.md",
@@ -86058,12 +86065,12 @@
       "source": "memory",
       "snippet": "2026-05-18 (Monday): Heartbeat memory maintenance: reviewed `HEARTBEAT.md`, recent memory files (`2026-05-18` newly created, `2026-05-17`, `2026-05-16`, `2026-05-15`) and current `MEMORY.md`; no new long-term update or cleanup needed.",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-19T16:23:20.923Z",
-      "lastRecalledAt": "2026-05-23T19:00:42.517Z",
+      "lastRecalledAt": "2026-05-24T19:00:39.228Z",
       "queryHashes": [
         "f2bd5daba4fc"
       ],
@@ -86073,7 +86080,8 @@
         "2026-05-22",
         "2026-05-21",
         "2026-05-23",
-        "2026-05-24"
+        "2026-05-24",
+        "2026-05-25"
       ],
       "conceptTags": [
         "heartbeat.md",
@@ -90062,12 +90070,12 @@
       "source": "memory",
       "snippet": "2026-05-20 (Wednesday): 08:04 heartbeat memory maintenance: reviewed `HEARTBEAT.md`, recent memory files (`2026-05-18` only; `2026-05-19` and today were absent before this note) and `MEMORY.md`; no new long-term update or cleanup needed.; 11:07 heartbeat memory maintenance: revie",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-20T19:00:41.609Z",
-      "lastRecalledAt": "2026-05-23T19:00:42.517Z",
+      "lastRecalledAt": "2026-05-24T19:00:39.228Z",
       "queryHashes": [
         "d633e8f17da8"
       ],
@@ -90075,7 +90083,8 @@
         "2026-05-21",
         "2026-05-20",
         "2026-05-24",
-        "2026-05-23"
+        "2026-05-23",
+        "2026-05-25"
       ],
       "conceptTags": [
         "heartbeat.md",
@@ -90096,12 +90105,12 @@
       "source": "memory",
       "snippet": "2026-05-20 (Wednesday): 18:37 heartbeat memory maintenance: reviewed `HEARTBEAT.md`, today, `2026-05-19` (absent), `2026-05-18`, and `MEMORY.md`; no durable long-term update or cleanup needed.",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-20T19:00:41.609Z",
-      "lastRecalledAt": "2026-05-23T19:00:42.517Z",
+      "lastRecalledAt": "2026-05-24T19:00:39.228Z",
       "queryHashes": [
         "d633e8f17da8"
       ],
@@ -90109,7 +90118,8 @@
         "2026-05-21",
         "2026-05-20",
         "2026-05-24",
-        "2026-05-23"
+        "2026-05-23",
+        "2026-05-25"
       ],
       "conceptTags": [
         "heartbeat.md",
@@ -97663,18 +97673,20 @@
       "source": "memory",
       "snippet": "2026-05-21 (Thursday): 06:16 heartbeat memory maintenance: reviewed `HEARTBEAT.md`, recent memory files (`2026-05-21` newly created, `2026-05-20`, `2026-05-19` absent, `2026-05-18`) and `MEMORY.md`; no new durable long-term update or cleanup needed.; 18:47 heartbeat memory mainte",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-05-21T19:00:35.714Z",
-      "lastRecalledAt": "2026-05-21T19:00:35.714Z",
+      "lastRecalledAt": "2026-05-24T19:00:39.228Z",
       "queryHashes": [
         "f698e45e49cd"
       ],
       "recallDays": [
         "2026-05-22",
-        "2026-05-21"
+        "2026-05-21",
+        "2026-05-25",
+        "2026-05-24"
       ],
       "conceptTags": [
         "heartbeat.md",
@@ -112820,6 +112832,510 @@
       "conceptTags": [
         "backup",
         "backup-complete"
+      ]
+    },
+    "memory:memory/2026-05-24.md:3:5": {
+      "key": "memory:memory/2026-05-24.md:3:5",
+      "path": "memory/2026-05-24.md",
+      "startLine": 3,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "2026-05-24 (Sunday): 05:06 heartbeat memory maintenance: reviewed `HEARTBEAT.md`, recent memory files (`2026-05-24` newly created, `2026-05-23`, `2026-05-22`, `2026-05-21`) and `MEMORY.md`; no durable long-term update or cleanup needed.; 10:09 heartbeat memory maintenance: review",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.62,
+      "maxScore": 0.62,
+      "firstRecalledAt": "2026-05-24T19:00:39.228Z",
+      "lastRecalledAt": "2026-05-24T19:00:39.228Z",
+      "queryHashes": [
+        "e87913ef436c"
+      ],
+      "recallDays": [
+        "2026-05-25",
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "memory.md",
+        "long-term",
+        "sunday",
+        "heartbeat",
+        "maintenance",
+        "reviewed",
+        "recent"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-24 18:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-24T19:00:39.228Z",
+      "lastRecalledAt": "2026-05-24T19:00:39.228Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-25",
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: ⚠️ Cron 安全审计告警 1. **PLDT Earnings Check** - Job: `416477c9-cf11-4678-8d3c-7a2a68a23b32` - 状态：enabled - 风险：一次性财报监控任务已在 2026-02 完成，但仍启用，下一次会在 2027-02 再运行 - Delivery：`channel=last`，当前多 channel 环境会 fail-closed - Payload 内含直接向 `+6597777239` 发送 alert 的指令，属于不规范外发路径 - 建议：禁用/删除",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-24T19:00:39.228Z",
+      "lastRecalledAt": "2026-05-24T19:00:39.228Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-25",
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "2026-02",
+        "2027-02",
+        "fail-closed",
+        "禁用/删除",
+        "cron",
+        "安全",
+        "审计",
+        "告警"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-24 10:04 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-24T19:00:39.228Z",
+      "lastRecalledAt": "2026-05-24T19:00:39.228Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-25",
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-24 08:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-24T19:00:39.228Z",
+      "lastRecalledAt": "2026-05-24T19:00:39.228Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-25",
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-24 16:06 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-24T19:00:39.228Z",
+      "lastRecalledAt": "2026-05-24T19:00:39.228Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-25",
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-24 06:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-24T19:00:39.228Z",
+      "lastRecalledAt": "2026-05-24T19:00:39.228Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-25",
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "User: [media attached: /home/node/.openclaw/media/inbound/A1_Basketball_China_Training_Camp_Plan_2026_-YI_CAMP---b6a86d66-a4fc-4cd1-8844-f087c9cafecd.pdf (application/pdf)] [WhatsApp +6597777239 Sun 2026-05-24 19:22 GMT+8] <media:document> <file name=\"A1_Basketball_China_Training",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-24T19:00:39.228Z",
+      "lastRecalledAt": "2026-05-24T19:00:39.228Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-25",
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "home/node",
+        "yi-camp",
+        "application/pdf",
+        "a1-basketball-china-training",
+        "media",
+        "attached",
+        "home",
+        "node"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "User: Park Liwan Hotel (Dongguan Xiabafang jianyuyuzhou Cultural and Creative Park) Backup hotel ： 鉑咖酒店 （東莞鰜魚洲文創園店） 1 minute walk Coffetel • Coffetel Hotel (Dongguan Xiabafang Eyuzhou Cultural and Creative Park) Restaurants: Next to the Basketball Court Flight information: Bus pi",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-24T19:00:39.228Z",
+      "lastRecalledAt": "2026-05-24T19:00:39.228Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-25",
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "backup",
+        "park",
+        "liwan",
+        "hotel",
+        "dongguan",
+        "xiabafang",
+        "jianyuyuzhou",
+        "cultural"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "User: T-shirts, or Water bottles. *For more inquiries, please contact Coach JIAJIA 訓練球館 Basketball Training Hall Training Location: Guancheng Xinhuo Zhenying·Qiuyuzhou Basketball Training Center, Dongguan City, Guangdong Province. The stadium has two standard adult basketball cou",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-24T19:00:39.228Z",
+      "lastRecalledAt": "2026-05-24T19:00:39.228Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-25",
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "t-shirts",
+        "shirts",
+        "water",
+        "bottles",
+        "inquiries",
+        "please",
+        "contact",
+        "coach"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "User: choose to stay at the Lipushu Bay Hotel. ( 東莞下壩坊鰜魚洲文創園店 ) (Dongguan Xiabafang jianyuyuzhou Cultural and Creative Park) Introduction to the training camp environment Hotel <<<END_EXTERNAL_UNTRUSTED_CONTENT id=\"2651ab1ebf5ba592\">>> </file>",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-24T19:00:39.228Z",
+      "lastRecalledAt": "2026-05-24T19:00:39.228Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-25",
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "end-external-untrusted-content",
+        "choose",
+        "stay",
+        "lipushu",
+        "bay",
+        "hotel",
+        "dongguan",
+        "xiabafang"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: 收到，我看了一下，这是 **2026年12月13–18日 东莞篮球训练营**资料。 要点： - **6天5晚** - 地点：广东东莞 Yi Camp / 薪火阵营室内空调木地板球馆 - 住宿：樸澍灣酒店，离球馆约3分钟步行；备选鉑咖酒店约1分钟 - 包含：每天2节训练/交流赛、三餐、酒店、交通、学生意外保险、球衣/T恤/水瓶等 - 另有：足球、飞盘、友谊赛、观看当地篮球比赛 - 机场接送：第一天上午机场接，最后一天送机场 如果你需要，我可以帮你整理成： 1. 中文家长版说明 2. 报名/宣传文案 3. 风险和需要追问主办方的问题清单",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-24T19:00:39.228Z",
+      "lastRecalledAt": "2026-05-24T19:00:39.228Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-25",
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "每天2节训练/交流赛",
+        "球衣/t恤/水瓶等",
+        "报名/宣传文案",
+        "收到",
+        "看了",
+        "一下",
+        "篮球",
+        "训练"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-24 22:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-24T19:00:39.228Z",
+      "lastRecalledAt": "2026-05-24T19:00:39.228Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-25",
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-24 14:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-24T19:00:39.228Z",
+      "lastRecalledAt": "2026-05-24T19:00:39.228Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-25",
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-24 20:04 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-24T19:00:39.228Z",
+      "lastRecalledAt": "2026-05-24T19:00:39.228Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-25",
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-24.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-24.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-05-24.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-24 12:16 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-24T19:00:39.228Z",
+      "lastRecalledAt": "2026-05-24T19:00:39.228Z",
+      "queryHashes": [
+        "c27113cc41fb"
+      ],
+      "recallDays": [
+        "2026-05-25",
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-05-25.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-05-25.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-05-25.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: 📭 2026-05-25 00:03 SGT — 暂无匹配新闻",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-05-24T19:00:39.228Z",
+      "lastRecalledAt": "2026-05-24T19:00:39.228Z",
+      "queryHashes": [
+        "cd5aa3c5fc0e"
+      ],
+      "recallDays": [
+        "2026-05-25",
+        "2026-05-24"
+      ],
+      "conceptTags": [
+        "sgt",
+        "暂无",
+        "匹配",
+        "新闻"
       ]
     }
   }
