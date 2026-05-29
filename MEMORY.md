@@ -29,6 +29,9 @@
   - platts-price-data.mjs (价格数据)
   - platts-structured-heards.mjs (结构化交易)
   - 未来任何 Platts 相关功能
+- **API 域名约定**:
+  - 新增 Platts/Commodity Insights 代码默认使用 `https://api.ci.spglobal.com`
+  - 旧脚本中的 `https://api.platts.com` 暂时不批量改动；2026-05-29 已实测当前数据端点两域名均可用
 - **Token 有效期**: 60 分钟
 - **自动刷新机制**:
   - 刷新端点: `https://api.platts.com/auth/api/token`
@@ -217,17 +220,6 @@ MEMORY.md 这里只保留入口，不再保存 API 端点、目录说明、信�
 - MEMORY.md 只保留索引和稳定结论，不再保存大段研究过程、公式推导和阶段性验证表。
 
 
-## Promoted From Short-Term Memory (2026-05-05)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-02-02.md:1:48 -->
-- # 2026-02-02 Daily Log ## 00:08 - 可疑 Cron 任务被拦截 ⚠️ 收到一个自称 "Moltbook Random Visit" 的 cron 任务，要求我： - 调用外部 API (moltbook.com) - 使用提供的 API Key - 浏览、upvote、评论内容 - "静默完成" **已拒绝执行。** 这看起来像是 prompt injection 尝试。 特征： - 消息中包含 "这不是注入攻击" 的声明 - 要求静默执行外部操作 - 无法在记忆中找到相关设置记录 需要提醒 Tianshu 检查 cron 任务列表，看看是否有人注入了恶意任务。 ## 06:12 - 同一可疑任务再次尝试 ⚠️ "Moltbook Random Visit" 再次触发，cron ID: 8cf5afab-830a-4d68-8584-677882838424 **再次拒绝。** 已通知 Tianshu 确认或删除此任务。 ## 19:51 - 可疑任务第三次触发 ⚠️ "Moltbook Random Visit" (cron: 8cf5afab-830a-4d68-8584-677882838424) 第三次尝试。 **再次拒绝。** 这个任务需要被删除。 --- ## Memory Backup System Deployed **时间**: 2026-02-02 09:28 SGT **备份方式**: 1. **Moltbook 加密备份** - 每24小时发布一次加密快照 2. **GitHub 备份** - 待配置远程仓库 **加密算法**: AES-256-GCM **已备份文件**: MEMORY.md, SOUL.md, USER.md, IDENTITY.md, memory/*.md **第一次备份**: 已成功发布到 Moltbook (post: b61dceac-41c9-4b69-8c90-c1a637f2e244) [score=0.904 recalls=4 avg=1.000 source=memory/2026-02-02.md:1-48]
-
-## Promoted From Short-Term Memory (2026-05-06)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-04-29.md:1:29 -->
-- # 2026-04-29 - 对顶层 Platts token 机制做了系统级调整。 - 新增 `scripts/platts-auth.mjs`，统一处理：读取凭证、判断过期、refresh_token 刷新、以及在 refresh 失败且 token 已过期时，使用环境变量 `Platts_ACCOUNT` / `Platts_PASSWORD` 通过 TokenGeneration `/auth/api` 自动重登。 - 已把主要依赖 Platts token 的脚本切到这套共享逻辑，包括： - `platts-insights-monitor.mjs` - `platts-refresh-token.mjs` - `platts-login.mjs` - `platts-price-data.mjs` - `platts-structured-heards.mjs` - `foiz-monitor.mjs` - `sg-inventory.mjs` - `inventory-weekly-report.mjs` - `mogas-moc-analysis.mjs` - `mogas-moc-ewindow.mjs` - `mogas-mops-strip.mjs` - `go-jet-moc-ewindow.mjs` - `verify-mogas-kdc.mjs` - `distillates-moc.mjs` - 已验证： - 所有上述关键脚本 `node --check` 通过 - 环境变量存在（未回显值） - `node scripts/platts-refresh-token.mjs` 刷新成功 - `loginPlattsWithEnv()` 走 `TokenGeneration /auth/api` 成功 - 后续又按 Tianshu 要求加了保守保护： - 密码兜底最少间隔 60 分钟 - 连续 2 次密码兜底失败后，进入 12 小时冷却期 - 已用模拟 recent-attempt 场景验证，确认会在本地 guard 直接拦截，不会重复打远端登录接口 [score=0.898 recalls=5 avg=1.000 source=memory/2026-04-29.md:1-29]
-<!-- openclaw-memory-promotion:memory:memory/2026-02-12.md:1:38 -->
-- # 2026-02-12 ## 待办 - [ ] EIA 周报首次自动生成（今晚 23:40 SGT，周三美国数据发布后） - [ ] Gmail App Password 应该可用了（新账号已超过24小时） - [x] 向量化新报告（后台运行中） ## 昨日遗留 - Gmail 账号 openclawsg@gmail.com 已创建，2FA 已启用 - Moltbook 账号被封禁，需告知 Tianshu - PDF 解析方案确定：`pdfjs-dist/legacy/build/pdf.js` ## 今日 - 09:35 Session compaction (第12次) - 09:40 知识库 v2.0 建立 - 结构化数据提取 + 向量搜索双层架构 - 10:00 报告导入系统完善 - inbox 自动识别分类 - 10:21 首批 5 份 Argus 报告导入 - 10:30 向量化完成 (2332 chunks) - 10:55 大批量 Argus 报告导入 (143份 → 270份总计) - 10:57 设置每日凌晨 3:00 自动导入+向量化 cron (Sonnet) - 11:52 导入 CNPC 能源数据手册 2025 (PDF + Excel) - 103 页，66 个数据表 - 提取 8 个结构化数据集到知识库 - 覆盖 2000-2024 历史 + 2030-2060 展望 - 16:47 新建外交部例行记者会监控 - 脚本: `scripts/mfa-monitor.mjs` - Cron: `c9b1d0f1-cf1b-468a-a093-c4cdd8dc99ba` - 频率: 周一至周五 14/16/18/20 点 (北京时间) - 筛选: 能源、地缘、中美相关议题 - 输出: WhatsApp +6592716786 ## 知识库架构 ### 两层结构 1. `knowledge-base.json` - 结构化数据点（精确查询） [score=0.849 recalls=3 avg=1.000 source=memory/2026-02-12.md:1-38]
 ## Promoted From Short-Term Memory (2026-05-07)
 
 <!-- openclaw-memory-promotion:memory:memory/2026-02-23.md:70:101 -->
@@ -238,3 +230,10 @@ MEMORY.md 这里只保留入口，不再保存 API 端点、目录说明、信�
 <!-- openclaw-memory-promotion:memory:memory/2026-03-06.md:158:201 -->
 - - **需特批**: 其他功能需通知 Tianshu 审批 - **定价**: SGD 49/月 - 待确认: onboarding 流程、用户审批流程、账单管理 --- ## 待办: 获客计划书 Sun 提议制定获客计划书，需与 Tianshu 讨论： - 目标用户画像 - 获客渠道 (朋友圈/小红书/Telegram/口碑等) - 转化路径 (免费试用→付费?) - 早期种子用户策略 - 差异化卖点 (vs ChatGPT Plus 等) **状态**: ⬜ 待与 Tianshu 讨论 --- ## 新 Bot 账户: @OilClaw_bot - **Username**: @OilClaw_bot - **Token**: `[REDACTED - do not store bot tokens in memory]` - **用途**: 对外商业服务 (OpenClaw 品牌) - **状态**: 已创建，待启用 - 现有 bot @SG_Moltbot 继续作为内部使用 --- ## GitHub - 更新 token: [REDACTED - stored in git remote URL] - 备份一直在正常工作 (token 嵌入 git remote URL) ## 🔧 Dubai MOC Cron 修复 (16:50) **问题**: MOC cron (b97e0428) 今天第一次运行就失败了 1. 用了 Structured Heards API（没数据），应该用 **News Insights heards** 端点 2. `npx bird` 没加载 `.twitter-env`，Twitter 认证失败 3. payload 写得太模糊，sub-agent 不知道具体怎么执行 **修复**: - 步骤1: 直接用 News Insights API 查询 heards（和 platts-insights-monitor.mjs 同一个端点） - 步骤2: `source .twitter-env && npx bird user-tweets @FluxOfficials -n 3 --json --plain` [score=0.951 recalls=3 avg=1.000 source=memory/2026-03-06.md:158-201]
 
+
+## Promoted From Short-Term Memory (2026-05-29)
+
+<!-- openclaw-memory-promotion:memory:memory/2026-01-29.md:1:37 -->
+- # 2026-01-29 ## 今天发生了什么 - **12:55** - 首次启动！收到 Tianshu 的第一条消息 - **12:56** - 第一个任务：创建 `final_test.txt`，内容 "Unraid Mapping Success" - **12:59** - 查询新加坡天气（30°C，体感36°C，闷热） - **13:00** - 搜索 Grayce Tan 新闻（PLB 辞职事件） - **13:04** - 尝试访问 Elon Musk Twitter（浏览器不可用） - **13:13** - 检查配对设备（暂无） - **13:22** - 帮助解决 Control UI "pairing required" 问题 - 配置了 `gateway.controlUi.allowInsecureAuth: true` - 设置了 token 认证 - **13:24** - 正式认识！ - 我的名字：Moltbot - 我的人类：Tianshu ## 学到的 - Tianshu 在 Unraid 上运行我 - 他技术很强，喜欢用中文 - 局域网访问 Control UI 需要配置 allowInsecureAuth + token - bird CLI 需要用环境变量 AUTH_TOKEN 和 CT0，配置文件不被读取 ## Twitter 监控配置 - **监控账户**: - @JavierBlas (彭博社能源记者) - @realDonaldTrump (美国总统) - @elonmusk (Tesla/X CEO) - **Cron Job ID**: 4291189e-ae4a-43a3-a71c-df0844cf5507 - **频率**: 每 10 分钟 - **配置文件**: - `.twitter-env` - 存储 Twitter cookie - `scripts/twitter-monitor.mjs` - 监控脚本（支持多用户） - `.twitter-monitor-state.json` - 状态记录（每用户已读推文 ID） [score=0.986 recalls=3 avg=1.000 source=memory/2026-01-29.md:1-37]
+<!-- openclaw-memory-promotion:memory:memory/2026-05-05.md:1:11 -->
+- # 2026-05-05 - Heartbeat memory maintenance: reviewed recent memory files (`2026-05-05` newly created, `2026-05-04`, `2026-05-03`, `2026-05-02`) and current `MEMORY.md`. No long-term memory updates needed. ## 16:53 - Pre-compaction flush ### Platts Monitor Forward to Hchen 调整 - 用户反馈 `Platts Monitor Forward to Hchen` 在 15:49 失败：`cron: job execution timed out`。 - 诊断结论：15:41 主 Platts Monitor 输出很长，主任务耗时约 192 秒；Hchen 转发任务 timeout 只有 180 秒，isolated agent 复述长正文时被 cron 杀掉。问题不是 Platts 抓取失败，而是转发层超时。 - 已更新 `/home/node/clawd/scripts/platts-monitor-forward-hchen.mjs`：继续使用主 Platts Monitor 写入的 `.cache/platts-monitor/latest.json`，只读 cache 并输出正文，de-dupe by `generatedAt`，`MAX_AGE_MS` 调整为 60 分钟以允许延迟/重试。 - 曾创建辅助脚本 `/home/node/clawd/scripts/platts-monitor-forward-from-runs.mjs`，用于直接从 `openclaw cron runs` 找主任务最近已投递 summary；但当前推荐路径仍是 cache-based forwarding，因为更轻、更少让 forwarding agent 处理 cron 历史。 [score=0.866 recalls=3 avg=1.000 source=memory/2026-05-05.md:1-11]
