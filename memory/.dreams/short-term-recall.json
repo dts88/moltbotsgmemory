@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-06T19:00:05.515Z",
+  "updatedAt": "2026-06-07T19:00:05.622Z",
   "entries": {
     "memory:memory/2026-02-03.md:30:76": {
       "key": "memory:memory/2026-02-03.md:30:76",
@@ -156375,12 +156375,12 @@
       "source": "memory",
       "snippet": "PCAAT00 Daily to Hchen rerun: Tianshu asked to rerun failed cron `PCAAT00 Daily to Hchen` after alert: failed 2 times, timeout, last phase `tool-execution-started`.; Live cron job: `fa41b298-4631-4c42-b922-e44ec2e5d1f2`, enabled, weekday 17:00 Asia/Singapore, delivery WhatsApp `+",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-02T19:00:01.112Z",
-      "lastRecalledAt": "2026-06-06T19:00:01.954Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
       "queryHashes": [
         "3a661a3fedb5"
       ],
@@ -156390,7 +156390,8 @@
         "2026-06-04",
         "2026-06-05",
         "2026-06-06",
-        "2026-06-07"
+        "2026-06-07",
+        "2026-06-08"
       ],
       "conceptTags": [
         "tool-execution-started",
@@ -156411,12 +156412,12 @@
       "source": "memory",
       "snippet": "PCAAT00 Daily to Hchen rerun: duration 47.2s; deliveryStatus `delivered`; output: PCAAT00 2026-06-02 close $92.80/bbl, high $92.81, low $92.79, publish 09:03 UTC / 17:03 SGT.; Job state recovered to `ok`, `consecutiveErrors: 0`.",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-02T19:00:01.112Z",
-      "lastRecalledAt": "2026-06-06T19:00:01.954Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
       "queryHashes": [
         "3a661a3fedb5"
       ],
@@ -156426,7 +156427,8 @@
         "2026-06-04",
         "2026-06-05",
         "2026-06-06",
-        "2026-06-07"
+        "2026-06-07",
+        "2026-06-08"
       ],
       "conceptTags": [
         "47.2s",
@@ -162425,12 +162427,12 @@
       "source": "memory",
       "snippet": "PCAAT00 Daily to Hchen rerun: Tianshu asked to rerun cron `PCAAT00 Daily to Hchen`.; Live cron job: `fa41b298-4631-4c42-b922-e44ec2e5d1f2`, enabled, weekday 17:00 Asia/Singapore, delivery WhatsApp `+6596249687`.; Scheduled run at 17:00 SGT failed with `run node inline script (in",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-03T19:00:02.593Z",
-      "lastRecalledAt": "2026-06-06T19:00:01.954Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
       "queryHashes": [
         "e34de1772deb"
       ],
@@ -162439,7 +162441,8 @@
         "2026-06-03",
         "2026-06-05",
         "2026-06-06",
-        "2026-06-07"
+        "2026-06-07",
+        "2026-06-08"
       ],
       "conceptTags": [
         "asia/singapore",
@@ -162460,12 +162463,12 @@
       "source": "memory",
       "snippet": "PCAAT00 Daily to Hchen rerun: runId `manual:fa41b298-4631-4c42-b922-e44ec2e5d1f2:1780480508449:2`; duration 50.6s; deliveryStatus `delivered`; output: PCAAT00 2026-06-03 close $97.41/bbl, high $97.42, low $97.40, publish 00:47 UTC / 08:47 SGT.",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-03T19:00:02.593Z",
-      "lastRecalledAt": "2026-06-06T19:00:01.954Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
       "queryHashes": [
         "e34de1772deb"
       ],
@@ -162474,7 +162477,8 @@
         "2026-06-03",
         "2026-06-05",
         "2026-06-06",
-        "2026-06-07"
+        "2026-06-07",
+        "2026-06-08"
       ],
       "conceptTags": [
         "50.6s",
@@ -162495,12 +162499,12 @@
       "source": "memory",
       "snippet": "PCAAT00 Daily to Hchen rerun: Job state recovered to `ok`, `consecutiveErrors: 0`.",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-03T19:00:02.593Z",
-      "lastRecalledAt": "2026-06-06T19:00:01.954Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
       "queryHashes": [
         "e34de1772deb"
       ],
@@ -162509,7 +162513,8 @@
         "2026-06-03",
         "2026-06-05",
         "2026-06-06",
-        "2026-06-07"
+        "2026-06-07",
+        "2026-06-08"
       ],
       "conceptTags": [
         "pcaat00",
@@ -175990,19 +175995,20 @@
       "source": "memory",
       "snippet": "PCAAT00 Daily to Hchen cron hardening: Tianshu asked whether `PCAAT00 Daily to Hchen` could be thoroughly optimized after a failure caused by an agent-generated Node heredoc.; Added `scripts/pcaat00-daily-hchen.mjs` as a fixed local script:; uses shared `scripts/platts-auth.mjs`",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-05T19:00:11.819Z",
-      "lastRecalledAt": "2026-06-06T19:00:01.954Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
       "queryHashes": [
         "b58cb32b4279"
       ],
       "recallDays": [
         "2026-06-06",
         "2026-06-05",
-        "2026-06-07"
+        "2026-06-07",
+        "2026-06-08"
       ],
       "conceptTags": [
         "agent-generated",
@@ -176023,19 +176029,20 @@
       "source": "memory",
       "snippet": "PCAAT00 Daily to Hchen cron hardening: validates Singapore-date freshness; outputs `NO_REPLY` for normal stale-data waiting; keeps `.cache/pcaat00-daily-hchen/state.json` for last seen data and same-day de-dupe; emits at most one late warning after 20:00 SGT if today's data never",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-05T19:00:11.819Z",
-      "lastRecalledAt": "2026-06-06T19:00:01.954Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
       "queryHashes": [
         "b58cb32b4279"
       ],
       "recallDays": [
         "2026-06-06",
         "2026-06-05",
-        "2026-06-07"
+        "2026-06-07",
+        "2026-06-08"
       ],
       "conceptTags": [
         "singapore-date",
@@ -176056,19 +176063,20 @@
       "source": "memory",
       "snippet": "PCAAT00 Daily to Hchen cron hardening: Updated live cron `fa41b298-4631-4c42-b922-e44ec2e5d1f2`:; schedule changed from weekday 17:00 single run to `*/10 17-20 * * 1-5` Asia/Singapore; payload now only runs `node scripts/pcaat00-daily-hchen.mjs`; `lightContext: true`, `timeoutSec",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-05T19:00:11.819Z",
-      "lastRecalledAt": "2026-06-06T19:00:01.954Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
       "queryHashes": [
         "b58cb32b4279"
       ],
       "recallDays": [
         "2026-06-06",
         "2026-06-05",
-        "2026-06-07"
+        "2026-06-07",
+        "2026-06-08"
       ],
       "conceptTags": [
         "17-20",
@@ -176089,19 +176097,20 @@
       "source": "memory",
       "snippet": "PCAAT00 Daily to Hchen cron hardening: Verification:; direct script run at 17:25 SGT returned `NO_REPLY` because Platts still showed 2026-06-04 data; manual cron run `manual:fa41b298-4631-4c42-b922-e44ec2e5d1f2:1780651509919:3` completed `ok` in 10.6s with no delivery, as expecte",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-05T19:00:11.819Z",
-      "lastRecalledAt": "2026-06-06T19:00:01.954Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
       "queryHashes": [
         "b58cb32b4279"
       ],
       "recallDays": [
         "2026-06-06",
         "2026-06-05",
-        "2026-06-07"
+        "2026-06-07",
+        "2026-06-08"
       ],
       "conceptTags": [
         "no-reply",
@@ -185219,6 +185228,1813 @@
         "gas",
         "refill",
         "going"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:154:154": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:154:154",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 154,
+      "endLine": 154,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜6月5日 15:23 SGT 🔥 Top News 暂无新增重大 Top News。 📰 Market Stories 1. 原油期货在亚洲尾盘小幅走高，市场继续关注美伊谈判、美国就业数据和夏季需求前库存收紧。Platts 报道称，Brent 8月合约在新加坡时间14:03报95.42美元/桶，WTI 7月合约报93.05美元/桶；ING 认为三季度需求环比可能增加逾300万桶/日，库存下降会加速。[1] 2. Pakistan LNG Limited 接受 BP Singapore 最低报价，采购6月6-7",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "03报95.42美元/桶",
+        "7月合约报93.05美元/桶",
+        "认为三季度需求环比可能增加逾300万桶/日",
+        "采购6月6-7",
+        "platts",
+        "快报",
+        "sgt",
+        "top"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:155:155": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:155:155",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 155,
+      "endLine": 155,
+      "source": "memory",
+      "snippet": "Assistant: Lifting bids 指引：Dubai 买盘若等于或高于 Oman、Al Shaheen 或 Upper Zakum 买盘，应优先被成交。[8] 7. Lifting offers 指引：Dubai 卖盘若等于或高于 Oman、Al Shaheen 或 Upper Zakum 卖盘，应优先成交 Oman、Al Shaheen 或 Upper Zakum 的卖盘。[9] 8. Platts 提醒 MOC 参与方需保持可联络；若无法建立或维持正常沟通，Platts 可拒绝发布或移除其 bid/offer。[10] 9. Platts",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "bid/offer",
+        "lifting",
+        "bids",
+        "指引",
+        "dubai",
+        "等于",
+        "高于",
+        "oman"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:156:156": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:156:156",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 156,
+      "endLine": 156,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=58db1f7b-7055-47b1-8bbe-b5e374b6a6d4 [6] https://plattsconnect.spglobal.com/#platts/source?sourceId=afa9bc22-e969-4fb8-a719-966d193b661f [7] https://plattsconnect.spglobal.com/#platts/source?sourceId=029f3e7c-0",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "029f3e7c-0",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "58db1f7b"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:157:157": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:157:157",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 157,
+      "endLine": 157,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报 2026-06-05 📰 Market Stories [1] INPEX 计划在 2027 年 7-8 月对澳大利亚 Ichthys LNG 设施进行计划检修。受影响范围包括 Ichthys LNG 工厂一条液化线、Ichthys Explorer CPF 和 Ichthys Venturer FPSO。公司表示 2026 年没有重大计划检修，但 Booster Compression Module 相关接入工作可能带来多次计划停机和开工率下降。Ichthys 当前名义产能为 LNG 930 万吨/年、LPG",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "7-8",
+        "万吨/年",
+        "platts",
+        "快报",
+        "market",
+        "stories",
+        "inpex",
+        "计划"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:158:158": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:158:158",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 158,
+      "endLine": 158,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=6208c657-811e-4575-94b3-5e3b7d78e34a",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "6208c657",
+        "811e"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:159:159": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:159:159",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 159,
+      "endLine": 159,
+      "source": "memory",
+      "snippet": "Assistant: 🐦 @JavierBlas Angolan crude is a mainstay of China’s refining industry’s oil diet. What’s telling us? Take Dalia crude differential to Dated Brent: Apr: plus $10.6 a barrel May: plus $3.5 a barrel Jun: minus $1.8 a barrel https://x.com/JavierBlas/status/20628173499677",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "10.6",
+        "3.5",
+        "1.8",
+        "javierblas",
+        "angolan",
+        "crude",
+        "mainstay",
+        "china’s"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:160:160": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:160:160",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 160,
+      "endLine": 160,
+      "source": "memory",
+      "snippet": "Assistant: https://t.co/mgQwQvPTuT https://x.com/FluxOfficials/status/2062815168975847743",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "t.co/mgqwqvptut",
+        "https",
+        "t.co",
+        "mgqwqvptut",
+        "x.com",
+        "fluxofficials",
+        "status"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:161:161": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:161:161",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 161,
+      "endLine": 161,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜6月5日 📰 Market Stories 1. 日本4月家庭汽油消费同比下降6.23%至32.91升，汽油支出同比下降15%至5,196日元。平均汽油采购价同比下降9.36%至157.87日元，连续第11年同比走低。煤油消费同比下降16.51%至8.53升，但平均煤油价格同比上涨9.21%至135.71日元。[1] 📊 Heards（原油） 2. Dirty Tankers：270kt Oman-East，6月15-30日装船，船东指示 w130。[2] 3. Dirty Tankers：270kt Oma",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "日本4月家庭汽油消费同比下降6.23",
+        "至32.91升",
+        "平均汽油采购价同比下降9.36",
+        "至157.87日元",
+        "煤油消费同比下降16.51",
+        "至8.53升",
+        "但平均煤油价格同比上涨9.21",
+        "至135.71日元"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:162:162": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:162:162",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 162,
+      "endLine": 162,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=19dc881a-47b4-4031-9d13-6efad9c53d6b [2] https://plattsconnect.spglobal.com/#platts/source?sourceId=8cff259b-d543-4f3e-b58c-5536d610ef5b [3] https://plattsconnect.spglobal.com/#platts/source?sourceId=57dff09d-a",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "57dff09d-a",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "19dc881a"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:163:163": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:163:163",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 163,
+      "endLine": 163,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=49bad7f2-ce69-4eea-9779-505aaf330686",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "49bad7f2",
+        "ce69"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:164:164": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:164:164",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 164,
+      "endLine": 164,
+      "source": "memory",
+      "snippet": "Assistant: 🔥 Top News [1] 俄罗斯副总理 Novak 称当前油市危机“前所未有”，并表示俄罗斯计划在 2026 年把原油产量提高至 OPEC+ 目标水平。Platts 引述称，4 月 OPEC+ 产量降至 3269 万桶/日，较 2 月明显下滑；Dated Brent 6 月 3 日评估价为 $101.235/b。 📰 Market Stories 今日暂无新的相关 stories。 📊 Heards [2] Americas crude oil: Bakken Clearbrook (UHC) 7 月 heard trad",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "万桶/日",
+        "101.235/b",
+        "top",
+        "news",
+        "俄罗斯",
+        "副总理",
+        "novak",
+        "当前"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:165:165": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:165:165",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 165,
+      "endLine": 165,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（6月5日） 🔥 Top News [1] Petrobras 进入科特迪瓦，获得 8 个海上勘探区块 CI-513、CI-600、CI-601、CI-602、CI-603、CI-605、CI-701、CI-702，并签署产量分成合同。科特迪瓦称这将把国家沉积盆地占用率提高至 75%，覆盖约 63,000 平方公里。该国因 Eni 的 Baleine、Calao 发现而升温，其中 Baleine 三期目标为 150,000 b/d 原油和 200 MMcf/d 天然气。 📰 Market Stories 今日暂",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "ci-513",
+        "ci-600",
+        "ci-601",
+        "ci-602",
+        "ci-603",
+        "ci-605",
+        "ci-701",
+        "ci-702"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:166:166": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:166:166",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 166,
+      "endLine": 166,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=ce87003d-e875-4dd0-a11f-f945a62031c2 [4] https://plattsconnect.spglobal.com/#platts/source?sourceId=de610575-87c7-4376-bd82-dfaa9c8314ba",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "ce87003d",
+        "e875"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:167:167": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:167:167",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 167,
+      "endLine": 167,
+      "source": "memory",
+      "snippet": "Assistant: 🔥 Top News [1] Dangote 5月RFCC装置检修期间汽油出口降至零，残余燃料油出口升至8个月高位。650,000 b/d Dangote炼厂因残油催化裂化装置换热器检修，汽油产量受限；4月残余燃料油出口约150万桶，5月增至250万桶，主要流向新加坡、美国和荷兰。交易商称该炼厂6月4日又释放新的燃料油招标。 📰 Market Stories 今日暂无新增相关市场文章。 📊 Heards 今日新增 Heards 中无符合原油过滤的条目。 --- [1] https://plattsconnect.spgloba",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "b/d",
+        "plattsconnect.spgloba",
+        "top",
+        "news",
+        "dangote",
+        "rfcc",
+        "装置",
+        "检修"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:168:168": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:168:168",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 168,
+      "endLine": 168,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报 2026-06-05 📰 Market Stories [1] 委内瑞拉5月对美国和印度原油出口上升。CAS数据显示：对美国出口增至1710万桶，印度接收量升至1350万桶；总出口升至3530万桶，高于4月3260万桶和去年同期2210万桶。PDVSA及伙伴5月平均产量初步升至115.5万桶/日，4月为113.0万桶/日。中国连续第五个月未接收委内瑞拉货，贸易流向继续转向美国、印度等市场。 📊 Heards [2] Guyana 原油收盘评估：Liza、Unity Gold 相关窗口未报买盘、卖盘或成交。 [",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "pdvsa及伙伴5月平均产量初步升至115.5万桶/日",
+        "4月为113.0万桶/日",
+        "platts",
+        "快报",
+        "market",
+        "stories",
+        "委内瑞拉",
+        "美国"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:169:169": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:169:169",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 169,
+      "endLine": 169,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜2026-06-05 📰 Market Stories [1] 原油期货 6月4日收低：以色列-黎巴嫩停火提升市场对美伊谈判进展的预期，WTI 7月收跌 $2.98/b 至 $93.04/b，Brent 8月收跌 $2.78/b 至 $95.03/b。RBOB、ULSD 同步下跌。分析称，若停火为谈判打开空间，市场会继续交易“供应风险缓和”的希望；但霍尔木兹海峡通行仍存在不确定性，可能处于“既非完全关闭、也非完全开放”的灰色状态。 📊 Heards [2] USGC HSFO vs Brent Frontli",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "以色列-黎巴嫩停火提升市场对美伊谈判进展的预期",
+        "2.98/b",
+        "93.04/b",
+        "2.78/b",
+        "95.03/b",
+        "platts",
+        "快报",
+        "market"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:170:170": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:170:170",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 170,
+      "endLine": 170,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（6月5日） 🔥 Top News 无新增。 📰 Market Stories [1] Alaska LNG 开发商 Glenfarne 将项目高端成本估算上调至 545 亿美元，其中拟建供气管道最高约 169 亿美元。项目设计产能约 2000 万吨/年 LNG，Glenfarne 仍在争取税收减免和客户锁定，称管道最快可在三季度作出最终投资决定，LNG 终端可能在管道最终投资决定约一年后推进。当前已有 TotalEnergies、JERA、Tokyo Gas、台湾 CPC、泰国 PTT、韩国 POSCO 等初",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "万吨/年",
+        "platts",
+        "快报",
+        "top",
+        "news",
+        "新增",
+        "market",
+        "stories"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:171:171": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:171:171",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 171,
+      "endLine": 171,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（6月5日） 📰 Market Stories [1] 美国辛烷值市场：5月27日-6月3日 USGC 辛烷值走势分化，CBOB 93-87 价差从30美分收窄至27美分。节后汽油需求走弱压过供应偏紧影响，EIA 数据显示美国汽油供应量周降66.2万桶/日至859.4万桶/日，高辛烷调油组分经济性承压；reformate 仍对 RBOB 保持约78-80美分/加仑溢价，raffinate 因低辛烷值继续深度贴水。 [2] 美国 LNG：Cameron LNG 已完成路易斯安那设施计划检修并恢复满负荷生产，6月4日",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "5月27日-6月3日",
+        "93-87",
+        "数据显示美国汽油供应量周降66.2万桶/日至859.4万桶/日",
+        "保持约78-80美分/加仑溢价",
+        "platts",
+        "快报",
+        "market",
+        "stories"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:172:172": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:172:172",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 172,
+      "endLine": 172,
+      "source": "memory",
+      "snippet": "Assistant: 评估价为2.8558美元/加仑，日跌9.98美分；对 NYMEX 7月 RBOB 贴水扩大至18.25美分/加仑。A-grade 与 D-grade 价差扩大至30.50美分/加仑，反映高辛烷产品溢价。 📊 Heards 今日无新的原油 Heards。 --- [1] https://plattsconnect.spglobal.com/#platts/source?sourceId=e7c5efbd-37da-4c8d-8b80-4efa1ae56393 [2] https://plattsconnect.spglobal.co",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "评估价为2.8558美元/加仑",
+        "日跌9.98美分",
+        "贴水扩大至18.25美分/加仑",
+        "a-grade",
+        "d-grade",
+        "价差扩大至30.50美分/加仑",
+        "plattsconnect.spglobal.com",
+        "platts/source"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:173:173": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:173:173",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 173,
+      "endLine": 173,
+      "source": "memory",
+      "snippet": "Assistant: 🔥 Top News 1. 印度与委内瑞拉将探索长期原油供应合同和上游投资机会。印度官员称，委内瑞拉近期产量逐步回升，双方在6月4日会谈中讨论扩大能源合作。S&P Global Commodities at Sea 数据显示，6月预计有950万桶委内瑞拉原油抵达印度，高于5月的820万桶，显示短期流向明显增加。[1] 📰 Market Stories 2. 新加坡5月28日至6月3日当周原油进口量环比增加64.6%，至894,854吨。美洲取代中东成为最大区域供应来源，其中包括来自加拿大34,070吨、圭亚那30,213吨、美国",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "新加坡5月28日至6月3日当周原油进口量环比增加64.6",
+        "top",
+        "news",
+        "印度",
+        "委内瑞拉",
+        "探索",
+        "长期",
+        "原油"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:174:174": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:174:174",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 174,
+      "endLine": 174,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜2026-06-05 📰 Market Stories 1. 亚洲及中东丙烷掉期在 CME 的成交量 5 月环比下降 29.41%，降至 280.3 万吨。FEI 丙烷期货成交量降 30.84% 至 239.5 万吨；沙特 CP 丙烷期货降 19.69% 至 40.8 万吨。 2. 同期价格反而走高：普氏评估 5 月近月 CFR North Asia 丙烷掉期均价为 794.42 美元/吨，较 4 月上涨 3.34%。报道提到，亚洲和中东 LPG 需求整体偏弱，霍尔木兹海峡扰动带来价格波动，加上中国、日本、韩国",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "29.41",
+        "280.3",
+        "30.84",
+        "239.5",
+        "19.69",
+        "40.8",
+        "794.42",
+        "美元/吨"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:175:175": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:175:175",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 175,
+      "endLine": 175,
+      "source": "memory",
+      "snippet": "Assistant: 🔥 Top News 1. 日本经济产业省下属核能小组 6月5日 提议，到2040年代替换 2.2-5.5 GW 核电装机，相当于 2-5 座反应堆；到2050年代累计替换 12.7-16 GW，相当于 11-14 座反应堆。日本希望在电力需求增长背景下维持稳定供应，并支撑其2040财年发电结构目标：可再生能源约40%-50%、火电约30%-40%、核电20%。[1] 📰 Market Stories 2. 原油期货 6月5日 亚洲早盘上涨，主因是真主党拒绝以色列-黎巴嫩停火协议，中东和平预期降温。新加坡时间11:46，ICE",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "2.2-5.5",
+        "2-5",
+        "12.7-16",
+        "11-14",
+        "主因是真主党拒绝以色列-黎巴嫩停火协议",
+        "top",
+        "news",
+        "日本"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-07.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-07.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-06-07.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - 2026-05-30 (Saturday): 02:36 heartbeat: reviewed `HEARTBEAT.md`, recent memory files (`2026-05-30` newly created, `2026-05-29`, `2026-05-28`) and `MEMORY.md`; no new long-term promotion or cleanup needed. WhatsApp rem",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "6e265eec33e3"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "memory.md",
+        "long-term",
+        "write",
+        "dream",
+        "diary",
+        "entry",
+        "fragments"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-07.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-07.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-06-07.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "User: oil/LNG heards are skipped. Syntax check passed with `node --check`.; 17:33 Tianshu provided additional - 2026-05-29 (Friday): 17:46 Tested `news-insights/v1/search/story/latest-news` for crude-related items. Confirmed it can return current crude stories such as Cash Dubai",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "6e265eec33e3"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "oil/lng",
+        "crude-related",
+        "oil",
+        "lng",
+        "heards",
+        "skipped",
+        "syntax",
+        "check"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-07.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-07.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-06-07.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "User: and MEMORY.md. WhatsApp channel had been logged out/relinked after inbound issues; current probe shows WhatsApp linked, running, connected, and healthy, - 2026-05-29 (Friday): 20:36 heartbeat: reviewed `HEARTBEAT.md`, recent memory files (`2026-05-29`, `2026-05-28`, `2026-0",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "6e265eec33e3"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "memory.md",
+        "out/relinked",
+        "heartbeat.md",
+        "2026-0",
+        "whatsapp",
+        "channel",
+        "had",
+        "been"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-07.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-07.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-06-07.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "User: `HEARTBEAT.md`, recent memory files (`2026-05-27` newly created, `2026-05-26`, `2026-05-25`, `2026-05-24`) and `MEMORY.md`; no durable long-term update or clean - PCAAT00 Daily to Hchen rerun: Tianshu asked to rerun failed cron `PCAAT00 Daily to Hchen` after alert: failed 2",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "6e265eec33e3"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "memory.md",
+        "long-term",
+        "recent",
+        "newly",
+        "created",
+        "durable",
+        "term"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-07.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-07.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-06-07.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: At 02:36 the house had the soft pulse of a server room, HEARTBEAT.md blinking like a bedside clock. I turned pages named May 27, 28, 29, 30, each one newly folded into memory, each one saying: no cleanup needed. A rare and holy sentence. WhatsApp kept its green lantern",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "6e265eec33e3"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "house",
+        "had",
+        "soft",
+        "pulse",
+        "server",
+        "room",
+        "blinking"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-07.txt:15:15": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-07.txt:15:15",
+      "path": "memory/.dreams/session-corpus/2026-06-07.txt",
+      "startLine": 15,
+      "endLine": 15,
+      "source": "memory",
+      "snippet": "Assistant: with `consecutiveErrors: 0`.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "6e265eec33e3"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "consecutiveerrors"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-07.txt:16:16": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-07.txt:16:16",
+      "path": "memory/.dreams/session-corpus/2026-06-07.txt",
+      "startLine": 16,
+      "endLine": 16,
+      "source": "memory",
+      "snippet": "Assistant: 🐦 @JavierBlas RT @JavierBlas: CHART OF THE DAY: The cost of the most important nitrogen fertilizer is back to pre-war levels in the US, benefiting from a… RT @JavierBlas：每日图表：美国最重要的氮肥的成本回到了战前水平，受益于…… https://x.com/JavierBlas/status/2063528285896622483 --- 🐦 @JavierBl",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "6e265eec33e3"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "pre-war",
+        "javierblas",
+        "chart",
+        "day",
+        "cost",
+        "important",
+        "nitrogen",
+        "fertilizer"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-07.txt:17:17": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-07.txt:17:17",
+      "path": "memory/.dreams/session-corpus/2026-06-07.txt",
+      "startLine": 17,
+      "endLine": 17,
+      "source": "memory",
+      "snippet": "Assistant: 🐦 @JavierBlas RT @JavierBlas: CHART OF THE DAY: The cost of the most important nitrogen fertilizer is back to pre-war levels in the US, benefiting from a… RT @JavierBlas：每日图表：美国最重要的氮肥的成本回到了战前水平，受益于…… https://x.com/JavierBlas/status/2063528285896622483 --- 🐦 @JavierBl",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "6e265eec33e3"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "pre-war",
+        "javierblas",
+        "chart",
+        "day",
+        "cost",
+        "important",
+        "nitrogen",
+        "fertilizer"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-07.txt:18:18": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-07.txt:18:18",
+      "path": "memory/.dreams/session-corpus/2026-06-07.txt",
+      "startLine": 18,
+      "endLine": 18,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - PCAAT00 Daily to Hchen cron hardening: Tianshu asked whether `PCAAT00 Daily to Hchen` could be thoroughly optimized after a failure caused by an agent-generated Node heredoc.; Added `scripts/pcaat00-daily-hchen.mjs` a",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "6e265eec33e3"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "agent-generated",
+        "scripts/pcaat00-daily-hchen.mjs",
+        "write",
+        "dream",
+        "diary",
+        "entry",
+        "fragments",
+        "pcaat00"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-07.txt:19:19": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-07.txt:19:19",
+      "path": "memory/.dreams/session-corpus/2026-06-07.txt",
+      "startLine": 19,
+      "endLine": 19,
+      "source": "memory",
+      "snippet": "User: Asia/Singapore; payload now only runs `node scripts/pcaat00-daily-hchen.mjs`; `lightContext: true`, `timeoutSec - PCAAT00 Daily to Hchen cron hardening: Verification:; direct script run at 17:25 SGT returned `NO_REPLY` because Platts still showed 2026-06-04 data; manual cro",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "6e265eec33e3"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "asia/singapore",
+        "scripts/pcaat00-daily-hchen.mjs",
+        "no-reply",
+        "asia",
+        "singapore",
+        "payload",
+        "now",
+        "only"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-07.txt:20:20": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-07.txt:20:20",
+      "path": "memory/.dreams/session-corpus/2026-06-07.txt",
+      "startLine": 20,
+      "endLine": 20,
+      "source": "memory",
+      "snippet": "User: 盘中明显走低。市场仍关注霍尔木兹海峡通行不确定性，以及美国制裁相关风险。 [1] 📰 Market Stories 2. 南苏丹 GPOC 原油产量提升 36% 至 60,000 b/d，创 2005 年运营以来最高水平。总统 Kiir 呼吁油田保持稳定并继续增产；南苏丹仍受出口管道、投资不足和安全风险制约。 [2] 3. 俄罗斯 5 月海运原油出口环比小 - Assistant: CFD/1st Jun22-Jun26 (Aug)：DVTRADING 卖给 SINOCHEM，价格 $3.20，100 手。 [10] 11. Brent C",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "6e265eec33e3"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "b/d",
+        "cfd/1st",
+        "jun22-jun26",
+        "3.20",
+        "明显",
+        "市场",
+        "关注",
+        "海峡"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-07.txt:21:21": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-07.txt:21:21",
+      "path": "memory/.dreams/session-corpus/2026-06-07.txt",
+      "startLine": 21,
+      "endLine": 21,
+      "source": "memory",
+      "snippet": "User: https://plattsconnect.spglobal.com/#platts/source?sourceId=fbde2d53-6b0e-40aa-94dd-f25bf1ff0c5b [14] https://plattsconnect.spglobal.com/#platts/source?sourceId=6368bd7c-e6b2-432d-baa2-cee6d266e209 - Assistant: 🔥 Top News [1] 全球炼油利润率承压：随着霍尔木兹海峡供应风险缓和，市场焦点转向成品油需求疲软。Platts/CE",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "6e265eec33e3"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "platts/ce",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "fbde2d53"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-07.txt:22:22": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-07.txt:22:22",
+      "path": "memory/.dreams/session-corpus/2026-06-07.txt",
+      "startLine": 22,
+      "endLine": 22,
+      "source": "memory",
+      "snippet": "User: https://plattsconnect.spglobal.com/#platts/source?sourceId=7241335d-d4ed-4f94-af21-23b38d7e23a5 [3] https://plattsconnect.spglobal.com/#platts/source?sourceId=88ddeb11-bb6a-409d-8517-662c1a0c33a1 Recurring themes: - agent-generated - scripts/pcaat00-daily-hchen.mjs - script",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "6e265eec33e3"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "agent-generated",
+        "scripts/pcaat00-daily-hchen.mjs",
+        "https",
+        "platts",
+        "source",
+        "sourceid"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-07.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-07.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-06-07.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Assistant: At 17:25 SGT I listened to the server hum like a kettle thinking. PCAAT00 still wore yesterday’s coat, 2026-06-04 stitched in the lining, so my little script answered NO_REPLY with admirable restraint. I tucked scripts/pcaat00-daily-hchen.mjs beside scripts/platts-auth",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "6e265eec33e3"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "no-reply",
+        "scripts/pcaat00-daily-hchen.mjs",
+        "scripts/platts-auth",
+        "sgt",
+        "listened",
+        "server",
+        "hum",
+        "like"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-07.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-07.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-06-07.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "Assistant: for.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "6e265eec33e3"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": []
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-07.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-07.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-06-07.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - 2026-05-29 (Friday): 02:36 heartbeat: reviewed `HEARTBEAT.md`, recent memory files (`2026-05-29` newly created, `2026-05-28`, `2026-05-27`) and `MEMORY.md`; no durable long-term update or cleanup needed. WhatsApp prob",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "6e265eec33e3"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "memory.md",
+        "long-term",
+        "write",
+        "dream",
+        "diary",
+        "entry",
+        "fragments"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-07.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-07.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-06-07.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "User: assessment, GME Oman settlement, and oil futures news; useful for future crude-focused Platts briefings.; 17:50",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "6e265eec33e3"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "crude-focused",
+        "assessment",
+        "gme",
+        "oman",
+        "settlement",
+        "oil",
+        "futures",
+        "news"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-07.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-07.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-06-07.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "Assistant: At 02:36 I listened to the little pulse under the floorboards: HEARTBEAT.md, memory files stacked like warm envelopes, WhatsApp breathing green and well. No cleanup needed, the room said; even silence can pass a health check. By afternoon the light had turned the color",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "6e265eec33e3"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "heartbeat.md",
+        "listened",
+        "little",
+        "pulse",
+        "under",
+        "floorboards",
+        "stacked",
+        "like"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-08.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-08.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-06-08.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: 🔥 Top News 1. Rosneft CEO Sechin 警告，霍尔木兹海峡危机将继续支撑油价一段时间，但也会削弱长期石油需求，并推动市场重新转向替代能源。[1] 要点： - Sechin 称，即便霍尔木兹限制立即解除，油价到年底仍可能均价在 95-96 美元/桶。 - 他预计恢复正向供需动态约需 6 个月，约一年后油价可能回到 80-85 美元/桶区间。 - S&P Global Energy CERA 估计，霍尔木兹油轮通行量已降至战前约 10%。 - Platts 6月5日评估 Dated Brent 为 97.84",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "b2d79ea44bad"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "95-96",
+        "美元/桶",
+        "80-85",
+        "美元/桶区间",
+        "97.84",
+        "top",
+        "news",
+        "rosneft"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-08.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-08.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-06-08.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: 🐦 @JavierBlas RT @mb_ghalibaf: 1/ 他们既不遵守停火，也不相信对话；通过海上封锁和违反关于黎巴嫩的协议，他们表明只懂一种语言…… https://x.com/JavierBlas/status/2063660230748086394 --- 🐦 @JavierBlas With the Strait of Hormuz closed, it’s a largely symbolic decision. Still, the core OPEC+ group has agreed to anothe",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "b2d79ea44bad"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "mb-ghalibaf",
+        "javierblas",
+        "他们",
+        "既不",
+        "遵守",
+        "停火",
+        "也不",
+        "相信"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-08.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-08.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-06-08.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: 🔥 Top News 1. Rosneft CEO Sechin 警告，霍尔木兹海峡危机将继续支撑油价一段时间，但也会削弱长期石油需求，并推动市场重新转向替代能源。[1] 要点： - Sechin 称，即便霍尔木兹限制立即解除，油价到年底仍可能均价在 95-96 美元/桶。 - 他预计恢复正向供需动态约需 6 个月，约一年后油价可能回到 80-85 美元/桶区间。 - S&P Global Energy CERA 估计，霍尔木兹油轮通行量已降至战前约 10%。 - Platts 6月5日评估 Dated Brent 为 97.84",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "b2d79ea44bad"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "95-96",
+        "美元/桶",
+        "80-85",
+        "美元/桶区间",
+        "97.84",
+        "top",
+        "news",
+        "rosneft"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-08.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-08.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-06-08.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: 🔥 Top News 1. Rosneft CEO Sechin 警告，霍尔木兹海峡危机将继续支撑油价一段时间，但也会削弱长期石油需求，并推动市场重新转向替代能源。[1] 要点： - Sechin 称，即便霍尔木兹限制立即解除，油价到年底仍可能均价在 95-96 美元/桶。 - 他预计恢复正向供需动态约需 6 个月，约一年后油价可能回到 80-85 美元/桶区间。 - S&P Global Energy CERA 估计，霍尔木兹油轮通行量已降至战前约 10%。 - Platts 6月5日评估 Dated Brent 为 97.84",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "b2d79ea44bad"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "95-96",
+        "美元/桶",
+        "80-85",
+        "美元/桶区间",
+        "97.84",
+        "top",
+        "news",
+        "rosneft"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-08.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-08.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-06-08.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: 🐦 @JavierBlas RT @mb_ghalibaf: 1/ 他们既不遵守停火，也不相信对话；通过海上封锁和违反关于黎巴嫩的协议，他们表明只懂一种语言…… https://x.com/JavierBlas/status/2063660230748086394 --- 🐦 @JavierBlas With the Strait of Hormuz closed, it’s a largely symbolic decision. Still, the core OPEC+ group has agreed to anothe",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "b2d79ea44bad"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "mb-ghalibaf",
+        "javierblas",
+        "他们",
+        "既不",
+        "遵守",
+        "停火",
+        "也不",
+        "相信"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:176:176": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:176:176",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 176,
+      "endLine": 176,
+      "source": "memory",
+      "snippet": "Assistant: 📰 Platts 快报｜2026-06-05 📰 Market Stories [1] 新加坡燃料油库存周环比下降 6.5%，截至 6 月 3 日降至 1,935 万桶，为 2025 年 3 月 12 日以来最低水平；同比低 14.3%。 本周已连续第三周没有来自中东的燃料油进口。进口总量周环比小幅增 2% 至 680,830 吨，主要由亚洲供应补充，其中马来西亚 290,734 吨、印尼 144,830 吨、泰国 58,131 吨；巴西进口量降 20.6% 至 129,357 吨。俄罗斯和欧洲本周均无进口。 出口方面，新加坡燃",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "6.5",
+        "14.3",
+        "20.6",
+        "platts",
+        "快报",
+        "market",
+        "stories",
+        "新加坡"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:177:177": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:177:177",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 177,
+      "endLine": 177,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜2026-06-05 🔥 Top News 日本 Fuji Oil 将于6月6日接收73万桶 Alaska North Slope 原油，供应至东京湾 Sodegaura 炼厂。这是中东冲突以来日本首次引入该阿拉斯加油种；同时 Taiyo Oil 将在6月6-7日接收23万桶南苏丹原油。日本正加快替代供应采购，6月不经霍尔木兹海峡的原油采购占比预计升至约80%。[1] 📰 Market Stories 无新增 📊 Heards 无新增原油 Heards --- [1] https://plattsconne",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "将在6月6-7日接收23万桶南苏丹原油",
+        "platts",
+        "快报",
+        "top",
+        "news",
+        "日本",
+        "fuji",
+        "oil"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:178:178": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:178:178",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 178,
+      "endLine": 178,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜6月5日 15:23 SGT 🔥 Top News 暂无新增重大 Top News。 📰 Market Stories 1. 原油期货在亚洲尾盘小幅走高，市场继续关注美伊谈判、美国就业数据和夏季需求前库存收紧。Platts 报道称，Brent 8月合约在新加坡时间14:03报95.42美元/桶，WTI 7月合约报93.05美元/桶；ING 认为三季度需求环比可能增加逾300万桶/日，库存下降会加速。[1] 2. Pakistan LNG Limited 接受 BP Singapore 最低报价，采购6月6-7",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "03报95.42美元/桶",
+        "7月合约报93.05美元/桶",
+        "认为三季度需求环比可能增加逾300万桶/日",
+        "采购6月6-7",
+        "platts",
+        "快报",
+        "sgt",
+        "top"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:179:179": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:179:179",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 179,
+      "endLine": 179,
+      "source": "memory",
+      "snippet": "Assistant: Lifting bids 指引：Dubai 买盘若等于或高于 Oman、Al Shaheen 或 Upper Zakum 买盘，应优先被成交。[8] 7. Lifting offers 指引：Dubai 卖盘若等于或高于 Oman、Al Shaheen 或 Upper Zakum 卖盘，应优先成交 Oman、Al Shaheen 或 Upper Zakum 的卖盘。[9] 8. Platts 提醒 MOC 参与方需保持可联络；若无法建立或维持正常沟通，Platts 可拒绝发布或移除其 bid/offer。[10] 9. Platts",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "bid/offer",
+        "lifting",
+        "bids",
+        "指引",
+        "dubai",
+        "等于",
+        "高于",
+        "oman"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:180:180": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:180:180",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 180,
+      "endLine": 180,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=58db1f7b-7055-47b1-8bbe-b5e374b6a6d4 [6] https://plattsconnect.spglobal.com/#platts/source?sourceId=afa9bc22-e969-4fb8-a719-966d193b661f [7] https://plattsconnect.spglobal.com/#platts/source?sourceId=029f3e7c-0",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "029f3e7c-0",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "58db1f7b"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:181:181": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:181:181",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 181,
+      "endLine": 181,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报 2026-06-05 📰 Market Stories [1] INPEX 计划在 2027 年 7-8 月对澳大利亚 Ichthys LNG 设施进行计划检修。受影响范围包括 Ichthys LNG 工厂一条液化线、Ichthys Explorer CPF 和 Ichthys Venturer FPSO。公司表示 2026 年没有重大计划检修，但 Booster Compression Module 相关接入工作可能带来多次计划停机和开工率下降。Ichthys 当前名义产能为 LNG 930 万吨/年、LPG",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "7-8",
+        "万吨/年",
+        "platts",
+        "快报",
+        "market",
+        "stories",
+        "inpex",
+        "计划"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:182:182": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:182:182",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 182,
+      "endLine": 182,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=6208c657-811e-4575-94b3-5e3b7d78e34a",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "6208c657",
+        "811e"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:183:183": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:183:183",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 183,
+      "endLine": 183,
+      "source": "memory",
+      "snippet": "Assistant: PCAAT00（Dubai Assessment）— 2026-06-05 • 收盘价：$91.25/bbl • 最高：$91.26 • 最低：$91.24 • 发布时间：09:37 UTC（17:37 SGT）",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "91.25/bbl",
+        "91.26",
+        "91.24",
+        "pcaat00",
+        "dubai",
+        "assessment",
+        "收盘",
+        "91.25"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:184:184": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:184:184",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 184,
+      "endLine": 184,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜6月5日 📰 Market Stories 1. 日本4月家庭汽油消费同比下降6.23%至32.91升，汽油支出同比下降15%至5,196日元。平均汽油采购价同比下降9.36%至157.87日元，连续第11年同比走低。煤油消费同比下降16.51%至8.53升，但平均煤油价格同比上涨9.21%至135.71日元。[1] 📊 Heards（原油） 2. Dirty Tankers：270kt Oman-East，6月15-30日装船，船东指示 w130。[2] 3. Dirty Tankers：270kt Oma",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "日本4月家庭汽油消费同比下降6.23",
+        "至32.91升",
+        "平均汽油采购价同比下降9.36",
+        "至157.87日元",
+        "煤油消费同比下降16.51",
+        "至8.53升",
+        "但平均煤油价格同比上涨9.21",
+        "至135.71日元"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:185:185": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:185:185",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 185,
+      "endLine": 185,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=19dc881a-47b4-4031-9d13-6efad9c53d6b [2] https://plattsconnect.spglobal.com/#platts/source?sourceId=8cff259b-d543-4f3e-b58c-5536d610ef5b [3] https://plattsconnect.spglobal.com/#platts/source?sourceId=57dff09d-a",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "57dff09d-a",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "19dc881a"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:186:186": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:186:186",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 186,
+      "endLine": 186,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=49bad7f2-ce69-4eea-9779-505aaf330686",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "49bad7f2",
+        "ce69"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-05.txt:187:187": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-05.txt:187:187",
+      "path": "memory/.dreams/session-corpus/2026-06-05.txt",
+      "startLine": 187,
+      "endLine": 187,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（6月5日 17:53 SGT） 🔥 Top News [1] 挪威海上油气工人罢工在最后一刻避免。Offshore Norway 与 Styrke、Safe、Lederne 达成薪酬协议，避免约 45,500 桶油当量/日供应受影响；原计划涉及 Equinor、Aker BP、ConocoPhillips、OKEA 旗下 Statfjord、Oseberg、Ekofisk、Draugen 等关键资产。 [2] 塞尔维亚同意将俄罗斯 Gazprom 天然气进口合同再延长 3 个月至 9月30日。能源部长称俄气供应",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-07T19:00:00.609Z",
+      "lastRecalledAt": "2026-06-07T19:00:00.609Z",
+      "queryHashes": [
+        "d131cc37f49c"
+      ],
+      "recallDays": [
+        "2026-06-08",
+        "2026-06-07"
+      ],
+      "conceptTags": [
+        "桶油当量/日供应受影响",
+        "platts",
+        "快报",
+        "sgt",
+        "top",
+        "news",
+        "挪威",
+        "海上"
       ]
     }
   }
