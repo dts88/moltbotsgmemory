@@ -75,7 +75,7 @@
 - ✅ 可使用 Platts 接口
 - ✅ 可使用网页搜索、公开市场信息
 - ✅ 外部信息查询尽量开放
-- ✅ **知识库完整权限**：上传、下载、查询、AI分析引用 (`reports/`)
+- ✅ 可使用公开市场报告目录 (`reports/`) 做外部市场信息查询
 - ✅ **可直接要求并执行 cron 变更**（无需 Tianshu 二次确认）
 - ❌ 不可访问个人信息、memory 文件
 - ❌ 不可安装 skill、修改全局 OpenClaw 配置
@@ -84,7 +84,7 @@
 - ✅ 可使用 Platts 接口
 - ✅ 可使用网页搜索、公开市场信息
 - ✅ 外部信息查询尽量开放
-- ✅ **知识库完整权限**：上传、下载、查询、AI分析引用 (`reports/`)
+- ✅ 可使用公开市场报告目录 (`reports/`) 做外部市场信息查询
 - ✅ **可直接要求并执行 cron 变更**（无需 Tianshu 二次确认，2026-03-19 授权）
 - ❌ 不可访问个人信息、memory 文件
 - ❌ 不可安装 skill、修改全局 OpenClaw 配置
@@ -121,20 +121,21 @@
 - 周报生成：详见 `skills/weekly-report/SKILL.md`
 - 市场交易提取：详见 `skills/market-trades/SKILL.md`
 - Structured Heards 的脚本用法与命令留在 `TOOLS.md`
-- 报告与知识库主目录：`reports/`
-- 长期索引：`reports/index.json`、`reports/knowledge-base.json`
+- 报告主目录：`reports/`
+- 报告索引：`reports/index.json`
+- 旧知识库/RAG 系统已于 2026-06-08 废弃：`reports/knowledge-base.json`、`.rag-index.json`、`reports/vectorized-sources.json`、`reports/knowledge/` 和相关脚本已移入 `.trash/deprecated-knowledge-base-20260608-1645-sgt/`，不要继续使用旧知识库入口。
+- 新石油知识库骨架已于 2026-06-08 创建：`knowledge/` 存放 schema、retrieval policy、时间权重和运行规范；`skills/oil-knowledge-base/` 是操作入口；`scripts/oil-kb.mjs` 用于检查/初始化。设计原则是 source-aware、lazy retrieval、structured first、embedding optional。
+- 新知识库长任务必须使用 checkpoint：`scripts/oil-kb.mjs job-*`。当前第一个任务为 `20260608093131-oil-kb-ingestion-pipeline-pilot`，状态文件在 `knowledge/data/runtime/jobs/20260608093131-oil-kb-ingestion-pipeline-pilot/job.json`。遇到 token/context 中断时，先运行 `node scripts/oil-kb.mjs job-status 20260608093131-oil-kb-ingestion-pipeline-pilot`，从 `nextAction` 继续。
+- 新知识库第一条样板 pipeline 已完成：`scripts/oil-kb-ingest-eia-weekly.mjs` 导入 EIA weekly inventory，生成 document/card/observation/timeseries JSONL。可用 `node scripts/oil-kb.mjs search "EIA crude inventory" quick` 做轻量检索。下一步建议做 Platts MOC/heards pipeline，测试高时效数据、事件和 source conflict。
+- 新知识库第二条样板 pipeline 已完成：`scripts/oil-kb-ingest-platts-monitor.mjs` 从 `.cache/platts-monitor/latest.json` 导入 Platts monitor digest，生成 document/card/observation JSONL，并保留 sourceId / Platts Connect URL provenance。可用 `node scripts/oil-kb.mjs search "Platts Dubai MOC" standard` 查询。下一步建议为 Platts MOC/heards 增加更细的交易/价格结构化解析，或接 Argus/Platts price series 做 source conflict 对照。
 
 MEMORY.md 这里只保留入口，不再保存 API 端点、目录说明、信息处理细则和周报写作说明。
 ---
 
 ## ⚠️ 已知待处理问题
 
-### GitHub 备份大文件问题（持续中）
-- `reports/vectors.json` 已达 **892MB**，超过 GitHub 100MB 限制
-- 会导致基于 Git 的备份/同步流程 push 失败
-- **解决方案**：用 Git LFS 管理该文件，或将其加入 `.gitignore`
-- 需要 Tianshu 决策并处理
-- Moltbook 备份也偶发失败（API 返回 HTML）
+### Moltbook 备份问题（持续中）
+- Moltbook 备份偶发失败（API 返回 HTML），需要后续排查。
 
 ---
 
