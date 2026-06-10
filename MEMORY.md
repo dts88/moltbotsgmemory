@@ -126,8 +126,10 @@
 - 旧知识库/RAG 系统已于 2026-06-08 废弃：`reports/knowledge-base.json`、`.rag-index.json`、`reports/vectorized-sources.json`、`reports/knowledge/` 和相关脚本已移入 `.trash/deprecated-knowledge-base-20260608-1645-sgt/`，不要继续使用旧知识库入口。
 - 新石油知识库骨架已于 2026-06-08 创建：`knowledge/` 存放 schema、retrieval policy、时间权重和运行规范；`skills/oil-knowledge-base/` 是操作入口；`scripts/oil-kb.mjs` 用于检查/初始化。设计原则是 source-aware、lazy retrieval、structured first、embedding optional。
 - 新知识库长任务必须使用 checkpoint：`scripts/oil-kb.mjs job-*`。遇到 token/context 中断时，先运行 `node scripts/oil-kb.mjs job-list` 找到对应任务，再用 `node scripts/oil-kb.mjs job-status <job-id>` 从 `nextAction` 继续。
-- 新知识库第一条样板 pipeline 已完成：`scripts/oil-kb-ingest-eia-weekly.mjs` 导入 EIA weekly inventory，生成 document/card/observation/timeseries JSONL。可用 `node scripts/oil-kb.mjs search "EIA crude inventory" quick` 做轻量检索。下一步建议做 Platts MOC/heards pipeline，测试高时效数据、事件和 source conflict。
+- 新知识库第一条样板 pipeline 已完成：`scripts/oil-kb-ingest-eia-weekly.mjs` 导入 EIA weekly inventory，生成 document/card/observation/timeseries JSONL。可用 `node scripts/oil-kb.mjs search "EIA crude inventory" quick` 做轻量检索。
 - 新知识库第二条样板 pipeline 已完成：`scripts/oil-kb-ingest-platts-monitor.mjs` 从 `.cache/platts-monitor/latest.json` 导入 Platts monitor digest，生成 document/card/observation JSONL，并保留 sourceId / Platts Connect URL provenance。可用 `node scripts/oil-kb.mjs search "Platts Dubai MOC" standard` 查询。下一步建议为 Platts MOC/heards 增加更细的交易/价格结构化解析，或接 Argus/Platts price series 做 source conflict 对照。
+- 新知识库已完成首份 Goldman Sachs 研究报告入库：`goldman-oil-comment-estimating-large-demand-destruction-2026-06-05`（Oil Comment: Estimating Large Demand Destruction, 2026-06-05），包含 document/card、4 条 observations、1 条 Brent/WTI 2026Q4 forecast、1 条 demand-destruction triangulation playbook。对应 checkpoint `20260609032310-goldman-macquarie-hormuz-research-reports-2026-0` 已完成。
+- 如需继续 Goldman 成品油利润率报告，当前 checkpoint 为 `20260610092253-goldman-hormuz-product-margins-structural-tailwi`，状态 `in_progress`；这是用户中断后的可续传任务，不要靠聊天上下文硬续，先查 `job-status`。
 
 MEMORY.md 这里只保留入口，不再保存 API 端点、目录说明、信息处理细则和周报写作说明。
 ---
