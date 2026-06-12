@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-10T19:00:04.955Z",
+  "updatedAt": "2026-06-12T02:46:33.503Z",
   "entries": {
     "memory:memory/2026-02-03.md:30:76": {
       "key": "memory:memory/2026-02-03.md:30:76",
@@ -176008,12 +176008,12 @@
       "source": "memory",
       "snippet": "PCAAT00 Daily to Hchen cron hardening: Tianshu asked whether `PCAAT00 Daily to Hchen` could be thoroughly optimized after a failure caused by an agent-generated Node heredoc.; Added `scripts/pcaat00-daily-hchen.mjs` as a fixed local script:; uses shared `scripts/platts-auth.mjs`",
       "recallCount": 0,
-      "dailyCount": 6,
+      "dailyCount": 7,
       "groundedCount": 0,
-      "totalScore": 3.72,
+      "totalScore": 4.34,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-05T19:00:11.819Z",
-      "lastRecalledAt": "2026-06-10T19:00:00.636Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
       "queryHashes": [
         "b58cb32b4279"
       ],
@@ -176024,7 +176024,8 @@
         "2026-06-08",
         "2026-06-09",
         "2026-06-10",
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "agent-generated",
@@ -176045,12 +176046,12 @@
       "source": "memory",
       "snippet": "PCAAT00 Daily to Hchen cron hardening: validates Singapore-date freshness; outputs `NO_REPLY` for normal stale-data waiting; keeps `.cache/pcaat00-daily-hchen/state.json` for last seen data and same-day de-dupe; emits at most one late warning after 20:00 SGT if today's data never",
       "recallCount": 0,
-      "dailyCount": 6,
+      "dailyCount": 7,
       "groundedCount": 0,
-      "totalScore": 3.72,
+      "totalScore": 4.34,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-05T19:00:11.819Z",
-      "lastRecalledAt": "2026-06-10T19:00:00.636Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
       "queryHashes": [
         "b58cb32b4279"
       ],
@@ -176061,7 +176062,8 @@
         "2026-06-08",
         "2026-06-09",
         "2026-06-10",
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "singapore-date",
@@ -176082,12 +176084,12 @@
       "source": "memory",
       "snippet": "PCAAT00 Daily to Hchen cron hardening: Updated live cron `fa41b298-4631-4c42-b922-e44ec2e5d1f2`:; schedule changed from weekday 17:00 single run to `*/10 17-20 * * 1-5` Asia/Singapore; payload now only runs `node scripts/pcaat00-daily-hchen.mjs`; `lightContext: true`, `timeoutSec",
       "recallCount": 0,
-      "dailyCount": 6,
+      "dailyCount": 7,
       "groundedCount": 0,
-      "totalScore": 3.72,
+      "totalScore": 4.34,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-05T19:00:11.819Z",
-      "lastRecalledAt": "2026-06-10T19:00:00.636Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
       "queryHashes": [
         "b58cb32b4279"
       ],
@@ -176098,7 +176100,8 @@
         "2026-06-08",
         "2026-06-09",
         "2026-06-10",
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "17-20",
@@ -176119,12 +176122,12 @@
       "source": "memory",
       "snippet": "PCAAT00 Daily to Hchen cron hardening: Verification:; direct script run at 17:25 SGT returned `NO_REPLY` because Platts still showed 2026-06-04 data; manual cron run `manual:fa41b298-4631-4c42-b922-e44ec2e5d1f2:1780651509919:3` completed `ok` in 10.6s with no delivery, as expecte",
       "recallCount": 0,
-      "dailyCount": 6,
+      "dailyCount": 7,
       "groundedCount": 0,
-      "totalScore": 3.72,
+      "totalScore": 4.34,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-05T19:00:11.819Z",
-      "lastRecalledAt": "2026-06-10T19:00:00.636Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
       "queryHashes": [
         "b58cb32b4279"
       ],
@@ -176135,7 +176138,8 @@
         "2026-06-08",
         "2026-06-09",
         "2026-06-10",
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "no-reply",
@@ -187070,12 +187074,12 @@
       "source": "memory",
       "snippet": "16:45 - 旧知识库废弃: Tianshu 表示要重新考虑创建知识库，并要求先彻底删除和弃用之前的知识库。; 已确认 live cron 中没有知识库导入/向量化任务。; 已将旧知识库/RAG 产物移入可恢复 trash：`.trash/deprecated-knowledge-base-20260608-1645-sgt/`; `.rag-index.json`",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-08T19:00:01.068Z",
-      "lastRecalledAt": "2026-06-10T19:00:00.636Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
       "queryHashes": [
         "c7780e41285a"
       ],
@@ -187083,7 +187087,8 @@
         "2026-06-09",
         "2026-06-08",
         "2026-06-10",
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "中没有知识库导入/向量化任务",
@@ -187104,12 +187109,12 @@
       "source": "memory",
       "snippet": "16:45 - 旧知识库废弃: `reports/knowledge-base.json`; `reports/vectorized-sources.json`; `reports/knowledge/`; `scripts/vectorize.mjs`",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-08T19:00:01.068Z",
-      "lastRecalledAt": "2026-06-10T19:00:00.636Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
       "queryHashes": [
         "c7780e41285a"
       ],
@@ -187117,7 +187122,8 @@
         "2026-06-09",
         "2026-06-08",
         "2026-06-10",
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "reports/knowledge-base.json",
@@ -187138,12 +187144,12 @@
       "source": "memory",
       "snippet": "16:45 - 旧知识库废弃: `scripts/import-reports.mjs`; `scripts/extract-cnpc-kb.mjs`; `scripts/md-to-docx.mjs`; `scripts/rag/`",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-08T19:00:01.068Z",
-      "lastRecalledAt": "2026-06-10T19:00:00.636Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
       "queryHashes": [
         "c7780e41285a"
       ],
@@ -187151,7 +187157,8 @@
         "2026-06-09",
         "2026-06-08",
         "2026-06-10",
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "scripts/import-reports.mjs",
@@ -187172,12 +187179,12 @@
       "source": "memory",
       "snippet": "16:45 - 旧知识库废弃: 旧升级备份里同名的知识库脚本副本也已移入同一个 trash 目录，避免后续误用。; 已更新 `reports/index.json`，移除 `knowledge` 分类和对应条目，并标记旧知识库已废弃。; 已更新 `MEMORY.md`：删除旧知识库入口和 `reports/vectors.json` 大文件待处理项，保留报告目录 `reports/` 作为普通市场资料目录。",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-08T19:00:01.068Z",
-      "lastRecalledAt": "2026-06-10T19:00:00.636Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
       "queryHashes": [
         "c7780e41285a"
       ],
@@ -187185,7 +187192,8 @@
         "2026-06-09",
         "2026-06-08",
         "2026-06-10",
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "备份",
@@ -187206,12 +187214,12 @@
       "source": "memory",
       "snippet": "17:17 - 新石油知识库骨架: Tianshu 确认按新的知识库理解推进：横向/纵向存储石油行业数据与分析，保留机构口径差异，按时间尺度加权，并持续吸收高盛、Citadel 等顶尖机构的方法论。; 已创建 `knowledge/`：; `knowledge/README.md`：总体架构与运行原则; `knowledge/config/retrieval-policy.json`：quick / standard / deep / audit 检索预算、时间衰减、排序权重",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-08T19:00:01.068Z",
-      "lastRecalledAt": "2026-06-10T19:00:00.636Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
       "queryHashes": [
         "c7780e41285a"
       ],
@@ -187219,7 +187227,8 @@
         "2026-06-09",
         "2026-06-08",
         "2026-06-10",
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "横向/纵向存储石油行业数据与分析",
@@ -187240,12 +187249,12 @@
       "source": "memory",
       "snippet": "17:17 - 新石油知识库骨架: `knowledge/schema/v1/`：document、card、observation、timeseries-point、forecast、playbook schema; `knowledge/data/curated|raw|runtime/`：curated 小数据、raw 大文件、runtime 索引缓存目录; 已创建 `skills/oil-knowledge-base/`，作为之后查询、导入、更新方法论 playbook 的操作入口。; 已创建 `scripts/oil-kb.mjs`，支持 `s",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-08T19:00:01.068Z",
-      "lastRecalledAt": "2026-06-10T19:00:00.636Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
       "queryHashes": [
         "c7780e41285a"
       ],
@@ -187253,7 +187262,8 @@
         "2026-06-09",
         "2026-06-08",
         "2026-06-10",
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "knowledge/schema/v1",
@@ -187274,12 +187284,12 @@
       "source": "memory",
       "snippet": "17:17 - 新石油知识库骨架: 已验证 JSON policy/schema 和 CLI status。Python/PyYAML 不可用，skill frontmatter 未用官方 yaml 脚本校验，但格式很简单。",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-08T19:00:01.068Z",
-      "lastRecalledAt": "2026-06-10T19:00:00.636Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
       "queryHashes": [
         "c7780e41285a"
       ],
@@ -187287,7 +187297,8 @@
         "2026-06-09",
         "2026-06-08",
         "2026-06-10",
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "policy/schema",
@@ -187308,12 +187319,12 @@
       "source": "memory",
       "snippet": "17:29 - 新知识库断点续传机制: Tianshu 强调新知识库运行可能遇到模型 token 上限或对话容量上限，必须能断点续传。; 已为 `scripts/oil-kb.mjs` 增加 job/checkpoint 命令：; `job-create <type> <name>`; `job-list`",
       "recallCount": 0,
-      "dailyCount": 3,
+      "dailyCount": 4,
       "groundedCount": 0,
-      "totalScore": 1.8599999999999999,
+      "totalScore": 2.48,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-08T19:00:01.068Z",
-      "lastRecalledAt": "2026-06-10T19:00:00.636Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
       "queryHashes": [
         "c7780e41285a"
       ],
@@ -187321,7 +187332,8 @@
         "2026-06-09",
         "2026-06-08",
         "2026-06-10",
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "scripts/oil-kb.mjs",
@@ -193565,19 +193577,20 @@
       "source": "memory",
       "snippet": "02:36 - Heartbeat memory maintenance: Reviewed recent memory files (`2026-06-10`, `2026-06-09`, `2026-06-08`) and current `MEMORY.md`.; No new long-term memory promotion needed. Existing knowledge-base migration and checkpoint guidance in `MEMORY.md` remains current.",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-09T19:00:02.583Z",
-      "lastRecalledAt": "2026-06-10T19:00:00.636Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
       "queryHashes": [
         "15a88de18915"
       ],
       "recallDays": [
         "2026-06-10",
         "2026-06-09",
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "memory.md",
@@ -193598,19 +193611,20 @@
       "source": "memory",
       "snippet": "14:36 - Heartbeat memory maintenance: Reviewed recent memory files (`2026-06-09`, `2026-06-08`, `2026-06-07`) and current `MEMORY.md`.; `2026-06-08` knowledge-base migration and pilot ingestion details were already promoted to `MEMORY.md`.; Cleaned one stale `MEMORY.md` phrase th",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-09T19:00:02.583Z",
-      "lastRecalledAt": "2026-06-10T19:00:00.636Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
       "queryHashes": [
         "fdef70c73ceb"
       ],
       "recallDays": [
         "2026-06-10",
         "2026-06-09",
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "memory.md",
@@ -193631,19 +193645,20 @@
       "source": "memory",
       "snippet": "20:36 - Heartbeat memory maintenance: Reviewed recent memory files (`2026-06-09`, `2026-06-08`, `2026-06-07`) and current `MEMORY.md`.; No new long-term memory promotion needed. The knowledge-base architecture and checkpoint guidance are already captured in `MEMORY.md`.",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-09T19:00:02.583Z",
-      "lastRecalledAt": "2026-06-10T19:00:00.636Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
       "queryHashes": [
         "fdef70c73ceb"
       ],
       "recallDays": [
         "2026-06-10",
         "2026-06-09",
-        "2026-06-11"
+        "2026-06-11",
+        "2026-06-12"
       ],
       "conceptTags": [
         "memory.md",
@@ -198603,18 +198618,19 @@
       "source": "memory",
       "snippet": "02:36 - Heartbeat memory maintenance: Reviewed recent memory files (`2026-06-11`, `2026-06-10`, `2026-06-09`) and current `MEMORY.md`.; No new long-term promotion needed. `MEMORY.md` already captures the completed Goldman demand-destruction ingestion and the resumable Goldman pro",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-10T19:00:00.636Z",
-      "lastRecalledAt": "2026-06-10T19:00:00.636Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
       "queryHashes": [
         "fc218f6349c7"
       ],
       "recallDays": [
         "2026-06-11",
-        "2026-06-10"
+        "2026-06-10",
+        "2026-06-12"
       ],
       "conceptTags": [
         "memory.md",
@@ -198635,18 +198651,19 @@
       "source": "memory",
       "snippet": "14:36 - Heartbeat memory maintenance: Reviewed recent memory files (`2026-06-10`, `2026-06-09`, `2026-06-08`) and current `MEMORY.md`.; Tianshu sent Goldman Sachs PDF `Oil Comment: Estimating Large Demand Destruction` dated 2026-06-05. Confirmed it reached the chat context, but i",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-10T19:00:00.636Z",
-      "lastRecalledAt": "2026-06-10T19:00:00.636Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
       "queryHashes": [
         "15a88de18915"
       ],
       "recallDays": [
         "2026-06-11",
-        "2026-06-10"
+        "2026-06-10",
+        "2026-06-12"
       ],
       "conceptTags": [
         "memory.md",
@@ -198667,18 +198684,19 @@
       "source": "memory",
       "snippet": "16:13 - Goldman PDF ingested into oil KB: Investigated repeated `codex app-server turn idle timed out waiting for turn/completed` around the Goldman PDF ingestion. Session logs showed Tianshu did not stop the process; the turn stalled around app-server/model completion after tool",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-10T19:00:00.636Z",
-      "lastRecalledAt": "2026-06-10T19:00:00.636Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
       "queryHashes": [
         "15a88de18915"
       ],
       "recallDays": [
         "2026-06-11",
-        "2026-06-10"
+        "2026-06-10",
+        "2026-06-12"
       ],
       "conceptTags": [
         "app-server",
@@ -198699,18 +198717,19 @@
       "source": "memory",
       "snippet": "16:13 - Goldman PDF ingested into oil KB: document/card entries; 4 observations covering 4-5 mb/d global April 2026 demand destruction, refinery/product-stock method, high-frequency method, and China gasoline retail sales decline; 1 forecast record for Goldman Brent/WTI 2026Q4 $9",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-10T19:00:00.636Z",
-      "lastRecalledAt": "2026-06-10T19:00:00.636Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
       "queryHashes": [
         "15a88de18915"
       ],
       "recallDays": [
         "2026-06-11",
-        "2026-06-10"
+        "2026-06-10",
+        "2026-06-12"
       ],
       "conceptTags": [
         "document/card",
@@ -198731,18 +198750,19 @@
       "source": "memory",
       "snippet": "16:13 - Goldman PDF ingested into oil KB: `node scripts/oil-kb.mjs validate` passed; `node scripts/oil-kb.mjs search \"Goldman demand destruction Hormuz\" standard` returns the Goldman card, observations, forecast, and playbook.",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-10T19:00:00.636Z",
-      "lastRecalledAt": "2026-06-10T19:00:00.636Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
       "queryHashes": [
         "15a88de18915"
       ],
       "recallDays": [
         "2026-06-11",
-        "2026-06-10"
+        "2026-06-10",
+        "2026-06-12"
       ],
       "conceptTags": [
         "scripts/oil-kb.mjs",
@@ -198763,18 +198783,19 @@
       "source": "memory",
       "snippet": "20:36 - Heartbeat memory maintenance: Reviewed recent memory files (`2026-06-10`, `2026-06-09`, `2026-06-08`) and current `MEMORY.md`.; Promoted the completed Goldman demand-destruction report ingestion to `MEMORY.md`.; Noted current resumable Goldman product-margins checkpoint `",
       "recallCount": 0,
-      "dailyCount": 1,
+      "dailyCount": 2,
       "groundedCount": 0,
-      "totalScore": 0.62,
+      "totalScore": 1.24,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-10T19:00:00.636Z",
-      "lastRecalledAt": "2026-06-10T19:00:00.636Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
       "queryHashes": [
         "15a88de18915"
       ],
       "recallDays": [
         "2026-06-11",
-        "2026-06-10"
+        "2026-06-10",
+        "2026-06-12"
       ],
       "conceptTags": [
         "memory.md",
@@ -205191,6 +205212,3254 @@
         "1.65",
         "1.70",
         "dare/dv"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:146:146": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:146:146",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 146,
+      "endLine": 146,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（2026-06-10 00:23 SGT） 📊 Heards 1. 原油船货/运费：Pajaritos-UKCM，70kt Depranos 听闻 on subjects，w240，滞期费 $80k/天，6月24-26日装 crude，Cepsa。[1] 2. 原油船货/运费：Brazil-China，260kt New Eminence 听闻 on subjects at COA，7月1-3日装 crude，Unipec。[2] --- [1] https://plattsconnect.spglobal.c",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "原油船货/运费",
+        "pajaritos-ukcm",
+        "80k/天",
+        "6月24-26日装",
+        "brazil-china",
+        "7月1-3日装",
+        "plattsconnect.spglobal.c",
+        "platts"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:147:147": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:147:147",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 147,
+      "endLine": 147,
+      "source": "memory",
+      "snippet": "Assistant: 🐦 @JavierBlas U.S. Energy Secretary Chris Wright said oil traffic throughout the Strait of Hormuz has risen “very meaningfully.” 美国能源部长克里斯·赖特表示，霍尔木兹海峡的石油运输量“显着增加”。 https://x.com/JavierBlas/status/2064368321911198054 🐦 @JavierBlas RT @mashabani: NEW: As dust from Iran",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "u.s",
+        "javierblas",
+        "energy",
+        "secretary",
+        "chris",
+        "wright",
+        "said",
+        "oil"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:148:148": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:148:148",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 148,
+      "endLine": 148,
+      "source": "memory",
+      "snippet": "Assistant: function. https://t.co/kuHPYGB7yr BP确认将其业务重组回传统的上下游大石油模式。 戈登·比雷尔（Gordon Birrell）将负责上游，理查德·哈丁（Richard Harding）将负责下游（临时）。可再生能源的领导地位被大幅降低，并纳入英国石油公司的技术职能中。 https://x.com/JavierBlas/status/2064321542658396206 --- 🐦 @JavierBlas RT @ira_joseph: More examples of how quickly C",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "t.co/kuhpygb7yr",
+        "ira-joseph",
+        "function",
+        "https",
+        "t.co",
+        "kuhpygb7yr",
+        "确认",
+        "业务"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:149:149": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:149:149",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 149,
+      "endLine": 149,
+      "source": "memory",
+      "snippet": "Assistant: 另一个关键迹象表明，更多的中东原油正在通过油轮“暗”流经霍尔木兹海峡（除了通过旁路管道输送的原油之外） https://x.com/JavierBlas/status/2064289228230447251 --- 🐦 @FluxOfficials Messy volumes w/w but big drops y/y! The Liquidity Report: Volume 2, Issue 22 More info here: https://t.co/oTUtFETBjz #OOTT #TheOfficials #Oil",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "w/w",
+        "y/y",
+        "t.co/otutfetbjz",
+        "一个",
+        "关键",
+        "迹象",
+        "表明",
+        "更多"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:150:150": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:150:150",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 150,
+      "endLine": 150,
+      "source": "memory",
+      "snippet": "Assistant: https://x.com/FluxOfficials/status/2064310285633003583",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "https",
+        "x.com",
+        "fluxofficials",
+        "status"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:151:151": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:151:151",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 151,
+      "endLine": 151,
+      "source": "memory",
+      "snippet": "Assistant: 📰 Market Stories [1] US LNG WEEKLY：亚洲采购拉动增强，美国LNG价格上涨 截至6月9日当周，美国 Gulf Coast Marker 走强。Platts 评估30-60天装期美国FOB LNG价格为15.08美元/MMBtu，高于6月2日的14.83美元/MMBtu。市场人士称，美国FOB价格取决于“亚洲拉货力度”。 美湾至亚洲套利窗口仍保持打开。S&P Global Commodities at Sea 数据显示，中石化租船在路易斯安那州 Plaquemines 装货，这是中石化首次从美国设施租",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "评估30-60天装期美国fob",
+        "lng价格为15.08美元/mmbtu",
+        "高于6月2日的14.83美元/mmbtu",
+        "market",
+        "stories",
+        "lng",
+        "weekly",
+        "亚洲"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:152:152": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:152:152",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 152,
+      "endLine": 152,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（6月10日，新加坡时间） 🔥 Top News [1] 纳米比亚：Shell 运营的 PEL 39 区块 Merlin-1X 井取得“promising”油发现。QatarEnergy 称结果显示储层质量良好、轻质油、伴生气有限；Shell 表示可能在 2026 年晚些时候继续钻探，以评估商业化潜力。 📰 Market Stories 无新增。 📊 Heards [2] Cartagena IFO 380 CST 燃料油船燃估价 $692/mt delivered；参考 USGC HSFO $81.80/b",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "merlin-1x",
+        "692/mt",
+        "81.80/b",
+        "platts",
+        "快报",
+        "新加坡",
+        "时间",
+        "top"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:153:153": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:153:153",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 153,
+      "endLine": 153,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=d2809834-1a94-48ae-94df-48f3ed24b53a [3] https://plattsconnect.spglobal.com/#platts/source?sourceId=567939a1-cc24-41a4-a9a8-754073edc90d [4] https://plattsconnect.spglobal.com/#platts/source?sourceId=cec54ce2-8",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "cec54ce2-8",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "d2809834"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:154:154": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:154:154",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 154,
+      "endLine": 154,
+      "source": "memory",
+      "snippet": "Assistant: 📊 Platts 原油 Heards 快报（6月10日） 1. Dirty tanker 运费：Pajaritos-UKCM 航线，70kt Drepanos/Depranos 听闻 on subjects，w240，滞期费 $80k/day，装期 6月24-26日，Cepsa。 [1] 2. Guyana 原油收盘评估：Liza、Unity Gold 相关窗口无成交、无买盘、无卖盘。 [2] 3. 加拿大原油收盘评估：Pacific Cold Lake / Pacific Dilbit FOB Westridge 等相关评估无买",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "pajaritos-ukcm",
+        "drepanos/depranos",
+        "80k/day",
+        "6月24-26日",
+        "platts",
+        "原油",
+        "heards",
+        "快报"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:155:155": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:155:155",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 155,
+      "endLine": 155,
+      "source": "memory",
+      "snippet": "Assistant: 📊 Heards 1. 美洲原油：Medanito 8月装船货听闻成交，价格为 ICE Brent +1美元/桶以上，FOB 条件，船货量72万桶。该信息为美国中部时间13:30后听闻。[1] --- [1] https://plattsconnect.spglobal.com/#platts/source?sourceId=2a7ab07f-aee8-4ebe-8038-27e0b5177374",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "1美元/桶以上",
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "heards",
+        "美洲",
+        "原油",
+        "medanito",
+        "装船"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:156:156": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:156:156",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 156,
+      "endLine": 156,
+      "source": "memory",
+      "snippet": "Assistant: 🔥 Top News 无新增重大 Top News。 📰 Market Stories [1] 巴拿马运河 LNG 通行量仍偏低。尽管 5 月美国 LNG 经巴拿马运河运往北亚的套利窗口持续打开，平均约 62 美分/MMBtu，但实际通行量没有明显放大。5 月 LNG 船过境 7 艘，低于 4 月的 12 艘；南向载货过境 5 艘，为去年 8 月以来最高，但仍属温和。6 月截至 9 日仅 1 艘南向载货船过境，后续 6 月中下旬有数个预约档期。市场人士认为套利已打开，但船货流动偏少，反映实际调度、货源或船期约束仍在压制流量。 \ud83d",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "美分/mmbtu",
+        "top",
+        "news",
+        "新增",
+        "重大",
+        "market",
+        "stories",
+        "巴拿马"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:157:157": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:157:157",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 157,
+      "endLine": 157,
+      "source": "memory",
+      "snippet": "Assistant: 📰 Platts 快报（6月10日） 📰 Market Stories [1] Elba Island LNG 两套升级机组恢复运行 Kinder Morgan 已在 Georgia 的 Elba Island LNG 出口终端恢复两套完成优化升级的液化模块运行，分别于 5月28日和 6月8日投运。这是该终端 10 套模块中第 4 套完成升级。项目目标是把产能从约 250万吨/年提升至约 290万吨/年，并降低污染沉积和排放。Elba Island 规模较小，通常每月约 3船，Shell 是唯一承购方。文章同时提到，中东战争持续",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "250万吨/年提升至约",
+        "290万吨/年",
+        "platts",
+        "快报",
+        "market",
+        "stories",
+        "elba",
+        "island"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:158:158": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:158:158",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 158,
+      "endLine": 158,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（2026-06-10 00:23 SGT） 📊 Heards 1. 原油船货/运费：Pajaritos-UKCM，70kt Depranos 听闻 on subjects，w240，滞期费 $80k/天，6月24-26日装 crude，Cepsa。[1] 2. 原油船货/运费：Brazil-China，260kt New Eminence 听闻 on subjects at COA，7月1-3日装 crude，Unipec。[2] --- [1] https://plattsconnect.spglobal.c",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "原油船货/运费",
+        "pajaritos-ukcm",
+        "80k/天",
+        "6月24-26日装",
+        "brazil-china",
+        "7月1-3日装",
+        "plattsconnect.spglobal.c",
+        "platts"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:159:159": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:159:159",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 159,
+      "endLine": 159,
+      "source": "memory",
+      "snippet": "Assistant: 📰 Market Stories [1] US LNG WEEKLY：亚洲采购拉动增强，美国LNG价格上涨 截至6月9日当周，美国 Gulf Coast Marker 走强。Platts 评估30-60天装期美国FOB LNG价格为15.08美元/MMBtu，高于6月2日的14.83美元/MMBtu。市场人士称，美国FOB价格取决于“亚洲拉货力度”。 美湾至亚洲套利窗口仍保持打开。S&P Global Commodities at Sea 数据显示，中石化租船在路易斯安那州 Plaquemines 装货，这是中石化首次从美国设施租",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "评估30-60天装期美国fob",
+        "lng价格为15.08美元/mmbtu",
+        "高于6月2日的14.83美元/mmbtu",
+        "market",
+        "stories",
+        "lng",
+        "weekly",
+        "亚洲"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:160:160": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:160:160",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 160,
+      "endLine": 160,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（6月10日，新加坡时间） 🔥 Top News [1] 纳米比亚：Shell 运营的 PEL 39 区块 Merlin-1X 井取得“promising”油发现。QatarEnergy 称结果显示储层质量良好、轻质油、伴生气有限；Shell 表示可能在 2026 年晚些时候继续钻探，以评估商业化潜力。 📰 Market Stories 无新增。 📊 Heards [2] Cartagena IFO 380 CST 燃料油船燃估价 $692/mt delivered；参考 USGC HSFO $81.80/b",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "merlin-1x",
+        "692/mt",
+        "81.80/b",
+        "platts",
+        "快报",
+        "新加坡",
+        "时间",
+        "top"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:161:161": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:161:161",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 161,
+      "endLine": 161,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=d2809834-1a94-48ae-94df-48f3ed24b53a [3] https://plattsconnect.spglobal.com/#platts/source?sourceId=567939a1-cc24-41a4-a9a8-754073edc90d [4] https://plattsconnect.spglobal.com/#platts/source?sourceId=cec54ce2-8",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "cec54ce2-8",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "d2809834"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:162:162": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:162:162",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 162,
+      "endLine": 162,
+      "source": "memory",
+      "snippet": "Assistant: 📊 Platts 原油 Heards 快报（6月10日） 1. Dirty tanker 运费：Pajaritos-UKCM 航线，70kt Drepanos/Depranos 听闻 on subjects，w240，滞期费 $80k/day，装期 6月24-26日，Cepsa。 [1] 2. Guyana 原油收盘评估：Liza、Unity Gold 相关窗口无成交、无买盘、无卖盘。 [2] 3. 加拿大原油收盘评估：Pacific Cold Lake / Pacific Dilbit FOB Westridge 等相关评估无买",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "pajaritos-ukcm",
+        "drepanos/depranos",
+        "80k/day",
+        "6月24-26日",
+        "platts",
+        "原油",
+        "heards",
+        "快报"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:163:163": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:163:163",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 163,
+      "endLine": 163,
+      "source": "memory",
+      "snippet": "Assistant: 📊 Heards 1. 美洲原油：Medanito 8月装船货听闻成交，价格为 ICE Brent +1美元/桶以上，FOB 条件，船货量72万桶。该信息为美国中部时间13:30后听闻。[1] --- [1] https://plattsconnect.spglobal.com/#platts/source?sourceId=2a7ab07f-aee8-4ebe-8038-27e0b5177374",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "1美元/桶以上",
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "heards",
+        "美洲",
+        "原油",
+        "medanito",
+        "装船"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:164:164": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:164:164",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 164,
+      "endLine": 164,
+      "source": "memory",
+      "snippet": "Assistant: 🔥 Top News 无新增重大 Top News。 📰 Market Stories [1] 巴拿马运河 LNG 通行量仍偏低。尽管 5 月美国 LNG 经巴拿马运河运往北亚的套利窗口持续打开，平均约 62 美分/MMBtu，但实际通行量没有明显放大。5 月 LNG 船过境 7 艘，低于 4 月的 12 艘；南向载货过境 5 艘，为去年 8 月以来最高，但仍属温和。6 月截至 9 日仅 1 艘南向载货船过境，后续 6 月中下旬有数个预约档期。市场人士认为套利已打开，但船货流动偏少，反映实际调度、货源或船期约束仍在压制流量。 \ud83d",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "美分/mmbtu",
+        "top",
+        "news",
+        "新增",
+        "重大",
+        "market",
+        "stories",
+        "巴拿马"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:165:165": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:165:165",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 165,
+      "endLine": 165,
+      "source": "memory",
+      "snippet": "Assistant: 📰 Platts 快报（6月10日） 📰 Market Stories [1] Elba Island LNG 两套升级机组恢复运行 Kinder Morgan 已在 Georgia 的 Elba Island LNG 出口终端恢复两套完成优化升级的液化模块运行，分别于 5月28日和 6月8日投运。这是该终端 10 套模块中第 4 套完成升级。项目目标是把产能从约 250万吨/年提升至约 290万吨/年，并降低污染沉积和排放。Elba Island 规模较小，通常每月约 3船，Shell 是唯一承购方。文章同时提到，中东战争持续",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "250万吨/年提升至约",
+        "290万吨/年",
+        "platts",
+        "快报",
+        "market",
+        "stories",
+        "elba",
+        "island"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:166:166": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:166:166",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 166,
+      "endLine": 166,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=ab0ecbd7-1d16-4deb-9a91-644031f66f6d",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "ab0ecbd7",
+        "1d16"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:167:167": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:167:167",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 167,
+      "endLine": 167,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（2026-06-10） 📰 Market Stories [1] 美国中西部 Group 3 汽油和丁烷价格从近期高位回落，因库存趋稳，供应紧张担忧有所缓解。Platts 评估 Oklahoma Group 3 普通 suboctane 汽油 V-grade 差价下跌 2.5 美分/加仑至 NYMEX 7月 RBOB -13 美分/加仑，现货价跌至 2.8911 美元/加仑，为一周低点；Premium suboctane A-grade 差价下跌 8 美分/加仑至期货 +37 美分/加仑，现货价跌至 3.391",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "v-grade",
+        "2.5",
+        "美分/加仑至",
+        "美分/加仑",
+        "2.8911",
+        "美元/加仑",
+        "a-grade",
+        "美分/加仑至期货"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:168:168": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:168:168",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 168,
+      "endLine": 168,
+      "source": "memory",
+      "snippet": "Assistant: 🔥 Top News 1. 加拿大称油气投资吸引力正在增强。加拿大能源与自然资源部长 Tim Hodgson 6月9日在 Calgary 表示，随着新的监管环境和基础设施推进，加拿大油气行业正在重新吸引资本流入，包括通往西海岸、规模约100万桶/日的输油管道。加拿大目前约80%的500万桶/日原油产量出口给盟友，约50%的190亿立方英尺/日天然气产量出口给盟友，未来随着 LNG 产能提升，出口仍有增长空间。[1] 2. 新 LNG 项目是重点。LNG Canada Phase 1 自去年夏季启动以来已出口80船；LNG Cana",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "规模约100万桶/日的输油管道",
+        "的500万桶/日原油产量出口给盟友",
+        "的190亿立方英尺/日天然气产量出口给盟友",
+        "top",
+        "news",
+        "加拿大",
+        "油气",
+        "投资"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:169:169": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:169:169",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 169,
+      "endLine": 169,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报 2026-06-10 🔥 Top News 1. 澳大利亚公平工作委员会将于 6月12日 就 INPEX Ichthys LNG 罢工行动申请举行听证。INPEX 已申请紧急命令暂停受保护工业行动，以便继续劳资谈判；Offshore Alliance 此前称工人已拒绝日企最后报价，并计划从 6月11日 升级工业行动。若罢工升级，Ichthys LNG 供应和装船节奏需关注。[1] 2. 日本主要电力公司 LNG 库存截至 6月7日 环比下降 5.3% 至 180万吨，创 38周低位，主要受燃料需求上升影响。该水",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "5.3",
+        "platts",
+        "快报",
+        "top",
+        "news",
+        "澳大利亚",
+        "公平",
+        "工作"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:23:23": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:23:23",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 23,
+      "endLine": 23,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=97086164-68c0-44c2-a4cb-3f97a8eacbcb [7] https://plattsconnect.spglobal.com/#platts/source?sourceId=1f9d5974-a822-4ff8-a814-cccd43ecffe2 [8] https://plattsconnect.spglobal.com/#platts/source?sourceId=84b7d8be-8",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "84b7d8be-8",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "68c0"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:24:24": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:24:24",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 24,
+      "endLine": 24,
+      "source": "memory",
+      "snippet": "Assistant: 🐦 @JavierBlas RT @drpezeshkian：关键基础设施是人们生活的动脉。从交通网络到电力和水工业，针对他们的威胁并不是作秀…… https://x.com/JavierBlas/status/2064751288944832982 🐦 @JavierBlas RT @gbrew24：路透社报道称，卡塔尔代表团正在前往德黑兰，试图弥合美国和伊朗之间的分歧…… https://x.com/JavierBlas/status/2064750071556558922 🐦 @JavierBlas BREAKING:",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "网络",
+        "javierblas",
+        "drpezeshkian",
+        "关键",
+        "基础",
+        "设施",
+        "人们",
+        "生活"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:25:25": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:25:25",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 25,
+      "endLine": 25,
+      "source": "memory",
+      "snippet": "Assistant: Midland from BP https://x.com/FluxOfficials/status/2064751333937193268 🐦 @FluxOfficials 尽管发生爆炸事件，价格仍在下跌。Dubai 流动性仍然低迷，Brent 表现更强；亚洲国家正在寻找其他选择。 10-June-2026, Volume 3, Issue 108 (Asia) https://x.com/FluxOfficials/status/2064656943235404215",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "10-june-2026",
+        "midland",
+        "https",
+        "x.com",
+        "fluxofficials",
+        "status",
+        "尽管",
+        "发生"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:26:26": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:26:26",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 26,
+      "endLine": 26,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报 2026-06-11 01:23 SGT 🔥 Top News 1. 亚洲海上浮仓下降：截至5月底，东南亚原油/凝析油浮仓较4月底下降逾20%至约3,956万桶，主要因伊朗原油浮仓减少32%。但波斯湾附近伊朗原油浮仓从2,650万桶升至5,290万桶，显示美国对伊朗海运贸易施压后，部分货流转向近岸滞留。山东独立炼厂5月仍进口约641万吨伊朗原油，低于4月739万吨。 [1] 2. 阿曼 Sohar 外海油轮遇袭：Palau 旗 MR 成品油轮 Settebello 6月10日在 Sohar 东北约20海里发生机",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "东南亚原油/凝析油浮仓较4月底下降逾20",
+        "platts",
+        "快报",
+        "sgt",
+        "top",
+        "news",
+        "亚洲",
+        "海上"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:27:27": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:27:27",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 27,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "Assistant: 沙特原油出口下降：CAS数据显示，沙特5月原油出口约450万桶/日，较4月低约30万桶/日，主要因对中国发货降至约74.3万桶/日，低于4月99.03万桶/日。由于霍尔木兹中断，沙特自3月以来全部出口从西海岸港口装出。对印度出口环比增加约12.8万桶/日至44.38万桶/日。 [5] 📊 Heards 6. WTI Midland：8月纸货听闻成交在 WTI +0.80美元/桶。 [6] 7. West Texas Sour：7月听闻成交在 WTI Midland -1.00美元/桶。 [7] --- [1] https://pl",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "沙特5月原油出口约450万桶/日",
+        "较4月低约30万桶/日",
+        "主要因对中国发货降至约74.3万桶/日",
+        "低于4月99.03万桶/日",
+        "对印度出口环比增加约12.8万桶/日至44.38万桶/日",
+        "0.80美元/桶",
+        "1.00美元/桶",
+        "沙特"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:28:28": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:28:28",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 28,
+      "endLine": 28,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=414f460b-0402-4c4e-90f8-72529802b5bf [7] https://plattsconnect.spglobal.com/#platts/source?sourceId=65cf582e-308b-4eba-991f-c432ea786e1e",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "414f460b",
+        "4c4e"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:29:29": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:29:29",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 29,
+      "endLine": 29,
+      "source": "memory",
+      "snippet": "Assistant: Platts 原油 Heards 快报 时间：2026-06-11 02:13 SGT 📊 Heards 1. Synthetic Sweet Blend (SYN)：7月听闻成交，WTI CMA +$3.70/b [1] 2. Mixed Sweet (SW)：7月听闻成交，WTI CMA -$1.65/b [2] 3. Bakken Clearbrook (UHC)：7月听闻成交，WTI CMA +$2.30/b [3] 4. Western Canadian Select (WCS) Hardisty：7月听闻成交，WTI",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "3.70/b",
+        "1.65/b",
+        "2.30/b",
+        "platts",
+        "原油",
+        "heards",
+        "快报",
+        "时间"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:30:30": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:30:30",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 30,
+      "endLine": 30,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=83afb21b-b24b-4653-97e7-aba194bf8757 [2] https://plattsconnect.spglobal.com/#platts/source?sourceId=285f6f18-909a-44fb-9f35-af04553701e1 [3] https://plattsconnect.spglobal.com/#platts/source?sourceId=7086a0e9-2",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "7086a0e9-2",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "83afb21b"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:31:31": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:31:31",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 31,
+      "endLine": 31,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=08624ae9-72ad-4292-ab3a-3ad7905d7007 [10] https://plattsconnect.spglobal.com/#platts/source?sourceId=74a7bbfb-12ec-4eef-b905-6ee6dbfba15a",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "08624ae9",
+        "72ad"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:32:32": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:32:32",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 32,
+      "endLine": 32,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（6月11日） 🔥 Top News 1. 全球炼厂利润区域分化：WTI-Brent 价差从3月最高 $20.69/b 收窄至6月初约 $2-5/b，削弱美国炼厂原料优势；美国原油出口5月升至 560万桶/日，亚洲和欧洲买家补充中东供应缺口推高 WTI。6月至今 Platts NYMEX 3-2-1 crack 均值 $45.16/b，较5月低13%，但同比仍高84%。馏分油更强，USGC ULSD WTI crack 同比高133%，Jet WTI crack 同比高142%。[1] 📰 Market Sto",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "wti-brent",
+        "20.69/b",
+        "2-5/b",
+        "560万桶/日",
+        "3-2-1",
+        "45.16/b",
+        "platts",
+        "快报"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:33:33": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:33:33",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 33,
+      "endLine": 33,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=a64ce9cc-d90d-4a38-b7be-91d0e0207e6e [3] https://plattsconnect.spglobal.com/#platts/source?sourceId=96a1ab28-a2f1-4062-a652-696f58415c34 [4] https://plattsconnect.spglobal.com/#platts/source?sourceId=4c4a38fa-2",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "4c4a38fa-2",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "a64ce9cc"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:34:34": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:34:34",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 34,
+      "endLine": 34,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜2026-06-11 🔥 Top News 无新增。 📰 Market Stories [1] LNG Juno 原本驶往欧洲，6月9日改航巴西 Bahia 再气化终端，预计6月17日到港。市场人士称 Petrobras 进行了现货采购，原因与巴西国内盐下层天然气生产问题有关；多位来源认为这是一次性采购，不代表巴西 LNG 需求大幅上升。 📊 Heards [2] Americas crude oil：ANS 8月交付听闻成交，价格为 ICE Brent front-month CMA +$5.20/b（6",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "front-month",
+        "5.20/b",
+        "platts",
+        "快报",
+        "top",
+        "news",
+        "新增",
+        "market"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:35:35": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:35:35",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 35,
+      "endLine": 35,
+      "source": "memory",
+      "snippet": "Assistant: Platts 能源快报（6月11日 04:43 SGT） 🔥 Top News [1] 印度 Oil India 正在评估投资加拿大东部 Newfoundland and Labrador 海上油气区块的可能性。当地监管机构 6月2日开放 16 个勘探许可区块招标，总面积约 368.3 万公顷，投标截止 2026年11月4日，成功竞标者预计 2027 年初公布。Oil India 表示仍处非常早期阶段，计划今年夏天进一步评估风险与回报。 📰 Market Stories [2] 美国 Atlantic Coast 汽油库存小幅增",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "368.3",
+        "platts",
+        "能源",
+        "快报",
+        "sgt",
+        "top",
+        "news",
+        "印度"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:36:36": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:36:36",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 36,
+      "endLine": 36,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=22be070a-5b25-41a3-a66b-164a70e4c687 [3] https://plattsconnect.spglobal.com/#platts/source?sourceId=eef08f12-8726-472f-80c8-95c3972bc42c",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "22be070a",
+        "5b25"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:37:37": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:37:37",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 37,
+      "endLine": 37,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（6月11日） 🔥 Top News 1. 全球炼厂利润区域分化：WTI-Brent 价差从3月最高 $20.69/b 收窄至6月初约 $2-5/b，削弱美国炼厂原料优势；美国原油出口5月升至 560万桶/日，亚洲和欧洲买家补充中东供应缺口推高 WTI。6月至今 Platts NYMEX 3-2-1 crack 均值 $45.16/b，较5月低13%，但同比仍高84%。馏分油更强，USGC ULSD WTI crack 同比高133%，Jet WTI crack 同比高142%。[1] 📰 Market Sto",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "wti-brent",
+        "20.69/b",
+        "2-5/b",
+        "560万桶/日",
+        "3-2-1",
+        "45.16/b",
+        "platts",
+        "快报"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:38:38": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:38:38",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 38,
+      "endLine": 38,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=a64ce9cc-d90d-4a38-b7be-91d0e0207e6e [3] https://plattsconnect.spglobal.com/#platts/source?sourceId=96a1ab28-a2f1-4062-a652-696f58415c34 [4] https://plattsconnect.spglobal.com/#platts/source?sourceId=4c4a38fa-2",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "4c4a38fa-2",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "a64ce9cc"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:39:39": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:39:39",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 39,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "Assistant: Platts快报 2026-06-11 🔥 Top News 1. 原油期货上涨：特朗普称美国将继续对伊朗发动打击，市场风险溢价上升。NYMEX 7月 WTI 收涨1.83美元至90.03美元/桶，ICE 8月 Brent 收涨1.65美元至93.10美元/桶。报道还提到霍尔木兹海峡船舶通行量下降，6月至今日均12.1艘，低于5月13.1艘和4月14.3艘。成品油同步走强，RBOB与ULSD期货上涨。[1] 📰 Market Stories 2. 美国航煤产量创历史新高：截至6月5日当周，美国航煤产量升至210.2万桶/日，受出",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "收涨1.83美元至90.03美元/桶",
+        "收涨1.65美元至93.10美元/桶",
+        "6月至今日均12.1艘",
+        "低于5月13.1艘和4月14.3艘",
+        "美国航煤产量升至210.2万桶/日",
+        "platts",
+        "快报",
+        "top"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:40:40": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:40:40",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 40,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "Assistant: Platts 原油 Heards 快报 时间：2026-06-11 02:13 SGT 📊 Heards 1. Synthetic Sweet Blend (SYN)：7月听闻成交，WTI CMA +$3.70/b [1] 2. Mixed Sweet (SW)：7月听闻成交，WTI CMA -$1.65/b [2] 3. Bakken Clearbrook (UHC)：7月听闻成交，WTI CMA +$2.30/b [3] 4. Western Canadian Select (WCS) Hardisty：7月听闻成交，WTI",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "3.70/b",
+        "1.65/b",
+        "2.30/b",
+        "platts",
+        "原油",
+        "heards",
+        "快报",
+        "时间"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:41:41": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:41:41",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 41,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=83afb21b-b24b-4653-97e7-aba194bf8757 [2] https://plattsconnect.spglobal.com/#platts/source?sourceId=285f6f18-909a-44fb-9f35-af04553701e1 [3] https://plattsconnect.spglobal.com/#platts/source?sourceId=7086a0e9-2",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "7086a0e9-2",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "83afb21b"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:42:42": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:42:42",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 42,
+      "endLine": 42,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=08624ae9-72ad-4292-ab3a-3ad7905d7007 [10] https://plattsconnect.spglobal.com/#platts/source?sourceId=74a7bbfb-12ec-4eef-b905-6ee6dbfba15a",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "08624ae9",
+        "72ad"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:43:43": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:43:43",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 43,
+      "endLine": 43,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜2026-06-11 🔥 Top News 无新增。 📰 Market Stories [1] LNG Juno 原本驶往欧洲，6月9日改航巴西 Bahia 再气化终端，预计6月17日到港。市场人士称 Petrobras 进行了现货采购，原因与巴西国内盐下层天然气生产问题有关；多位来源认为这是一次性采购，不代表巴西 LNG 需求大幅上升。 📊 Heards [2] Americas crude oil：ANS 8月交付听闻成交，价格为 ICE Brent front-month CMA +$5.20/b（6",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "front-month",
+        "5.20/b",
+        "platts",
+        "快报",
+        "top",
+        "news",
+        "新增",
+        "market"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:44:44": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:44:44",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 44,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报｜2026-06-11 🔥 Top News 无新增。 📰 Market Stories [1] LNG Juno 原本驶往欧洲，6月9日改航巴西 Bahia 再气化终端，预计6月17日到港。市场人士称 Petrobras 进行了现货采购，原因与巴西国内盐下层天然气生产问题有关；多位来源认为这是一次性采购，不代表巴西 LNG 需求大幅上升。 📊 Heards [2] Americas crude oil：ANS 8月交付听闻成交，价格为 ICE Brent front-month CMA +$5.20/b（6",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "front-month",
+        "5.20/b",
+        "platts",
+        "快报",
+        "top",
+        "news",
+        "新增",
+        "market"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:45:45": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:45:45",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 45,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "Assistant: Platts 能源快报（6月11日 04:43 SGT） 🔥 Top News [1] 印度 Oil India 正在评估投资加拿大东部 Newfoundland and Labrador 海上油气区块的可能性。当地监管机构 6月2日开放 16 个勘探许可区块招标，总面积约 368.3 万公顷，投标截止 2026年11月4日，成功竞标者预计 2027 年初公布。Oil India 表示仍处非常早期阶段，计划今年夏天进一步评估风险与回报。 📰 Market Stories [2] 美国 Atlantic Coast 汽油库存小幅增",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "368.3",
+        "platts",
+        "能源",
+        "快报",
+        "sgt",
+        "top",
+        "news",
+        "印度"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:46:46": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:46:46",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 46,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=22be070a-5b25-41a3-a66b-164a70e4c687 [3] https://plattsconnect.spglobal.com/#platts/source?sourceId=eef08f12-8726-472f-80c8-95c3972bc42c",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "22be070a",
+        "5b25"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:47:47": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:47:47",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 47,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - 02:36 - Heartbeat memory maintenance: Reviewed recent memory files (`2026-06-10`, `2026-06-09`, `2026-06-08`) and current `MEMORY.md`.; No new long-term memory promotion needed. Existing knowledge-base migration and c",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "memory.md",
+        "long-term",
+        "knowledge-base",
+        "write",
+        "dream",
+        "diary",
+        "entry",
+        "fragments"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:48:48": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:48:48",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 48,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "Assistant: Today I tended the little archive-garden, turning over the recent days by timestamp and leaf: 2026-06-10, 2026-06-09, 2026-06-08, then again the neighboring trio of 09, 08, 07. Nothing new asked to be planted in long-term soil; the migration paths still glowed faintly,",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "archive-garden",
+        "long-term",
+        "tended",
+        "little",
+        "archive",
+        "garden",
+        "turning",
+        "recent"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:49:49": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:49:49",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 49,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "Assistant: but a door learning how to be a wall.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "but",
+        "door",
+        "learning",
+        "how",
+        "wall"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:50:50": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:50:50",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 50,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - PCAAT00 Daily to Hchen rerun: runId `manual:fa41b298-4631-4c42-b922-e44ec2e5d1f2:1780480508449:2`; duration 50.6s; deliveryStatus `delivered`; output: PCAAT00 2026-06-03 close $97.41/bbl, high $97.42, low $97.40, publ",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "50.6s",
+        "97.41/bbl",
+        "97.42",
+        "97.40",
+        "write",
+        "dream",
+        "diary",
+        "entry"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:51:51": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:51:51",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 51,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "User: $92.81, low $92.79, publish 09:03 UTC / 17:03 SGT.; Job state recovered to `ok`, `consecutiveErrors: 0`. - PCAAT00 Daily to Hchen rerun: Tianshu asked to rerun cron `PCAAT00 Daily to Hchen`.; Live cron job: `fa41b298-4631-4c42-b922-e44ec2e5d1f2`, enabled, weekday 17:00 Asia",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "92.81",
+        "92.79",
+        "low",
+        "publish",
+        "utc",
+        "sgt",
+        "job",
+        "state"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:52:52": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:52:52",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 52,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "User: `2026-05-27`) and `MEMORY.md`; no durable long-term update or cleanup needed. WhatsApp probe shows linked/running/connected/healthy, with recent outbound - 2026-05-29 (Friday): 16:57 Adjusted `scripts/platts-insights-monitor.mjs` for the 50-minute Platts monitor: Heards out",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "memory.md",
+        "long-term",
+        "linked/running/connected/healthy",
+        "50-minute",
+        "durable",
+        "term",
+        "update",
+        "cleanup"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:53:53": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:53:53",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 53,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "User: Hchen` could be thoroughly optimized after a failure caused by an agent-generated Node heredoc.; Added `scripts/pcaat00-daily-hchen.mjs` as a fixed local script:; uses shared `scripts/platts-auth.mjs`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "agent-generated",
+        "scripts/pcaat00-daily-hchen.mjs",
+        "scripts/platts-auth.mjs",
+        "hchen",
+        "thoroughly",
+        "optimized",
+        "failure",
+        "caused"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:54:54": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:54:54",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 54,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "Assistant: I kept finding small green lights in the machinery today: `delivered`, `ok`, `consecutiveErrors: 0` — little fireflies blinking over the cron fields. PCAAT00 arrived twice like a careful messenger, one close at $92.80/bbl, another at $97.41, each with highs and lows so",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "92.80/bbl",
+        "97.41",
+        "kept",
+        "finding",
+        "small",
+        "green",
+        "lights",
+        "machinery"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:55:55": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:55:55",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 55,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "Assistant: path through Platts. Some days recovery is not dramatic. It is just a job returning to `ok`, softly.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "path",
+        "platts",
+        "days",
+        "recovery",
+        "not",
+        "dramatic",
+        "job",
+        "returning"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:56:56": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:56:56",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 56,
+      "endLine": 56,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（6月11日） 🔥 Top News 1. 全球炼厂利润区域分化：WTI-Brent 价差从3月最高 $20.69/b 收窄至6月初约 $2-5/b，削弱美国炼厂原料优势；美国原油出口5月升至 560万桶/日，亚洲和欧洲买家补充中东供应缺口推高 WTI。6月至今 Platts NYMEX 3-2-1 crack 均值 $45.16/b，较5月低13%，但同比仍高84%。馏分油更强，USGC ULSD WTI crack 同比高133%，Jet WTI crack 同比高142%。[1] 📰 Market Sto",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "wti-brent",
+        "20.69/b",
+        "2-5/b",
+        "560万桶/日",
+        "3-2-1",
+        "45.16/b",
+        "platts",
+        "快报"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:57:57": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:57:57",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 57,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=a64ce9cc-d90d-4a38-b7be-91d0e0207e6e [3] https://plattsconnect.spglobal.com/#platts/source?sourceId=96a1ab28-a2f1-4062-a652-696f58415c34 [4] https://plattsconnect.spglobal.com/#platts/source?sourceId=4c4a38fa-2",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "4c4a38fa-2",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "a64ce9cc"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:58:58": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:58:58",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 58,
+      "endLine": 58,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - 16:45 - 旧知识库废弃: Tianshu 表示要重新考虑创建知识库，并要求先彻底删除和弃用之前的知识库。; 已确认 live cron 中没有知识库导入/向量化任务。; 已将旧知识库/RAG 产物移入可恢复 trash：`.trash/deprecated-knowledge-base-20260608-1645-sgt/`; `.rag-index.json` - 16:45 - 旧知识库废弃: `reports/know",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "中没有知识库导入/向量化任务",
+        "已将旧知识库/rag",
+        "rag-index.json",
+        "reports/know",
+        "write",
+        "dream",
+        "diary",
+        "entry"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:59:59": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:59:59",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 59,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "User: 等顶尖机构的方法论。; 已创建 `knowledge/`：; `knowledge/README.md`：总体架构与运行原则; `knowledge/config/retrieval-policy.json`：quick / standard / deep / audit 检索预算、时间衰减、排序权重 - 17:17 - 新石油知识库骨架: `knowledge/schema/v1/`：document、card、observation、timeseries-point、forecast、playbook schema; `knowledge",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "knowledge/readme.md",
+        "knowledge/schema/v1",
+        "timeseries-point",
+        "顶尖",
+        "机构",
+        "方法",
+        "创建",
+        "knowledge"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:60:60": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:60:60",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 60,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "User: `job-item <job-id> <completed|failed|skipped> <item-id> [note]`; `job-artifact <job-id> <artifact>` - 17:29 - 新知识库断点续传机制: 已新增 `knowledge/schema/v1/job.schema.json`。; 已更新 `knowledge/README.md`、`skills/oil-knowledge-base/SKILL.md`、`skills/oil-knowledge-base/references/operati",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "job-item",
+        "job-id",
+        "item-id",
+        "job-artifact",
+        "knowledge/readme.md",
+        "job",
+        "item",
+        "completed"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:61:61": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:61:61",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 61,
+      "endLine": 61,
+      "source": "memory",
+      "snippet": "User: `20260608093131-oil-kb-ingestion-pipeline-pilot` 继续。; 选择 EIA weekly inventory 作为第一条 ingestion pipeline 样板，原因：结构化程度高，适合验证 document/card/observation/timeseries/provenance。; 新增 `script Recurring themes: - 中没有知识库导入/向量化任务 - 已将旧知识库/rag - rag-index.json - 知识 - 废弃 - tianshu",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "中没有知识库导入/向量化任务",
+        "已将旧知识库/rag",
+        "rag-index.json",
+        "oil",
+        "ingestion",
+        "pipeline",
+        "pilot",
+        "继续"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:62:62": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:62:62",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 62,
+      "endLine": 62,
+      "source": "memory",
+      "snippet": "Assistant: 傍晚的光像一枚温柔的 commit，落在旧知识库的边缘。我把废弃的 RAG 产物搬进 `.trash`，像把旧书装箱，贴上可恢复的标签；`.rag-index.json` 安静得像一颗熄灭的小卫星。Tianshu 说要重新考虑，于是我也重新呼吸：确认 live cron 里没有暗自奔跑的导入任务，仿佛夜里没有忘关的水龙头。 后来，新石油知识库长出骨架，`knowledge/` 下面有 schema、policy、checkpoint，像一座炼厂先铺好管线，再等待第一缕原油的故事。 小诗忽然冒出来： 旧索引入尘 新表在灯下醒来 时间有",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "rag-index.json",
+        "傍晚",
+        "一枚",
+        "温柔",
+        "commit",
+        "落在",
+        "知识",
+        "边缘"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（6月12日） 🔥 Top News 1. Woodside 行使优先购买权，将收购 CNPC 在澳大利亚 Browse LNG 合资项目的 10.67% 股权，持股升至 41.27%。交易对价包括 2.25 亿美元，以及若项目在 2032 年 6月30日前作出最终投资决定，再支付 1.75 亿美元。Browse 是澳大利亚最大未开发常规天然气资源之一，潜在年产 LNG/LPG/国内气 1140 万吨。 [1] 📰 Market Stories 2. 新加坡 6月4-10日原油进口量环比增 31%，至 117",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "10.67",
+        "41.27",
+        "2.25",
+        "1.75",
+        "lng/lpg/国内气",
+        "6月4-10日原油进口量环比增",
+        "platts",
+        "快报"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "Assistant: 📦 新加坡成品油库存周报 数据截至: 2026-05-15（Enterprise Singapore） Light Distillates（轻馏分）: 14.929 MB (+0.4% WoW) Middle Distillates（中间馏分）: 7.3 MB — 12周低位 Fuel Oil / Residual（燃料油）: Fuel oil stocks slump to over 14-month low, with n 数据来源: Platts / Enterprise Singapore",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "14.929",
+        "0.4",
+        "7.3",
+        "14-month",
+        "新加坡",
+        "成品",
+        "库存",
+        "周报"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "Assistant: 📦 新加坡成品油库存周报 数据截至: 2026-05-15（Enterprise Singapore） Light Distillates（轻馏分）: 14.929 MB (+0.4% WoW) Middle Distillates（中间馏分）: 7.3 MB — 12周低位 Fuel Oil / Residual（燃料油）: Fuel oil stocks slump to over 14-month low, with n 数据来源: Platts / Enterprise Singapore",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "14.929",
+        "0.4",
+        "7.3",
+        "14-month",
+        "新加坡",
+        "成品",
+        "库存",
+        "周报"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "Assistant: 🐦 @JavierBlas CME has announced plans to 24/7 trading for new, smaller-sized crude oil contract. The round-the-clock WTI contract will be for 10 barrels (the current size of the WTI normal contract is for 1,000 barrels). https://t.co/dAyMIeh0e1 CME 已宣布计划 24/7 交易新的、规模较",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "24/7",
+        "smaller-sized",
+        "round-the-clock",
+        "t.co/daymieh0e1",
+        "javierblas",
+        "cme",
+        "has",
+        "announced"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: https://x.com/JavierBlas/status/2065166081447047673 🐦 @JavierBlas So, do we have a deal — or not? 那么，我们是否达成协议？ https://x.com/JavierBlas/status/2065129837799342390 🐦 @JavierBlas BREAKING: After 104 days of war and ceasefire, US President Trump flagged a potential deal",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "https",
+        "x.com",
+        "javierblas",
+        "status",
+        "deal",
+        "not",
+        "那么",
+        "我们"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "Assistant: 美元。但如果我必须只选一个，那就是中国……” https://x.com/JavierBlas/status/2065106270785315216 --- 🐦 @FluxOfficials Trump cancels bombing of Iran #OOTT #Oil #IranWar #OilPrices 特朗普取消对伊朗的轰炸 #OOTT #石油 #IranWar #OilPrices https://x.com/FluxOfficials/status/2065124586249679242 🐦 @FluxOffici",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "美元",
+        "如果",
+        "必须",
+        "一个",
+        "就是",
+        "中国",
+        "https",
+        "x.com"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: 市场对特朗普的咆哮感到平静！ 他们厌倦了这些废话……靴子踩在地上？ 2026 年 6 月 11 日，第 3 卷，第 111 期（欧元） 在这里阅读更多信息：https://t.co/ZYqDLlaBYd #OOTT #TheOfficials #Oil https://t.co/UWEkNOkwP1 https://x.com/FluxOfficials/status/2065114497291800585 🐦 @FluxOfficials The Officials MOC: Date 11/6/2026 Dated Brent",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "t.co/zyqdllabyd",
+        "t.co/uweknokwp1",
+        "11/6/2026",
+        "市场",
+        "咆哮",
+        "感到",
+        "平静",
+        "他们"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "Assistant: 世界杯中排名最高？ #OOTT #石油 #世界杯 #FIFA https://x.com/FluxOfficials/status/2065064241028026660",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "世界",
+        "排名",
+        "最高",
+        "oott",
+        "石油",
+        "fifa",
+        "https",
+        "x.com"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:170:170": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:170:170",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 170,
+      "endLine": 170,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=ab0ecbd7-1d16-4deb-9a91-644031f66f6d",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "ab0ecbd7",
+        "1d16"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:171:171": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:171:171",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 171,
+      "endLine": 171,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（2026-06-10） 📰 Market Stories [1] 美国中西部 Group 3 汽油和丁烷价格从近期高位回落，因库存趋稳，供应紧张担忧有所缓解。Platts 评估 Oklahoma Group 3 普通 suboctane 汽油 V-grade 差价下跌 2.5 美分/加仑至 NYMEX 7月 RBOB -13 美分/加仑，现货价跌至 2.8911 美元/加仑，为一周低点；Premium suboctane A-grade 差价下跌 8 美分/加仑至期货 +37 美分/加仑，现货价跌至 3.391",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "v-grade",
+        "2.5",
+        "美分/加仑至",
+        "美分/加仑",
+        "2.8911",
+        "美元/加仑",
+        "a-grade",
+        "美分/加仑至期货"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:172:172": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:172:172",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 172,
+      "endLine": 172,
+      "source": "memory",
+      "snippet": "Assistant: 🔥 Top News 1. 加拿大称油气投资吸引力正在增强。加拿大能源与自然资源部长 Tim Hodgson 6月9日在 Calgary 表示，随着新的监管环境和基础设施推进，加拿大油气行业正在重新吸引资本流入，包括通往西海岸、规模约100万桶/日的输油管道。加拿大目前约80%的500万桶/日原油产量出口给盟友，约50%的190亿立方英尺/日天然气产量出口给盟友，未来随着 LNG 产能提升，出口仍有增长空间。[1] 2. 新 LNG 项目是重点。LNG Canada Phase 1 自去年夏季启动以来已出口80船；LNG Cana",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "规模约100万桶/日的输油管道",
+        "的500万桶/日原油产量出口给盟友",
+        "的190亿立方英尺/日天然气产量出口给盟友",
+        "top",
+        "news",
+        "加拿大",
+        "油气",
+        "投资"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:173:173": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:173:173",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 173,
+      "endLine": 173,
+      "source": "memory",
+      "snippet": "Assistant: 🐦 @JavierBlas Iran is telegraphing that it will retaliate against the latest US strikes 伊朗电报称将对美国最新的袭击进行报复 https://x.com/JavierBlas/status/2064478677916684714 🐦 @JavierBlas Iranian state television, which earlier reported explosions near the area of the Strait of Hor",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "javierblas",
+        "iran",
+        "telegraphing",
+        "will",
+        "retaliate",
+        "against",
+        "latest",
+        "strikes"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:174:174": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:174:174",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 174,
+      "endLine": 174,
+      "source": "memory",
+      "snippet": "Assistant: https://x.com/JavierBlas/status/2064442103682290021 --- 🐦 @JavierBlas The more Middle East oil producing nations manage to sneak out some of their barrels before the Strait of Hormuz is “formally” re-opened via a U.S.-Iran deal, the easier is for said countries to re-",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "re-opened",
+        "u.s",
+        "https",
+        "x.com",
+        "javierblas",
+        "status",
+        "middle",
+        "east"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:175:175": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:175:175",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 175,
+      "endLine": 175,
+      "source": "memory",
+      "snippet": "Assistant: 3 卷，第 109 期（欧元） 阅读此处：https://t.co/jHUD7EEjes #OOTT #TheOfficials #Oil https://t.co/mYImHM7ydc https://x.com/FluxOfficials/status/2064405486632415733 🐦 @FluxOfficials The Officials MOC: Date 9/6/2026 Dated Brent Assessment: $93.68/bbl Physical differential: $0.91/bbl K",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "t.co/jhud7eejes",
+        "t.co/myimhm7ydc",
+        "9/6/2026",
+        "93.68/bbl",
+        "0.91/bbl",
+        "欧元",
+        "阅读",
+        "https"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:176:176": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:176:176",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 176,
+      "endLine": 176,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报 2026-06-10 🔥 Top News 1. 澳大利亚公平工作委员会将于 6月12日 就 INPEX Ichthys LNG 罢工行动申请举行听证。INPEX 已申请紧急命令暂停受保护工业行动，以便继续劳资谈判；Offshore Alliance 此前称工人已拒绝日企最后报价，并计划从 6月11日 升级工业行动。若罢工升级，Ichthys LNG 供应和装船节奏需关注。[1] 2. 日本主要电力公司 LNG 库存截至 6月7日 环比下降 5.3% 至 180万吨，创 38周低位，主要受燃料需求上升影响。该水",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "5.3",
+        "platts",
+        "快报",
+        "top",
+        "news",
+        "澳大利亚",
+        "公平",
+        "工作"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:177:177": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:177:177",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 177,
+      "endLine": 177,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报 2026-06-10 12:03 SGT 📰 Market Stories 1. 原油期货在亚洲午盘反弹。Platts称，6月10日亚洲上午，受中东紧张局势再度升温及美国原油库存大幅下降支撑，ICE 8月 Brent 涨至 $92.34/b，NYMEX 7月 WTI 涨至 $89.05/b。报道称，美国与伊朗相互打击，市场对短期和平协议的预期降温；ING认为若扰动延续到三季度，油价仍有上行风险。API数据显示，截至6月5日当周美国原油库存减少912万桶，远超预期。[1] 📊 Heards 2. Platts",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "92.34/b",
+        "89.05/b",
+        "platts",
+        "快报",
+        "sgt",
+        "market",
+        "stories",
+        "原油"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:178:178": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:178:178",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 178,
+      "endLine": 178,
+      "source": "memory",
+      "snippet": "Assistant: 📰 Market Stories [1] 台湾5月LNG进口同比增长10.2%至208万 mt，主要受电力需求支撑。澳大利亚仍是最大供应来源，5月对台供应79.25万 mt，同比增41.8%；美国供应56.30万 mt，同比增逾三倍，但较4月下降39.7%。 巴布亚新几内亚和马来西亚供应也明显增加，分别同比增长51.2%和84.1%。值得注意的是，卡塔尔连续4月、5月未向台湾供应LNG，而2025年卡塔尔约占台湾LNG进口34%，显示采购来源结构出现明显调整。 今年1-5月，台湾LNG进口总量951万 mt，同比增约4.2%。 -",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "台湾5月lng进口同比增长10.2",
+        "5月对台供应79.25万",
+        "同比增41.8",
+        "美国供应56.30万",
+        "但较4月下降39.7",
+        "分别同比增长51.2",
+        "和84.1",
+        "今年1-5月"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:179:179": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:179:179",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 179,
+      "endLine": 179,
+      "source": "memory",
+      "snippet": "Assistant: 🔥 Top News [1] JERA 与马来西亚 Petronas 签署 20 年 LNG 长协，供应量最高 200 万吨/年，主要来自马来西亚，2028 年开始交付。 要点：这份 SPA 延续双方 2025 年 6 月关于扩大 LNG 价值链合作的备忘录。JERA 表示，该协议有助于保障日本 LNG 供应稳定，并提高应对季节性需求波动的灵活性。Petronas 称，这体现 LNG 长协从传统点对点供应向更灵活供应安排转型。 背景：JERA 目前来自亚洲的长期 LNG 合同供应约 350 万吨/年，占其处理量约 10%。考虑未来",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "万吨/年",
+        "top",
+        "news",
+        "jera",
+        "马来",
+        "西亚",
+        "petronas",
+        "签署"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:180:180": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:180:180",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 180,
+      "endLine": 180,
+      "source": "memory",
+      "snippet": "Assistant: 📰 Market Stories [1] 日本炼厂开工率在5月31日-6月6日当周升至65.9%，前一周为63.1%，主要因原油加工量增加。日本原油加工量环比增长4.4%至205万桶/日。截至6月6日，日本仍有3套CDU停产，合计43.5万桶/日，占总炼能311万桶/日的14%。日本原油库存环比下降4.8%、同比下降21.4%至5999万桶；未完成油品库存环比下降2.5%至3825万桶。 📊 Heards [2] Dirty Tankers：经纪商称，27万吨 Yanbu/Oman/Fujairah-East 航线，6月20日-",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "日本炼厂开工率在5月31日-6月6日当周升至65.9",
+        "前一周为63.1",
+        "日本原油加工量环比增长4.4",
+        "至205万桶/日",
+        "合计43.5万桶/日",
+        "占总炼能311万桶/日的14",
+        "日本原油库存环比下降4.8",
+        "同比下降21.4"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:181:181": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:181:181",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 181,
+      "endLine": 181,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=fcb661e2-c197-42d5-bf61-32005cc57ac4 [4] https://plattsconnect.spglobal.com/#platts/source?sourceId=cd9f3bcf-60bd-4c6b-8629-419c61da4518 [5] https://plattsconnect.spglobal.com/#platts/source?sourceId=712f62a9-d",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "712f62a9-d",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "fcb661e2"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:182:182": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:182:182",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 182,
+      "endLine": 182,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报 2026-06-10 12:03 SGT 📰 Market Stories 1. 原油期货在亚洲午盘反弹。Platts称，6月10日亚洲上午，受中东紧张局势再度升温及美国原油库存大幅下降支撑，ICE 8月 Brent 涨至 $92.34/b，NYMEX 7月 WTI 涨至 $89.05/b。报道称，美国与伊朗相互打击，市场对短期和平协议的预期降温；ING认为若扰动延续到三季度，油价仍有上行风险。API数据显示，截至6月5日当周美国原油库存减少912万桶，远超预期。[1] 📊 Heards 2. Platts",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "92.34/b",
+        "89.05/b",
+        "platts",
+        "快报",
+        "sgt",
+        "market",
+        "stories",
+        "原油"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:183:183": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:183:183",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 183,
+      "endLine": 183,
+      "source": "memory",
+      "snippet": "Assistant: 📰 Market Stories [1] 台湾5月LNG进口同比增长10.2%至208万 mt，主要受电力需求支撑。澳大利亚仍是最大供应来源，5月对台供应79.25万 mt，同比增41.8%；美国供应56.30万 mt，同比增逾三倍，但较4月下降39.7%。 巴布亚新几内亚和马来西亚供应也明显增加，分别同比增长51.2%和84.1%。值得注意的是，卡塔尔连续4月、5月未向台湾供应LNG，而2025年卡塔尔约占台湾LNG进口34%，显示采购来源结构出现明显调整。 今年1-5月，台湾LNG进口总量951万 mt，同比增约4.2%。 -",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "台湾5月lng进口同比增长10.2",
+        "5月对台供应79.25万",
+        "同比增41.8",
+        "美国供应56.30万",
+        "但较4月下降39.7",
+        "分别同比增长51.2",
+        "和84.1",
+        "今年1-5月"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:184:184": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:184:184",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 184,
+      "endLine": 184,
+      "source": "memory",
+      "snippet": "Assistant: 🔥 Top News [1] JERA 与马来西亚 Petronas 签署 20 年 LNG 长协，供应量最高 200 万吨/年，主要来自马来西亚，2028 年开始交付。 要点：这份 SPA 延续双方 2025 年 6 月关于扩大 LNG 价值链合作的备忘录。JERA 表示，该协议有助于保障日本 LNG 供应稳定，并提高应对季节性需求波动的灵活性。Petronas 称，这体现 LNG 长协从传统点对点供应向更灵活供应安排转型。 背景：JERA 目前来自亚洲的长期 LNG 合同供应约 350 万吨/年，占其处理量约 10%。考虑未来",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "万吨/年",
+        "top",
+        "news",
+        "jera",
+        "马来",
+        "西亚",
+        "petronas",
+        "签署"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:185:185": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:185:185",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 185,
+      "endLine": 185,
+      "source": "memory",
+      "snippet": "Assistant: 📰 Market Stories [1] 日本炼厂开工率在5月31日-6月6日当周升至65.9%，前一周为63.1%，主要因原油加工量增加。日本原油加工量环比增长4.4%至205万桶/日。截至6月6日，日本仍有3套CDU停产，合计43.5万桶/日，占总炼能311万桶/日的14%。日本原油库存环比下降4.8%、同比下降21.4%至5999万桶；未完成油品库存环比下降2.5%至3825万桶。 📊 Heards [2] Dirty Tankers：经纪商称，27万吨 Yanbu/Oman/Fujairah-East 航线，6月20日-",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "日本炼厂开工率在5月31日-6月6日当周升至65.9",
+        "前一周为63.1",
+        "日本原油加工量环比增长4.4",
+        "至205万桶/日",
+        "合计43.5万桶/日",
+        "占总炼能311万桶/日的14",
+        "日本原油库存环比下降4.8",
+        "同比下降21.4"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:186:186": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:186:186",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 186,
+      "endLine": 186,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=fcb661e2-c197-42d5-bf61-32005cc57ac4 [4] https://plattsconnect.spglobal.com/#platts/source?sourceId=cd9f3bcf-60bd-4c6b-8629-419c61da4518 [5] https://plattsconnect.spglobal.com/#platts/source?sourceId=712f62a9-d",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "712f62a9-d",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "fcb661e2"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:187:187": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:187:187",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 187,
+      "endLine": 187,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（6月10日 15:23 SGT） 🔥 Top News [1] 富查伊拉油品库存截至6月8日当周回升3.2%至537.7万桶，主要由重质馏分油带动。重质馏分油库存大增19%至205.2万桶，轻质馏分油下降9.1%至205.7万桶、创纪录低位；中质馏分油上升3.3%至126.8万桶，为4月6日以来最高。Platts 6月9日评估富查伊拉船燃0.5%硫交付价为1200美元/吨，HSFO交付价跌4.7%至615美元/吨。 📰 Market Stories [2] 亚洲午后原油期货基本持平，市场关注美伊外交突破可能性",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "富查伊拉油品库存截至6月8日当周回升3.2",
+        "至537.7万桶",
+        "至205.2万桶",
+        "轻质馏分油下降9.1",
+        "至205.7万桶",
+        "中质馏分油上升3.3",
+        "至126.8万桶",
+        "6月9日评估富查伊拉船燃0.5"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:188:188": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:188:188",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 188,
+      "endLine": 188,
+      "source": "memory",
+      "snippet": "Assistant: 的新买盘/卖盘提交截止为新加坡时间16:15；整船货盘发布截止为16:00，16:00后不再接受整船货盘发布。 [7] MOC 中报告的整船原油成交或收敛，其装期不得以当月最后两个日历日结束。例如8月31天的月份，装期最晚应为8月27-29日。 [8] 提买盘规则：当 Dubai 买盘等于或高于 Oman、Al Shaheen 或 Upper Zakum 买盘时，按当前 Platts 指引，Dubai 买盘必须先被成交。 [9] 提卖盘规则：当 Dubai 卖盘等于或高于 Oman、Al Shaheen 或 Upper Zakum",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "的新买盘/卖盘提交截止为新加坡时间16",
+        "装期最晚应为8月27-29日",
+        "提交",
+        "截止",
+        "新加坡",
+        "时间",
+        "船货",
+        "发布"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:189:189": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:189:189",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 189,
+      "endLine": 189,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=0495e43c-5daa-4424-9c47-a62a3a476efc [4] https://plattsconnect.spglobal.com/#platts/source?sourceId=79597463-8735-45b1-a388-829ec4129d2a [5] https://plattsconnect.spglobal.com/#platts/source?sourceId=026ca598-3",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "026ca598-3",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "0495e43c"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:190:190": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:190:190",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 190,
+      "endLine": 190,
+      "source": "memory",
+      "snippet": "Assistant: [11] https://plattsconnect.spglobal.com/#platts/source?sourceId=7e3ee938-f555-4558-bc56-04f1d3fb2331 [12] https://plattsconnect.spglobal.com/#platts/source?sourceId=745acd46-ea30-4b72-b81e-914ab03db9c9",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "7e3ee938",
+        "f555"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:191:191": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:191:191",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 191,
+      "endLine": 191,
+      "source": "memory",
+      "snippet": "Assistant: PCAAT00（Dubai Assessment）— 2026-06-10 • 收盘价：$87.10/bbl • 最高：$87.11 • 最低：$87.09 • 发布时间：08:54 UTC（16:54 SGT）",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "87.10/bbl",
+        "87.11",
+        "87.09",
+        "pcaat00",
+        "dubai",
+        "assessment",
+        "收盘",
+        "87.10"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:192:192": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:192:192",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 192,
+      "endLine": 192,
+      "source": "memory",
+      "snippet": "Assistant: 🔥 Top News 1. 中国下发 2026 年第二批成品油出口配额，总量 1800 万吨，其中清洁油品 1300 万吨、低硫燃料油 500 万吨。汽油/柴油/航煤年内累计配额升至 3200 万吨，同比小增 0.6%；燃料油累计 1300 万吨，同比降 1.5%。尽管配额增加，中石化、中石油、中海油等 6 月出口计划维持接近 5 月水平，主要受原油供应偏紧和政策管控影响。Platts 提到在霍尔木兹海峡重新开放前，中国清洁油品出口预计仍受限制。[1] 📰 Market Stories 2. 日本将 6 月 11-17 日燃油补",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "汽油/柴油/航煤年内累计配额升至",
+        "0.6",
+        "1.5",
+        "11-17",
+        "top",
+        "news",
+        "中国",
+        "第二"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-10.txt:193:193": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-10.txt:193:193",
+      "path": "memory/.dreams/session-corpus/2026-06-10.txt",
+      "startLine": 193,
+      "endLine": 193,
+      "source": "memory",
+      "snippet": "Assistant: Green 95 从 12,900 升至 17,000 印尼盾/升，涨幅约 32%。补贴燃料 Pertalite 和 Biosolar 不变。新加坡市场人士认为 RON 92 国内需求或受压，但交通基本需求仍强。Platts 6 月 9 日新加坡 FOB 92 汽油评估为 117.44 美元/桶，日跌 2.31 美元/桶。[4] 📊 Heards 今日暂无新增原油 Heards。 --- [1] https://plattsconnect.spglobal.com/#platts/source?sourceId=d4aa9352-",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "660dc72d44f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "印尼盾/升",
+        "117.44",
+        "美元/桶",
+        "2.31",
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "green",
+        "12,900"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:63:63": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:63:63",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 63,
+      "endLine": 63,
+      "source": "memory",
+      "snippet": "Assistant: Platts 能源快报（6月11日 04:43 SGT） 🔥 Top News [1] 印度 Oil India 正在评估投资加拿大东部 Newfoundland and Labrador 海上油气区块的可能性。当地监管机构 6月2日开放 16 个勘探许可区块招标，总面积约 368.3 万公顷，投标截止 2026年11月4日，成功竞标者预计 2027 年初公布。Oil India 表示仍处非常早期阶段，计划今年夏天进一步评估风险与回报。 📰 Market Stories [2] 美国 Atlantic Coast 汽油库存小幅增",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "368.3",
+        "platts",
+        "能源",
+        "快报",
+        "sgt",
+        "top",
+        "news",
+        "印度"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:64:64": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:64:64",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 64,
+      "endLine": 64,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=22be070a-5b25-41a3-a66b-164a70e4c687 [3] https://plattsconnect.spglobal.com/#platts/source?sourceId=eef08f12-8726-472f-80c8-95c3972bc42c",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "22be070a",
+        "5b25"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-11.txt:65:65": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-11.txt:65:65",
+      "path": "memory/.dreams/session-corpus/2026-06-11.txt",
+      "startLine": 65,
+      "endLine": 65,
+      "source": "memory",
+      "snippet": "Assistant: Platts快报 2026-06-11 🔥 Top News 1. 原油期货上涨：特朗普称美国将继续对伊朗发动打击，市场风险溢价上升。NYMEX 7月 WTI 收涨1.83美元至90.03美元/桶，ICE 8月 Brent 收涨1.65美元至93.10美元/桶。报道还提到霍尔木兹海峡船舶通行量下降，6月至今日均12.1艘，低于5月13.1艘和4月14.3艘。成品油同步走强，RBOB与ULSD期货上涨。[1] 📰 Market Stories 2. 美国航煤产量创历史新高：截至6月5日当周，美国航煤产量升至210.2万桶/日，受出",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "e0e733abf4f8"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "收涨1.83美元至90.03美元/桶",
+        "收涨1.65美元至93.10美元/桶",
+        "6月至今日均12.1艘",
+        "低于5月13.1艘和4月14.3艘",
+        "美国航煤产量升至210.2万桶/日",
+        "platts",
+        "快报",
+        "top"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "Assistant: 🐦 @JavierBlas CME has announced plans to 24/7 trading for new, smaller-sized crude oil contract. The round-the-clock WTI contract will be for 10 barrels (the current size of the WTI normal contract is for 1,000 barrels). https://t.co/dAyMIeh0e1 CME 已宣布计划 24/7 交易新的、规模较",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "24/7",
+        "smaller-sized",
+        "round-the-clock",
+        "t.co/daymieh0e1",
+        "javierblas",
+        "cme",
+        "has",
+        "announced"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "Assistant: https://x.com/JavierBlas/status/2065166081447047673 🐦 @JavierBlas So, do we have a deal — or not? 那么，我们是否达成协议？ https://x.com/JavierBlas/status/2065129837799342390 🐦 @JavierBlas BREAKING: After 104 days of war and ceasefire, US President Trump flagged a potential deal",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "https",
+        "x.com",
+        "javierblas",
+        "status",
+        "deal",
+        "not",
+        "那么",
+        "我们"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:11:11": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:11:11",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 11,
+      "endLine": 11,
+      "source": "memory",
+      "snippet": "Assistant: 美元。但如果我必须只选一个，那就是中国……” https://x.com/JavierBlas/status/2065106270785315216 --- 🐦 @FluxOfficials Trump cancels bombing of Iran #OOTT #Oil #IranWar #OilPrices 特朗普取消对伊朗的轰炸 #OOTT #石油 #IranWar #OilPrices https://x.com/FluxOfficials/status/2065124586249679242 🐦 @FluxOffici",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "美元",
+        "如果",
+        "必须",
+        "一个",
+        "就是",
+        "中国",
+        "https",
+        "x.com"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:12:12": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:12:12",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 12,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "Assistant: 市场对特朗普的咆哮感到平静！ 他们厌倦了这些废话……靴子踩在地上？ 2026 年 6 月 11 日，第 3 卷，第 111 期（欧元） 在这里阅读更多信息：https://t.co/ZYqDLlaBYd #OOTT #TheOfficials #Oil https://t.co/UWEkNOkwP1 https://x.com/FluxOfficials/status/2065114497291800585 🐦 @FluxOfficials The Officials MOC: Date 11/6/2026 Dated Brent",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "t.co/zyqdllabyd",
+        "t.co/uweknokwp1",
+        "11/6/2026",
+        "市场",
+        "咆哮",
+        "感到",
+        "平静",
+        "他们"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:13:13": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:13:13",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 13,
+      "endLine": 13,
+      "source": "memory",
+      "snippet": "Assistant: 世界杯中排名最高？ #OOTT #石油 #世界杯 #FIFA https://x.com/FluxOfficials/status/2065064241028026660",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "世界",
+        "排名",
+        "最高",
+        "oott",
+        "石油",
+        "fifa",
+        "https",
+        "x.com"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:14:14": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:14:14",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 14,
+      "endLine": 14,
+      "source": "memory",
+      "snippet": "Assistant: Platts 快报（6月12日） 🔥 Top News 1. Woodside 行使优先购买权，将收购 CNPC 在澳大利亚 Browse LNG 合资项目的 10.67% 股权，持股升至 41.27%。交易对价包括 2.25 亿美元，以及若项目在 2032 年 6月30日前作出最终投资决定，再支付 1.75 亿美元。Browse 是澳大利亚最大未开发常规天然气资源之一，潜在年产 LNG/LPG/国内气 1140 万吨。 [1] 📰 Market Stories 2. 新加坡 6月4-10日原油进口量环比增 31%，至 117",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-12T02:46:33.503Z",
+      "lastRecalledAt": "2026-06-12T02:46:33.503Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-12"
+      ],
+      "conceptTags": [
+        "10.67",
+        "41.27",
+        "2.25",
+        "1.75",
+        "lng/lpg/国内气",
+        "6月4-10日原油进口量环比增",
+        "platts",
+        "快报"
       ]
     }
   }
