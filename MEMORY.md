@@ -93,6 +93,27 @@
 
 ---
 
+## 🏗️ 隔离 Cron 架构原则 (2026-06-12)
+
+PCAAT00 cron 大规模超时事件揭示了重要架构教训：
+
+### 核心原则：简单数据任务不要经过模型中转
+- 原设计：isolated agent 运行脚本 → agent 模型生成回复 → delivery
+- Tianshu 指出："拿个价格数据还要经过模型中转" 是画蛇添足
+- **正确做法**：脚本拿到数据直接输出到 stdout，打开宣布关闭，不需要模型在中间做"回声"
+
+### 针对简单 RPC 类 crons 的最佳实践：
+1. 脚本内直接实现去重（数据版本号/modDate），不依赖 agent 状态
+2. 指定最快模型：`openai-codex/gpt-5.5`
+3. 超时设 300s（120s 不够，600s 浪费）
+4. `wakeMode: "next-heartbeat"` 而非 `"now"`（避免 cron 高峰排队）
+5. 添加失败通知：delivery 到 Tianshu
+
+### 根本限制
+OpenClaw 目前没有"直接运行脚本 + 输出送 WhatsApp"的 cron 模式。所有 cron 脚本执行都必须经过 isolated agent（含模型推理）。这是架构层面的限制，暂无绕过方案。因此简单数据任务要优先选最快模型并缩短模型路径。
+
+---
+
 ## 🛡️ 安全规则
 
 - **Cron 的真实性与当前状态必须实时查询**，以 `cron.list(includeDisabled:true)` 为准，不再依赖 MEMORY.md 静态任务清单。
