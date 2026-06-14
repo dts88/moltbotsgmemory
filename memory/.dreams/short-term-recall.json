@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-06-13T19:00:07.425Z",
+  "updatedAt": "2026-06-14T19:00:05.070Z",
   "entries": {
     "memory:memory/2026-02-03.md:30:76": {
       "key": "memory:memory/2026-02-03.md:30:76",
@@ -187078,12 +187078,12 @@
       "source": "memory",
       "snippet": "16:45 - 旧知识库废弃: Tianshu 表示要重新考虑创建知识库，并要求先彻底删除和弃用之前的知识库。; 已确认 live cron 中没有知识库导入/向量化任务。; 已将旧知识库/RAG 产物移入可恢复 trash：`.trash/deprecated-knowledge-base-20260608-1645-sgt/`; `.rag-index.json`",
       "recallCount": 0,
-      "dailyCount": 6,
+      "dailyCount": 7,
       "groundedCount": 0,
-      "totalScore": 3.72,
+      "totalScore": 4.34,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-08T19:00:01.068Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "c7780e41285a"
       ],
@@ -187094,7 +187094,8 @@
         "2026-06-11",
         "2026-06-12",
         "2026-06-13",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "中没有知识库导入/向量化任务",
@@ -187115,12 +187116,12 @@
       "source": "memory",
       "snippet": "16:45 - 旧知识库废弃: `reports/knowledge-base.json`; `reports/vectorized-sources.json`; `reports/knowledge/`; `scripts/vectorize.mjs`",
       "recallCount": 0,
-      "dailyCount": 6,
+      "dailyCount": 7,
       "groundedCount": 0,
-      "totalScore": 3.72,
+      "totalScore": 4.34,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-08T19:00:01.068Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "c7780e41285a"
       ],
@@ -187131,7 +187132,8 @@
         "2026-06-11",
         "2026-06-12",
         "2026-06-13",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "reports/knowledge-base.json",
@@ -187152,12 +187154,12 @@
       "source": "memory",
       "snippet": "16:45 - 旧知识库废弃: `scripts/import-reports.mjs`; `scripts/extract-cnpc-kb.mjs`; `scripts/md-to-docx.mjs`; `scripts/rag/`",
       "recallCount": 0,
-      "dailyCount": 6,
+      "dailyCount": 7,
       "groundedCount": 0,
-      "totalScore": 3.72,
+      "totalScore": 4.34,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-08T19:00:01.068Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "c7780e41285a"
       ],
@@ -187168,7 +187170,8 @@
         "2026-06-11",
         "2026-06-12",
         "2026-06-13",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "scripts/import-reports.mjs",
@@ -187189,12 +187192,12 @@
       "source": "memory",
       "snippet": "16:45 - 旧知识库废弃: 旧升级备份里同名的知识库脚本副本也已移入同一个 trash 目录，避免后续误用。; 已更新 `reports/index.json`，移除 `knowledge` 分类和对应条目，并标记旧知识库已废弃。; 已更新 `MEMORY.md`：删除旧知识库入口和 `reports/vectors.json` 大文件待处理项，保留报告目录 `reports/` 作为普通市场资料目录。",
       "recallCount": 0,
-      "dailyCount": 6,
+      "dailyCount": 7,
       "groundedCount": 0,
-      "totalScore": 3.72,
+      "totalScore": 4.34,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-08T19:00:01.068Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "c7780e41285a"
       ],
@@ -187205,7 +187208,8 @@
         "2026-06-11",
         "2026-06-12",
         "2026-06-13",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "备份",
@@ -187226,12 +187230,12 @@
       "source": "memory",
       "snippet": "17:17 - 新石油知识库骨架: Tianshu 确认按新的知识库理解推进：横向/纵向存储石油行业数据与分析，保留机构口径差异，按时间尺度加权，并持续吸收高盛、Citadel 等顶尖机构的方法论。; 已创建 `knowledge/`：; `knowledge/README.md`：总体架构与运行原则; `knowledge/config/retrieval-policy.json`：quick / standard / deep / audit 检索预算、时间衰减、排序权重",
       "recallCount": 0,
-      "dailyCount": 6,
+      "dailyCount": 7,
       "groundedCount": 0,
-      "totalScore": 3.72,
+      "totalScore": 4.34,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-08T19:00:01.068Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "c7780e41285a"
       ],
@@ -187242,7 +187246,8 @@
         "2026-06-11",
         "2026-06-12",
         "2026-06-13",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "横向/纵向存储石油行业数据与分析",
@@ -187263,12 +187268,12 @@
       "source": "memory",
       "snippet": "17:17 - 新石油知识库骨架: `knowledge/schema/v1/`：document、card、observation、timeseries-point、forecast、playbook schema; `knowledge/data/curated|raw|runtime/`：curated 小数据、raw 大文件、runtime 索引缓存目录; 已创建 `skills/oil-knowledge-base/`，作为之后查询、导入、更新方法论 playbook 的操作入口。; 已创建 `scripts/oil-kb.mjs`，支持 `s",
       "recallCount": 0,
-      "dailyCount": 6,
+      "dailyCount": 7,
       "groundedCount": 0,
-      "totalScore": 3.72,
+      "totalScore": 4.34,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-08T19:00:01.068Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "c7780e41285a"
       ],
@@ -187279,7 +187284,8 @@
         "2026-06-11",
         "2026-06-12",
         "2026-06-13",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "knowledge/schema/v1",
@@ -187300,12 +187306,12 @@
       "source": "memory",
       "snippet": "17:17 - 新石油知识库骨架: 已验证 JSON policy/schema 和 CLI status。Python/PyYAML 不可用，skill frontmatter 未用官方 yaml 脚本校验，但格式很简单。",
       "recallCount": 0,
-      "dailyCount": 6,
+      "dailyCount": 7,
       "groundedCount": 0,
-      "totalScore": 3.72,
+      "totalScore": 4.34,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-08T19:00:01.068Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "c7780e41285a"
       ],
@@ -187316,7 +187322,8 @@
         "2026-06-11",
         "2026-06-12",
         "2026-06-13",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "policy/schema",
@@ -187337,12 +187344,12 @@
       "source": "memory",
       "snippet": "17:29 - 新知识库断点续传机制: Tianshu 强调新知识库运行可能遇到模型 token 上限或对话容量上限，必须能断点续传。; 已为 `scripts/oil-kb.mjs` 增加 job/checkpoint 命令：; `job-create <type> <name>`; `job-list`",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-08T19:00:01.068Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "c7780e41285a"
       ],
@@ -187353,7 +187360,8 @@
         "2026-06-11",
         "2026-06-12",
         "2026-06-14",
-        "2026-06-13"
+        "2026-06-13",
+        "2026-06-15"
       ],
       "conceptTags": [
         "scripts/oil-kb.mjs",
@@ -193597,12 +193605,12 @@
       "source": "memory",
       "snippet": "02:36 - Heartbeat memory maintenance: Reviewed recent memory files (`2026-06-10`, `2026-06-09`, `2026-06-08`) and current `MEMORY.md`.; No new long-term memory promotion needed. Existing knowledge-base migration and checkpoint guidance in `MEMORY.md` remains current.",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-09T19:00:02.583Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "15a88de18915"
       ],
@@ -193612,7 +193620,8 @@
         "2026-06-11",
         "2026-06-12",
         "2026-06-13",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "memory.md",
@@ -193633,12 +193642,12 @@
       "source": "memory",
       "snippet": "14:36 - Heartbeat memory maintenance: Reviewed recent memory files (`2026-06-09`, `2026-06-08`, `2026-06-07`) and current `MEMORY.md`.; `2026-06-08` knowledge-base migration and pilot ingestion details were already promoted to `MEMORY.md`.; Cleaned one stale `MEMORY.md` phrase th",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-09T19:00:02.583Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "fdef70c73ceb"
       ],
@@ -193648,7 +193657,8 @@
         "2026-06-11",
         "2026-06-12",
         "2026-06-13",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "memory.md",
@@ -193669,12 +193679,12 @@
       "source": "memory",
       "snippet": "20:36 - Heartbeat memory maintenance: Reviewed recent memory files (`2026-06-09`, `2026-06-08`, `2026-06-07`) and current `MEMORY.md`.; No new long-term memory promotion needed. The knowledge-base architecture and checkpoint guidance are already captured in `MEMORY.md`.",
       "recallCount": 0,
-      "dailyCount": 5,
+      "dailyCount": 6,
       "groundedCount": 0,
-      "totalScore": 3.1,
+      "totalScore": 3.72,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-09T19:00:02.583Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "fdef70c73ceb"
       ],
@@ -193684,7 +193694,8 @@
         "2026-06-11",
         "2026-06-12",
         "2026-06-13",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "memory.md",
@@ -198644,12 +198655,12 @@
       "source": "memory",
       "snippet": "02:36 - Heartbeat memory maintenance: Reviewed recent memory files (`2026-06-11`, `2026-06-10`, `2026-06-09`) and current `MEMORY.md`.; No new long-term promotion needed. `MEMORY.md` already captures the completed Goldman demand-destruction ingestion and the resumable Goldman pro",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-10T19:00:00.636Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "fc218f6349c7"
       ],
@@ -198658,7 +198669,8 @@
         "2026-06-10",
         "2026-06-12",
         "2026-06-13",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "memory.md",
@@ -198679,12 +198691,12 @@
       "source": "memory",
       "snippet": "14:36 - Heartbeat memory maintenance: Reviewed recent memory files (`2026-06-10`, `2026-06-09`, `2026-06-08`) and current `MEMORY.md`.; Tianshu sent Goldman Sachs PDF `Oil Comment: Estimating Large Demand Destruction` dated 2026-06-05. Confirmed it reached the chat context, but i",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-10T19:00:00.636Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "15a88de18915"
       ],
@@ -198693,7 +198705,8 @@
         "2026-06-10",
         "2026-06-12",
         "2026-06-13",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "memory.md",
@@ -198714,12 +198727,12 @@
       "source": "memory",
       "snippet": "16:13 - Goldman PDF ingested into oil KB: Investigated repeated `codex app-server turn idle timed out waiting for turn/completed` around the Goldman PDF ingestion. Session logs showed Tianshu did not stop the process; the turn stalled around app-server/model completion after tool",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-10T19:00:00.636Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "15a88de18915"
       ],
@@ -198728,7 +198741,8 @@
         "2026-06-10",
         "2026-06-12",
         "2026-06-13",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "app-server",
@@ -198749,12 +198763,12 @@
       "source": "memory",
       "snippet": "16:13 - Goldman PDF ingested into oil KB: document/card entries; 4 observations covering 4-5 mb/d global April 2026 demand destruction, refinery/product-stock method, high-frequency method, and China gasoline retail sales decline; 1 forecast record for Goldman Brent/WTI 2026Q4 $9",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-10T19:00:00.636Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "15a88de18915"
       ],
@@ -198763,7 +198777,8 @@
         "2026-06-10",
         "2026-06-12",
         "2026-06-13",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "document/card",
@@ -198784,12 +198799,12 @@
       "source": "memory",
       "snippet": "16:13 - Goldman PDF ingested into oil KB: `node scripts/oil-kb.mjs validate` passed; `node scripts/oil-kb.mjs search \"Goldman demand destruction Hormuz\" standard` returns the Goldman card, observations, forecast, and playbook.",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-10T19:00:00.636Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "15a88de18915"
       ],
@@ -198798,7 +198813,8 @@
         "2026-06-10",
         "2026-06-12",
         "2026-06-13",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "scripts/oil-kb.mjs",
@@ -198819,12 +198835,12 @@
       "source": "memory",
       "snippet": "20:36 - Heartbeat memory maintenance: Reviewed recent memory files (`2026-06-10`, `2026-06-09`, `2026-06-08`) and current `MEMORY.md`.; Promoted the completed Goldman demand-destruction report ingestion to `MEMORY.md`.; Noted current resumable Goldman product-margins checkpoint `",
       "recallCount": 0,
-      "dailyCount": 4,
+      "dailyCount": 5,
       "groundedCount": 0,
-      "totalScore": 2.48,
+      "totalScore": 3.1,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-10T19:00:00.636Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "15a88de18915"
       ],
@@ -198833,7 +198849,8 @@
         "2026-06-10",
         "2026-06-12",
         "2026-06-13",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "memory.md",
@@ -208508,19 +208525,20 @@
       "source": "memory",
       "snippet": "09:07 - Platts Monitor ran successfully: Generated 2026-06-12 digest; Delivered to Tianshu via Telegram MOC topic",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-12T19:00:01.319Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "a7e4b69283bd"
       ],
       "recallDays": [
         "2026-06-13",
         "2026-06-12",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "platts",
@@ -208541,19 +208559,20 @@
       "source": "memory",
       "snippet": "问题: PCAAT00 cron job（获取 Dubai Assessment $83.18/bbl，每天 17:00-20:50 每 10 分钟运行）连续 7 次 isolated agent 超时（\"turn-accepted\" phase timeout）。",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-12T19:00:01.319Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "a7e4b69283bd"
       ],
       "recallDays": [
         "2026-06-13",
         "2026-06-12",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "83.18/bbl",
@@ -208574,19 +208593,20 @@
       "source": "memory",
       "snippet": "根因: OpenClaw 的 `sessionTarget: \"isolated\"` cron 机制，脚本输出到 WhatsApp delivery 必须经过 agent 模型中转：",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-12T19:00:01.319Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "a7e4b69283bd"
       ],
       "recallDays": [
         "2026-06-13",
         "2026-06-12",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "根因",
@@ -208607,19 +208627,20 @@
       "source": "memory",
       "snippet": "根因: cron 启动 isolated agent session; agent 运行脚本（<5s 完成 ✅）; **agent 需要用模型生成回复**，把脚本 stdout 作为最终回复; 模型排队/启动慢 → 超时 → delivery 失败",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-12T19:00:01.319Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "a7e4b69283bd"
       ],
       "recallDays": [
         "2026-06-13",
         "2026-06-12",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "模型排队/启动慢",
@@ -208640,19 +208661,20 @@
       "source": "memory",
       "snippet": "根因: 之前用 gpt-5.5 时 14s 就跑完。今天 deepseek-v4-flash 模型 + 120s 超时不够。",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-12T19:00:01.319Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "a7e4b69283bd"
       ],
       "recallDays": [
         "2026-06-13",
         "2026-06-12",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "gpt",
@@ -208673,19 +208695,20 @@
       "source": "memory",
       "snippet": "关键教训（Tianshu 指出）: **整个架构设计错误** — \"拿个价格数据还要经过模型中转\" 是画蛇添足。脚本拿到数据应该直接发到 WhatsApp，不需要一个模型在中间做\"回声\"。",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-12T19:00:01.319Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "a7e4b69283bd"
       ],
       "recallDays": [
         "2026-06-13",
         "2026-06-12",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "关键",
@@ -208706,19 +208729,20 @@
       "source": "memory",
       "snippet": "修复: **脚本重写**：去掉\"已送达标记\"（lastDeliveredDate），改用数据版本号（modDate）去重。如果 agent 超时，下次重新发; **模型指定**：`openai-codex/gpt-5.5`（已被验证最快）; **超时**：300s（120s 不够，600s 浪费）; **wakeMode**：从 `\"now\"` 改为 `\"next-heartbeat\"`（避免 cron 高峰排队）",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-12T19:00:01.319Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "a7e4b69283bd"
       ],
       "recallDays": [
         "2026-06-13",
         "2026-06-12",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "gpt",
@@ -208739,19 +208763,20 @@
       "source": "memory",
       "snippet": "修复: **新增失败通知**：delivery 到 Tianshu（原 job 没通知）; **旧 job 已禁用**（id: dd61f441），新建 job（name: \"PCAAT00 Daily Dubai Assessment to Hchen (v2)\"）; **固定 payload** 写入精确的 `cron run` 命令和完整脚本路径",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-12T19:00:01.319Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "a7e4b69283bd"
       ],
       "recallDays": [
         "2026-06-13",
         "2026-06-12",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "修复",
@@ -208772,19 +208797,20 @@
       "source": "memory",
       "snippet": "后续影响: PCAAT00 数据今天 $83.18/bbl、$83.19/$83.17（16:50 SGT 发布）。Tianshu 直接转发给 Hchen 了。",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-12T19:00:01.319Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "a7e4b69283bd"
       ],
       "recallDays": [
         "2026-06-13",
         "2026-06-12",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "83.18/bbl",
@@ -208805,19 +208831,20 @@
       "source": "memory",
       "snippet": "未解决的根本问题: OpenClaw 没有\"直接运行脚本 + 输出送 WhatsApp\"的 cron 模式。所有 cron 脚本执行都必须经过 isolated agent（含模型推理）。这是一个架构层面的限制，暂无绕过方案。",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-12T19:00:01.319Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "a7e4b69283bd"
       ],
       "recallDays": [
         "2026-06-13",
         "2026-06-12",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "解决",
@@ -208838,19 +208865,20 @@
       "source": "memory",
       "snippet": "17:53 - PCAAT00 v2 创建: 新 job (6d4bcb32) 使用 gpt-5.5 + 300s timeout + next-heartbeat。第一个 manual run 在创建后立刻触发，结果待查。",
       "recallCount": 0,
-      "dailyCount": 2,
+      "dailyCount": 3,
       "groundedCount": 0,
-      "totalScore": 1.24,
+      "totalScore": 1.8599999999999999,
       "maxScore": 0.62,
       "firstRecalledAt": "2026-06-12T19:00:01.319Z",
-      "lastRecalledAt": "2026-06-13T19:00:00.653Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
       "queryHashes": [
         "a7e4b69283bd"
       ],
       "recallDays": [
         "2026-06-13",
         "2026-06-12",
-        "2026-06-14"
+        "2026-06-14",
+        "2026-06-15"
       ],
       "conceptTags": [
         "gpt",
@@ -216026,6 +216054,1350 @@
         "经济",
         "石油",
         "头版"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:156:156": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:156:156",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 156,
+      "endLine": 156,
+      "source": "memory",
+      "snippet": "Assistant: 🔥 Top News [1] 中国恒力石化（Hengli Petrochemical）转向采购西非原油，试图摆脱美国制裁。其大连40万桶/日炼厂自4月24日被列入SDN名单后，已停止采购伊朗原油，改为采购安哥拉Nemba原油（6月底/7月初到港）。由于原料减少，开工率从96%大幅降至50-60%。公司正探索新的常规原油供应链，以期被移出制裁名单。 [2] 新加坡海事及港务管理局（MPA）局长表示，航运业的能源转型将呈现长期多元燃料路线并存的格局。由于监管、基础设施和燃料可用性进展不均，新加坡正扩展LNG、甲醇、氨等多燃料加注能力，",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "其大连40万桶/日炼厂自4月24日被列入sdn名单后",
+        "6月底/7月初到港",
+        "大幅降至50-60",
+        "top",
+        "news",
+        "中国",
+        "石化",
+        "hengli"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:157:157": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:157:157",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 157,
+      "endLine": 157,
+      "source": "memory",
+      "snippet": "Assistant: 🔥 Top News [1] 美国将日本 Sakhalin 2 通用许可证延长至 12 月 18 日，确保日本继续从俄远东进口 LNG 和 Sakhalin Blend 原油。OFAC 豁免日本运输及涉及 Gazprombank 的相关交易。日本 5 月已自 2025 年 6 月以来首次接收 Sakhalin Blend 原油。 --- 📰 Market Stories [2] ARA 燃料油库存周环比降 0.35% 至 57.3 万吨，此前连续累库后回落。西北欧 VLSFO 市场稳定但高价抑制需求，HSFO 市场情绪低迷。前月",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "0.35",
+        "57.3",
+        "top",
+        "news",
+        "美国",
+        "日本",
+        "sakhalin",
+        "通用"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:158:158": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:158:158",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 158,
+      "endLine": 158,
+      "source": "memory",
+      "snippet": "Assistant: 6 月走强至月均 $25.88/mt。柴油储罐利用率环比升 1%。 📊 Heards（原油） [7] 亚洲原油：North West Shelf 凝析油 8 月上旬装船货以 Dated Brent - $5/b（FOB）水平成交。 --- 链接： [1] https://plattsconnect.spglobal.com/#platts/source?sourceId=2d1b2c16-7ddc-4cb8-96a9-8e57210f7f2f [2] https://plattsconnect.spglobal.com/#plat",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "25.88/mt",
+        "5/b",
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "25.88",
+        "柴油",
+        "利用",
+        "heards"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:159:159": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:159:159",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 159,
+      "endLine": 159,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=69c15b6e-b893-40ea-b5ad-348312432d8d",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "69c15b6e",
+        "b893"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:160:160": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:160:160",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 160,
+      "endLine": 160,
+      "source": "memory",
+      "snippet": "Assistant: 📰 Market Stories 1. 燃料油纸面市场重返战前常态 燃料油纸面市场在6月12日抹去了战争溢价，关键价差和波动率指标回落至冲突前水平。6月装船的3.5%硫 Rotterdam 驳船 time spread 跌至三个月低点。Platts 评估10月 3.5% FOB Rotterdam 驳船 time spread 于6月11日收于平水，较前日收窄$4/mt。所有近月高硫燃料油 time spread 全线收窄。 西北欧参与者描述市场低迷，需求疲软且新货到港后供应无忧。看空情绪延伸至纸面市场，近月高硫燃料油对 Bren",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "6月装船的3.5",
+        "3.5",
+        "4/mt",
+        "market",
+        "stories",
+        "燃料油",
+        "市场",
+        "重返"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:161:161": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:161:161",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 161,
+      "endLine": 161,
+      "source": "memory",
+      "snippet": "Assistant: 🔥 Top News [1] 中国恒力石化（Hengli Petrochemical）转向采购西非原油，试图摆脱美国制裁。其大连40万桶/日炼厂自4月24日被列入SDN名单后，已停止采购伊朗原油，改为采购安哥拉Nemba原油（6月底/7月初到港）。由于原料减少，开工率从96%大幅降至50-60%。公司正探索新的常规原油供应链，以期被移出制裁名单。 [2] 新加坡海事及港务管理局（MPA）局长表示，航运业的能源转型将呈现长期多元燃料路线并存的格局。由于监管、基础设施和燃料可用性进展不均，新加坡正扩展LNG、甲醇、氨等多燃料加注能力，",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "其大连40万桶/日炼厂自4月24日被列入sdn名单后",
+        "6月底/7月初到港",
+        "大幅降至50-60",
+        "top",
+        "news",
+        "中国",
+        "石化",
+        "hengli"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:162:162": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:162:162",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 162,
+      "endLine": 162,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=5d64ec8d-d576-4058-9226-6c0f74204c34 [4] https://plattsconnect.spglobal.com/#platts/source?sourceId=c3ef1d2f-4295-48b2-a11f-351311618595",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "5d64ec8d",
+        "d576"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:163:163": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:163:163",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 163,
+      "endLine": 163,
+      "source": "memory",
+      "snippet": "Assistant: 📰 Platts 市场快报 | 2026-06-12 📰 市场分析 [1] 欧洲汽油纸货结构趋陡，裂解价差飙升，地中海结构性需求强劲 欧洲汽油纸货市场在经历5月波动后在6月前两周企稳，前月远期曲线深度backwardation。Eurobob汽油掉期稳定在$942.50-988.25/mt区间。FOB AR Eurobob驳船评估$977.75/mt，裂解价差$25.92/bbl（同比去年$15.08/bbl翻倍）。汽油-石脑油价差$259.50/mt，接近去年同期$135.75/mt的两倍。NWE远期曲线远高于去年同期水平，6",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "942.50-988.25/mt区间",
+        "977.75/mt",
+        "25.92/bbl",
+        "15.08/bbl翻倍",
+        "汽油-石脑油价差",
+        "259.50/mt",
+        "135.75/mt的两倍",
+        "platts"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-12.txt:164:164": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-12.txt:164:164",
+      "path": "memory/.dreams/session-corpus/2026-06-12.txt",
+      "startLine": 164,
+      "endLine": 164,
+      "source": "memory",
+      "snippet": "Assistant: LNG船燃相对VLSFO的溢价扩大至$2.3/Gj（3月6日以来最大），相对MGO的折价收窄至$4.563/Gj（3月3日以来最低）。尽管中东冲突推高大宗商品市场，LNG船燃此前在二季度一直保持竞争力。 📊 原油窗口交易 (Brent CFD MOC) Brent CFD 1st (Aug合约, Jun15-19): - UNIPECUK 买盘 $1.55 (下调) - DVTRADING 买盘 $1.55 (下调) - TRAFI 卖盘 $1.80 (下调) - MERCURIASA 卖盘 $1.80->$1.85->$1.80",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "3a37f9bd3c48"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "2.3/gj",
+        "4.563/gj",
+        "jun15-19",
+        "1.55",
+        "1.80",
+        "1.85",
+        "lng",
+        "相对"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-13.txt:44:44": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-13.txt:44:44",
+      "path": "memory/.dreams/session-corpus/2026-06-13.txt",
+      "startLine": 44,
+      "endLine": 44,
+      "source": "memory",
+      "snippet": "Assistant: 今日 Platts 市场速报 🔥 Top News GMS CEO Anil Sharma 接受专访称，影子舰队中约有 600 艘老旧油轮适宜拆解回收，前提是西方当局调整制裁法规。截至 5 月底，影子舰队船只超 2,000 艘，其中 80% 以上船龄超过 20 年。GMS 已获美国政府批准处理 4 艘受制裁集装箱船，现正聚焦油轮拆解。Sharma 指出，放宽制裁以允许拆解交易、同时激励影子船东报废船舶，可同时减少受制裁石油运输和环保风险。[1] 📰 Market Stories 俄罗斯原油周度发货量放缓，但印度进口仍处高位。截至",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "d387904341e2"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "今日",
+        "platts",
+        "市场",
+        "top",
+        "news",
+        "gms",
+        "ceo",
+        "anil"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-13.txt:45:45": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-13.txt:45:45",
+      "path": "memory/.dreams/session-corpus/2026-06-13.txt",
+      "startLine": 45,
+      "endLine": 45,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=670f1bc9-3dd3-4ddf-8cf0-2794ed5cdee0 [3] https://plattsconnect.spglobal.com/#platts/source?sourceId=3b7b0585-85e2-4413-8102-53e3288513d2",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "d387904341e2"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "670f1bc9",
+        "3dd3"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-13.txt:46:46": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-13.txt:46:46",
+      "path": "memory/.dreams/session-corpus/2026-06-13.txt",
+      "startLine": 46,
+      "endLine": 46,
+      "source": "memory",
+      "snippet": "Assistant: 📰 Platts 市场快报 | 6月13日（周六） 📰 Market Stories [1] 巴西Paranagua港即将接收ARA汽油船货 6月汽油进口量预计约23.5万立方米，其中Paranagua港6月21日将接收来自ARA地区的59,731立方米汽油。Suape港预计接收42,880立方米。巴西汽油进口窗口已关闭107天，国内价格低于进口平价约910雷亚尔/立方米。 [2] ICE低硫柴油期货暴跌至三个月新低 特朗普宣布美伊达成和平协议并取消对伊打击计划后，M1 ICE LSGO期货6月12日下跌$64.75至$967.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "d387904341e2"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "6月汽油进口量预计约23.5万立方米",
+        "国内价格低于进口平价约910雷亚尔/立方米",
+        "64.75至",
+        "platts",
+        "市场",
+        "快报",
+        "周六",
+        "market"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-13.txt:47:47": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-13.txt:47:47",
+      "path": "memory/.dreams/session-corpus/2026-06-13.txt",
+      "startLine": 47,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "Assistant: $681.00/mt delivered [12] 厄瓜多尔La Libertad: $812.00/mt delivered [13] 厄瓜多尔瓜亚基尔: $813.00/mt delivered (参考Brent $87.22/b，USGC HSFO $76.55/b，USAC HSFO $82.7/b) --- [1] https://plattsconnect.spglobal.com/#platts/source?sourceId=6d52ccd2-6eb5-4fe7-a6c1-c57521aa4f20 [2] https",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "d387904341e2"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "681.00/mt",
+        "812.00/mt",
+        "813.00/mt",
+        "87.22/b",
+        "76.55/b",
+        "82.7/b",
+        "plattsconnect.spglobal.com",
+        "platts/source"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-13.txt:48:48": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-13.txt:48:48",
+      "path": "memory/.dreams/session-corpus/2026-06-13.txt",
+      "startLine": 48,
+      "endLine": 48,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=41b8ca06-a990-4483-a347-2526e961b949 [8] https://plattsconnect.spglobal.com/#platts/source?sourceId=415aba4c-04b9-49c6-a573-6d627b6d8153 [9] https://plattsconnect.spglobal.com/#platts/source?sourceId=c0169274-c",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "d387904341e2"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "c0169274-c",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "41b8ca06"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-13.txt:49:49": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-13.txt:49:49",
+      "path": "memory/.dreams/session-corpus/2026-06-13.txt",
+      "startLine": 49,
+      "endLine": 49,
+      "source": "memory",
+      "snippet": "Assistant: 📰 Market Stories CME 集团宣布将于8月30日推出10桶迷你WTI原油期货合约，现金交割，每周7天24小时交易。该合约是现有1000桶实物交割合约和100桶微型合约的补充，旨在降低门槛、让交易者能随时管理风险敞口。这一举措正值CFTC近期放开美国加密货币永续合约交易窗口，市场关注监管机构未来是否会对24/7能源衍生品采取类似态度。JP摩根此前指出，Hyperliquid上的WTI永续期货合约在3月中旬曾达到17亿美元日交易量峰值。 --- [1] https://plattsconnect.spglobal.co",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "d387904341e2"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "市场关注监管机构未来是否会对24/7能源衍生品采取类似态度",
+        "plattsconnect.spglobal.co",
+        "market",
+        "stories",
+        "cme",
+        "集团",
+        "宣布",
+        "推出"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-13.txt:50:50": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-13.txt:50:50",
+      "path": "memory/.dreams/session-corpus/2026-06-13.txt",
+      "startLine": 50,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "Assistant: 🗞️ Platts 市场快报 — 6月13日周六 🔥 Top News [1] 美国 MISO 电力市场：德州/路易斯安那枢纽7月电价飙升 MISO 德州枢纽7月峰时电价报 $77.31/MWh，路易斯安那枢纽 $71.76/MWh，同比分别暴涨 66.3% 和 50.2%。南方区域电价走强与 Henry Hub 天然气价格下跌（$3.087/MMBtu，同比降 4.5%）形成对比。CustomWeather 预测 MISO 区域7月气温较正常水平偏高 0-2°F，预计负荷水平约 94.9 GW。 📰 Market Stori",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "d387904341e2"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "德州/路易斯安那枢纽7月电价飙升",
+        "77.31/mwh",
+        "71.76/mwh",
+        "66.3",
+        "50.2",
+        "3.087/mmbtu",
+        "4.5",
+        "0-2"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-13.txt:51:51": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-13.txt:51:51",
+      "path": "memory/.dreams/session-corpus/2026-06-13.txt",
+      "startLine": 51,
+      "endLine": 51,
+      "source": "memory",
+      "snippet": "Assistant: 🔥 Top News 非洲勘探复兴：风险偏好转变带动非洲大陆勘探热潮回归。国际油企2025年在西非获取约20万平方公里勘探区块，远高于2024年的3万平方公里。中东及乌克兰地缘危机推动能源安全重新成为重点，IOCs加速在非洲布局。Platts预期原油需求2030年代初见顶（~110mb/d），2050年前仍维持在100mb/d以上。[1] 📰 Market Stories ① 波动成为大宗商品新常态——中东战争冲击原油、成品油和航运市场。霍尔木兹海峡受阻，Platts Dated Brent评估达$144.42/b创历史新高。原",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "d387904341e2"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "110mb/d",
+        "2050年前仍维持在100mb/d以上",
+        "144.42/b创历史新高",
+        "top",
+        "news",
+        "非洲",
+        "勘探",
+        "复兴"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-13.txt:52:52": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-13.txt:52:52",
+      "path": "memory/.dreams/session-corpus/2026-06-13.txt",
+      "startLine": 52,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "Assistant: 西非WAF原油MOC收盘：无成交/无挂单/无撤回。[7] ④ Urals/Med Brent：无买卖盘，无成交。[8] --- [1] https://plattsconnect.spglobal.com/#platts/source?sourceId=15fbd4ed-47dd-4c2d-872d-7f64969c5290 [2] https://plattsconnect.spglobal.com/#platts/source?sourceId=bcb0ab4e-02e2-45a2-aad4-b8af240ce294 [3] h",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "d387904341e2"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "无成交/无挂单/无撤回",
+        "urals/med",
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "西非",
+        "waf",
+        "原油",
+        "moc"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-13.txt:53:53": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-13.txt:53:53",
+      "path": "memory/.dreams/session-corpus/2026-06-13.txt",
+      "startLine": 53,
+      "endLine": 53,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=fe1ecb0e-f1c2-4822-a213-fe5f288892a2",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "d387904341e2"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "fe1ecb0e",
+        "f1c2"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-13.txt:54:54": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-13.txt:54:54",
+      "path": "memory/.dreams/session-corpus/2026-06-13.txt",
+      "startLine": 54,
+      "endLine": 54,
+      "source": "memory",
+      "snippet": "Assistant: 今日 Platts 市场速报 🔥 Top News GMS CEO Anil Sharma 接受专访称，影子舰队中约有 600 艘老旧油轮适宜拆解回收，前提是西方当局调整制裁法规。截至 5 月底，影子舰队船只超 2,000 艘，其中 80% 以上船龄超过 20 年。GMS 已获美国政府批准处理 4 艘受制裁集装箱船，现正聚焦油轮拆解。Sharma 指出，放宽制裁以允许拆解交易、同时激励影子船东报废船舶，可同时减少受制裁石油运输和环保风险。[1] 📰 Market Stories 俄罗斯原油周度发货量放缓，但印度进口仍处高位。截至",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "d387904341e2"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "今日",
+        "platts",
+        "市场",
+        "top",
+        "news",
+        "gms",
+        "ceo",
+        "anil"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-14.txt:2:2": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-14.txt:2:2",
+      "path": "memory/.dreams/session-corpus/2026-06-14.txt",
+      "startLine": 2,
+      "endLine": 2,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - 02:36 - Heartbeat memory maintenance: Reviewed recent memory files (`2026-06-11`, `2026-06-10`, `2026-06-09`) and current `MEMORY.md`.; No new long-term promotion needed. `MEMORY.md` already captures the completed Gol",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "460d69fb457f"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "memory.md",
+        "long-term",
+        "write",
+        "dream",
+        "diary",
+        "entry",
+        "fragments",
+        "heartbeat"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-14.txt:3:3": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-14.txt:3:3",
+      "path": "memory/.dreams/session-corpus/2026-06-14.txt",
+      "startLine": 3,
+      "endLine": 3,
+      "source": "memory",
+      "snippet": "User: delivery 失败 - 根因: 之前用 gpt-5.5 时 14s 就跑完。今天 deepseek-v4-flash 模型 + 120s 超时不够。 - 关键教训（Tianshu 指出）: **整个架构设计错误** — \"拿个价格数据还要经过模型中转\" 是画蛇添足。脚本拿到数据应该直接发到 WhatsApp，不需要一个模型在中间做\"回声\"。 - 修复: **脚本重写**：去掉\"已送达标记\"（lastDeliveredDate），改用数据版本号（modDate）去重。如果 agent 超时，下次重新发; **模型指定**：`openai-c",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "460d69fb457f"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "gpt",
+        "openai",
+        "gpt-5.5",
+        "deepseek-v4-flash",
+        "openai-c",
+        "delivery",
+        "失败",
+        "根因"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-14.txt:4:4": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-14.txt:4:4",
+      "path": "memory/.dreams/session-corpus/2026-06-14.txt",
+      "startLine": 4,
+      "endLine": 4,
+      "source": "memory",
+      "snippet": "User: (6d4bcb32) 使用 gpt-5.5 + 300s timeout + next-heartbeat。第一个 manual run 在创建后立刻触发，结果待查。 Recurring themes: - memory.md - long-term - demand-destruction - heartbeat - maintenance - reviewed",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "460d69fb457f"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "gpt",
+        "gpt-5.5",
+        "next-heartbeat",
+        "memory.md",
+        "long-term",
+        "demand-destruction",
+        "6d4bcb32",
+        "使用"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-14.txt:5:5": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-14.txt:5:5",
+      "path": "memory/.dreams/session-corpus/2026-06-14.txt",
+      "startLine": 5,
+      "endLine": 5,
+      "source": "memory",
+      "snippet": "Assistant: 🐦 @JavierBlas **1/** Just a reminder: 107 days. Qatari negotiators arrived in Tehran on Sunday to help with the finalisation of the agreement between Iran and the US. 只是提醒一下：107 天。 卡塔尔谈判代表周日抵达德黑兰，帮助伊朗和美国敲定协议。 https://x.com/JavierBlas/status/2066103367370224001 --- **2",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "460d69fb457f"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "javierblas",
+        "reminder",
+        "days",
+        "qatari",
+        "negotiators",
+        "arrived",
+        "tehran",
+        "sunday"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-14.txt:6:6": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-14.txt:6:6",
+      "path": "memory/.dreams/session-corpus/2026-06-14.txt",
+      "startLine": 6,
+      "endLine": 6,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - 02:36 - Heartbeat memory maintenance: Reviewed recent memory files (`2026-06-10`, `2026-06-09`, `2026-06-08`) and current `MEMORY.md`.; No new long-term memory promotion needed. Existing knowledge-base migration and c",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "460d69fb457f"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "memory.md",
+        "long-term",
+        "knowledge-base",
+        "write",
+        "dream",
+        "diary",
+        "entry",
+        "fragments"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-14.txt:7:7": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-14.txt:7:7",
+      "path": "memory/.dreams/session-corpus/2026-06-14.txt",
+      "startLine": 7,
+      "endLine": 7,
+      "source": "memory",
+      "snippet": "Assistant: BACKUP_COMPLETE ✓ (GitHub: ok, Moltbook: failed - non-JSON response, likely temp outage)",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "460d69fb457f"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "backup",
+        "backup-complete",
+        "non-json",
+        "github",
+        "moltbook",
+        "failed",
+        "non",
+        "response"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-14.txt:8:8": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-14.txt:8:8",
+      "path": "memory/.dreams/session-corpus/2026-06-14.txt",
+      "startLine": 8,
+      "endLine": 8,
+      "source": "memory",
+      "snippet": "User: Write a dream diary entry from these memory fragments: - 02:36 - Heartbeat memory maintenance: Reviewed recent memory files (`2026-06-10`, `2026-06-09`, `2026-06-08`) and current `MEMORY.md`.; No new long-term memory promotion needed. Existing knowledge-base migration and c",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "460d69fb457f"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "memory.md",
+        "long-term",
+        "knowledge-base",
+        "write",
+        "dream",
+        "diary",
+        "entry",
+        "fragments"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-14.txt:9:9": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-14.txt:9:9",
+      "path": "memory/.dreams/session-corpus/2026-06-14.txt",
+      "startLine": 9,
+      "endLine": 9,
+      "source": "memory",
+      "snippet": "User: payload now only runs `node scripts/pcaat00-daily-hchen.mjs`; `lightContext: true`, `timeoutSec - PCAAT00 Daily to Hchen rerun: runId `manual:fa41b298-4631-4c42-b922-e44ec2e5d1f2:1780480508449:2`; duration 50.6s; deliveryStatus `delivered`; output: PCAAT00 2026-06-03 close",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "460d69fb457f"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "scripts/pcaat00-daily-hchen.mjs",
+        "50.6s",
+        "payload",
+        "now",
+        "only",
+        "runs",
+        "node",
+        "scripts"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-14.txt:10:10": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-14.txt:10:10",
+      "path": "memory/.dreams/session-corpus/2026-06-14.txt",
+      "startLine": 10,
+      "endLine": 10,
+      "source": "memory",
+      "snippet": "User: failed with `run node inline script (in - 16:45 - 旧知识库废弃: Tianshu 表示要重新考虑创建知识库，并要求先彻底删除和弃用之前的知识库。; 已确认 live cron 中没有知识库导入/向量化任务。; 已将旧知识库/RAG 产物移入可恢复 trash：`.trash/deprecated-knowledge-base-20260608-1645-sgt/`; `.rag-index.json` - 16:45 - 旧知识库废弃: `scripts/import-reports.mjs`",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "460d69fb457f"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "中没有知识库导入/向量化任务",
+        "已将旧知识库/rag",
+        "rag-index.json",
+        "scripts/import-reports.mjs",
+        "failed",
+        "run",
+        "node",
+        "inline"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-15.txt:1:1": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-15.txt:1:1",
+      "path": "memory/.dreams/session-corpus/2026-06-15.txt",
+      "startLine": 1,
+      "endLine": 1,
+      "source": "memory",
+      "snippet": "Assistant: 🐦 @JavierBlas RT @JavierBlas：免费阅读： 油价低于每桶 100 美元的十大原因。 1）中国，中国，中国 2）需求破坏…… https://x.com/JavierBlas/status/2066192007312134582 --- 🐦 @JavierBlas RT @BarakRavid：🚨🇺🇸🇮🇷 特朗普总统在电话采访中告诉我，尽管以色列在贝鲁特发动袭击，他相信今天仍将签署与伊朗的协议 https://x.com/JavierBlas/status/2066191970800640359",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "39e3bfaaf38f"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "javierblas",
+        "免费",
+        "阅读",
+        "油价",
+        "低于",
+        "每桶",
+        "美元",
+        "十大"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-13.txt:55:55": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-13.txt:55:55",
+      "path": "memory/.dreams/session-corpus/2026-06-13.txt",
+      "startLine": 55,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=670f1bc9-3dd3-4ddf-8cf0-2794ed5cdee0 [3] https://plattsconnect.spglobal.com/#platts/source?sourceId=3b7b0585-85e2-4413-8102-53e3288513d2",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "d387904341e2"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "670f1bc9",
+        "3dd3"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-13.txt:56:56": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-13.txt:56:56",
+      "path": "memory/.dreams/session-corpus/2026-06-13.txt",
+      "startLine": 56,
+      "endLine": 56,
+      "source": "memory",
+      "snippet": "Assistant: 📰 Platts 市场快报 | 6月13日（周六） 📰 Market Stories [1] 巴西Paranagua港即将接收ARA汽油船货 6月汽油进口量预计约23.5万立方米，其中Paranagua港6月21日将接收来自ARA地区的59,731立方米汽油。Suape港预计接收42,880立方米。巴西汽油进口窗口已关闭107天，国内价格低于进口平价约910雷亚尔/立方米。 [2] ICE低硫柴油期货暴跌至三个月新低 特朗普宣布美伊达成和平协议并取消对伊打击计划后，M1 ICE LSGO期货6月12日下跌$64.75至$967.",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "d387904341e2"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "6月汽油进口量预计约23.5万立方米",
+        "国内价格低于进口平价约910雷亚尔/立方米",
+        "64.75至",
+        "platts",
+        "市场",
+        "快报",
+        "周六",
+        "market"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-13.txt:57:57": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-13.txt:57:57",
+      "path": "memory/.dreams/session-corpus/2026-06-13.txt",
+      "startLine": 57,
+      "endLine": 57,
+      "source": "memory",
+      "snippet": "Assistant: $681.00/mt delivered [12] 厄瓜多尔La Libertad: $812.00/mt delivered [13] 厄瓜多尔瓜亚基尔: $813.00/mt delivered (参考Brent $87.22/b，USGC HSFO $76.55/b，USAC HSFO $82.7/b) --- [1] https://plattsconnect.spglobal.com/#platts/source?sourceId=6d52ccd2-6eb5-4fe7-a6c1-c57521aa4f20 [2] https",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "d387904341e2"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "681.00/mt",
+        "812.00/mt",
+        "813.00/mt",
+        "87.22/b",
+        "76.55/b",
+        "82.7/b",
+        "plattsconnect.spglobal.com",
+        "platts/source"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-13.txt:58:58": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-13.txt:58:58",
+      "path": "memory/.dreams/session-corpus/2026-06-13.txt",
+      "startLine": 58,
+      "endLine": 58,
+      "source": "memory",
+      "snippet": "Assistant: https://plattsconnect.spglobal.com/#platts/source?sourceId=41b8ca06-a990-4483-a347-2526e961b949 [8] https://plattsconnect.spglobal.com/#platts/source?sourceId=415aba4c-04b9-49c6-a573-6d627b6d8153 [9] https://plattsconnect.spglobal.com/#platts/source?sourceId=c0169274-c",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "d387904341e2"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "plattsconnect.spglobal.com",
+        "platts/source",
+        "c0169274-c",
+        "https",
+        "platts",
+        "source",
+        "sourceid",
+        "41b8ca06"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-13.txt:59:59": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-13.txt:59:59",
+      "path": "memory/.dreams/session-corpus/2026-06-13.txt",
+      "startLine": 59,
+      "endLine": 59,
+      "source": "memory",
+      "snippet": "Assistant: 📊 Platts 原油 Heards (6/12) — 主亚那原油 MOC — Liza / Unity Gold 市场：无成交、无买盘、无卖盘。 — 加拿大原油 MOC — Pacific Cold Lake / Dilbit FOB Westridge：无成交、无买盘、无卖盘。 — 脏油轮租赁 — • London Spirit，USGC→UKCM，145kt，原油，Jun27 装，Repsol，subjects • Aquabliss，USGC→UKCM，145kt，原油，Jun25-27 装，Repsol，subjects",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "d387904341e2"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "6/12",
+        "jun25-27",
+        "platts",
+        "原油",
+        "heards",
+        "moc",
+        "liza",
+        "unity"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-13.txt:60:60": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-13.txt:60:60",
+      "path": "memory/.dreams/session-corpus/2026-06-13.txt",
+      "startLine": 60,
+      "endLine": 60,
+      "source": "memory",
+      "snippet": "Assistant: 🤖 **Twitter Monitor — JavierBlas / FluxOfficials** **🇮🇷 美伊和平协议重大进展：** • 巴基斯坦总理确认：\"美国和伊朗之间已经达成最终的、商定的和平协议文本\"，巴基斯坦正与双方合作敲定下一步 • 伊朗表示谅解备忘录\"从未如此接近\" • 美国资深官员预计协议将在未来几天内签署，\"估计85%可能性\" • @FluxOfficials: 战争结束了……是吗？ 🛢️ **油市动态：** • The Officials MOC (12/6): Dated Brent $88.41",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "d387904341e2"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "12/6",
+        "88.41",
+        "twitter",
+        "monitor",
+        "javierblas",
+        "fluxofficials",
+        "和平",
+        "协议"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-13.txt:61:61": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-13.txt:61:61",
+      "path": "memory/.dreams/session-corpus/2026-06-13.txt",
+      "startLine": 61,
+      "endLine": 61,
+      "source": "memory",
+      "snippet": "Assistant: 📰 Market Stories CME 集团宣布将于8月30日推出10桶迷你WTI原油期货合约，现金交割，每周7天24小时交易。该合约是现有1000桶实物交割合约和100桶微型合约的补充，旨在降低门槛、让交易者能随时管理风险敞口。这一举措正值CFTC近期放开美国加密货币永续合约交易窗口，市场关注监管机构未来是否会对24/7能源衍生品采取类似态度。JP摩根此前指出，Hyperliquid上的WTI永续期货合约在3月中旬曾达到17亿美元日交易量峰值。 --- [1] https://plattsconnect.spglobal.co",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "d387904341e2"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "市场关注监管机构未来是否会对24/7能源衍生品采取类似态度",
+        "plattsconnect.spglobal.co",
+        "market",
+        "stories",
+        "cme",
+        "集团",
+        "宣布",
+        "推出"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-13.txt:62:62": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-13.txt:62:62",
+      "path": "memory/.dreams/session-corpus/2026-06-13.txt",
+      "startLine": 62,
+      "endLine": 62,
+      "source": "memory",
+      "snippet": "Assistant: 🔥 Top News 原油期货跌至三个月低点 — 美伊协议预期升温 美伊双方领导人社交媒体上释放信号，称接近达成谅解备忘录（MoU），国际油价6月12日暴跌至3月中旬以来最低。NYMEX WTI 7月期货收跌$2.83至$84.88/桶，ICE Brent 8月期货跌$3.05至$87.33/桶。 伊朗外长 Araghchi 在X上发文称\"伊斯兰堡谅解备忘录从未如此接近\"，巴基斯坦总理 Shehbaz Sharif 也确认\"已达成了最终商定的和平协议文本，巴方正与双方密切合作敲定下一步\"。伊朗媒体此前公布了一份14点草案，其中包括",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "d387904341e2"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "2.83至",
+        "84.88/桶",
+        "3.05至",
+        "87.33/桶",
+        "top",
+        "news",
+        "原油",
+        "期货"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-13.txt:63:63": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-13.txt:63:63",
+      "path": "memory/.dreams/session-corpus/2026-06-13.txt",
+      "startLine": 63,
+      "endLine": 63,
+      "source": "memory",
+      "snippet": "Assistant: 📰 Market Stories [1] 巴西 Paranagua 港将接收 ARA 汽油船货。截至 6 月 26 日，巴西预计将接收至少 134,311 立方米的汽油进口，主要来自 ARA 地区，其中 Paranagua 港占 59,731 立方米（6 月 21 日到港），Suape 港占 42,880 立方米。6 月汽油进口总量预计约 235,140 立方米，环比增长 14.4%。巴西汽油进口窗口已连续关闭 107 天，国内价格低于进口平价约 910 雷亚尔/立方米，进口套利不利。此外，巴西还计划 6 月 27 日前进口约 5",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "d387904341e2"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "14.4",
+        "雷亚尔/立方米",
+        "market",
+        "stories",
+        "巴西",
+        "paranagua",
+        "接收",
+        "ara"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-13.txt:64:64": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-13.txt:64:64",
+      "path": "memory/.dreams/session-corpus/2026-06-13.txt",
+      "startLine": 64,
+      "endLine": 64,
+      "source": "memory",
+      "snippet": "Assistant: 🗞️ Platts 市场快报 — 6月13日周六 🔥 Top News [1] 美国 MISO 电力市场：德州/路易斯安那枢纽7月电价飙升 MISO 德州枢纽7月峰时电价报 $77.31/MWh，路易斯安那枢纽 $71.76/MWh，同比分别暴涨 66.3% 和 50.2%。南方区域电价走强与 Henry Hub 天然气价格下跌（$3.087/MMBtu，同比降 4.5%）形成对比。CustomWeather 预测 MISO 区域7月气温较正常水平偏高 0-2°F，预计负荷水平约 94.9 GW。 📰 Market Stori",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "d387904341e2"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "德州/路易斯安那枢纽7月电价飙升",
+        "77.31/mwh",
+        "71.76/mwh",
+        "66.3",
+        "50.2",
+        "3.087/mmbtu",
+        "4.5",
+        "0-2"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-13.txt:65:65": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-13.txt:65:65",
+      "path": "memory/.dreams/session-corpus/2026-06-13.txt",
+      "startLine": 65,
+      "endLine": 65,
+      "source": "memory",
+      "snippet": "Assistant: 🐦 **@JavierBlas 推文更新** **1️⃣** 伊朗强硬派对该协议不满意——这可能是一个好兆头 Iranian hardliners are unhappy with the deal — which probably is a good sign https://x.com/JavierBlas/status/2065540944020050266 --- **2️⃣** RT @mb_ghalibaf：做出的承诺必须遵守。没有如果，没有但是，没有借口。为了即将达成的交易，没有其他办法。 Commitments m",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "d387904341e2"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "mb-ghalibaf",
+        "javierblas",
+        "更新",
+        "伊朗",
+        "强硬",
+        "派对",
+        "协议",
+        "满意"
+      ]
+    },
+    "memory:memory/.dreams/session-corpus/2026-06-13.txt:66:66": {
+      "key": "memory:memory/.dreams/session-corpus/2026-06-13.txt:66:66",
+      "path": "memory/.dreams/session-corpus/2026-06-13.txt",
+      "startLine": 66,
+      "endLine": 66,
+      "source": "memory",
+      "snippet": "Assistant: Platts Monitor 遇到错误：top-news 端点 fetch 失败。Heards 和 stories 扫描都正常完成了（0 条新内容），但最后获取 top-news 时网络请求失败。 不过 token 刷新成功，不是认证问题。下次 cron 运行会自动重试。除非连续报错，否则无需人工介入。",
+      "recallCount": 0,
+      "dailyCount": 1,
+      "groundedCount": 0,
+      "totalScore": 0.58,
+      "maxScore": 0.58,
+      "firstRecalledAt": "2026-06-14T19:00:00.663Z",
+      "lastRecalledAt": "2026-06-14T19:00:00.663Z",
+      "queryHashes": [
+        "d387904341e2"
+      ],
+      "recallDays": [
+        "2026-06-15",
+        "2026-06-14"
+      ],
+      "conceptTags": [
+        "网络",
+        "top-news",
+        "platts",
+        "monitor",
+        "遇到",
+        "错误",
+        "top",
+        "news"
       ]
     }
   }
