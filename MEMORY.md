@@ -147,8 +147,34 @@ OpenClaw 目前没有"直接运行脚本 + 输出送 WhatsApp"的 cron 模式。
 - 旧知识库/RAG 系统已于 2026-06-08 废弃：`reports/knowledge-base.json`、`.rag-index.json`、`reports/vectorized-sources.json`、`reports/knowledge/` 和相关脚本已移入 `.trash/deprecated-knowledge-base-20260608-1645-sgt/`，不要继续使用旧知识库入口。
 - 新石油知识库骨架已于 2026-06-08 创建：`knowledge/` 存放 schema、retrieval policy、时间权重和运行规范；`skills/oil-knowledge-base/` 是操作入口；`scripts/oil-kb.mjs` 用于检查/初始化。设计原则是 source-aware、lazy retrieval、structured first、embedding optional。
 - 新知识库长任务必须使用 checkpoint：`scripts/oil-kb.mjs job-*`。遇到 token/context 中断时，先运行 `node scripts/oil-kb.mjs job-list` 找到对应任务，再用 `node scripts/oil-kb.mjs job-status <job-id>` 从 `nextAction` 继续。
-- 新知识库第一条样板 pipeline 已完成：`scripts/oil-kb-ingest-eia-weekly.mjs` 导入 EIA weekly inventory，生成 document/card/observation/timeseries JSONL。可用 `node scripts/oil-kb.mjs search "EIA crude inventory" quick` 做轻量检索。
-- 新知识库第二条样板 pipeline 已完成：`scripts/oil-kb-ingest-platts-monitor.mjs` 从 `.cache/platts-monitor/latest.json` 导入 Platts monitor digest，生成 document/card/observation JSONL，并保留 sourceId / Platts Connect URL provenance。可用 `node scripts/oil-kb.mjs search "Platts Dubai MOC" standard` 查询。下一步建议为 Platts MOC/heards 增加更细的交易/价格结构化解析，或接 Argus/Platts price series 做 source conflict 对照。
+- ## 🛢️ Platts Strait of Hormuz "defining open" 知识库入库 (2026-06-16)
+
+文件：S&P Global Energy whitepaper "The Strait of Hormuz: defining 'open' in a complex market landscape" (May 2026)
+
+- 来源：Tianshu 通过 WhatsApp 发送的 PDF
+- 原始路径：`knowledge/data/raw/platts/platts-hormuz-defining-open-2026-05/`
+- Document ID: `platts-hormuz-defining-open-2026-05`
+- Card ID: `card-platts-hormuz-defining-open-2026-05`
+- Observations: 7 条 (traffic/blockade/insurance/stranded/stop-start/routing)
+- Playbook: `playbook-platts-hormuz-reopening-criteria-2026-05` (含 5 维度评估框架)
+
+### Platts 的 5 项最低条件（市场反馈汇总）
+1. **船舶交通恢复**: 50-90% 的战前水平，持续 1 周至 1 个月
+2. **停火观察期**: 30-45 天，无间歇性中断
+3. **海事保险**: 广泛承保人池，商业可用保费（即使高于战前）
+4. **物理安全**: 水雷清除，海军巡逻/护航机制
+5. **船队部署**: VLCC 等大型油轮回归波斯湾，正常挂港和装货计划
+
+新知识库第一条样板 pipeline 已完成：`scripts/oil-kb-ingest-eia-weekly.mjs` 导入 EIA weekly inventory，生成 document/card/observation/timeseries JSONL。可用 `node scripts/oil-kb.mjs search "EIA crude inventory" quick` 做轻量检索。
+- ### Macquarie: Strait of Hormuz Setting the Boundaries (2026-03-23)
+
+- **文件**: `knowledge/data/raw/macquarie/platts-hormuz-macquarie-supply-disruption-2026-03/`
+- **作者**: Vikas Dwivedi, Walt Chancellor, Peter Taylor, Emily Manalang, Xinyi Ye (Macquarie Sales & Trading)
+- Document ID: `macquarie-hormuz-supply-disruption-mitigations-2026-03`
+- Observations: 9 条 (交通基线/管道绕行/SPR释放/价格预测/亚洲炼厂减产/浮仓/两个情景的周级装货表/价差图表)
+- **关键结论**: 6 项缓解措施合计最大 15 M BPD（实际平均 9.5 M BPD），仍存 4 M BPD 缺口。Base case（3月底停火）vs Long War（4月底停火）。Brent $85-90 地板价，$110 自然回升，长期战争 $150。
+
+新知识库第二条样板 pipeline 已完成：`scripts/oil-kb-ingest-platts-monitor.mjs` 从 `.cache/platts-monitor/latest.json` 导入 Platts monitor digest，生成 document/card/observation JSONL，并保留 sourceId / Platts Connect URL provenance。可用 `node scripts/oil-kb.mjs search "Platts Dubai MOC" standard` 查询。下一步建议为 Platts MOC/heards 增加更细的交易/价格结构化解析，或接 Argus/Platts price series 做 source conflict 对照。
 - 新知识库已完成首份 Goldman Sachs 研究报告入库：`goldman-oil-comment-estimating-large-demand-destruction-2026-06-05`（Oil Comment: Estimating Large Demand Destruction, 2026-06-05），包含 document/card、4 条 observations、1 条 Brent/WTI 2026Q4 forecast、1 条 demand-destruction triangulation playbook。对应 checkpoint `20260609032310-goldman-macquarie-hormuz-research-reports-2026-0` 已完成。
 - 如需继续 Goldman 成品油利润率报告，当前 checkpoint 为 `20260610092253-goldman-hormuz-product-margins-structural-tailwi`，状态 `in_progress`；这是用户中断后的可续传任务，不要靠聊天上下文硬续，先查 `job-status`。
 
