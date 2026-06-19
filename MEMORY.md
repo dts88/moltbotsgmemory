@@ -270,20 +270,9 @@ MEMORY.md 这里只保留入口，不再保存 API 端点、目录说明、信�
 - MEMORY.md 只保留索引和稳定结论，不再保存大段研究过程、公式推导和阶段性验证表。
 
 
-## Promoted From Short-Term Memory (2026-05-07)
+## Promoted From Short-Term Memory (2026-06-20)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-02-23.md:70:101 -->
-- ## 📈 CTA 持仓分析 (EA 2/23) - 当前多头: 82% of max - 均值回归空间: $6/bbl - 周买入流量: 24,100 lots - WTI 卖出触发点: $63.50 ## 🤖 硬件机器人研究 为 OpenClaw 集成评估了两款: 1. **StackChan** - ESP32 桌面机器人，开源 2. **Vector + Wire Pod** ⭐ 推荐 - 原 Anki 产品，社区开源复活 - Wire Pod: https://github.com/kercre123/wire-pod - 支持自定义语音/AI 后端 ## 📧 Gmail 邮箱配置完成 - 邮箱: openclawsg@gmail.com - 脚本: `scripts/gmail.mjs` - 功能: SMTP 发送 + IMAP 读取 ## 🧠 知识库更新 新增实体: - `AI_Economic_Impact` - Citrini 2028 AI 电力危机报告 - `Oil_Positioning` - EA 量化周报 CTA 持仓数据 ## 🤖 StackChan 监控 (2026-02-24) **目标**: 监控 Kickstarter StackChan 页面，有货时通知 Tianshu **URL**: https://www.kickstarter.com/projects/m5stack/stackchan-the-first-co-created-open-source-ai-desktop-robot **当前状态**: All gone (售罄) **脚本**: `scripts/kickstarter-monitor.mjs` **问题**: Kickstarter 有 Cloudflare 保护，需要浏览器访问 **临时方案**: 建议使用 Visualping.io 外部监控 [score=0.851 recalls=3 avg=1.000 source=memory/2026-02-23.md:70-101]
-
-## Promoted From Short-Term Memory (2026-05-13)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-03-06.md:158:201 -->
-- - **需特批**: 其他功能需通知 Tianshu 审批 - **定价**: SGD 49/月 - 待确认: onboarding 流程、用户审批流程、账单管理 --- ## 待办: 获客计划书 Sun 提议制定获客计划书，需与 Tianshu 讨论： - 目标用户画像 - 获客渠道 (朋友圈/小红书/Telegram/口碑等) - 转化路径 (免费试用→付费?) - 早期种子用户策略 - 差异化卖点 (vs ChatGPT Plus 等) **状态**: ⬜ 待与 Tianshu 讨论 --- ## 新 Bot 账户: @OilClaw_bot - **Username**: @OilClaw_bot - **Token**: `[REDACTED - do not store bot tokens in memory]` - **用途**: 对外商业服务 (OpenClaw 品牌) - **状态**: 已创建，待启用 - 现有 bot @SG_Moltbot 继续作为内部使用 --- ## GitHub - 更新 token: [REDACTED - stored in git remote URL] - 备份一直在正常工作 (token 嵌入 git remote URL) ## 🔧 Dubai MOC Cron 修复 (16:50) **问题**: MOC cron (b97e0428) 今天第一次运行就失败了 1. 用了 Structured Heards API（没数据），应该用 **News Insights heards** 端点 2. `npx bird` 没加载 `.twitter-env`，Twitter 认证失败 3. payload 写得太模糊，sub-agent 不知道具体怎么执行 **修复**: - 步骤1: 直接用 News Insights API 查询 heards（和 platts-insights-monitor.mjs 同一个端点） - 步骤2: `source .twitter-env && npx bird user-tweets @FluxOfficials -n 3 --json --plain` [score=0.951 recalls=3 avg=1.000 source=memory/2026-03-06.md:158-201]
-
-
-## Promoted From Short-Term Memory (2026-05-29)
-
-<!-- openclaw-memory-promotion:memory:memory/2026-01-29.md:1:37 -->
-- # 2026-01-29 ## 今天发生了什么 - **12:55** - 首次启动！收到 Tianshu 的第一条消息 - **12:56** - 第一个任务：创建 `final_test.txt`，内容 "Unraid Mapping Success" - **12:59** - 查询新加坡天气（30°C，体感36°C，闷热） - **13:00** - 搜索 Grayce Tan 新闻（PLB 辞职事件） - **13:04** - 尝试访问 Elon Musk Twitter（浏览器不可用） - **13:13** - 检查配对设备（暂无） - **13:22** - 帮助解决 Control UI "pairing required" 问题 - 配置了 `gateway.controlUi.allowInsecureAuth: true` - 设置了 token 认证 - **13:24** - 正式认识！ - 我的名字：Moltbot - 我的人类：Tianshu ## 学到的 - Tianshu 在 Unraid 上运行我 - 他技术很强，喜欢用中文 - 局域网访问 Control UI 需要配置 allowInsecureAuth + token - bird CLI 需要用环境变量 AUTH_TOKEN 和 CT0，配置文件不被读取 ## Twitter 监控配置 - **监控账户**: - @JavierBlas (彭博社能源记者) - @realDonaldTrump (美国总统) - @elonmusk (Tesla/X CEO) - **Cron Job ID**: 4291189e-ae4a-43a3-a71c-df0844cf5507 - **频率**: 每 10 分钟 - **配置文件**: - `.twitter-env` - 存储 Twitter cookie - `scripts/twitter-monitor.mjs` - 监控脚本（支持多用户） - `.twitter-monitor-state.json` - 状态记录（每用户已读推文 ID） [score=0.986 recalls=3 avg=1.000 source=memory/2026-01-29.md:1-37]
-<!-- openclaw-memory-promotion:memory:memory/2026-05-05.md:1:11 -->
-- # 2026-05-05 - Heartbeat memory maintenance: reviewed recent memory files (`2026-05-05` newly created, `2026-05-04`, `2026-05-03`, `2026-05-02`) and current `MEMORY.md`. No long-term memory updates needed. ## 16:53 - Pre-compaction flush ### Platts Monitor Forward to Hchen 调整 - 用户反馈 `Platts Monitor Forward to Hchen` 在 15:49 失败：`cron: job execution timed out`。 - 诊断结论：15:41 主 Platts Monitor 输出很长，主任务耗时约 192 秒；Hchen 转发任务 timeout 只有 180 秒，isolated agent 复述长正文时被 cron 杀掉。问题不是 Platts 抓取失败，而是转发层超时。 - 已更新 `/home/node/clawd/scripts/platts-monitor-forward-hchen.mjs`：继续使用主 Platts Monitor 写入的 `.cache/platts-monitor/latest.json`，只读 cache 并输出正文，de-dupe by `generatedAt`，`MAX_AGE_MS` 调整为 60 分钟以允许延迟/重试。 - 曾创建辅助脚本 `/home/node/clawd/scripts/platts-monitor-forward-from-runs.mjs`，用于直接从 `openclaw cron runs` 找主任务最近已投递 summary；但当前推荐路径仍是 cache-based forwarding，因为更轻、更少让 forwarding agent 处理 cron 历史。 [score=0.866 recalls=3 avg=1.000 source=memory/2026-05-05.md:1-11]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-12.md:10:10 -->
+- PCAAT00 cron job（获取 Dubai Assessment $83.18/bbl，每天 17:00-20:50 每 10 分钟运行）连续 7 次 isolated agent 超时（"turn-accepted" phase timeout）。 [score=0.899 recalls=0 avg=0.620 source=memory/2026-06-12.md:10-10]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-12.md:13:13 -->
+- OpenClaw 的 `sessionTarget: "isolated"` cron 机制，脚本输出到 WhatsApp delivery 必须经过 agent 模型中转： [score=0.899 recalls=0 avg=0.620 source=memory/2026-06-12.md:13-13]
