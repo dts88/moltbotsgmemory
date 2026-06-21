@@ -270,9 +270,11 @@ MEMORY.md 这里只保留入口，不再保存 API 端点、目录说明、信�
 - MEMORY.md 只保留索引和稳定结论，不再保存大段研究过程、公式推导和阶段性验证表。
 
 
-## Promoted From Short-Term Memory (2026-06-20)
+## Promoted From Short-Term Memory (2026-06-21)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-06-12.md:10:10 -->
-- PCAAT00 cron job（获取 Dubai Assessment $83.18/bbl，每天 17:00-20:50 每 10 分钟运行）连续 7 次 isolated agent 超时（"turn-accepted" phase timeout）。 [score=0.899 recalls=0 avg=0.620 source=memory/2026-06-12.md:10-10]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-12.md:13:13 -->
-- OpenClaw 的 `sessionTarget: "isolated"` cron 机制，脚本输出到 WhatsApp delivery 必须经过 agent 模型中转： [score=0.899 recalls=0 avg=0.620 source=memory/2026-06-12.md:13-13]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-12.md:40:40 -->
+- 新 job (6d4bcb32) 使用 gpt-5.5 + 300s timeout + next-heartbeat。第一个 manual run 在创建后立刻触发，结果待查。 [score=0.915 recalls=0 avg=0.620 source=memory/2026-06-12.md:40-40]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-12.md:19:19 -->
+- 之前用 gpt-5.5 时 14s 就跑完。今天 deepseek-v4-flash 模型 + 120s 超时不够。 [score=0.908 recalls=0 avg=0.620 source=memory/2026-06-12.md:19-19]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-12.md:22:22 -->
+- **整个架构设计错误** — "拿个价格数据还要经过模型中转" 是画蛇添足。脚本拿到数据应该直接发到 WhatsApp，不需要一个模型在中间做"回声"。 [score=0.908 recalls=0 avg=0.620 source=memory/2026-06-12.md:22-22]
