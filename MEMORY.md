@@ -186,6 +186,10 @@ MEMORY.md 这里只保留入口，不再保存 API 端点、目录说明、信�
 ### Moltbook 备份问题（持续中）
 - Moltbook 备份偶发失败（API 返回 HTML），需要后续排查。
 
+### Heartbeat 模型 override 提示（2026-06-22 起）
+- OpenClaw 多次提示 `deepseek/deepseek-v4-flash` 不在该 agent allowlist 中，并自动回退到 `openai/gpt-5.5`。
+- 这不是任务失败；如后续确实要用 deepseek-v4-flash，需要调整 agent 模型 allowlist（如 `agents.defaults.models`）或改选已允许模型。
+
 ---
 
 ## 🔧 工具/Skill 设计原则 (2026-03-19)
