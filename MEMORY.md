@@ -133,6 +133,7 @@ OpenClaw 目前没有"直接运行脚本 + 输出送 WhatsApp"的 cron 模式。
 - 通用 Platts token、刷新逻辑、共享凭证：保留在 MEMORY.md 的全局 Platts Token 区块。
 - 通用 Market Data API / refined products 方法论：以对应 skill 和脚本为准，不再在 MEMORY.md 重复保存整套说明。
 - Singapore Mogas / GO 10ppm / Jet Kero / MTBE：详见 `skills/mogas-moc-report/`
+- 原油每日价格片段：详见 `skills/crude-daily-snippet/`。OpenClaw 入口为 `node skills/crude-daily-snippet/scripts/generate.mjs`，使用 `.config/spglobal/credentials.json` 共享 Platts token。Cron `571fb419-b6a9-4542-91f6-9550bbceab09` 周二至周六 08:00 SGT 发送上一交易日价格。注意 Gateway announce 不支持 `openclaw-weixin`，所以任务用 `node skills/crude-daily-snippet/scripts/generate.mjs | node scripts/weixin-send-text.mjs --pad-blank-lines` 直接调用 WeChat sendmessage，并补偿 WeChat 客户端空行压缩；失败告警走 WhatsApp。
 
 ---
 
@@ -189,6 +190,11 @@ MEMORY.md 这里只保留入口，不再保存 API 端点、目录说明、信�
 ### Heartbeat 模型 override 提示（2026-06-22 起）
 - OpenClaw 多次提示 `deepseek/deepseek-v4-flash` 不在该 agent allowlist 中，并自动回退到 `openai/gpt-5.5`。
 - 这不是任务失败；如后续确实要用 deepseek-v4-flash，需要调整 agent 模型 allowlist（如 `agents.defaults.models`）或改选已允许模型。
+
+### WeChat channel plugin 状态（2026-06-24）
+- 官方 `@tencent-weixin/openclaw-weixin@2.4.3` 已重新安装，旧的源码版 `~/.openclaw/extensions/openclaw-weixin` 已移除。
+- `scripts/weixin-send-text.mjs` 会自动发现当前 npm 安装的插件路径，并可直接调用 `ilink/bot/sendmessage`；API 直发已验证成功。
+- Gateway 需要真实进程/容器重启后才会加载新安装的 WeChat channel plugin；当前容器内 `openclaw gateway restart` 不可用，不要在聊天中直接杀 PID 1，除非用户明确接受容器中断。
 
 ---
 
