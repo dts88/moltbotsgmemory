@@ -133,7 +133,7 @@ OpenClaw 目前没有"直接运行脚本 + 输出送 WhatsApp"的 cron 模式。
 - 通用 Platts token、刷新逻辑、共享凭证：保留在 MEMORY.md 的全局 Platts Token 区块。
 - 通用 Market Data API / refined products 方法论：以对应 skill 和脚本为准，不再在 MEMORY.md 重复保存整套说明。
 - Singapore Mogas / GO 10ppm / Jet Kero / MTBE：详见 `skills/mogas-moc-report/`
-- 原油每日价格片段：详见 `skills/crude-daily-snippet/`。OpenClaw 入口为 `node skills/crude-daily-snippet/scripts/generate.mjs`，使用 `.config/spglobal/credentials.json` 共享 Platts token。Cron `571fb419-b6a9-4542-91f6-9550bbceab09` 周二至周六 08:00 SGT 发送上一交易日价格。注意 Gateway announce 不支持 `openclaw-weixin`，所以任务用 `node skills/crude-daily-snippet/scripts/generate.mjs | node scripts/weixin-send-text.mjs` 直接调用 WeChat sendmessage。保持原始模板的单空行，不使用 `--pad-blank-lines`。2026-06-25 已确认 isolated cron 没有本地 exec/bash 工具，会“ok 但未发送”；该任务改用 `sessionTarget=main` systemEvent 让主会话执行本地命令。
+- 原油每日价格片段：详见 `skills/crude-daily-snippet/`。OpenClaw 入口为 `node skills/crude-daily-snippet/scripts/generate.mjs`，使用 `.config/spglobal/credentials.json` 共享 Platts token。Cron `571fb419-b6a9-4542-91f6-9550bbceab09` 周二至周六 08:00 SGT 发送上一交易日价格。注意 Gateway announce 不支持 `openclaw-weixin`，所以任务用 `node skills/crude-daily-snippet/scripts/generate.mjs | node scripts/weixin-send-text.mjs` 直接调用 WeChat sendmessage。保持原始模板的单空行，不使用 `--pad-blank-lines`。2026-06-25 已确认 isolated cron 没有本地 exec/bash 工具，会“ok 但未发送”；该任务使用 `sessionTarget=main` + `wakeMode=now` 的 systemEvent 让主会话立即执行本地命令。2026-06-26 已确认 `wakeMode=next-heartbeat` 会导致 08:00 记录为 ok 但未及时发送。
 
 ---
 
