@@ -280,15 +280,13 @@ MEMORY.md 这里只保留入口,不再保存 API 端点、目录说明、信息�
 - Dubai Cracking Margin (DBSCM00):详见 `skills/crude-cracking-margin/`
 - MEMORY.md 只保留索引和稳定结论,不再保存大段研究过程、公式推导和阶段性验证表。
 
-## Promoted From Short-Term Memory (2026-07-01)
+## Promoted From Short-Term Memory (2026-07-04)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-06-26.md:10:13 -->
-- 08:31 - Crude daily WeChat cron fake success: Tianshu reported that after 08:00 SGT he still had not received the automatic crude daily price snippet.; Checked live cron `571fb419-b6a9-4542-91f6-9550bbceab09`: 2026-06-26 08:00 SGT run was marked `ok`, but the run summary was just the systemEvent prompt itself; the Node pipeline did not execute.; Manually ran `node skills/crude-daily-snippet/scripts/generate.mjs`; it generated the 6月25日 snippet normally.... [score=0.843 recalls=0 avg=0.620 source=memory/2026-06-26.md:10-13]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-26.md:14:14 -->
-- 08:31 - Crude daily WeChat cron fake success: Updated production cron to `wakeMode=now` and updated `skills/crude-daily-snippet/SKILL.md` plus `MEMORY.md` to preserve this detail. [score=0.814 recalls=0 avg=0.620 source=memory/2026-06-26.md:14-14]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-26.md:18:20 -->
-- 08:41 - Heartbeat memory maintenance: Reviewed recent memory files (`2026-06-24`, `2026-06-25`, `2026-06-26`) and current `MEMORY.md`.; Removed a duplicate auto-promoted short-term memory block about the `deepseek/deepseek-v4-flash` model override; the same stable issue is already captured under `MEMORY.md` known issues.; Checked live cron `571fb419-b6a9-4542-91f6-9550bbceab09`: enabled, `sessionTarget=main`, `wakeMode=now`, schedule `0 8 * * 2-6` Asia/Singapore, next run 2026-06-27 08:00 SGT. No user interruption needed. [score=0.814 recalls=0 avg=0.620 source=memory/2026-06-26.md:18-20]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-26.md:24:26 -->
-- 14:37 - Heartbeat memory maintenance: Reviewed recent memory files (`2026-06-24`, `2026-06-25`, `2026-06-26`) and current `MEMORY.md`.; No new stable decisions or configuration changes needed promotion to long-term memory.; `MEMORY.md` no longer has the duplicate auto-promoted model override block; current long-term entries are up to date. [score=0.814 recalls=0 avg=0.620 source=memory/2026-06-26.md:24-26]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-26.md:30:32 -->
-- 20:37 - Heartbeat memory maintenance: Reviewed recent memory files (`2026-06-24`, `2026-06-25`, `2026-06-26`) and current `MEMORY.md`.; Afternoon/evening Platts and market bulletins were routine market flow, not durable agent configuration or user preference changes.; No outdated `MEMORY.md` entries found during this pass. [score=0.814 recalls=0 avg=0.620 source=memory/2026-06-26.md:30-32]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-30.md:12:15 -->
+- Cron 状态概览: 23 个任务（6 disabled，17 enabled）; **4 个近期 error 的任务**，根因相同：deepseek auth 在 isolated cron session 中未配置; Polymarket US-Iran Ceasefire Monitor (09:00 SGT) — deepseek auth fail + 偶发 timeout; Polymarket Hormuz Traffic Normal by May 15 Monitor (18:00 SGT) — 脚本执行失败（市场已过期 May 15） [score=0.824 recalls=0 avg=0.620 source=memory/2026-06-30.md:12-15]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-30.md:16:18 -->
+- Cron 状态概览: Moltbook Heartbeat (2天) — deepseek auth fail; Cron 安全审计 (每周) — deepseek auth fail; 核心任务正常运行：Crude Daily Snippet、Dubai MOC、Platts Monitor、PCAAT00、外交部监控等 [score=0.824 recalls=0 avg=0.620 source=memory/2026-06-30.md:16-18]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-30.md:21:22 -->
+- 关键发现: **Polymarket Hormuz Market 已过期** — "Strait of Hormuz traffic returns to normal by May 15" 市场已在 6 周前到期，cron 持续失败是预期行为。应禁用或更新。; **Deepseek auth 在 isolated cron session 缺失** — 已知问题（MEMORY.md 已记录 2026-06-22），当前 heartbeat 用 main session 正常工作。多个 cron 配置了 deepseek 模型但 isolated session 没有 API key。 [score=0.824 recalls=0 avg=0.620 source=memory/2026-06-30.md:21-22]
+<!-- openclaw-memory-promotion:memory:memory/2026-06-30.md:5:7 -->
+- 01:56 SGT - Google Calendar Service Account 密钥恢复: 密钥文件 `calendar-service-account.json` 之前丢失（key ID: d6bd2dafe8d751ba9463b3792fc8c95128e6cba2）; Tianshu 从 Cloud Console 重新下载 JSON，已存入 `.config/google/calendar-service-account.json`; 验证通过 ✅ 已导入 Gongshang Primary School Term 3 日程（双语英文在前格式）到 `dtsdts@gmail.com` [score=0.824 recalls=0 avg=0.620 source=memory/2026-06-30.md:5-7]
