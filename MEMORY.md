@@ -280,13 +280,21 @@ MEMORY.md 这里只保留入口,不再保存 API 端点、目录说明、信息�
 - Dubai Cracking Margin (DBSCM00):详见 `skills/crude-cracking-margin/`
 - MEMORY.md 只保留索引和稳定结论,不再保存大段研究过程、公式推导和阶段性验证表。
 
-## Promoted From Short-Term Memory (2026-07-04)
+## Promoted From Short-Term Memory (2026-07-05)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-06-30.md:12:15 -->
-- Cron 状态概览: 23 个任务（6 disabled，17 enabled）; **4 个近期 error 的任务**，根因相同：deepseek auth 在 isolated cron session 中未配置; Polymarket US-Iran Ceasefire Monitor (09:00 SGT) — deepseek auth fail + 偶发 timeout; Polymarket Hormuz Traffic Normal by May 15 Monitor (18:00 SGT) — 脚本执行失败（市场已过期 May 15） [score=0.824 recalls=0 avg=0.620 source=memory/2026-06-30.md:12-15]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-30.md:16:18 -->
-- Cron 状态概览: Moltbook Heartbeat (2天) — deepseek auth fail; Cron 安全审计 (每周) — deepseek auth fail; 核心任务正常运行：Crude Daily Snippet、Dubai MOC、Platts Monitor、PCAAT00、外交部监控等 [score=0.824 recalls=0 avg=0.620 source=memory/2026-06-30.md:16-18]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-30.md:21:22 -->
-- 关键发现: **Polymarket Hormuz Market 已过期** — "Strait of Hormuz traffic returns to normal by May 15" 市场已在 6 周前到期，cron 持续失败是预期行为。应禁用或更新。; **Deepseek auth 在 isolated cron session 缺失** — 已知问题（MEMORY.md 已记录 2026-06-22），当前 heartbeat 用 main session 正常工作。多个 cron 配置了 deepseek 模型但 isolated session 没有 API key。 [score=0.824 recalls=0 avg=0.620 source=memory/2026-06-30.md:21-22]
-<!-- openclaw-memory-promotion:memory:memory/2026-06-30.md:5:7 -->
-- 01:56 SGT - Google Calendar Service Account 密钥恢复: 密钥文件 `calendar-service-account.json` 之前丢失（key ID: d6bd2dafe8d751ba9463b3792fc8c95128e6cba2）; Tianshu 从 Cloud Console 重新下载 JSON，已存入 `.config/google/calendar-service-account.json`; 验证通过 ✅ 已导入 Gongshang Primary School Term 3 日程（双语英文在前格式）到 `dtsdts@gmail.com` [score=0.824 recalls=0 avg=0.620 source=memory/2026-06-30.md:5-7]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-01.md:11:14 -->
+- 4 个持续报错的任务: **Polymarket US-Iran Ceasefire Monitor (09:00 SGT)** — `81d24f9a`; 最近两次：timeout（model-call-started 阶段卡住 60s）和 deepseek auth fail; 历史记录：有时用 gpt-5.5 能成功，但最近持续报错; 根因：isolated cron 配置了 deepseek 模型但 isolated agent 没有 deepseek API key [score=0.806 recalls=0 avg=0.620 source=memory/2026-07-01.md:11-14]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-01.md:16:18 -->
+- 4 个持续报错的任务: **Polymarket Hormuz Traffic Normal by May 15 Monitor (18:00 SGT)** — `1e1216d8`; 该市场已于 6 周前到期（May 15 过期），脚本持续 timeout 和执行失败; 根因：市场已到期，脚本无法运行。结论同 6/30 巡检：应禁用或更新为当前活跃市场 [score=0.806 recalls=0 avg=0.620 source=memory/2026-07-01.md:16-18]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-01.md:20:22 -->
+- 4 个持续报错的任务: **Moltbook Heartbeat (2天)** — `acbd5411`; 上次成功正常（06/25），之后 deepseek auth fail; 之前用 gpt-5.5/openai 时工作正常，配置了 deepseek 模型后挂了 [score=0.806 recalls=0 avg=0.620 source=memory/2026-07-01.md:20-22]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-01.md:24:27 -->
+- 4 个持续报错的任务: **Memory Backup (Daily)** — `c22828ba`; 最近一次：LLM request failed（deepseek）; 之前一天成功完成（GitHub ✅）; 模式：deepseek模型 + isolated cron = 不可靠 [score=0.806 recalls=0 avg=0.620 source=memory/2026-07-01.md:24-27]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-01.md:30:32 -->
+- 持续问题: **deepseek auth 在 isolated cron 缺失**：多个 cron 配置了 deepseek 模型但 isolated session 无 API key; **Memory Backup 长期有 intermittent 失败**：`GPT-5.5 Agent couldn't generate a response`（运行时 50-60s 后中断），但 deepseek 模式也能偶尔成功。GitHub push 本身是可靠的，失败的都是 agent 响应阶段; 两个 Polymarket 任务需要 Tianshu 决定处理方案 [score=0.806 recalls=0 avg=0.620 source=memory/2026-07-01.md:30-32]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-01.md:35:38 -->
+- 今明关注: 09:00 SGT：外交部记者会监控（近期正常）; 15:00 SGT：FOIZ 库存周报（周三）; 17:00 SGT：Dubai MOC 日报; 18:00 SGT（HKT）：PCAAT00 to Hchen [score=0.806 recalls=0 avg=0.620 source=memory/2026-07-01.md:35-38]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-01.md:39:39 -->
+- 今明关注: 凌晨：EIA Weekly Report（2:00 SGT 周四） [score=0.806 recalls=0 avg=0.620 source=memory/2026-07-01.md:39-39]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-01.md:6:7 -->
+- Cron 状态概览: 23 个任务总（6 disabled，17 enabled）; 核心生产任务正常运行：Crude Daily Snippet ✅、Dubai MOC ✅、Platts Monitor ✅、PCAAT00 ✅、EIA 周报 ✅、外交部监控 ✅ [score=0.806 recalls=0 avg=0.620 source=memory/2026-07-01.md:6-7]
