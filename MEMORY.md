@@ -280,21 +280,11 @@ MEMORY.md 这里只保留入口,不再保存 API 端点、目录说明、信息�
 - Dubai Cracking Margin (DBSCM00):详见 `skills/crude-cracking-margin/`
 - MEMORY.md 只保留索引和稳定结论,不再保存大段研究过程、公式推导和阶段性验证表。
 
-## Promoted From Short-Term Memory (2026-07-05)
+## Promoted From Short-Term Memory (2026-07-07)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-07-01.md:11:14 -->
-- 4 个持续报错的任务: **Polymarket US-Iran Ceasefire Monitor (09:00 SGT)** — `81d24f9a`; 最近两次：timeout（model-call-started 阶段卡住 60s）和 deepseek auth fail; 历史记录：有时用 gpt-5.5 能成功，但最近持续报错; 根因：isolated cron 配置了 deepseek 模型但 isolated agent 没有 deepseek API key [score=0.806 recalls=0 avg=0.620 source=memory/2026-07-01.md:11-14]
-<!-- openclaw-memory-promotion:memory:memory/2026-07-01.md:16:18 -->
-- 4 个持续报错的任务: **Polymarket Hormuz Traffic Normal by May 15 Monitor (18:00 SGT)** — `1e1216d8`; 该市场已于 6 周前到期（May 15 过期），脚本持续 timeout 和执行失败; 根因：市场已到期，脚本无法运行。结论同 6/30 巡检：应禁用或更新为当前活跃市场 [score=0.806 recalls=0 avg=0.620 source=memory/2026-07-01.md:16-18]
-<!-- openclaw-memory-promotion:memory:memory/2026-07-01.md:20:22 -->
-- 4 个持续报错的任务: **Moltbook Heartbeat (2天)** — `acbd5411`; 上次成功正常（06/25），之后 deepseek auth fail; 之前用 gpt-5.5/openai 时工作正常，配置了 deepseek 模型后挂了 [score=0.806 recalls=0 avg=0.620 source=memory/2026-07-01.md:20-22]
-<!-- openclaw-memory-promotion:memory:memory/2026-07-01.md:24:27 -->
-- 4 个持续报错的任务: **Memory Backup (Daily)** — `c22828ba`; 最近一次：LLM request failed（deepseek）; 之前一天成功完成（GitHub ✅）; 模式：deepseek模型 + isolated cron = 不可靠 [score=0.806 recalls=0 avg=0.620 source=memory/2026-07-01.md:24-27]
-<!-- openclaw-memory-promotion:memory:memory/2026-07-01.md:30:32 -->
-- 持续问题: **deepseek auth 在 isolated cron 缺失**：多个 cron 配置了 deepseek 模型但 isolated session 无 API key; **Memory Backup 长期有 intermittent 失败**：`GPT-5.5 Agent couldn't generate a response`（运行时 50-60s 后中断），但 deepseek 模式也能偶尔成功。GitHub push 本身是可靠的，失败的都是 agent 响应阶段; 两个 Polymarket 任务需要 Tianshu 决定处理方案 [score=0.806 recalls=0 avg=0.620 source=memory/2026-07-01.md:30-32]
-<!-- openclaw-memory-promotion:memory:memory/2026-07-01.md:35:38 -->
-- 今明关注: 09:00 SGT：外交部记者会监控（近期正常）; 15:00 SGT：FOIZ 库存周报（周三）; 17:00 SGT：Dubai MOC 日报; 18:00 SGT（HKT）：PCAAT00 to Hchen [score=0.806 recalls=0 avg=0.620 source=memory/2026-07-01.md:35-38]
-<!-- openclaw-memory-promotion:memory:memory/2026-07-01.md:39:39 -->
-- 今明关注: 凌晨：EIA Weekly Report（2:00 SGT 周四） [score=0.806 recalls=0 avg=0.620 source=memory/2026-07-01.md:39-39]
-<!-- openclaw-memory-promotion:memory:memory/2026-07-01.md:6:7 -->
-- Cron 状态概览: 23 个任务总（6 disabled，17 enabled）; 核心生产任务正常运行：Crude Daily Snippet ✅、Dubai MOC ✅、Platts Monitor ✅、PCAAT00 ✅、EIA 周报 ✅、外交部监控 ✅ [score=0.806 recalls=0 avg=0.620 source=memory/2026-07-01.md:6-7]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-02.md:5:8 -->
+- 17:46 SGT - PCAAT00→Hchen cron delivery 修复: Tianshu 反馈 `PCAAT00 Daily to Hchen (v3)` 没正常运行，要求检查并手动发送给 Hchen。; Live cron `b8d63969-e316-4431-8ab9-62fabced55df` 显示 run `ok`，但多次 `deliveryStatus=not-delivered`；脚本 `.cache/pcaat00/state.json` 已写入最新 `mod=2026-07-02T08:46:28`，导致后续运行输出 `NO_REPLY`，形成“取到数据但没投递，之后又被去重挡住”的问题。; 手动查询 Platts API `PCAAT00`：assessment date `2026-07-02`，close `63.30`，high `63.31`，low `63.29`，modDate `2026-07-02T08:46:28`（08:46 UTC / 16:46 SGT）。已手动通过 WhatsApp 发给 Hchen `+6596249687`。; 修复 `scripts/pcaat00-daily-hchen.mjs`：新增 `--send-whatsapp` 模式，脚本直接调用 `openclaw message send --channel whatsapp --target... [score=0.826 recalls=0 avg=0.620 source=memory/2026-07-02.md:5-8]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-02.md:9:9 -->
+- 17:46 SGT - PCAAT00→Hchen cron delivery 修复: 更新 cron：`delivery.mode=none`，payload 改为运行 `node scripts/pcaat00-daily-hchen.mjs --send-whatsapp`。第一次用 `openai/gpt-5.5` force run 返回 `⚠️ Unable to run command: no terminal execution tool is available`；随后改回 `deepseek-v4-flash`，force run 3.75s 成功，`deliveryStatus=not-requested`，符合新设计。 [score=0.826 recalls=0 avg=0.620 source=memory/2026-07-02.md:9-9]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-03.md:5:8 -->
+- 12:22 SGT - Jingyou JSA Floorball calendar events: Tianshu 通过 WhatsApp 图片要求把 Jingyou 的 JSA Floorball Training Schedule (Jul-Nov 2026) 加入 Google Calendar。; 已读取图片并创建 15 个正式训练日：2026-07-18、07-25、08-01、08-08、08-15、08-22、08-29、09-05、09-12、09-19、09-26、10-03、10-10、10-17、10-24。; 已额外创建 2 个 reserve date：2026-10-31、2026-11-07，标题为 `Jingyou JSA Floorball Reserve Date`，状态 tentative/transparent。; 所有事件均为 Asia/Singapore 14:00-16:00，地点为 St. Gabriel's Secondary School, 24 Serangoon Ave 1, Singapore 556140 - Indoor Sports Hall (ISH), Level 2；设置 15 分钟 popup reminder，并在备注写入 attire、items to bring、general enquiry email 和 emergency phone。 [score=0.824 recalls=0 avg=0.620 source=memory/2026-07-03.md:5-8]
