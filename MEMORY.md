@@ -280,9 +280,7 @@ MEMORY.md 这里只保留入口,不再保存 API 端点、目录说明、信息�
 - Dubai Cracking Margin (DBSCM00):详见 `skills/crude-cracking-margin/`
 - MEMORY.md 只保留索引和稳定结论,不再保存大段研究过程、公式推导和阶段性验证表。
 
-## Promoted From Short-Term Memory (2026-07-08)
+## Promoted From Short-Term Memory (2026-07-09)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-07-01.md:43:46 -->
-- 17:20 SGT - 原油每日价格片段 WeChat 投递修复: Tianshu 反馈“原油每日价格片”早上 8 点通过 Weixin channel 这几天没收到。; 检查 OpenClaw cron `571fb419-b6a9-4542-91f6-9550bbceab09`：6/26、6/27、6/30、7/1 均显示 `ok`，但 `summary` 只是 systemEvent 原文，`deliveryStatus=not-requested`，说明本地 pipeline 没有执行，是假成功。; 手动运行 `node skills/crude-daily-snippet/scripts/generate.mjs | node scripts/weixin-send-text.mjs` 成功返回 `SENT`，WeChat 插件与 context token 正常。2026-07-01 已手动补发 6月30日片段；wrapper 验证又发送一次，Tianshu 可能收到两份。; 一开始禁用了 OpenClaw cron 并改用用户态 Node scheduler： [score=0.811 recalls=0 avg=0.620 source=memory/2026-07-01.md:43-46]
-<!-- openclaw-memory-promotion:memory:memory/2026-07-01.md:47:50 -->
-- 17:20 SGT - 原油每日价格片段 WeChat 投递修复: `scripts/crude-daily-snippet-weixin-cron.sh`; `scripts/crude-daily-snippet-weixin-scheduler.mjs`; scheduler pid `8409`，下一次运行 `2026-07-02T00:00:00Z`（08:00 SGT）。; 同日后续发现 gateway/container restart 后 detached scheduler 会掉，`node scripts/crude-daily-snippet-weixin-scheduler.mjs --status` 返回 stale pid `8409`。修复为重新启用 Gateway cron `571fb419-b6a9-4542-91f6-9550bbceab09`： [score=0.811 recalls=0 avg=0.620 source=memory/2026-07-01.md:47-50]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-06.md:3:6 -->
+- Tianshu reported the WhatsApp failure alert for cron `Polymarket US-Iran Ceasefire Monitor (09:00 SGT)`. Live cron status showed it was still enabled but had 13 consecutive `model-call-started` timeouts with `timeoutSeconds: 60`.; Fixed `scripts/polymarket-monitor.mjs` to emit a `message` field for cron parsing when significant Polymarket changes are detected; normal runs emit `message: null`.; Updated cron `81d24f9a-1ef2-4db5-93c8-4b29c947a07d` to use `openai-codex/gpt-5.5` and `timeoutSeconds: 300`.; Disabled expired cron `Polymarket Hormuz Traffic Normal by May 15 Monitor (18:00 SGT)` / `1e1216d8-138a-4243-a126-70797ed8f89a`;... [score=0.833 recalls=0 avg=0.620 source=memory/2026-07-06.md:3-6]
