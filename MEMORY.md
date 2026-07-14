@@ -280,7 +280,9 @@ MEMORY.md 这里只保留入口,不再保存 API 端点、目录说明、信息�
 - Dubai Cracking Margin (DBSCM00):详见 `skills/crude-cracking-margin/`
 - MEMORY.md 只保留索引和稳定结论,不再保存大段研究过程、公式推导和阶段性验证表。
 
-## Promoted From Short-Term Memory (2026-07-09)
+## Promoted From Short-Term Memory (2026-07-14)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-07-06.md:3:6 -->
-- Tianshu reported the WhatsApp failure alert for cron `Polymarket US-Iran Ceasefire Monitor (09:00 SGT)`. Live cron status showed it was still enabled but had 13 consecutive `model-call-started` timeouts with `timeoutSeconds: 60`.; Fixed `scripts/polymarket-monitor.mjs` to emit a `message` field for cron parsing when significant Polymarket changes are detected; normal runs emit `message: null`.; Updated cron `81d24f9a-1ef2-4db5-93c8-4b29c947a07d` to use `openai-codex/gpt-5.5` and `timeoutSeconds: 300`.; Disabled expired cron `Polymarket Hormuz Traffic Normal by May 15 Monitor (18:00 SGT)` / `1e1216d8-138a-4243-a126-70797ed8f89a`;... [score=0.833 recalls=0 avg=0.620 source=memory/2026-07-06.md:3-6]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-10.md:3:6 -->
+- 17:06-17:12 SGT - PCAAT00 Hchen cron false failure alerts: Tianshu asked why `PCAAT00 Daily to Hchen (v3)` sent Hchen successfully but still sent two failure alerts to Tianshu.; Live cron `b8d63969-e316-4431-8ab9-62fabced55df` had both `delivery.failureDestination` and `failureAlert` pointing to Tianshu, causing duplicate failure notifications.; The actual run failure was `EmbeddedAttemptSessionTakeoverError: session file changed while embedded prompt lock was released`, after `scripts/pcaat00-daily-hchen.mjs --send-whatsapp` had already sent WhatsApp to Hchen and written `.cache/pcaat00/state.json`.; Removed... [score=0.857 recalls=0 avg=0.620 source=memory/2026-07-10.md:3-6]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-10.md:7:8 -->
+- 17:06-17:12 SGT - PCAAT00 Hchen cron false failure alerts: Patched `scripts/pcaat00-daily-hchen.mjs` so the internal `openclaw message send` child process strips session/run/trace/tool/prompt-related `OPENCLAW_*` env vars before sending, reducing the chance that the CLI mutates the cron agent session.; Verification: direct script check returned `NO_REPLY`; forced cron run `manual:b8d63969-e316-4431-8ab9-62fabced55df:1783674681780:1` completed `ok` without duplicate Hchen delivery because state de-dupe was active. [score=0.857 recalls=0 avg=0.620 source=memory/2026-07-10.md:7-8]
