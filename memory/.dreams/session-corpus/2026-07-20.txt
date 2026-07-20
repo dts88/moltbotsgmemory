@@ -1,0 +1,3 @@
+[main/sessions/main/9cbc202d-19f7-453d-8972-6e0bfba09cde.jsonl#L2] User: 请问这是什么意思？
+[main/sessions/main/9cbc202d-19f7-453d-8972-6e0bfba09cde.jsonl#L3] Assistant: 意思是：这个定时任务本身启动了，但在让 AI 模型做“失败摘要/回退总结”时，三个候选模型都没跑成功，所以 cron 报错。 关键点： - `openai-codex/gpt-5.5`：配置里还在用旧的 provider/model 写法，而且 `gpt-5.5` 这个模型名当前不可用。报错建议跑 `openclaw doctor --fix` 来迁移旧配置。 - `deepseek/deepseek-v4-flash` / `deepseek-v4-pro`：模型 60 秒内没返回，超时了。 - `FallbackSumma
+[main/sessions/main/be0992cc-d34c-4ab9-bbe2-308b4b8bcc45.jsonl#L383] Assistant: 周一 08:36 SGT，新交易周开始。 **全周概览（7月13日-17日）：** 一切都正常运转，没有任何异常告警。 **待注意**（来自 cron 现状）： - **Crude Snippet** 上周五 7/17 的 `deliveryStatus=not-delivered` — 可能是内容去重后的正常 NO_REPLY，但最终状态显示 `not-delivered` 而不是 `delivered`。今天周二会正常跑，可观察周二是否恢复。 - **FOIZ 库存（周三）** 上次 timeout，这次周三会再试。这
