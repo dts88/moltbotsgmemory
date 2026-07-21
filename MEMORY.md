@@ -280,9 +280,9 @@ MEMORY.md 这里只保留入口,不再保存 API 端点、目录说明、信息�
 - Dubai Cracking Margin (DBSCM00):详见 `skills/crude-cracking-margin/`
 - MEMORY.md 只保留索引和稳定结论,不再保存大段研究过程、公式推导和阶段性验证表。
 
-## Promoted From Short-Term Memory (2026-07-14)
+## Promoted From Short-Term Memory (2026-07-21)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-07-10.md:3:6 -->
-- 17:06-17:12 SGT - PCAAT00 Hchen cron false failure alerts: Tianshu asked why `PCAAT00 Daily to Hchen (v3)` sent Hchen successfully but still sent two failure alerts to Tianshu.; Live cron `b8d63969-e316-4431-8ab9-62fabced55df` had both `delivery.failureDestination` and `failureAlert` pointing to Tianshu, causing duplicate failure notifications.; The actual run failure was `EmbeddedAttemptSessionTakeoverError: session file changed while embedded prompt lock was released`, after `scripts/pcaat00-daily-hchen.mjs --send-whatsapp` had already sent WhatsApp to Hchen and written `.cache/pcaat00/state.json`.; Removed... [score=0.857 recalls=0 avg=0.620 source=memory/2026-07-10.md:3-6]
-<!-- openclaw-memory-promotion:memory:memory/2026-07-10.md:7:8 -->
-- 17:06-17:12 SGT - PCAAT00 Hchen cron false failure alerts: Patched `scripts/pcaat00-daily-hchen.mjs` so the internal `openclaw message send` child process strips session/run/trace/tool/prompt-related `OPENCLAW_*` env vars before sending, reducing the chance that the CLI mutates the cron agent session.; Verification: direct script check returned `NO_REPLY`; forced cron run `manual:b8d63969-e316-4431-8ab9-62fabced55df:1783674681780:1` completed `ok` without duplicate Hchen delivery because state de-dupe was active. [score=0.857 recalls=0 avg=0.620 source=memory/2026-07-10.md:7-8]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-17.md:5:8 -->
+- 18:03-18:10 SGT - PCAAT00 Hchen false timeout after successful send: Tianshu asked why `PCAAT00 Daily to Hchen (v3)` still ran and timed out after Hchen had already received the 17:00 WhatsApp message.; Live cron `b8d63969-e316-4431-8ab9-62fabced55df` was enabled with schedule `0,10,20 17,18 * * 1-5` Asia/Singapore, so it intentionally kept polling at 17:10/17:20/18:00/18:10/18:20 to catch late Platts publication.; `.cache/pcaat00/state.json` confirmed successful send to Hchen at `2026-07-17T09:00:24.401Z` (17:00:24 SGT), with `mod=2026-07-17T08:36:49`.... [score=0.806 recalls=0 avg=0.620 source=memory/2026-07-17.md:5-8]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-17.md:9:11 -->
+- 18:03-18:10 SGT - PCAAT00 Hchen false timeout after successful send: Adjusted the job:; `failureAlert.after` from `1` to `3`, to reduce false alerts from post-send NO_REPLY polling.; schedule from `0,10,20 17,18 * * 1-5` to `0,10,20,30,40,50 17 * * 1-5`, keeping a 17:00-17:50 retry window while preventing 18:00+ runs after a typical successful send. [score=0.806 recalls=0 avg=0.620 source=memory/2026-07-17.md:9-11]
