@@ -104,7 +104,7 @@ PCAAT00 cron 大规模超时事件揭示了重要架构教训:
 
 ### 针对简单 RPC 类 crons 的最佳实践:
 1. 脚本内直接实现去重(数据版本号/modDate),不依赖 agent 状态
-2. 指定最快模型:`openai-codex/gpt-5.5`
+2. 指定当前可用且稳定的模型:`openai/gpt-5.5`,fallback 用 `deepseek/deepseek-v4-flash`、`deepseek/deepseek-v4-pro`
 3. 超时设 300s(120s 不够,600s 浪费)
 4. `wakeMode: "next-heartbeat"` 而非 `"now"`(避免 cron 高峰排队)
 5. 添加失败通知:delivery 到 Tianshu
