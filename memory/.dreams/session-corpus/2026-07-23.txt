@@ -1,0 +1,14 @@
+[main/sessions/main/43c3e9bd-4616-4f36-8e2b-7c05db6a013c.jsonl#L12] Assistant: 7月22日 新加坡16:30 迪拜 89.41（涨6.92） 迪拜M1-M3 6.22（涨3.04） 伦敦16:30 Dated现货布伦特 94.165（涨1.98） ICE布伦特 93.93（涨2.45） 期货收盘结算价 ICE布伦特 94.07（涨3.06） WTI 86.83（涨2.49）
+[main/sessions/main/88e67867-8014-4975-a543-3b1931bdc92c.jsonl#L57] Assistant: 7月22日 新加坡16:30 迪拜 89.41（涨6.92） 迪拜M1-M3 6.22（涨3.04） 伦敦16:30 Dated现货布伦特 94.165（涨1.98） ICE布伦特 93.93（涨2.45） 期货收盘结算价 ICE布伦特 94.07（涨3.06） WTI 86.83（涨2.49）
+[main/sessions/main/88e67867-8014-4975-a543-3b1931bdc92c.jsonl#L58] User: 请问失败的原因是？
+[main/sessions/main/88e67867-8014-4975-a543-3b1931bdc92c.jsonl#L60] Assistant: 原因查到了：不是 Platts 数据失败，也不是 WhatsApp 投递失败，而是 cron 中间那层 isolated agent 调 DeepSeek 时超时。 具体是： - 08:00 SGT 那次任务启动后，`deepseek-v4-flash` 60 秒内没有任何模型响应 - fallback 到 `deepseek-v4-pro`，也同样 60 秒 idle timeout - 所以 OpenClaw 报：`All models failed (2)` 后面 cron 自动重试了几次： - 08:00、08:02
+[main/sessions/main/88e67867-8014-4975-a543-3b1931bdc92c.jsonl#L95] Assistant: Done.
+[main/sessions/main/88e67867-8014-4975-a543-3b1931bdc92c.jsonl#L96] User: 这个任务的默认模型是？
+[main/sessions/main/88e67867-8014-4975-a543-3b1931bdc92c.jsonl#L97] Assistant: 这个任务当前显式指定的模型是： `deepseek-v4-flash` 也就是 cron payload 里有： `model: deepseek-v4-flash` 但失败记录里看到它还 fallback 到了 `deepseek-v4-pro`，这个应该是运行时/agent 的兜底链路接上的；任务本身配置里没有把 OpenAI 作为 fallback。
+[main/sessions/main/88e67867-8014-4975-a543-3b1931bdc92c.jsonl#L100] Assistant: Sent.
+[main/sessions/main/88e67867-8014-4975-a543-3b1931bdc92c.jsonl#L101] User: 这个任务，为什么不使用系统设置的默认模型？是创建任务的时候，就要指定一个模型吗？
+[main/sessions/main/88e67867-8014-4975-a543-3b1931bdc92c.jsonl#L102] Assistant: 不是必须。 OpenClaw cron 的逻辑大概是： - 如果任务 payload 里不写 `model`：走 agent/系统默认模型 - 如果任务 payload 里写了 `model`：这个任务就覆盖默认模型，固定用它 这条 `Crude Daily Price Snippet to WhatsApp` 现在 payload 里显式写了： `model: deepseek-v4-flash` 所以它不会使用系统默认模型。 为什么当初会指定？主要是历史包袱：这个任务需要 isolated agent 执行本地 bas
+[main/sessions/main/88e67867-8014-4975-a543-3b1931bdc92c.jsonl#L109] Assistant: Sent.
+[main/sessions/main/88e67867-8014-4975-a543-3b1931bdc92c.jsonl#L110] User: 删掉这个任务里的 `model` 字段，让它走系统默认模型
+[main/sessions/main/88e67867-8014-4975-a543-3b1931bdc92c.jsonl#L111] Assistant: 已删掉。 我对 live cron 执行了： `openclaw cron edit 571fb419-b6a9-4542-91f6-9550bbceab09 --clear-model` 确认结果： - `payload.model` 现在是空 / 不存在 - `timeoutSeconds` 仍是 300 - schedule 不变：周二到周六 08:00 SGT - delivery 不变：WhatsApp 发给你 - 下一次运行：2026-07-24 08:00 SGT 所以它现在会走系统/agent 默认模型，不
+[main/sessions/main/88e67867-8014-4975-a543-3b1931bdc92c.jsonl#L126] Assistant: Done.
