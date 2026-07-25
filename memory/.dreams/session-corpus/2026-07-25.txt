@@ -1,0 +1,1 @@
+[main/sessions/main/e4cafcf2-48ca-4ed9-8e70-efa3667d3c13.jsonl#L4] Assistant: 查到了，原因不是 Platts 取数，也不是脚本生成失败，而是 cron 的 agent 模型链路坏了。 具体是： - 这个 cron 本身没有单独指定 model，会走 main agent 的模型配置。 - 全局默认已经是 `openai/gpt-5.5`，但 `/home/node/.openclaw/openclaw.json` 里 main agent 自己那层还残留 `openai/gpt-5.6-sol`。 - 现在这台 OpenClaw/Codex 版本跑 `gpt-5.6-sol` 会 400：需要更新 Co
