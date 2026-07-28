@@ -1,0 +1,3 @@
+[main/sessions/main/67dd55ed-792e-4e9c-ac1a-2a4d838a3e45.jsonl#L6] Assistant: ERROR: 当前会话没有可用的 exec/bash 工具，无法执行脚本。
+[main/sessions/main/67dd55ed-792e-4e9c-ac1a-2a4d838a3e45.jsonl#L10] Assistant: 已重新运行 `Platts Monitor (50min)`。 结果： - 状态：OK - 耗时：54.1 秒 - runId：`manual:8cc67dea-36eb-4d2b-955d-04efbdf666ac:1785202750212:1` - 投递状态：not-delivered 这次没有再出现 `exec/bash` 不可用错误。`not-delivered` 看起来是因为本轮没有生成需要投递的快报正文，也就是大概率没有新 Platts 内容。下一次自动运行时间已排到 `1785205534301` ms 对应
+[main/sessions/main/e7f80ab7-245d-4f56-be20-d6dc81cc18ed.jsonl#L3] Assistant: ERROR: 当前会话没有可用的 exec/bash 工具，无法执行脚本。
