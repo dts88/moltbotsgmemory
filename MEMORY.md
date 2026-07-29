@@ -110,7 +110,7 @@ PCAAT00 cron 大规模超时事件揭示了重要架构教训:
 5. 添加失败通知:delivery 到 Tianshu
 
 ### 根本限制
-OpenClaw 目前没有"直接运行脚本 + 输出送 WhatsApp"的 cron 模式。所有 cron 脚本执行都必须经过 isolated agent(含模型推理)。这是架构层面的限制,暂无绕过方案。因此简单数据任务要优先选最快模型并缩短模型路径。
+OpenClaw 目前没有"直接运行脚本 + 输出送 WhatsApp"的纯 cron 模式。不要从 Codex 工具会话用 `setsid`/后台 Node scheduler 冒充持久服务：2026-07-29 已验证这种子进程会在会话结束后消失，导致 08:00 未触发。可接受的折中是用主会话 `systemEvent` cron 触发本地脚本，脚本内部直发和去重；如果必须完全无模型，需要接入容器启动链路或真正的系统级 supervisor。
 
 ---
 
@@ -133,7 +133,7 @@ OpenClaw 目前没有"直接运行脚本 + 输出送 WhatsApp"的 cron 模式。
 - 通用 Platts token、刷新逻辑、共享凭证:保留在 MEMORY.md 的全局 Platts Token 区块。
 - 通用 Market Data API / refined products 方法论:以对应 skill 和脚本为准,不再在 MEMORY.md 重复保存整套说明。
 - Singapore Mogas / GO 10ppm / Jet Kero / MTBE:详见 `skills/mogas-moc-report/`
-- 原油每日价格片段：详见 `skills/crude-daily-snippet/`。OpenClaw 入口为 `node skills/crude-daily-snippet/scripts/generate.mjs`，使用 `.config/spglobal/credentials.json` 共享 Platts token。Cron `571fb419-b6a9-4542-91f6-9550bbceab09` 周二至周六 08:00 SGT 发送上一交易日价格。2026-07-02 从 WeChat 改为 WhatsApp 递送 Tianshu。wrapper 为 `scripts/crude-daily-snippet-whatsapp.sh`（写 `.config/crude-daily-snippet-whatsapp-state.json` 按 SGT delivery date 去重），isolated agent 运行脚本 → 输出内容 → OpenClaw delivery announce 到 WhatsApp +6592716786。用 `deepseek-v4-flash` 模型因为该 isolated lane 有本地 exec 工具。保持原始模板的单空行，不使用 `--pad-blank-lines`。旧的 `scripts/crude-daily-snippet-weixin-cron.sh` 和 `scripts/crude-daily-snippet-weixin-scheduler.mjs` 仍保留但不再使用。
+- 原油每日价格片段：详见 `skills/crude-daily-snippet/`。OpenClaw 入口为 `node skills/crude-daily-snippet/scripts/generate.mjs`，使用 `.config/spglobal/credentials.json` 共享 Platts token。2026-07-02 从 WeChat 改为 WhatsApp 递送 Tianshu。当前发送脚本为 `scripts/crude-daily-snippet-send-whatsapp.mjs`（写 `.config/crude-daily-snippet-whatsapp-state.json` 按 SGT delivery date 去重，并通过 `openclaw message send` 直发 WhatsApp +6592716786）。当前定时器是 OpenClaw cron `e1670577-9770-4beb-889f-87744e55eec7`，周二至周六 08:00 SGT 向主会话注入 systemEvent 运行发送脚本，cron delivery 为 `none`。旧 isolated cron `571fb419-b6a9-4542-91f6-9550bbceab09` 仍禁用；`scripts/crude-daily-snippet-scheduler.mjs` 只保留作实验，不再作为正式每日投递。保持原始模板的单空行，不使用 `--pad-blank-lines`。
 
 ---
 
