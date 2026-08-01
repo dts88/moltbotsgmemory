@@ -280,9 +280,11 @@ MEMORY.md 这里只保留入口,不再保存 API 端点、目录说明、信息�
 - Dubai Cracking Margin (DBSCM00):详见 `skills/crude-cracking-margin/`
 - MEMORY.md 只保留索引和稳定结论,不再保存大段研究过程、公式推导和阶段性验证表。
 
-## Promoted From Short-Term Memory (2026-07-28)
+## Promoted From Short-Term Memory (2026-08-01)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-07-25.md:3:6 -->
-- 00:13 UTC - Crude daily snippet cron failed: Tianshu asked why `Crude Daily Price Snippet to WhatsApp` failed after a WhatsApp failure alert.; Live cron `571fb419-b6a9-4542-91f6-9550bbceab09` showed multiple failed runs at 08:00 SGT with `openai/gpt-5.6-sol` returning "requires a newer version of Codex", then `deepseek-v4-flash` and `deepseek-v4-pro` both hitting 60s idle timeout.; Root cause: `/home/node/.openclaw/openclaw.json` had `agents.list[0].model.primary` set to `openai/gpt-5.6-sol`, even though `agents.defaults.model.primary` and `openclaw models list` showed `openai/gpt-5.5` as default.; Fixed... [score=0.844 recalls=0 avg=0.620 source=memory/2026-07-25.md:3-6]
-<!-- openclaw-memory-promotion:memory:memory/2026-07-25.md:7:7 -->
-- 00:13 UTC - Crude daily snippet cron failed: The local wrapper itself succeeded at `2026-07-25T00:13:27Z` and generated the 7月24日 snippet in `logs/crude-daily-snippet-whatsapp.log`, but the cron agent delivery layer failed before/around final delivery. [score=0.844 recalls=0 avg=0.620 source=memory/2026-07-25.md:7-7]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-28.md:5:8 -->
+- Crude Daily Price Snippet cron fault: Tianshu asked about the 08:00 "dubai sniper" task; this refers to `Crude Daily Price Snippet to WhatsApp` (`571fb419-b6a9-4542-91f6-9550bbceab09`).; The 2026-07-28 08:00 SGT run was a false success: cron marked `ok` and WhatsApp delivery `delivered`, but the delivered content was `ERROR: 当前会话没有可用的 exec/bash 工具，无法执行脚本。`; Root cause: the live cron payload did not pin `payload.model`, so it ran on default `gpt-5.5`; that isolated lane did not expose local exec/bash tools, so the wrapper never ran.; Fix applied: set `payload.model` to `deepseek/deepseek-v4-flash` and force-ran the cron.... [score=0.857 recalls=0 avg=0.620 source=memory/2026-07-28.md:5-8]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-28.md:9:9 -->
+- Crude Daily Price Snippet cron fault: Lesson: for cron jobs that must execute local scripts, never rely on default model/tool lane. Pin the verified model/lane and verify with `cron runs` plus the local wrapper log. [score=0.857 recalls=0 avg=0.620 source=memory/2026-07-28.md:9-9]
+<!-- openclaw-memory-promotion:memory:memory/2026-07-28.md:13:16 -->
+- GPT 5.6 verification attempt for crude snippet cron: Tianshu explicitly asked not to use `deepseek/deepseek-v4-flash`; target should be GPT 5.6 and confirmed only after verification.; Tested `openai/gpt-5.6-terra`, `openai/gpt-5.6-luna`, and `openai/gpt-5.6-sol` with `fallbacks: []` on cron `571fb419-b6a9-4542-91f6-9550bbceab09`.; All three failed before tool execution with OpenAI/Codex route error: the model requires a newer version of Codex.; Current OpenClaw runtime is `2026.6.34`; npm latest is `2026.7.1-2`.... [score=0.842 recalls=0 avg=0.620 source=memory/2026-07-28.md:13-16]
