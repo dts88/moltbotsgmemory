@@ -280,15 +280,7 @@ MEMORY.md 这里只保留入口,不再保存 API 端点、目录说明、信息�
 - Dubai Cracking Margin (DBSCM00):详见 `skills/crude-cracking-margin/`
 - MEMORY.md 只保留索引和稳定结论,不再保存大段研究过程、公式推导和阶段性验证表。
 
-## Promoted From Short-Term Memory (2026-08-02)
+## Promoted From Short-Term Memory (2026-08-10)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-07-28.md:17:17 -->
-- GPT 5.6 verification attempt for crude snippet cron: To avoid another bad scheduled run, the cron was left disabled with `model: openai/gpt-5.6-sol` and `fallbacks: []`. Do not re-enable until GPT 5.6 passes a forced cron run on the upgraded runtime. [score=0.893 recalls=0 avg=0.620 source=memory/2026-07-28.md:17-17]
-<!-- openclaw-memory-promotion:memory:memory/2026-07-28.md:21:24 -->
-- Model-free crude snippet scheduler: Implemented a model-free replacement for the 08:00 crude snippet job:; `scripts/crude-daily-snippet-send-whatsapp.mjs`: generates the snippet, deduplicates by SGT delivery date, and sends directly via `openclaw message send --channel whatsapp --target +6592716786`.; `scripts/crude-daily-snippet-scheduler.mjs`: long-running Node scheduler for Tue-Sat 08:00 SGT.; Verified `--dry-run --ignore-state` generated the 2026-07-27 snippet with no model. Verified normal mode returned `NO_REPLY already sent for 2026-07-28`, so it did not duplicate today's message. [score=0.861 recalls=0 avg=0.620 source=memory/2026-07-28.md:21-24]
-<!-- openclaw-memory-promotion:memory:memory/2026-07-28.md:25:26 -->
-- Model-free crude snippet scheduler: Started scheduler with `setsid`; status showed running under PID 3941 and next run `2026-07-29T00:00:00.000Z` (08:00 SGT).; The old OpenClaw cron remains disabled to prevent model-based execution. Note: the direct scheduler is a process inside the current container; if the container restarts, it must be started again unless added to the container startup path. [score=0.861 recalls=0 avg=0.620 source=memory/2026-07-28.md:25-26]
-<!-- openclaw-memory-promotion:memory:memory/2026-07-29.md:9:10 -->
-- Crude daily snippet missed 08:00 SGT delivery: Created replacement OpenClaw cron `e1670577-9770-4beb-889f-87744e55eec7`: Tue-Sat 08:00 Asia/Singapore, `sessionTarget: main`, `payload.kind: systemEvent`, cron delivery `none`. The system event instructs the main session to run `node scripts/crude-daily-snippet-send-whatsapp.mjs`; that script sends and deduplicates directly.; Old isolated cron `571fb419-b6a9-4542-91f6-9550bbceab09` remains disabled. Do not rely on `setsid`/background process schedulers from Codex sessions for durable daily jobs. [score=0.844 recalls=0 avg=0.620 source=memory/2026-07-29.md:9-10]
-<!-- openclaw-memory-promotion:memory:memory/2026-07-29.md:5:8 -->
-- Crude daily snippet missed 08:00 SGT delivery: Tianshu reported that the 08:00 SGT WhatsApp crude daily snippet did not arrive.; Investigation found `.config/crude-daily-snippet-scheduler.pid` still pointed to PID 3941, but `node scripts/crude-daily-snippet-scheduler.mjs --status` showed `running: false`.; `logs/crude-daily-snippet-scheduler.log` only had startup and next-run entries; there was no `running sender` line for 2026-07-29 08:00 SGT.... [score=0.825 recalls=0 avg=0.620 source=memory/2026-07-29.md:5-8]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-06.md:3:3 -->
+- Tianshu 发来 Primary 4 Assessments 2026 Semester 2 PDF，要求把考试安排加入日历。已添加到默认 Google Calendar `dtsdts@gmail.com`，共 11 个全天事件：P4 WA2（English、Science、Math、Mother Tongue）和 P4 EYE（Oral、Paper 1、Paper 2/Listening、Science、Math）。 [score=0.880 recalls=0 avg=0.620 source=memory/2026-08-06.md:3-3]
