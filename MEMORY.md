@@ -280,7 +280,11 @@ MEMORY.md 这里只保留入口,不再保存 API 端点、目录说明、信息�
 - Dubai Cracking Margin (DBSCM00):详见 `skills/crude-cracking-margin/`
 - MEMORY.md 只保留索引和稳定结论,不再保存大段研究过程、公式推导和阶段性验证表。
 
-## Promoted From Short-Term Memory (2026-08-10)
+## Promoted From Short-Term Memory (2026-08-11)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-08-06.md:3:3 -->
-- Tianshu 发来 Primary 4 Assessments 2026 Semester 2 PDF，要求把考试安排加入日历。已添加到默认 Google Calendar `dtsdts@gmail.com`，共 11 个全天事件：P4 WA2（English、Science、Math、Mother Tongue）和 P4 EYE（Oral、Paper 1、Paper 2/Listening、Science、Math）。 [score=0.880 recalls=0 avg=0.620 source=memory/2026-08-06.md:3-3]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-08.md:5:8 -->
+- Crude daily snippet — late catch-up delivery: Cron `e1670577` (Tue-Sat 08:00 SGT, main-session systemEvent) fired this run at 01:51 UTC (09:51 SGT) instead of 00:00 UTC — ~1h51m late.; State before run: `lastDeliveryDate: 2026-08-06` → Friday 08-07 08:00 SGT delivery was missed even though cron run history shows the event fired "ok" (durationMs 91 = event injected, main session didn't execute the script).; Ran `node scripts/crude-daily-snippet-send-whatsapp.mjs` → `SENT`, first line `8月7日`, state updated to `lastDeliveryDate: 2026-08-08`.... [score=0.863 recalls=0 avg=0.620 source=memory/2026-08-08.md:5-8]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-08.md:12:12 -->
+- Memory backup (cron): 01:58 UTC run: GitHub push OK (11 files); Moltbook backup failed (non-JSON/HTML response, likely API hiccup). Overall BACKUP_COMPLETE. [score=0.857 recalls=0 avg=0.620 source=memory/2026-08-08.md:12-12]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-06.md:5:5 -->
+- 按 Tianshu 要求，把昨日添加的 P4 考试日历事件中 Mother Tongue / Malay / Tamil 的泛化内容改为只保留 Chinese Language。 [score=0.831 recalls=0 avg=0.620 source=memory/2026-08-06.md:5-5]
