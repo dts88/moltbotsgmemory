@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "createdAt": "2026-06-08T09:31:00Z",
+  "purpose": "First resumable ingestion pipeline plan for the oil knowledge base.",
+  "checkpointPolicy": {
+    "stateLocation": "knowledge/data/runtime/jobs/<job-id>/job.json",
+    "updateFrequency": "After every source, batch, phase transition, and failure.",
+    "resumeRule": "On context loss, run job-status and continue from nextAction; never infer progress from chat history."
+  },
+  "recommendedPilotOrder": [
+    {
+      "name": "EIA weekly inventory",
+      "reason": "Highly structured, source methodology is clear, revisions are manageable, and it exercises timeseries + observation + card objects."
+    },
+    {
+      "name": "Platts MOC/heards",
+      "reason": "Operationally valuable and time-sensitive; exercises intraday decay, event provenance, and market observation records."
+    },
+    {
+      "name": "Investment-bank report playbooks",
+      "reason": "Adds forecast and methodology extraction after the structured ingestion mechanics are stable."
+    }
+  ],
+  "phases": [
+    {
+      "name": "source_selection",
+      "outputs": ["source list", "scope", "date range", "methodology notes"]
+    },
+    {
+      "name": "document_registration",
+      "outputs": ["document records", "source hashes or API payload ids"]
+    },
+    {
+      "name": "card_generation",
+      "outputs": ["short retrieval cards", "tags", "drilldown paths"]
+    },
+    {
+      "name": "structured_extraction",
+      "outputs": ["observations", "timeseries points", "forecasts", "playbook updates where applicable"]
+    },
+    {
+      "name": "conflict_check",
+      "outputs": ["same-scope source comparison", "duplicate detection", "methodology differences"]
+    },
+    {
+      "name": "validation",
+      "outputs": ["schema validation", "provenance check", "sample query check"]
+    }
+  ]
+}

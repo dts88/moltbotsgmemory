@@ -8,118 +8,29 @@
  *   node scripts/platts-login.mjs  # 交互式输入
  */
 
-import { writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { createInterface } from 'readline';
+import { loginPlattsWithPassword, PLATTS_CONFIG_FILE } from './platts-auth.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const WORKSPACE = join(__dirname, '..');
-const CONFIG_FILE = join(WORKSPACE, '.config/spglobal/credentials.json');
-
-// SPGlobal OAuth endpoints
-const AUTH_ENDPOINTS = [
-  {
-    name: 'Okta Authorize',
-    url: 'https://secure.signin.spglobal.com/oauth2/spglobal/v1/token',
-    buildBody: (username, password) => new URLSearchParams({
-      grant_type: 'password',
-      username: username,
-      password: password,
-      scope: 'openid profile api plapi offline_access',
-      client_id: 'PL_API_PLATFORM'
-    }).toString(),
-    headers: { 
-      'Content-Type': 'application/x-www-form-urlencoded',
-      'Accept': 'application/json'
-    }
-  },
-  {
-    name: 'Platts Auth API',
-    url: 'https://api.platts.com/auth/api',
-    buildBody: (username, password) => new URLSearchParams({
-      username: username,
-      password: password
-    }).toString(),
-    headers: { 
-      'Content-Type': 'application/x-www-form-urlencoded',
-      'User-Agent': 'moltbot/1.0'
-    }
-  }
-];
-
-function saveConfig(config) {
-  const dir = dirname(CONFIG_FILE);
-  if (!existsSync(dir)) {
-    mkdirSync(dir, { recursive: true });
-  }
-  writeFileSync(CONFIG_FILE, JSON.stringify(config, null, 2));
-}
 
 async function login(username, password) {
   console.log(`[Platts Login] Logging in as ${username}...`);
-  
-  const errors = [];
-  
-  for (const endpoint of AUTH_ENDPOINTS) {
-    console.log(`[Platts Login] Trying ${endpoint.name}...`);
-    
-    try {
-      const response = await fetch(endpoint.url, {
-        method: 'POST',
-        headers: endpoint.headers,
-        body: endpoint.buildBody(username, password)
-      });
-      
-      const text = await response.text();
-      
-      if (!response.ok) {
-        errors.push(`${endpoint.name}: ${response.status} - ${text.substring(0, 200)}`);
-        console.log(`[Platts Login] ${endpoint.name} failed: ${response.status}`);
-        continue;
-      }
-      
-      const data = JSON.parse(text);
-      
-      if (!data.access_token) {
-        errors.push(`${endpoint.name}: No access_token in response`);
-        continue;
-      }
-      
-      // Success!
-      const now = Date.now();
-      const expiresIn = data.expires_in || 3600;
-      
-      const config = {
-        token_type: data.token_type || 'Bearer',
-        access_token: data.access_token,
-        refresh_token: data.refresh_token,
-        expires_in: expiresIn,
-        expires_at: new Date(now + expiresIn * 1000).toISOString(),
-        token_updated_at: new Date(now).toISOString(),
-        username: username,
-        auth_method: endpoint.name
-      };
-      
-      saveConfig(config);
-      
-      console.log(`\n✅ Login successful via ${endpoint.name}!`);
-      console.log(`   Token expires at: ${config.expires_at}`);
-      console.log(`   Refresh token: ${data.refresh_token ? 'Yes' : 'No'}`);
-      console.log(`   Config saved to: ${CONFIG_FILE}`);
-      
-      return { success: true, config };
-      
-    } catch (e) {
-      errors.push(`${endpoint.name}: ${e.message}`);
-      console.log(`[Platts Login] ${endpoint.name} error: ${e.message}`);
-    }
+
+  try {
+    const config = await loginPlattsWithPassword(username, password);
+    console.log(`\n✅ Login successful via ${config.refresh_method || config.auth_method}!`);
+    console.log(`   Token expires at: ${config.expires_at}`);
+    console.log(`   Refresh token: ${config.refresh_token ? 'Yes' : 'No'}`);
+    console.log(`   Config saved to: ${PLATTS_CONFIG_FILE}`);
+    return { success: true, config };
+  } catch (e) {
+    console.log('\n❌ Login failed. All methods attempted:');
+    (e.details || [e.message]).forEach((err, i) => console.log(`   ${i + 1}. ${err}`));
+    return { success: false, errors: e.details || [e.message] };
   }
-  
-  console.log('\n❌ Login failed. All methods attempted:');
-  errors.forEach((e, i) => console.log(`   ${i + 1}. ${e}`));
-  
-  return { success: false, errors };
 }
 
 async function prompt(question) {

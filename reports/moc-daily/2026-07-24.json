@@ -1,0 +1,62 @@
+{
+  "date": "2026-07-24",
+  "generatedAt": "2026-07-24T08:45:00Z",
+  "fluxOfficials": {
+    "text": "Data pending — tweet not yet published",
+    "lastTweet": "2026-07-23T08:34:54Z: Dubai Assessment $97.19, Physical Premium $13.00"
+  },
+  "PCAAT00": {
+    "assessment": 90.40,
+    "high": 90.41,
+    "low": 90.39,
+    "bate": "c"
+  },
+  "declarations": [],
+  "partials": {
+    "contract": "Sep26 Dubai Partials",
+    "trades": [
+      { "seller": "VITOLSG", "buyer": "TRAFI", "price": 92.10, "qty": 25, "time": "08:25:56 GMT" },
+      { "seller": "VITOLSG", "buyer": "METS", "price": 92.10, "qty": 25, "time": "08:25:58 GMT" },
+      { "seller": "UNIPECASIA", "buyer": "METS", "price": 90.40, "qty": 25, "time": "08:30:00 GMT" }
+    ],
+    "convergenceTrade": {
+      "seller": "UNIPECASIA",
+      "buyer": "METS",
+      "price": 90.40,
+      "qty": 25,
+      "time": "08:30:00 GMT",
+      "isConvergence": true
+    },
+    "offers": {
+      "total": 268,
+      "byCompany": {
+        "BPSG": { "count": 78, "min": 90.89, "max": 98.80 },
+        "VITOLSG": { "count": 76, "min": 90.60, "max": 98.00 },
+        "UNIPECASIA": { "count": 72, "min": 90.40, "max": 98.00 },
+        "SHENGHPI": { "count": 27, "min": 94.30, "max": 96.80 },
+        "MERCURIARESOURCES": { "count": 12, "min": 95.60, "max": 96.60 },
+        "P66SG": { "count": 3, "min": 98.00, "max": 98.00 }
+      },
+      "lastMinute": {
+        "VITOLSG": { "count": 9, "min": 90.60, "max": 91.40, "last": 90.60, "action": "withdrew" },
+        "UNIPECASIA": { "count": 9, "min": 90.40, "max": 91.20, "last": 90.40, "action": "traded" },
+        "BPSG": { "count": 8, "min": 90.89, "max": 91.59, "last": 90.89, "action": "withdrew" }
+      }
+    }
+  },
+  "cashMurban": [
+    { "month": "Sep", "value": 14.15, "time": "2026-07-24T08:31:15.902Z", "type": "heard" },
+    { "month": "Sep", "value": 14.05, "time": "2026-07-24T08:32:31.646Z", "type": "heard" }
+  ],
+  "cashOman": [
+    { "month": "Sep", "value": 6.08, "time": "2026-07-24T08:31:13.347Z", "type": "heard" },
+    { "month": "Sep", "value": 8.00, "time": "2026-07-24T08:32:29.285Z", "type": "heard" }
+  ],
+  "errorTrades": [],
+  "finalsOnClose": {
+    "bids": "Data pending",
+    "offers": "Data pending",
+    "articlePublished": false
+  },
+  "notes": "Light trading day. Only 1 convergence (UNIPECASIA→METS $90.40). No cargo declarations found. No 'Finals on Close' or 'Mideast Sour Crude Convergences' article published yet. FluxOfficials tweet pending."
+}

@@ -33,7 +33,7 @@ GET https://fujairah.platts.com/fujairah/rest/public/latestBunker
 cd /home/node/clawd && node scripts/foiz-inventory.mjs
 ```
 
-解析输出的 `message` 字段直接发送即可。
+如用于 cron / agentTurn，任务最终回复直接输出 `message` 字段即可，由顶层 `delivery.mode="announce"` 负责投递。
 
 ## 格式示例
 
@@ -60,4 +60,4 @@ cd /home/node/clawd && node scripts/foiz-inventory.mjs
 - 库存数据：每周二发布（数据截至上周日）
 - 船燃销售：月度更新
 
-Cron `e650493f` 周二/三 10:00 SGT 自动推送至 Telegram 市场数据推送 topic（-1003727952836, threadId=1881）。
+Cron `e650493f` 周二/三 10:00 SGT 自动运行。当前 delivery 目标为 Telegram 市场数据推送 topic（`channel=telegram`, `to=-1003727952836:topic:1881`）。

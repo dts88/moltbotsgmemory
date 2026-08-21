@@ -1,0 +1,31 @@
+{
+  "date": "2026-06-19",
+  "declarations": [],
+  "dealsSummary": null,
+  "cashMurban": [
+    {
+      "time": "2026-06-19T08:34:20.558Z",
+      "headline": "Platts Crude: August Cash Murban Heard At minus $0.10/B against August Dubai Futures"
+    }
+  ],
+  "cashOman": [
+    {
+      "time": "2026-06-19T08:00:13.48Z",
+      "headline": "PLATTS CRUDE: CRUDE CARGO OFFERS: SUMMARY: "
+    },
+    {
+      "time": "2026-06-19T08:34:15.66Z",
+      "headline": "Platts Crude: August Cash Oman Heard At parity against August Dubai Futures"
+    }
+  ],
+  "finalsOnClose": {
+    "bids": null,
+    "offers": null
+  },
+  "errorTrades": [],
+  "ewindow": {
+    "offers": [],
+    "trades": []
+  },
+  "finals": []
+}

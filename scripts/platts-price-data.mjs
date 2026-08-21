@@ -4,17 +4,17 @@
  * 获取历史价格数据用于周报生成
  */
 
-import { readFileSync, writeFileSync } from 'fs';
+import { writeFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { trackUsage } from './usage-tracker.mjs';
+import { getPlattsAccessToken } from './platts-auth.mjs';
 
 const userArg = process.argv.find(a => a.startsWith('--user='));
 const TRACK_USER = userArg ? userArg.split('=')[1] : 'system';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const WORKSPACE = join(__dirname, '..');
-const CONFIG_FILE = join(WORKSPACE, '.config/spglobal/credentials.json');
 const OUTPUT_FILE = join(WORKSPACE, 'reports/price-data.json');
 
 const API_BASE = 'https://api.platts.com';
@@ -50,10 +50,6 @@ const MARGIN_SYMBOLS = {
 
 // AAWFW00 用 bate='u'，其他用 bate='c'
 const SPECIAL_BATE = { 'AAWFW00': 'u' };
-
-function loadConfig() {
-  return JSON.parse(readFileSync(CONFIG_FILE, 'utf8'));
-}
 
 async function fetchHistorical(token, symbols, startDate, endDate) {
   const symbolFilter = 'symbol in ("' + symbols.join('","') + '")';
@@ -96,8 +92,7 @@ function getDateForWeekday(targetDay, weeksBack = 0, referenceDate = new Date())
 }
 
 async function main() {
-  const config = loadConfig();
-  const token = config.access_token;
+  const token = await getPlattsAccessToken();
   
   const today = new Date();
   const todayStr = today.toISOString().split('T')[0];

@@ -1,6 +1,6 @@
 ---
 name: thai-news-monitor
-description: 监控泰国五大英文新闻网站（Bangkok Post、The Thaiger、Thai PBS World、Nation Thailand、Khaosod English），按关键词过滤，推送到指定 Telegram 会话。触发词：泰国新闻监控、thai news monitor、启动泰国新闻、更新泰国新闻关键词。每小时由 cron 自动运行，也可手动触发。
+description: 监控泰国五大英文新闻网站（Bangkok Post、The Thaiger、Thai PBS World、Nation Thailand、Khaosod English），按关键词过滤并生成可投递文本，交由 OpenClaw delivery 发送到指定目标。触发词：泰国新闻监控、thai news monitor、启动泰国新闻、更新泰国新闻关键词。每小时由 cron 自动运行，也可手动触发。
 ---
 
 # Thai News Monitor
@@ -43,15 +43,19 @@ https://thethaiger.com/...
 
 ```bash
 node scripts/thai-news-monitor.mjs
+node scripts/thai-news-monitor.mjs --delivery
 ```
 
-输出 JSON 数组，字段：title, summary, url, source, publishedAt
+- 默认输出 JSON 数组，字段：title, summary, url, source, publishedAt
+- `--delivery` 输出可直接投递的纯文本正文；若无新消息，输出 `📭 YYYY-MM-DD HH:mm SGT — 暂无匹配新闻` 通知
 
-## Cron 配置
+## Cron / Delivery 配置
 
-- **目标**: Telegram 群组 -1003526235110, topic:7 (系统管理)
+- **目标**: Telegram 群组 -1003526235110, topic 7（系统管理）
 - **频率**: 每小时
-- **模型**: Sonnet（默认）
+- **执行方式**: 用 isolated `agentTurn` 运行脚本并生成最终正文，不要让脚本自己发消息
+- **发送方式**: 顶层 `delivery.mode="announce"`，例如 `channel=telegram`, `to=-1003526235110:topic:7`
+- **模型**: 不指定，由系统默认决定
 
 ## 手动触发 / 调整关键词
 

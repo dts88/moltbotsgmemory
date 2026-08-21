@@ -1,0 +1,73 @@
+{
+  "date": "2026-07-16",
+  "generated_at": "2026-07-16T08:36:00Z",
+  "fluxOfficials": {
+    "assessment": 76.94,
+    "premium": -1.15,
+    "text": "Dubai Assessment: $76.94/bbl, Physical premium: $-1.15/bbl, No convergences"
+  },
+  "partials": {
+    "contract": "Sep26 Dubai Partials",
+    "trades": [
+      { "seller": "MERCURIARESOURCES", "buyer": "TRAFI", "price": 77.00, "volume": 25, "time": "08:26:11 GMT" },
+      { "seller": "VITOLSG", "buyer": "METS", "price": 76.60, "volume": 25, "time": "08:26:11 GMT" }
+    ],
+    "finalBidOffer": {
+      "lastBid": { "company": "TRAFI", "price": 75.70, "time": "08:29:51 GMT", "withdrawn": true },
+      "lastOffers": [
+        { "company": "VITOLSG", "price": 75.80, "time": "08:29:55 GMT", "withdrawn": true },
+        { "company": "MERCURIARESOURCES", "price": 75.80, "time": "08:29:54 GMT", "withdrawn": true },
+        { "company": "BPSG", "price": 76.40, "time": "08:29:49 GMT" }
+      ]
+    },
+    "allDayOffers": {
+      "VITOLSG": { "count": 34, "rangeFrom": 75.80, "rangeTo": 79.00 },
+      "MERCURIARESOURCES": { "count": 34, "rangeFrom": 75.80, "rangeTo": 79.00 },
+      "BPSG": { "count": 33, "rangeFrom": 76.40, "rangeTo": 79.50 },
+      "SIETCO": { "count": 15, "rangeFrom": 78.80, "rangeTo": 80.00 },
+      "SKEISG": { "count": 12, "rangeFrom": 78.80, "rangeTo": 79.50 },
+      "UNIPECASIA": { "count": 9, "rangeFrom": 78.90, "rangeTo": 79.50 },
+      "SHENGHPI": { "count": 8, "rangeFrom": 78.90, "rangeTo": 79.50 },
+      "RGES": { "count": 8, "rangeFrom": 78.95, "rangeTo": 79.35 }
+    },
+    "lastMinuteOffers": {
+      "VITOLSG": { "last": 75.80, "rangeFrom": 75.80, "rangeTo": 76.40, "count": 7 },
+      "MERCURIARESOURCES": { "last": 75.80, "rangeFrom": 75.80, "rangeTo": 76.30, "count": 6 },
+      "BPSG": { "last": 76.40, "rangeFrom": 76.40, "rangeTo": 76.70, "count": 4 }
+    },
+    "lastMinuteBids": {
+      "TRAFI": { "last": 75.70, "rangeFrom": 75.50, "rangeTo": 75.70, "count": 3 }
+    }
+  },
+  "cashMurban": [
+    { "value": 1.24, "direction": "over", "time": "08:31:29 GMT", "description": "Sep Cash Murban +$1.24/b vs Sep Dubai Futures" },
+    { "value": 0.50, "direction": "over", "time": "08:33:10 GMT", "description": "Sep Cash Murban +$0.50/b vs Sep Dubai Futures" }
+  ],
+  "cashOman": [
+    { "value": 0.75, "direction": "minus", "time": "08:31:27 GMT", "description": "Sep Cash Oman -$0.75/b vs Sep Dubai Futures" },
+    { "value": 0.70, "direction": "minus", "time": "08:33:07 GMT", "description": "Sep Cash Oman -$0.70/b vs Sep Dubai Futures" }
+  ],
+  "upperZakum": {
+    "offer": "RGES offers at Platts Sep Cash Dubai -$2.00/b for Sep 1-27 FOB Zirku Island, 500kb"
+  },
+  "demonstrableBidsSummary": "MITSUI BIDS AT $77.00, TRAFIGURA BIDS AT $77.00, BP BIDS AT $77.00, PHILLIPS 66 BIDS AT $77.00 (08:15:45 GMT)",
+  "demonstrableOffersSummary": "VITOL OFFERS AT $79.00, MERCURIA OFFERS AT $79.00, RELIANCE OFFERS AT $79.35, UNIPEC OFFERS AT $79.50, BP OFFERS AT $79.50, SHENGHONG OFFERS AT $79.50, SK ENERGY OFFERS AT $79.50, SHELL OFFERS AT $79.80 (08:15:56 GMT)",
+  "declarations": [],
+  "convergences": 0,
+  "errorTrades": [],
+  "notionals": {
+    "sepCashDubaiSpread": 1.94,
+    "sepDubaiDerivatives": 76.99,
+    "augSepDubaiDiff": 0.66,
+    "sepOctDubaiDiff": 0.32
+  },
+  "marketNotes": [
+    "Dubai assessment dropped sharply from $79.29 (Jul 15) to $76.94 (Jul 16), a decline of $2.35/bbl",
+    "Physical premium turned negative at -$1.15/bbl, vs +$1.81/bbl yesterday — indicating bearish sentiment",
+    "Only 2 partials traded today (vs 6 yesterday): Mercuria→Trafigura at $77.00, Vitol→METS at $76.60",
+    "No convergences declared today — 2nd consecutive day with zero convergences",
+    "Bid-offer spread at close: $75.70 (Trafi bid) - $75.80 (Vitol/Mercuria offers), withdrawn at bell",
+    "Cash Murban heard at +$0.50/b vs Sep Dubai, narrowing from earlier +$1.24/b",
+    "Cash Oman at -$0.70/b vs Sep Dubai, slightly recovering from -$0.75/b"
+  ]
+}

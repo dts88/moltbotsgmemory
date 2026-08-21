@@ -134,6 +134,8 @@ SHELL SELLS TO TOTAL* AT $166.80 FOR 25KB (08:29:38)
 - `executed in error` → 错误交易
 - `Mideast Sour Crude Convergences` → 汇总所有 declarations
 - `DEALS SUMMARY: DUBAI PARTIALS` → 完整成交记录
+- `DEALS SUMMARY: RECAP` + `NO TRADES` → 直接忽略，不进入快报/摘要输出
+- `Bunker Delivered Bids, Offers, Trades` 且正文为 `no bids / no offers / no trades` → 直接忽略，不进入快报/摘要输出
 - `CRUDE MARKETS: FINALS ON CLOSE` → 收盘买卖盘
 
 获取文章正文（提取错误交易详情等）：
@@ -187,6 +189,14 @@ cd /home/node/clawd && export $(grep -v '^#' .twitter-env | xargs) && npx bird u
 - `ME SOUR CRUDE BIDS: FINALS ON CLOSE` → 收盘买盘
 - `ME SOUR CRUDE OFFERS: FINALS ON CLOSE` → 收盘卖盘
 - 提取参与公司、价格、手数
+
+## 方法论与校验
+
+- **收盘 demonstrable bid/offer 优先于早期成交**。当需要从原始窗口数据重建价格判断或解释评估逻辑时，优先参考收盘仍可证明的 bid/offer，而不是更早的单笔成交。
+- **Cash Oman / Cash Murban ≠ Dubai Physical Premium**。前两者是 cash differential vs Dubai futures，不能拿来替代 Dubai partials vs Dubai futures 的 physical premium。
+- **所有估算值都要标注来源和方法**，并与官方 assessment / premium 明确区分。
+- **生成报告前必须校验日期戳**。FluxOfficials、heards、存档 JSON 都要确认是报告当日，禁止复用前一日缓存数据。
+- **cron 需要留时间缓冲**。FluxOfficials 常晚于 16:36 SGT 发布，重建或调整 cron 时以 **16:45 SGT** 作为安全默认值。
 
 ## 数据存档
 
@@ -253,29 +263,23 @@ Cron 执行时将原始数据保存到 `reports/moc-daily/YYYY-MM-DD.json`：
   - 130kt = Suezmax，Gulf of Oman→East
   - 270kt = VLCC，PG→China/Japan（才是真正的 TD3C 参考）
 
-## 发送目标
+## Delivery 目标
 
-1. Telegram: 群组 -1003727952836, threadId: **2** (MOC topic，本 topic) — **主要沟通渠道**
-2. WhatsApp: +6592716786
-3. WhatsApp: +6596249687 (仅 Dubai MOC 报告正文，不含其他内容)
+1. Telegram: 群组 `-1003727952836:topic:2`（MOC topic，本 topic），主要沟通渠道
+2. WhatsApp: `+6592716786`
+3. WhatsApp: `+6596249687`（仅 Dubai MOC 报告正文，不含其他内容）
 
-### 跨 channel 发送方法
+### 发送原则
 
-在任何 session/channel 中，跨 channel 发送用 CLI，不用 `message` tool（受 session context 限制）：
-
-```bash
-# 发 WhatsApp
-openclaw message send --channel whatsapp --target +6596249687 --message "内容"
-
-# 发 Telegram topic
-openclaw message send --channel telegram --target "-1003727952836" --thread-id 2008 --message "内容"
-```
+- 任务本身只生成最终报告正文，不在任务内调用 CLI 发消息，不假设 `message` tool 存在
+- 由顶层 `delivery.mode="announce"` 负责投递，显式设置 `channel` 与 `to`
+- 如需同时发往 Telegram 与 WhatsApp，分别配置独立 delivery 或独立 cron，不在同一个任务里手工跨 channel 转发
 
 ## Cron 配置
 
 - **ID**: `b97e0428-3da9-464e-8e88-2d5033f46e65`
-- **时间**: 周一至周五 16:36 SGT
-- **模型**: Opus
+- **建议时间**: 周一至周五 16:45 SGT（给 FluxOfficials 发布时间留缓冲）
+- **模型**: 不指定，由系统默认决定
 
 ## 数据源优先级
 

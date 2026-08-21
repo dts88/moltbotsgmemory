@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "oil-kb/timeseries-point.schema.json",
+  "title": "TimeseriesPoint",
+  "type": "object",
+  "required": ["seriesId", "date", "value", "unit", "source", "releaseDate"],
+  "properties": {
+    "seriesId": { "type": "string" },
+    "date": { "type": "string" },
+    "value": { "type": "number" },
+    "unit": { "type": "string" },
+    "source": { "type": "string" },
+    "institution": { "type": "string" },
+    "releaseDate": { "type": "string" },
+    "frequency": { "type": "string" },
+    "commodity": { "type": "string" },
+    "geography": { "type": "string" },
+    "metric": { "type": "string" },
+    "methodology": { "type": "string" },
+    "revision": {
+      "type": "object",
+      "properties": {
+        "isRevision": { "type": "boolean" },
+        "previousValue": { "type": ["number", "null"] },
+        "revisionDate": { "type": ["string", "null"] }
+      }
+    },
+    "provenance": { "type": "object" }
+  },
+  "additionalProperties": true
+}

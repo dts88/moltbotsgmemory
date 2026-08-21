@@ -10,21 +10,16 @@
  *   Fuel Oil/Residual  - 搜索 "SINGAPORE DATA: Fuel oil stockpiles"
  */
 
-import { readFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { getPlattsAccessToken } from './platts-auth.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const CREDS_FILE = join(__dirname, '..', '.config/spglobal/credentials.json');
 const APPKEY = 'mXrBlqeKBqbHpYNMX96h9qN0D8H5o3AN';
 const API_BASE = 'https://api.platts.com/news-insights/v1';
 
-function loadToken() {
-  return JSON.parse(readFileSync(CREDS_FILE, 'utf8')).access_token;
-}
-
-async function searchLatest(token, q, filterFn) {
-  const url = `${API_BASE}/search/story?q=${encodeURIComponent(q)}&pageSize=5&sort=updatedDate:desc`;
+async function searchLatest(token, q, filterFn, pageSize = 5) {
+  const url = `${API_BASE}/search/story?q=${encodeURIComponent(q)}&pageSize=${pageSize}&sort=updatedDate:desc`;
   const res = await fetch(url, {
     headers: { 'Authorization': 'Bearer ' + token, 'appkey': APPKEY },
     signal: AbortSignal.timeout(15000)
@@ -33,6 +28,7 @@ async function searchLatest(token, q, filterFn) {
   const d = await res.json();
   return (d.results || []).find(r => r.headline && filterFn(r.headline));
 }
+
 
 // 从标题提取数字：e.g. "rise 2.8% WOW to 18.44 mil barrels"
 function parseHeadline(headline) {
@@ -76,16 +72,18 @@ function fmtLine(label, p, headline) {
 }
 
 async function run() {
-  const token = loadToken();
+  const token = await getPlattsAccessToken();
 
   const [sgLight, sgMiddle, sgFuelOil] = await Promise.all([
     searchLatest(token, 'SINGAPORE DATA light distillate stocks WOW mil barrels',
       h => h.startsWith('SINGAPORE DATA: Light')),
-    searchLatest(token, 'Singapore middle distillates 6-week barrels',
+    searchLatest(token, 'SINGAPORE DATA middle distillate stocks WOW mil barrels',
       h => h.startsWith('SINGAPORE DATA: Middle')),
     searchLatest(token, 'Singapore fuel oil stockpiles residual barrels',
       h => h.startsWith('SINGAPORE DATA: Fuel')),
   ]);
+
+  const middleHeadline = sgMiddle?.headline;
 
   const sgDate = sgLight?.updatedDate?.slice(0, 10)
     || sgMiddle?.updatedDate?.slice(0, 10)
@@ -97,7 +95,7 @@ async function run() {
     `数据截至: ${sgDate}（Enterprise Singapore）`,
     ``,
     fmtLine('Light Distillates（轻馏分）', parseHeadline(sgLight?.headline), sgLight?.headline),
-    fmtLine('Middle Distillates（中间馏分）', parseHeadline(sgMiddle?.headline), sgMiddle?.headline),
+    fmtLine('Middle Distillates（中间馏分）', parseHeadline(middleHeadline), middleHeadline),
     fmtLine('Fuel Oil / Residual（燃料油）', parseHeadline(sgFuelOil?.headline), sgFuelOil?.headline),
     ``,
     `数据来源: Platts / Enterprise Singapore`,
@@ -109,7 +107,7 @@ async function run() {
     message: lines.join('\n'),
     raw: {
       sgLight: sgLight?.headline,
-      sgMiddle: sgMiddle?.headline,
+      sgMiddle: middleHeadline,
       sgFuelOil: sgFuelOil?.headline,
     }
   }));

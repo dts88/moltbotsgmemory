@@ -1,0 +1,84 @@
+{
+  "date": "2026-07-08",
+  "generatedAt": "2026-07-08T08:40:00Z",
+  "fluxOfficials": {
+    "assessment": "pending",
+    "premium": "pending",
+    "note": "Tweet not yet available at time of report generation"
+  },
+  "declarations": [],
+  "partials": {
+    "contract": "Sep26 Dubai Partial",
+    "convergencePrice": 70.20,
+    "convergenceTrade": {
+      "time": "2026-07-08T08:29:38.522Z",
+      "seller": "MERCURIARESOURCES",
+      "buyer": "TRAFI",
+      "price": 70.20,
+      "volume": 25
+    },
+    "trades": [
+      { "time": "2026-07-08T08:17:07.789Z", "seller": "VITOLSG", "buyer": "METS", "price": 70.00, "volume": 25 },
+      { "time": "2026-07-08T08:17:21.828Z", "seller": "MERCURIARESOURCES", "buyer": "METS", "price": 70.00, "volume": 25 },
+      { "time": "2026-07-08T08:18:12.470Z", "seller": "MERCURIARESOURCES", "buyer": "METS", "price": 70.10, "volume": 25 },
+      { "time": "2026-07-08T08:29:38.522Z", "seller": "MERCURIARESOURCES", "buyer": "TRAFI", "price": 70.20, "volume": 25 }
+    ],
+    "totalVolume": 100,
+    "bidsSummary": [
+      { "company": "TRAFIGURA", "price": 68.50, "volume": 25 },
+      { "company": "MITSUI", "price": 68.50, "volume": 25 }
+    ],
+    "offersSummary": [
+      { "company": "VITOL", "price": 70.00, "volume": 25 },
+      { "company": "PHILLIPS 66", "price": 70.00, "volume": 25 },
+      { "company": "MERCURIA", "price": 70.00, "volume": 25 },
+      { "company": "TRAFIGURA", "price": 70.00, "volume": 25 },
+      { "company": "UNIPEC", "price": 70.80, "volume": 25 },
+      { "company": "BP", "price": 71.00, "volume": 25 }
+    ],
+    "lastMinuteOffers": [
+      { "time": "08:29:10", "company": "VITOLSG", "price": 70.90 },
+      { "time": "08:29:12", "company": "MERCURIARESOURCES", "price": 70.90 },
+      { "time": "08:29:16", "company": "VITOLSG", "price": 70.80 },
+      { "time": "08:29:17", "company": "MERCURIARESOURCES", "price": 70.80 },
+      { "time": "08:29:22", "company": "VITOLSG", "price": 70.70 },
+      { "time": "08:29:25", "company": "MERCURIARESOURCES", "price": 70.70 },
+      { "time": "08:29:29", "company": "VITOLSG", "price": 70.60 },
+      { "time": "08:29:31", "company": "MERCURIARESOURCES", "price": 70.60 },
+      { "time": "08:29:37", "company": "VITOLSG", "price": 70.50 },
+      { "time": "08:29:41", "company": "MERCURIARESOURCES", "price": 70.50 },
+      { "time": "08:29:47", "company": "MERCURIARESOURCES", "price": 70.40 },
+      { "time": "08:29:48", "company": "VITOLSG", "price": 70.40 },
+      { "time": "08:29:53", "company": "MERCURIARESOURCES", "price": 70.30 },
+      { "time": "08:29:54", "company": "VITOLSG", "price": 70.30 }
+    ],
+    "lastMinBids": [],
+    "lastMinuteAction": "VITOLSG and MERCURIARESOURCES both withdrew offers at 08:30:00-03 GMT"
+  },
+  "cashMurban": [
+    { "value": -0.95, "time": "2026-07-08T08:31:05.870Z", "description": "Sep Cash Murban vs Sep Dubai Futures" },
+    { "value": -1.00, "time": "2026-07-08T08:31:49.341Z", "description": "Sep Cash Murban vs Sep Dubai Futures" },
+    { "value": -1.10, "time": "2026-07-08T08:33:51.492Z", "description": "Sep Cash Murban vs Sep Dubai Futures" }
+  ],
+  "cashOman": [
+    { "value": -2.40, "time": "2026-07-08T08:31:02.122Z", "description": "Sep Cash Oman vs Sep Dubai Futures" },
+    { "value": -2.60, "time": "2026-07-08T08:31:45.282Z", "description": "Sep Cash Oman vs Sep Dubai Futures" },
+    { "value": -2.60, "time": "2026-07-08T08:33:47.970Z", "description": "Sep Cash Oman vs Sep Dubai Futures" }
+  ],
+  "notionals": {
+    "septDubaiDerivatives": 72.48,
+    "septCashDubaiFuturesSpread": -2.58,
+    "augSeptSpread": -0.52,
+    "septOctSpread": -0.17,
+    "iceBrentSept": 76.46,
+    "timestamp": "2026-07-08T07:08:00Z"
+  },
+  "errorTrades": [],
+  "finalsOnClose": {
+    "bids": "Data pending - FINALS ON CLOSE article not yet published",
+    "offers": "Data pending - FINALS ON CLOSE article not yet published"
+  },
+  "cargoOffers": [
+    { "grade": "Upper Zakum", "loading": "Sep 1-27", "location": "FOB Zirku Island", "volume": 500, "seller": "Reliance", "price": "Platts Sep cash Dubai -$1.50/bbl", "terms": "+/-0.2%, ADNOC 2023 GTC" }
+  ]
+}

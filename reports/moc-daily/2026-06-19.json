@@ -1,0 +1,108 @@
+{
+  "date": "2026-06-19",
+  "reportGeneratedAt": "2026-06-19T16:36:00+08:00",
+  "fluxOfficials": {
+    "assessment": null,
+    "premium": null,
+    "text": "数据待更新 — FluxOfficials 16:30 SGT 推文尚未被搜索引擎收录",
+    "lastKnown": {
+      "date": "2026-06-16",
+      "assessment": 73.10,
+      "premium": -0.60
+    }
+  },
+  "plattsNotionals": {
+    "timestamp": "2026-06-19T07:00:00Z",
+    "augDubai": 74.22,
+    "septDubai": 73.29,
+    "augBrentFutures": 79.96,
+    "augCashDubaiFuturesSpread": 0.63,
+    "augMurbanDubai": 0.63,
+    "augBrentDubaiEFS": 6.11,
+    "julAugDubaiSwaps": -0.46,
+    "augSeptDubaiSwaps": -0.28,
+    "septOctDubaiSwaps": 0.07
+  },
+  "declarations": [],
+  "partials": {
+    "trades": [],
+    "allDayBids": {
+      "VITOLSG": { "count": 13, "priceRange": [72.5, 73.6], "latest": 73.6 },
+      "PETCO": { "count": 13, "priceRange": [72.0, 73.1], "latest": 73.1 },
+      "GLENCORESG": { "count": 12, "priceRange": [72.0, 72.9], "latest": 72.9 },
+      "GUNVORSG": { "count": 9, "priceRange": [72.3, 73.0], "latest": 73.0 },
+      "BPSG": { "count": 2, "priceRange": [71.5, 71.5], "latest": 71.5 }
+    },
+    "allDayOffers": {
+      "UNIPECASIA": { "count": 6, "priceRange": [74.7, 75.0], "latest": 74.7 },
+      "P66SG": { "count": 4, "priceRange": [74.3, 74.5], "latest": 74.3 },
+      "SIETCO": { "count": 4, "priceRange": [74.5, 74.6], "latest": 74.6 },
+      "BPSG": { "count": 2, "priceRange": [75.3, 75.3], "latest": 75.3 }
+    },
+    "closeState": {
+      "lastBidsAt08_30": {
+        "VITOLSG": { "price": 73.6, "withdrawnAt": "08:30:02" },
+        "PETCO": { "price": 73.1, "withdrawnAt": "08:30:02" },
+        "GUNVORSG": { "price": 73.0, "status": "active_at_snapshot" },
+        "GLENCORESG": { "price": 72.9, "status": "active_at_snapshot" },
+        "BPSG": { "price": 71.5, "status": "active_at_snapshot" }
+      },
+      "lastOffersAt08_30": {
+        "P66SG": { "price": 74.3, "withdrawnAt": "08:29:33" },
+        "SIETCO": { "price": 74.6, "status": "active_at_snapshot" },
+        "UNIPECASIA": { "price": 74.7, "status": "active_at_snapshot" },
+        "BPSG": { "price": 75.3, "status": "active_at_snapshot" }
+      },
+      "demonstrableBid": null,
+      "demonstrableOffer": null,
+      "note": "All bids withdrawn at 08:30:02 GMT. Snapshot at 08:30:00.027 still shows some bids/offers active but no demonstrable bid or offer at close in Platts MOC methodology."
+    }
+  },
+  "cashMurban": [
+    {
+      "time": "2026-06-19T08:34:20.558Z",
+      "value": -0.10,
+      "headline": "Platts Crude: August Cash Murban Heard At minus $0.10/B against August Dubai Futures"
+    }
+  ],
+  "cashOman": [
+    {
+      "time": "2026-06-19T08:34:15.66Z",
+      "value": 0.00,
+      "headline": "Platts Crude: August Cash Oman Heard At parity against August Dubai Futures"
+    }
+  ],
+  "cargoOffers": [
+    {
+      "grade": "Oman",
+      "period": "August 1-28",
+      "location": "FOB Mina al Fahal",
+      "volume": 500,
+      "seller": "Mercuria",
+      "price": "Platts August cash Dubai +$0.60/b",
+      "status": "sold",
+      "buyer": "Trafi",
+      "tradePrice": "Front Month Cash Dubai Full Month Aug -$0.20",
+      "tradeTime": "2026-06-19T08:27:53.528Z"
+    },
+    {
+      "grade": "Upper Zakum",
+      "period": "August 1-28",
+      "location": "FOB Zirku Island",
+      "volume": 500,
+      "seller": "BP",
+      "price": "August OSP -$0.80/b",
+      "status": "offered"
+    }
+  ],
+  "errorTrades": [],
+  "efs": {
+    "augBrentDubai": 6.11,
+    "septBrentDubai": 5.53
+  },
+  "dataSources": [
+    "Platts News Insights API (heards)",
+    "Platts eWindow API (partials)",
+    "Platts Notionals (15:00 SGT)"
+  ]
+}

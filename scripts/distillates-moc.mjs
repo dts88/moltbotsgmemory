@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 import { readFileSync } from 'fs';
+import { getPlattsAccessToken } from './platts-auth.mjs';
 
-const creds = JSON.parse(readFileSync('.config/spglobal/credentials.json', 'utf8'));
-const token = creds.access_token;
+const token = await getPlattsAccessToken();
 const today = '2026-03-17';
 
 // Same Phase 2 logic as Mogas

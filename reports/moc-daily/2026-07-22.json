@@ -1,0 +1,60 @@
+{
+  "date": "2026-07-22",
+  "contractMonth": "Sep26",
+  "fluxOfficials": {
+    "note": "FluxOfficials has not posted July 22 Dubai MOC data yet. Latest post is July 21."
+  },
+  "declarations": [],
+  "partialsTrades": [
+    { "seller": "MercuriaResources", "buyer": "TRAFI", "price": 90.00, "time": "08:25:45 GMT" },
+    { "seller": "MercuriaResources", "buyer": "TRAFI", "price": 89.90, "time": "08:27:28 GMT" },
+    { "seller": "MercuriaResources", "buyer": "METS", "price": 89.90, "time": "08:28:01 GMT" },
+    { "seller": "VitolSG", "buyer": "METS", "price": 89.60, "time": "08:28:07 GMT" },
+    { "seller": "VitolSG", "buyer": "TRAFI", "price": 89.60, "time": "08:28:13 GMT" },
+    { "seller": "MercuriaResources", "buyer": "METS", "price": 89.60, "time": "08:28:42 GMT" },
+    { "seller": "MercuriaResources", "buyer": "TRAFI", "price": 89.60, "time": "08:28:46 GMT" },
+    { "seller": "MercuriaResources", "buyer": "METS", "price": 89.42, "time": "08:29:51 GMT" },
+    { "seller": "PCHK", "buyer": "P66SG", "price": 89.45, "time": "08:30:09 GMT" }
+  ],
+  "totalTrades": 9,
+  "lastMinuteOffers": {
+    "PCHK": { "min": 89.45, "last": 89.45 },
+    "MercuriaResources": { "min": 89.42, "last": 89.42 },
+    "UnipecAsia": { "min": 89.42, "last": 89.42 },
+    "VitolSG": { "min": 89.50, "last": 89.50 }
+  },
+  "lastMinuteBids": {
+    "METS": { "max": 89.41, "lastBid": "withdrawn" },
+    "P66SG": { "max": 89.40, "last": 89.40 },
+    "BPSG": { "max": 86.70, "last": "withdrawn" },
+    "TRAFI": { "max": 89.40 },
+    "PCHK": { "max": 86.80 }
+  },
+  "cashMurban": [
+    { "value": 7.40, "time": "08:31:07 GMT", "text": "Sep Cash Murban Heard At $7.40/B Over Sep Dubai Futures" },
+    { "value": 7.30, "time": "08:32:34 GMT", "text": "Sep Cash Murban Heard At $7.30/B Over Sep Dubai Futures" }
+  ],
+  "cashOman": [
+    { "value": 6.10, "time": "08:31:02 GMT", "text": "Sep Cash Oman Heard At $6.10/B Over Sep Dubai Futures" },
+    { "value": 5.80, "time": "08:32:32 GMT", "text": "Sep Cash Oman Heard At $5.80/B Over Sep Dubai Futures" }
+  ],
+  "errorTrades": [],
+  "finalsOnClose": {
+    "note": "Data pending — MOC assessment not yet finalized in API"
+  },
+  "buyerProfile": {
+    "uniqueBuyer": "METS",
+    "METS_total": 4,
+    "TRAFI_total": 3,
+    "P66SG_total": 1
+  },
+  "marketObservations": [
+    "Sep Dubai Partial convergence price at $89.45/bbl (PCHK→P66SG at close)",
+    "METS as dominant partial buyer (4 out of 9 trades)",
+    "Last-minute offer strip tightened to $89.42-89.50 range across 4 participants",
+    "No cargo declarations reported today",
+    "Cash Murban/Oman premiums narrowed slightly through the window",
+    "Only PCHK and MercuriaResources were active as offerers near close",
+    "UnipecAsia and VitolSG joined the offer stack but at same levels"
+  ]
+}

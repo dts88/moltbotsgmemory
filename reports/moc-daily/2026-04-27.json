@@ -1,0 +1,395 @@
+{
+  "date": "2026-04-27",
+  "fluxOfficials": {
+    "assessment": null,
+    "premium": null,
+    "text": null,
+    "note": "Error: ENOENT: no such file or directory, open '.twitter-env'"
+  },
+  "declarations": [
+    {
+      "seller": "Unipec",
+      "month": "June",
+      "grade": "Oman",
+      "buyer": "TotalEnergies",
+      "time": "2026-04-27T08:24:52.222Z",
+      "headline": "Platts Crude: Unipec declares a cargo of June Oman crude to TotalEnergies following the convergence of 20 partials in Pl"
+    },
+    {
+      "seller": "Unipec",
+      "month": "June",
+      "grade": "Oman",
+      "buyer": "Mercuria",
+      "time": "2026-04-27T08:30:30.161Z",
+      "headline": "Platts Crude: Unipec declares a cargo of June Oman crude to Mercuria following the convergence of 20 partials in Platts "
+    },
+    {
+      "seller": "Unipec",
+      "month": "June",
+      "grade": "Oman",
+      "buyer": "TotalEnergies",
+      "time": "2026-04-27T08:30:32.851Z",
+      "headline": "Platts Crude: Unipec declares a cargo of June Oman crude to TotalEnergies following the convergence of 20 partials in Pl"
+    },
+    {
+      "seller": "Shell",
+      "month": "June",
+      "grade": "Oman",
+      "buyer": "TotalEnergies",
+      "time": "2026-04-27T08:31:35.327Z",
+      "headline": "Platts Crude: Shell declares a cargo of June Oman crude to TotalEnergies following the convergence of 20 partials in Pla"
+    }
+  ],
+  "cashMurban": [
+    {
+      "month": "June",
+      "value": 8.75,
+      "vsMonth": "June",
+      "grade": "Murban",
+      "time": "2026-04-27T08:33:58.763Z",
+      "headline": "Platts Crude: June Cash Murban Heard At $8.75/B Over June Dubai Futures"
+    },
+    {
+      "month": "June",
+      "value": 8.9,
+      "vsMonth": "June",
+      "grade": "Murban",
+      "time": "2026-04-27T08:34:26.219Z",
+      "headline": "Platts Crude: June Cash Murban Heard At $8.90/B Over June Dubai Futures"
+    }
+  ],
+  "cashOman": [
+    {
+      "month": "June",
+      "value": 5.44,
+      "vsMonth": "June",
+      "grade": "Oman",
+      "time": "2026-04-27T08:34:23.407Z",
+      "headline": "Platts Crude: June Cash Oman Heard At $5.44/B Over June Dubai Futures"
+    }
+  ],
+  "errorTrades": [],
+  "finalsOnClose": {
+    "bids": [],
+    "offers": []
+  },
+  "partials": {
+    "contractMonth": "Jun26",
+    "allTrades": [
+      {
+        "contractMonth": "Jun26",
+        "buyer": "TOTSA",
+        "seller": "UNIPECASIA",
+        "price": 104,
+        "quantity": 25,
+        "time": "2026-04-27T08:27:39.872Z",
+        "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.00 for 25 8:27:39.782 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "buyer": "TOTSA",
+        "seller": "UNIPECASIA",
+        "price": 104,
+        "quantity": 25,
+        "time": "2026-04-27T08:27:48.955Z",
+        "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.00 for 25 8:27:48.847 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "buyer": "TOTSA",
+        "seller": "UNIPECASIA",
+        "price": 104,
+        "quantity": 25,
+        "time": "2026-04-27T08:27:57.56Z",
+        "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.00 for 25 8:27:57.470 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "buyer": "TOTSA",
+        "seller": "UNIPECASIA",
+        "price": 104,
+        "quantity": 25,
+        "time": "2026-04-27T08:28:07.104Z",
+        "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.00 for 25 8:28:06.993 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "buyer": "TOTSA",
+        "seller": "UNIPECASIA",
+        "price": 104,
+        "quantity": 25,
+        "time": "2026-04-27T08:28:15.71Z",
+        "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.00 for 25 8:28:15.591 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "buyer": "MERCURIARESOURCES",
+        "seller": "UNIPECASIA",
+        "price": 104,
+        "quantity": 25,
+        "time": "2026-04-27T08:28:19.877Z",
+        "headline": "Platts Dubai Partial Jun26, MERCURIARESOURCES BUYS FROM UNIPECASIA  $104.00 for 25 8:28:19.778 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "buyer": "MERCURIARESOURCES",
+        "seller": "UNIPECASIA",
+        "price": 104,
+        "quantity": 25,
+        "time": "2026-04-27T08:28:31.698Z",
+        "headline": "Platts Dubai Partial Jun26, MERCURIARESOURCES BUYS FROM UNIPECASIA  $104.00 for 25 8:28:31.607 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "buyer": "TOTSA",
+        "seller": "UNIPECASIA",
+        "price": 104,
+        "quantity": 25,
+        "time": "2026-04-27T08:28:45.511Z",
+        "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.00 for 25 8:28:45.337 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "buyer": "TOTSA",
+        "seller": "UNIPECASIA",
+        "price": 104,
+        "quantity": 25,
+        "time": "2026-04-27T08:28:59.107Z",
+        "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.00 for 25 8:28:59.016 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "buyer": "TOTSA",
+        "seller": "UNIPECASIA",
+        "price": 104,
+        "quantity": 25,
+        "time": "2026-04-27T08:29:13.488Z",
+        "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.00 for 25 8:29:13.241 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "buyer": "TOTSA",
+        "seller": "UNIPECASIA",
+        "price": 104,
+        "quantity": 25,
+        "time": "2026-04-27T08:29:24.272Z",
+        "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.00 for 25 8:29:24.178 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "buyer": "TOTSA",
+        "seller": "SIETCO",
+        "price": 104.15,
+        "quantity": 25,
+        "time": "2026-04-27T08:29:35.438Z",
+        "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM SIETCO  $104.15 for 25 8:29:35.172 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "buyer": "TOTSA",
+        "seller": "UNIPECASIA",
+        "price": 104.2,
+        "quantity": 25,
+        "time": "2026-04-27T08:29:39.398Z",
+        "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.20 for 25 8:29:39.207 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "buyer": "TOTSA",
+        "seller": "SIETCO",
+        "price": 104.15,
+        "quantity": 25,
+        "time": "2026-04-27T08:29:45.084Z",
+        "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM SIETCO  $104.15 for 25 8:29:44.895 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "buyer": "TOTSA",
+        "seller": "UNIPECASIA",
+        "price": 104.2,
+        "quantity": 25,
+        "time": "2026-04-27T08:29:52.264Z",
+        "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.20 for 25 8:29:52.173 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "buyer": "TOTSA",
+        "seller": "METS",
+        "price": 104.79,
+        "quantity": 25,
+        "time": "2026-04-27T08:29:53.891Z",
+        "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM METS  $104.79 for 25 8:29:53.800 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "buyer": "TOTSA",
+        "seller": "UNIPECASIA",
+        "price": 104.2,
+        "quantity": 25,
+        "time": "2026-04-27T08:29:56.176Z",
+        "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.20 for 25 8:29:56.022 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "buyer": "TOTSA",
+        "seller": "UNIPECASIA",
+        "price": 104.2,
+        "quantity": 25,
+        "time": "2026-04-27T08:29:58.564Z",
+        "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.20 for 25 8:29:58.363 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "buyer": "TOTSA",
+        "seller": "SIETCO",
+        "price": 104.8,
+        "quantity": 25,
+        "time": "2026-04-27T08:29:59.506Z",
+        "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM SIETCO  $104.80 for 25 8:29:59.409 GMT"
+      }
+    ],
+    "lastTrade": {
+      "contractMonth": "Jun26",
+      "buyer": "TOTSA",
+      "seller": "SIETCO",
+      "price": 104.8,
+      "quantity": 25,
+      "time": "2026-04-27T08:29:59.506Z",
+      "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM SIETCO  $104.80 for 25 8:29:59.409 GMT"
+    },
+    "closingOffers": [
+      {
+        "contractMonth": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 104,
+        "quantity": 25,
+        "time": "2026-04-27T08:29:00.661Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA offers on $104.00 for 25 8:29:00.546 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "company": "METS",
+        "price": 104.7,
+        "quantity": 25,
+        "time": "2026-04-27T08:29:04.978Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $104.70 for 25 8:29:04.843 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "company": "BPSG",
+        "price": 106.2,
+        "quantity": 25,
+        "time": "2026-04-27T08:29:06.267Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG lowers offer $106.20 for 25 8:29:06.180 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "company": "BPSG",
+        "price": 106.1,
+        "quantity": 25,
+        "time": "2026-04-27T08:29:11.739Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG lowers offer $106.10 for 25 8:29:11.643 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 104,
+        "quantity": 25,
+        "time": "2026-04-27T08:29:16.934Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA offers on $104.00 for 25 8:29:16.820 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "company": "BPSG",
+        "price": 106,
+        "quantity": 25,
+        "time": "2026-04-27T08:29:20.516Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG lowers offer $106.00 for 25 8:29:20.419 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 104.2,
+        "quantity": 25,
+        "time": "2026-04-27T08:29:30.348Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA offers on $104.20 for 25 8:29:30.260 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "company": "SIETCO",
+        "price": 104.15,
+        "quantity": 25,
+        "time": "2026-04-27T08:29:39.622Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO offers on $104.15 for 25 8:29:39.454 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 104.3,
+        "quantity": 25,
+        "time": "2026-04-27T08:29:45.635Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA offers on $104.30 for 25 8:29:45.453 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "company": "METS",
+        "price": 104.79,
+        "quantity": 25,
+        "time": "2026-04-27T08:29:50.95Z",
+        "headline": "Platts Dubai Partial Jun26, METS raises offer $104.79 for 25 8:29:50.853 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 104.2,
+        "quantity": 25,
+        "time": "2026-04-27T08:29:51.741Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $104.20 for 25 8:29:51.651 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 104.2,
+        "quantity": 25,
+        "time": "2026-04-27T08:29:53.982Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA offers on $104.20 for 25 8:29:53.839 GMT"
+      },
+      {
+        "contractMonth": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 104.2,
+        "quantity": 25,
+        "time": "2026-04-27T08:29:57.994Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA offers on $104.20 for 25 8:29:57.869 GMT"
+      }
+    ],
+    "offersAllDayStats": {
+      "UNIPECASIA": {
+        "count": 16,
+        "min": 104,
+        "max": 104.3
+      },
+      "P66SG": {
+        "count": 2,
+        "min": 106.2,
+        "max": 106.3
+      },
+      "SIETCO": {
+        "count": 2,
+        "min": 104.15,
+        "max": 104.15
+      },
+      "BPSG": {
+        "count": 6,
+        "min": 106,
+        "max": 106.5
+      },
+      "METS": {
+        "count": 2,
+        "min": 104.7,
+        "max": 104.79
+      }
+    }
+  },
+  "rawArchive": "reports/moc-daily/2026-04-27.raw.json"
+}

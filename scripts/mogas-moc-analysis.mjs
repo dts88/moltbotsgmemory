@@ -5,20 +5,15 @@
  * Calculates: Assessment, Strip prices, Daily structure
  */
 
-import { readFileSync, existsSync } from 'fs';
+import { existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { getPlattsAccessToken } from './platts-auth.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const WORKSPACE = join(__dirname, '..');
-const CONFIG_FILE = join(WORKSPACE, '.config/spglobal/credentials.json');
 const API_BASE = 'https://api.platts.com';
 const APPKEY = 'mXrBlqeKBqbHpYNMX96h9qN0D8H5o3AN';
-
-function loadToken() {
-  const config = JSON.parse(readFileSync(CONFIG_FILE, 'utf8'));
-  return config.access_token;
-}
 
 async function apiGet(path, token) {
   const res = await fetch(`${API_BASE}${path}`, {
@@ -522,7 +517,7 @@ function buildReport(date, cargo, paper, indicative, updateMogas, fujData) {
 }
 
 async function main() {
-  const token = loadToken();
+  const token = await getPlattsAccessToken();
   const date = new Date().toISOString().split('T')[0]; // e.g. 2026-03-12
   
   console.log(`\n🔍 Fetching Mogas MOC data for ${date}...\n`);

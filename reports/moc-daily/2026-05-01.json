@@ -1,0 +1,42 @@
+{
+  "date": "2026-05-01",
+  "fluxOfficials": {
+    "assessment": null,
+    "premium": null,
+    "text": "数据待更新"
+  },
+  "declarations": [],
+  "cashMurban": [],
+  "cashOman": [],
+  "errorTrades": [],
+  "finalsOnClose": {
+    "bids": "数据待更新",
+    "offers": "数据待更新"
+  },
+  "partials": {
+    "contractMonth": "数据待更新",
+    "allTrades": [],
+    "tradeSummary": {},
+    "closingTrade": null,
+    "lastMinuteOffers": [],
+    "allDayOfferStats": {}
+  },
+  "rawData": {
+    "heards": {
+      "declarations": [],
+      "deals": [],
+      "murban": [],
+      "oman": [],
+      "bids": [],
+      "offers": [],
+      "error": [],
+      "convergence": [],
+      "crudeFinals": []
+    },
+    "contents": {},
+    "ewindow": {
+      "offers": [],
+      "trades": []
+    }
+  }
+}

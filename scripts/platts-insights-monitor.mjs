@@ -1,15 +1,17 @@
 #!/usr/bin/env node
 /**
- * Platts Monitor v6
+ * Platts Monitor v7
  * - 多端点 Token 刷新（Platts官方 + Okta）
- * - Heards: 扫描多页获取原油、成品油、燃料油、LNG
- * - Story (Insight News): 原油、成品油、LNG
+ * - Heards: geography filter (Asia/Middle East/Global) + 关键词分类
+ * - Story: sector filter (Crude Oil Plus/Fuels and Refining Plus/LNG Plus/Shipping Plus)
+ * - Top News: 无 commodity filter，仅时间过滤
  */
 
 import { readFileSync, writeFileSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { trackUsage } from './usage-tracker.mjs';
+import { ensureValidPlattsConfig } from './platts-auth.mjs';
 
 const userArg = process.argv.find(a => a.startsWith('--user='));
 const TRACK_USER = userArg ? userArg.split('=')[1] : 'system';
@@ -18,8 +20,10 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const WORKSPACE = join(__dirname, '..');
 const CONFIG_FILE = join(WORKSPACE, '.config/spglobal/credentials.json');
 const STATE_FILE = join(WORKSPACE, '.platts-monitor-state.json');
+const FILTERS_FILE = join(WORKSPACE, '.config/platts-monitor-filters.json');
 
 const API_BASE = 'https://api.platts.com';
+const CI_API_BASE = 'https://api.ci.spglobal.com';
 
 // Client ID from SPGlobal (extracted from JWT)
 const CLIENT_ID = 'PL_API_PLATFORM';
@@ -55,6 +59,15 @@ const REFRESH_ENDPOINTS = [
   }
 ];
 
+// Heards API geography filter (server-side, eliminates NWE/Europe noise)
+const HEARDS_GEO_FILTER = encodeURIComponent(
+  'geography:"Asia" OR geography:"Middle East" OR geography:"Global" OR ' +
+  'geography:"Singapore" OR geography:"Fujairah" OR geography:"China" OR ' +
+  'geography:"India" OR geography:"Strait of Hormuz" OR geography:"Persian Gulf" OR ' +
+  'geography:"Gulf Cooperation Council (GCC)" OR geography:"Dubai" OR ' +
+  'geography:"South Korea" OR geography:"Japan" OR geography:"Oman"'
+);
+
 // Heards keyword patterns for categorization
 const HEARDS_PATTERNS = {
   crude: ['crude', 'dubai', 'murban', 'oman', 'brent', 'espo', 'basrah', 'urals', 'wti', 'upper zakum'],
@@ -63,28 +76,135 @@ const HEARDS_PATTERNS = {
   lng: ['lng', 'liquefied natural gas', 'jkm', 'des nwe', 'des japan'],
 };
 
-// Story keywords
+const HEARD_OUTPUT_CATEGORIES = new Set(['crude']);
+
+// Story API sector filter (server-side, replaces client-side STORY_KEYWORDS matching)
+const STORY_SECTOR_FILTER = encodeURIComponent(
+  'sector:"Crude Oil Plus" OR sector:"Crude" OR ' +
+  'sector:"Fuels and Refining Plus" OR sector:"Refined Products" OR ' +
+  'sector:"LNG Plus" OR sector:"LNG" OR ' +
+  'sector:"Shipping Plus" OR sector:"Shipping"'
+);
+
+const STORY_SECTOR_FILTER_RAW =
+  'sector:"Crude Oil Plus" OR sector:"Crude" OR ' +
+  'sector:"Fuels and Refining Plus" OR sector:"Refined Products" OR ' +
+  'sector:"LNG Plus" OR sector:"LNG" OR ' +
+  'sector:"Shipping Plus" OR sector:"Shipping"';
+
+// Story keywords (kept as secondary filter, primary filter is server-side sector)
 const STORY_KEYWORDS = [
   'crude', 'dubai', 'murban', 'wti', 'brent', 'oman', 'upper zakum', 'basrah', 'espo',
   'gasoline', 'gasoil', 'diesel', 'jet', 'kerosene', 'naphtha', 'mops',
   '92 ron', '95 ron', '97 ron', 'mogas',
   'fuel oil', 'bunker', 'vlsfo', 'hsfo', 'mgo', 'lsfo', '380 cst', '180 cst', 'mf 0.5',
   'lng', 'liquefied natural gas', 'jkm',
+  'strait of hormuz', 'iran', 'middle east', 'opec', 'saudi', 'aramco',
 ];
 
 const MUST_HAVE_PATTERNS = ['crude moc'];
 const SKIP_HEADLINE_PATTERNS = ['Daily Rationale & Exclusions', 'Rationale & Exclusions', 'Rationales & Exclusions', 'Weekly Rationale'];
 const EXCLUDED_COMMODITIES = ['acrylonitrile', 'acn', 'epoxy', 'styrene', 'mtbe', 'ethanolamine', 'pvc', 'polyethylene', 'polypropylene', 'hdpe', 'ldpe', 'benzene', 'toluene', 'xylene', 'methanol', 'ethanol', 'acetone', 'phenol', 'ammonia', 'urea', 'sulfur'];
 
+// Heards headline exclusion patterns (chemicals/materials that slip through geography filter)
+const EXCLUDED_HEARDS_PATTERNS = [
+  'eva:', 'ethylene', 'propylene', 'polypropylene', 'polystyrene', 'polyethylene',
+  'paraxylene', 'styrene', 'acrylonitrile', 'caprolactam', 'phenol', 'acetone',
+  'methanol', 'ethanol', 'mtbe', 'benzene', 'toluene', 'xylene', 'mixed xylene',
+  'ammonia', 'urea', 'dap', 'phosphate', 'sulfur', 'caustic soda', 'chlorine',
+  'compliance carbon', 'carbon:', 'nzu ', 'cee', 'cgo', 'renewable',
+  'petrochemical', 'petchem', 'polymers', 'polymer', 'raffia', 'injection',
+  'hdpe', 'ldpe', 'lldpe', 'pp ', 'pvc', 'pet', 'abs ',
+  'base oils', 'bitumen', 'lubricant', 'wax', 'asphalt',
+  'coal', 'steel', 'iron ore', 'aluminum', 'copper', 'nickel',
+  'ethylene glycol', 'ethylene oxide', 'propylene oxide', 'ethylene dichloride',
+  'methyl methacrylate', 'mdi', 'tdi', 'polyol', 'polyether',
+  'acetic acid', 'butadiene', 'butyl acrylate', '2-ethylhexyl', 'oxo-alcohol',
+  'isomer', 'mx ', 'ox ', 'px ', 'sm ', 'eb ', 'bdo ',
+  'e-window administered', 'platts asia high eva', 'platts asia medium eva',
+  'platts asia low eva', 'platts asia hdpe', 'platts asia ldpe', 'platts asia lldpe',
+  'platts asia pp', 'platts asia pet', 'platts asia ps', 'platts asia abs',
+];
+
+const DEFAULT_MONITOR_FILTERS = {
+  // Title-only rules run before fetching article content, saving API calls and downstream tokens.
+  titleStartsWith: ['ASIA CRUDE DEALS SUMMARY'],
+  titleIncludes: [],
+  titleRegex: [],
+  // Content rules run after fetching content, for noisy templates that cannot be identified by title alone.
+  contentIncludes: []
+};
+
 function loadConfig() {
-  if (!existsSync(CONFIG_FILE)) {
-    throw new Error('Credentials not found');
+  try {
+    return JSON.parse(readFileSync(CONFIG_FILE, 'utf8'));
+  } catch (e) {
+  // If the file is just a raw token string, wrap it in a valid JSON structure
+  try {
+    const content = readFileSync(CONFIG_FILE, 'utf8').trim();
+    if (content.startsWith('ey')) { // Likely a JWT
+      return {
+        access_token: content,
+        token_type: 'Bearer'
+      };
+    }
+  } catch (innerE) {}
+    throw e;
   }
-  return JSON.parse(readFileSync(CONFIG_FILE, 'utf8'));
 }
 
 function saveConfig(config) {
   writeFileSync(CONFIG_FILE, JSON.stringify(config, null, 2));
+}
+
+function loadMonitorFilters() {
+  let userFilters = {};
+  if (existsSync(FILTERS_FILE)) {
+    try {
+      userFilters = JSON.parse(readFileSync(FILTERS_FILE, 'utf8'));
+    } catch (e) {
+      console.error(`[Platts] Failed to parse ${FILTERS_FILE}, using defaults: ${e.message}`);
+    }
+  }
+
+  return {
+    titleStartsWith: [...DEFAULT_MONITOR_FILTERS.titleStartsWith, ...(userFilters.titleStartsWith || [])],
+    titleIncludes: [...DEFAULT_MONITOR_FILTERS.titleIncludes, ...(userFilters.titleIncludes || [])],
+    titleRegex: [...DEFAULT_MONITOR_FILTERS.titleRegex, ...(userFilters.titleRegex || [])],
+    contentIncludes: [...DEFAULT_MONITOR_FILTERS.contentIncludes, ...(userFilters.contentIncludes || [])]
+  };
+}
+
+const MONITOR_FILTERS = loadMonitorFilters();
+
+function normalizeText(text) {
+  return (text || '').replace(/\s+/g, ' ').trim().toLowerCase();
+}
+
+function matchesAnyRegex(text, patterns) {
+  return patterns.some(pattern => {
+    try {
+      return new RegExp(pattern, 'i').test(text || '');
+    } catch (e) {
+      console.error(`[Platts] Invalid monitor filter regex ignored: ${pattern}`);
+      return false;
+    }
+  });
+}
+
+function isTitleBlockedByMonitorFilters(headline) {
+  const title = normalizeText(headline);
+  if (!title) return false;
+  if (MONITOR_FILTERS.titleStartsWith.some(p => title.startsWith(normalizeText(p)))) return true;
+  if (MONITOR_FILTERS.titleIncludes.some(p => title.includes(normalizeText(p)))) return true;
+  if (matchesAnyRegex(headline || '', MONITOR_FILTERS.titleRegex)) return true;
+  return false;
+}
+
+function isContentBlockedByMonitorFilters(body) {
+  const text = normalizeText(stripHtml(body || ''));
+  if (!text) return false;
+  return MONITOR_FILTERS.contentIncludes.some(p => text.includes(normalizeText(p)));
 }
 
 // Calculate token expiration
@@ -189,10 +309,17 @@ async function refreshAccessToken(config) {
 }
 
 function loadState() {
+  const defaults = { lastCheckTime: null, seenHeardIds: [], seenStoryIds: [], seenTopNewsIds: [] };
   if (existsSync(STATE_FILE)) {
-    return JSON.parse(readFileSync(STATE_FILE, 'utf8'));
+    try {
+      const existing = JSON.parse(readFileSync(STATE_FILE, 'utf8'));
+      // Merge defaults for any missing keys (backward compat)
+      return Object.assign({}, defaults, existing);
+    } catch (e) {
+      console.error('[Platts] State file corrupted, resetting:', e.message);
+    }
   }
-  return { lastCheckTime: null, seenHeardIds: [], seenStoryIds: [] };
+  return defaults;
 }
 
 function saveState(state) {
@@ -210,6 +337,7 @@ function categorizeHeards(headline) {
 function isStoryRelevant(item, hours = 2) {
   const since = new Date(Date.now() - hours * 60 * 60 * 1000);
   if (new Date(item.updatedDate) < since) return false;
+  if (isTitleBlockedByMonitorFilters(item.headline)) return false;
   const headline = (item.headline || '').toLowerCase();
   if (MUST_HAVE_PATTERNS.some(p => headline.includes(p))) return true;
   if (SKIP_HEADLINE_PATTERNS.some(p => headline.includes(p.toLowerCase()))) return false;
@@ -222,11 +350,22 @@ function isCommodityAllowed(commodities) {
   return !EXCLUDED_COMMODITIES.some(ex => str.includes(ex));
 }
 
-async function fetchAllHeards(token, maxPages = 15) {
+function toApiTimestamp(date) {
+  return date.toISOString().replace(/\.\d{3}Z$/, 'Z');
+}
+
+function buildUpdatedDateFilter(hours) {
+  const since = toApiTimestamp(new Date(Date.now() - hours * 60 * 60 * 1000));
+  const until = toApiTimestamp(new Date());
+  return `updateddate>="${since}" AND updateddate<="${until}"`;
+}
+
+async function fetchAllHeards(token, maxPages = 5, hours = 2) {
   const allHeards = { crude: [], products: [], fuelOil: [], lng: [] };
+  const filter = encodeURIComponent(`${buildUpdatedDateFilter(hours)} AND (${decodeURIComponent(HEARDS_GEO_FILTER)})`);
   
   for (let page = 1; page <= maxPages; page++) {
-    const url = `${API_BASE}/news-insights/v1/search/heards?pageSize=100&page=${page}`;
+    const url = `${CI_API_BASE}/news-insights/v1/search/heards?filter=${filter}&pageSize=100&page=${page}`;
     const response = await fetch(url, {
       headers: { 'Authorization': `Bearer ${token}` }
     });
@@ -240,6 +379,9 @@ async function fetchAllHeards(token, maxPages = 15) {
     if (!data.results || data.results.length === 0) break;
     
     for (const item of data.results) {
+      const headline = (item.headline || '').toLowerCase();
+      if (isTitleBlockedByMonitorFilters(item.headline)) continue;
+      if (EXCLUDED_HEARDS_PATTERNS.some(p => headline.includes(p))) continue;
       const category = categorizeHeards(item.headline);
       if (category && allHeards[category]) {
         allHeards[category].push(item);
@@ -250,14 +392,28 @@ async function fetchAllHeards(token, maxPages = 15) {
   return allHeards;
 }
 
-async function fetchStories(token) {
-  const url = `${API_BASE}/news-insights/v1/search/story?pageSize=50`;
+async function fetchStories(token, hours = 2) {
+  const filter = encodeURIComponent(`contentType:"News" AND ${buildUpdatedDateFilter(hours)} AND (${STORY_SECTOR_FILTER_RAW})`);
+  const url = `${CI_API_BASE}/news-insights/v1/search/story/latest-news?filter=${filter}&field=body,sector,commodity,geography&pageSize=50`;
   const response = await fetch(url, {
     headers: { 'Authorization': `Bearer ${token}` }
   });
   if (!response.ok) {
     if (response.status === 401) throw new Error('TOKEN_EXPIRED');
     throw new Error(`Story API Error: ${response.status}`);
+  }
+  return response.json();
+}
+
+async function fetchTopNews(token) {
+  const url = `${CI_API_BASE}/news-insights/v1/search/story/top-news?field=body,sector,commodity,geography&pageSize=50`;
+  const response = await fetch(url, {
+    headers: { 'Authorization': `Bearer ${token}` }
+  });
+  if (!response.ok) {
+    if (response.status === 401) throw new Error('TOKEN_EXPIRED');
+    console.error(`[Platts] Top News API Error: ${response.status}`);
+    return { results: [] };
   }
   return response.json();
 }
@@ -283,10 +439,30 @@ function stripHtml(html) {
     .trim();
 }
 
-function hasMeaningfulContent(body) {
+function isRecapNoTrades(headline, body) {
+  const h = (headline || '').toLowerCase();
+  const text = stripHtml(body || '').toLowerCase();
+  const isDealsSummaryRecap = h.includes('deals summary') && h.includes('recap');
+  const hasNoTrades = h.includes('no trades') || text.includes('no trades reported') || text.includes('trades: none');
+  return isDealsSummaryRecap && hasNoTrades;
+}
+
+function isBunkerEmptySummary(headline, body) {
+  const h = (headline || '').toLowerCase();
+  const text = stripHtml(body || '').toLowerCase();
+  const isBunkerSummary = h.includes('bunker') && h.includes('bids, offers, trades');
+  const noBids = text.includes('bids: none') || text.includes('no bids reported');
+  const noOffers = text.includes('offers: none') || text.includes('no offers reported');
+  const noTrades = text.includes('trades: none') || text.includes('no trades reported');
+  return isBunkerSummary && noBids && noOffers && noTrades;
+}
+
+function hasMeaningfulContent(headline, body) {
   if (!body) return false;
   const text = stripHtml(body);
   const skipPatterns = ['No bids/offers/trades', 'No trades reported'];
+  if (isTitleBlockedByMonitorFilters(headline) || isContentBlockedByMonitorFilters(body)) return false;
+  if (isRecapNoTrades(headline, body) || isBunkerEmptySummary(headline, body)) return false;
   return !skipPatterns.some(p => text.includes(p)) && text.length > 50;
 }
 
@@ -331,7 +507,7 @@ async function main() {
     // Check if token needs refresh
     if (tokenNeedsRefresh(config)) {
       try {
-        config = await refreshAccessToken(config);
+        config = await ensureValidPlattsConfig({ thresholdMs: 10 * 60 * 1000, allowPasswordFallback: true });
       } catch (e) {
         console.error('[Platts] Token refresh failed:', e.message);
         if (e.details) {
@@ -346,7 +522,7 @@ async function main() {
             status: 'TOKEN_REFRESH_FAILED',
             error: `Token 已过期 ${expiredMins} 分钟，所有刷新方法都失败了`,
             details: e.details || [],
-            suggestion: '可能需要重新登录获取新的 refresh_token'
+            suggestion: '已尝试 refresh 和 TokenGeneration 密码登录，仍然失败'
           }));
           return;
         }
@@ -356,13 +532,18 @@ async function main() {
     }
     
     const hours = 2;
-    const allItems = { heards: [], stories: [] };
+    const allItems = { heards: [], stories: [], topNews: [] };
     
     // 1. Fetch heards
-    console.error('[Platts] Scanning heards...');
-    const heardsData = await fetchAllHeards(config.access_token, 15);
+    console.error('[Platts] Scanning heards (geography + updateddate filter)...');
+    const heardsData = await fetchAllHeards(config.access_token, 2, hours);
     
     for (const [category, items] of Object.entries(heardsData)) {
+      if (!HEARD_OUTPUT_CATEGORIES.has(category)) {
+        console.error(`[Platts] ${category}: ${items.length} total, skipped by heards output filter`);
+        continue;
+      }
+
       const recent = filterByTime(items, hours);
       const newItems = recent.filter(item => !state.seenHeardIds.includes(item.id));
       console.error(`[Platts] ${category}: ${items.length} total, ${recent.length} recent, ${newItems.length} new`);
@@ -371,7 +552,7 @@ async function main() {
         const content = await fetchContent(config.access_token, item.id);
         if (content && content.content) {
           const body = stripHtml(content.content.body);
-          if (hasMeaningfulContent(content.content.body)) {
+          if (hasMeaningfulContent(item.headline, content.content.body)) {
             allItems.heards.push({
               id: item.id,
               category: category,
@@ -385,51 +566,82 @@ async function main() {
       }
     }
     
-    // 2. Fetch stories
-    console.error('[Platts] Fetching stories...');
-    const storiesData = await fetchStories(config.access_token);
+    // 2. Fetch latest news stories (server-side sector filter)
+    console.error('[Platts] Fetching latest-news stories (sector + updateddate filter)...');
+    const storiesData = await fetchStories(config.access_token, hours);
     const relevantStories = (storiesData.results || []).filter(item => isStoryRelevant(item, hours));
     const newStories = relevantStories.filter(item => !state.seenStoryIds.includes(item.id));
-    console.error(`[Platts] Stories: ${storiesData.results?.length || 0} total, ${relevantStories.length} relevant, ${newStories.length} new`);
+    console.error(`[Platts] Stories: ${storiesData.results?.length || 0} total, ${relevantStories.length} relevant (sector+keyword), ${newStories.length} new`);
     
+    // Stories already have body/sector/commodity/geography from API; extract summary inline
     for (const item of newStories.slice(0, 15)) {
-      const content = await fetchContent(config.access_token, item.id);
-      if (content) {
-        const commodities = content.properties?.commodity || [];
-        if (!isCommodityAllowed(commodities)) continue;
-        
-        const headline = content.properties?.headline?.headline || item.headline;
-        const summary = stripHtml(content.properties?.summary || '');
-        const body = stripHtml(content.content?.body || '');
-        
-        if (body.length > 50 || summary.length > 20) {
-          allItems.stories.push({
-            id: item.id,
-            headline: headline,
-            summary: summary,
-            body: body.substring(0, 2000),
-            time: item.updatedDate,
-            url: item.documentUrl,
-            commodity: commodities
-          });
-        }
-      }
+      const body = stripHtml(item.body || '');
+      if (body.length < 50) continue;
+      // Use first paragraph as summary (API doesn't always include summary in field)
+      const firstPara = body.split('.')[0]?.trim() || '';
+      allItems.stories.push({
+        id: item.id,
+        headline: item.headline || '',
+        summary: firstPara.length > 20 ? firstPara + '.' : '',
+        body: body.substring(0, 2000),
+        time: item.updatedDate,
+        url: item.documentUrl,
+        commodity: item.commodity || [],
+        sector: item.sector || [],
+        geography: item.geography || [],
+      });
     }
     
-    const totalNew = allItems.heards.length + allItems.stories.length;
-    console.error(`[Platts] Total new items: ${totalNew}`);
+    // 3. Fetch top news (time filter only, no commodity/sector filter)
+    console.error('[Platts] Fetching top news...');
+    const topNewsData = await fetchTopNews(config.access_token);
+    const recentTopNews = (topNewsData.results || []).filter(item => {
+      const since = new Date(Date.now() - hours * 60 * 60 * 1000);
+      return new Date(item.updatedDate) > since;
+    });
+    const newTopNews = recentTopNews.filter(item => !state.seenTopNewsIds.includes(item.id));
+    console.error(`[Platts] Top News: ${topNewsData.results?.length || 0} total, ${recentTopNews.length} recent, ${newTopNews.length} new`);
+    
+    for (const item of newTopNews) {
+      const body = stripHtml(item.body || '');
+      if (body.length < 50) continue;
+      const firstPara = body.split('.')[0]?.trim() || '';
+      allItems.topNews.push({
+        id: item.id,
+        headline: item.headline || '',
+        summary: firstPara.length > 20 ? firstPara + '.' : '',
+        body: body.substring(0, 2000),
+        time: item.updatedDate,
+        url: item.documentUrl,
+        commodity: item.commodity || [],
+        sector: item.sector || [],
+        geography: item.geography || [],
+      });
+    }
+    
+    const totalNew = allItems.heards.length + allItems.stories.length + allItems.topNews.length;
+    console.error(`[Platts] Total new items: ${totalNew} (heards:${allItems.heards.length} stories:${allItems.stories.length} topNews:${allItems.topNews.length})`);
     
     if (totalNew === 0) {
       console.log('NO_NEW_INSIGHTS');
     } else {
       allItems.heards.sort((a, b) => new Date(b.time) - new Date(a.time));
       allItems.stories.sort((a, b) => new Date(b.time) - new Date(a.time));
+      allItems.topNews.sort((a, b) => new Date(b.time) - new Date(a.time));
       
       console.log(JSON.stringify({
         status: 'NEW_INSIGHTS',
         heards: allItems.heards,
         stories: allItems.stories,
-        instructions: '请用中文总结。格式要求：\n1. Heards 按品种分组（原油/成品油/燃料油/LNG）\n2. 每条信息单独一行，末尾用 [序号] 标记（如 [1]、[2]）\n3. 消息底部用 --- 分隔，然后列出所有链接：[1] URL\n4. 序号与链接必须一一对应，不要弄错\n5. 不用**加粗**，纯文本\n6. 专业术语：MOC=收盘评估, MOPS=普氏均价, bids=买盘, offers=卖盘, partials=窗口成交'
+        topNews: allItems.topNews,
+        instructions: '请用中文总结。格式要求：\n' +
+          '1. 先输出 🔥 Top News 部分（地缘/政策/供应中断重大新闻），每条后 [序号] 标记\n' +
+          '2. 再输出 📰 Market Stories 部分（Platts 市场分析文章摘要），每条后 [序号] 标记\n' +
+          '3. 最后输出 📊 Heards 部分，只输出原油相关 Heards，不要输出成品油/燃料油/LNG Heards，每条后 [序号] 标记\n' +
+          '4. 消息底部用 --- 分隔，然后列出所有链接：[1] URL\n' +
+          '5. 序号与链接必须一一对应\n' +
+          '6. 不用**加粗**，纯文本\n' +
+          '7. 专业术语：MOC=收盘评估, MOPS=普氏均价, bids=买盘, offers=卖盘, partials=窗口成交'
       }));
     }
     
@@ -437,6 +649,7 @@ async function main() {
     const allHeardIds = Object.values(heardsData).flat().map(item => item.id);
     state.seenHeardIds = allHeardIds.slice(0, 500);
     state.seenStoryIds = relevantStories.map(item => item.id).slice(0, 100);
+    state.seenTopNewsIds = recentTopNews.map(item => item.id).slice(0, 50);
     state.lastCheckTime = new Date().toISOString();
     saveState(state);
     try { trackUsage(TRACK_USER, 'platts', { action: 'insights-monitor' }); } catch {}

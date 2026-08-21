@@ -50,6 +50,11 @@ function formatVolume(vol) {
   return `$${vol.toFixed(0)}`;
 }
 
+function formatPoint(n) {
+  if (n === null || n === undefined || Number.isNaN(Number(n))) return 'n/a';
+  return `${n >= 0 ? '+' : ''}${Number(n).toFixed(1)}pt`;
+}
+
 function loadState() {
   try {
     if (existsSync(STATE_FILE)) {
@@ -222,6 +227,18 @@ async function monitor() {
   });
   
   // 输出结果
+  const message = alerts.length > 0 ? [
+    `Polymarket 地缘监控：${alerts.length} 个显著变化`,
+    `${now.toLocaleString('en-SG', { timeZone: 'Asia/Singapore' })} SGT`,
+    '',
+    ...alerts.slice(0, 8).map(alert => {
+      if (alert.type === 'probability') {
+        return `${alert.emoji} ${alert.market} / ${alert.subMarket}: ${alert.from}% → ${alert.to}% (${formatPoint(alert.change)})`;
+      }
+      return `${alert.emoji} ${alert.market} / ${alert.subMarket}: 24h 成交量 ${formatVolume(alert.volume24h)} (${alert.change >= 0 ? '+' : ''}${alert.change}%)`;
+    })
+  ].join('\n') : null;
+
   const output = {
     status: alerts.length > 0 ? 'SIGNIFICANT_CHANGES' : 'NORMAL',
     timestamp: now.toISOString(),
@@ -235,7 +252,8 @@ async function monitor() {
       total24hVolume: results.reduce((sum, m) => sum + (m.volume24h || 0), 0)
     },
     alerts,
-    markets: results
+    markets: results,
+    message
   };
   
   console.log(JSON.stringify(output, null, 2));

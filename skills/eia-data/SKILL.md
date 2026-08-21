@@ -44,7 +44,7 @@ node scripts/eia-data.mjs <series> [--weeks=N]
 2. **如果已更新**：直接使用，正常出报告
 3. **如果未更新**（period 仍为上周）：
    - 在报告中注明"国别进口数据约 01:00 SGT 后更新，稍后补充"
-   - 自动设置 cron，在 **01:15 SGT** 重新拉取国别数据，追加发送给用户
+   - 自动设置 cron，在 **01:15 SGT** 重新拉取国别数据。补充任务只输出最终正文，由顶层 `delivery.mode="announce"` 追加投递给同一目标
 4. **追加发送格式**：
    ```
    📊 EIA 补充：主要进口来源（截至 YYYY-MM-DD）
@@ -62,6 +62,16 @@ node scripts/eia-data.mjs <series> [--weeks=N]
 | 国别进口来源 | EIA API /petroleum/move/wimpc/data/ |
 
 ⚠️ **Cushing 库存**在 table4.csv 中（关键词 "Cushing"），不在 WIMPC API，每周三 10:30 AM 即可获取。
+
+## 已知实现坑（已修复）
+
+### 2026-03-12: `fetchCountryImports()` 拉取长度过小
+- 旧逻辑把 `length` 设为 `weeks * 15`
+- 但 WIMPC 每期约有 19 个国家，导致上一期数据覆盖不全
+- 结果是 Venezuela、沙特、伊拉克等排序靠后的国家会错误显示上周值为 0，周环比严重失真
+- 修复后统一使用更保守的拉取长度（`weeks * 50`）
+
+如果以后再次改写国别进口逻辑，优先保证**跨多个 period 的完整覆盖**，不要按国家数拍脑袋估条数。
 
 ## 周报格式（固定）
 

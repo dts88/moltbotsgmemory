@@ -16,21 +16,15 @@
  *   Jet Kero Physical  : PJABF00
  */
 
-import { readFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { getPlattsAccessToken } from './platts-auth.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const WORKSPACE = join(__dirname, '..');
-const CONFIG_FILE = join(WORKSPACE, '.config/spglobal/credentials.json');
 const API_BASE = 'https://api.platts.com';
 
 // ─── helpers ─────────────────────────────────────────────────────────────────
-
-function loadToken() {
-  const creds = JSON.parse(readFileSync(CONFIG_FILE, 'utf8'));
-  return creds.access_token;
-}
 
 async function queryEwindow(token, filter, pageSize = 300) {
   const url = `${API_BASE}/tradedata/v3/ewindowdata?filter=${encodeURIComponent(filter)}&pageSize=${pageSize}&sort=order_time:asc`;
@@ -92,7 +86,7 @@ async function main() {
   const dateArg = process.argv.find(a => a.startsWith('--date='));
   const today = dateArg ? dateArg.split('=')[1] : new Date().toISOString().split('T')[0];
 
-  const token = loadToken();
+  const token = await getPlattsAccessToken();
 
   console.error(`[GO/Jet MOC] Querying eWindow for ${today}...`);
 

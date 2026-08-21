@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "oil-kb/playbook.schema.json",
+  "title": "Playbook",
+  "type": "object",
+  "required": ["id", "name", "institutionalInfluences", "useCases", "method"],
+  "properties": {
+    "id": { "type": "string" },
+    "name": { "type": "string" },
+    "institutionalInfluences": { "type": "array", "items": { "type": "string" } },
+    "useCases": { "type": "array", "items": { "type": "string" } },
+    "timeScale": { "type": "string" },
+    "inputs": { "type": "array", "items": { "type": "string" } },
+    "method": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["step", "description"],
+        "properties": {
+          "step": { "type": "integer" },
+          "description": { "type": "string" },
+          "evidenceTypes": { "type": "array", "items": { "type": "string" } }
+        }
+      }
+    },
+    "biasesAndFailureModes": { "type": "array", "items": { "type": "string" } },
+    "historicalCases": { "type": "array", "items": { "type": "string" } },
+    "automationHooks": { "type": "array", "items": { "type": "string" } },
+    "sourceDocuments": { "type": "array", "items": { "type": "string" } },
+    "updatedAt": { "type": "string" }
+  },
+  "additionalProperties": true
+}

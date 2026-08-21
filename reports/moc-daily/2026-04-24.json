@@ -1,0 +1,517 @@
+{
+  "date": "2026-04-24",
+  "fluxOfficials": {
+    "assessment": null,
+    "premium": null,
+    "text": null
+  },
+  "declarations": [
+    {
+      "time": "2026-04-24T08:30:45.284Z",
+      "headline": "Platts Crude: Unipec declares a cargo of June Oman crude to Trafigura following the convergence of 20 partials in Platts",
+      "seller": "Unipec",
+      "month": "June",
+      "grade": "Oman",
+      "buyer": "Trafigura"
+    }
+  ],
+  "cashMurban": [
+    {
+      "time": "2026-04-24T08:33:59.742Z",
+      "headline": "Platts Crude: June Cash Murban Heard At $9.90/B Over June Dubai Futures",
+      "grade": "Murban",
+      "value": 9.9,
+      "month": "June"
+    }
+  ],
+  "cashOman": [],
+  "errorTrades": [],
+  "finalsOnClose": {
+    "bids": [],
+    "offers": []
+  },
+  "ewindow": {
+    "trades": [
+      {
+        "seller": "UNIPECASIA",
+        "buyer": "TRAFI",
+        "price": 107.2,
+        "quantity": 25,
+        "time": "2026-04-24T08:26:20.910"
+      },
+      {
+        "seller": "UNIPECASIA",
+        "buyer": "BPSG",
+        "price": 107.1,
+        "quantity": 25,
+        "time": "2026-04-24T08:26:36.086"
+      },
+      {
+        "seller": "UNIPECASIA",
+        "buyer": "MERCURIARESOURCES",
+        "price": 107.1,
+        "quantity": 25,
+        "time": "2026-04-24T08:26:36.804"
+      },
+      {
+        "seller": "UNIPECASIA",
+        "buyer": "TOTSA",
+        "price": 107.1,
+        "quantity": 25,
+        "time": "2026-04-24T08:26:37.744"
+      },
+      {
+        "seller": "UNIPECASIA",
+        "buyer": "TRAFI",
+        "price": 107.1,
+        "quantity": 25,
+        "time": "2026-04-24T08:26:39.889"
+      },
+      {
+        "seller": "UNIPECASIA",
+        "buyer": "MERCURIARESOURCES",
+        "price": 107,
+        "quantity": 25,
+        "time": "2026-04-24T08:26:49.203"
+      },
+      {
+        "seller": "UNIPECASIA",
+        "buyer": "TRAFI",
+        "price": 107,
+        "quantity": 25,
+        "time": "2026-04-24T08:26:50.255"
+      },
+      {
+        "seller": "UNIPECASIA",
+        "buyer": "TOTSA",
+        "price": 107,
+        "quantity": 25,
+        "time": "2026-04-24T08:26:55.230"
+      },
+      {
+        "seller": "UNIPECASIA",
+        "buyer": "TRAFI",
+        "price": 107,
+        "quantity": 25,
+        "time": "2026-04-24T08:26:56.593"
+      },
+      {
+        "seller": "UNIPECASIA",
+        "buyer": "MERCURIARESOURCES",
+        "price": 106.9,
+        "quantity": 25,
+        "time": "2026-04-24T08:27:04.103"
+      },
+      {
+        "seller": "UNIPECASIA",
+        "buyer": "TRAFI",
+        "price": 106.9,
+        "quantity": 25,
+        "time": "2026-04-24T08:27:04.743"
+      },
+      {
+        "seller": "UNIPECASIA",
+        "buyer": "TOTSA",
+        "price": 106.9,
+        "quantity": 25,
+        "time": "2026-04-24T08:27:18.892"
+      },
+      {
+        "seller": "UNIPECASIA",
+        "buyer": "TRAFI",
+        "price": 106.8,
+        "quantity": 25,
+        "time": "2026-04-24T08:27:22.300"
+      },
+      {
+        "seller": "UNIPECASIA",
+        "buyer": "MERCURIARESOURCES",
+        "price": 106.8,
+        "quantity": 25,
+        "time": "2026-04-24T08:27:59.288"
+      },
+      {
+        "seller": "UNIPECASIA",
+        "buyer": "TOTSA",
+        "price": 106.75,
+        "quantity": 25,
+        "time": "2026-04-24T08:28:02.081"
+      },
+      {
+        "seller": "UNIPECASIA",
+        "buyer": "TRAFI",
+        "price": 106.7,
+        "quantity": 25,
+        "time": "2026-04-24T08:28:09.131"
+      },
+      {
+        "seller": "SIETCO",
+        "buyer": "VITOLSG",
+        "price": 106,
+        "quantity": 25,
+        "time": "2026-04-24T08:29:12.623"
+      },
+      {
+        "seller": "UNIPECASIA",
+        "buyer": "MERCURIARESOURCES",
+        "price": 107.2,
+        "quantity": 25,
+        "time": "2026-04-24T08:29:50.719"
+      },
+      {
+        "seller": "UNIPECASIA",
+        "buyer": "VITOLSG",
+        "price": 107.2,
+        "quantity": 25,
+        "time": "2026-04-24T08:29:59.561"
+      }
+    ],
+    "offersLastMinute": [
+      {
+        "company": "UNIPECASIA",
+        "price": 107.6,
+        "time": "2026-04-24T08:29:20.861"
+      },
+      {
+        "company": "UNIPECASIA",
+        "price": 107.5,
+        "time": "2026-04-24T08:29:29.096"
+      },
+      {
+        "company": "UNIPECASIA",
+        "price": 107.4,
+        "time": "2026-04-24T08:29:35.226"
+      },
+      {
+        "company": "UNIPECASIA",
+        "price": 107.3,
+        "time": "2026-04-24T08:29:40.690"
+      },
+      {
+        "company": "UNIPECASIA",
+        "price": 107.2,
+        "time": "2026-04-24T08:29:49.030"
+      },
+      {
+        "company": "UNIPECASIA",
+        "price": 107.2,
+        "time": "2026-04-24T08:29:50.719"
+      },
+      {
+        "company": "UNIPECASIA",
+        "price": 107.2,
+        "time": "2026-04-24T08:29:52.843"
+      },
+      {
+        "company": "SIETCO",
+        "price": 109.6,
+        "time": "2026-04-24T08:29:54.317"
+      },
+      {
+        "company": "UNIPECASIA",
+        "price": 107.2,
+        "time": "2026-04-24T08:29:59.561"
+      }
+    ],
+    "offersAllDayStats": {
+      "BPSG": {
+        "count": 26,
+        "min": 110.6,
+        "max": 113,
+        "last": 110.6,
+        "name": "BP Singapore"
+      },
+      "UNIPECASIA": {
+        "count": 34,
+        "min": 107.2,
+        "max": 110,
+        "last": 107.2,
+        "name": "Unipec Asia Company Limited"
+      },
+      "SIETCO": {
+        "count": 16,
+        "min": 109.6,
+        "max": 111,
+        "last": 109.6,
+        "name": "Shell International Eastern Trading (SIETCO) owned by Shell Eastern Trading (Pte)"
+      },
+      "SHENGHPI": {
+        "count": 2,
+        "min": 110,
+        "max": 110,
+        "last": 110,
+        "name": "Shenghong Petrochemical International Pte. Ltd"
+      },
+      "GUNVORSG": {
+        "count": 24,
+        "min": 110.8,
+        "max": 113,
+        "last": 110.8,
+        "name": "Gunvor Singapore Pte. Ltd."
+      },
+      "P66SG": {
+        "count": 22,
+        "min": 110,
+        "max": 112,
+        "last": 110,
+        "name": "Phillips 66 International Trading Pte Ltd"
+      }
+    }
+  },
+  "heards": {
+    "deals": [
+      {
+        "headline": "Platts Dubai Partial Jun26, BPSG lowers bid $106.20 for 25 8:27:45.700 GMT",
+        "time": "2026-04-24T08:27:45.925Z",
+        "id": "c4fcfb27-6f1d-4de0-bc37-109a53799c76"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $109.70 for 25 8:27:51.471 GMT",
+        "time": "2026-04-24T08:27:51.557Z",
+        "id": "b1e3dac7-a26f-47a4-93e4-5a2e01f109c4"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, VITOLSG lowers bid $106.30 for 25 8:27:54.581 GMT",
+        "time": "2026-04-24T08:27:54.667Z",
+        "id": "cf820f8c-5e92-491f-b293-0852a88dc829"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, GUNVORSG lowers bid $106.50 for 25 8:27:56.700 GMT",
+        "time": "2026-04-24T08:27:56.786Z",
+        "id": "f2413885-0205-4829-a8ab-7c249fb50bb3"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA SELLS TO MERCURIARESOURCES  $106.80 for 25 8:27:59.288 GMT",
+        "time": "2026-04-24T08:27:59.376Z",
+        "id": "bf3a4cf9-7766-450d-b99b-d6d0c05ed9c7"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA SELLS TO TOTSA  $106.75 for 25 8:28:02.081 GMT",
+        "time": "2026-04-24T08:28:02.17Z",
+        "id": "7d9f8a44-272d-4a1c-abd8-367de7a4fb0e"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, GUNVORSG lowers bid $106.40 for 25 8:28:05.620 GMT",
+        "time": "2026-04-24T08:28:05.718Z",
+        "id": "160b5651-ce45-4093-87a9-e42447b9e459"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $106.30 for 25 8:28:07.953 GMT",
+        "time": "2026-04-24T08:28:08.04Z",
+        "id": "85c1ab6f-b9ff-4fb0-b70a-a5bd09bc70bd"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA SELLS TO TRAFI  $106.70 for 25 8:28:09.131 GMT",
+        "time": "2026-04-24T08:28:09.23Z",
+        "id": "2bfecb49-1c4f-4b09-a46c-61148389e010"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, P66SG lowers bid $106.30 for 25 8:28:10.244 GMT",
+        "time": "2026-04-24T08:28:10.332Z",
+        "id": "e3efb480-9341-4e6a-90cd-afd8ea7bcd4e"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, GUNVORSG lowers bid $106.30 for 25 8:28:11.599 GMT",
+        "time": "2026-04-24T08:28:11.684Z",
+        "id": "640bba4a-8f85-4617-97a4-fd8296d966b2"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, TRAFI bids on $106.30 for 25 8:28:15.198 GMT",
+        "time": "2026-04-24T08:28:15.283Z",
+        "id": "a1cff62f-fe6e-44fc-9b90-ec2d4c1ad12d"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $106.40 for 25 8:28:19.590 GMT",
+        "time": "2026-04-24T08:28:19.764Z",
+        "id": "cfa97242-ad13-4835-b4f6-6a973159bd62"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, VITOLSG lowers bid $106.10 for 25 8:28:22.209 GMT",
+        "time": "2026-04-24T08:28:22.295Z",
+        "id": "e82625ca-b08f-4269-975b-c0535259c7c8"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, BPSG withdraws bid $106.40 for 25 8:28:23.978 GMT",
+        "time": "2026-04-24T08:28:24.063Z",
+        "id": "6adeedc7-5f31-498a-b6b2-e9e88cc319d5"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, P66SG lowers bid $106.20 for 25 8:28:24.119 GMT",
+        "time": "2026-04-24T08:28:24.205Z",
+        "id": "f806c53c-94d5-433e-a80d-13382cb1f6ec"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $107.90 for 25 8:28:25.963 GMT",
+        "time": "2026-04-24T08:28:26.138Z",
+        "id": "48195cae-9756-4dc7-8b98-a806e802c2cd"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, P66SG lowers bid $106.10 for 25 8:28:32.078 GMT",
+        "time": "2026-04-24T08:28:32.244Z",
+        "id": "21d08f83-1097-4393-8663-688b71200094"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, GUNVORSG lowers bid $106.20 for 25 8:28:35.356 GMT",
+        "time": "2026-04-24T08:28:35.442Z",
+        "id": "a022e41e-968f-4186-994c-95493410466a"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $107.80 for 25 8:28:35.368 GMT",
+        "time": "2026-04-24T08:28:35.537Z",
+        "id": "4b2363c1-4339-415c-afc3-60eadf154c0c"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, HENGLIPET lowers bid $106.20 for 25 8:28:42.199 GMT",
+        "time": "2026-04-24T08:28:42.386Z",
+        "id": "2431e448-9eaf-47f8-afdd-b76555b46be7"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, TRAFI lowers bid $106.10 for 25 8:28:42.957 GMT",
+        "time": "2026-04-24T08:28:43.044Z",
+        "id": "42426fbd-867e-49ee-bf1f-eec8f080ed33"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, GUNVORSG lowers bid $106.10 for 25 8:28:46.084 GMT",
+        "time": "2026-04-24T08:28:46.17Z",
+        "id": "d8e050c4-32ab-44aa-9abf-521c2010415f"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $107.70 for 25 8:28:48.502 GMT",
+        "time": "2026-04-24T08:28:48.588Z",
+        "id": "3ad9a106-ff89-44dd-8df4-91974561f68f"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, HENGLIPET lowers bid $106.10 for 25 8:28:55.895 GMT",
+        "time": "2026-04-24T08:28:56.031Z",
+        "id": "aee27894-e108-46aa-a27e-c312c1a2fa9a"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, EQUINORAPPL withdraws bid $106.30 for 25 8:29:00.655 GMT",
+        "time": "2026-04-24T08:29:00.789Z",
+        "id": "f5513619-ff0a-4d80-9b0a-cd568d6b3917"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, TRAFI withdraws bid $106.10 for 25 8:29:01.961 GMT",
+        "time": "2026-04-24T08:29:02.055Z",
+        "id": "4c3663ec-df36-4658-a06e-ccc8c3915638"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, VITOLSG lowers bid $106.05 for 25 8:29:02.255 GMT",
+        "time": "2026-04-24T08:29:02.343Z",
+        "id": "6e24b7ea-ad1c-4920-bfed-7f16bc952f12"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, P66SG lowers bid $106.00 for 25 8:29:02.809 GMT",
+        "time": "2026-04-24T08:29:02.895Z",
+        "id": "85a2a9bb-b49c-4819-b214-f7d3aa56f645"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, GUNVORSG lowers bid $106.00 for 25 8:29:03.587 GMT",
+        "time": "2026-04-24T08:29:03.673Z",
+        "id": "b1658b61-5073-4ba6-929d-61e342e5d1b9"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, VITOLSG lowers bid $106.00 for 25 8:29:06.368 GMT",
+        "time": "2026-04-24T08:29:06.492Z",
+        "id": "c8021a39-f864-4617-a9dd-493ddbb7fa30"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, HENGLIPET lowers bid $106.00 for 25 8:29:09.044 GMT",
+        "time": "2026-04-24T08:29:09.129Z",
+        "id": "365d984a-5476-4a14-a619-47efe8f2cdc4"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, GUNVORSG withdraws bid $106.00 for 25 8:29:10.137 GMT",
+        "time": "2026-04-24T08:29:10.246Z",
+        "id": "24263552-66ec-475c-8b97-f1524fb8be7e"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, P66SG lowers bid $105.90 for 25 8:29:10.421 GMT",
+        "time": "2026-04-24T08:29:10.511Z",
+        "id": "4b04fedf-eb46-438a-a07c-fdc37cc737f6"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, HENGLIPET withdraws bid $106.00 for 25 8:29:11.774 GMT",
+        "time": "2026-04-24T08:29:11.863Z",
+        "id": "1b2fa32d-d726-4ff7-8ede-4af2d77b6585"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, SIETCO SELLS TO VITOLSG  $106.00 for 25 8:29:12.623 GMT",
+        "time": "2026-04-24T08:29:12.778Z",
+        "id": "04332f3b-71a0-45bc-a8b7-b80d87ca2b73"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, P66SG withdraws bid $105.90 for 25 8:29:13.944 GMT",
+        "time": "2026-04-24T08:29:14.159Z",
+        "id": "241152e9-3641-4f11-b584-b987d655f91d"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $107.60 for 25 8:29:20.861 GMT",
+        "time": "2026-04-24T08:29:21.101Z",
+        "id": "57b4a34a-cbaf-49f7-8391-34e0868c7d8e"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $107.50 for 25 8:29:29.096 GMT",
+        "time": "2026-04-24T08:29:29.181Z",
+        "id": "57218059-4f06-4565-b727-8a93a1edcd4c"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $107.40 for 25 8:29:35.226 GMT",
+        "time": "2026-04-24T08:29:35.327Z",
+        "id": "ca3dd840-24ae-418c-bdd7-092092755254"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $107.30 for 25 8:29:40.690 GMT",
+        "time": "2026-04-24T08:29:41.09Z",
+        "id": "cb39c297-b96a-4818-8da9-99fd1eedabb1"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $107.20 for 25 8:29:49.030 GMT",
+        "time": "2026-04-24T08:29:49.262Z",
+        "id": "fb2115f3-b5cc-48b4-96c3-6428c515cdcf"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, MERCURIARESOURCES BUYS FROM UNIPECASIA  $107.20 for 25 8:29:50.719 GMT",
+        "time": "2026-04-24T08:29:50.86Z",
+        "id": "725746af-5e6c-4f1e-887a-b6a7424125c3"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA offers on $107.20 for 25 8:29:52.843 GMT",
+        "time": "2026-04-24T08:29:53.098Z",
+        "id": "67b511ac-959a-4e56-9a11-f221ad360aaa"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $109.60 for 25 8:29:54.317 GMT",
+        "time": "2026-04-24T08:29:54.461Z",
+        "id": "125a3012-016a-4eca-a4f6-f30681bca595"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, VITOLSG BUYS FROM UNIPECASIA  $107.20 for 25 8:29:59.561 GMT",
+        "time": "2026-04-24T08:29:59.895Z",
+        "id": "3e4c8409-a57f-4a64-bea6-2d57f246a13c"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA offers on $107.20 for 25 8:30:01.664 GMT",
+        "time": "2026-04-24T08:30:01.848Z",
+        "id": "ad01dcea-9051-4407-abf4-f3f36ef9e897"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, SIETCO withdraws offer $109.60 for 25 8:30:05.681 GMT",
+        "time": "2026-04-24T08:30:05.775Z",
+        "id": "01827406-46df-4384-bb90-772c47179fdf"
+      },
+      {
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA withdraws offer $107.20 for 25 8:30:05.872 GMT",
+        "time": "2026-04-24T08:30:05.969Z",
+        "id": "760f433f-8c01-4e47-bf0a-18148ccae03a"
+      },
+      {
+        "headline": "Platts Crude: Unipec declares a cargo of June Oman crude to Trafigura following the convergence of 20 partials in Platts",
+        "time": "2026-04-24T08:30:45.284Z",
+        "id": "431c8d21-8150-4aa7-b3a6-2834108c95c2"
+      }
+    ],
+    "bids": [],
+    "offers": []
+  }
+}

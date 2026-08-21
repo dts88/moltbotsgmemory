@@ -4,7 +4,7 @@
  * Base: https://api.platts.com/tradedata/v3/ewindowdata
  */
 
-import { readFileSync } from 'fs';
+import { getPlattsAccessToken } from './platts-auth.mjs';
 
 const BASE = 'https://api.platts.com/tradedata/v3';
 const APPKEY = 'mXrBlqeKBqbHpYNMX96h9qN0D8H5o3AN';
@@ -136,13 +136,8 @@ function calcMopsStrip(date, frontMonthPrice, spreadAvg, phase) {
   };
 }
 
-function getToken() {
-  const config = JSON.parse(readFileSync('/home/node/clawd/.config/spglobal/credentials.json', 'utf8'));
-  return config.access_token;
-}
-
 async function ewFetch(path) {
-  const token = getToken();
+  const token = await getPlattsAccessToken();
   const r = await fetch(BASE + path, {
     headers: { 'Authorization': 'Bearer ' + token, 'Accept': 'application/json' }
   });

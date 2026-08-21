@@ -15,6 +15,142 @@
       "medium": 1476,
       "heavy": 4909,
       "savedAt": "2026-04-14T18:00:37.007Z"
+    },
+    {
+      "asOfDate": "2026-04-13",
+      "publishTime": "Wed, 15 Apr 2026 11:00:00 +0400",
+      "light": 4823,
+      "medium": 1003,
+      "heavy": 3906,
+      "savedAt": "2026-04-21T18:00:16.961Z"
+    },
+    {
+      "asOfDate": "2026-04-20",
+      "publishTime": "Wed, 22 Apr 2026 11:00:00 +0400",
+      "light": 2753,
+      "medium": 1140,
+      "heavy": 3561,
+      "savedAt": "2026-04-28T18:00:19.730Z"
+    },
+    {
+      "asOfDate": "2026-04-27",
+      "publishTime": "Wed, 29 Apr 2026 11:00:00 +0400",
+      "light": 2680,
+      "medium": 1244,
+      "heavy": 3058,
+      "savedAt": "2026-05-05T18:00:32.376Z"
+    },
+    {
+      "asOfDate": "2026-05-04",
+      "publishTime": "Wed, 6 May 2026 11:00:00 +0400",
+      "light": 2551,
+      "medium": 1128,
+      "heavy": 2822,
+      "savedAt": "2026-05-13T06:01:16.370Z"
+    },
+    {
+      "asOfDate": "2026-05-11",
+      "publishTime": "Wed, 13 May 2026 11:00:00 +0400",
+      "light": 2531,
+      "medium": 1129,
+      "heavy": 2837,
+      "savedAt": "2026-05-20T06:00:39.407Z"
+    },
+    {
+      "asOfDate": "2026-05-18",
+      "publishTime": "Wed, 20 May 2026 11:00:00 +0400",
+      "light": 2496,
+      "medium": 1189,
+      "heavy": 2908,
+      "savedAt": "2026-05-27T06:00:32.037Z"
+    },
+    {
+      "asOfDate": "2026-05-25",
+      "publishTime": "Wed, 27 May 2026 11:00:00 +0400",
+      "light": 2358,
+      "medium": 1122,
+      "heavy": 2039,
+      "savedAt": "2026-06-03T06:00:13.285Z"
+    },
+    {
+      "asOfDate": "2026-06-01",
+      "publishTime": "Wed, 3 Jun 2026 11:00:00 +0400",
+      "light": 2262,
+      "medium": 1228,
+      "heavy": 1722,
+      "savedAt": "2026-06-10T06:00:09.538Z"
+    },
+    {
+      "asOfDate": "2026-06-15",
+      "publishTime": "Wed, 17 Jun 2026 11:00:00 +0400",
+      "light": 1376,
+      "medium": 1350,
+      "heavy": 2419,
+      "savedAt": "2026-06-24T06:00:14.353Z"
+    },
+    {
+      "asOfDate": "2026-06-22",
+      "publishTime": "Wed, 24 Jun 2026 11:00:00 +0400",
+      "light": 1402,
+      "medium": 1420,
+      "heavy": 4024,
+      "savedAt": "2026-07-01T06:04:42.035Z"
+    },
+    {
+      "asOfDate": "2026-06-29",
+      "publishTime": "Wed, 1 Jul 2026 11:00:00 +0400",
+      "light": 1203,
+      "medium": 1499,
+      "heavy": 5297,
+      "savedAt": "2026-07-08T06:00:33.397Z"
+    },
+    {
+      "asOfDate": "2026-07-06",
+      "publishTime": "Wed, 8 Jul 2026 11:00:00 +0400",
+      "light": 1579,
+      "medium": 1235,
+      "heavy": 7315,
+      "savedAt": "2026-07-15T06:00:33.272Z"
+    },
+    {
+      "asOfDate": "2026-07-13",
+      "publishTime": "Wed, 15 Jul 2026 11:00:00 +0400",
+      "light": 1770,
+      "medium": 1115,
+      "heavy": 7262,
+      "savedAt": "2026-07-22T06:00:50.753Z"
+    },
+    {
+      "asOfDate": "2026-07-20",
+      "publishTime": "Wed, 22 Jul 2026 11:00:00 +0400",
+      "light": 1121,
+      "medium": 1506,
+      "heavy": 5865,
+      "savedAt": "2026-07-29T06:00:52.404Z"
+    },
+    {
+      "asOfDate": "2026-07-27",
+      "publishTime": "Wed, 29 Jul 2026 11:00:00 +0400",
+      "light": 1581,
+      "medium": 1442,
+      "heavy": 3488,
+      "savedAt": "2026-08-05T06:00:57.064Z"
+    },
+    {
+      "asOfDate": "2026-08-03",
+      "publishTime": "Wed, 5 Aug 2026 11:00:00 +0400",
+      "light": 1622,
+      "medium": 1593,
+      "heavy": 3787,
+      "savedAt": "2026-08-12T06:01:03.516Z"
+    },
+    {
+      "asOfDate": "2026-08-10",
+      "publishTime": "Wed, 12 Aug 2026 11:00:00 +0400",
+      "light": 1213,
+      "medium": 1497,
+      "heavy": 3597,
+      "savedAt": "2026-08-19T06:00:53.316Z"
     }
   ],
   "bunker": [
@@ -27,6 +163,56 @@
       "symbol5": 4679,
       "symbol6": 182,
       "savedAt": "2026-03-30T05:13:01.673Z"
+    },
+    {
+      "asOfDate": "2026-03-31",
+      "symbol1": 100,
+      "symbol2": 98204,
+      "symbol3": 51011,
+      "symbol4": 9338,
+      "symbol5": 1036,
+      "symbol6": 199,
+      "savedAt": "2026-04-21T18:00:16.962Z"
+    },
+    {
+      "asOfDate": "2026-04-30",
+      "symbol1": 542,
+      "symbol2": 81460,
+      "symbol3": 37214,
+      "symbol4": 7274,
+      "symbol5": 1572,
+      "symbol6": 73,
+      "savedAt": "2026-05-20T06:00:39.407Z"
+    },
+    {
+      "asOfDate": "2026-05-31",
+      "symbol1": 200,
+      "symbol2": 57382,
+      "symbol3": 31601,
+      "symbol4": 7157,
+      "symbol5": 1006,
+      "symbol6": 381,
+      "savedAt": "2026-06-24T06:00:14.354Z"
+    },
+    {
+      "asOfDate": "2026-06-30",
+      "symbol1": 2080,
+      "symbol2": 34590,
+      "symbol3": 42405,
+      "symbol4": 7513,
+      "symbol5": 1890,
+      "symbol6": 181,
+      "savedAt": "2026-07-22T06:00:50.753Z"
+    },
+    {
+      "asOfDate": "2026-07-31",
+      "symbol1": 1700,
+      "symbol2": 143487,
+      "symbol3": 70312,
+      "symbol4": 16198,
+      "symbol5": 2310,
+      "symbol6": 168,
+      "savedAt": "2026-08-19T06:00:53.317Z"
     }
   ]
 }

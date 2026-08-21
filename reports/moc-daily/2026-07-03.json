@@ -1,0 +1,40 @@
+{
+  "date": "2026-07-03",
+  "fluxOfficials": {
+    "assessment": 63.80,
+    "premium": -3.59,
+    "text": "Vitol declares Oman to Trafi - first convergence since May!"
+  },
+  "declarations": [
+    { "seller": "Vitol", "buyer": "Trafigura", "grade": "Oman", "count": 1, "month": "September", "time": "08:31:36Z" }
+  ],
+  "partialsTrades": {
+    "contract": "Sep26 Dubai Partials",
+    "price": 63.80,
+    "totalTrades": 21,
+    "totalVolume": 525,
+    "buyers": { "Trafigura": 17, "Mets": 2 },
+    "sellers": { "Vitol": 19, "Mercuria": 1, "Mets": 1 },
+    "convergence": "Vitol → Trafigura: 20 partials → 1 cargo September Oman"
+  },
+  "cashMurban": [
+    { "value": -2.05, "time": "08:32:16Z", "month": "September", "vs": "September Dubai Futures" },
+    { "value": -2.20, "time": "08:32:38Z", "month": "September", "vs": "September Dubai Futures" }
+  ],
+  "cashOman": [
+    { "value": -3.67, "time": "08:32:14Z", "month": "September", "vs": "September Dubai Futures" },
+    { "value": -3.80, "time": "08:32:36Z", "month": "September", "vs": "September Dubai Futures" }
+  ],
+  "errorTrades": [],
+  "finalsOnClose": {
+    "bids": "No crude-specific FINALS ON CLOSE data published yet",
+    "offers": "No crude-specific FINALS ON CLOSE data published yet"
+  },
+  "marketComments": {
+    "activeBiddersLastMinute": ["Trafigura", "Mets"],
+    "activeOfferersLastMinute": ["Vitol", "UniperAsia", "BP SG"],
+    "withdrawnOffers": ["BP SG withdrew at $64.10", "UniperAsia lowered offer to $64.10"],
+    "otherPartialParticipants": ["Mercuria Resources sold 1 lot to Trafigura"]
+  },
+  "reportGeneratedAt": "2026-07-03T08:36:00Z"
+}

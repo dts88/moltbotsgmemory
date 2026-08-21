@@ -1,0 +1,71 @@
+{
+  "date": "2026-05-13",
+  "generatedAt": "2026-05-13T08:40:00Z",
+  "fluxOfficials": {
+    "assessment": null,
+    "premium": null,
+    "text": "数据待更新"
+  },
+  "partials": {
+    "contract": "Jul26 Dubai Partials",
+    "convergencePrice": 104.90,
+    "spread": "F",
+    "totalVolume": 275,
+    "uniqueBuyer": "VITOLSG",
+    "seller": "BPSG",
+    "allTrades": [
+      { "seller": "BPSG", "buyer": "VITOLSG", "price": 104.90, "volume": 25, "time": "2026-05-13T08:29:17.473Z", "spread": "F" },
+      { "seller": "BPSG", "buyer": "VITOLSG", "price": 104.90, "volume": 25, "time": "2026-05-13T08:29:21.322Z", "spread": "F" },
+      { "seller": "BPSG", "buyer": "VITOLSG", "price": 104.90, "volume": 25, "time": "2026-05-13T08:29:24.671Z", "spread": "F" },
+      { "seller": "BPSG", "buyer": "VITOLSG", "price": 104.90, "volume": 25, "time": "2026-05-13T08:29:28.833Z", "spread": "F" },
+      { "seller": "BPSG", "buyer": "VITOLSG", "price": 104.90, "volume": 25, "time": "2026-05-13T08:29:33.649Z", "spread": "F" },
+      { "seller": "BPSG", "buyer": "VITOLSG", "price": 104.90, "volume": 25, "time": "2026-05-13T08:29:39.720Z", "spread": "F" },
+      { "seller": "BPSG", "buyer": "VITOLSG", "price": 104.90, "volume": 25, "time": "2026-05-13T08:29:42.844Z", "spread": "F" },
+      { "seller": "BPSG", "buyer": "VITOLSG", "price": 104.90, "volume": 25, "time": "2026-05-13T08:29:47.724Z", "spread": "F" },
+      { "seller": "BPSG", "buyer": "VITOLSG", "price": 104.90, "volume": 25, "time": "2026-05-13T08:29:52.708Z", "spread": "F" },
+      { "seller": "BPSG", "buyer": "VITOLSG", "price": 104.90, "volume": 25, "time": "2026-05-13T08:29:57.302Z", "spread": "F" },
+      { "seller": "BPSG", "buyer": "VITOLSG", "price": 104.90, "volume": 25, "time": "2026-05-13T08:30:01.769Z", "spread": "F" }
+    ],
+    "allDayOffers": {
+      "BPSG": { "count": 17, "min": 104.90, "max": 106.00 },
+      "RGES": { "count": 6, "min": 106.20, "max": 106.50 },
+      "P66SG": { "count": 5, "min": 106.80, "max": 107.00 },
+      "PCHK": { "count": 5, "min": 106.85, "max": 107.00 },
+      "UNIPECASIA": { "count": 4, "min": 106.10, "max": 106.20 },
+      "SIETCO": { "count": 3, "min": 106.30, "max": 106.30 }
+    },
+    "lastMinuteOffers": {
+      "BPSG": { "count": 5, "min": 104.90, "last": 104.90 },
+      "UNIPECASIA": { "count": 1, "min": 106.10, "last": 106.10 }
+    }
+  },
+  "declarations": [],
+  "cashMurban": [
+    { "value": 8.49, "time": "2026-05-13T08:31:05.955Z", "contract": "Jul26", "benchmark": "July Dubai Futures" },
+    { "value": 8.50, "time": "2026-05-13T08:35:05.443Z", "contract": "Jul26", "benchmark": "July Dubai Futures" }
+  ],
+  "cashOman": [
+    { "value": 8.19, "time": "2026-05-13T08:31:04.190Z", "contract": "Jul26", "benchmark": "July Dubai Futures" },
+    { "value": 8.30, "time": "2026-05-13T08:35:03.209Z", "contract": "Jul26", "benchmark": "July Dubai Futures" }
+  ],
+  "cashDubaiNotionals": {
+    "value": 8.08,
+    "contract": "Jul26",
+    "time": "2026-05-13T07:07:09.810Z",
+    "description": "Jul Cash Dubai/Futures Spread Pegged At $8.08/b at 15:00"
+  },
+  "errorTrades": [],
+  "finalsOnClose": {
+    "bids": "数据待更新",
+    "offers": "数据待更新"
+  },
+  "mideastConvergences": "数据待更新",
+  "dataSources": {
+    "partials": "eWindow API (order_state=consummated)",
+    "offers": "eWindow API (order_type=Offer)",
+    "cashMurbanOman": "Platts News Insights heards",
+    "declarations": "Platts News Insights heards (q=declares+crude)",
+    "fluxOfficials": "无法获取推文"
+  },
+  "notes": "MOC窗口于08:30 GMT关闭。Convergences文章通常在窗口关闭后~40分钟发布。FluxOfficials推文未能获取（bird CLI不可用）。"
+}

@@ -1,0 +1,549 @@
+{
+  "date": "2026-08-07",
+  "generatedAt": "2026-08-08T02:12:02.685Z",
+  "fluxOfficials": {
+    "assessment": null,
+    "premium": null,
+    "text": ""
+  },
+  "plattsAssessment": 80.75,
+  "ewindow": {
+    "offers": [
+      {
+        "company": "PCHK",
+        "price": 82,
+        "time": "2026-08-07T04:14:14.944",
+        "state": "active"
+      },
+      {
+        "company": "UNIPECASIA",
+        "price": 81.5,
+        "time": "2026-08-07T04:14:25.245",
+        "state": "active"
+      },
+      {
+        "company": "SHENGHPI",
+        "price": 82,
+        "time": "2026-08-07T04:14:27.239",
+        "state": "active"
+      },
+      {
+        "company": "GUNVORSG",
+        "price": 82,
+        "time": "2026-08-07T04:14:37.933",
+        "state": "active"
+      },
+      {
+        "company": "PCHK",
+        "price": 81.9,
+        "time": "2026-08-07T04:15:10.838",
+        "state": "active"
+      },
+      {
+        "company": "PCHK",
+        "price": 81.8,
+        "time": "2026-08-07T04:15:25.206",
+        "state": "active"
+      },
+      {
+        "company": "PCHK",
+        "price": 81.7,
+        "time": "2026-08-07T04:15:36.094",
+        "state": "active"
+      },
+      {
+        "company": "PCHK",
+        "price": 81.6,
+        "time": "2026-08-07T04:15:42.215",
+        "state": "active"
+      },
+      {
+        "company": "PCHK",
+        "price": 81.5,
+        "time": "2026-08-07T04:16:16.343",
+        "state": "active"
+      },
+      {
+        "company": "SHENGHPI",
+        "price": 81.9,
+        "time": "2026-08-07T04:17:14.472",
+        "state": "active"
+      },
+      {
+        "company": "SHENGHPI",
+        "price": 81.8,
+        "time": "2026-08-07T04:17:22.888",
+        "state": "active"
+      },
+      {
+        "company": "GUNVORSG",
+        "price": 81.9,
+        "time": "2026-08-07T04:17:35.479",
+        "state": "active"
+      },
+      {
+        "company": "SHENGHPI",
+        "price": 81.7,
+        "time": "2026-08-07T04:19:24.318",
+        "state": "active"
+      },
+      {
+        "company": "SHENGHPI",
+        "price": 81.6,
+        "time": "2026-08-07T04:21:05.635",
+        "state": "active"
+      },
+      {
+        "company": "SHENGHPI",
+        "price": 81.5,
+        "time": "2026-08-07T04:21:21.785",
+        "state": "active"
+      },
+      {
+        "company": "UNIPECASIA",
+        "price": 81.4,
+        "time": "2026-08-07T04:22:10.502",
+        "state": "active"
+      },
+      {
+        "company": "PCHK",
+        "price": 81.4,
+        "time": "2026-08-07T04:22:14.055",
+        "state": "active"
+      },
+      {
+        "company": "UNIPECASIA",
+        "price": 81.3,
+        "time": "2026-08-07T04:22:38.947",
+        "state": "active"
+      },
+      {
+        "company": "PCHK",
+        "price": 81.3,
+        "time": "2026-08-07T04:22:44.637",
+        "state": "active"
+      },
+      {
+        "company": "SHENGHPI",
+        "price": 81.4,
+        "time": "2026-08-07T04:22:50.926",
+        "state": "active"
+      },
+      {
+        "company": "GUNVORSG",
+        "price": 81.8,
+        "time": "2026-08-07T04:22:55.760",
+        "state": "active"
+      },
+      {
+        "company": "SHENGHPI",
+        "price": 81.3,
+        "time": "2026-08-07T04:23:02.721",
+        "state": "active"
+      },
+      {
+        "company": "PCHK",
+        "price": 81.2,
+        "time": "2026-08-07T04:25:20.617",
+        "state": "active"
+      },
+      {
+        "company": "UNIPECASIA",
+        "price": 81.2,
+        "time": "2026-08-07T04:26:10.881",
+        "state": "active"
+      },
+      {
+        "company": "PCHK",
+        "price": 81.1,
+        "time": "2026-08-07T04:26:15.911",
+        "state": "active"
+      },
+      {
+        "company": "SHENGHPI",
+        "price": 81.2,
+        "time": "2026-08-07T04:26:36.944",
+        "state": "active"
+      },
+      {
+        "company": "UNIPECASIA",
+        "price": 81.1,
+        "time": "2026-08-07T04:26:37.134",
+        "state": "active"
+      },
+      {
+        "company": "SHENGHPI",
+        "price": 81.1,
+        "time": "2026-08-07T04:26:45.178",
+        "state": "active"
+      },
+      {
+        "company": "PCHK",
+        "price": 81,
+        "time": "2026-08-07T04:27:55.177",
+        "state": "active"
+      },
+      {
+        "company": "SHENGHPI",
+        "price": 81,
+        "time": "2026-08-07T04:28:16.120",
+        "state": "active"
+      },
+      {
+        "company": "UNIPECASIA",
+        "price": 81,
+        "time": "2026-08-07T04:28:18.226",
+        "state": "active"
+      },
+      {
+        "company": "PCHK",
+        "price": 80.9,
+        "time": "2026-08-07T04:28:22.264",
+        "state": "active"
+      },
+      {
+        "company": "PCHK",
+        "price": 80.8,
+        "time": "2026-08-07T04:28:34.604",
+        "state": "active"
+      },
+      {
+        "company": "SHENGHPI",
+        "price": 80.9,
+        "time": "2026-08-07T04:28:40.247",
+        "state": "active"
+      },
+      {
+        "company": "UNIPECASIA",
+        "price": 80.9,
+        "time": "2026-08-07T04:28:43.894",
+        "state": "active"
+      },
+      {
+        "company": "UNIPECASIA",
+        "price": 80.8,
+        "time": "2026-08-07T04:28:52.847",
+        "state": "active"
+      },
+      {
+        "company": "SHENGHPI",
+        "price": 80.8,
+        "time": "2026-08-07T04:29:05.477",
+        "state": "active"
+      },
+      {
+        "company": "SHENGHPI",
+        "price": 80.75,
+        "time": "2026-08-07T04:29:16.637",
+        "state": "active"
+      },
+      {
+        "company": "SHENGHPI",
+        "price": 80.75,
+        "time": "2026-08-07T04:29:47.170",
+        "state": "consummated"
+      },
+      {
+        "company": "GUNVORSG",
+        "price": 81.8,
+        "time": "2026-08-07T04:30:00.000",
+        "state": "inactive"
+      },
+      {
+        "company": "UNIPECASIA",
+        "price": 80.8,
+        "time": "2026-08-07T04:30:00.000",
+        "state": "inactive"
+      },
+      {
+        "company": "PCHK",
+        "price": 80.8,
+        "time": "2026-08-07T04:30:00.000",
+        "state": "inactive"
+      },
+      {
+        "company": "UNIPECASIA",
+        "price": 80.8,
+        "time": "2026-08-07T04:30:03.780",
+        "state": "withdrawn"
+      }
+    ],
+    "trades": [
+      {
+        "seller": "PCHK",
+        "buyer": "VITOLSG",
+        "price": 80.7,
+        "quantity": 25,
+        "strip": "Oct26",
+        "time": "2026-08-07T04:29:34.215"
+      },
+      {
+        "seller": "SHENGHPI",
+        "buyer": "VITOLSG",
+        "price": 80.75,
+        "quantity": 25,
+        "strip": "Oct26",
+        "time": "2026-08-07T04:29:47.170"
+      },
+      {
+        "seller": "PCHK",
+        "buyer": "VITOLSG",
+        "price": 80.7,
+        "quantity": 25,
+        "strip": "Oct26",
+        "time": "2026-08-07T04:29:47.387"
+      },
+      {
+        "seller": "PCHK",
+        "buyer": "GUNVORSG",
+        "price": 80.75,
+        "quantity": 25,
+        "strip": "Oct26",
+        "time": "2026-08-07T04:29:52.623"
+      },
+      {
+        "seller": "PCHK",
+        "buyer": "VITOLSG",
+        "price": 80.79,
+        "quantity": 25,
+        "strip": "Oct26",
+        "time": "2026-08-07T04:29:57.867"
+      },
+      {
+        "seller": "PCHK",
+        "buyer": "GUNVORSG",
+        "price": 80.75,
+        "quantity": 25,
+        "strip": "Oct26",
+        "time": "2026-08-07T04:29:59.449"
+      }
+    ]
+  },
+  "declarations": [],
+  "cashMurban": [
+    {
+      "headline": "Platts Crude: October Cash Murban Heard At $7.40/B Over October Dubai Futures",
+      "time": "2026-08-07T04:31:14.485Z"
+    },
+    {
+      "headline": "Platts Crude: October Cash Murban Heard At $7.24/B Over October Dubai Futures",
+      "time": "2026-08-07T05:15:26.491Z"
+    }
+  ],
+  "cashOman": [],
+  "dealsSummary": [
+    {
+      "headline": "Platts Dubai Partial Oct26, TRAFI raises bid $79.80 for 25 4:28:40.545 GMT",
+      "time": "2026-08-07T04:28:40.605Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, VITOLSG raises bid $79.90 for 25 4:28:41.004 GMT",
+      "time": "2026-08-07T04:28:41.05Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, GUNVORSG raises bid $79.95 for 25 4:28:41.173 GMT",
+      "time": "2026-08-07T04:28:41.197Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, EXTAP raises bid $79.84 for 25 4:28:42.678 GMT",
+      "time": "2026-08-07T04:28:42.709Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, UNIPECASIA lowers offer $80.90 for 25 4:28:43.894 GMT",
+      "time": "2026-08-07T04:28:43.921Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, P66SG raises bid $79.80 for 25 4:28:49.622 GMT",
+      "time": "2026-08-07T04:28:49.672Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, VITOLSG raises bid $80.00 for 25 4:28:51.006 GMT",
+      "time": "2026-08-07T04:28:51.089Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, UNIPECASIA lowers offer $80.80 for 25 4:28:52.847 GMT",
+      "time": "2026-08-07T04:28:52.878Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, GUNVORSG raises bid $80.05 for 25 4:28:53.789 GMT",
+      "time": "2026-08-07T04:28:53.819Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, VITOLSG raises bid $80.10 for 25 4:28:56.447 GMT",
+      "time": "2026-08-07T04:28:56.471Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, PETCO raises bid $79.90 for 25 4:28:58.679 GMT",
+      "time": "2026-08-07T04:28:58.703Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, TRAFI raises bid $79.90 for 25 4:29:01.324 GMT",
+      "time": "2026-08-07T04:29:01.35Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, VITOLSG raises bid $80.20 for 25 4:29:01.702 GMT",
+      "time": "2026-08-07T04:29:01.731Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, GUNVORSG raises bid $80.15 for 25 4:29:02.943 GMT",
+      "time": "2026-08-07T04:29:03.008Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, PETCO raises bid $80.00 for 25 4:29:03.969 GMT",
+      "time": "2026-08-07T04:29:04.067Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, EXTAP raises bid $79.94 for 25 4:29:05.047 GMT",
+      "time": "2026-08-07T04:29:05.091Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, SHENGHPI lowers offer $80.80 for 25 4:29:05.477 GMT",
+      "time": "2026-08-07T04:29:05.52Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, VITOLSG raises bid $80.30 for 25 4:29:07.538 GMT",
+      "time": "2026-08-07T04:29:07.602Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, GUNVORSG raises bid $80.25 for 25 4:29:12.660 GMT",
+      "time": "2026-08-07T04:29:12.739Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, VITOLSG raises bid $80.40 for 25 4:29:13.267 GMT",
+      "time": "2026-08-07T04:29:13.425Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, SHENGHPI lowers offer $80.75 for 25 4:29:16.637 GMT",
+      "time": "2026-08-07T04:29:16.662Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, P66SG raises bid $79.90 for 25 4:29:16.702 GMT",
+      "time": "2026-08-07T04:29:16.755Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, TRAFI raises bid $80.00 for 25 4:29:18.042 GMT",
+      "time": "2026-08-07T04:29:18.089Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, VITOLSG raises bid $80.50 for 25 4:29:18.525 GMT",
+      "time": "2026-08-07T04:29:18.549Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, GUNVORSG raises bid $80.35 for 25 4:29:20.261 GMT",
+      "time": "2026-08-07T04:29:20.284Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, VITOLSG raises bid $80.60 for 25 4:29:23.686 GMT",
+      "time": "2026-08-07T04:29:23.726Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, P66SG raises bid $80.00 for 25 4:29:26.568 GMT",
+      "time": "2026-08-07T04:29:26.764Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, GUNVORSG raises bid $80.45 for 25 4:29:27.598 GMT",
+      "time": "2026-08-07T04:29:27.725Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, VITOLSG raises bid $80.70 for 25 4:29:29.196 GMT",
+      "time": "2026-08-07T04:29:29.222Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, PETCO raises bid $80.10 for 25 4:29:29.392 GMT",
+      "time": "2026-08-07T04:29:29.663Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, EXTAP raises bid $80.00 for 25 4:29:32.102 GMT",
+      "time": "2026-08-07T04:29:32.128Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, PCHK SELLS TO VITOLSG  $80.70 for 25 4:29:34.215 GMT",
+      "time": "2026-08-07T04:29:34.306Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, GUNVORSG raises bid $80.55 for 25 4:29:35.495 GMT",
+      "time": "2026-08-07T04:29:35.523Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, VITOLSG bids on $80.70 for 25 4:29:39.224 GMT",
+      "time": "2026-08-07T04:29:39.247Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, EXTAP raises bid $80.10 for 25 4:29:39.732 GMT",
+      "time": "2026-08-07T04:29:39.834Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, GUNVORSG raises bid $80.65 for 25 4:29:42.375 GMT",
+      "time": "2026-08-07T04:29:42.398Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, P66SG raises bid $80.10 for 25 4:29:44.032 GMT",
+      "time": "2026-08-07T04:29:44.066Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, VITOLSG BUYS FROM SHENGHPI  $80.75 for 25 4:29:47.170 GMT",
+      "time": "2026-08-07T04:29:47.207Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, PCHK SELLS TO VITOLSG  $80.70 for 25 4:29:47.387 GMT",
+      "time": "2026-08-07T04:29:47.412Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, TRAFI raises bid $80.10 for 25 4:29:47.930 GMT",
+      "time": "2026-08-07T04:29:47.97Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, GUNVORSG raises bid $80.75 for 25 4:29:50.118 GMT",
+      "time": "2026-08-07T04:29:50.14Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, VITOLSG bids on $80.70 for 25 4:29:50.309 GMT",
+      "time": "2026-08-07T04:29:50.332Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, PCHK SELLS TO GUNVORSG  $80.75 for 25 4:29:52.623 GMT",
+      "time": "2026-08-07T04:29:52.664Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, VITOLSG raises bid $80.79 for 25 4:29:56.186 GMT",
+      "time": "2026-08-07T04:29:56.211Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, GUNVORSG bids on $80.75 for 25 4:29:56.821 GMT",
+      "time": "2026-08-07T04:29:57.024Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, PCHK SELLS TO VITOLSG  $80.79 for 25 4:29:57.867 GMT",
+      "time": "2026-08-07T04:29:57.894Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, P66SG raises bid $80.20 for 25 4:29:57.895 GMT",
+      "time": "2026-08-07T04:29:57.946Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, PCHK SELLS TO GUNVORSG  $80.75 for 25 4:29:59.449 GMT",
+      "time": "2026-08-07T04:29:59.662Z"
+    },
+    {
+      "headline": "Platts Dubai Partial Oct26, P66SG withdraws bid $80.20 for 25 4:30:05.054 GMT",
+      "time": "2026-08-07T04:30:05.08Z"
+    },
+    {
+      "headline": "PLATTS CRUDE: PLATTS ASIA DEALS SUMMARY: DUBAI PARTIALS: 6 TRADES: ",
+      "time": "2026-08-07T04:51:44.616Z"
+    }
+  ],
+  "dealsSummaryContent": {
+    "headline": "PLATTS CRUDE: PLATTS ASIA DEALS SUMMARY: DUBAI PARTIALS: 6 TRADES: ",
+    "body": "PLATTS CRUDE: PLATTS ASIA DEALS SUMMARY: DUBAI PARTIALS: 6 TRADES: \nPLATTS DUBAI: OCT26: PETROCHINA SELLS TO VITOL* AT $80.70 FOR 25KB (04:29:34)\nPLATTS DUBAI: OCT26: VITOL BUYS FROM SHENGHONG* AT $80.75 FOR 25KB (04:29:47)\nPLATTS DUBAI: OCT26: PETROCHINA SELLS TO VITOL* AT $80.70 FOR 25KB (04:29:47)\nPLATTS DUBAI: OCT26: PETROCHINA SELLS TO GUNVOR* AT $80.75 FOR 25KB (04:29:52)\nPLATTS DUBAI: OCT26: PETROCHINA SELLS TO VITOL* AT $80.79 FOR 25KB (04:29:57)\nPLATTS DUBAI: OCT26: PETROCHINA SELLS TO GUNVOR* AT $80.75 FOR 25KB (04:29:59)\n  4:51:44.591 GMT"
+  },
+  "convergenceContent": {
+    "headline": "Platts Oil Mideast Sour Crude Convergences",
+    "body": "None reported."
+  },
+  "finalsOnCloseContent": {
+    "headline": "PLATTS CRUDE: CRUDE MARKETS: FINALS ON CLOSE:",
+    "body": "PLATTS CRUDE: CRUDE MARKETS: FINALS ON CLOSE:\nOctober Dubai    80.20/80.80 (P66*/PCHK,Unipec)\nOctober Oman     --/--      \nOctober Murban     --/--    \nOctober Das Blend cargo  --/-- \nOctober Murban cargo --/--        \nOctober Dubai cargo  --/--   \nOctober Upper Zakum cargo   --/--  \nOctober Al-Shaheen cargo  --/--    \n*Withdraws during extension \n**Trades during extension  4:52:45.638 GMT"
+  },
+  "errorTrades": []
+}

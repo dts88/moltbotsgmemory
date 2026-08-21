@@ -1,0 +1,53 @@
+{
+  "date": "2026-07-10",
+  "fluxOfficials": null,
+  "declarations": [],
+  "declarationsNote": "No cargo declarations reported for Jul 10",
+  "partials": {
+    "contract": "Sep26 Dubai Partial",
+    "trades": [
+      { "seller": "VITOLSG", "buyer": "METS", "price": 69.40, "qty": 25, "time": "08:29:16Z" },
+      { "seller": "MERCURIARESOURCES", "buyer": "METS", "price": 69.40, "qty": 25, "time": "08:29:23Z" },
+      { "seller": "VITOLSG", "buyer": "METS", "price": 69.40, "qty": 25, "time": "08:29:28Z" },
+      { "seller": "MERCURIARESOURCES", "buyer": "TRAFI", "price": 69.40, "qty": 25, "time": "08:29:29Z" },
+      { "seller": "MERCURIARESOURCES", "buyer": "METS", "price": 69.40, "qty": 25, "time": "08:29:34Z" },
+      { "seller": "SHENGHPI", "buyer": "PCHK", "price": 69.60, "qty": 25, "time": "08:29:35Z" },
+      { "seller": "MERCURIARESOURCES", "buyer": "METS", "price": 69.40, "qty": 25, "time": "08:29:41Z" },
+      { "seller": "VITOLSG", "buyer": "METS", "price": 69.41, "qty": 25, "time": "08:29:56Z" },
+      { "seller": "MERCURIARESOURCES", "buyer": "TRAFI", "price": 69.50, "qty": 25, "time": "08:29:59Z" }
+    ],
+    "totalTrades": 9,
+    "convergencePrice": "69.40-69.60",
+    "dominantPrice": 69.40,
+    "buyersSummary": {
+      "METS": 6,
+      "TRAFI": 2,
+      "PCHK": 1
+    },
+    "sellersSummary": {
+      "MERCURIARESOURCES": 4,
+      "VITOLSG": 3,
+      "SHENGHPI": 1
+    },
+    "finalBidOffer": {
+      "highestBid": 69.40,
+      "lowestOffer": 69.41,
+      "bidders": ["METS($69.40)", "TRAFI($69.40)", "BPSG($69.10)", "P66SG($68.80)", "SIETCO($68.20)"],
+      "offerers": ["VITOLSG($69.41)", "MERCURIARESOURCES($69.50)", "SHENGHPI($69.60)"]
+    },
+    "allDayOffers": { "totalRecords": 51 },
+    "allDayBids": { "totalRecords": 90 }
+  },
+  "cashMurban": [
+    { "value": -1.15, "time": "08:31:13Z", "description": "Sep Cash Murban Heard At Minus $1.15/B vs Sep Dubai" },
+    { "value": -1.10, "time": "08:32:43Z", "description": "Sep Cash Murban Heard At Minus $1.10/B vs Sep Dubai" }
+  ],
+  "cashOman": [
+    { "value": -2.15, "time": "08:31:10Z", "description": "Sep Cash Oman Heard At Minus $2.15/B vs Sep Dubai" },
+    { "value": -2.10, "time": "08:32:41Z", "description": "Sep Cash Oman Heard At Minus $2.10/B vs Sep Dubai" }
+  ],
+  "errorTrades": [],
+  "finalsOnClose": { "bids": "数据待更新", "offers": "数据待更新" },
+  "dubaiAssessmentPrev": 70.47,
+  "notes": "MOC closed with active trading in Sep26 Dubai Partials. $69.40 dominant convergence price. No cargo declarations."
+}

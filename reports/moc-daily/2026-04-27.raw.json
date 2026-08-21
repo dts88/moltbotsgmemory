@@ -1,0 +1,375 @@
+{
+  "date": "2026-04-27",
+  "flux": {
+    "error": "Error: ENOENT: no such file or directory, open '.twitter-env'"
+  },
+  "ewindowOffers": [],
+  "ewindowTrades": [],
+  "declarationsHeards": [
+    {
+      "headline": "ASIA CRUDE DEALS SUMMARY: RECAP: APRIL 24: DUBAI PARTIALS: 19 TRADES: PART 2/2:",
+      "id": "9672cdd7-de84-445f-a9b6-73b2ab4bf251",
+      "updatedDate": "2026-04-27T01:59:01.392Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=9672cdd7-de84-445f-a9b6-73b2ab4bf251"
+    },
+    {
+      "headline": "Platts Crude: Unipec declares a cargo of June Oman crude to TotalEnergies following the convergence of 20 partials in Pl",
+      "id": "6e8ea939-5530-4c65-83c8-9003a288b188",
+      "updatedDate": "2026-04-27T08:24:52.222Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=6e8ea939-5530-4c65-83c8-9003a288b188"
+    },
+    {
+      "headline": "Platts Crude: Unipec declares a cargo of June Oman crude to Mercuria following the convergence of 20 partials in Platts ",
+      "id": "505fdd12-ad79-421b-9cd5-c3bf81e6b956",
+      "updatedDate": "2026-04-27T08:30:30.161Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=505fdd12-ad79-421b-9cd5-c3bf81e6b956"
+    },
+    {
+      "headline": "Platts Crude: Unipec declares a cargo of June Oman crude to TotalEnergies following the convergence of 20 partials in Pl",
+      "id": "ba95e25b-7cdf-4ff4-b00c-192286629255",
+      "updatedDate": "2026-04-27T08:30:32.851Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=ba95e25b-7cdf-4ff4-b00c-192286629255"
+    },
+    {
+      "headline": "Platts Crude: Shell declares a cargo of June Oman crude to TotalEnergies following the convergence of 20 partials in Pla",
+      "id": "addf6762-62e0-4744-9e3b-a6b561eb3cdf",
+      "updatedDate": "2026-04-27T08:31:35.327Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=addf6762-62e0-4744-9e3b-a6b561eb3cdf"
+    }
+  ],
+  "dealsHeards": [
+    {
+      "headline": "Platts Dubai Partial Jun26, UNIPECASIA offers on $104.00 for 25 8:27:32.322 GMT",
+      "id": "9c287b33-f330-4b3b-ba26-d02b663622bf",
+      "updatedDate": "2026-04-27T08:27:32.411Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=9c287b33-f330-4b3b-ba26-d02b663622bf"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.00 for 25 8:27:39.782 GMT",
+      "id": "3bd80e40-074f-4c0a-aa64-3e9b886e9b47",
+      "updatedDate": "2026-04-27T08:27:39.872Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=3bd80e40-074f-4c0a-aa64-3e9b886e9b47"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, UNIPECASIA offers on $104.00 for 25 8:27:41.648 GMT",
+      "id": "fcd2ddec-22d9-4751-a6c5-e0684be9999f",
+      "updatedDate": "2026-04-27T08:27:41.736Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=fcd2ddec-22d9-4751-a6c5-e0684be9999f"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.00 for 25 8:27:48.847 GMT",
+      "id": "db622934-f270-4471-a005-1fca22a33437",
+      "updatedDate": "2026-04-27T08:27:48.955Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=db622934-f270-4471-a005-1fca22a33437"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, UNIPECASIA offers on $104.00 for 25 8:27:50.445 GMT",
+      "id": "bb020368-f8c1-4822-9265-b7f8c8e269df",
+      "updatedDate": "2026-04-27T08:27:50.534Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=bb020368-f8c1-4822-9265-b7f8c8e269df"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.00 for 25 8:27:57.470 GMT",
+      "id": "eda23a8d-a6d4-4a15-8d13-534dc5dad657",
+      "updatedDate": "2026-04-27T08:27:57.56Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=eda23a8d-a6d4-4a15-8d13-534dc5dad657"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, UNIPECASIA offers on $104.00 for 25 8:27:59.183 GMT",
+      "id": "bbaf4ae8-a790-4d22-9193-b2da6869bdb4",
+      "updatedDate": "2026-04-27T08:27:59.27Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=bbaf4ae8-a790-4d22-9193-b2da6869bdb4"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, P66SG lowers offer $106.30 for 25 8:27:59.390 GMT",
+      "id": "950a1d1e-771b-4447-96fc-3412d0e8860e",
+      "updatedDate": "2026-04-27T08:27:59.477Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=950a1d1e-771b-4447-96fc-3412d0e8860e"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.00 for 25 8:28:06.993 GMT",
+      "id": "c1d18221-1d72-4c20-a185-0eab57691a4a",
+      "updatedDate": "2026-04-27T08:28:07.104Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=c1d18221-1d72-4c20-a185-0eab57691a4a"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, UNIPECASIA offers on $104.00 for 25 8:28:07.937 GMT",
+      "id": "c6d12e1e-c97d-44e8-aad6-5a2627a41fd9",
+      "updatedDate": "2026-04-27T08:28:08.093Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=c6d12e1e-c97d-44e8-aad6-5a2627a41fd9"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $104.15 for 25 8:28:13.643 GMT",
+      "id": "1c6d964a-3e55-451a-ae03-55166e78126a",
+      "updatedDate": "2026-04-27T08:28:13.766Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=1c6d964a-3e55-451a-ae03-55166e78126a"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.00 for 25 8:28:15.591 GMT",
+      "id": "488ea42c-a60e-4a20-b2cd-e57165d08107",
+      "updatedDate": "2026-04-27T08:28:15.71Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=488ea42c-a60e-4a20-b2cd-e57165d08107"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, UNIPECASIA offers on $104.00 for 25 8:28:16.914 GMT",
+      "id": "51ea1ef9-a12f-49ed-be86-f9db21cd8415",
+      "updatedDate": "2026-04-27T08:28:17.006Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=51ea1ef9-a12f-49ed-be86-f9db21cd8415"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, MERCURIARESOURCES BUYS FROM UNIPECASIA  $104.00 for 25 8:28:19.778 GMT",
+      "id": "a169d69d-b2c4-4d76-9ad0-329c044d4e56",
+      "updatedDate": "2026-04-27T08:28:19.877Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=a169d69d-b2c4-4d76-9ad0-329c044d4e56"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, UNIPECASIA offers on $104.00 for 25 8:28:21.461 GMT",
+      "id": "1797c05a-46e5-4809-ae83-5db74768c312",
+      "updatedDate": "2026-04-27T08:28:21.553Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=1797c05a-46e5-4809-ae83-5db74768c312"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, MERCURIARESOURCES BUYS FROM UNIPECASIA  $104.00 for 25 8:28:31.607 GMT",
+      "id": "dd0e9412-61c5-45fc-9a4e-21f5762ebf4f",
+      "updatedDate": "2026-04-27T08:28:31.698Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=dd0e9412-61c5-45fc-9a4e-21f5762ebf4f"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, UNIPECASIA offers on $104.00 for 25 8:28:32.851 GMT",
+      "id": "84cb1007-f481-4a0b-87b3-37f82e10600b",
+      "updatedDate": "2026-04-27T08:28:32.939Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=84cb1007-f481-4a0b-87b3-37f82e10600b"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, BPSG lowers offer $106.50 for 25 8:28:45.094 GMT",
+      "id": "b7c00456-872d-4b57-a450-1de2c30ed931",
+      "updatedDate": "2026-04-27T08:28:45.326Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=b7c00456-872d-4b57-a450-1de2c30ed931"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.00 for 25 8:28:45.337 GMT",
+      "id": "34ac7e9a-6941-43e8-83dd-f6f36298c6c0",
+      "updatedDate": "2026-04-27T08:28:45.511Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=34ac7e9a-6941-43e8-83dd-f6f36298c6c0"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, UNIPECASIA offers on $104.00 for 25 8:28:47.524 GMT",
+      "id": "f50a7a9c-d1f9-47d9-88a2-b9e50fc35e2f",
+      "updatedDate": "2026-04-27T08:28:47.611Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=f50a7a9c-d1f9-47d9-88a2-b9e50fc35e2f"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, BPSG lowers offer $106.40 for 25 8:28:50.885 GMT",
+      "id": "44555cc2-7221-4b24-a225-ad97a15edd02",
+      "updatedDate": "2026-04-27T08:28:51.237Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=44555cc2-7221-4b24-a225-ad97a15edd02"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, P66SG lowers offer $106.20 for 25 8:28:54.121 GMT",
+      "id": "4798b512-eb32-41c4-b9cd-0b94c6dd77fd",
+      "updatedDate": "2026-04-27T08:28:54.351Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=4798b512-eb32-41c4-b9cd-0b94c6dd77fd"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.00 for 25 8:28:59.016 GMT",
+      "id": "a1a4014f-08cf-46fd-9088-2213f8c342ee",
+      "updatedDate": "2026-04-27T08:28:59.107Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=a1a4014f-08cf-46fd-9088-2213f8c342ee"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, BPSG lowers offer $106.30 for 25 8:28:59.488 GMT",
+      "id": "7c4313c8-2a6e-41ad-a1f8-ee4514a46fa4",
+      "updatedDate": "2026-04-27T08:28:59.772Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=7c4313c8-2a6e-41ad-a1f8-ee4514a46fa4"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, UNIPECASIA offers on $104.00 for 25 8:29:00.546 GMT",
+      "id": "19c7a9b8-e451-491b-a8a5-be67eb6d3958",
+      "updatedDate": "2026-04-27T08:29:00.661Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=19c7a9b8-e451-491b-a8a5-be67eb6d3958"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, METS lowers offer $104.70 for 25 8:29:04.843 GMT",
+      "id": "d3784516-5053-42d5-94a6-1c7b5c944fac",
+      "updatedDate": "2026-04-27T08:29:04.978Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=d3784516-5053-42d5-94a6-1c7b5c944fac"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, BPSG lowers offer $106.20 for 25 8:29:06.180 GMT",
+      "id": "c66295a1-0e1c-485b-a589-9c03f4c91c3b",
+      "updatedDate": "2026-04-27T08:29:06.267Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=c66295a1-0e1c-485b-a589-9c03f4c91c3b"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, BPSG lowers offer $106.10 for 25 8:29:11.643 GMT",
+      "id": "b9ec08a2-6bd0-4049-af58-155187e97715",
+      "updatedDate": "2026-04-27T08:29:11.739Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=b9ec08a2-6bd0-4049-af58-155187e97715"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.00 for 25 8:29:13.241 GMT",
+      "id": "c6056c5b-0da0-4233-9502-ec86dd47c51a",
+      "updatedDate": "2026-04-27T08:29:13.488Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=c6056c5b-0da0-4233-9502-ec86dd47c51a"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, UNIPECASIA offers on $104.00 for 25 8:29:16.820 GMT",
+      "id": "53cbd6b3-c0e9-4c1a-bac4-c4c2323aa5cf",
+      "updatedDate": "2026-04-27T08:29:16.934Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=53cbd6b3-c0e9-4c1a-bac4-c4c2323aa5cf"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, BPSG lowers offer $106.00 for 25 8:29:20.419 GMT",
+      "id": "e63ab6f1-cc5a-44fc-b290-e8ce7c548d14",
+      "updatedDate": "2026-04-27T08:29:20.516Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=e63ab6f1-cc5a-44fc-b290-e8ce7c548d14"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.00 for 25 8:29:24.178 GMT",
+      "id": "d5d45741-8b97-4f75-80b3-2e8b77c7c53e",
+      "updatedDate": "2026-04-27T08:29:24.272Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=d5d45741-8b97-4f75-80b3-2e8b77c7c53e"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, UNIPECASIA offers on $104.20 for 25 8:29:30.260 GMT",
+      "id": "32119bab-3d0d-40cf-87c4-dab1d8d9e1bf",
+      "updatedDate": "2026-04-27T08:29:30.348Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=32119bab-3d0d-40cf-87c4-dab1d8d9e1bf"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM SIETCO  $104.15 for 25 8:29:35.172 GMT",
+      "id": "c735c815-e5d4-4526-a94f-c925cd209949",
+      "updatedDate": "2026-04-27T08:29:35.438Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=c735c815-e5d4-4526-a94f-c925cd209949"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.20 for 25 8:29:39.207 GMT",
+      "id": "d8fd4348-4c02-4f46-9ac4-d2115536d249",
+      "updatedDate": "2026-04-27T08:29:39.398Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=d8fd4348-4c02-4f46-9ac4-d2115536d249"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, SIETCO offers on $104.15 for 25 8:29:39.454 GMT",
+      "id": "1f185db1-7f86-49ca-b01c-b1e5c34a7ae4",
+      "updatedDate": "2026-04-27T08:29:39.622Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=1f185db1-7f86-49ca-b01c-b1e5c34a7ae4"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM SIETCO  $104.15 for 25 8:29:44.895 GMT",
+      "id": "ade3d361-e6b9-43d8-9e80-d461a105caa9",
+      "updatedDate": "2026-04-27T08:29:45.084Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=ade3d361-e6b9-43d8-9e80-d461a105caa9"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, UNIPECASIA offers on $104.30 for 25 8:29:45.453 GMT",
+      "id": "55bd678e-c638-4312-b1d0-23ac6de316e0",
+      "updatedDate": "2026-04-27T08:29:45.635Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=55bd678e-c638-4312-b1d0-23ac6de316e0"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, METS raises offer $104.79 for 25 8:29:50.853 GMT",
+      "id": "a44c23aa-6eb8-475d-9c58-3992357375b2",
+      "updatedDate": "2026-04-27T08:29:50.95Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=a44c23aa-6eb8-475d-9c58-3992357375b2"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $104.20 for 25 8:29:51.651 GMT",
+      "id": "88ee9aa3-8a2c-42be-917f-09b8cf69f8b0",
+      "updatedDate": "2026-04-27T08:29:51.741Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=88ee9aa3-8a2c-42be-917f-09b8cf69f8b0"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.20 for 25 8:29:52.173 GMT",
+      "id": "9917551f-5a90-49a9-82c8-3c1dc1ca7dda",
+      "updatedDate": "2026-04-27T08:29:52.264Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=9917551f-5a90-49a9-82c8-3c1dc1ca7dda"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM METS  $104.79 for 25 8:29:53.800 GMT",
+      "id": "38fcb2f6-926c-497d-bb02-37ed9742ac5e",
+      "updatedDate": "2026-04-27T08:29:53.891Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=38fcb2f6-926c-497d-bb02-37ed9742ac5e"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, UNIPECASIA offers on $104.20 for 25 8:29:53.839 GMT",
+      "id": "9bfc33fa-7755-447a-b2ab-af7518de70b3",
+      "updatedDate": "2026-04-27T08:29:53.982Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=9bfc33fa-7755-447a-b2ab-af7518de70b3"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.20 for 25 8:29:56.022 GMT",
+      "id": "f3e3c89b-37c0-4821-9ac9-06b91c5acf50",
+      "updatedDate": "2026-04-27T08:29:56.176Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=f3e3c89b-37c0-4821-9ac9-06b91c5acf50"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, UNIPECASIA offers on $104.20 for 25 8:29:57.869 GMT",
+      "id": "5ad5e8e8-5b25-4350-a701-8944750ca808",
+      "updatedDate": "2026-04-27T08:29:57.994Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=5ad5e8e8-5b25-4350-a701-8944750ca808"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM UNIPECASIA  $104.20 for 25 8:29:58.363 GMT",
+      "id": "ed5949b0-b19a-48d6-85c5-255b1a4e53a8",
+      "updatedDate": "2026-04-27T08:29:58.564Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=ed5949b0-b19a-48d6-85c5-255b1a4e53a8"
+    },
+    {
+      "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM SIETCO  $104.80 for 25 8:29:59.409 GMT",
+      "id": "39aa12d0-7f6b-47f5-882c-a3c1ac5d7d7f",
+      "updatedDate": "2026-04-27T08:29:59.506Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=39aa12d0-7f6b-47f5-882c-a3c1ac5d7d7f"
+    },
+    {
+      "headline": "Platts Crude: Unipec declares a cargo of June Oman crude to Mercuria following the convergence of 20 partials in Platts ",
+      "id": "505fdd12-ad79-421b-9cd5-c3bf81e6b956",
+      "updatedDate": "2026-04-27T08:30:30.161Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=505fdd12-ad79-421b-9cd5-c3bf81e6b956"
+    },
+    {
+      "headline": "Platts Crude: Unipec declares a cargo of June Oman crude to TotalEnergies following the convergence of 20 partials in Pl",
+      "id": "ba95e25b-7cdf-4ff4-b00c-192286629255",
+      "updatedDate": "2026-04-27T08:30:32.851Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=ba95e25b-7cdf-4ff4-b00c-192286629255"
+    },
+    {
+      "headline": "Platts Crude: Shell declares a cargo of June Oman crude to TotalEnergies following the convergence of 20 partials in Pla",
+      "id": "addf6762-62e0-4744-9e3b-a6b561eb3cdf",
+      "updatedDate": "2026-04-27T08:31:35.327Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=addf6762-62e0-4744-9e3b-a6b561eb3cdf"
+    }
+  ],
+  "cashMurbanHeards": [
+    {
+      "headline": "Platts Crude: June Cash Murban Heard At $8.75/B Over June Dubai Futures",
+      "id": "f9ddc2e6-f5de-410a-9f0c-f00223e1773e",
+      "updatedDate": "2026-04-27T08:33:58.763Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=f9ddc2e6-f5de-410a-9f0c-f00223e1773e"
+    },
+    {
+      "headline": "Platts Crude: June Cash Murban Heard At $8.90/B Over June Dubai Futures",
+      "id": "9c014053-0e83-46b3-8e0c-0766ef8b9d99",
+      "updatedDate": "2026-04-27T08:34:26.219Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=9c014053-0e83-46b3-8e0c-0766ef8b9d99"
+    }
+  ],
+  "cashOmanHeards": [
+    {
+      "headline": "ASIA CRUDE DEALS SUMMARY: RECAP: APRIL 24: DUBAI PARTIALS: 19 TRADES: PART 2/2:",
+      "id": "9672cdd7-de84-445f-a9b6-73b2ab4bf251",
+      "updatedDate": "2026-04-27T01:59:01.392Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=9672cdd7-de84-445f-a9b6-73b2ab4bf251"
+    },
+    {
+      "headline": "Platts Crude: June Cash Oman Heard At $5.44/B Over June Dubai Futures",
+      "id": "be89401f-89f3-42ac-9b1a-430d74c67f86",
+      "updatedDate": "2026-04-27T08:34:23.407Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=be89401f-89f3-42ac-9b1a-430d74c67f86"
+    }
+  ],
+  "finalsBidsHeards": [],
+  "finalsOffersHeards": [],
+  "errorTradeHeards": [],
+  "convergenceHeards": [],
+  "errorTradeBodies": []
+}

@@ -1,0 +1,56 @@
+{
+  "date": "2026-06-12",
+  "fluxOfficials": {
+    "assessment": 82.21,
+    "premium": 3.81,
+    "text": "The Officials MOC: Date 12/6/2026\nDubai Assessment: $82.21/bbl\nPhysical premium: $3.81/bbl\nKey events: No convergences"
+  },
+  "partials": {
+    "contract": "August 2026 Dubai Partials",
+    "bids": {
+      "early": [
+        { "company": "VITOLSG", "price": 81.50, "volume": 25 },
+        { "company": "PETCO", "price": 81.50, "volume": 25 },
+        { "company": "GLENCORESG", "price": 81.50, "volume": 25 },
+        { "company": "BPSG", "price": 81.50, "volume": 25 }
+      ],
+      "lastMinute": [
+        { "company": "VITOLSG", "prices": [81.60, 81.70, 81.80, 81.90, 82.00, 82.10, 82.20], "volume": 25 },
+        { "company": "PETCO", "prices": [81.60, 81.70, 81.80, 81.90, 82.00], "volume": 25 },
+        { "company": "GLENCORESG", "bid": 81.60, "volume": 25, "status": "withdrawn at 08:30:01" }
+      ]
+    },
+    "offers": {
+      "early": [
+        { "company": "UNIPECASIA", "price": 85.50, "volume": 25 },
+        { "company": "BPSG", "price": 85.50, "volume": 25 },
+        { "company": "P66SG", "price": 85.50, "volume": 25 },
+        { "company": "PTT", "price": 86.00, "volume": 25 }
+      ],
+      "final": [
+        { "company": "UNIPECASIA", "price": 85.10, "volume": 25 },
+        { "company": "P66SG", "price": 85.10, "volume": 25 },
+        { "company": "BPSG", "price": 85.40, "volume": 25 },
+        { "company": "PTT", "price": 85.10, "volume": 25 }
+      ]
+    },
+    "trades": [
+      { "seller": "P66SG", "buyer": "VITOLSG", "price": 82.20, "volume": 25, "time": "08:30:02 GMT" }
+    ]
+  },
+  "declarations": {
+    "count": 0,
+    "items": [],
+    "convergenceArticle": "None reported."
+  },
+  "cashMurban": [
+    { "value": 3.00, "vs": "August Dubai Futures", "time": "2026-06-12T08:32:05.97Z" }
+  ],
+  "cashOman": [
+    { "value": 3.00, "vs": "August Dubai Futures", "time": "2026-06-12T08:32:03.966Z" }
+  ],
+  "finalsOnClose": {
+    "summary": "No separate Finals on Close bids/offers article published; bids/offers data via SOUR CRUDE BIDS/OFFERS summaries"
+  },
+  "errorTrades": []
+}

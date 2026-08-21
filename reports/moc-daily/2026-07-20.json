@@ -1,0 +1,48 @@
+{
+  "date": "2026-07-20",
+  "fluxOfficials": {
+    "assessment": 79.705,
+    "premium": 0.825,
+    "text": "The Officials MOC: Date 20/7/2026\nDubai Assessment: $79.705/bbl\nPhysical premium: $0.825/bbl\nKey events: No convergences"
+  },
+  "declarations": [
+    {
+      "seller": "Vitol",
+      "buyer": "Mitsui",
+      "grade": "Oman",
+      "time": "08:31:30Z"
+    }
+  ],
+  "cashMurban": [
+    { "value": 2.10, "time": "08:32:26Z" },
+    { "value": 2.30, "time": "08:33:16Z" }
+  ],
+  "cashOman": [
+    { "value": 0.70, "time": "08:32:23Z" },
+    { "value": 0.95, "time": "08:33:14Z" }
+  ],
+  "partials": {
+    "assessment": 79.705,
+    "convergencePrice": 79.60,
+    "totalTrades": 17,
+    "totalOffers": 130,
+    "lastMinuteOffers": 30,
+    "buyers": ["TRAFI", "BPSG", "METS"],
+    "sellers": ["MERCURIARESOURCES", "VITOLSG"],
+    "lastMinuteBids": {
+      "P66SG": { "highBid": 79.40 },
+      "TRAFI": { "highBid": 79.70, "withdrawn": true },
+      "METS": { "highBid": 79.60 },
+      "BPSG": { "highBid": 79.60, "withdrawn": true }
+    },
+    "lastMinuteOffers": {
+      "MERCURIARESOURCES": { "lowest": 79.60, "count": 20 },
+      "VITOLSG": { "lowest": 79.60, "count": 9 },
+      "SKEISG": { "lowest": 80.70, "count": 1 }
+    },
+    "closingRange": { "bid": 79.70, "offer": 79.71 }
+  },
+  "errorTrades": [],
+  "finalsOnClose": [],
+  "convergences": []
+}

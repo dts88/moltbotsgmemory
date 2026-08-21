@@ -16,19 +16,16 @@
  *   node scripts/mogas-mops-strip.mjs [YYYY-MM-DD]
  */
 
-import { readFileSync } from 'fs';
+import { getPlattsAccessToken } from './platts-auth.mjs';
 
 const BASE   = 'https://api.platts.com/tradedata/v3';
 const MARKET = 'ASIA Mogas Swap';
 
-function getToken() {
-  return JSON.parse(readFileSync('/home/node/clawd/.config/spglobal/credentials.json', 'utf8')).access_token;
-}
-
 async function ewGet(filter) {
+  const token = await getPlattsAccessToken();
   const r = await fetch(
     `${BASE}/ewindowdata?filter=${encodeURIComponent(filter)}&sort=price:desc&pageSize=500`,
-    { headers: { 'Authorization': 'Bearer ' + getToken(), 'Accept': 'application/json' } }
+    { headers: { 'Authorization': 'Bearer ' + token, 'Accept': 'application/json' } }
   );
   if (!r.ok) throw new Error(`eWindow ${r.status}`);
   return (await r.json()).results || [];

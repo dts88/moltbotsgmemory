@@ -1,0 +1,61 @@
+{
+  "date": "2026-05-25",
+  "fluxOfficials": {
+    "assessment": 98.09,
+    "premium": 9.29,
+    "text": "The Officials MOC: Date 25/5/2026\nDubai Assessment: $98.09/bbl\nPhysical premium: $9.29/bbl\nKey events: No convergences"
+  },
+  "declarations": [],
+  "partials": {
+    "contract": "Jul26",
+    "trades": [],
+    "allDayBids": {
+      "VITOLSG": { "count": 27, "min": 94.0, "max": 96.5 },
+      "P66SG": { "count": 19, "min": 94.2, "max": 95.9 },
+      "GUNVORSG": { "count": 18, "min": 94.2, "max": 95.8 },
+      "GLENCORESG": { "count": 11, "min": 94.0, "max": 94.8 },
+      "BPSG": { "count": 6, "min": 94.0, "max": 94.4 },
+      "TRAFI": { "count": 4, "min": 95.5, "max": 95.7 }
+    },
+    "allDayOffers": {
+      "UNIPECASIA": { "count": 11, "min": 98.1, "max": 99.0 },
+      "BPSG": { "count": 2, "min": 99.5, "max": 99.5 },
+      "SIETCO": { "count": 1, "min": 98.5, "max": 98.5 }
+    },
+    "lastMinuteBids": [
+      { "company": "VITOLSG", "price": 96.5, "time": "08:29:53" },
+      { "company": "P66SG", "price": 95.9, "time": "08:29:57" },
+      { "company": "GUNVORSG", "price": 95.8, "time": "08:29:50" },
+      { "company": "TRAFI", "price": 95.7, "time": "08:29:55" }
+    ],
+    "lastMinuteOffers": [
+      { "company": "UNIPECASIA", "price": 98.1, "count": 5 }
+    ],
+    "finalBidsSummary": {
+      "TRAFIGURA": 95.50,
+      "PHILLIPS66": 94.20,
+      "GUNVOR": 94.20,
+      "VITOL": 94.00,
+      "BP": 94.00,
+      "GLENCORE": 94.00
+    },
+    "finalOffersSummary": {
+      "UNIPEC": 99.00,
+      "BP": 99.50
+    }
+  },
+  "cashMurban": [
+    { "value": 6.72, "vs": "July Dubai futures", "time": "08:31:02Z" },
+    { "value": 6.80, "vs": "July Dubai futures", "time": "08:32:47Z" }
+  ],
+  "cashOman": [
+    { "value": 6.81, "vs": "July Dubai futures", "time": "08:31:01Z" },
+    { "value": 6.90, "vs": "July Dubai futures", "time": "08:32:45Z" }
+  ],
+  "errorTrades": [],
+  "convergences": "None reported",
+  "finalsOnClose": {
+    "bids": "PLATTS DUBAI: JUL26: TRAFIGURA BIDS AT $95.50, PHILLIPS 66 $94.20, GUNVOR $94.20, VITOL $94.00, BP $94.00, GLENCORE $94.00",
+    "offers": "PLATTS DUBAI: JUL26: UNIPEC OFFERS AT $99.00, BP OFFERS AT $99.50"
+  }
+}

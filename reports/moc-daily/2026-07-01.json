@@ -1,0 +1,59 @@
+{
+  "date": "2026-07-01",
+  "fluxOfficials": {
+    "assessment": 66.29,
+    "premium": -2.78,
+    "text": "The Officials MOC: Date 1/7/2026\nDubai Assessment: $66.29/bbl\nPhysical premium: -$2.78/bbl - record low in our assessments\nKey events: No convergences",
+    "rawTweet": "The Officials MOC: Date 1/7/2026\nDubai Assessment: $66.29/bbl\nPhysical premium: -$2.78/bbl - record low in our assessments\nKey events: No convergences\nMore details here: https://t.co/FZC1yoNY22"
+  },
+  "partialsContract": "Sep26 Dubai Partials",
+  "partialsTrades": [
+    { "seller": "MERCURIARESOURCES", "buyer": "TRAFI", "price": 66.80, "volume": 25, "time": "08:28:19 GMT" },
+    { "seller": "MERCURIARESOURCES", "buyer": "TRAFI", "price": 66.80, "volume": 25, "time": "08:28:32 GMT" },
+    { "seller": "MERCURIARESOURCES", "buyer": "TRAFI", "price": 66.80, "volume": 25, "time": "08:28:45 GMT" },
+    { "seller": "VITOLSG", "buyer": "TRAFI", "price": 66.80, "volume": 25, "time": "08:29:06 GMT" },
+    { "seller": "VITOLSG", "buyer": "TRAFI", "price": 66.60, "volume": 25, "time": "08:29:27 GMT" },
+    { "seller": "VITOLSG", "buyer": "TRAFI", "price": 66.60, "volume": 25, "time": "08:29:36 GMT" }
+  ],
+  "partialsOffers": {
+    "allDay": {
+      "PCHK": { "count": 56, "minPrice": 66.9, "maxPrice": 70 },
+      "VITOLSG": { "count": 45, "minPrice": 66.3, "maxPrice": 70 },
+      "BPSG": { "count": 37, "minPrice": 67.85, "maxPrice": 71 },
+      "MERCURIARESOURCES": { "count": 33, "minPrice": 66.4, "maxPrice": 69.5 },
+      "UNIPECASIA": { "count": 18, "minPrice": 69.1, "maxPrice": 70.51 },
+      "SIETCO": { "count": 13, "minPrice": 69.4, "maxPrice": 70.5 },
+      "EXTAP": { "count": 11, "minPrice": 69.2, "maxPrice": 70 },
+      "TRAFI": { "count": 2, "minPrice": 69.5, "maxPrice": 69.5 }
+    },
+    "lastMinute": {
+      "VITOLSG": { "count": 12, "minPrice": 66.3, "lastPrice": 66.3 },
+      "PCHK": { "count": 5, "minPrice": 66.9, "lastPrice": 66.9 },
+      "MERCURIARESOURCES": { "count": 5, "minPrice": 66.4, "lastPrice": 66.4 },
+      "BPSG": { "count": 1, "minPrice": 67.85, "lastPrice": 67.85 }
+    }
+  },
+  "declarations": [],
+  "convergences": "No convergences",
+  "cashMurban": [
+    { "value": -3.15, "time": "08:31:40Z" },
+    { "value": -3.00, "time": "08:32:11Z" }
+  ],
+  "cashOman": [
+    { "value": -3.38, "time": "08:31:37Z" },
+    { "value": -2.20, "time": "08:32:07Z" }
+  ],
+  "errorTrades": [],
+  "upperZakumBid": {
+    "company": "MERCURIARESOURCES",
+    "grade": "Upper Zakum FOB Zirku Island",
+    "month": "Sep26",
+    "laycan": "Sep 1-Sep 27",
+    "pricing": "100% Front Month Cash Dubai Full Month Sep",
+    "progressiveBids": true
+  },
+  "finalsOnClose": {
+    "crudeBids": "数据待更新",
+    "crudeOffers": "数据待更新"
+  }
+}

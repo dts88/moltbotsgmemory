@@ -9,13 +9,13 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { trackUsage } from './usage-tracker.mjs';
+import { getPlattsAccessToken } from './platts-auth.mjs';
 
 const userArg = process.argv.find(a => a.startsWith('--user='));
 const TRACK_USER = userArg ? userArg.split('=')[1] : 'system';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const WORKSPACE = join(__dirname, '..');
-const CONFIG_FILE = join(WORKSPACE, '.config/spglobal/credentials.json');
 const STATE_FILE = join(WORKSPACE, '.config/foiz/state.json');
 
 const API_BASE = 'https://api.platts.com';
@@ -24,13 +24,6 @@ const API_BASE = 'https://api.platts.com';
 const configDir = join(WORKSPACE, '.config/foiz');
 if (!existsSync(configDir)) {
   mkdirSync(configDir, { recursive: true });
-}
-
-function loadConfig() {
-  if (!existsSync(CONFIG_FILE)) {
-    throw new Error('Platts credentials not found');
-  }
-  return JSON.parse(readFileSync(CONFIG_FILE, 'utf8'));
 }
 
 function loadState() {
@@ -212,9 +205,8 @@ function formatReport(data, headline, state) {
 }
 
 async function monitor() {
-  const config = loadConfig();
   const state = loadState();
-  const token = config.access_token;
+  const token = await getPlattsAccessToken();
   
   // 1. 搜索最新文章
   const article = await searchFoizArticle(token);

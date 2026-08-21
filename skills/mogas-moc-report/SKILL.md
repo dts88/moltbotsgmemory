@@ -1,12 +1,17 @@
 ---
 name: mogas-moc-report
-description: 生成 Singapore Mogas MOC 每日分析报告。从 Platts eWindow API 和 News Insights Heards 获取数据，计算 MOPS Assessment、Daily Structure、MOPS Strip、物理溢价等。触发词：汽油MOC、Mogas分析、新加坡汽油、MOPS评估、92 RON、95 RON、gasoline MOC。
+description: 生成和分析 Singapore Mogas MOC，并作为新加坡成品油 MOC 方法论参考。覆盖 92/95 RON Mogas 的完整 workflow，也提供 GO 10ppm、Jet Kero、MTBE 相关参考。触发词：汽油MOC、Mogas分析、新加坡汽油、MOPS评估、92 RON、95 RON、gasoline MOC、GO 10ppm、gasoil MOC、Jet Kero、middle distillates、MTBE。
 ---
 
 # Singapore Mogas MOC Daily Report — 92 RON 方法论
 
-> ⚠️ 本 skill 仅覆盖 **92 RON（和95 RON）Mogas**，方法论已完整验证。
-> GO 10ppm 和 Jet Kero 的 daily structure 与月差用法尚未确认，**暂不纳入本 skill**。
+> 这个 skill 的**主工作流**是 92/95 RON Mogas。
+>
+> 相关的 refined products 参考文件：
+> - GO 10ppm / Jet Kero: `references/singapore-middle-distillates-moc.md`
+> - MTBE 符号状态: `references/mtbe-symbols.md`
+>
+> 当 Mogas 与其他成品油方法论冲突时，以各自 reference 中的最新说明为准。
 
 ---
 
@@ -266,7 +271,7 @@ Phase 2 (3/16): 7.5/30.5 ≈ 0.25 → spread 误差稀释更多
 
 ## 报告输出格式
 
-**发布渠道：** Telegram 群 -1003727952836，topic 2（纯文本，无 markdown bold）
+**发布建议：** 如需定时推送，使用顶层 `delivery.mode="announce"`，目标可设为 Telegram 群 `-1003727952836:topic:2`。任务本身只输出最终正文（纯文本，无 markdown bold）。
 
 ```
 Singapore Mogas MOC — DD Mon YYYY  [Phase 1/2]
@@ -324,9 +329,9 @@ curl -H "Authorization: Bearer $TOKEN" \
 
 ---
 
-## ⚠️ 暂未纳入本 skill（待方法论确认后补充）
+## 相关参考
 
-| 品种 | 待确认事项 |
-|------|-----------|
-| **GO 10ppm** | 月差与 Daily Structure 在物理评估中的具体用法 |
-| **Jet Kero** | 是否用 daily structure 时调，还是纯 demonstrable bid 加权评估 |
+- GO 10ppm / Jet Kero: `references/singapore-middle-distillates-moc.md`
+- MTBE: `references/mtbe-symbols.md`
+- 如果要做 daily MOC 生成，主流程仍优先按本文件的 Mogas workflow 执行。
+- 如果要解释 GO / Jet 的 paper 与 physical 关系，读 middle distillates reference。

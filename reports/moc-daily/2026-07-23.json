@@ -1,0 +1,71 @@
+{
+  "date": "2026-07-23",
+  "fluxOfficials": {
+    "assessment": 97.19,
+    "premium": 13.00,
+    "premiumNote": "strongest since end of May",
+    "text": "Dubai Assessment: $97.19/bbl, Physical premium: $13.00/bbl - strongest since end of May. Key events: Mercuria declares Oman to Mitsui"
+  },
+  "declarations": [
+    {
+      "seller": "Mercuria",
+      "buyer": "Mitsui",
+      "grade": "Oman",
+      "month": "September",
+      "count": 1,
+      "time": "2026-07-23T08:28:42.706Z"
+    }
+  ],
+  "partials": {
+    "contract": "Sep26 Dubai Partials",
+    "trades": [
+      { "seller": "MERCURIARESOURCES", "buyer": "METS", "price": 96.00, "qty": 25, "time": "07:29:12 GMT" },
+      { "seller": "MERCURIARESOURCES", "buyer": "METS", "price": 96.50, "qty": 25, "time": "08:16:20 GMT" },
+      { "seller": "UNIPECASIA", "buyer": "P66SG", "price": 96.60, "qty": 25, "time": "08:31:11 GMT" },
+      { "seller": "VITOLSG", "buyer": "METS", "price": 97.00, "qty": 25, "time": "08:59:21 GMT" },
+      { "seller": "UNIPECASIA", "buyer": "P66SG", "price": 97.10, "qty": 25, "time": "09:16:55 GMT" },
+      { "seller": "UNIPECASIA", "buyer": "P66SG", "price": 97.20, "qty": 25, "time": "09:49:21 GMT" }
+    ],
+    "offers": {
+      "total": 39,
+      "byCompany": {
+        "UNIPECASIA": { "count": 14, "range": [96.00, 97.20] },
+        "MERCURIARESOURCES": { "count": 7, "range": [96.00, 97.25] },
+        "BPSG": { "count": 6, "range": [95.80, 96.80] },
+        "SHENGHPI": { "count": 4, "range": [96.00, 96.20] },
+        "VITOLSG": { "count": 3, "range": [96.00, 97.00] },
+        "RGES": { "count": 3, "range": [96.30, 97.10] },
+        "P66SG": { "count": 2, "range": [96.00, 96.00] }
+      },
+      "lastMinute": {
+        "UNIPECASIA": { "count": 5, "min": 97.10, "last": 97.20 },
+        "MERCURIARESOURCES": { "count": 2, "min": 97.25, "last": 97.25 }
+      }
+    },
+    "bids": {
+      "total": 154,
+      "byCompany": {
+        "TRAFI": { "count": 57, "range": [90.00, 95.50] },
+        "METS": { "count": 52, "range": [90.20, 95.10] },
+        "P66SG": { "count": 43, "range": [90.20, 94.20] },
+        "BPSG": { "count": 2, "range": [89.00, 89.00] }
+      }
+    }
+  },
+  "cashMurban": [
+    { "value": 24.98, "time": "2026-07-23T08:31:24.188Z" },
+    { "value": 21.15, "time": "2026-07-23T08:34:46.991Z" }
+  ],
+  "cashOman": [
+    { "value": 13.22, "time": "2026-07-23T08:31:20.323Z" },
+    { "value": 13.20, "time": "2026-07-23T08:34:42.964Z" }
+  ],
+  "errorTrades": [],
+  "finalsOnClose": {
+    "bids": "Trafigura $95.50 (withdrawn), METS $95.00 (withdrawn), P66SG $94.20 (active)",
+    "offers": "UNIPECASIA $97.20 (withdrawn), MERCURIARESOURCES $97.25 (withdrawn)",
+    "articlePublished": false
+  },
+  "notes": "MCX convergence article not yet published (expected ~09:10 UTC)",
+  "generatedAt": "2026-07-23T08:36:00Z"
+}

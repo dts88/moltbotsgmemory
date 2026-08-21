@@ -5,17 +5,18 @@
  */
 
 import { readFileSync } from 'fs';
+import { getPlattsAccessToken } from './platts-auth.mjs';
 
 const date = process.argv[2] || new Date().toISOString().slice(0, 10);
-const creds = JSON.parse(readFileSync('.config/spglobal/credentials.json', 'utf8'));
 
 async function searchKDC(targetDate) {
+  const token = await getPlattsAccessToken();
   const url = 'https://api.platts.com/news-insights/v1/search/story?' +
     'q=Singapore%20gasoline%20daily%20structure&pageSize=20';
   
   const res = await fetch(url, {
     headers: { 
-      'Authorization': `Bearer ${creds.access_token}`,
+      'Authorization': `Bearer ${token}`,
       'appkey': 'mXrBlqeKBqbHpYNMX96h9qN0D8H5o3AN'
     }
   });
@@ -30,11 +31,12 @@ async function searchKDC(targetDate) {
 }
 
 async function getKDCContent(articleId) {
+  const token = await getPlattsAccessToken();
   const url = `https://api.platts.com/news-insights/v1/content/${articleId}`;
   
   const res = await fetch(url, {
     headers: { 
-      'Authorization': `Bearer ${creds.access_token}`,
+      'Authorization': `Bearer ${token}`,
       'appkey': 'mXrBlqeKBqbHpYNMX96h9qN0D8H5o3AN'
     }
   });

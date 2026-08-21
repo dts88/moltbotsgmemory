@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "oil-kb/forecast.schema.json",
+  "title": "Forecast",
+  "type": "object",
+  "required": ["id", "source", "publicationDate", "target", "horizon", "view", "provenance"],
+  "properties": {
+    "id": { "type": "string" },
+    "source": { "type": "string" },
+    "institution": { "type": "string" },
+    "publicationDate": { "type": "string" },
+    "versionOf": { "type": ["string", "null"] },
+    "target": {
+      "type": "object",
+      "required": ["metric"],
+      "properties": {
+        "metric": { "type": "string" },
+        "commodity": { "type": "string" },
+        "geography": { "type": "string" },
+        "contract": { "type": "string" },
+        "unit": { "type": "string" }
+      }
+    },
+    "horizon": {
+      "type": "object",
+      "properties": {
+        "start": { "type": "string" },
+        "end": { "type": "string" },
+        "label": { "type": "string" }
+      }
+    },
+    "view": {
+      "type": "object",
+      "properties": {
+        "direction": { "type": "string" },
+        "pointEstimate": {},
+        "range": { "type": "array" },
+        "probability": { "type": ["number", "null"] },
+        "summary": { "type": "string" }
+      }
+    },
+    "assumptions": { "type": "array", "items": { "type": "string" } },
+    "triggers": { "type": "array", "items": { "type": "string" } },
+    "invalidation": { "type": "array", "items": { "type": "string" } },
+    "postMortem": { "type": "object" },
+    "provenance": { "type": "object" }
+  },
+  "additionalProperties": true
+}

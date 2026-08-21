@@ -29,45 +29,23 @@
  *   location: 位置
  */
 
-import { readFileSync, writeFileSync, existsSync } from 'fs';
+import { writeFileSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 import { trackUsage } from './usage-tracker.mjs';
+import { getPlattsAccessToken } from './platts-auth.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const WORKSPACE = join(__dirname, '..');
-const CONFIG_FILE = join(WORKSPACE, '.config/spglobal/credentials.json');
 const OUTPUT_DIR = join(WORKSPACE, 'reports/structured-heards');
 
 const BASE_URL = 'https://api.platts.com';
 const ENDPOINT = 'structured-heards/v1';
 
-// ===== 认证 =====
-
-function loadCredentials() {
-  if (!existsSync(CONFIG_FILE)) {
-    throw new Error('Platts credentials not found. Run platts-login.mjs first.');
-  }
-  return JSON.parse(readFileSync(CONFIG_FILE, 'utf-8'));
-}
-
-function isTokenExpired(creds) {
-  if (!creds.expires_at) return true;
-  const expiresAt = new Date(creds.expires_at).getTime();
-  const now = Date.now();
-  return now >= expiresAt - 60000; // 1分钟缓冲
-}
-
 // ===== API 请求 =====
 
 async function apiRequest(path, params = {}) {
-  const creds = loadCredentials();
-  
-  if (isTokenExpired(creds)) {
-    console.error('❌ Token 已过期，请重新登录：');
-    console.error('   node scripts/platts-login.mjs <username> <password>');
-    process.exit(1);
-  }
+  const token = await getPlattsAccessToken();
   
   const url = new URL(`${BASE_URL}/${ENDPOINT}/${path}`);
   Object.entries(params).forEach(([k, v]) => {
@@ -80,7 +58,7 @@ async function apiRequest(path, params = {}) {
   
   const response = await fetch(url.toString(), {
     headers: {
-      'Authorization': `Bearer ${creds.access_token}`,
+      'Authorization': `Bearer ${token}`,
       'Accept': 'application/json',
       'User-Agent': 'moltbot/1.0'
     }

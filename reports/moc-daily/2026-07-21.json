@@ -1,0 +1,22 @@
+{
+  "date": "2026-07-21",
+  "fluxOfficials": {
+    "assessment": 82.50,
+    "premium": 3.02,
+    "text": "The Officials MOC: Date 21/7/2026\nDubai Assessment: $82.50/bbl\nPhysical premium: $3.02/bbl\nKey events: No convergences\nMore details here: https://t.co/FZC1yoNY22",
+    "tweetTime": "Tue Jul 21 08:33:37 +0000 2026"
+  },
+  "declarations": [],
+  "dealsSummary": [],
+  "cashMurban": [],
+  "cashOman": [],
+  "errorTrades": [],
+  "finalsOnClose": { "bids": "数据待更新", "offers": "数据待更新" },
+  "ewindow": {
+    "offers": { "total": 0, "range": null },
+    "lastMinOffers": { "total": 0 },
+    "trades": { "total": 0, "details": [] },
+    "bids": { "total": 0 }
+  },
+  "notes": "Platts heards API returned no data for 2026-07-21. eWindow API returned no data. FluxOfficials published at 08:33 UTC."
+}

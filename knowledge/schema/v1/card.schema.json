@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "oil-kb/card.schema.json",
+  "title": "KnowledgeCard",
+  "type": "object",
+  "required": ["id", "objectType", "objectId", "summary", "tags", "freshness"],
+  "properties": {
+    "id": { "type": "string" },
+    "objectType": {
+      "type": "string",
+      "enum": ["document", "observation", "timeseries", "forecast", "playbook", "entity"]
+    },
+    "objectId": { "type": "string" },
+    "summary": { "type": "string" },
+    "keyClaims": { "type": "array", "items": { "type": "string" } },
+    "conflictsWith": { "type": "array", "items": { "type": "string" } },
+    "tags": { "type": "array", "items": { "type": "string" } },
+    "freshness": {
+      "type": "object",
+      "required": ["asOfDate", "timeScale", "decayType"],
+      "properties": {
+        "asOfDate": { "type": "string" },
+        "timeScale": { "type": "string" },
+        "decayType": { "type": "string" },
+        "expiresAfter": { "type": ["string", "null"] }
+      }
+    },
+    "drilldown": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["label", "target"],
+        "properties": {
+          "label": { "type": "string" },
+          "target": { "type": "string" },
+          "cost": { "type": "string", "enum": ["low", "medium", "high"] }
+        }
+      }
+    }
+  },
+  "additionalProperties": true
+}

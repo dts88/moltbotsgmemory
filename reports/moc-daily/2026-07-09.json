@@ -1,0 +1,95 @@
+{
+  "date": "2026-07-09",
+  "generatedAt": "2026-07-09T08:36:00Z",
+  "contract": "Sep26 Dubai Partials",
+  "fluxOfficials": {
+    "assessment": "pending",
+    "premium": "pending",
+    "note": "FluxOfficials tweet data unavailable at time of generation"
+  },
+  "partials": {
+    "convergencePrice": 70.47,
+    "totalTrades": 19,
+    "totalVolumeKb": 475,
+    "convergenceTrade": {
+      "time": "2026-07-09T08:29:59.814Z",
+      "seller": "MERCURIARESOURCES",
+      "buyer": "BPSG",
+      "price": 70.47,
+      "volume": 25
+    },
+    "trades": [
+      { "seller": "MERCURIARESOURCES", "buyer": "METS", "price": 70.30, "time": "08:28:41 GMT" },
+      { "seller": "SHENGHPI", "buyer": "TRAFI", "price": 70.29, "time": "08:28:45 GMT" },
+      { "seller": "MERCURIARESOURCES", "buyer": "METS", "price": 70.30, "time": "08:28:49 GMT" },
+      { "seller": "MERCURIARESOURCES", "buyer": "PCHK", "price": 70.30, "time": "08:28:55 GMT" },
+      { "seller": "MERCURIARESOURCES", "buyer": "PCHK", "price": 70.35, "time": "08:29:04 GMT" },
+      { "seller": "VITOLSG", "buyer": "METS", "price": 70.40, "time": "08:29:16 GMT" },
+      { "seller": "MERCURIARESOURCES", "buyer": "TRAFI", "price": 70.40, "time": "08:29:18 GMT" },
+      { "seller": "VITOLSG", "buyer": "METS", "price": 70.40, "time": "08:29:25 GMT" },
+      { "seller": "MERCURIARESOURCES", "buyer": "BPSG", "price": 70.41, "time": "08:29:26 GMT" },
+      { "seller": "VITOLSG", "buyer": "TRAFI", "price": 70.45, "time": "08:29:33 GMT" },
+      { "seller": "MERCURIARESOURCES", "buyer": "BPSG", "price": 70.46, "time": "08:29:34 GMT" },
+      { "seller": "VITOLSG", "buyer": "TRAFI", "price": 70.45, "time": "08:29:37 GMT" },
+      { "seller": "MERCURIARESOURCES", "buyer": "METS", "price": 70.47, "time": "08:29:40 GMT" },
+      { "seller": "VITOLSG", "buyer": "METS", "price": 70.45, "time": "08:29:42 GMT" },
+      { "seller": "VITOLSG", "buyer": "TRAFI", "price": 70.45, "time": "08:29:48 GMT" },
+      { "seller": "MERCURIARESOURCES", "buyer": "P66SG", "price": 70.47, "time": "08:29:51 GMT" },
+      { "seller": "MERCURIARESOURCES", "buyer": "BPSG", "price": 70.47, "time": "08:29:55 GMT" },
+      { "seller": "VITOLSG", "buyer": "METS", "price": 70.47, "time": "08:29:58 GMT" },
+      { "seller": "MERCURIARESOURCES", "buyer": "BPSG", "price": 70.47, "time": "08:29:59 GMT" }
+    ],
+    "sellers": {
+      "MERCURIARESOURCES": { "trades": 10, "priceRange": "70.30-70.47" },
+      "VITOLSG": { "trades": 7, "priceRange": "70.40-70.47" },
+      "SHENGHPI": { "trades": 1, "priceRange": "70.29" }
+    },
+    "buyers": {
+      "METS": { "trades": 7, "priceRange": "70.30-70.47" },
+      "TRAFI": { "trades": 5, "priceRange": "70.29-70.45" },
+      "BPSG": { "trades": 3, "priceRange": "70.46-70.47" },
+      "PCHK": { "trades": 2, "priceRange": "70.30-70.35" },
+      "P66SG": { "trades": 1, "priceRange": "70.47" }
+    },
+    "allDayOffers": {
+      "MERCURIARESOURCES": { "count": 27, "min": 70.30, "max": 71.00 },
+      "VITOLSG": { "count": 8, "min": 70.40, "max": 71.00 },
+      "TOTSA": { "count": 8, "min": 70.50, "max": 71.00 },
+      "SHENGHPI": { "count": 8, "min": 70.55, "max": 71.05 },
+      "P66SG": { "count": 6, "min": 70.70, "max": 71.00 },
+      "UNIPECASIA": { "count": 6, "min": 70.70, "max": 71.00 },
+      "BPSG": { "count": 2, "min": 71.00, "max": 71.00 }
+    },
+    "lastMinuteOffers": {
+      "MERCURIARESOURCES": { "count": 16, "min": 70.35, "last": 70.47 },
+      "VITOLSG": { "count": 1, "min": 70.40, "last": 70.40 },
+      "SHENGHPI": { "count": 1, "min": 70.55, "last": 70.55 }
+    },
+    "notableAction": "TRAFI withdrew final bid at $70.45 @ 08:30:02 GMT; last trade BPSG buys from MERCURIARESOURCES at $70.47 @ 08:29:59 GMT"
+  },
+  "declarations": [
+    {
+      "seller": "Mercuria",
+      "buyer": "Trafigura",
+      "grade": "Oman",
+      "period": "September",
+      "partials": 20,
+      "time": "2026-07-09T08:30:52.786Z"
+    }
+  ],
+  "cashMurban": [
+    { "value": -0.88, "direction": "minus", "time": "2026-07-09T08:32:01.469Z", "description": "Sep Cash Murban Heard At Minus $0.88/B Against Sep Dubai Futures" },
+    { "value": -0.90, "direction": "minus", "time": "2026-07-09T08:32:08.564Z", "description": "Sep Cash Murban Heard At Minus $0.90/B Against Sep Dubai Futures" }
+  ],
+  "cashOman": [
+    { "value": -2.15, "direction": "minus", "time": "2026-07-09T08:31:58.752Z", "description": "Sep Cash Oman Heard At Minus $2.15/B Against Sep Dubai Futures" },
+    { "value": -2.20, "direction": "minus", "time": "2026-07-09T08:32:05.789Z", "description": "Sep Cash Oman Heard At Minus $2.20/B Against Sep Dubai Futures" }
+  ],
+  "errorTrades": [],
+  "finalsOnClose": {
+    "bids": "Data pending - no Finals on Close article published",
+    "offers": "Data pending - no Finals on Close article published"
+  },
+  "marketNotes": [],
+  "dataSources": ["Platts eWindow API", "Platts News Insights Heards API"]
+}

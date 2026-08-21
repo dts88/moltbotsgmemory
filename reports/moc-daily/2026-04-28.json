@@ -1,0 +1,1615 @@
+{
+  "date": "2026-04-28",
+  "fluxOfficials": {
+    "assessment": null,
+    "premium": null,
+    "text": "数据待更新"
+  },
+  "declarations": [],
+  "cashMurban": [
+    {
+      "value": 10,
+      "time": "2026-04-28T08:33:05.384Z",
+      "headline": "Platts Crude: June Cash Murban Heard At $10.00/B Over June Dubai Futures"
+    },
+    {
+      "value": 10,
+      "time": "2026-04-28T08:33:11.855Z",
+      "headline": "Platts Crude: June Cash Murban Heard At $10.00/B Over June Dubai Futures"
+    }
+  ],
+  "cashOman": [
+    {
+      "value": 8.5,
+      "time": "2026-04-28T08:33:02.302Z",
+      "headline": "Platts Crude: June Cash Oman Heard At $8.50/B Over June Dubai Futures"
+    }
+  ],
+  "errorTrades": [],
+  "finalsOnClose": {
+    "bids": [],
+    "offers": []
+  },
+  "partials": {
+    "trades": [
+      {
+        "contract": "Jun26",
+        "buyer": "TOTSA",
+        "seller": "METS",
+        "price": 107.2,
+        "volume": 25,
+        "time": "2026-04-28T08:29:56.371Z",
+        "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM METS  $107.20 for 25 8:29:56.181 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "buyer": "TOTSA",
+        "seller": "SIETCO",
+        "price": 107.3,
+        "volume": 25,
+        "time": "2026-04-28T08:29:57.564Z",
+        "headline": "Platts Dubai Partial Jun26, TOTSA BUYS FROM SIETCO  $107.30 for 25 8:29:57.214 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "buyer": "BPSG",
+        "seller": "UNIPECASIA",
+        "price": 108.4,
+        "volume": 25,
+        "time": "2026-04-28T08:29:58.412Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG BUYS FROM UNIPECASIA  $108.40 for 25 8:29:58.317 GMT"
+      }
+    ],
+    "offers": [
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 109.95,
+        "volume": 25,
+        "time": "2026-04-28T08:25:45.644Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $109.95 for 25 8:25:45.557 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 109.9,
+        "volume": 25,
+        "time": "2026-04-28T08:25:50.708Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $109.90 for 25 8:25:50.620 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 109.8,
+        "volume": 25,
+        "time": "2026-04-28T08:26:04.486Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $109.80 for 25 8:26:04.375 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 109.9,
+        "volume": 25,
+        "time": "2026-04-28T08:26:12.575Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $109.90 for 25 8:26:12.490 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "P66SG",
+        "price": 110.9,
+        "volume": 25,
+        "time": "2026-04-28T08:26:23.767Z",
+        "headline": "Platts Dubai Partial Jun26, P66SG lowers offer $110.90 for 25 8:26:23.656 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 109.7,
+        "volume": 25,
+        "time": "2026-04-28T08:26:27.585Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $109.70 for 25 8:26:27.414 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 109.8,
+        "volume": 25,
+        "time": "2026-04-28T08:26:34.434Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $109.80 for 25 8:26:34.336 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 109.6,
+        "volume": 25,
+        "time": "2026-04-28T08:26:41.106Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $109.60 for 25 8:26:41.020 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 109.9,
+        "volume": 25,
+        "time": "2026-04-28T08:26:42.526Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $109.90 for 25 8:26:42.439 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 109.7,
+        "volume": 25,
+        "time": "2026-04-28T08:26:44.129Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $109.70 for 25 8:26:44.042 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 109.8,
+        "volume": 25,
+        "time": "2026-04-28T08:26:50.255Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $109.80 for 25 8:26:50.070 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 109.5,
+        "volume": 25,
+        "time": "2026-04-28T08:26:51.148Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $109.50 for 25 8:26:51.062 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "P66SG",
+        "price": 110.8,
+        "volume": 25,
+        "time": "2026-04-28T08:26:51.798Z",
+        "headline": "Platts Dubai Partial Jun26, P66SG lowers offer $110.80 for 25 8:26:51.713 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 109.7,
+        "volume": 25,
+        "time": "2026-04-28T08:26:56.43Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $109.70 for 25 8:26:56.294 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 109.4,
+        "volume": 25,
+        "time": "2026-04-28T08:26:57.675Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $109.40 for 25 8:26:57.489 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 109.6,
+        "volume": 25,
+        "time": "2026-04-28T08:26:58.591Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $109.60 for 25 8:26:58.506 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 109.5,
+        "volume": 25,
+        "time": "2026-04-28T08:27:04.19Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $109.50 for 25 8:27:04.060 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 109.3,
+        "volume": 25,
+        "time": "2026-04-28T08:27:10.93Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $109.30 for 25 8:27:10.761 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 109.4,
+        "volume": 25,
+        "time": "2026-04-28T08:27:11.235Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $109.40 for 25 8:27:11.150 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "P66SG",
+        "price": 110.7,
+        "volume": 25,
+        "time": "2026-04-28T08:27:15.586Z",
+        "headline": "Platts Dubai Partial Jun26, P66SG lowers offer $110.70 for 25 8:27:15.491 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 109.3,
+        "volume": 25,
+        "time": "2026-04-28T08:27:16.969Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $109.30 for 25 8:27:16.879 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "P66SG",
+        "price": 110.6,
+        "volume": 25,
+        "time": "2026-04-28T08:27:23.881Z",
+        "headline": "Platts Dubai Partial Jun26, P66SG lowers offer $110.60 for 25 8:27:23.766 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 109.6,
+        "volume": 25,
+        "time": "2026-04-28T08:27:25.289Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $109.60 for 25 8:27:25.203 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 109.2,
+        "volume": 25,
+        "time": "2026-04-28T08:27:26.472Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $109.20 for 25 8:27:26.385 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 109.2,
+        "volume": 25,
+        "time": "2026-04-28T08:27:29.12Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $109.20 for 25 8:27:28.952 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 109.1,
+        "volume": 25,
+        "time": "2026-04-28T08:27:33.092Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $109.10 for 25 8:27:33.006 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 109.5,
+        "volume": 25,
+        "time": "2026-04-28T08:27:35.173Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $109.50 for 25 8:27:35.023 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 109.1,
+        "volume": 25,
+        "time": "2026-04-28T08:27:35.541Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $109.10 for 25 8:27:35.444 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "P66SG",
+        "price": 110.5,
+        "volume": 25,
+        "time": "2026-04-28T08:27:36.283Z",
+        "headline": "Platts Dubai Partial Jun26, P66SG lowers offer $110.50 for 25 8:27:36.156 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 109,
+        "volume": 25,
+        "time": "2026-04-28T08:27:39.464Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $109.00 for 25 8:27:39.377 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 109.4,
+        "volume": 25,
+        "time": "2026-04-28T08:27:41.578Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $109.40 for 25 8:27:41.492 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 109,
+        "volume": 25,
+        "time": "2026-04-28T08:27:42.785Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $109.00 for 25 8:27:42.562 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "P66SG",
+        "price": 110.4,
+        "volume": 25,
+        "time": "2026-04-28T08:27:46.058Z",
+        "headline": "Platts Dubai Partial Jun26, P66SG lowers offer $110.40 for 25 8:27:45.973 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 108.9,
+        "volume": 25,
+        "time": "2026-04-28T08:27:47.922Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $108.90 for 25 8:27:47.836 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 108.9,
+        "volume": 25,
+        "time": "2026-04-28T08:27:48.877Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $108.90 for 25 8:27:48.710 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "P66SG",
+        "price": 110.3,
+        "volume": 25,
+        "time": "2026-04-28T08:27:52.432Z",
+        "headline": "Platts Dubai Partial Jun26, P66SG lowers offer $110.30 for 25 8:27:52.344 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 108.8,
+        "volume": 25,
+        "time": "2026-04-28T08:27:58.181Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $108.80 for 25 8:27:58.056 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 108.8,
+        "volume": 25,
+        "time": "2026-04-28T08:27:58.276Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $108.80 for 25 8:27:58.158 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 109.3,
+        "volume": 25,
+        "time": "2026-04-28T08:28:03.99Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $109.30 for 25 8:28:03.880 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 108.7,
+        "volume": 25,
+        "time": "2026-04-28T08:28:04.083Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $108.70 for 25 8:28:03.972 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 108.7,
+        "volume": 25,
+        "time": "2026-04-28T08:28:04.885Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $108.70 for 25 8:28:04.799 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 108.6,
+        "volume": 25,
+        "time": "2026-04-28T08:28:10.574Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $108.60 for 25 8:28:10.489 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 108.6,
+        "volume": 25,
+        "time": "2026-04-28T08:28:11.116Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $108.60 for 25 8:28:11.011 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 109.2,
+        "volume": 25,
+        "time": "2026-04-28T08:28:11.86Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $109.20 for 25 8:28:11.722 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 108.5,
+        "volume": 25,
+        "time": "2026-04-28T08:28:17.26Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $108.50 for 25 8:28:17.174 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 108.5,
+        "volume": 25,
+        "time": "2026-04-28T08:28:18.481Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $108.50 for 25 8:28:18.395 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "P66SG",
+        "price": 110.2,
+        "volume": 25,
+        "time": "2026-04-28T08:28:20.745Z",
+        "headline": "Platts Dubai Partial Jun26, P66SG lowers offer $110.20 for 25 8:28:20.607 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 108.4,
+        "volume": 25,
+        "time": "2026-04-28T08:28:23.257Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $108.40 for 25 8:28:23.171 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 108.4,
+        "volume": 25,
+        "time": "2026-04-28T08:28:24.789Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $108.40 for 25 8:28:24.688 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 109.1,
+        "volume": 25,
+        "time": "2026-04-28T08:28:28.589Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $109.10 for 25 8:28:28.389 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 108.3,
+        "volume": 25,
+        "time": "2026-04-28T08:28:30.372Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $108.30 for 25 8:28:30.224 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 108.3,
+        "volume": 25,
+        "time": "2026-04-28T08:28:32.574Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $108.30 for 25 8:28:32.488 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "P66SG",
+        "price": 110.1,
+        "volume": 25,
+        "time": "2026-04-28T08:28:36.757Z",
+        "headline": "Platts Dubai Partial Jun26, P66SG lowers offer $110.10 for 25 8:28:36.672 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 108.2,
+        "volume": 25,
+        "time": "2026-04-28T08:28:40.552Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $108.20 for 25 8:28:40.467 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 109,
+        "volume": 25,
+        "time": "2026-04-28T08:28:41.288Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $109.00 for 25 8:28:41.202 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 108.2,
+        "volume": 25,
+        "time": "2026-04-28T08:28:43.473Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $108.20 for 25 8:28:43.304 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 108.1,
+        "volume": 25,
+        "time": "2026-04-28T08:28:47.389Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $108.10 for 25 8:28:47.303 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 108.1,
+        "volume": 25,
+        "time": "2026-04-28T08:28:51.402Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $108.10 for 25 8:28:51.227 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "P66SG",
+        "price": 110,
+        "volume": 25,
+        "time": "2026-04-28T08:28:54.748Z",
+        "headline": "Platts Dubai Partial Jun26, P66SG lowers offer $110.00 for 25 8:28:54.662 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 108,
+        "volume": 25,
+        "time": "2026-04-28T08:28:56.871Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $108.00 for 25 8:28:56.786 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 108,
+        "volume": 25,
+        "time": "2026-04-28T08:28:57.185Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $108.00 for 25 8:28:57.099 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 108.9,
+        "volume": 25,
+        "time": "2026-04-28T08:28:58.47Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $108.90 for 25 8:28:58.381 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "P66SG",
+        "price": 109.9,
+        "volume": 25,
+        "time": "2026-04-28T08:29:02.507Z",
+        "headline": "Platts Dubai Partial Jun26, P66SG lowers offer $109.90 for 25 8:29:02.421 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 108.8,
+        "volume": 25,
+        "time": "2026-04-28T08:29:04.314Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $108.80 for 25 8:29:04.226 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 107.9,
+        "volume": 25,
+        "time": "2026-04-28T08:29:05.047Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $107.90 for 25 8:29:04.887 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 107.9,
+        "volume": 25,
+        "time": "2026-04-28T08:29:05.142Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $107.90 for 25 8:29:04.896 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 107.8,
+        "volume": 25,
+        "time": "2026-04-28T08:29:11.785Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $107.80 for 25 8:29:11.637 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 107.8,
+        "volume": 25,
+        "time": "2026-04-28T08:29:14.521Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $107.80 for 25 8:29:14.426 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 108.7,
+        "volume": 25,
+        "time": "2026-04-28T08:29:16.383Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $108.70 for 25 8:29:16.154 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "P66SG",
+        "price": 109.8,
+        "volume": 25,
+        "time": "2026-04-28T08:29:16.736Z",
+        "headline": "Platts Dubai Partial Jun26, P66SG lowers offer $109.80 for 25 8:29:16.646 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 107.7,
+        "volume": 25,
+        "time": "2026-04-28T08:29:19.932Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $107.70 for 25 8:29:19.719 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 107.7,
+        "volume": 25,
+        "time": "2026-04-28T08:29:20.917Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $107.70 for 25 8:29:20.830 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 108.6,
+        "volume": 25,
+        "time": "2026-04-28T08:29:24.722Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $108.60 for 25 8:29:24.635 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 107.6,
+        "volume": 25,
+        "time": "2026-04-28T08:29:26.261Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $107.60 for 25 8:29:26.174 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "P66SG",
+        "price": 109.7,
+        "volume": 25,
+        "time": "2026-04-28T08:29:27.95Z",
+        "headline": "Platts Dubai Partial Jun26, P66SG lowers offer $109.70 for 25 8:29:27.864 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 107.6,
+        "volume": 25,
+        "time": "2026-04-28T08:29:29.45Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $107.60 for 25 8:29:29.301 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 107.5,
+        "volume": 25,
+        "time": "2026-04-28T08:29:34.323Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $107.50 for 25 8:29:34.178 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 107.5,
+        "volume": 25,
+        "time": "2026-04-28T08:29:38.28Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $107.50 for 25 8:29:38.194 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 107.4,
+        "volume": 25,
+        "time": "2026-04-28T08:29:40.428Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $107.40 for 25 8:29:40.342 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 108.5,
+        "volume": 25,
+        "time": "2026-04-28T08:29:43.48Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $108.50 for 25 8:29:43.391 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 107.4,
+        "volume": 25,
+        "time": "2026-04-28T08:29:45.046Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $107.40 for 25 8:29:44.764 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 107.3,
+        "volume": 25,
+        "time": "2026-04-28T08:29:47.367Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $107.30 for 25 8:29:47.128 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 107.3,
+        "volume": 25,
+        "time": "2026-04-28T08:29:51.352Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $107.30 for 25 8:29:51.249 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 108.4,
+        "volume": 25,
+        "time": "2026-04-28T08:29:51.964Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $108.40 for 25 8:29:51.878 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 107.2,
+        "volume": 25,
+        "time": "2026-04-28T08:29:54.84Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $107.20 for 25 8:29:54.753 GMT"
+      }
+    ],
+    "lastMinuteOffers": [
+      {
+        "contract": "Jun26",
+        "company": "P66SG",
+        "price": 109.9,
+        "volume": 25,
+        "time": "2026-04-28T08:29:02.507Z",
+        "headline": "Platts Dubai Partial Jun26, P66SG lowers offer $109.90 for 25 8:29:02.421 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 108.8,
+        "volume": 25,
+        "time": "2026-04-28T08:29:04.314Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $108.80 for 25 8:29:04.226 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 107.9,
+        "volume": 25,
+        "time": "2026-04-28T08:29:05.047Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $107.90 for 25 8:29:04.887 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 107.9,
+        "volume": 25,
+        "time": "2026-04-28T08:29:05.142Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $107.90 for 25 8:29:04.896 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 107.8,
+        "volume": 25,
+        "time": "2026-04-28T08:29:11.785Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $107.80 for 25 8:29:11.637 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 107.8,
+        "volume": 25,
+        "time": "2026-04-28T08:29:14.521Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $107.80 for 25 8:29:14.426 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 108.7,
+        "volume": 25,
+        "time": "2026-04-28T08:29:16.383Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $108.70 for 25 8:29:16.154 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "P66SG",
+        "price": 109.8,
+        "volume": 25,
+        "time": "2026-04-28T08:29:16.736Z",
+        "headline": "Platts Dubai Partial Jun26, P66SG lowers offer $109.80 for 25 8:29:16.646 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 107.7,
+        "volume": 25,
+        "time": "2026-04-28T08:29:19.932Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $107.70 for 25 8:29:19.719 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 107.7,
+        "volume": 25,
+        "time": "2026-04-28T08:29:20.917Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $107.70 for 25 8:29:20.830 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 108.6,
+        "volume": 25,
+        "time": "2026-04-28T08:29:24.722Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $108.60 for 25 8:29:24.635 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 107.6,
+        "volume": 25,
+        "time": "2026-04-28T08:29:26.261Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $107.60 for 25 8:29:26.174 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "P66SG",
+        "price": 109.7,
+        "volume": 25,
+        "time": "2026-04-28T08:29:27.95Z",
+        "headline": "Platts Dubai Partial Jun26, P66SG lowers offer $109.70 for 25 8:29:27.864 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 107.6,
+        "volume": 25,
+        "time": "2026-04-28T08:29:29.45Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $107.60 for 25 8:29:29.301 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 107.5,
+        "volume": 25,
+        "time": "2026-04-28T08:29:34.323Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $107.50 for 25 8:29:34.178 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 107.5,
+        "volume": 25,
+        "time": "2026-04-28T08:29:38.28Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $107.50 for 25 8:29:38.194 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 107.4,
+        "volume": 25,
+        "time": "2026-04-28T08:29:40.428Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $107.40 for 25 8:29:40.342 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 108.5,
+        "volume": 25,
+        "time": "2026-04-28T08:29:43.48Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $108.50 for 25 8:29:43.391 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 107.4,
+        "volume": 25,
+        "time": "2026-04-28T08:29:45.046Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $107.40 for 25 8:29:44.764 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 107.3,
+        "volume": 25,
+        "time": "2026-04-28T08:29:47.367Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $107.30 for 25 8:29:47.128 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "SIETCO",
+        "price": 107.3,
+        "volume": 25,
+        "time": "2026-04-28T08:29:51.352Z",
+        "headline": "Platts Dubai Partial Jun26, SIETCO lowers offer $107.30 for 25 8:29:51.249 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "UNIPECASIA",
+        "price": 108.4,
+        "volume": 25,
+        "time": "2026-04-28T08:29:51.964Z",
+        "headline": "Platts Dubai Partial Jun26, UNIPECASIA lowers offer $108.40 for 25 8:29:51.878 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "METS",
+        "price": 107.2,
+        "volume": 25,
+        "time": "2026-04-28T08:29:54.84Z",
+        "headline": "Platts Dubai Partial Jun26, METS lowers offer $107.20 for 25 8:29:54.753 GMT"
+      }
+    ],
+    "bids": [
+      {
+        "contract": "Jun26",
+        "company": "GLENCORESG",
+        "price": 102.1,
+        "volume": 25,
+        "time": "2026-04-28T08:15:04.194Z",
+        "headline": "Platts Dubai Partial Jun26, GLENCORESG raises bid $102.10 for 25 8:15:04.083 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "GLENCORESG",
+        "price": 102.2,
+        "volume": 25,
+        "time": "2026-04-28T08:15:23.686Z",
+        "headline": "Platts Dubai Partial Jun26, GLENCORESG raises bid $102.20 for 25 8:15:23.598 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "GLENCORESG",
+        "price": 102.3,
+        "volume": 25,
+        "time": "2026-04-28T08:16:13.313Z",
+        "headline": "Platts Dubai Partial Jun26, GLENCORESG raises bid $102.30 for 25 8:16:13.225 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "GLENCORESG",
+        "price": 102.4,
+        "volume": 25,
+        "time": "2026-04-28T08:16:19.258Z",
+        "headline": "Platts Dubai Partial Jun26, GLENCORESG raises bid $102.40 for 25 8:16:19.168 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "GLENCORESG",
+        "price": 102.5,
+        "volume": 25,
+        "time": "2026-04-28T08:18:00.585Z",
+        "headline": "Platts Dubai Partial Jun26, GLENCORESG raises bid $102.50 for 25 8:18:00.497 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "GLENCORESG",
+        "price": 102.6,
+        "volume": 25,
+        "time": "2026-04-28T08:18:12.929Z",
+        "headline": "Platts Dubai Partial Jun26, GLENCORESG raises bid $102.60 for 25 8:18:12.817 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 101.1,
+        "volume": 25,
+        "time": "2026-04-28T08:18:23.299Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $101.10 for 25 8:18:23.212 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 101.2,
+        "volume": 25,
+        "time": "2026-04-28T08:18:44.422Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $101.20 for 25 8:18:44.335 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 103.1,
+        "volume": 25,
+        "time": "2026-04-28T08:19:03.836Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $103.10 for 25 8:19:03.729 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 103.2,
+        "volume": 25,
+        "time": "2026-04-28T08:19:09.111Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $103.20 for 25 8:19:09.023 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 101.3,
+        "volume": 25,
+        "time": "2026-04-28T08:19:12.432Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $101.30 for 25 8:19:12.339 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 103.3,
+        "volume": 25,
+        "time": "2026-04-28T08:19:18.263Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $103.30 for 25 8:19:18.177 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 101.4,
+        "volume": 25,
+        "time": "2026-04-28T08:19:19.926Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $101.40 for 25 8:19:19.840 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 101.5,
+        "volume": 25,
+        "time": "2026-04-28T08:19:27.567Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $101.50 for 25 8:19:27.480 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "GLENCORESG",
+        "price": 102.7,
+        "volume": 25,
+        "time": "2026-04-28T08:19:29.982Z",
+        "headline": "Platts Dubai Partial Jun26, GLENCORESG raises bid $102.70 for 25 8:19:29.896 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 103.4,
+        "volume": 25,
+        "time": "2026-04-28T08:19:31.287Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $103.40 for 25 8:19:31.200 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 103.5,
+        "volume": 25,
+        "time": "2026-04-28T08:19:39.393Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $103.50 for 25 8:19:39.296 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 103.6,
+        "volume": 25,
+        "time": "2026-04-28T08:19:48.845Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $103.60 for 25 8:19:48.759 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 101.6,
+        "volume": 25,
+        "time": "2026-04-28T08:19:49.9Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $101.60 for 25 8:19:49.811 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 103.7,
+        "volume": 25,
+        "time": "2026-04-28T08:20:02.181Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $103.70 for 25 8:20:02.094 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 103.8,
+        "volume": 25,
+        "time": "2026-04-28T08:20:07.692Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $103.80 for 25 8:20:07.582 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 101.7,
+        "volume": 25,
+        "time": "2026-04-28T08:20:11.534Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $101.70 for 25 8:20:11.446 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 103.9,
+        "volume": 25,
+        "time": "2026-04-28T08:20:15.331Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $103.90 for 25 8:20:15.143 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 104,
+        "volume": 25,
+        "time": "2026-04-28T08:20:22.355Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $104.00 for 25 8:20:22.267 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "GLENCORESG",
+        "price": 102.8,
+        "volume": 25,
+        "time": "2026-04-28T08:20:23.737Z",
+        "headline": "Platts Dubai Partial Jun26, GLENCORESG raises bid $102.80 for 25 8:20:23.651 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 101.8,
+        "volume": 25,
+        "time": "2026-04-28T08:20:31.141Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $101.80 for 25 8:20:31.053 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 104.1,
+        "volume": 25,
+        "time": "2026-04-28T08:20:33.695Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $104.10 for 25 8:20:33.608 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 104.2,
+        "volume": 25,
+        "time": "2026-04-28T08:20:40.485Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $104.20 for 25 8:20:40.303 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 101.9,
+        "volume": 25,
+        "time": "2026-04-28T08:20:40.939Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $101.90 for 25 8:20:40.853 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 102,
+        "volume": 25,
+        "time": "2026-04-28T08:20:51.593Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $102.00 for 25 8:20:51.473 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 104.3,
+        "volume": 25,
+        "time": "2026-04-28T08:20:53.242Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $104.30 for 25 8:20:53.155 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 104.4,
+        "volume": 25,
+        "time": "2026-04-28T08:21:00.159Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $104.40 for 25 8:21:00.064 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 102.1,
+        "volume": 25,
+        "time": "2026-04-28T08:21:06.519Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $102.10 for 25 8:21:06.422 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 102.2,
+        "volume": 25,
+        "time": "2026-04-28T08:21:12.366Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $102.20 for 25 8:21:12.280 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 104.5,
+        "volume": 25,
+        "time": "2026-04-28T08:21:15.816Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $104.50 for 25 8:21:15.729 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 104.6,
+        "volume": 25,
+        "time": "2026-04-28T08:21:23.706Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $104.60 for 25 8:21:23.619 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 102.3,
+        "volume": 25,
+        "time": "2026-04-28T08:21:28.406Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $102.30 for 25 8:21:28.319 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 104.7,
+        "volume": 25,
+        "time": "2026-04-28T08:21:29.308Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $104.70 for 25 8:21:29.221 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 102.4,
+        "volume": 25,
+        "time": "2026-04-28T08:21:34.32Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $102.40 for 25 8:21:34.234 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 104.8,
+        "volume": 25,
+        "time": "2026-04-28T08:21:34.435Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $104.80 for 25 8:21:34.349 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 102.5,
+        "volume": 25,
+        "time": "2026-04-28T08:21:41.612Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $102.50 for 25 8:21:41.526 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "GLENCORESG",
+        "price": 102.9,
+        "volume": 25,
+        "time": "2026-04-28T08:21:50.432Z",
+        "headline": "Platts Dubai Partial Jun26, GLENCORESG raises bid $102.90 for 25 8:21:50.345 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "GLENCORESG",
+        "price": 103,
+        "volume": 25,
+        "time": "2026-04-28T08:21:56.796Z",
+        "headline": "Platts Dubai Partial Jun26, GLENCORESG raises bid $103.00 for 25 8:21:56.710 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 102.6,
+        "volume": 25,
+        "time": "2026-04-28T08:21:57.726Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $102.60 for 25 8:21:57.640 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 104.9,
+        "volume": 25,
+        "time": "2026-04-28T08:22:02.659Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $104.90 for 25 8:22:02.475 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "GLENCORESG",
+        "price": 103.1,
+        "volume": 25,
+        "time": "2026-04-28T08:22:07.261Z",
+        "headline": "Platts Dubai Partial Jun26, GLENCORESG raises bid $103.10 for 25 8:22:07.132 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 102.7,
+        "volume": 25,
+        "time": "2026-04-28T08:22:09.544Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $102.70 for 25 8:22:09.458 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "GLENCORESG",
+        "price": 103.2,
+        "volume": 25,
+        "time": "2026-04-28T08:22:12.977Z",
+        "headline": "Platts Dubai Partial Jun26, GLENCORESG raises bid $103.20 for 25 8:22:12.890 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "GLENCORESG",
+        "price": 103.3,
+        "volume": 25,
+        "time": "2026-04-28T08:22:19.209Z",
+        "headline": "Platts Dubai Partial Jun26, GLENCORESG raises bid $103.30 for 25 8:22:19.020 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 102.8,
+        "volume": 25,
+        "time": "2026-04-28T08:22:26.257Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $102.80 for 25 8:22:26.166 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 102.9,
+        "volume": 25,
+        "time": "2026-04-28T08:22:35.285Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $102.90 for 25 8:22:35.190 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 103,
+        "volume": 25,
+        "time": "2026-04-28T08:22:42.984Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $103.00 for 25 8:22:42.898 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 103.1,
+        "volume": 25,
+        "time": "2026-04-28T08:22:57.784Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $103.10 for 25 8:22:57.698 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 103.2,
+        "volume": 25,
+        "time": "2026-04-28T08:23:09.329Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $103.20 for 25 8:23:09.243 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 103.3,
+        "volume": 25,
+        "time": "2026-04-28T08:23:18.474Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $103.30 for 25 8:23:18.388 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 104.8,
+        "volume": 25,
+        "time": "2026-04-28T08:23:28.912Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG lowers bid $104.80 for 25 8:23:28.779 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 103.4,
+        "volume": 25,
+        "time": "2026-04-28T08:23:38.123Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $103.40 for 25 8:23:38.037 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 104.9,
+        "volume": 25,
+        "time": "2026-04-28T08:23:42.473Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $104.90 for 25 8:23:42.387 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 103.5,
+        "volume": 25,
+        "time": "2026-04-28T08:23:54.004Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $103.50 for 25 8:23:53.830 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 103.6,
+        "volume": 25,
+        "time": "2026-04-28T08:24:27.02Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $103.60 for 25 8:24:26.928 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "GLENCORESG",
+        "price": 103.4,
+        "volume": 25,
+        "time": "2026-04-28T08:24:50.787Z",
+        "headline": "Platts Dubai Partial Jun26, GLENCORESG raises bid $103.40 for 25 8:24:50.701 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 103.7,
+        "volume": 25,
+        "time": "2026-04-28T08:24:57.015Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $103.70 for 25 8:24:56.929 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 103.8,
+        "volume": 25,
+        "time": "2026-04-28T08:25:04.388Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $103.80 for 25 8:25:04.302 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 103.9,
+        "volume": 25,
+        "time": "2026-04-28T08:25:10.503Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $103.90 for 25 8:25:10.417 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 104.8,
+        "volume": 25,
+        "time": "2026-04-28T08:25:12.313Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG lowers bid $104.80 for 25 8:25:12.228 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 104,
+        "volume": 25,
+        "time": "2026-04-28T08:25:20.614Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $104.00 for 25 8:25:20.528 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "GLENCORESG",
+        "price": 103.5,
+        "volume": 25,
+        "time": "2026-04-28T08:25:24.613Z",
+        "headline": "Platts Dubai Partial Jun26, GLENCORESG raises bid $103.50 for 25 8:25:24.519 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 104.1,
+        "volume": 25,
+        "time": "2026-04-28T08:25:28.003Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $104.10 for 25 8:25:27.854 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "GLENCORESG",
+        "price": 103.6,
+        "volume": 25,
+        "time": "2026-04-28T08:25:30.509Z",
+        "headline": "Platts Dubai Partial Jun26, GLENCORESG raises bid $103.60 for 25 8:25:30.422 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 104.2,
+        "volume": 25,
+        "time": "2026-04-28T08:25:32.941Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $104.20 for 25 8:25:32.855 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "GLENCORESG",
+        "price": 103.7,
+        "volume": 25,
+        "time": "2026-04-28T08:25:36.016Z",
+        "headline": "Platts Dubai Partial Jun26, GLENCORESG raises bid $103.70 for 25 8:25:35.928 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 104.3,
+        "volume": 25,
+        "time": "2026-04-28T08:25:45.985Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $104.30 for 25 8:25:45.899 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 104.9,
+        "volume": 25,
+        "time": "2026-04-28T08:26:14.672Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $104.90 for 25 8:26:14.586 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 104.4,
+        "volume": 25,
+        "time": "2026-04-28T08:26:24.599Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $104.40 for 25 8:26:24.476 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "GLENCORESG",
+        "price": 103.8,
+        "volume": 25,
+        "time": "2026-04-28T08:26:30.622Z",
+        "headline": "Platts Dubai Partial Jun26, GLENCORESG raises bid $103.80 for 25 8:26:30.409 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 104.5,
+        "volume": 25,
+        "time": "2026-04-28T08:26:33.119Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $104.50 for 25 8:26:32.918 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 105,
+        "volume": 25,
+        "time": "2026-04-28T08:26:34.656Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $105.00 for 25 8:26:34.449 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 105.01,
+        "volume": 25,
+        "time": "2026-04-28T08:26:43.608Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $105.01 for 25 8:26:43.522 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "GLENCORESG",
+        "price": 103.9,
+        "volume": 25,
+        "time": "2026-04-28T08:28:08.792Z",
+        "headline": "Platts Dubai Partial Jun26, GLENCORESG raises bid $103.90 for 25 8:28:08.642 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 104.6,
+        "volume": 25,
+        "time": "2026-04-28T08:28:16.157Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $104.60 for 25 8:28:16.072 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 104.7,
+        "volume": 25,
+        "time": "2026-04-28T08:28:22.719Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $104.70 for 25 8:28:22.615 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 104.8,
+        "volume": 25,
+        "time": "2026-04-28T08:28:30.466Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $104.80 for 25 8:28:30.264 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 104.9,
+        "volume": 25,
+        "time": "2026-04-28T08:28:38.857Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $104.90 for 25 8:28:38.726 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "BPSG",
+        "price": 105,
+        "volume": 25,
+        "time": "2026-04-28T08:28:47.492Z",
+        "headline": "Platts Dubai Partial Jun26, BPSG raises bid $105.00 for 25 8:28:47.407 GMT"
+      },
+      {
+        "contract": "Jun26",
+        "company": "TOTSA",
+        "price": 105,
+        "volume": 25,
+        "time": "2026-04-28T08:29:20.025Z",
+        "headline": "Platts Dubai Partial Jun26, TOTSA withdraws bid $105.00 for 25 8:29:19.897 GMT"
+      }
+    ],
+    "convergences": []
+  }
+}

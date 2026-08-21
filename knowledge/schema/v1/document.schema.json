@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "oil-kb/document.schema.json",
+  "title": "Document",
+  "type": "object",
+  "required": ["id", "kind", "title", "source", "publicationDate", "storage"],
+  "properties": {
+    "id": { "type": "string" },
+    "kind": {
+      "type": "string",
+      "enum": ["report", "api_payload", "tweet", "email", "dataset", "note", "transcript"]
+    },
+    "title": { "type": "string" },
+    "source": { "type": "string" },
+    "institution": { "type": "string" },
+    "author": { "type": "string" },
+    "publicationDate": { "type": "string" },
+    "coverageStart": { "type": "string" },
+    "coverageEnd": { "type": "string" },
+    "commodities": { "type": "array", "items": { "type": "string" } },
+    "geographies": { "type": "array", "items": { "type": "string" } },
+    "topics": { "type": "array", "items": { "type": "string" } },
+    "timeScale": {
+      "type": "string",
+      "enum": ["intraday", "daily", "weekly", "monthly", "quarterly", "annual", "structural"]
+    },
+    "storage": {
+      "type": "object",
+      "required": ["path"],
+      "properties": {
+        "path": { "type": "string" },
+        "mimeType": { "type": "string" },
+        "sha256": { "type": "string" }
+      }
+    },
+    "provenance": { "type": "object" },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,60 @@
+{
+  "date": "2026-05-11",
+  "fluxOfficials": {
+    "assessment": 101.105,
+    "premium": 7.415,
+    "text": "The Officials MOC: Date 11/5/2026\nDubai Assessment: $101.105/bbl\nPhysical premium: $7.415/bbl\nKey events: No convergences"
+  },
+  "declarations": [],
+  "partials": {
+    "contract": "Jul26",
+    "trades": [],
+    "bids": [
+      { "company": "BP", "price": 99.50, "volume": 25, "time": "08:16:17 GMT" },
+      { "company": "Vitol", "price": 99.50, "volume": 25, "time": "08:16:17 GMT" },
+      { "company": "Trafigura", "price": 99.50, "volume": 25, "time": "08:16:17 GMT" },
+      { "company": "Gunvor", "price": 99.50, "volume": 25, "time": "08:16:17 GMT" },
+      { "company": "Phillips 66", "price": 98.00, "volume": 25, "time": "08:16:17 GMT" }
+    ],
+    "offers": [
+      { "company": "Unipec", "price": 102.10, "volume": 25, "time": "08:16:19 GMT" },
+      { "company": "Phillips66", "price": 102.40, "volume": 25, "time": "08:16:19 GMT" },
+      { "company": "BP", "price": 102.50, "volume": 25, "time": "08:16:19 GMT" },
+      { "company": "Shell", "price": 102.50, "volume": 25, "time": "08:16:19 GMT" },
+      { "company": "ExxonMobil", "price": 102.50, "volume": 25, "time": "08:16:19 GMT" },
+      { "company": "Reliance", "price": 102.60, "volume": 25, "time": "08:16:19 GMT" }
+    ],
+    "lastMinuteOffers": [
+      { "company": "P66SG", "count": 4, "minPrice": 101.20, "lastPrice": 101.20 },
+      { "company": "BPSG", "count": 3, "minPrice": 101.11, "lastPrice": 101.11 }
+    ],
+    "lastMinuteBidWithdrawals": [
+      { "company": "VITOLSG", "price": 101.10, "time": "08:30:04 GMT" }
+    ],
+    "allDayOffersSummary": {
+      "BPSG": { "count": 16, "min": 101.11, "max": 102.50 },
+      "P66SG": { "count": 16, "min": 101.20, "max": 102.50 },
+      "RGES": { "count": 11, "min": 101.80, "max": 102.60 },
+      "SIETCO": { "count": 9, "min": 101.90, "max": 102.50 },
+      "UNIPECASIA": { "count": 6, "min": 101.70, "max": 102.10 },
+      "EXTAP": { "count": 4, "min": 102.30, "max": 102.50 }
+    }
+  },
+  "cashMurban": [
+    { "value": 7.20, "direction": "over", "month": "July", "vs": "July Dubai", "time": "08:32:18 GMT" },
+    { "value": 7.30, "direction": "over", "month": "July", "vs": "July Dubai", "time": "08:32:59 GMT" },
+    { "value": 7.22, "direction": "over", "month": "July", "vs": "July Dubai", "time": "08:33:55 GMT" }
+  ],
+  "cashOman": [
+    { "value": 7.60, "direction": "over", "month": "July", "vs": "July Dubai", "time": "08:32:16 GMT" },
+    { "value": 7.30, "direction": "over", "month": "July", "vs": "July Dubai", "time": "08:32:57 GMT" },
+    { "value": 7.30, "direction": "over", "month": "July", "vs": "July Dubai", "time": "08:33:53 GMT" }
+  ],
+  "errorTrades": [],
+  "finalsOnClose": {
+    "bids": "BP/Vitol/Trafigura/Gunvor @ $99.50, Phillips66 @ $98.00 for Jul26 25kb",
+    "offers": "Unipec @ $102.10, Phillips66 @ $102.40, BP/Shell/ExxonMobil @ $102.50, Reliance @ $102.60 for Jul26 25kb"
+  },
+  "convergenceAnnouncement": "No convergences",
+  "generatedAt": "2026-05-11T16:36:00+08:00"
+}

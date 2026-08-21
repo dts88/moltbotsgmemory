@@ -3,10 +3,12 @@
  * Thai News Monitor
  * Fetches RSS/API from 5 Thai English-language news sites,
  * filters by keywords, deduplicates via seen-IDs cache,
- * and returns matched articles as JSON.
+ * and returns either raw JSON matches or delivery-ready text.
  *
- * Usage: node thai-news-monitor.mjs
- * Output: JSON array of { title, summary, url, source, publishedAt }
+ * Usage:
+ *   node thai-news-monitor.mjs             # raw JSON matches, no cache update
+ *   node thai-news-monitor.mjs --delivery  # delivery-ready text, updates cache
+ *   node thai-news-monitor.mjs --send      # legacy direct Telegram send
  */
 
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
@@ -124,7 +126,56 @@ function matchesExclude(text, excludeKeywords) {
   return excludeKeywords.some(kw => lower.includes(kw.toLowerCase()));
 }
 
+function decodeHtmlEntities(text = '') {
+  return text
+    .replace(/<!\[CDATA\[|\]\]>/g, '')
+    .replace(/&nbsp;/gi, ' ')
+    .replace(/&amp;/gi, '&')
+    .replace(/&quot;/gi, '"')
+    .replace(/&#039;|&apos;/gi, "'")
+    .replace(/&lt;/gi, '<')
+    .replace(/&gt;/gi, '>')
+    .replace(/&#(\d+);/g, (_, n) => String.fromCodePoint(Number(n)))
+    .replace(/&#x([0-9a-f]+);/gi, (_, n) => String.fromCodePoint(parseInt(n, 16)));
+}
 
+function cleanText(text = '') {
+  return decodeHtmlEntities(text)
+    .replace(/\s+/g, ' ')
+    .replace(/[\u200B-\u200D\uFEFF]/g, '')
+    .trim();
+}
+
+function isUsefulArticleParagraph(text = '') {
+  const t = cleanText(text);
+  if (t.length < 80) return false;
+  if (/^(writer|reporter|photo|caption|image|source|related|read more|advertisement)\b/i.test(t)) return false;
+  if (/^one of\s*$/i.test(t)) return false;
+  if (/^\s*•/.test(t)) return false;
+  if (/all rights reserved|bangkok post public company|subscribe|newsletter/i.test(t)) return false;
+  return true;
+}
+
+function deliverySentences(text = '', maxChars = 320) {
+  const t = cleanText(text);
+  if (!t) return '';
+  // Keep only complete sentences where possible; avoid mid-sentence "..." truncation.
+  const sentenceRe = /[^.!?。！？]+[.!?。！？](?:["'”’])?/g;
+  const sentences = t.match(sentenceRe)?.map(s => cleanText(s)) ?? [];
+  if (sentences.length === 0) return t.length <= maxChars ? t : '';
+
+  let out = '';
+  for (const s of sentences) {
+    if (!out) {
+      out = s;
+    } else if ((out + ' ' + s).length <= maxChars) {
+      out += ' ' + s;
+    } else {
+      break;
+    }
+  }
+  return out || sentences[0];
+}
 
 // ── Fetchers ──────────────────────────────────────────────────────────────────
 async function fetchRSS(url, sourceName) {
@@ -140,13 +191,13 @@ async function fetchRSS(url, sourceName) {
   let m;
   while ((m = itemRegex.exec(xml)) !== null) {
     const block = m[1];
-    const title = (/<title><!\[CDATA\[(.*?)\]\]><\/title>/.exec(block) ||
-                   /<title>(.*?)<\/title>/.exec(block))?.[1]?.trim() ?? '';
-    const link  = (/<link>(.*?)<\/link>/.exec(block) ||
-                   /<guid[^>]*>(https?:\/\/[^<]+)<\/guid>/.exec(block))?.[1]?.trim() ?? '';
-    const desc  = (/<description><!\[CDATA\[(.*?)\]\]><\/description>/s.exec(block) ||
+    const title = cleanText((/<title><!\[CDATA\[(.*?)\]\]><\/title>/.exec(block) ||
+                   /<title>(.*?)<\/title>/.exec(block))?.[1] ?? '');
+    const link  = cleanText((/<link>(.*?)<\/link>/.exec(block) ||
+                   /<guid[^>]*>(https?:\/\/[^<]+)<\/guid>/.exec(block))?.[1] ?? '');
+    const desc  = cleanText((/<description><!\[CDATA\[(.*?)\]\]><\/description>/s.exec(block) ||
                    /<description>(.*?)<\/description>/s.exec(block))?.[1]
-                   ?.replace(/<[^>]+>/g, '').trim().slice(0, 300) ?? '';
+                   ?.replace(/<[^>]+>/g, '') ?? '').slice(0, 300);
     const pubDate = (/<pubDate>(.*?)<\/pubDate>/.exec(block))?.[1]?.trim() ?? '';
 
     if (title && link) {
@@ -166,9 +217,9 @@ async function fetchNationAPI(url, sourceName) {
   const articles = data?.data?.data ?? data?.articles ?? [];
 
   return articles.map(a => ({
-    title: a.title ?? '',
+    title: cleanText(a.title ?? ''),
     url: `https://www.nationthailand.com${a.link ?? ''}`,
-    summary: a.blurb ?? '',
+    summary: cleanText(a.blurb ?? ''),
     source: sourceName,
     publishedAt: a.published_at ?? '',
   }));
@@ -192,7 +243,7 @@ async function fetchKhaoSodHTML(url, sourceName) {
   let m;
   while ((m = linkRe.exec(html)) !== null) {
     const link = m[1];
-    const title = m[2].trim().replace(/&amp;/g, '&').replace(/&#039;/g, "'");
+    const title = cleanText(m[2]);
     if (!seen.has(link) && title.length > 15 && !/category|tag|page|author/i.test(link)) {
       seen.add(link);
       items.push({ title, url: link, summary: '', source: sourceName, publishedAt: '' });
@@ -231,9 +282,72 @@ function toSGT(dateStr) {
   return sgt.toISOString().slice(0, 16).replace('T', ' ') + ' SGT';
 }
 
+async function buildMessageChunks(matched) {
+  const lines = [];
+  for (let i = 0; i < matched.length; i++) {
+    const a = matched[i];
+    const ts = toSGT(a.publishedAt);
+
+    let bullets = [];
+    try {
+      const res = await fetch(a.url, {
+        headers: { 'User-Agent': 'Mozilla/5.0' },
+        signal: AbortSignal.timeout(10000),
+      });
+      const html = await res.text();
+      const paras = [];
+      const pRe = /<p[^>]*>([\s\S]*?)<\/p>/g;
+      let m;
+      while ((m = pRe.exec(html)) !== null) {
+        const txt = cleanText(m[1].replace(/<script[\s\S]*?<\/script>/gi, '').replace(/<style[\s\S]*?<\/style>/gi, '').replace(/<[^>]+>/g, ''));
+        if (isUsefulArticleParagraph(txt)) paras.push(txt);
+      }
+      bullets = paras
+        .map(p => deliverySentences(p))
+        .filter(Boolean)
+        .slice(0, 4);
+    } catch {
+      bullets = [a.summary || a.title];
+    }
+
+    if (bullets.length === 0) bullets = [a.summary || a.title];
+
+    const block = [
+      `[${i + 1}] ${a.title}`,
+      ts,
+      ...bullets.map(b => `• ${b}`),
+      a.url,
+    ].join('\n');
+    lines.push(block);
+  }
+
+  const chunks = [];
+  let current = '';
+  for (const block of lines) {
+    if ((current + '\n\n' + block).length > 3800 && current) {
+      chunks.push(current.trim());
+      current = block;
+    } else {
+      current = current ? current + '\n\n' + block : block;
+    }
+  }
+  if (current) chunks.push(current.trim());
+  return chunks;
+}
+
 // ── Main ──────────────────────────────────────────────────────────────────────
 async function main() {
   const sendMode = process.argv.includes('--send');
+  const deliveryMode = process.argv.includes('--delivery') || process.argv.includes('--prepare-delivery');
+  const ignoreSeen = process.argv.includes('--ignore-seen');
+  const noCacheUpdate = process.argv.includes('--no-cache-update');
+  const excludeIndicesArg = process.argv.find(a => a.startsWith('--exclude-indices='));
+  const excludeIndices = new Set(
+    (excludeIndicesArg?.split('=')[1] ?? '')
+      .split(',')
+      .map(n => Number(n.trim()))
+      .filter(n => Number.isInteger(n) && n > 0)
+  );
   // Load config (allow override)
   let config = DEFAULT_CONFIG;
   if (existsSync(CONFIG_PATH)) {
@@ -244,7 +358,7 @@ async function main() {
   // Ensure cache dir
   mkdirSync(CACHE_PATH.replace(/\/[^/]+$/, ''), { recursive: true });
 
-  const seen = loadCache();
+  const seen = ignoreSeen ? new Set() : loadCache();
   const matched = [];
 
   for (const src of config.sources) {
@@ -283,78 +397,48 @@ async function main() {
     }
   }
 
-  if (!sendMode) {
+  if (!sendMode && !deliveryMode) {
     // Test mode: just output JSON, do NOT update cache
     process.stdout.write(JSON.stringify(matched, null, 2) + '\n');
     return;
   }
 
-  // Send mode: save cache (mark matched articles as seen)
-  saveCache(seen);
+  const deliverMatched = excludeIndices.size > 0
+    ? matched.filter((_, i) => !excludeIndices.has(i + 1))
+    : matched;
 
-  // Send mode: format and send to Telegram
+  // Delivery/send mode: save cache (mark matched articles as seen), unless this is a manual preview/rerun.
+  if (!noCacheUpdate) saveCache(seen);
+
+  matched.length = 0;
+  matched.push(...deliverMatched);
+
   if (matched.length === 0) {
     const now = new Date();
-    const sgt = new Date(now.getTime() + 8 * 3600 * 1000);
-    const ts = sgt.toISOString().slice(0, 16).replace('T', ' ');
-    await sendToTelegram(`📭 ${ts} SGT — 暂无新消息`);
+    const ts = new Intl.DateTimeFormat('sv-SE', {
+      timeZone: 'Asia/Singapore',
+      year: 'numeric', month: '2-digit', day: '2-digit',
+      hour: '2-digit', minute: '2-digit',
+      hour12: false,
+    }).format(now).replace(' ', ' ');
+    const emptyMessage = `📭 ${ts} SGT — 暂无匹配新闻`;
+
+    if (deliveryMode) {
+      process.stdout.write(`${emptyMessage}\n`);
+      return;
+    }
+
+    await sendToTelegram(emptyMessage);
     process.stderr.write('No new articles. Sent brief notification.\n');
     return;
   }
 
-  // Fetch full article content for each matched item
-  const lines = [];
-  for (let i = 0; i < matched.length; i++) {
-    const a = matched[i];
-    const ts = toSGT(a.publishedAt);
+  const chunks = await buildMessageChunks(matched);
 
-    // Try to fetch full article text
-    let bullets = [];
-    try {
-      const res = await fetch(a.url, {
-        headers: { 'User-Agent': 'Mozilla/5.0' },
-        signal: AbortSignal.timeout(10000),
-      });
-      const html = await res.text();
-      // Extract paragraphs
-      const paras = [];
-      const pRe = /<p[^>]*>([\s\S]*?)<\/p>/g;
-      let m;
-      while ((m = pRe.exec(html)) !== null) {
-        const txt = m[1].replace(/<[^>]+>/g, '').trim();
-        if (txt.length > 60) paras.push(txt);
-      }
-      // Pick up to 5 key sentences
-      bullets = paras.slice(0, 5).map(p => p.slice(0, 200));
-    } catch {
-      bullets = [a.summary || a.title];
-    }
-
-    if (bullets.length === 0) bullets = [a.summary || a.title];
-
-    const block = [
-      `[${i + 1}] ${a.title}`,
-      ts,
-      ...bullets.map(b => `• ${b}`),
-      a.url,
-    ].join('\n');
-    lines.push(block);
+  if (deliveryMode) {
+    process.stdout.write(chunks.join('\n\n---\n\n') + '\n');
+    return;
   }
-
-  const message = lines.join('\n\n');
-
-  // Split if too long (Telegram limit 4096 chars)
-  const chunks = [];
-  let current = '';
-  for (const block of lines) {
-    if ((current + '\n\n' + block).length > 3800 && current) {
-      chunks.push(current.trim());
-      current = block;
-    } else {
-      current = current ? current + '\n\n' + block : block;
-    }
-  }
-  if (current) chunks.push(current.trim());
 
   for (const chunk of chunks) {
     await sendToTelegram(chunk);

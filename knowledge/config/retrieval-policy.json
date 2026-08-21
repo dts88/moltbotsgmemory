@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "defaultMode": "standard",
+  "modes": {
+    "quick": {
+      "description": "Metadata and cards only; low-token conversational answers.",
+      "maxCards": 8,
+      "maxEvidenceSnippets": 0,
+      "openFullSources": false,
+      "targetTokens": 1200
+    },
+    "standard": {
+      "description": "Cards plus a few targeted evidence snippets; default mode.",
+      "maxCards": 12,
+      "maxEvidenceSnippets": 6,
+      "openFullSources": false,
+      "targetTokens": 3000
+    },
+    "deep": {
+      "description": "Cross-source comparison with source excerpts and selected tables.",
+      "maxCards": 30,
+      "maxEvidenceSnippets": 18,
+      "openFullSources": "targeted",
+      "targetTokens": 9000
+    },
+    "audit": {
+      "description": "Broad source sweep for formal reports and explicit no-omission requests.",
+      "maxCards": 80,
+      "maxEvidenceSnippets": 50,
+      "openFullSources": "as_needed",
+      "targetTokens": 18000
+    }
+  },
+  "timeDecay": {
+    "intraday_pricing": { "halfLifeDays": 0.5, "archiveAfterDays": 14 },
+    "moc_heards": { "halfLifeDays": 2, "archiveAfterDays": 45 },
+    "weekly_inventory": { "halfLifeDays": 21, "archiveAfterDays": 180 },
+    "monthly_balance": { "halfLifeDays": 75, "archiveAfterDays": 730 },
+    "forecast": { "halfLifeDays": "forecast_horizon_days", "archiveAfterDays": 1095 },
+    "thesis": { "halfLifeDays": 60, "archiveAfterDays": 730 },
+    "methodology": { "halfLifeDays": 730, "archiveAfterDays": null },
+    "structural": { "halfLifeDays": 1095, "archiveAfterDays": null },
+    "geopolitical_event": { "halfLifeDays": 7, "archiveAfterDays": 365 }
+  },
+  "retrievalOrder": [
+    "parse_query",
+    "select_mode",
+    "structured_filter",
+    "rank_cards",
+    "open_evidence_snippets",
+    "semantic_search_within_candidates",
+    "source_deep_dive_if_needed",
+    "answer_with_type_labels",
+    "record_knowledge_gaps"
+  ],
+  "rankingWeights": {
+    "relevance": 0.35,
+    "freshness": 0.2,
+    "sourceReliability": 0.15,
+    "provenanceQuality": 0.15,
+    "methodologyFit": 0.1,
+    "diversityAcrossSources": 0.05
+  },
+  "answerDiscipline": [
+    "Separate facts, data, forecasts, institution views, and assistant inference.",
+    "Keep conflicting source claims side by side unless the user asks for a house view.",
+    "Prefer source-specific series over merged numbers.",
+    "Do not open full documents unless the selected mode or uncertainty requires it."
+  ]
+}

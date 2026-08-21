@@ -1,0 +1,46 @@
+{
+  "date": "2026-07-14",
+  "generatedAt": "2026-07-14T08:36:00Z",
+  "fluxOfficials": {
+    "assessment": 83.21,
+    "premium": 3.93,
+    "text": "Dubai Assessment: $83.21/bbl\nPhysical premium: $3.93/bbl - first time positive since 22 June\nKey events: Vitol declares Oman to Trafi"
+  },
+  "declarations": [
+    {
+      "seller": "Vitol",
+      "buyer": "Trafigura",
+      "grade": "Oman",
+      "month": "September",
+      "count": 1,
+      "time": "2026-07-14T08:29:32Z",
+      "source": "heards"
+    }
+  ],
+  "partialsTrades": [
+    { "buyer": "TRAFI", "seller": "BPSG", "price": 82.50, "volume": 25, "time": "08:28:56 GMT" },
+    { "buyer": "TRAFI", "seller": "MERCURIARESOURCES", "price": 82.40, "volume": 25, "time": "08:28:57 GMT" },
+    { "buyer": "TRAFI", "seller": "BPSG", "price": 82.70, "volume": 25, "time": "08:29:13 GMT" },
+    { "buyer": "TRAFI", "seller": "MERCURIARESOURCES", "price": 82.60, "volume": 25, "time": "08:29:15 GMT" },
+    { "buyer": "TRAFI", "seller": "BPSG", "price": 83.20, "volume": 25, "time": "08:30:00 GMT" }
+  ],
+  "partialsBids": [
+    { "company": "TRAFI", "range": "81.60-83.20", "count": 18 },
+    { "company": "METS", "range": "81.10-82.40", "count": 11 },
+    { "company": "P66SG", "range": "80.70-80.80", "count": 2 }
+  ],
+  "partialsOffers": [
+    { "company": "BPSG", "range": "82.20-83.50", "count": 8 }
+  ],
+  "cashMurban": [
+    { "value": 3.60, "direction": "Over", "benchmark": "September Dubai Futures", "time": "2026-07-14T08:31:53Z" },
+    { "value": 3.50, "direction": "Over", "benchmark": "September Dubai Futures", "time": "2026-07-14T08:32:28Z" }
+  ],
+  "cashOman": [
+    { "value": 3.70, "direction": "Over", "benchmark": "September Dubai Futures", "time": "2026-07-14T08:31:49Z" },
+    { "value": 3.60, "direction": "Over", "benchmark": "September Dubai Futures", "time": "2026-07-14T08:32:26Z" }
+  ],
+  "errorTrades": [],
+  "finalsOnClose": {},
+  "notes": "eWindow API unreachable at report time; partials data sourced from Platts News Insights heards. ADNOC Aug OSPs (from Jul 13): Murban $80.01/bbl, parity for Umm Lulu/Das/Upper Zakum."
+}

@@ -1,0 +1,193 @@
+{
+  "date": "2026-06-29",
+  "fluxOfficials": {
+    "assessment": 67.51,
+    "premium": -1.01,
+    "text": "Dubai Assessment: $67.51/bbl, Physical premium: -$1.01/bbl, No convergences"
+  },
+  "declarations": [],
+  "convergences": [],
+  "cashOman": [
+    {
+      "value": -2.5,
+      "time": "2026-06-29T08:32:03.080Z"
+    },
+    {
+      "value": -2.67,
+      "time": "2026-06-29T08:32:15.252Z"
+    }
+  ],
+  "cashMurban": [
+    {
+      "value": 0.1,
+      "time": "2026-06-29T08:32:09.019Z"
+    },
+    {
+      "value": -0.81,
+      "time": "2026-06-29T08:32:20.094Z"
+    }
+  ],
+  "partials": {
+    "contract": "Aug26 Dubai Partials",
+    "trades": [
+      {
+        "seller": "MERCURIARESOURCES",
+        "buyer": "TRAFI",
+        "price": 66.9,
+        "size": 25,
+        "time": "08:26:13 GMT"
+      },
+      {
+        "seller": "MERCURIARESOURCES",
+        "buyer": "TRAFI",
+        "price": 66.9,
+        "size": 25,
+        "time": "08:26:23 GMT"
+      },
+      {
+        "seller": "MERCURIARESOURCES",
+        "buyer": "TRAFI",
+        "price": 67,
+        "size": 25,
+        "time": "08:26:38 GMT"
+      }
+    ],
+    "totalVolume": 75,
+    "bidsSummary8_15": {
+      "VITOL": {
+        "price": 65.3,
+        "size": 25
+      },
+      "TRAFIGURA": {
+        "price": 65.2,
+        "size": 25
+      },
+      "PETCO": {
+        "price": 65,
+        "size": 25
+      }
+    },
+    "offersSummary8_15": {
+      "MERCURIA": {
+        "price": 67.3,
+        "size": 25
+      },
+      "SHELL": {
+        "price": 68,
+        "size": 25
+      },
+      "RELIANCE": {
+        "price": 68,
+        "size": 25
+      },
+      "UNIPEC": {
+        "price": 69.9,
+        "size": 25
+      }
+    },
+    "lastMinuteBids08_29": {
+      "TRAFI": {
+        "price": 67.5,
+        "action": "withdrew",
+        "time": "08:29:57"
+      },
+      "PETCO": {
+        "price": 67.3,
+        "action": "withdrew",
+        "time": "08:30:04"
+      },
+      "VITOLSG": {
+        "price": 67.2,
+        "action": "withdrew",
+        "time": "08:30:00"
+      }
+    },
+    "lastMinuteOffers08_29": {
+      "SIETCO": {
+        "price": 67.9,
+        "size": 25,
+        "time": "08:29:49"
+      },
+      "UNIPECASIA": {
+        "price": 68.9,
+        "size": 25,
+        "time": "08:29:36"
+      }
+    },
+    "uniqueBuyer": "TRAFI",
+    "sellers": [
+      "MERCURIARESOURCES"
+    ]
+  },
+  "swaps": {
+    "JulAug": -1.04,
+    "AugSep": -0.85,
+    "SepOct": -0.47,
+    "BalJunJul": -1.45
+  },
+  "crudeBidsSummary": {
+    "time": "2026-06-29T08:15:54.954Z",
+    "items": [
+      {
+        "company": "VITOL",
+        "price": 65.3,
+        "size": 25
+      },
+      {
+        "company": "TRAFIGURA",
+        "price": 65.2,
+        "size": 25
+      },
+      {
+        "company": "PETCO TRADING",
+        "price": 65,
+        "size": 25
+      },
+      {
+        "company": "TRAFIGURA",
+        "price": 65,
+        "size": 25
+      }
+    ]
+  },
+  "crudeOffersSummary": {
+    "time": "2026-06-29T08:15:58.466Z",
+    "items": [
+      {
+        "company": "MERCURIA",
+        "price": 67.3,
+        "size": 25
+      },
+      {
+        "company": "SHELL",
+        "price": 68,
+        "size": 25
+      },
+      {
+        "company": "RELIANCE",
+        "price": 68,
+        "size": 25
+      },
+      {
+        "company": "UNIPEC",
+        "price": 69.9,
+        "size": 25
+      }
+    ]
+  },
+  "errorTrades": [],
+  "news": [
+    {
+      "time": "2026-06-29T07:32:18Z",
+      "headline": "OIL FUTURES: Crude rangebound as US, Iran agree to halt attacks"
+    },
+    {
+      "time": "2026-06-29T04:12:11Z",
+      "headline": "ASIA CRUDE OIL: Key market indicators for June 29-July 3"
+    },
+    {
+      "time": "2026-06-29T01:19:34Z",
+      "headline": "Brunei Shell cuts May Seria Light crude OSP by $1.50/b, Champion by 97 cents/b from April"
+    }
+  ]
+}

@@ -1,0 +1,619 @@
+{
+  "date": "2026-05-26",
+  "generatedAt": "2026-05-26T08:37:30.035Z",
+  "ewindow": {
+    "offers": [
+      {
+        "market": [
+          "ASIA Crude Partial"
+        ],
+        "product": "Platts Dubai",
+        "hub": "Platts Cash Dubai Partials (Fateh)",
+        "strip": "Jul26",
+        "update_time": "2026-05-26T08:14:33.614",
+        "market_maker": "Unipec Asia Company Limited",
+        "order_type": "Offer",
+        "order_state": "active",
+        "buyer": null,
+        "seller": null,
+        "price": 99,
+        "price_unit": "USD",
+        "order_quantity": 25,
+        "lot_size": 25,
+        "lot_unit": "bbl",
+        "order_begin": "2026-07-01",
+        "order_end": "2026-07-31",
+        "order_date": "2026-05-26",
+        "order_time": "2026-05-26T08:14:33.612",
+        "order_id": 515588704,
+        "order_sequence": 1,
+        "deal_id": null,
+        "deal_begin": null,
+        "deal_end": null,
+        "deal_quantity": null,
+        "deal_quantity_min": null,
+        "deal_quantity_max": null,
+        "deal_terms": null,
+        "counterparty_parent": null,
+        "counterparty": null,
+        "market_maker_parent": "Unipec(Parent)",
+        "buyer_parent": null,
+        "seller_parent": null,
+        "buyer_mnemonic": null,
+        "seller_mnemonic": null,
+        "market_maker_mnemonic": "UNIPECASIA",
+        "counterparty_mnemonic": null,
+        "window_region": "Asia",
+        "market_short_code": [
+          "ACRP"
+        ],
+        "market_type": "Platts Asia Crude Partials",
+        "c1_price_basis": null,
+        "c1_percentage": 0,
+        "c1_price": 0,
+        "c1_basis_period": null,
+        "c1_basis_period_details": null,
+        "c2_price_basis": null,
+        "c2_percentage": 0,
+        "c2_price": 0,
+        "c2_basis_period": null,
+        "c2_basis_period_details": null,
+        "c3_price_basis": null,
+        "c3_percentage": 0,
+        "c3_price": 0,
+        "c3_basis_period": null,
+        "c3_basis_period_details": null,
+        "window_state": "Open",
+        "order_classification": null,
+        "oco_order_id": null,
+        "reference_order_id": null,
+        "order_platts_id": 99401921,
+        "order_cancelled": "F",
+        "order_derived": "F",
+        "order_quantity_total": 25000,
+        "order_repeat": "F",
+        "leg_prices": null,
+        "parent_deal_id": null,
+        "order_spread": "F",
+        "order_state_detail": null,
+        "optol_min_quantity": null,
+        "optol_max_quantity": null,
+        "optol_price_basis": null,
+        "optol_price_basis_period": null,
+        "optol_price_basis_sub_level": null,
+        "optol_price": null,
+        "repeated_order_id": null,
+        "ice_market_id": 8757600,
+        "ice_product_id": 617,
+        "ice_hub_id": 753,
+        "ice_strip_id": 65480,
+        "remaining_quantity": null,
+        "reference_order_platts_id": null,
+        "ghv_min": null,
+        "ghv_max": null,
+        "ghv_unit": null
+      },
+      {
+        "market": [
+          "ASIA Crude Partial"
+        ],
+        "product": "Platts Dubai",
+        "hub": "Platts Cash Dubai Partials (Fateh)",
+        "strip": "Jul26",
+        "update_time": "2026-05-26T08:30:00.012",
+        "market_maker": "Unipec Asia Company Limited",
+        "order_type": "Offer",
+        "order_state": "inactive",
+        "buyer": null,
+        "seller": null,
+        "price": 99,
+        "price_unit": "USD",
+        "order_quantity": 25,
+        "lot_size": 25,
+        "lot_unit": "bbl",
+        "order_begin": "2026-07-01",
+        "order_end": "2026-07-31",
+        "order_date": "2026-05-26",
+        "order_time": "2026-05-26T08:30:00.000",
+        "order_id": 515588704,
+        "order_sequence": 2,
+        "deal_id": null,
+        "deal_begin": null,
+        "deal_end": null,
+        "deal_quantity": null,
+        "deal_quantity_min": null,
+        "deal_quantity_max": null,
+        "deal_terms": null,
+        "counterparty_parent": null,
+        "counterparty": null,
+        "market_maker_parent": "Unipec(Parent)",
+        "buyer_parent": null,
+        "seller_parent": null,
+        "buyer_mnemonic": null,
+        "seller_mnemonic": null,
+        "market_maker_mnemonic": "UNIPECASIA",
+        "counterparty_mnemonic": null,
+        "window_region": "Asia",
+        "market_short_code": [
+          "ACRP"
+        ],
+        "market_type": "Platts Asia Crude Partials",
+        "c1_price_basis": null,
+        "c1_percentage": 0,
+        "c1_price": 0,
+        "c1_basis_period": null,
+        "c1_basis_period_details": null,
+        "c2_price_basis": null,
+        "c2_percentage": 0,
+        "c2_price": 0,
+        "c2_basis_period": null,
+        "c2_basis_period_details": null,
+        "c3_price_basis": null,
+        "c3_percentage": 0,
+        "c3_price": 0,
+        "c3_basis_period": null,
+        "c3_basis_period_details": null,
+        "window_state": "Kerb",
+        "order_classification": null,
+        "oco_order_id": null,
+        "reference_order_id": null,
+        "order_platts_id": 99401921,
+        "order_cancelled": "F",
+        "order_derived": "F",
+        "order_quantity_total": 25000,
+        "order_repeat": "F",
+        "leg_prices": null,
+        "parent_deal_id": null,
+        "order_spread": "F",
+        "order_state_detail": "withdrawn_as_closed",
+        "optol_min_quantity": null,
+        "optol_max_quantity": null,
+        "optol_price_basis": null,
+        "optol_price_basis_period": null,
+        "optol_price_basis_sub_level": null,
+        "optol_price": null,
+        "repeated_order_id": null,
+        "ice_market_id": 8757600,
+        "ice_product_id": 617,
+        "ice_hub_id": 753,
+        "ice_strip_id": 65480,
+        "remaining_quantity": null,
+        "reference_order_platts_id": null,
+        "ghv_min": null,
+        "ghv_max": null,
+        "ghv_unit": null
+      },
+      {
+        "market": [
+          "ASIA Crude Partial"
+        ],
+        "product": "Platts Dubai",
+        "hub": "Platts Cash Dubai Partials (Fateh)",
+        "strip": "Jul26",
+        "update_time": "2026-05-26T08:30:06.007",
+        "market_maker": "Unipec Asia Company Limited",
+        "order_type": "Offer",
+        "order_state": "withdrawn",
+        "buyer": null,
+        "seller": null,
+        "price": 99,
+        "price_unit": "USD",
+        "order_quantity": 25,
+        "lot_size": 25,
+        "lot_unit": "bbl",
+        "order_begin": "2026-07-01",
+        "order_end": "2026-07-31",
+        "order_date": "2026-05-26",
+        "order_time": "2026-05-26T08:30:06.007",
+        "order_id": 515588704,
+        "order_sequence": 3,
+        "deal_id": null,
+        "deal_begin": null,
+        "deal_end": null,
+        "deal_quantity": null,
+        "deal_quantity_min": null,
+        "deal_quantity_max": null,
+        "deal_terms": null,
+        "counterparty_parent": null,
+        "counterparty": null,
+        "market_maker_parent": "Unipec(Parent)",
+        "buyer_parent": null,
+        "seller_parent": null,
+        "buyer_mnemonic": null,
+        "seller_mnemonic": null,
+        "market_maker_mnemonic": "UNIPECASIA",
+        "counterparty_mnemonic": null,
+        "window_region": "Asia",
+        "market_short_code": [
+          "ACRP"
+        ],
+        "market_type": "Platts Asia Crude Partials",
+        "c1_price_basis": null,
+        "c1_percentage": 0,
+        "c1_price": 0,
+        "c1_basis_period": null,
+        "c1_basis_period_details": null,
+        "c2_price_basis": null,
+        "c2_percentage": 0,
+        "c2_price": 0,
+        "c2_basis_period": null,
+        "c2_basis_period_details": null,
+        "c3_price_basis": null,
+        "c3_percentage": 0,
+        "c3_price": 0,
+        "c3_basis_period": null,
+        "c3_basis_period_details": null,
+        "window_state": "Kerb",
+        "order_classification": null,
+        "oco_order_id": null,
+        "reference_order_id": null,
+        "order_platts_id": 99401921,
+        "order_cancelled": "F",
+        "order_derived": "F",
+        "order_quantity_total": 25000,
+        "order_repeat": "F",
+        "leg_prices": null,
+        "parent_deal_id": null,
+        "order_spread": "F",
+        "order_state_detail": "withdrawn_as_closed",
+        "optol_min_quantity": null,
+        "optol_max_quantity": null,
+        "optol_price_basis": null,
+        "optol_price_basis_period": null,
+        "optol_price_basis_sub_level": null,
+        "optol_price": null,
+        "repeated_order_id": null,
+        "ice_market_id": 8757600,
+        "ice_product_id": 617,
+        "ice_hub_id": 753,
+        "ice_strip_id": 65480,
+        "remaining_quantity": null,
+        "reference_order_platts_id": null,
+        "ghv_min": null,
+        "ghv_max": null,
+        "ghv_unit": null
+      }
+    ],
+    "trades": []
+  },
+  "heards": {
+    "declarations": [],
+    "deals": [
+      {
+        "headline": "Platts Dubai Partial Jul26, GUNVORSG raises bid $96.00 for 25 8:27:40.609 GMT",
+        "id": "5877304f-051f-4959-9ca2-3e7cc31eced5",
+        "updatedDate": "2026-05-26T08:27:40.695Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=5877304f-051f-4959-9ca2-3e7cc31eced5"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, VITOLSG raises bid $96.30 for 25 8:27:42.484 GMT",
+        "id": "a4a2883f-8712-46e7-aa89-a7534c7ba5a2",
+        "updatedDate": "2026-05-26T08:27:42.573Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=a4a2883f-8712-46e7-aa89-a7534c7ba5a2"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, GLENCORESG raises bid $95.80 for 25 8:27:45.729 GMT",
+        "id": "c18caef0-8176-4e34-a09f-30dc0573edb6",
+        "updatedDate": "2026-05-26T08:27:45.815Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=c18caef0-8176-4e34-a09f-30dc0573edb6"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, P66SG raises bid $96.40 for 25 8:27:46.341 GMT",
+        "id": "47e3611f-7f4f-4f6c-9bd8-5d28402aac64",
+        "updatedDate": "2026-05-26T08:27:46.453Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=47e3611f-7f4f-4f6c-9bd8-5d28402aac64"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, VITOLSG raises bid $96.40 for 25 8:27:49.637 GMT",
+        "id": "5e2533f0-dd3e-4dfa-99a9-37af7176a451",
+        "updatedDate": "2026-05-26T08:27:49.723Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=5e2533f0-dd3e-4dfa-99a9-37af7176a451"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, BPSG raises bid $96.60 for 25 8:27:52.664 GMT",
+        "id": "cc4ebad6-1236-4d60-9850-ad40e0714c89",
+        "updatedDate": "2026-05-26T08:27:52.807Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=cc4ebad6-1236-4d60-9850-ad40e0714c89"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, VITOLSG raises bid $96.50 for 25 8:28:04.552 GMT",
+        "id": "8da522d5-6448-456d-a677-ac0281ed8fb2",
+        "updatedDate": "2026-05-26T08:28:04.64Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=8da522d5-6448-456d-a677-ac0281ed8fb2"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, P66SG raises bid $96.50 for 25 8:28:09.233 GMT",
+        "id": "5ae84fee-6d68-4ee2-83f2-2320368ea0e4",
+        "updatedDate": "2026-05-26T08:28:09.318Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=5ae84fee-6d68-4ee2-83f2-2320368ea0e4"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, VITOLSG raises bid $96.60 for 25 8:28:12.175 GMT",
+        "id": "980da168-1a2f-429e-9cb0-ad270e6046c7",
+        "updatedDate": "2026-05-26T08:28:12.319Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=980da168-1a2f-429e-9cb0-ad270e6046c7"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, GLENCORESG raises bid $95.90 for 25 8:28:16.971 GMT",
+        "id": "84cde73c-ca19-432d-ae2e-659ca2002f42",
+        "updatedDate": "2026-05-26T08:28:17.058Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=84cde73c-ca19-432d-ae2e-659ca2002f42"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, SIETCO raises bid $95.90 for 25 8:28:22.077 GMT",
+        "id": "566be1ee-7658-4789-8e4e-349570750692",
+        "updatedDate": "2026-05-26T08:28:22.165Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=566be1ee-7658-4789-8e4e-349570750692"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, VITOLSG raises bid $96.70 for 25 8:28:22.262 GMT",
+        "id": "01a528eb-678f-45d5-a7f9-7cab0ad66c02",
+        "updatedDate": "2026-05-26T08:28:22.348Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=01a528eb-678f-45d5-a7f9-7cab0ad66c02"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, GLENCORESG raises bid $96.00 for 25 8:28:22.663 GMT",
+        "id": "43d84014-6a6e-435e-b82a-745129710fa9",
+        "updatedDate": "2026-05-26T08:28:22.759Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=43d84014-6a6e-435e-b82a-745129710fa9"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, P66SG raises bid $96.60 for 25 8:28:25.229 GMT",
+        "id": "3a9486d6-3d4f-4329-91b3-2b16958a3642",
+        "updatedDate": "2026-05-26T08:28:25.328Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=3a9486d6-3d4f-4329-91b3-2b16958a3642"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, GUNVORSG raises bid $96.10 for 25 8:28:25.435 GMT",
+        "id": "42a56ed0-2d36-459c-a056-b8542ea437ef",
+        "updatedDate": "2026-05-26T08:28:25.522Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=42a56ed0-2d36-459c-a056-b8542ea437ef"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, SIETCO raises bid $96.00 for 25 8:28:28.214 GMT",
+        "id": "fa871830-c5df-44d3-ba7c-0214f5e791c7",
+        "updatedDate": "2026-05-26T08:28:28.299Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=fa871830-c5df-44d3-ba7c-0214f5e791c7"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, BPSG raises bid $96.70 for 25 8:28:28.241 GMT",
+        "id": "36e18d4a-d91a-43f3-be5e-9625f2eb6842",
+        "updatedDate": "2026-05-26T08:28:28.399Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=36e18d4a-d91a-43f3-be5e-9625f2eb6842"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, VITOLSG raises bid $96.80 for 25 8:28:29.359 GMT",
+        "id": "0ab65519-0979-4645-be23-fdc9964bf1c3",
+        "updatedDate": "2026-05-26T08:28:29.445Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=0ab65519-0979-4645-be23-fdc9964bf1c3"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, GUNVORSG raises bid $96.20 for 25 8:28:32.539 GMT",
+        "id": "50bee76e-c3fe-458e-ad25-29a8fe648eff",
+        "updatedDate": "2026-05-26T08:28:32.703Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=50bee76e-c3fe-458e-ad25-29a8fe648eff"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, VITOLSG raises bid $96.90 for 25 8:28:35.605 GMT",
+        "id": "bac93f6e-96c0-4141-963a-cd36706e916d",
+        "updatedDate": "2026-05-26T08:28:35.826Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=bac93f6e-96c0-4141-963a-cd36706e916d"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, BPSG raises bid $96.80 for 25 8:28:36.828 GMT",
+        "id": "39d3901c-609e-4633-bb7e-5e2a0c4d8c19",
+        "updatedDate": "2026-05-26T08:28:36.914Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=39d3901c-609e-4633-bb7e-5e2a0c4d8c19"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, GUNVORSG raises bid $96.30 for 25 8:28:38.411 GMT",
+        "id": "02584ff0-7059-42cd-a689-ea4372e224ac",
+        "updatedDate": "2026-05-26T08:28:38.499Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=02584ff0-7059-42cd-a689-ea4372e224ac"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, VITOLSG raises bid $97.00 for 25 8:28:40.876 GMT",
+        "id": "8d1f001b-a95c-412e-8c41-6290a667b327",
+        "updatedDate": "2026-05-26T08:28:40.962Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=8d1f001b-a95c-412e-8c41-6290a667b327"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, P66SG raises bid $96.70 for 25 8:28:42.558 GMT",
+        "id": "55b9a2ca-6f0b-47ac-92fa-a64a95140a0b",
+        "updatedDate": "2026-05-26T08:28:42.645Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=55b9a2ca-6f0b-47ac-92fa-a64a95140a0b"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, BPSG raises bid $96.90 for 25 8:28:43.309 GMT",
+        "id": "c2faf080-9e32-4e42-bdbf-b21fe06eca74",
+        "updatedDate": "2026-05-26T08:28:43.476Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=c2faf080-9e32-4e42-bdbf-b21fe06eca74"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, GUNVORSG raises bid $96.40 for 25 8:28:43.426 GMT",
+        "id": "2fc3f46b-0bbb-411a-9fd8-1e51d82a9ea8",
+        "updatedDate": "2026-05-26T08:28:43.569Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=2fc3f46b-0bbb-411a-9fd8-1e51d82a9ea8"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, VITOLSG raises bid $97.10 for 25 8:28:47.655 GMT",
+        "id": "d4ca0afe-6284-43ea-b929-09e47fbf198e",
+        "updatedDate": "2026-05-26T08:28:47.743Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=d4ca0afe-6284-43ea-b929-09e47fbf198e"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, GUNVORSG raises bid $96.50 for 25 8:28:49.992 GMT",
+        "id": "36602480-7d69-40c3-9ba2-4344977d7b30",
+        "updatedDate": "2026-05-26T08:28:50.078Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=36602480-7d69-40c3-9ba2-4344977d7b30"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, P66SG raises bid $96.80 for 25 8:28:50.078 GMT",
+        "id": "f24412d2-a6d9-4626-8215-ffdc5dd662dc",
+        "updatedDate": "2026-05-26T08:28:50.171Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=f24412d2-a6d9-4626-8215-ffdc5dd662dc"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, GLENCORESG raises bid $96.10 for 25 8:28:51.212 GMT",
+        "id": "15c92786-7379-4a4c-9eaa-092aa8e7f5a4",
+        "updatedDate": "2026-05-26T08:28:51.298Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=15c92786-7379-4a4c-9eaa-092aa8e7f5a4"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, BPSG raises bid $97.00 for 25 8:28:51.939 GMT",
+        "id": "9ebc6ae6-141f-4571-a99b-4445fb9f22b9",
+        "updatedDate": "2026-05-26T08:28:52.031Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=9ebc6ae6-141f-4571-a99b-4445fb9f22b9"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, VITOLSG raises bid $97.20 for 25 8:28:55.401 GMT",
+        "id": "37b7bc1a-9cdd-4ebb-a007-e37df299367b",
+        "updatedDate": "2026-05-26T08:28:55.486Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=37b7bc1a-9cdd-4ebb-a007-e37df299367b"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, GUNVORSG raises bid $96.60 for 25 8:28:56.419 GMT",
+        "id": "9f321b0d-c66e-4cbc-bdf6-df4fb788e129",
+        "updatedDate": "2026-05-26T08:28:56.582Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=9f321b0d-c66e-4cbc-bdf6-df4fb788e129"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, VITOLSG raises bid $97.30 for 25 8:29:06.017 GMT",
+        "id": "923128f4-735d-4907-a964-ff5802a1231f",
+        "updatedDate": "2026-05-26T08:29:06.285Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=923128f4-735d-4907-a964-ff5802a1231f"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, GUNVORSG raises bid $96.70 for 25 8:29:06.103 GMT",
+        "id": "9b51e40b-8484-4949-9abd-dcafa6628049",
+        "updatedDate": "2026-05-26T08:29:06.577Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=9b51e40b-8484-4949-9abd-dcafa6628049"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, P66SG raises bid $96.90 for 25 8:29:07.998 GMT",
+        "id": "6e2899ce-5dee-4576-97e6-5a2a5bdd264f",
+        "updatedDate": "2026-05-26T08:29:08.085Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=6e2899ce-5dee-4576-97e6-5a2a5bdd264f"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, GLENCORESG raises bid $96.20 for 25 8:29:09.037 GMT",
+        "id": "d2f31956-650c-4efc-bfdc-36266a95ca56",
+        "updatedDate": "2026-05-26T08:29:09.123Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=d2f31956-650c-4efc-bfdc-36266a95ca56"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, VITOLSG raises bid $97.40 for 25 8:29:13.982 GMT",
+        "id": "a389ab2c-f835-4f83-a88f-8716910445f1",
+        "updatedDate": "2026-05-26T08:29:14.068Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=a389ab2c-f835-4f83-a88f-8716910445f1"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, GUNVORSG raises bid $96.80 for 25 8:29:14.793 GMT",
+        "id": "9e6d27c9-c8c8-4e14-96f2-ce33efced89e",
+        "updatedDate": "2026-05-26T08:29:14.878Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=9e6d27c9-c8c8-4e14-96f2-ce33efced89e"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, VITOLSG raises bid $97.50 for 25 8:29:21.888 GMT",
+        "id": "a4c9a063-fd55-48c7-9e10-98146fca7c6e",
+        "updatedDate": "2026-05-26T08:29:21.974Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=a4c9a063-fd55-48c7-9e10-98146fca7c6e"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, GUNVORSG raises bid $96.90 for 25 8:29:22.698 GMT",
+        "id": "fef7610d-d117-4acb-ac62-1b67c257e748",
+        "updatedDate": "2026-05-26T08:29:22.907Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=fef7610d-d117-4acb-ac62-1b67c257e748"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, P66SG raises bid $97.00 for 25 8:29:27.528 GMT",
+        "id": "ee96597d-615a-4a7a-9d48-7d03f5b237e3",
+        "updatedDate": "2026-05-26T08:29:27.622Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=ee96597d-615a-4a7a-9d48-7d03f5b237e3"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, VITOLSG raises bid $97.60 for 25 8:29:28.566 GMT",
+        "id": "2bf1e588-289d-478d-a430-1ae141c373aa",
+        "updatedDate": "2026-05-26T08:29:28.745Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=2bf1e588-289d-478d-a430-1ae141c373aa"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, GUNVORSG raises bid $97.00 for 25 8:29:31.867 GMT",
+        "id": "c1edc865-38ad-47f3-b36c-72ef8bae597c",
+        "updatedDate": "2026-05-26T08:29:31.976Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=c1edc865-38ad-47f3-b36c-72ef8bae597c"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, VITOLSG raises bid $97.70 for 25 8:29:35.882 GMT",
+        "id": "c7bc1466-5933-4cf4-973f-ef64180ec8b5",
+        "updatedDate": "2026-05-26T08:29:35.975Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=c7bc1466-5933-4cf4-973f-ef64180ec8b5"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, VITOLSG raises bid $97.80 for 25 8:29:45.713 GMT",
+        "id": "57410521-4ecc-44f2-a380-167e1d343cd7",
+        "updatedDate": "2026-05-26T08:29:46.048Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=57410521-4ecc-44f2-a380-167e1d343cd7"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, GLENCORESG raises bid $96.30 for 25 8:29:47.240 GMT",
+        "id": "f8f8324c-a94b-4fb2-b5dd-b093005fdbd4",
+        "updatedDate": "2026-05-26T08:29:47.35Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=f8f8324c-a94b-4fb2-b5dd-b093005fdbd4"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, VITOLSG raises bid $97.90 for 25 8:29:51.414 GMT",
+        "id": "1a4c7e38-5e0c-4e9a-bbe5-ebcef3f2a9d9",
+        "updatedDate": "2026-05-26T08:29:51.5Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=1a4c7e38-5e0c-4e9a-bbe5-ebcef3f2a9d9"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, VITOLSG raises bid $98.00 for 25 8:29:56.438 GMT",
+        "id": "5f3f262a-86d7-4fb6-9f9a-52b52ca4c261",
+        "updatedDate": "2026-05-26T08:29:56.611Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=5f3f262a-86d7-4fb6-9f9a-52b52ca4c261"
+      },
+      {
+        "headline": "Platts Dubai Partial Jul26, VITOLSG withdraws bid $98.00 for 25 8:30:03.050 GMT",
+        "id": "3d1bd112-65b1-409b-a8f1-6769e0e0eb2a",
+        "updatedDate": "2026-05-26T08:30:03.137Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=3d1bd112-65b1-409b-a8f1-6769e0e0eb2a"
+      }
+    ],
+    "murban": [
+      {
+        "headline": "Platts Crude: July Cash Murban Heard At $6.00/B Over July Dubai Futures",
+        "id": "f104e2f0-1c74-43df-a54e-302cf6c61e6a",
+        "updatedDate": "2026-05-26T08:30:56.508Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=f104e2f0-1c74-43df-a54e-302cf6c61e6a"
+      },
+      {
+        "headline": "Platts Crude: July Cash Murban Heard At $6.10/B Over July Dubai Futures",
+        "id": "9c71bfe0-0178-4a89-bc07-7c4f51cfd954",
+        "updatedDate": "2026-05-26T08:32:28.922Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=9c71bfe0-0178-4a89-bc07-7c4f51cfd954"
+      }
+    ],
+    "oman": [
+      {
+        "headline": "Platts Crude: July Cash Oman Heard At $7.01/B Over July Dubai Futures",
+        "id": "612a0691-1923-45e7-964b-f3bf899a259d",
+        "updatedDate": "2026-05-26T08:30:53.253Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=612a0691-1923-45e7-964b-f3bf899a259d"
+      },
+      {
+        "headline": "Platts Crude: July Cash Oman Heard At $7.50/B Over July Dubai Futures",
+        "id": "6f2bf2c1-7f30-40f8-8437-584e7d735b46",
+        "updatedDate": "2026-05-26T08:32:26.581Z",
+        "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=6f2bf2c1-7f30-40f8-8437-584e7d735b46"
+      }
+    ],
+    "finalsBids": [],
+    "finalsOffers": [],
+    "errors": [],
+    "errorBodies": [],
+    "convergence": []
+  },
+  "fluxOfficials": null,
+  "fluxError": "ENOENT: no such file or directory, open '.twitter-env'"
+}

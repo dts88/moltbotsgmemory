@@ -1,0 +1,65 @@
+{
+  "date": "2026-06-17",
+  "fluxOfficials": {
+    "assessment": 73.91,
+    "premium": 0.52,
+    "text": "The Officials MOC: Date 17/6/2026\nDubai Assessment: $73.91/bbl\nPhysical premium: $0.52/bbl - back positive after -60c yesterday\nKey events: No convergences"
+  },
+  "partials": {
+    "strip": "Aug26",
+    "trades": [
+      {
+        "seller": "P66SG",
+        "buyer": "BPSG",
+        "price": 73.70,
+        "quantity": 25,
+        "time": "08:29:12 GMT"
+      }
+    ],
+    "earlyBids": [
+      { "company": "VITOLSG", "price": 71.50, "size": 25 },
+      { "company": "BPSG", "price": 70.00, "size": 25 },
+      { "company": "GLENCORESG", "price": 70.00, "size": 25 },
+      { "company": "GUNVORSG", "price": 70.00, "size": 25 }
+    ],
+    "earlyOffers": [
+      { "company": "UNIPECASIA", "price": 75.00, "size": 25 },
+      { "company": "P66SG", "price": 75.00, "size": 25 },
+      { "company": "BPSG", "price": 75.00, "size": 25 },
+      { "company": "PTT", "price": 77.00, "size": 25 }
+    ],
+    "lastMinuteBids": [
+      { "company": "GUNVORSG", "price": 73.90, "time": "08:29:56" },
+      { "company": "VITOLSG", "price": 73.90, "time": "08:29:58" },
+      { "company": "GUNVORSG", "price": 73.80, "time": "08:29:51" },
+      { "company": "VITOLSG", "price": 73.80, "time": "08:29:52" },
+      { "company": "GUNVORSG", "price": 73.70, "time": "08:29:46" },
+      { "company": "VITOLSG", "price": 73.70, "time": "08:29:44" },
+      { "company": "GLENCORESG", "price": 73.10, "time": "08:29:49" }
+    ],
+    "lastMinuteOffer": {
+      "company": "P66SG",
+      "price": 73.70,
+      "time": "08:28:45"
+    },
+    "bidWithdrawals": [
+      { "company": "GUNVORSG", "price": 73.90, "time": "08:30:02" },
+      { "company": "VITOLSG", "price": 73.90, "time": "08:30:04" }
+    ]
+  },
+  "declarations": [],
+  "convergences": false,
+  "cashMurban": [
+    { "value": -0.06, "time": "08:31:48Z", "description": "August Cash Murban Heard At minus $0.06/B against August Dubai Futures" },
+    { "value": 0.10, "time": "08:32:22Z", "description": "August Cash Murban Heard At $0.10/B Over August Dubai Futures" }
+  ],
+  "cashOman": [
+    { "value": 0.05, "time": "08:31:37Z", "description": "August Cash Oman Heard At $0.05/B Over August Dubai Futures" },
+    { "value": 0.25, "time": "08:32:19Z", "description": "August Cash Oman Heard At $0.25/B Over August Dubai Futures" }
+  ],
+  "errorTrades": [],
+  "finalsOnClose": {
+    "bids": "数据待更新（窗口关闭约40分钟后发布）",
+    "offers": "数据待更新（窗口关闭约40分钟后发布）"
+  }
+}

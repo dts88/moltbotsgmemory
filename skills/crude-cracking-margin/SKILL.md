@@ -31,7 +31,8 @@ DBSCM00 = DBSCY00 − TDDCQ00 − PCAAT00
 
 ## Dubai Singapore 产品符号与产率
 
-详见 `references/dubai-product-slate.md`
+- 产品绝对价符号、产率、LSWR 替代：详见 `references/dubai-product-slate.md`
+- 公式、验证、常见误区、代表性历史样本：详见 `references/dbscm00-notes.md`
 
 产率来源：无约束 NNLS 回归（307天数据，RMSE=0.179 $/bbl）
 

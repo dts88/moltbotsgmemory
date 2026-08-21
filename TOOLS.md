@@ -64,9 +64,10 @@ openhue set room "Living room" --brightness 75 --transition-time 3s
 
 ---
 
-## 本地 LLM (Ollama)
+## 本地 LLM (Ollama + llama)
 
-**地址:** 192.168.1.101:11434
+**Ollama 地址:** 192.168.1.101:11434
+**llama Docker 默认地址:** 192.168.1.101:8000（OpenAI-compatible）
 **脚本:** `scripts/local-llm.mjs`
 
 ### 可用模型 (2026-02-15 测试)
@@ -75,8 +76,29 @@ openhue set room "Living room" --brightness 75 --transition-time 3s
 |------|------|----------|
 | `qwen3:4b` ⭐ | 17 t/s | **日常推荐**，中文最佳 |
 | `huihui_ai/qwen3-abliterated:8b` | 10 t/s | 备用，质量更高 |
+| `llama` | 待测 | 本地 Docker llama，通用/英文任务 |
 
-**默认模型:** `qwen3:4b`
+**默认模型:** `qwen3:4b`（默认 provider 仍是 Ollama）
+
+### llama 用法
+```bash
+# 检查全部本地模型服务
+node scripts/local-llm.mjs health all
+
+# 使用 Docker llama
+node scripts/local-llm.mjs llama "Say hello in Chinese"
+
+# 覆盖地址/模型
+LLAMA_URL=http://192.168.1.101:8000 LLAMA_MODEL=llama \
+  node scripts/local-llm.mjs generate --provider=llama "Summarize this"
+```
+
+### 环境变量
+- `LOCAL_LLM_PROVIDER=ollama|llama`
+- `OLLAMA_URL` / `LOCAL_OLLAMA_URL`
+- `LLAMA_URL` / `LOCAL_LLAMA_URL`
+- `LLAMA_MODEL` / `LOCAL_LLAMA_MODEL`
+- `LLAMA_API_KEY`（如服务需要 Bearer token）
 
 ### 用途
 - 批量翻译（省 token）
@@ -219,9 +241,69 @@ node scripts/twilio-voice.mjs call +6592716786 "你好，这是测试消息"
 
 ---
 
+## Platts News Insights API
+
+**Base URL**: `https://api.ci.spglobal.com/news-insights/v1/`（新代码默认）
+**认证**: `Authorization: Bearer <token>`；部分旧脚本也带 `appkey`，可兼容。
+
+### 已确认可用端点 (2026-05-29 测试)
+```bash
+# 普通新闻/市场评论搜索
+GET /search/story
+
+# Latest News
+GET /search/story/latest-news
+
+# Spotlights
+GET /search/story/spotlights
+
+# Top News
+GET /search/story/top-news
+
+# Heards / MOC bids offers trades
+GET /search/heards
+
+# Packages
+GET /search/packages
+
+# Subscriber Notes
+GET /search/subscriber-notes
+
+# 单篇正文；必须带 id，/content 不带 id 会 404
+GET /content/{id}
+
+# 元数据
+GET /metadata/story
+GET /metadata/heards
+GET /metadata/packages
+GET /metadata/subscriber-notes
+```
+
+### 常用参数
+```bash
+q=Dubai
+filter=sector:%2B%22Americas+Gas%22
+filter=sector:"Crude Oil Plus"
+field=body,sector,commodity,geography
+facet.field=sector
+facet.field=commodity
+sort=updatedDate:desc
+page=1
+pageSize=50
+```
+
+### 注意
+- `filter` 的字段值要加双引号；`sector:Americas Gas` 会 400，`sector:"Americas Gas"` 或 `sector:+ "Americas Gas"` 编码后可用。
+- `field=body,sector,commodity,geography` 对 story/latest-news/spotlights/top-news/subscriber-notes 可用；对 packages 会 400。
+- `facet.field` 对 story/heards/packages/subscriber-notes 可用，会返回 `facets`。
+- `/content/{id}` 对 story/latest-news/spotlights/heards/subscriber-notes 可返回 envelope；package id 返回 200 但正文结构可能为空。
+- `/metadata/latest-news`、`/metadata/spotlights`、`/metadata/top-news` 不存在；使用 `/metadata/story`。
+
+---
+
 ## Platts Structured Heards API
 
-**端点**: `https://api.platts.com/structured-heards/v1/`
+**端点**: `https://api.ci.spglobal.com/structured-heards/v1/`（新代码默认；旧脚本里的 `api.platts.com` 暂不批量改）
 **脚本**: `scripts/platts-structured-heards.mjs`
 
 ### 快捷命令
@@ -275,12 +357,26 @@ node scripts/platts-structured-heards.mjs export "Asia crude oil"
 # 按事件 slug 查询
 curl -s "https://gamma-api.polymarket.com/events?slug=will-iran-close-the-strait-of-hormuz-by-2027"
 
+# 按市场 slug 查询
+curl -s "https://gamma-api.polymarket.com/markets?slug=strait-of-hormuz-traffic-returns-to-normal-by-may-15&limit=1"
+
 # 按事件 slug 查询 (Israel-Iran)
 curl -s "https://gamma-api.polymarket.com/events?slug=israel-x-iran-ceasefire-broken-by"
 
 # 活跃市场列表
 curl -s "https://gamma-api.polymarket.com/markets?closed=false&limit=100"
 ```
+
+### 单市场监控脚本
+```bash
+# 输出 JSON { message }，适合 cron agent 投递；会记录上次概率变化
+node scripts/polymarket-single-market-monitor.mjs <market-slug> [display-name]
+
+# 默认监控：Strait of Hormuz traffic returns to normal by May 15?
+node scripts/polymarket-single-market-monitor.mjs
+```
+
+**状态文件:** `.config/polymarket/single-market-state.json`
 
 ### 返回字段
 | 字段 | 含义 |
@@ -295,6 +391,7 @@ curl -s "https://gamma-api.polymarket.com/markets?closed=false&limit=100"
 ### 已知关键市场 slug
 - `us-strikes-iran-by` - **美国袭击伊朗** (5.25亿美元交易量!)
 - `will-iran-close-the-strait-of-hormuz-by-2027` - 霍尔木兹海峡封锁
+- `strait-of-hormuz-traffic-returns-to-normal-by-may-15` - 霍尔木兹交通 5/15 前恢复正常
 - `israel-x-iran-ceasefire-broken-by` - 以伊停火打破
 
 ---

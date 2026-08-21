@@ -1,0 +1,64 @@
+{
+  "date": "2026-06-30",
+  "fluxOfficials": {
+    "assessment": 68.29,
+    "premium": -1.47,
+    "text": "Dubai Assessment: $68.29/bbl, Physical premium: -$1.47/bbl, No convergences"
+  },
+  "declarations": [],
+  "convergences": [],
+  "partials": {
+    "contract": "Aug26 Dubai Partials",
+    "convergencePrice": 68.29,
+    "trades": [
+      { "seller": "SIETCO", "buyer": "VITOLSG", "price": 68.29, "size": 25, "time": "08:29:13 GMT" },
+      { "seller": "RGES", "buyer": "VITOLSG", "price": 68.29, "size": 25, "time": "08:29:20 GMT" },
+      { "seller": "SIETCO", "buyer": "VITOLSG", "price": 68.29, "size": 25, "time": "08:29:25 GMT" },
+      { "seller": "SIETCO", "buyer": "VITOLSG", "price": 68.29, "size": 25, "time": "08:29:28 GMT" },
+      { "seller": "RGES", "buyer": "TRAFI", "price": 68.29, "size": 25, "time": "08:29:31 GMT" },
+      { "seller": "SIETCO", "buyer": "VITOLSG", "price": 68.29, "size": 25, "time": "08:29:32 GMT" },
+      { "seller": "SIETCO", "buyer": "PETCO", "price": 68.29, "size": 25, "time": "08:29:39 GMT" },
+      { "seller": "SIETCO", "buyer": "TRAFI", "price": 68.29, "size": 25, "time": "08:29:41 GMT" },
+      { "seller": "SIETCO", "buyer": "VITOLSG", "price": 68.29, "size": 25, "time": "08:29:42 GMT" },
+      { "seller": "SIETCO", "buyer": "VITOLSG", "price": 68.29, "size": 25, "time": "08:29:45 GMT" },
+      { "seller": "SIETCO", "buyer": "TRAFI", "price": 68.29, "size": 25, "time": "08:29:45 GMT" },
+      { "seller": "RGES", "buyer": "GUNVORSG", "price": 68.20, "size": 25, "time": "08:29:46 GMT" },
+      { "seller": "SIETCO", "buyer": "VITOLSG", "price": 68.29, "size": 25, "time": "08:29:49 GMT" },
+      { "seller": "SIETCO", "buyer": "TRAFI", "price": 68.29, "size": 25, "time": "08:29:52 GMT" },
+      { "seller": "SIETCO", "buyer": "VITOLSG", "price": 68.29, "size": 25, "time": "08:29:52 GMT" },
+      { "seller": "SIETCO", "buyer": "VITOLSG", "price": 68.29, "size": 25, "time": "08:29:55 GMT" },
+      { "seller": "SIETCO", "buyer": "VITOLSG", "price": 68.29, "size": 25, "time": "08:29:58 GMT" },
+      { "seller": "SIETCO", "buyer": "TRAFI", "price": 68.29, "size": 25, "time": "08:29:59 GMT" },
+      { "seller": "RGES", "buyer": "BPSG", "price": 68.29, "size": 25, "time": "08:29:59 GMT" }
+    ],
+    "totalVolume": 475,
+    "uniqueBuyer": "Vitol (VITOLSG)",
+    "sellers": ["Sietco (SIETCO)", "RGES"],
+    "buyers": ["Vitol (VITOLSG)", "Trafigura (TRAFI)", "PetroChina (PETCO)", "Gunvor (GUNVORSG)", "BP (BPSG)"],
+    "otherBidders": ["Gunvor (GUNVORSG)", "PetroChina (PETCO)", "Trafigura (TRAFI)", "BP (BPSG)"],
+    "otherOfferers": ["Mercuria (MERCURIARESOURCES)", "Unipec (UNIPECASIA)"],
+    "ewindow": {
+      "tradesTotal": 19,
+      "offersSummary": {
+        "SIETCO": { "count": 61, "range": "68.30-71.50" },
+        "RGES": { "count": 39, "range": "68.30-72.00" },
+        "MERCURIARESOURCES": { "count": 21, "range": "69.10-71.00" },
+        "UNIPECASIA": { "count": 7, "range": "71.60-72.00" }
+      }
+    }
+  },
+  "cashMurban": [
+    { "value": 0.16, "time": "2026-06-30T08:32:51.394Z", "description": "August Cash Murban Heard At $0.16/B Over August Dubai Futures" }
+  ],
+  "cashOman": [],
+  "errorTrades": [],
+  "news": [
+    { "time": "2026-06-30T07:48:37Z", "headline": "OIL FUTURES: Crude falls as returning Middle East supply pressures market" },
+    { "time": "2026-06-30T07:52:45Z", "headline": "Saudi Aramco sets July term CP for propane at $580/mt, butane at $600/mt" },
+    { "time": "2026-06-30T03:38:02Z", "headline": "US middle distillate regional pricing disparity opens arbitrage opportunities, yield shifts" }
+  ],
+  "marketContext": {
+    "crudeOil": 70.56,
+    "note": "Crude Oil fell to $70.56/bbl on June 30. WTI crude on track to decline ~19% for the month and over 24% for the quarter as peace efforts and expectations of increased oil flows from the Persian Gulf weighed on prices."
+  }
+}

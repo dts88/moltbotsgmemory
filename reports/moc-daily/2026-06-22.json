@@ -1,0 +1,131 @@
+{
+  "date": "2026-06-22",
+  "fluxOfficials": {
+    "assessment": null,
+    "premium": null,
+    "text": "Not yet posted (as of 16:36 SGT)"
+  },
+  "declarations": [],
+  "cashMurban": [
+    {
+      "value": -0.2,
+      "basis": "August Cash Murban vs August Dubai Futures",
+      "time": "08:33:35Z"
+    }
+  ],
+  "cashOman": [
+    {
+      "value": -0.15,
+      "basis": "August Cash Oman vs August Dubai Futures",
+      "time": "08:33:31Z"
+    }
+  ],
+  "errorTrades": [],
+  "partials": {
+    "contract": "Aug26 Dubai",
+    "trades": [],
+    "allDayOffers": {
+      "BPSG": {
+        "count": 14,
+        "min": 75.8,
+        "max": 77
+      },
+      "UNIPECASIA": {
+        "count": 7,
+        "min": 74.6,
+        "max": 75
+      },
+      "SIETCO": {
+        "count": 6,
+        "min": 74.7,
+        "max": 75
+      },
+      "P66SG": {
+        "count": 6,
+        "min": 74.2,
+        "max": 74.6
+      },
+      "PTT": {
+        "count": 5,
+        "min": 75.7,
+        "max": 76
+      }
+    },
+    "allDayBids": {
+      "PETCO": {
+        "count": 12,
+        "min": 71.5,
+        "max": 72.5
+      },
+      "VITOLSG": {
+        "count": 9,
+        "min": 72,
+        "max": 72.7
+      },
+      "BPSG": {
+        "count": 7,
+        "min": 71.9,
+        "max": 72.4
+      },
+      "GUNVORSG": {
+        "count": 5,
+        "min": 72,
+        "max": 72.3
+      }
+    },
+    "closeBids": {
+      "VITOLSG": {
+        "count": 7,
+        "max": 72.7,
+        "last": 72.7
+      },
+      "PETCO": {
+        "count": 5,
+        "max": 72.5,
+        "last": 72.5
+      },
+      "BPSG": {
+        "count": 4,
+        "max": 72.4,
+        "last": 72.4
+      },
+      "GUNVORSG": {
+        "count": 3,
+        "max": 72.3,
+        "last": 72.3
+      }
+    },
+    "closeOffers": {
+      "UNIPECASIA": {
+        "count": 1,
+        "min": 74.6,
+        "last": 74.6
+      },
+      "P66SG": {
+        "count": 1,
+        "min": 74.2,
+        "last": 74.2
+      }
+    },
+    "allWithdrawnAtClose": true,
+    "spreadAtClose": {
+      "bid": 72.7,
+      "offer": 74.2
+    }
+  },
+  "finalsOnClose": "No finals on close data available for sour crude",
+  "stories": [
+    {
+      "title": "ASIA CRUDE OIL: Key market indicators for June 22-26",
+      "time": "04:08:48Z"
+    },
+    {
+      "title": "OMAN DATA: May crude exports rise 3.4% MOM to 26.76 mil barrels",
+      "time": "07:35:20Z"
+    },
+    {
+      "title": "OIL FUTURES: Crude rangebound as US-Iran talks advance",
+      "time": "07:53:57Z"
+    }
+  ]
+}

@@ -1,0 +1,1382 @@
+{
+  "date": "2026-07-28",
+  "generatedAt": "2026-07-28T08:39:09.570Z",
+  "fluxOfficials": {
+    "assessment": null,
+    "premium": null,
+    "text": "",
+    "raw": {
+      "error": "ENOENT: no such file or directory, open '.twitter-env'",
+      "tweets": []
+    }
+  },
+  "ewindow": {
+    "offers": [],
+    "trades": [
+      {
+        "market": [
+          "ASIA Crude Partial"
+        ],
+        "product": "Platts Dubai",
+        "hub": "Platts Cash Dubai Partials (Fateh)",
+        "strip": "Sep26",
+        "update_time": "2026-07-28T08:29:35.346",
+        "market_maker": "Mitsui & Co. Energy Trading Singapore Pte. Ltd.",
+        "order_type": "Bid",
+        "order_state": "consummated",
+        "buyer": "Mitsui & Co. Energy Trading Singapore Pte. Ltd.",
+        "seller": "BP Singapore",
+        "price": 76.9,
+        "price_unit": "USD",
+        "order_quantity": 25,
+        "lot_size": 25,
+        "lot_unit": "bbl",
+        "order_begin": "2026-09-01",
+        "order_end": "2026-09-30",
+        "order_date": "2026-07-28",
+        "order_time": "2026-07-28T08:29:35.343",
+        "order_id": 456986552,
+        "order_sequence": 76,
+        "deal_id": 99403628,
+        "deal_begin": "2026-09-01",
+        "deal_end": "2026-09-30",
+        "deal_quantity": 25,
+        "deal_quantity_min": 25,
+        "deal_quantity_max": null,
+        "deal_terms": null,
+        "counterparty_parent": "BP(Parent)",
+        "counterparty": "BP Singapore",
+        "market_maker_parent": "Mitsui (Parent)",
+        "buyer_parent": "Mitsui (Parent)",
+        "seller_parent": "BP(Parent)",
+        "buyer_mnemonic": "METS",
+        "seller_mnemonic": "BPSG",
+        "market_maker_mnemonic": "METS",
+        "counterparty_mnemonic": "BPSG",
+        "window_region": "Asia",
+        "market_short_code": [
+          "ACRP"
+        ],
+        "market_type": "Platts Asia Crude Partials",
+        "c1_price_basis": null,
+        "c1_percentage": 0,
+        "c1_price": 0,
+        "c1_basis_period": null,
+        "c1_basis_period_details": null,
+        "c2_price_basis": null,
+        "c2_percentage": 0,
+        "c2_price": 0,
+        "c2_basis_period": null,
+        "c2_basis_period_details": null,
+        "c3_price_basis": null,
+        "c3_percentage": 0,
+        "c3_price": 0,
+        "c3_basis_period": null,
+        "c3_basis_period_details": null,
+        "window_state": "Pricing",
+        "order_classification": "Limit",
+        "oco_order_id": null,
+        "reference_order_id": 456986552,
+        "order_platts_id": 99402248,
+        "order_cancelled": "F",
+        "order_derived": "F",
+        "order_quantity_total": 25000,
+        "order_repeat": null,
+        "leg_prices": null,
+        "parent_deal_id": null,
+        "order_spread": "F",
+        "order_state_detail": "consummated",
+        "optol_min_quantity": null,
+        "optol_max_quantity": null,
+        "optol_price_basis": null,
+        "optol_price_basis_period": null,
+        "optol_price_basis_sub_level": null,
+        "optol_price": null,
+        "repeated_order_id": null,
+        "ice_market_id": 8853749,
+        "ice_product_id": 617,
+        "ice_hub_id": 753,
+        "ice_strip_id": 65482,
+        "remaining_quantity": 0,
+        "reference_order_platts_id": 99402248,
+        "ghv_min": null,
+        "ghv_max": null,
+        "ghv_unit": null
+      }
+    ],
+    "lastMinuteOffers": [],
+    "offersError": ""
+  },
+  "declarations": [],
+  "cashMurban": [],
+  "cashOman": [],
+  "dealsSummary": [
+    {
+      "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $80.70 for 25 8:27:29.723 GMT",
+      "id": "b1b5c43d-3cbe-4074-bd6c-996fbc5ff50a",
+      "updatedDate": "2026-07-28T08:27:29.746Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=b1b5c43d-3cbe-4074-bd6c-996fbc5ff50a"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, SHENGHPI lowers offer $84.30 for 25 8:27:29.891 GMT",
+      "id": "0c63847f-c3ee-4701-95c9-36d3a03d3836",
+      "updatedDate": "2026-07-28T08:27:29.915Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=0c63847f-c3ee-4701-95c9-36d3a03d3836"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $81.60 for 25 8:27:31.224 GMT",
+      "id": "a65bf1f2-b349-4589-86b5-f7b48fe62958",
+      "updatedDate": "2026-07-28T08:27:31.26Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=a65bf1f2-b349-4589-86b5-f7b48fe62958"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $84.20 for 25 8:27:32.543 GMT",
+      "id": "5c6dec2c-cad4-4d33-991b-f07de0fa027b",
+      "updatedDate": "2026-07-28T08:27:32.566Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=5c6dec2c-cad4-4d33-991b-f07de0fa027b"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $80.60 for 25 8:27:35.296 GMT",
+      "id": "9a9535fd-634f-4aa1-a9f3-39a423d3b4b9",
+      "updatedDate": "2026-07-28T08:27:35.684Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=9a9535fd-634f-4aa1-a9f3-39a423d3b4b9"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $83.00 for 25 8:27:37.638 GMT",
+      "id": "2af61222-72af-4055-a327-9d37c194b4d7",
+      "updatedDate": "2026-07-28T08:27:37.682Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=2af61222-72af-4055-a327-9d37c194b4d7"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, METS raises bid $76.50 for 25 8:27:37.704 GMT",
+      "id": "b9eaab7c-0f85-4cf7-975b-92d1fd057312",
+      "updatedDate": "2026-07-28T08:27:37.79Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=b9eaab7c-0f85-4cf7-975b-92d1fd057312"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $84.10 for 25 8:27:39.486 GMT",
+      "id": "1c848086-5a3e-42f8-9067-ed7035acd4c4",
+      "updatedDate": "2026-07-28T08:27:39.508Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=1c848086-5a3e-42f8-9067-ed7035acd4c4"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $81.50 for 25 8:27:40.284 GMT",
+      "id": "bdb23245-9992-4b3c-b62e-d9664a20a653",
+      "updatedDate": "2026-07-28T08:27:40.306Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=bdb23245-9992-4b3c-b62e-d9664a20a653"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, SHENGHPI lowers offer $84.20 for 25 8:27:40.835 GMT",
+      "id": "2bcb57b2-b826-42ee-ba6a-b9bd83d33da2",
+      "updatedDate": "2026-07-28T08:27:40.913Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=2bcb57b2-b826-42ee-ba6a-b9bd83d33da2"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $80.50 for 25 8:27:40.945 GMT",
+      "id": "50e822ec-29c4-43e1-a9fb-ec85c8abb1a0",
+      "updatedDate": "2026-07-28T08:27:40.971Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=50e822ec-29c4-43e1-a9fb-ec85c8abb1a0"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $82.90 for 25 8:27:44.575 GMT",
+      "id": "092aeaba-44ef-4d01-ac7b-5993990c2333",
+      "updatedDate": "2026-07-28T08:27:44.599Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=092aeaba-44ef-4d01-ac7b-5993990c2333"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $81.40 for 25 8:27:45.920 GMT",
+      "id": "9ee90033-4cba-4e66-9d1f-e909b8e4150c",
+      "updatedDate": "2026-07-28T08:27:45.943Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=9ee90033-4cba-4e66-9d1f-e909b8e4150c"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $84.00 for 25 8:27:46.586 GMT",
+      "id": "da55289f-70cc-463c-b919-fbd465cbaa88",
+      "updatedDate": "2026-07-28T08:27:46.613Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=da55289f-70cc-463c-b919-fbd465cbaa88"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $80.40 for 25 8:27:47.264 GMT",
+      "id": "5140f15c-f400-428f-a0a0-839501d31a84",
+      "updatedDate": "2026-07-28T08:27:47.344Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=5140f15c-f400-428f-a0a0-839501d31a84"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $82.80 for 25 8:27:51.078 GMT",
+      "id": "c8a02c19-ac41-4823-a01f-e6bfd435b9a1",
+      "updatedDate": "2026-07-28T08:27:51.101Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=c8a02c19-ac41-4823-a01f-e6bfd435b9a1"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $80.30 for 25 8:27:52.426 GMT",
+      "id": "f3d9cc9d-1d10-4bda-adbd-7d6ab4404897",
+      "updatedDate": "2026-07-28T08:27:52.491Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=f3d9cc9d-1d10-4bda-adbd-7d6ab4404897"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $83.90 for 25 8:27:52.690 GMT",
+      "id": "b005a759-df5b-4d8d-a4c6-04bb8f3f7c62",
+      "updatedDate": "2026-07-28T08:27:52.717Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=b005a759-df5b-4d8d-a4c6-04bb8f3f7c62"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $81.30 for 25 8:27:53.970 GMT",
+      "id": "1a7543f2-0253-4fec-9e89-87c6932deacd",
+      "updatedDate": "2026-07-28T08:27:54Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=1a7543f2-0253-4fec-9e89-87c6932deacd"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, SHENGHPI lowers offer $84.10 for 25 8:27:56.027 GMT",
+      "id": "49aa44ec-9cbd-49cd-8f66-4ad4852a87ec",
+      "updatedDate": "2026-07-28T08:27:56.053Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=49aa44ec-9cbd-49cd-8f66-4ad4852a87ec"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, TRAFI withdraws bid $76.50 for 25 8:27:57.226 GMT",
+      "id": "aaa5b2a5-a13d-4344-b0d3-9b8ff3d6b868",
+      "updatedDate": "2026-07-28T08:27:57.254Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=aaa5b2a5-a13d-4344-b0d3-9b8ff3d6b868"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $80.20 for 25 8:27:58.146 GMT",
+      "id": "73cd617c-f189-449a-803b-6155351c3a1a",
+      "updatedDate": "2026-07-28T08:27:58.177Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=73cd617c-f189-449a-803b-6155351c3a1a"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, METS raises bid $76.60 for 25 8:27:58.357 GMT",
+      "id": "cc39bbe5-7696-4801-b34f-12f791875a29",
+      "updatedDate": "2026-07-28T08:27:58.397Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=cc39bbe5-7696-4801-b34f-12f791875a29"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $81.20 for 25 8:27:59.432 GMT",
+      "id": "33bc6f5a-ce6a-4a19-9d1b-da4622671728",
+      "updatedDate": "2026-07-28T08:27:59.522Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=33bc6f5a-ce6a-4a19-9d1b-da4622671728"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $82.70 for 25 8:27:59.792 GMT",
+      "id": "91246aa9-dcbb-4ab1-b0c0-5a7250de44c2",
+      "updatedDate": "2026-07-28T08:27:59.816Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=91246aa9-dcbb-4ab1-b0c0-5a7250de44c2"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $83.80 for 25 8:28:00.774 GMT",
+      "id": "1e65047f-a83a-44ea-8fd8-e88123d06608",
+      "updatedDate": "2026-07-28T08:28:00.799Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=1e65047f-a83a-44ea-8fd8-e88123d06608"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, SHENGHPI lowers offer $84.00 for 25 8:28:02.945 GMT",
+      "id": "3727ad07-d7ac-4603-8624-4a83cfe111e1",
+      "updatedDate": "2026-07-28T08:28:03.019Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=3727ad07-d7ac-4603-8624-4a83cfe111e1"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $81.10 for 25 8:28:05.459 GMT",
+      "id": "87df4b17-baf7-4808-94a6-b536b05ae1f9",
+      "updatedDate": "2026-07-28T08:28:05.493Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=87df4b17-baf7-4808-94a6-b536b05ae1f9"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $82.60 for 25 8:28:06.119 GMT",
+      "id": "95796745-476e-4a87-9c12-9b32eecbbe50",
+      "updatedDate": "2026-07-28T08:28:06.166Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=95796745-476e-4a87-9c12-9b32eecbbe50"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $83.70 for 25 8:28:07.077 GMT",
+      "id": "e6a75ca4-207f-46a4-9388-ef5f44308924",
+      "updatedDate": "2026-07-28T08:28:07.112Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=e6a75ca4-207f-46a4-9388-ef5f44308924"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $80.10 for 25 8:28:08.403 GMT",
+      "id": "aa153b07-9a32-4227-8a7e-56b551427b76",
+      "updatedDate": "2026-07-28T08:28:08.425Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=aa153b07-9a32-4227-8a7e-56b551427b76"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, SHENGHPI lowers offer $83.90 for 25 8:28:09.040 GMT",
+      "id": "75e28a23-7439-41cd-8703-8fbeeb378dff",
+      "updatedDate": "2026-07-28T08:28:09.068Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=75e28a23-7439-41cd-8703-8fbeeb378dff"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $81.00 for 25 8:28:11.104 GMT",
+      "id": "6ea5ef42-6de6-40f8-a556-801e373845c7",
+      "updatedDate": "2026-07-28T08:28:11.127Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=6ea5ef42-6de6-40f8-a556-801e373845c7"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $82.50 for 25 8:28:13.067 GMT",
+      "id": "2e8053e4-c8b3-41bd-878b-2a0de620c171",
+      "updatedDate": "2026-07-28T08:28:13.091Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=2e8053e4-c8b3-41bd-878b-2a0de620c171"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $83.60 for 25 8:28:14.072 GMT",
+      "id": "7981db49-9789-4640-bd58-f8e7bb1c67ce",
+      "updatedDate": "2026-07-28T08:28:14.099Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=7981db49-9789-4640-bd58-f8e7bb1c67ce"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, SHENGHPI lowers offer $83.80 for 25 8:28:15.168 GMT",
+      "id": "7d1653e9-031f-4677-bb23-40179cd85072",
+      "updatedDate": "2026-07-28T08:28:15.194Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=7d1653e9-031f-4677-bb23-40179cd85072"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $80.00 for 25 8:28:16.112 GMT",
+      "id": "7f3513a0-d8fd-4025-99f2-d7eea06fbca7",
+      "updatedDate": "2026-07-28T08:28:16.143Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=7f3513a0-d8fd-4025-99f2-d7eea06fbca7"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $80.90 for 25 8:28:18.583 GMT",
+      "id": "f3c6801e-eb6c-44eb-bef5-4b18500922d7",
+      "updatedDate": "2026-07-28T08:28:18.614Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=f3c6801e-eb6c-44eb-bef5-4b18500922d7"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $83.50 for 25 8:28:19.697 GMT",
+      "id": "303ce824-f5d8-4301-8ab5-949c3f6157c8",
+      "updatedDate": "2026-07-28T08:28:19.753Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=303ce824-f5d8-4301-8ab5-949c3f6157c8"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $82.40 for 25 8:28:20.314 GMT",
+      "id": "41de7765-3e5a-4fbc-88a9-38ef7022adb5",
+      "updatedDate": "2026-07-28T08:28:20.352Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=41de7765-3e5a-4fbc-88a9-38ef7022adb5"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $79.90 for 25 8:28:21.198 GMT",
+      "id": "0b707b3c-2462-4b46-9770-161c55cc6370",
+      "updatedDate": "2026-07-28T08:28:21.226Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=0b707b3c-2462-4b46-9770-161c55cc6370"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $80.80 for 25 8:28:24.799 GMT",
+      "id": "f4946757-da36-4c97-9f34-42c89c01710b",
+      "updatedDate": "2026-07-28T08:28:24.824Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=f4946757-da36-4c97-9f34-42c89c01710b"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $83.40 for 25 8:28:24.891 GMT",
+      "id": "d13ad7c8-2623-4a08-ac50-558404062e1a",
+      "updatedDate": "2026-07-28T08:28:24.916Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=d13ad7c8-2623-4a08-ac50-558404062e1a"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $82.30 for 25 8:28:25.740 GMT",
+      "id": "0545d0b7-90ef-426e-b412-90d5fa5cb1ff",
+      "updatedDate": "2026-07-28T08:28:25.826Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=0545d0b7-90ef-426e-b412-90d5fa5cb1ff"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, SHENGHPI lowers offer $83.70 for 25 8:28:26.697 GMT",
+      "id": "a6c7b58c-b204-4d1f-89e2-15f4939eb8cd",
+      "updatedDate": "2026-07-28T08:28:26.723Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=a6c7b58c-b204-4d1f-89e2-15f4939eb8cd"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $79.80 for 25 8:28:27.477 GMT",
+      "id": "ef30b6b7-bfe0-4c39-998a-6c26780bfdb4",
+      "updatedDate": "2026-07-28T08:28:27.505Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=ef30b6b7-bfe0-4c39-998a-6c26780bfdb4"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $80.70 for 25 8:28:30.157 GMT",
+      "id": "44e3506d-0d45-4021-a9b5-ad1afc6141a7",
+      "updatedDate": "2026-07-28T08:28:30.179Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=44e3506d-0d45-4021-a9b5-ad1afc6141a7"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $83.30 for 25 8:28:30.505 GMT",
+      "id": "fe1814f2-9ec1-484d-a397-8001d4ff7363",
+      "updatedDate": "2026-07-28T08:28:30.537Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=fe1814f2-9ec1-484d-a397-8001d4ff7363"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $82.20 for 25 8:28:31.209 GMT",
+      "id": "23eb352c-b35d-4d65-b87c-e237f7f43584",
+      "updatedDate": "2026-07-28T08:28:31.235Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=23eb352c-b35d-4d65-b87c-e237f7f43584"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $79.70 for 25 8:28:33.988 GMT",
+      "id": "d84c8b7e-7ebd-4354-8bf6-4dd52bac989c",
+      "updatedDate": "2026-07-28T08:28:34.328Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=d84c8b7e-7ebd-4354-8bf6-4dd52bac989c"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $80.60 for 25 8:28:35.400 GMT",
+      "id": "a36afcdc-8fcb-4a4a-891e-f7d5615f38b2",
+      "updatedDate": "2026-07-28T08:28:35.564Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=a36afcdc-8fcb-4a4a-891e-f7d5615f38b2"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $83.20 for 25 8:28:35.573 GMT",
+      "id": "552f9b43-875e-4d79-8210-61a8fce13620",
+      "updatedDate": "2026-07-28T08:28:35.635Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=552f9b43-875e-4d79-8210-61a8fce13620"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $82.10 for 25 8:28:36.426 GMT",
+      "id": "6e8b6766-16d9-41db-9faa-17ba09655be4",
+      "updatedDate": "2026-07-28T08:28:36.502Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=6e8b6766-16d9-41db-9faa-17ba09655be4"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, SHENGHPI lowers offer $83.60 for 25 8:28:40.369 GMT",
+      "id": "7b76548c-ccf7-4c70-a610-d6d3cb64cee7",
+      "updatedDate": "2026-07-28T08:28:40.393Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=7b76548c-ccf7-4c70-a610-d6d3cb64cee7"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $83.10 for 25 8:28:41.784 GMT",
+      "id": "0cbf3fa0-d86d-4013-b820-b11ca430cdcd",
+      "updatedDate": "2026-07-28T08:28:41.809Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=0cbf3fa0-d86d-4013-b820-b11ca430cdcd"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $79.60 for 25 8:28:42.076 GMT",
+      "id": "2a78b9b4-1235-4ea4-840e-40d2c22509a8",
+      "updatedDate": "2026-07-28T08:28:42.163Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=2a78b9b4-1235-4ea4-840e-40d2c22509a8"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, METS raises bid $76.70 for 25 8:28:42.818 GMT",
+      "id": "f7b92599-59a3-4b65-bee5-1253cd7eb28f",
+      "updatedDate": "2026-07-28T08:28:42.888Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=f7b92599-59a3-4b65-bee5-1253cd7eb28f"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $82.00 for 25 8:28:45.480 GMT",
+      "id": "76e1a566-c696-431f-ae96-69f679065548",
+      "updatedDate": "2026-07-28T08:28:45.598Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=76e1a566-c696-431f-ae96-69f679065548"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, SHENGHPI lowers offer $83.50 for 25 8:28:47.441 GMT",
+      "id": "298068ae-04c8-492c-91aa-51826ed7e88f",
+      "updatedDate": "2026-07-28T08:28:47.47Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=298068ae-04c8-492c-91aa-51826ed7e88f"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $83.00 for 25 8:28:47.716 GMT",
+      "id": "47797e62-c677-41f3-bc01-23d43867bcba",
+      "updatedDate": "2026-07-28T08:28:47.745Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=47797e62-c677-41f3-bc01-23d43867bcba"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $80.50 for 25 8:28:48.048 GMT",
+      "id": "9ec60236-fba0-4ede-836a-a4b21f302e0a",
+      "updatedDate": "2026-07-28T08:28:48.073Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=9ec60236-fba0-4ede-836a-a4b21f302e0a"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $79.50 for 25 8:28:48.244 GMT",
+      "id": "312fcdc3-fb09-4714-aeb4-1e80588cdb0e",
+      "updatedDate": "2026-07-28T08:28:48.269Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=312fcdc3-fb09-4714-aeb4-1e80588cdb0e"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, METS raises bid $76.80 for 25 8:28:50.868 GMT",
+      "id": "12c433b7-9604-4354-ad16-c6594e1bb0d2",
+      "updatedDate": "2026-07-28T08:28:50.915Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=12c433b7-9604-4354-ad16-c6594e1bb0d2"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $80.40 for 25 8:28:53.232 GMT",
+      "id": "aa20e33a-809a-43a8-9110-d29ba465ff47",
+      "updatedDate": "2026-07-28T08:28:53.366Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=aa20e33a-809a-43a8-9110-d29ba465ff47"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $79.40 for 25 8:28:53.827 GMT",
+      "id": "4be2c094-b7dc-47a1-b5e7-b45734887c68",
+      "updatedDate": "2026-07-28T08:28:55.954Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=4be2c094-b7dc-47a1-b5e7-b45734887c68"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, SHENGHPI lowers offer $83.40 for 25 8:28:53.839 GMT",
+      "id": "b659f254-c2c7-4652-bcae-da492929d073",
+      "updatedDate": "2026-07-28T08:28:56.006Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=b659f254-c2c7-4652-bcae-da492929d073"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $81.90 for 25 8:28:54.833 GMT",
+      "id": "8598a2c6-4496-4206-8486-2f31edbe31e4",
+      "updatedDate": "2026-07-28T08:28:56.12Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=8598a2c6-4496-4206-8486-2f31edbe31e4"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $82.90 for 25 8:28:54.835 GMT",
+      "id": "d981e277-d5b5-4f4a-9321-b34cdaf4de02",
+      "updatedDate": "2026-07-28T08:28:56.194Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=d981e277-d5b5-4f4a-9321-b34cdaf4de02"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $80.30 for 25 8:28:59.104 GMT",
+      "id": "3341e24f-4c8d-49fb-b9df-8a7ceb6d731c",
+      "updatedDate": "2026-07-28T08:28:59.129Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=3341e24f-4c8d-49fb-b9df-8a7ceb6d731c"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $82.80 for 25 8:29:00.778 GMT",
+      "id": "be714768-7e84-42f9-8833-6991129044c7",
+      "updatedDate": "2026-07-28T08:29:00.814Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=be714768-7e84-42f9-8833-6991129044c7"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $81.80 for 25 8:29:02.130 GMT",
+      "id": "39f9e5f4-fba7-47e6-a753-df88e8d79deb",
+      "updatedDate": "2026-07-28T08:29:02.156Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=39f9e5f4-fba7-47e6-a753-df88e8d79deb"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $79.30 for 25 8:29:04.287 GMT",
+      "id": "2dd9272e-4da6-4942-afc8-c8e23cc00d27",
+      "updatedDate": "2026-07-28T08:29:04.336Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=2dd9272e-4da6-4942-afc8-c8e23cc00d27"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $80.20 for 25 8:29:05.162 GMT",
+      "id": "89002159-5d0a-41d7-933f-eedd4c9af9f0",
+      "updatedDate": "2026-07-28T08:29:05.188Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=89002159-5d0a-41d7-933f-eedd4c9af9f0"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, SHENGHPI lowers offer $83.30 for 25 8:29:07.573 GMT",
+      "id": "af3d5e74-00cf-4d98-ab16-e1d14be4def4",
+      "updatedDate": "2026-07-28T08:29:07.645Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=af3d5e74-00cf-4d98-ab16-e1d14be4def4"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $81.70 for 25 8:29:09.017 GMT",
+      "id": "49d116a4-e6f5-4b8b-8b70-636406315c0f",
+      "updatedDate": "2026-07-28T08:29:09.045Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=49d116a4-e6f5-4b8b-8b70-636406315c0f"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $79.20 for 25 8:29:10.113 GMT",
+      "id": "a86c0b17-b2ba-4529-9dec-a0f208e1e9df",
+      "updatedDate": "2026-07-28T08:29:10.144Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=a86c0b17-b2ba-4529-9dec-a0f208e1e9df"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $80.10 for 25 8:29:12.984 GMT",
+      "id": "6d44fcda-6bbf-4dcc-8996-f36ec72e8ac2",
+      "updatedDate": "2026-07-28T08:29:13.011Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=6d44fcda-6bbf-4dcc-8996-f36ec72e8ac2"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $81.60 for 25 8:29:14.761 GMT",
+      "id": "8f5a1406-f108-44c3-b83f-70b799ae1fa7",
+      "updatedDate": "2026-07-28T08:29:14.836Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=8f5a1406-f108-44c3-b83f-70b799ae1fa7"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $79.10 for 25 8:29:18.368 GMT",
+      "id": "67947a03-927d-485a-8e85-54e6e34ff7dc",
+      "updatedDate": "2026-07-28T08:29:18.424Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=67947a03-927d-485a-8e85-54e6e34ff7dc"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $80.00 for 25 8:29:19.593 GMT",
+      "id": "8ec71307-685e-4631-84ce-4c1ac0609a40",
+      "updatedDate": "2026-07-28T08:29:19.619Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=8ec71307-685e-4631-84ce-4c1ac0609a40"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $81.50 for 25 8:29:20.265 GMT",
+      "id": "1b929a4d-6dee-474c-aec7-5dd1606fd349",
+      "updatedDate": "2026-07-28T08:29:20.295Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=1b929a4d-6dee-474c-aec7-5dd1606fd349"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $82.70 for 25 8:29:20.295 GMT",
+      "id": "70a34b23-14cf-45e1-b4cb-2177bc921633",
+      "updatedDate": "2026-07-28T08:29:20.352Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=70a34b23-14cf-45e1-b4cb-2177bc921633"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, METS raises bid $76.90 for 25 8:29:22.584 GMT",
+      "id": "a4b8ae3a-b9bd-4b46-a57d-02c7ad49f9fe",
+      "updatedDate": "2026-07-28T08:29:22.639Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=a4b8ae3a-b9bd-4b46-a57d-02c7ad49f9fe"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $79.00 for 25 8:29:23.994 GMT",
+      "id": "afe3a1e2-e71f-4352-9be5-822391544318",
+      "updatedDate": "2026-07-28T08:29:24.02Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=afe3a1e2-e71f-4352-9be5-822391544318"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $79.90 for 25 8:29:25.071 GMT",
+      "id": "60cb9299-ce6b-4811-ab7f-257b9e1b872d",
+      "updatedDate": "2026-07-28T08:29:25.123Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=60cb9299-ce6b-4811-ab7f-257b9e1b872d"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $81.40 for 25 8:29:27.018 GMT",
+      "id": "95556b99-7cd1-4013-a825-433e344b4d2d",
+      "updatedDate": "2026-07-28T08:29:27.045Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=95556b99-7cd1-4013-a825-433e344b4d2d"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $82.60 for 25 8:29:30.738 GMT",
+      "id": "95fc0466-001a-48a3-81ba-b68b3b46868b",
+      "updatedDate": "2026-07-28T08:29:30.859Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=95fc0466-001a-48a3-81ba-b68b3b46868b"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $79.80 for 25 8:29:31.456 GMT",
+      "id": "5e493cad-1812-4249-9340-c4c65e3667e5",
+      "updatedDate": "2026-07-28T08:29:31.709Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=5e493cad-1812-4249-9340-c4c65e3667e5"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $78.90 for 25 8:29:32.576 GMT",
+      "id": "7857d1bf-8029-4a38-91be-a3bd42c8f694",
+      "updatedDate": "2026-07-28T08:29:32.603Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=7857d1bf-8029-4a38-91be-a3bd42c8f694"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $81.30 for 25 8:29:33.476 GMT",
+      "id": "d83934ad-df9f-4a0b-b1db-f94108b6f2ec",
+      "updatedDate": "2026-07-28T08:29:33.502Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=d83934ad-df9f-4a0b-b1db-f94108b6f2ec"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, BPSG SELLS TO METS  $76.90 for 25 8:29:35.343 GMT",
+      "id": "0e9b0d25-c4ee-49f0-b43e-2beca0935c8b",
+      "updatedDate": "2026-07-28T08:29:35.369Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=0e9b0d25-c4ee-49f0-b43e-2beca0935c8b"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $82.50 for 25 8:29:38.085 GMT",
+      "id": "17cdf9d7-8ed9-4c5f-bce6-c4a7d180bccd",
+      "updatedDate": "2026-07-28T08:29:38.109Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=17cdf9d7-8ed9-4c5f-bce6-c4a7d180bccd"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $81.20 for 25 8:29:38.675 GMT",
+      "id": "a013d540-a5a6-4f27-9338-76bbc570e89f",
+      "updatedDate": "2026-07-28T08:29:38.699Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=a013d540-a5a6-4f27-9338-76bbc570e89f"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $78.80 for 25 8:29:42.627 GMT",
+      "id": "8f4d3d77-1e78-4d1f-8123-f79fd67c20ab",
+      "updatedDate": "2026-07-28T08:29:42.652Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=8f4d3d77-1e78-4d1f-8123-f79fd67c20ab"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $82.40 for 25 8:29:46.327 GMT",
+      "id": "a861f0cb-72c7-458d-8ef7-13e6a0210dc3",
+      "updatedDate": "2026-07-28T08:29:46.358Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=a861f0cb-72c7-458d-8ef7-13e6a0210dc3"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $78.70 for 25 8:29:49.390 GMT",
+      "id": "3f519769-d61b-4496-b53c-745844b192ce",
+      "updatedDate": "2026-07-28T08:29:49.414Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=3f519769-d61b-4496-b53c-745844b192ce"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $81.10 for 25 8:29:50.171 GMT",
+      "id": "76d9770f-0c1f-4907-882c-0748c1154bad",
+      "updatedDate": "2026-07-28T08:29:50.316Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=76d9770f-0c1f-4907-882c-0748c1154bad"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $78.60 for 25 8:29:57.638 GMT",
+      "id": "b6fb1d90-58d2-4528-83ec-b8938723f51e",
+      "updatedDate": "2026-07-28T08:29:57.703Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=b6fb1d90-58d2-4528-83ec-b8938723f51e"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, VITOLSG withdraws offer $78.60 for 25 8:30:01.052 GMT",
+      "id": "96019a90-9d69-42c3-8196-20ec04f434ee",
+      "updatedDate": "2026-07-28T08:30:01.249Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=96019a90-9d69-42c3-8196-20ec04f434ee"
+    },
+    {
+      "headline": "Platts Dubai Partial Sep26, P66SG withdraws offer $81.10 for 25 8:30:51.680 GMT",
+      "id": "a2b1e61c-a05e-4668-947c-fd83741b2b9b",
+      "updatedDate": "2026-07-28T08:30:51.705Z",
+      "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=a2b1e61c-a05e-4668-947c-fd83741b2b9b"
+    }
+  ],
+  "errorTrades": {
+    "items": [],
+    "contents": []
+  },
+  "finalsOnClose": {
+    "bids": [],
+    "offers": [],
+    "contents": []
+  },
+  "convergence": [],
+  "heardsRaw": {
+    "decl": {
+      "q": "declares+crude",
+      "status": 200,
+      "results": []
+    },
+    "deals": {
+      "q": "DUBAI+PARTIALS",
+      "status": 200,
+      "results": [
+        {
+          "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $80.70 for 25 8:27:29.723 GMT",
+          "id": "b1b5c43d-3cbe-4074-bd6c-996fbc5ff50a",
+          "updatedDate": "2026-07-28T08:27:29.746Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=b1b5c43d-3cbe-4074-bd6c-996fbc5ff50a"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, SHENGHPI lowers offer $84.30 for 25 8:27:29.891 GMT",
+          "id": "0c63847f-c3ee-4701-95c9-36d3a03d3836",
+          "updatedDate": "2026-07-28T08:27:29.915Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=0c63847f-c3ee-4701-95c9-36d3a03d3836"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $81.60 for 25 8:27:31.224 GMT",
+          "id": "a65bf1f2-b349-4589-86b5-f7b48fe62958",
+          "updatedDate": "2026-07-28T08:27:31.26Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=a65bf1f2-b349-4589-86b5-f7b48fe62958"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $84.20 for 25 8:27:32.543 GMT",
+          "id": "5c6dec2c-cad4-4d33-991b-f07de0fa027b",
+          "updatedDate": "2026-07-28T08:27:32.566Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=5c6dec2c-cad4-4d33-991b-f07de0fa027b"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $80.60 for 25 8:27:35.296 GMT",
+          "id": "9a9535fd-634f-4aa1-a9f3-39a423d3b4b9",
+          "updatedDate": "2026-07-28T08:27:35.684Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=9a9535fd-634f-4aa1-a9f3-39a423d3b4b9"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $83.00 for 25 8:27:37.638 GMT",
+          "id": "2af61222-72af-4055-a327-9d37c194b4d7",
+          "updatedDate": "2026-07-28T08:27:37.682Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=2af61222-72af-4055-a327-9d37c194b4d7"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, METS raises bid $76.50 for 25 8:27:37.704 GMT",
+          "id": "b9eaab7c-0f85-4cf7-975b-92d1fd057312",
+          "updatedDate": "2026-07-28T08:27:37.79Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=b9eaab7c-0f85-4cf7-975b-92d1fd057312"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $84.10 for 25 8:27:39.486 GMT",
+          "id": "1c848086-5a3e-42f8-9067-ed7035acd4c4",
+          "updatedDate": "2026-07-28T08:27:39.508Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=1c848086-5a3e-42f8-9067-ed7035acd4c4"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $81.50 for 25 8:27:40.284 GMT",
+          "id": "bdb23245-9992-4b3c-b62e-d9664a20a653",
+          "updatedDate": "2026-07-28T08:27:40.306Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=bdb23245-9992-4b3c-b62e-d9664a20a653"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, SHENGHPI lowers offer $84.20 for 25 8:27:40.835 GMT",
+          "id": "2bcb57b2-b826-42ee-ba6a-b9bd83d33da2",
+          "updatedDate": "2026-07-28T08:27:40.913Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=2bcb57b2-b826-42ee-ba6a-b9bd83d33da2"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $80.50 for 25 8:27:40.945 GMT",
+          "id": "50e822ec-29c4-43e1-a9fb-ec85c8abb1a0",
+          "updatedDate": "2026-07-28T08:27:40.971Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=50e822ec-29c4-43e1-a9fb-ec85c8abb1a0"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $82.90 for 25 8:27:44.575 GMT",
+          "id": "092aeaba-44ef-4d01-ac7b-5993990c2333",
+          "updatedDate": "2026-07-28T08:27:44.599Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=092aeaba-44ef-4d01-ac7b-5993990c2333"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $81.40 for 25 8:27:45.920 GMT",
+          "id": "9ee90033-4cba-4e66-9d1f-e909b8e4150c",
+          "updatedDate": "2026-07-28T08:27:45.943Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=9ee90033-4cba-4e66-9d1f-e909b8e4150c"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $84.00 for 25 8:27:46.586 GMT",
+          "id": "da55289f-70cc-463c-b919-fbd465cbaa88",
+          "updatedDate": "2026-07-28T08:27:46.613Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=da55289f-70cc-463c-b919-fbd465cbaa88"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $80.40 for 25 8:27:47.264 GMT",
+          "id": "5140f15c-f400-428f-a0a0-839501d31a84",
+          "updatedDate": "2026-07-28T08:27:47.344Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=5140f15c-f400-428f-a0a0-839501d31a84"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $82.80 for 25 8:27:51.078 GMT",
+          "id": "c8a02c19-ac41-4823-a01f-e6bfd435b9a1",
+          "updatedDate": "2026-07-28T08:27:51.101Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=c8a02c19-ac41-4823-a01f-e6bfd435b9a1"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $80.30 for 25 8:27:52.426 GMT",
+          "id": "f3d9cc9d-1d10-4bda-adbd-7d6ab4404897",
+          "updatedDate": "2026-07-28T08:27:52.491Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=f3d9cc9d-1d10-4bda-adbd-7d6ab4404897"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $83.90 for 25 8:27:52.690 GMT",
+          "id": "b005a759-df5b-4d8d-a4c6-04bb8f3f7c62",
+          "updatedDate": "2026-07-28T08:27:52.717Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=b005a759-df5b-4d8d-a4c6-04bb8f3f7c62"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $81.30 for 25 8:27:53.970 GMT",
+          "id": "1a7543f2-0253-4fec-9e89-87c6932deacd",
+          "updatedDate": "2026-07-28T08:27:54Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=1a7543f2-0253-4fec-9e89-87c6932deacd"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, SHENGHPI lowers offer $84.10 for 25 8:27:56.027 GMT",
+          "id": "49aa44ec-9cbd-49cd-8f66-4ad4852a87ec",
+          "updatedDate": "2026-07-28T08:27:56.053Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=49aa44ec-9cbd-49cd-8f66-4ad4852a87ec"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, TRAFI withdraws bid $76.50 for 25 8:27:57.226 GMT",
+          "id": "aaa5b2a5-a13d-4344-b0d3-9b8ff3d6b868",
+          "updatedDate": "2026-07-28T08:27:57.254Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=aaa5b2a5-a13d-4344-b0d3-9b8ff3d6b868"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $80.20 for 25 8:27:58.146 GMT",
+          "id": "73cd617c-f189-449a-803b-6155351c3a1a",
+          "updatedDate": "2026-07-28T08:27:58.177Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=73cd617c-f189-449a-803b-6155351c3a1a"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, METS raises bid $76.60 for 25 8:27:58.357 GMT",
+          "id": "cc39bbe5-7696-4801-b34f-12f791875a29",
+          "updatedDate": "2026-07-28T08:27:58.397Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=cc39bbe5-7696-4801-b34f-12f791875a29"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $81.20 for 25 8:27:59.432 GMT",
+          "id": "33bc6f5a-ce6a-4a19-9d1b-da4622671728",
+          "updatedDate": "2026-07-28T08:27:59.522Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=33bc6f5a-ce6a-4a19-9d1b-da4622671728"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $82.70 for 25 8:27:59.792 GMT",
+          "id": "91246aa9-dcbb-4ab1-b0c0-5a7250de44c2",
+          "updatedDate": "2026-07-28T08:27:59.816Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=91246aa9-dcbb-4ab1-b0c0-5a7250de44c2"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $83.80 for 25 8:28:00.774 GMT",
+          "id": "1e65047f-a83a-44ea-8fd8-e88123d06608",
+          "updatedDate": "2026-07-28T08:28:00.799Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=1e65047f-a83a-44ea-8fd8-e88123d06608"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, SHENGHPI lowers offer $84.00 for 25 8:28:02.945 GMT",
+          "id": "3727ad07-d7ac-4603-8624-4a83cfe111e1",
+          "updatedDate": "2026-07-28T08:28:03.019Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=3727ad07-d7ac-4603-8624-4a83cfe111e1"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $81.10 for 25 8:28:05.459 GMT",
+          "id": "87df4b17-baf7-4808-94a6-b536b05ae1f9",
+          "updatedDate": "2026-07-28T08:28:05.493Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=87df4b17-baf7-4808-94a6-b536b05ae1f9"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $82.60 for 25 8:28:06.119 GMT",
+          "id": "95796745-476e-4a87-9c12-9b32eecbbe50",
+          "updatedDate": "2026-07-28T08:28:06.166Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=95796745-476e-4a87-9c12-9b32eecbbe50"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $83.70 for 25 8:28:07.077 GMT",
+          "id": "e6a75ca4-207f-46a4-9388-ef5f44308924",
+          "updatedDate": "2026-07-28T08:28:07.112Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=e6a75ca4-207f-46a4-9388-ef5f44308924"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $80.10 for 25 8:28:08.403 GMT",
+          "id": "aa153b07-9a32-4227-8a7e-56b551427b76",
+          "updatedDate": "2026-07-28T08:28:08.425Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=aa153b07-9a32-4227-8a7e-56b551427b76"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, SHENGHPI lowers offer $83.90 for 25 8:28:09.040 GMT",
+          "id": "75e28a23-7439-41cd-8703-8fbeeb378dff",
+          "updatedDate": "2026-07-28T08:28:09.068Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=75e28a23-7439-41cd-8703-8fbeeb378dff"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $81.00 for 25 8:28:11.104 GMT",
+          "id": "6ea5ef42-6de6-40f8-a556-801e373845c7",
+          "updatedDate": "2026-07-28T08:28:11.127Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=6ea5ef42-6de6-40f8-a556-801e373845c7"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $82.50 for 25 8:28:13.067 GMT",
+          "id": "2e8053e4-c8b3-41bd-878b-2a0de620c171",
+          "updatedDate": "2026-07-28T08:28:13.091Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=2e8053e4-c8b3-41bd-878b-2a0de620c171"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $83.60 for 25 8:28:14.072 GMT",
+          "id": "7981db49-9789-4640-bd58-f8e7bb1c67ce",
+          "updatedDate": "2026-07-28T08:28:14.099Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=7981db49-9789-4640-bd58-f8e7bb1c67ce"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, SHENGHPI lowers offer $83.80 for 25 8:28:15.168 GMT",
+          "id": "7d1653e9-031f-4677-bb23-40179cd85072",
+          "updatedDate": "2026-07-28T08:28:15.194Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=7d1653e9-031f-4677-bb23-40179cd85072"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $80.00 for 25 8:28:16.112 GMT",
+          "id": "7f3513a0-d8fd-4025-99f2-d7eea06fbca7",
+          "updatedDate": "2026-07-28T08:28:16.143Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=7f3513a0-d8fd-4025-99f2-d7eea06fbca7"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $80.90 for 25 8:28:18.583 GMT",
+          "id": "f3c6801e-eb6c-44eb-bef5-4b18500922d7",
+          "updatedDate": "2026-07-28T08:28:18.614Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=f3c6801e-eb6c-44eb-bef5-4b18500922d7"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $83.50 for 25 8:28:19.697 GMT",
+          "id": "303ce824-f5d8-4301-8ab5-949c3f6157c8",
+          "updatedDate": "2026-07-28T08:28:19.753Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=303ce824-f5d8-4301-8ab5-949c3f6157c8"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $82.40 for 25 8:28:20.314 GMT",
+          "id": "41de7765-3e5a-4fbc-88a9-38ef7022adb5",
+          "updatedDate": "2026-07-28T08:28:20.352Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=41de7765-3e5a-4fbc-88a9-38ef7022adb5"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $79.90 for 25 8:28:21.198 GMT",
+          "id": "0b707b3c-2462-4b46-9770-161c55cc6370",
+          "updatedDate": "2026-07-28T08:28:21.226Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=0b707b3c-2462-4b46-9770-161c55cc6370"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $80.80 for 25 8:28:24.799 GMT",
+          "id": "f4946757-da36-4c97-9f34-42c89c01710b",
+          "updatedDate": "2026-07-28T08:28:24.824Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=f4946757-da36-4c97-9f34-42c89c01710b"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $83.40 for 25 8:28:24.891 GMT",
+          "id": "d13ad7c8-2623-4a08-ac50-558404062e1a",
+          "updatedDate": "2026-07-28T08:28:24.916Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=d13ad7c8-2623-4a08-ac50-558404062e1a"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $82.30 for 25 8:28:25.740 GMT",
+          "id": "0545d0b7-90ef-426e-b412-90d5fa5cb1ff",
+          "updatedDate": "2026-07-28T08:28:25.826Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=0545d0b7-90ef-426e-b412-90d5fa5cb1ff"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, SHENGHPI lowers offer $83.70 for 25 8:28:26.697 GMT",
+          "id": "a6c7b58c-b204-4d1f-89e2-15f4939eb8cd",
+          "updatedDate": "2026-07-28T08:28:26.723Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=a6c7b58c-b204-4d1f-89e2-15f4939eb8cd"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $79.80 for 25 8:28:27.477 GMT",
+          "id": "ef30b6b7-bfe0-4c39-998a-6c26780bfdb4",
+          "updatedDate": "2026-07-28T08:28:27.505Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=ef30b6b7-bfe0-4c39-998a-6c26780bfdb4"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $80.70 for 25 8:28:30.157 GMT",
+          "id": "44e3506d-0d45-4021-a9b5-ad1afc6141a7",
+          "updatedDate": "2026-07-28T08:28:30.179Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=44e3506d-0d45-4021-a9b5-ad1afc6141a7"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $83.30 for 25 8:28:30.505 GMT",
+          "id": "fe1814f2-9ec1-484d-a397-8001d4ff7363",
+          "updatedDate": "2026-07-28T08:28:30.537Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=fe1814f2-9ec1-484d-a397-8001d4ff7363"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $82.20 for 25 8:28:31.209 GMT",
+          "id": "23eb352c-b35d-4d65-b87c-e237f7f43584",
+          "updatedDate": "2026-07-28T08:28:31.235Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=23eb352c-b35d-4d65-b87c-e237f7f43584"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $79.70 for 25 8:28:33.988 GMT",
+          "id": "d84c8b7e-7ebd-4354-8bf6-4dd52bac989c",
+          "updatedDate": "2026-07-28T08:28:34.328Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=d84c8b7e-7ebd-4354-8bf6-4dd52bac989c"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $80.60 for 25 8:28:35.400 GMT",
+          "id": "a36afcdc-8fcb-4a4a-891e-f7d5615f38b2",
+          "updatedDate": "2026-07-28T08:28:35.564Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=a36afcdc-8fcb-4a4a-891e-f7d5615f38b2"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $83.20 for 25 8:28:35.573 GMT",
+          "id": "552f9b43-875e-4d79-8210-61a8fce13620",
+          "updatedDate": "2026-07-28T08:28:35.635Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=552f9b43-875e-4d79-8210-61a8fce13620"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $82.10 for 25 8:28:36.426 GMT",
+          "id": "6e8b6766-16d9-41db-9faa-17ba09655be4",
+          "updatedDate": "2026-07-28T08:28:36.502Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=6e8b6766-16d9-41db-9faa-17ba09655be4"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, SHENGHPI lowers offer $83.60 for 25 8:28:40.369 GMT",
+          "id": "7b76548c-ccf7-4c70-a610-d6d3cb64cee7",
+          "updatedDate": "2026-07-28T08:28:40.393Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=7b76548c-ccf7-4c70-a610-d6d3cb64cee7"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $83.10 for 25 8:28:41.784 GMT",
+          "id": "0cbf3fa0-d86d-4013-b820-b11ca430cdcd",
+          "updatedDate": "2026-07-28T08:28:41.809Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=0cbf3fa0-d86d-4013-b820-b11ca430cdcd"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $79.60 for 25 8:28:42.076 GMT",
+          "id": "2a78b9b4-1235-4ea4-840e-40d2c22509a8",
+          "updatedDate": "2026-07-28T08:28:42.163Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=2a78b9b4-1235-4ea4-840e-40d2c22509a8"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, METS raises bid $76.70 for 25 8:28:42.818 GMT",
+          "id": "f7b92599-59a3-4b65-bee5-1253cd7eb28f",
+          "updatedDate": "2026-07-28T08:28:42.888Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=f7b92599-59a3-4b65-bee5-1253cd7eb28f"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $82.00 for 25 8:28:45.480 GMT",
+          "id": "76e1a566-c696-431f-ae96-69f679065548",
+          "updatedDate": "2026-07-28T08:28:45.598Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=76e1a566-c696-431f-ae96-69f679065548"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, SHENGHPI lowers offer $83.50 for 25 8:28:47.441 GMT",
+          "id": "298068ae-04c8-492c-91aa-51826ed7e88f",
+          "updatedDate": "2026-07-28T08:28:47.47Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=298068ae-04c8-492c-91aa-51826ed7e88f"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $83.00 for 25 8:28:47.716 GMT",
+          "id": "47797e62-c677-41f3-bc01-23d43867bcba",
+          "updatedDate": "2026-07-28T08:28:47.745Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=47797e62-c677-41f3-bc01-23d43867bcba"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $80.50 for 25 8:28:48.048 GMT",
+          "id": "9ec60236-fba0-4ede-836a-a4b21f302e0a",
+          "updatedDate": "2026-07-28T08:28:48.073Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=9ec60236-fba0-4ede-836a-a4b21f302e0a"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $79.50 for 25 8:28:48.244 GMT",
+          "id": "312fcdc3-fb09-4714-aeb4-1e80588cdb0e",
+          "updatedDate": "2026-07-28T08:28:48.269Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=312fcdc3-fb09-4714-aeb4-1e80588cdb0e"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, METS raises bid $76.80 for 25 8:28:50.868 GMT",
+          "id": "12c433b7-9604-4354-ad16-c6594e1bb0d2",
+          "updatedDate": "2026-07-28T08:28:50.915Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=12c433b7-9604-4354-ad16-c6594e1bb0d2"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $80.40 for 25 8:28:53.232 GMT",
+          "id": "aa20e33a-809a-43a8-9110-d29ba465ff47",
+          "updatedDate": "2026-07-28T08:28:53.366Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=aa20e33a-809a-43a8-9110-d29ba465ff47"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $79.40 for 25 8:28:53.827 GMT",
+          "id": "4be2c094-b7dc-47a1-b5e7-b45734887c68",
+          "updatedDate": "2026-07-28T08:28:55.954Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=4be2c094-b7dc-47a1-b5e7-b45734887c68"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, SHENGHPI lowers offer $83.40 for 25 8:28:53.839 GMT",
+          "id": "b659f254-c2c7-4652-bcae-da492929d073",
+          "updatedDate": "2026-07-28T08:28:56.006Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=b659f254-c2c7-4652-bcae-da492929d073"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $81.90 for 25 8:28:54.833 GMT",
+          "id": "8598a2c6-4496-4206-8486-2f31edbe31e4",
+          "updatedDate": "2026-07-28T08:28:56.12Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=8598a2c6-4496-4206-8486-2f31edbe31e4"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $82.90 for 25 8:28:54.835 GMT",
+          "id": "d981e277-d5b5-4f4a-9321-b34cdaf4de02",
+          "updatedDate": "2026-07-28T08:28:56.194Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=d981e277-d5b5-4f4a-9321-b34cdaf4de02"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $80.30 for 25 8:28:59.104 GMT",
+          "id": "3341e24f-4c8d-49fb-b9df-8a7ceb6d731c",
+          "updatedDate": "2026-07-28T08:28:59.129Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=3341e24f-4c8d-49fb-b9df-8a7ceb6d731c"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $82.80 for 25 8:29:00.778 GMT",
+          "id": "be714768-7e84-42f9-8833-6991129044c7",
+          "updatedDate": "2026-07-28T08:29:00.814Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=be714768-7e84-42f9-8833-6991129044c7"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $81.80 for 25 8:29:02.130 GMT",
+          "id": "39f9e5f4-fba7-47e6-a753-df88e8d79deb",
+          "updatedDate": "2026-07-28T08:29:02.156Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=39f9e5f4-fba7-47e6-a753-df88e8d79deb"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $79.30 for 25 8:29:04.287 GMT",
+          "id": "2dd9272e-4da6-4942-afc8-c8e23cc00d27",
+          "updatedDate": "2026-07-28T08:29:04.336Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=2dd9272e-4da6-4942-afc8-c8e23cc00d27"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $80.20 for 25 8:29:05.162 GMT",
+          "id": "89002159-5d0a-41d7-933f-eedd4c9af9f0",
+          "updatedDate": "2026-07-28T08:29:05.188Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=89002159-5d0a-41d7-933f-eedd4c9af9f0"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, SHENGHPI lowers offer $83.30 for 25 8:29:07.573 GMT",
+          "id": "af3d5e74-00cf-4d98-ab16-e1d14be4def4",
+          "updatedDate": "2026-07-28T08:29:07.645Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=af3d5e74-00cf-4d98-ab16-e1d14be4def4"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $81.70 for 25 8:29:09.017 GMT",
+          "id": "49d116a4-e6f5-4b8b-8b70-636406315c0f",
+          "updatedDate": "2026-07-28T08:29:09.045Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=49d116a4-e6f5-4b8b-8b70-636406315c0f"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $79.20 for 25 8:29:10.113 GMT",
+          "id": "a86c0b17-b2ba-4529-9dec-a0f208e1e9df",
+          "updatedDate": "2026-07-28T08:29:10.144Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=a86c0b17-b2ba-4529-9dec-a0f208e1e9df"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $80.10 for 25 8:29:12.984 GMT",
+          "id": "6d44fcda-6bbf-4dcc-8996-f36ec72e8ac2",
+          "updatedDate": "2026-07-28T08:29:13.011Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=6d44fcda-6bbf-4dcc-8996-f36ec72e8ac2"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $81.60 for 25 8:29:14.761 GMT",
+          "id": "8f5a1406-f108-44c3-b83f-70b799ae1fa7",
+          "updatedDate": "2026-07-28T08:29:14.836Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=8f5a1406-f108-44c3-b83f-70b799ae1fa7"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $79.10 for 25 8:29:18.368 GMT",
+          "id": "67947a03-927d-485a-8e85-54e6e34ff7dc",
+          "updatedDate": "2026-07-28T08:29:18.424Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=67947a03-927d-485a-8e85-54e6e34ff7dc"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $80.00 for 25 8:29:19.593 GMT",
+          "id": "8ec71307-685e-4631-84ce-4c1ac0609a40",
+          "updatedDate": "2026-07-28T08:29:19.619Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=8ec71307-685e-4631-84ce-4c1ac0609a40"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $81.50 for 25 8:29:20.265 GMT",
+          "id": "1b929a4d-6dee-474c-aec7-5dd1606fd349",
+          "updatedDate": "2026-07-28T08:29:20.295Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=1b929a4d-6dee-474c-aec7-5dd1606fd349"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $82.70 for 25 8:29:20.295 GMT",
+          "id": "70a34b23-14cf-45e1-b4cb-2177bc921633",
+          "updatedDate": "2026-07-28T08:29:20.352Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=70a34b23-14cf-45e1-b4cb-2177bc921633"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, METS raises bid $76.90 for 25 8:29:22.584 GMT",
+          "id": "a4b8ae3a-b9bd-4b46-a57d-02c7ad49f9fe",
+          "updatedDate": "2026-07-28T08:29:22.639Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=a4b8ae3a-b9bd-4b46-a57d-02c7ad49f9fe"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $79.00 for 25 8:29:23.994 GMT",
+          "id": "afe3a1e2-e71f-4352-9be5-822391544318",
+          "updatedDate": "2026-07-28T08:29:24.02Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=afe3a1e2-e71f-4352-9be5-822391544318"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $79.90 for 25 8:29:25.071 GMT",
+          "id": "60cb9299-ce6b-4811-ab7f-257b9e1b872d",
+          "updatedDate": "2026-07-28T08:29:25.123Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=60cb9299-ce6b-4811-ab7f-257b9e1b872d"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $81.40 for 25 8:29:27.018 GMT",
+          "id": "95556b99-7cd1-4013-a825-433e344b4d2d",
+          "updatedDate": "2026-07-28T08:29:27.045Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=95556b99-7cd1-4013-a825-433e344b4d2d"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $82.60 for 25 8:29:30.738 GMT",
+          "id": "95fc0466-001a-48a3-81ba-b68b3b46868b",
+          "updatedDate": "2026-07-28T08:29:30.859Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=95fc0466-001a-48a3-81ba-b68b3b46868b"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, BPSG lowers offer $79.80 for 25 8:29:31.456 GMT",
+          "id": "5e493cad-1812-4249-9340-c4c65e3667e5",
+          "updatedDate": "2026-07-28T08:29:31.709Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=5e493cad-1812-4249-9340-c4c65e3667e5"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $78.90 for 25 8:29:32.576 GMT",
+          "id": "7857d1bf-8029-4a38-91be-a3bd42c8f694",
+          "updatedDate": "2026-07-28T08:29:32.603Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=7857d1bf-8029-4a38-91be-a3bd42c8f694"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $81.30 for 25 8:29:33.476 GMT",
+          "id": "d83934ad-df9f-4a0b-b1db-f94108b6f2ec",
+          "updatedDate": "2026-07-28T08:29:33.502Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=d83934ad-df9f-4a0b-b1db-f94108b6f2ec"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, BPSG SELLS TO METS  $76.90 for 25 8:29:35.343 GMT",
+          "id": "0e9b0d25-c4ee-49f0-b43e-2beca0935c8b",
+          "updatedDate": "2026-07-28T08:29:35.369Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=0e9b0d25-c4ee-49f0-b43e-2beca0935c8b"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $82.50 for 25 8:29:38.085 GMT",
+          "id": "17cdf9d7-8ed9-4c5f-bce6-c4a7d180bccd",
+          "updatedDate": "2026-07-28T08:29:38.109Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=17cdf9d7-8ed9-4c5f-bce6-c4a7d180bccd"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $81.20 for 25 8:29:38.675 GMT",
+          "id": "a013d540-a5a6-4f27-9338-76bbc570e89f",
+          "updatedDate": "2026-07-28T08:29:38.699Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=a013d540-a5a6-4f27-9338-76bbc570e89f"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $78.80 for 25 8:29:42.627 GMT",
+          "id": "8f4d3d77-1e78-4d1f-8123-f79fd67c20ab",
+          "updatedDate": "2026-07-28T08:29:42.652Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=8f4d3d77-1e78-4d1f-8123-f79fd67c20ab"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, UNIPECASIA lowers offer $82.40 for 25 8:29:46.327 GMT",
+          "id": "a861f0cb-72c7-458d-8ef7-13e6a0210dc3",
+          "updatedDate": "2026-07-28T08:29:46.358Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=a861f0cb-72c7-458d-8ef7-13e6a0210dc3"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $78.70 for 25 8:29:49.390 GMT",
+          "id": "3f519769-d61b-4496-b53c-745844b192ce",
+          "updatedDate": "2026-07-28T08:29:49.414Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=3f519769-d61b-4496-b53c-745844b192ce"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, P66SG lowers offer $81.10 for 25 8:29:50.171 GMT",
+          "id": "76d9770f-0c1f-4907-882c-0748c1154bad",
+          "updatedDate": "2026-07-28T08:29:50.316Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=76d9770f-0c1f-4907-882c-0748c1154bad"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, VITOLSG lowers offer $78.60 for 25 8:29:57.638 GMT",
+          "id": "b6fb1d90-58d2-4528-83ec-b8938723f51e",
+          "updatedDate": "2026-07-28T08:29:57.703Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=b6fb1d90-58d2-4528-83ec-b8938723f51e"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, VITOLSG withdraws offer $78.60 for 25 8:30:01.052 GMT",
+          "id": "96019a90-9d69-42c3-8196-20ec04f434ee",
+          "updatedDate": "2026-07-28T08:30:01.249Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=96019a90-9d69-42c3-8196-20ec04f434ee"
+        },
+        {
+          "headline": "Platts Dubai Partial Sep26, P66SG withdraws offer $81.10 for 25 8:30:51.680 GMT",
+          "id": "a2b1e61c-a05e-4668-947c-fd83741b2b9b",
+          "updatedDate": "2026-07-28T08:30:51.705Z",
+          "documentUrl": "https://plattsconnect.spglobal.com/#platts/source?sourceId=a2b1e61c-a05e-4668-947c-fd83741b2b9b"
+        }
+      ]
+    },
+    "murban": {
+      "q": "Cash+Murban+Heard+At",
+      "status": 200,
+      "results": []
+    },
+    "oman": {
+      "q": "Cash+Oman+Heard+At",
+      "status": 200,
+      "results": []
+    },
+    "finalsBids": {
+      "q": "ME+SOUR+CRUDE+BIDS+FINALS+ON+CLOSE",
+      "status": 200,
+      "results": []
+    },
+    "finalsOffers": {
+      "q": "ME+SOUR+CRUDE+OFFERS+FINALS+ON+CLOSE",
+      "status": 200,
+      "results": []
+    },
+    "errors": {
+      "q": "executed+in+error+crude",
+      "status": 200,
+      "results": []
+    },
+    "converge": {
+      "q": "Mideast+Sour+Crude+Convergences",
+      "status": 200,
+      "results": []
+    }
+  },
+  "priceDataFallback": {
+    "status": 200,
+    "url": "https://api.platts.com/market-data/v3/value/history/symbol?filter=symbol%20in%20(%22PCAAT00%22)%20AND%20assessDate%3E%3D%222026-07-28%22%20AND%20assessDate%3C%3D%222026-07-28%22&pageSize=5000",
+    "raw": {
+      "metadata": {
+        "count": 0,
+        "pageSize": 5000,
+        "page": 1,
+        "totalPages": 0,
+        "queryTime": "53 ms"
+      },
+      "results": []
+    }
+  }
+}

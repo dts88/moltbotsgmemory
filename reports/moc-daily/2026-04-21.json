@@ -1,0 +1,37 @@
+{
+  "date": "2026-04-21",
+  "generatedAt": "2026-04-21T08:39:30Z",
+  "status": "partial_failed",
+  "errors": {
+    "plattsHeards": "401 Unauthorized using current .config/spglobal/credentials.json token",
+    "eWindow": "401 Unauthorized using current .config/spglobal/credentials.json token",
+    "fluxOfficials": "Public fetch/search unavailable from current environment"
+  },
+  "fluxOfficials": {
+    "assessment": null,
+    "premium": null,
+    "text": null,
+    "fetchedAt": "2026-04-21T08:38:20Z"
+  },
+  "declarations": [],
+  "cashMurban": [],
+  "cashOman": [],
+  "errorTrades": [],
+  "finalsOnClose": {
+    "bids": null,
+    "offers": null
+  },
+  "partials": {
+    "contractMonth": null,
+    "price": null,
+    "volumeKb": null,
+    "buyer": null,
+    "sellers": [],
+    "notes": []
+  },
+  "raw": {
+    "plattsHeards": null,
+    "eWindow": null,
+    "fluxOfficials": null
+  }
+}

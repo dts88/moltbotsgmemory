@@ -1,0 +1,94 @@
+{
+  "date": "2026-04-29",
+  "fluxOfficials": {
+    "assessment": null,
+    "premium": null,
+    "text": "数据待更新"
+  },
+  "declarations": [
+    {
+      "seller": "Shell",
+      "buyer": "TotalEnergies",
+      "grade": "Oman",
+      "month": "June",
+      "cargoes": 1,
+      "time": "2026-04-29T08:30:47.182Z",
+      "headline": "Platts Crude: Shell declares a cargo of June Oman crude to TotalEnergies following the convergence of 20 partials in Pla"
+    }
+  ],
+  "cashMurban": [
+    {
+      "value": 12,
+      "time": "2026-04-29T07:52:35.150Z",
+      "headline": "Platts Crude: June Cash Murban Heard At $12.00/B Over June Dubai Futures"
+    },
+    {
+      "value": 12,
+      "time": "2026-04-29T08:12:52.560Z",
+      "headline": "Platts Crude: June Cash Murban Heard At $12.00/B Over June Dubai Futures"
+    }
+  ],
+  "cashOman": [],
+  "errorTrades": [],
+  "finalsOnClose": {
+    "bids": "数据待更新",
+    "offers": "数据待更新"
+  },
+  "partials": {
+    "contractMonth": "Jun26",
+    "allTrades": [
+      { "buyer": "TOTSA", "seller": "SIETCO", "price": 107.2, "volumeKb": 25, "time": "2026-04-29T08:25:43.294" },
+      { "buyer": "TOTSA", "seller": "SIETCO", "price": 107.2, "volumeKb": 25, "time": "2026-04-29T08:25:53.694" },
+      { "buyer": "TOTSA", "seller": "SIETCO", "price": 107.1, "volumeKb": 25, "time": "2026-04-29T08:26:23.253" },
+      { "buyer": "TOTSA", "seller": "SIETCO", "price": 107.1, "volumeKb": 25, "time": "2026-04-29T08:26:37.037" },
+      { "buyer": "TOTSA", "seller": "SIETCO", "price": 107.1, "volumeKb": 25, "time": "2026-04-29T08:26:50.111" },
+      { "buyer": "TOTSA", "seller": "SIETCO", "price": 107.1, "volumeKb": 25, "time": "2026-04-29T08:26:57.438" },
+      { "buyer": "TOTSA", "seller": "SIETCO", "price": 107.1, "volumeKb": 25, "time": "2026-04-29T08:27:06.525" },
+      { "buyer": "TOTSA", "seller": "SIETCO", "price": 107.1, "volumeKb": 25, "time": "2026-04-29T08:27:14.855" },
+      { "buyer": "TOTSA", "seller": "SIETCO", "price": 107.1, "volumeKb": 25, "time": "2026-04-29T08:27:24.376" },
+      { "buyer": "TOTSA", "seller": "SIETCO", "price": 107.1, "volumeKb": 25, "time": "2026-04-29T08:27:31.598" },
+      { "buyer": "TOTSA", "seller": "SIETCO", "price": 107.1, "volumeKb": 25, "time": "2026-04-29T08:27:41.421" },
+      { "buyer": "TOTSA", "seller": "SIETCO", "price": 107.1, "volumeKb": 25, "time": "2026-04-29T08:27:50.236" },
+      { "buyer": "TOTSA", "seller": "SIETCO", "price": 107.1, "volumeKb": 25, "time": "2026-04-29T08:27:58.126" },
+      { "buyer": "BPSG", "seller": "SIETCO", "price": 107.1, "volumeKb": 25, "time": "2026-04-29T08:28:01.157" },
+      { "buyer": "TOTSA", "seller": "SIETCO", "price": 107.1, "volumeKb": 25, "time": "2026-04-29T08:28:05.687" },
+      { "buyer": "TOTSA", "seller": "SIETCO", "price": 107.1, "volumeKb": 25, "time": "2026-04-29T08:28:11.226" },
+      { "buyer": "TOTSA", "seller": "SIETCO", "price": 107.1, "volumeKb": 25, "time": "2026-04-29T08:28:20.247" },
+      { "buyer": "TOTSA", "seller": "SIETCO", "price": 107.1, "volumeKb": 25, "time": "2026-04-29T08:28:28.503" },
+      { "buyer": "TOTSA", "seller": "SIETCO", "price": 107.1, "volumeKb": 25, "time": "2026-04-29T08:28:34.329" },
+      { "buyer": "VITOLSG", "seller": "SIETCO", "price": 107.1, "volumeKb": 25, "time": "2026-04-29T08:28:52.116" },
+      { "buyer": "BPSG", "seller": "SIETCO", "price": 106.5, "volumeKb": 25, "time": "2026-04-29T08:29:46.552" }
+    ],
+    "tradeSummary": {
+      "TOTSA": 18,
+      "BPSG": 2,
+      "VITOLSG": 1
+    },
+    "closingTrade": {
+      "buyer": "BPSG",
+      "seller": "SIETCO",
+      "price": 106.5,
+      "volumeKb": 25,
+      "time": "2026-04-29T08:29:46.552Z"
+    },
+    "lastMinuteOffers": [
+      { "company": "SIETCO", "price": 107.0, "time": "2026-04-29T08:29:06.380Z" },
+      { "company": "SIETCO", "price": 106.9, "time": "2026-04-29T08:29:15.070Z" },
+      { "company": "SIETCO", "price": 106.8, "time": "2026-04-29T08:29:24.416Z" },
+      { "company": "SIETCO", "price": 106.7, "time": "2026-04-29T08:29:29.628Z" },
+      { "company": "SIETCO", "price": 106.6, "time": "2026-04-29T08:29:35.276Z" },
+      { "company": "SIETCO", "price": 106.5, "time": "2026-04-29T08:29:41.056Z" },
+      { "company": "SIETCO", "price": 106.5, "time": "2026-04-29T08:29:50.725Z" }
+    ],
+    "allDayOfferStats": {
+      "SIETCO": { "count": 79, "min": 106.5, "max": 110.0 },
+      "UNIPECASIA": { "count": 31, "min": 109.2, "max": 112.0 },
+      "P66SG": { "count": 12, "min": 110.0, "max": 111.0 },
+      "METS": { "count": 19, "min": 108.6, "max": 112.0 },
+      "SHENGHPI": { "count": 2, "min": 110.0, "max": 110.0 }
+    }
+  },
+  "sourceFiles": {
+    "raw": "reports/moc-daily/2026-04-29.raw.json"
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "date": "2026-07-13",
+  "dayOfWeek": "Monday",
+  "collectedAt": "2026-07-13T08:36:00Z",
+  "fluxOfficials": {
+    "status": "not_yet_published",
+    "lastPublished": "2026-07-10",
+    "lastAssessment": 69.41,
+    "lastPremium": -2.21,
+    "lastNote": "No convergences"
+  },
+  "plattsPriceData": {
+    "PCAAT00": {
+      "friday20260710": 69.50,
+      "previousFriday20260703": 63.80,
+      "weekChange": 5.70
+    }
+  },
+  "partials": {
+    "contract": "Sep26 Dubai Partial",
+    "convergencePrice": 72.30,
+    "trades": [
+      {"seller": "VITOLSG", "buyer": "TRAFI", "price": 72.25, "volume": 25, "time": "08:28:11"},
+      {"seller": "VITOLSG", "buyer": "TRAFI", "price": 72.25, "volume": 25, "time": "08:28:21"},
+      {"seller": "VITOLSG", "buyer": "TRAFI", "price": 72.25, "volume": 25, "time": "08:28:26"},
+      {"seller": "VITOLSG", "buyer": "METS", "price": 72.25, "volume": 25, "time": "08:28:30"},
+      {"seller": "MERCURIARESOURCES", "buyer": "TRAFI", "price": 72.29, "volume": 25, "time": "08:28:39"},
+      {"seller": "VITOLSG", "buyer": "TRAFI", "price": 72.29, "volume": 25, "time": "08:28:45"},
+      {"seller": "MERCURIARESOURCES", "buyer": "METS", "price": 72.29, "volume": 25, "time": "08:28:51"},
+      {"seller": "VITOLSG", "buyer": "TRAFI", "price": 72.29, "volume": 25, "time": "08:28:51"},
+      {"seller": "VITOLSG", "buyer": "TRAFI", "price": 72.29, "volume": 25, "time": "08:28:57"},
+      {"seller": "VITOLSG", "buyer": "METS", "price": 72.29, "volume": 25, "time": "08:28:58"},
+      {"seller": "VITOLSG", "buyer": "TRAFI", "price": 72.29, "volume": 25, "time": "08:29:07"},
+      {"seller": "SHENGHPI", "buyer": "METS", "price": 72.29, "volume": 25, "time": "08:29:10"},
+      {"seller": "VITOLSG", "buyer": "TRAFI", "price": 72.29, "volume": 25, "time": "08:29:12"},
+      {"seller": "VITOLSG", "buyer": "METS", "price": 72.30, "volume": 25, "time": "08:29:35"},
+      {"seller": "MERCURIARESOURCES", "buyer": "TRAFI", "price": 72.30, "volume": 25, "time": "08:29:38"},
+      {"seller": "VITOLSG", "buyer": "TRAFI", "price": 72.30, "volume": 25, "time": "08:29:40"},
+      {"seller": "MERCURIARESOURCES", "buyer": "TRAFI", "price": 72.30, "volume": 25, "time": "08:29:44"},
+      {"seller": "VITOLSG", "buyer": "TRAFI", "price": 72.30, "volume": 25, "time": "08:29:45"},
+      {"seller": "BPSG", "buyer": "TRAFI", "price": 72.29, "volume": 25, "time": "08:29:48"},
+      {"seller": "VITOLSG", "buyer": "TRAFI", "price": 72.30, "volume": 25, "time": "08:29:52"},
+      {"seller": "VITOLSG", "buyer": "TRAFI", "price": 72.30, "volume": 25, "time": "08:29:57"}
+    ],
+    "sellers": ["VITOLSG", "MERCURIARESOURCES", "SHENGHPI", "BPSG"],
+    "buyers": ["TRAFI", "METS"],
+    "lastMinuteOffers": {
+      "VITOLSG": 72.30,
+      "MERCURIARESOURCES": 72.32
+    },
+    "biddingCompanies": ["TRAFI", "METS", "P66SG"],
+    "offeringCompanies": ["VITOLSG", "MERCURIARESOURCES", "UNIPECASIA"]
+  },
+  "declarations": [],
+  "declarationCount": 0,
+  "cashMurban": [
+    {"value": -0.50, "time": "08:31:10Z", "note": "Sep Cash Murban vs Sep Dubai futures"},
+    {"value": -0.50, "time": "08:34:23Z", "note": "Sep Cash Murban vs Sep Dubai futures"}
+  ],
+  "cashOman": [
+    {"value": -1.40, "time": "08:31:08Z", "note": "Sep Cash Oman vs Sep Dubai futures"},
+    {"value": -1.50, "time": "08:34:20Z", "note": "Sep Cash Oman vs Sep Dubai futures"}
+  ],
+  "convergences": [],
+  "errorTrades": [],
+  "finalsOnClose": {
+    "crudeBidsAndOffers": "数据待更新 - ME sour crude finals on close not yet published",
+    "bitumen": {
+      "fobStraitsBids": "No bid",
+      "fobStraitsOffers": "No offer",
+      "fobSouthKorea": "No bids/offers/trade"
+    }
+  }
+}

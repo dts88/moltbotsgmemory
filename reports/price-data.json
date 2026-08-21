@@ -1,12 +1,12 @@
 {
-  "fetchedAt": "2026-03-09T04:49:58.802Z",
+  "fetchedAt": "2026-08-08T02:11:28.097Z",
   "dates": {
-    "today": "2026-03-09",
-    "yesterday": "2026-03-08",
-    "thisFriday": "2026-03-06",
-    "lastFriday": "2026-02-27",
-    "thisThursday": "2026-03-05",
-    "lastThursday": "2026-02-26"
+    "today": "2026-08-08",
+    "yesterday": "2026-08-07",
+    "thisFriday": "2026-08-07",
+    "lastFriday": "2026-07-31",
+    "thisThursday": "2026-08-06",
+    "lastThursday": "2026-07-30"
   },
   "priceSection": {
     "symbols": {
@@ -22,51 +22,59 @@
     "data": {
       "PCAAT00": {
         "name": "Dubai Mo01 (NextGen MOC)",
-        "thisFriday": 100.45,
-        "lastFriday": 71.23,
-        "weekChange": 29.22
+        "thisFriday": 80.75,
+        "yesterday": 80.75,
+        "lastFriday": 81.8,
+        "weekChange": -1.0499999999999972
       },
       "PCAJG00": {
         "name": "Brent Mo01 Spore",
-        "thisFriday": 85.83,
-        "lastFriday": 71.15,
-        "weekChange": 14.679999999999993
+        "thisFriday": 84.26,
+        "yesterday": 84.26,
+        "lastFriday": 88.21,
+        "weekChange": -3.9499999999999886
       },
       "AAFFU00": {
         "name": "WTI Spore Mo01",
-        "thisFriday": 81.64,
-        "lastFriday": 65.94,
-        "weekChange": 15.700000000000003
+        "thisFriday": 78.65,
+        "yesterday": 78.65,
+        "lastFriday": 82.73,
+        "weekChange": -4.079999999999998
       },
       "PGAEY00": {
         "name": "Gasoline Unl 92 FOB Spore Cargo",
-        "thisFriday": 113.16,
-        "lastFriday": 79.63,
-        "weekChange": 33.53
+        "thisFriday": 105.97,
+        "yesterday": 105.97,
+        "lastFriday": 114.81,
+        "weekChange": -8.840000000000003
       },
       "AAOVC00": {
         "name": "Gasoil .001%S (10ppm) FOB Spore Cargo",
-        "thisFriday": 155.76,
-        "lastFriday": 92.88,
-        "weekChange": 62.879999999999995
+        "thisFriday": 149.03,
+        "yesterday": 149.03,
+        "lastFriday": 160.38,
+        "weekChange": -11.349999999999994
       },
       "PJABF00": {
         "name": "Jet Kero FOB Spore Cargo",
-        "thisFriday": 160.57,
-        "lastFriday": 93.57,
-        "weekChange": 67
+        "thisFriday": 143.65,
+        "yesterday": 143.65,
+        "lastFriday": 153.29,
+        "weekChange": -9.639999999999986
       },
       "PPXDK00": {
         "name": "FO 380 CST 3.5%S FOB Spore Cargo",
-        "thisFriday": 647.53,
-        "lastFriday": 425.66,
-        "weekChange": 221.86999999999995
+        "thisFriday": 554.26,
+        "yesterday": 554.26,
+        "lastFriday": 536.65,
+        "weekChange": 17.610000000000014
       },
       "AAWFW00": {
         "name": "US Dollar-Chinese Yuan",
-        "thisFriday": 6.9025,
-        "lastFriday": 6.9228,
-        "weekChange": -0.020299999999999763
+        "thisFriday": 6.7904,
+        "yesterday": 6.7904,
+        "lastFriday": 6.7894,
+        "weekChange": 0.001000000000000334
       }
     }
   },
@@ -88,69 +96,69 @@
     "data": {
       "DBSCM00": {
         "name": "Dubai Singapore Cracking Netback Margin",
-        "thisThursday": 21.07,
-        "lastThursday": 4.22,
-        "change": 16.85
+        "thisThursday": 23.02,
+        "lastThursday": 34.85,
+        "change": -11.830000000000002
       },
       "AAVUD00": {
         "name": "Naphtha C+F Japan Cargo Dubai Crack Financial Mo01",
-        "thisThursday": 1.46,
-        "lastThursday": -0.64,
-        "change": 2.1
+        "thisThursday": 5.43,
+        "lastThursday": 10.06,
+        "change": -4.630000000000001
       },
       "NBSSM01": {
         "name": "Naphtha FOB Spore Cargo Brent Crack at Spore MOC Financial Mo01",
-        "thisThursday": -1.16,
-        "lastThursday": -3.31,
-        "change": 2.1500000000000004
+        "thisThursday": -2.67,
+        "lastThursday": 6.87,
+        "change": -9.54
       },
       "AAYED00": {
         "name": "Gasoline 92 RON FOB Spore Dubai Crack Financial Mo01",
-        "thisThursday": 21.74,
-        "lastThursday": 9.56,
-        "change": 12.179999999999998
+        "thisThursday": 22.76,
+        "lastThursday": 33.7,
+        "change": -10.940000000000001
       },
       "AAHCL00": {
         "name": "Jet Kero FOB Spore Cargo Dubai Crack Financial Mo01",
-        "thisThursday": 79.38,
-        "lastThursday": 22,
-        "change": 57.379999999999995
+        "thisThursday": 61.41,
+        "lastThursday": 72.44,
+        "change": -11.030000000000001
       },
       "AAHCE00": {
         "name": "Gasoil FOB Spore Cargo Dubai Crack Financial Mo01",
-        "thisThursday": 42.89,
-        "lastThursday": 22.24,
-        "change": 20.650000000000002
+        "thisThursday": 61.81,
+        "lastThursday": 76.44,
+        "change": -14.629999999999995
       },
       "AAHBX00": {
         "name": "FO 180 CST 3.5%S FOB Spore Cargo Dubai Crack Financial Mo01",
-        "thisThursday": 9.561,
-        "lastThursday": -2.7,
-        "change": 12.261
+        "thisThursday": 5.375,
+        "lastThursday": 5.268,
+        "change": 0.1070000000000002
       },
       "AAWHA00": {
         "name": "FO 380 CST 3.5% FOB Spore Cargo Dubai Crack Financial Mo01",
-        "thisThursday": 8.262,
-        "lastThursday": -3.417,
-        "change": 11.679
+        "thisThursday": 4.43,
+        "lastThursday": 3.891,
+        "change": 0.5389999999999997
       },
       "MFFOB01": {
         "name": "Marine Fuel 0.5% FOB Fujairah Cargo Dubai Crack Financial Mo01",
-        "thisThursday": 17.592,
-        "lastThursday": 7.859,
-        "change": 9.732999999999999
+        "thisThursday": 22.226,
+        "lastThursday": 27.474,
+        "change": -5.248000000000001
       },
       "AAVAN00": {
         "name": "Butane Refrigerated CFR North Asia 30-45 days",
-        "thisThursday": 787,
-        "lastThursday": 635.5,
-        "change": 151.5
+        "thisThursday": 697,
+        "lastThursday": 763.5,
+        "change": -66.5
       },
       "AAVAK00": {
         "name": "Propane Refrigerated CFR North Asia 30-45 days",
-        "thisThursday": 765,
-        "lastThursday": 620.5,
-        "change": 144.5
+        "thisThursday": 672,
+        "lastThursday": 738.5,
+        "change": -66.5
       }
     }
   }

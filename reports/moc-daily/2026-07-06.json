@@ -1,0 +1,78 @@
+{
+  "date": "2026-07-06",
+  "fluxOfficials": null,
+  "declarations": [
+    {
+      "seller": "Vitol",
+      "buyer": "Trafigura",
+      "grade": "Oman",
+      "count": 1,
+      "month": "September",
+      "time": "08:29:20Z"
+    }
+  ],
+  "partialsTrades": {
+    "contract": "Sep26 Dubai Partials",
+    "price": 64.1,
+    "totalTrades": 17,
+    "totalVolume": 425,
+    "buyers": {
+      "Trafigura": 14,
+      "Mets": 3
+    },
+    "sellers": {
+      "MercuriaResources": 2,
+      "Vitol": 4,
+      "P66SG": 1
+    },
+    "convergence": "Vitol → Trafigura: 20 partials → 1 cargo September Oman"
+  },
+  "cashMurban": [
+    {
+      "value": -1.88,
+      "time": "08:31:32Z",
+      "month": "September",
+      "vs": "September Dubai Futures"
+    },
+    {
+      "value": -1.75,
+      "time": "08:33:07Z",
+      "month": "September",
+      "vs": "September Dubai Futures"
+    }
+  ],
+  "cashOman": [
+    {
+      "value": -3.6,
+      "time": "08:31:27Z",
+      "month": "September",
+      "vs": "September Dubai Futures"
+    },
+    {
+      "value": -3.4,
+      "time": "08:33:03Z",
+      "month": "September",
+      "vs": "September Dubai Futures"
+    }
+  ],
+  "errorTrades": [],
+  "finalsOnClose": {
+    "bids": "No data",
+    "offers": "No data"
+  },
+  "marketComments": {
+    "activeBiddersLastMinute": [
+      "Trafigura",
+      "Mets"
+    ],
+    "activeOfferersLastMinute": [
+      "MercuriaResources",
+      "Vitol",
+      "P66SG",
+      "UnipecAsia"
+    ],
+    "assessmentSource": "PCAAT00 Platts Close: 64.10",
+    "fluxOfficialsUnavailable": true
+  },
+  "reportGeneratedAt": "2026-07-06T08:36:00Z"
+}

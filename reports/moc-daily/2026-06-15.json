@@ -1,0 +1,78 @@
+{
+  "date": "2026-06-15",
+  "dayOfWeek": "Monday",
+  "fluxOfficials": null,
+  "fluxOfficialsNote": "Not yet posted (as of 16:36 SGT)",
+  "notionals": {
+    "augDubai": 82.32,
+    "augSeptDubaiSpread": 4.52,
+    "septDubai": 77.80,
+    "octDubai": 77.35,
+    "augOman": 82.32,
+    "augMurban": 82.32,
+    "augMurbanDubai": 4.97,
+    "basrahMediumM1": 67.95,
+    "basrahMediumM2": 67.94,
+    "basrahHeavyM1": 65.75,
+    "basrahHeavyM2": 65.74,
+    "augCashDubaiFuturesSpread": 4.97,
+    "augDubaiDerivatives": 77.35,
+    "julAugDubaiDerivatives": 0.45,
+    "augSeptDubaiDerivatives": 0.4,
+    "iceBrent": 83.37
+  },
+  "partials": {
+    "contract": "Aug26 Dubai Partials",
+    "trades": [
+      { "seller": "SIETCO", "buyer": "VITOLSG", "price": 79.20, "volume": 25, "time": "08:26:33 GMT" },
+      { "seller": "P66SG", "buyer": "GLENCORESG", "price": 78.90, "volume": 25, "time": "08:27:36 GMT" },
+      { "seller": "P66SG", "buyer": "PETCO", "price": 78.90, "volume": 25, "time": "08:27:38 GMT" }
+    ],
+    "allDayOffers": {
+      "P66SG": { "count": 39, "minPrice": 79.20, "maxPrice": 82.90 },
+      "UNIPECASIA": { "count": 31, "minPrice": 80.20, "maxPrice": 83.00 },
+      "SIETCO": { "count": 29, "minPrice": 80.30, "maxPrice": 82.70 },
+      "PTT": { "count": 13, "minPrice": 83.00, "maxPrice": 84.00 }
+    },
+    "allDayBids": {
+      "VITOLSG": { "count": 5, "minPrice": 79.00, "maxPrice": 79.20 },
+      "GLENCORESG": { "count": 3, "minPrice": 78.80, "maxPrice": 78.90 },
+      "PETCO": { "count": 3, "minPrice": 78.80, "maxPrice": 78.90 }
+    },
+    "lastMinuteOffers": {
+      "P66SG": { "count": 6, "minPrice": 79.20, "lastPrice": 79.20 },
+      "UNIPECASIA": { "count": 1, "minPrice": 80.20, "lastPrice": 80.20 }
+    },
+    "lastMinuteBids": {},
+    "offerWithdrawn": "P66SG withdrew offer at $79.20 at 08:30:03 GMT"
+  },
+  "finalsOnClose": {
+    "bids": [
+      { "company": "Vitol", "price": 79.00, "volume": 25 },
+      { "company": "Glencore", "price": 78.80, "volume": 25 },
+      { "company": "Petco Trading", "price": 78.80, "volume": 25 }
+    ],
+    "offers": [
+      { "company": "Shell", "price": 80.40, "volume": 25 },
+      { "company": "Phillips 66", "price": 82.90, "volume": 25 },
+      { "company": "Unipec", "price": 83.00, "volume": 25 },
+      { "company": "PTT", "price": 84.00, "volume": 25 }
+    ]
+  },
+  "declarations": [],
+  "declarationsNote": "No convergences today",
+  "cashMurban": [
+    { "value": 0.70, "direction": "Over", "benchmark": "August Dubai Futures", "time": "08:32 GMT" },
+    { "value": 0.80, "direction": "Over", "benchmark": "August Dubai Futures", "time": "08:33 GMT" }
+  ],
+  "cashOman": [
+    { "value": 1.90, "direction": "Over", "benchmark": "August Dubai Futures", "time": "08:32 GMT" }
+  ],
+  "errorTrades": [],
+  "marketObservations": [
+    "Today marks the first trading session back after last Friday (12 June). The Aug26 Dubai Partial market saw aggressive offer pressure from P66SG (39 offers, driving price from $82.90 down to $79.20 before withdrawing at close).",
+    "Three partials trades executed: SIETCO sold to VitolSG at $79.20, then P66SG sold to GlencoreSG and Petco at $78.90 each—the convergence threshold was not triggered (only 3 trades, 20 required).",
+    "Vitol was the sole buyer across trades, with the best demonstrable bid at close at $79.00. On the offer side, Shell held the best demonstrable offer at $80.40 after P66SG withdrew.",
+    "Cash Murban strengthened from +$0.70 to +$0.80/b over August Dubai Futures, while Cash Oman was assessed at +$1.90/b."
+  ]
+}

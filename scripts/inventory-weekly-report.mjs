@@ -4,21 +4,16 @@
  * 数据来源: Platts News Insights API（标题）+ Enterprise Singapore / FOIZ
  */
 
-import { readFileSync, writeFileSync, existsSync, mkdirSync } from 'fs';
+import { writeFileSync, existsSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
+import { getPlattsAccessToken } from './platts-auth.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const WORKSPACE = join(__dirname, '..');
-const CREDS_FILE = join(WORKSPACE, '.config/spglobal/credentials.json');
 const APPKEY = 'mXrBlqeKBqbHpYNMX96h9qN0D8H5o3AN';
 const API_BASE = 'https://api.platts.com/news-insights/v1';
 const FOIZ_API = 'https://fujairah.platts.com/fujairah/rest/public/latest';
-
-function loadToken() {
-  const c = JSON.parse(readFileSync(CREDS_FILE, 'utf8'));
-  return c.access_token;
-}
 
 async function searchLatest(token, q, filter) {
   const url = `${API_BASE}/search/story?q=${encodeURIComponent(q)}&pageSize=10&sort=updatedDate:desc`;
@@ -57,7 +52,7 @@ function parseHeadline(headline) {
 }
 
 async function run() {
-  const token = loadToken();
+  const token = await getPlattsAccessToken();
   const now = new Date();
   const dateStr = now.toLocaleDateString('zh-CN', { timeZone: 'Asia/Singapore', year: 'numeric', month: 'long', day: 'numeric' });
 

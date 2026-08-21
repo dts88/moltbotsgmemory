@@ -1,0 +1,9 @@
+{
+  "_comment": "Platts monitor noise filters. Title-only rules run before fetching content to reduce API/token usage. Matching is case-insensitive.",
+  "titleStartsWith": [
+    "ASIA CRUDE DEALS SUMMARY"
+  ],
+  "titleIncludes": [],
+  "titleRegex": [],
+  "contentIncludes": []
+}

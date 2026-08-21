@@ -1,0 +1,81 @@
+{
+  "date": "2026-04-23",
+  "fluxOfficials": {
+    "assessment": null,
+    "premium": null,
+    "text": null
+  },
+  "declarations": [],
+  "cashMurban": [
+    {
+      "value": 12.0,
+      "time": "2026-04-23T08:33:26.598Z",
+      "headline": "Platts Crude: June Cash Murban Heard At $12.00/B Over June Dubai Futures"
+    },
+    {
+      "value": 12.0,
+      "time": "2026-04-23T08:35:53.409Z",
+      "headline": "Platts Crude: June Cash Murban Heard At $12.00/B Over June Dubai Futures"
+    }
+  ],
+  "cashOman": [
+    {
+      "value": 12.0,
+      "time": "2026-04-23T08:33:23.342Z",
+      "headline": "Platts Crude: June Cash Oman Heard At $12.00/B Over June Dubai Futures"
+    },
+    {
+      "value": 11.4,
+      "time": "2026-04-23T08:35:50.396Z",
+      "headline": "Platts Crude: June Cash Oman Heard At $11.40/B Over June Dubai Futures"
+    }
+  ],
+  "errorTrades": [],
+  "finalsOnClose": {
+    "bids": [],
+    "offers": []
+  },
+  "partials": {
+    "contractMonth": "Jun26",
+    "lastTrade": {
+      "seller": "UNIPECASIA",
+      "buyer": "MERCURIARESOURCES",
+      "price": 104.8,
+      "quantity": 25,
+      "time": "2026-04-23T08:29:56.742"
+    },
+    "allTrades": [
+      {"seller":"UNIPECASIA","buyer":"TRAFI","price":105.1,"quantity":25,"time":"2026-04-23T08:26:51.233"},
+      {"seller":"UNIPECASIA","buyer":"TOTSA","price":105.0,"quantity":25,"time":"2026-04-23T08:27:00.115"},
+      {"seller":"UNIPECASIA","buyer":"MERCURIARESOURCES","price":105.0,"quantity":25,"time":"2026-04-23T08:27:14.909"},
+      {"seller":"UNIPECASIA","buyer":"TRAFI","price":105.0,"quantity":25,"time":"2026-04-23T08:27:15.713"},
+      {"seller":"UNIPECASIA","buyer":"TOTSA","price":105.0,"quantity":25,"time":"2026-04-23T08:27:16.406"},
+      {"seller":"UNIPECASIA","buyer":"TRAFI","price":105.0,"quantity":25,"time":"2026-04-23T08:27:56.199"},
+      {"seller":"UNIPECASIA","buyer":"TRAFI","price":105.0,"quantity":25,"time":"2026-04-23T08:28:36.323"},
+      {"seller":"UNIPECASIA","buyer":"BPSG","price":104.9,"quantity":25,"time":"2026-04-23T08:28:45.642"},
+      {"seller":"UNIPECASIA","buyer":"VITOLSG","price":104.9,"quantity":25,"time":"2026-04-23T08:28:46.230"},
+      {"seller":"UNIPECASIA","buyer":"MERCURIARESOURCES","price":104.9,"quantity":25,"time":"2026-04-23T08:28:46.792"},
+      {"seller":"UNIPECASIA","buyer":"TOTSA","price":104.9,"quantity":25,"time":"2026-04-23T08:28:47.377"},
+      {"seller":"UNIPECASIA","buyer":"TRAFI","price":104.9,"quantity":25,"time":"2026-04-23T08:28:48.324"},
+      {"seller":"UNIPECASIA","buyer":"MERCURIARESOURCES","price":104.9,"quantity":25,"time":"2026-04-23T08:29:06.227"},
+      {"seller":"UNIPECASIA","buyer":"TRAFI","price":104.9,"quantity":25,"time":"2026-04-23T08:29:07.630"},
+      {"seller":"UNIPECASIA","buyer":"MERCURIARESOURCES","price":104.85,"quantity":25,"time":"2026-04-23T08:29:15.602"},
+      {"seller":"UNIPECASIA","buyer":"VITOLSG","price":104.84,"quantity":25,"time":"2026-04-23T08:29:24.647"},
+      {"seller":"UNIPECASIA","buyer":"MERCURIARESOURCES","price":104.84,"quantity":25,"time":"2026-04-23T08:29:28.426"},
+      {"seller":"UNIPECASIA","buyer":"VITOLSG","price":104.8,"quantity":25,"time":"2026-04-23T08:29:35.718"},
+      {"seller":"UNIPECASIA","buyer":"MERCURIARESOURCES","price":104.8,"quantity":25,"time":"2026-04-23T08:29:38.610"},
+      {"seller":"UNIPECASIA","buyer":"MERCURIARESOURCES","price":104.8,"quantity":25,"time":"2026-04-23T08:29:48.035"},
+      {"seller":"UNIPECASIA","buyer":"MERCURIARESOURCES","price":104.8,"quantity":25,"time":"2026-04-23T08:29:56.742"}
+    ],
+    "closingOffers": [
+      {"seller":"UNIPECASIA","price":106.9,"time":"2026-04-23T08:29:03.942"},
+      {"seller":"UNIPECASIA","price":106.8,"time":"2026-04-23T08:29:12.529"},
+      {"seller":"UNIPECASIA","price":106.7,"time":"2026-04-23T08:29:19.994"},
+      {"seller":"UNIPECASIA","price":106.6,"time":"2026-04-23T08:29:32.943"},
+      {"seller":"SIETCO","price":107.2,"time":"2026-04-23T08:29:41.898"},
+      {"seller":"UNIPECASIA","price":106.5,"time":"2026-04-23T08:29:42.615"},
+      {"seller":"UNIPECASIA","price":106.4,"time":"2026-04-23T08:29:50.731"}
+    ]
+  },
+  "rawArchive": "reports/moc-daily/2026-04-23.raw.json"
+}

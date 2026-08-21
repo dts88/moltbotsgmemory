@@ -1,0 +1,88 @@
+{
+  "date": "2026-07-07",
+  "source": "Platts eWindow API + Platts News Insights Heards API",
+  "contract": "Sep26 Dubai Partials",
+  "partials": {
+    "convergencePrice": 66.50,
+    "totalTrades": 5,
+    "totalVolumeKb": 125,
+    "uniqueBuyer": "Mitsui (METS)",
+    "trades": [
+      { "seller": "VITOLSG", "buyer": "METS", "price": 66.50, "volume": 25, "time": "08:29:37 GMT" },
+      { "seller": "MERCURIARESOURCES", "buyer": "METS", "price": 66.50, "volume": 25, "time": "08:29:39 GMT" },
+      { "seller": "VITOLSG", "buyer": "METS", "price": 66.50, "volume": 25, "time": "08:29:45 GMT" },
+      { "seller": "MERCURIARESOURCES", "buyer": "TRAFI", "price": 66.40, "volume": 25, "time": "08:29:54 GMT" },
+      { "seller": "MERCURIARESOURCES", "buyer": "METS", "price": 66.50, "volume": 25, "time": "08:29:54 GMT" }
+    ],
+    "lastMinuteOffers": {
+      "VITOLSG": { "count": 5, "minPrice": 66.50, "lastPrice": 66.50 },
+      "MERCURIARESOURCES": { "count": 5, "minPrice": 66.50, "lastPrice": 66.50 },
+      "UNIPECASIA": { "count": 2, "minPrice": 67.10, "lastPrice": 67.10 }
+    },
+    "allDayOfferMinPrices": {
+      "VITOLSG": 66.40,
+      "MERCURIARESOURCES": 66.50,
+      "BPSG": 66.80,
+      "P66SG": 66.70,
+      "RGES": 67.20,
+      "UNIPECASIA": 67.10
+    }
+  },
+  "bidsSummary": {
+    "time": "08:15:32 GMT",
+    "entries": [
+      { "company": "Trafigura", "price": 66.00, "volume": 25 },
+      { "company": "Mitsui", "price": 65.00, "volume": 25 }
+    ],
+    "finalBids": {
+      "TRAFI": "66.40 (withdrew 08:29:53)",
+      "METS": "66.40 (withdrew then bought at 66.50)"
+    }
+  },
+  "offersSummary": {
+    "time": "08:15:38 GMT",
+    "entries": [
+      { "company": "Vitol", "price": 67.50, "volume": 25 },
+      { "company": "Phillips 66", "price": 67.50, "volume": 25 },
+      { "company": "Mercuria", "price": 67.50, "volume": 25 },
+      { "company": "BP", "price": 67.50, "volume": 25 },
+      { "company": "Unipec", "price": 67.50, "volume": 25 },
+      { "company": "Reliance", "price": 67.95, "volume": 25 }
+    ],
+    "finalOffers": {
+      "VITOLSG": "66.50",
+      "MERCURIARESOURCES": "66.50",
+      "UNIPECASIA": "67.10"
+    }
+  },
+  "declarations": [],
+  "cashMurban": [
+    { "value": -1.71, "time": "08:31:30Z" },
+    { "value": -1.70, "time": "08:32:53Z" }
+  ],
+  "cashOman": [
+    { "value": -2.58, "time": "08:31:26Z" },
+    { "value": -2.70, "time": "08:32:49Z" }
+  ],
+  "errorTrades": [],
+  "notionals": {
+    "septDubaiDerivatives": 69.43,
+    "septCashDubaiFuturesSpread": -3.45,
+    "septICEBrent": 72.99,
+    "septOctDubai": -2.34,
+    "timestamp": "07:08 GMT (15:00 SGT)"
+  },
+  "upperZakum": {
+    "seller": "RGES",
+    "period": "Aug 1-28",
+    "price": "Front Month Cash Dubai Full Month Aug $-5.00/bbl",
+    "lastUpdate": "08:29 GMT"
+  },
+  "historicalAssessment": {
+    "PCAAT00": {
+      "jul3": 63.80,
+      "jul6": 64.10
+    }
+  },
+  "fluxOfficials": null
+}

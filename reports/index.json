@@ -1,8 +1,7 @@
 {
   "version": 2,
-  "lastUpdated": "2026-03-06T02:12:17.765Z",
+  "lastUpdated": "2026-06-08T08:48:58.846Z",
   "categories": {
-    "knowledge": "长期知识型（方法论、产能、政策）",
     "crude": "原油",
     "products": "成品油（汽柴航煤石脑油燃料油）",
     "freight": "运费/油轮",
@@ -14,38 +13,6 @@
     "fundamentals": "基本面"
   },
   "reports": [
-    {
-      "id": "vitol-oil-outlook-202602",
-      "title": "Long Term Oil Demand Outlook",
-      "source": "Vitol",
-      "date": "2026-02-05",
-      "category": "knowledge",
-      "path": "knowledge/20260205_Vitol_Long_Term_Oil_Demand_Outlook.pdf",
-      "pages": 24,
-      "type": "special",
-      "timeliness": "long-term"
-    },
-    {
-      "id": "eprinc-venezuela-202109",
-      "title": "The Future of Venezuela's Oil Industry",
-      "source": "EPRINC",
-      "date": "2021-09",
-      "category": "knowledge",
-      "path": "knowledge/20210901_EPRINC_Venezuela_Oil_Industry_Future.pdf",
-      "pages": 27,
-      "type": "special",
-      "timeliness": "long-term"
-    },
-    {
-      "id": "baker-venezuela-fdi-202002",
-      "title": "Venezuela Oil Collapse: The Role of Above-Ground Risks",
-      "source": "Baker Institute",
-      "date": "2020-02",
-      "category": "knowledge",
-      "path": "knowledge/20200201_BakerInstitute_Venezuela_Oil_Collapse_FDI.pdf",
-      "type": "special",
-      "timeliness": "long-term"
-    },
     {
       "id": "longzhong-lpg-annual-2025",
       "title": "液化石油气2025-2026年度报告",
@@ -2025,32 +1992,6 @@
       "importedAt": "2026-02-12T03:02:42.534Z"
     },
     {
-      "id": "cnpc-energy-handbook-2025",
-      "title": "CNPC ETRI Energy Statistical Review 2025",
-      "source": "CNPC ETRI",
-      "date": "2025-01-23",
-      "category": "knowledge",
-      "path": "knowledge/20250123_CNPC_Energy_Data_Handbook_2025.pdf",
-      "pages": 103,
-      "type": "annual",
-      "timeliness": "long-term",
-      "description": "中石油经研院能源数据手册，涵盖世界和中国能源消费/生产/贸易/价格/展望数据(2000-2024年实际+2060年预测)",
-      "importedAt": "2026-02-12T03:52:31.439Z"
-    },
-    {
-      "id": "cnpc-energy-handbook-2025-xlsx",
-      "title": "CNPC ETRI Energy Statistical Review 2025 (Excel)",
-      "source": "CNPC ETRI",
-      "date": "2025-01-23",
-      "category": "knowledge",
-      "path": "knowledge/20250123_CNPC_Energy_Data_Handbook_2025.xlsx",
-      "type": "annual",
-      "timeliness": "long-term",
-      "description": "中石油经研院能源数据手册Excel版，66个数据表",
-      "importedAt": "2026-02-12T03:54:12.860Z",
-      "linkedTo": "cnpc-energy-handbook-2025"
-    },
-    {
       "path": "products/20260212_Argus_amarinef.pdf",
       "source": "Argus",
       "type": "daily",
@@ -2647,19 +2588,6 @@
       "timeliness": "quarterly",
       "importedAt": "2026-02-23T02:17:04.937Z",
       "summary": "GS上调2026Q4 Brent预测至$60（+$6），维持2.3mb/d过剩预期。OECD库存未累积，25%过剩体现为俄伊原油海上积压。风险：伊朗中断+$8，制裁放松-$5~8。"
-    },
-    {
-      "id": "citrini-2028-gic-202602",
-      "title": "THE 2028 GLOBAL INTELLIGENCE CRISIS",
-      "source": "CitriniResearch",
-      "date": "2026-02-22",
-      "category": "knowledge",
-      "path": "knowledge/20260222_CitriniResearch_2028_Global_Intelligence_Crisis.md",
-      "type": "special",
-      "timeliness": "medium-term",
-      "importedAt": "2026-02-23T02:59:55.214Z",
-      "url": "https://www.citriniresearch.com/p/2028gic",
-      "summary": "AI导致白领失业的情景分析：人类智能位移螺旋、私人信贷危机、抵押贷款风险、政策困境"
     },
     {
       "path": "products/20260220_Argus_amarinef.pdf",
@@ -4229,26 +4157,6 @@
       "type": "weekly"
     },
     {
-      "id": "knowledge-20260113_cnpc_------2026",
-      "title": "CNPC 能源数据手册2026",
-      "source": "CNPC",
-      "date": "2026-01-13",
-      "category": "knowledge",
-      "path": "knowledge/20260113_CNPC_能源数据手册2026.pdf",
-      "pages": 0,
-      "type": "report"
-    },
-    {
-      "id": "knowledge-20260209_energyintel_vitol_peak_oil_commentary",
-      "title": "EnergyIntel Vitol Peak Oil Commentary",
-      "source": "Vitol",
-      "date": "2026-02-09",
-      "category": "knowledge",
-      "path": "knowledge/20260209_EnergyIntel_Vitol_Peak_Oil_Commentary.pdf",
-      "pages": 0,
-      "type": "report"
-    },
-    {
       "id": "lng-20260122_argus_lngd",
       "title": "Argus lngd",
       "source": "Argus",
@@ -5689,5 +5597,9 @@
       "pages": 3,
       "importedAt": "2026-03-10T02:16:01.028Z"
     }
-  ]
+  ],
+  "deprecatedKnowledgeBase": {
+    "deprecatedAt": "2026-06-08T08:48:58.846Z",
+    "reason": "Previous knowledge-base/RAG system retired at Tianshu request; old artifacts moved to .trash/deprecated-knowledge-base-20260608-1645-sgt."
+  }
 }

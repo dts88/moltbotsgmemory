@@ -1,0 +1,48 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "oil-kb/job.schema.json",
+  "title": "KnowledgeJob",
+  "type": "object",
+  "required": ["id", "type", "name", "status", "createdAt", "updatedAt", "phases", "items", "nextAction"],
+  "properties": {
+    "id": { "type": "string" },
+    "type": {
+      "type": "string",
+      "enum": ["ingestion", "backfill", "query", "audit", "playbook_update", "maintenance"]
+    },
+    "name": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": ["pending", "in_progress", "blocked", "completed", "failed"]
+    },
+    "createdAt": { "type": "string" },
+    "updatedAt": { "type": "string" },
+    "cursor": { "type": "object" },
+    "phases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "status", "updatedAt"],
+        "properties": {
+          "name": { "type": "string" },
+          "status": { "type": "string" },
+          "note": { "type": "string" },
+          "updatedAt": { "type": "string" }
+        }
+      }
+    },
+    "items": {
+      "type": "object",
+      "required": ["completed", "failed", "skipped"],
+      "properties": {
+        "completed": { "type": "array", "items": { "type": "object" } },
+        "failed": { "type": "array", "items": { "type": "object" } },
+        "skipped": { "type": "array", "items": { "type": "object" } }
+      }
+    },
+    "artifacts": { "type": "array", "items": { "type": "string" } },
+    "notes": { "type": "array", "items": { "type": "object" } },
+    "nextAction": { "type": "string" }
+  },
+  "additionalProperties": true
+}

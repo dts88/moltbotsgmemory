@@ -1,0 +1,55 @@
+{
+  "date": "2026-07-17",
+  "dayOfWeek": "Friday",
+  "notes": "MOC just closed (08:30 GMT). FluxOfficials tweet not yet posted (16:36 SGT).",
+  "fluxOfficials": null,
+  "flatPriceAssessment": null,
+  "ewindow": {
+    "allDayOffers": {
+      "MERCURIARESOURCES": { "count": 17, "min": 76.8, "max": 78.0 },
+      "UNIPECASIA": { "count": 16, "min": 76.9, "max": 78.1 },
+      "VITOLSG": { "count": 13, "min": 76.9, "max": 78.0 },
+      "BPSG": { "count": 13, "min": 76.9, "max": 78.0 }
+    },
+    "lastMinuteOffers": {
+      "UNIPECASIA": { "count": 4, "min": 76.9, "last": 76.9 },
+      "MERCURIARESOURCES": { "count": 3, "min": 76.8, "last": 76.8 },
+      "BPSG": { "count": 1, "min": 76.9, "last": 76.9 },
+      "VITOLSG": { "count": 1, "min": 76.9, "last": 76.9 }
+    },
+    "trades": [
+      { "seller": "MERCURIARESOURCES", "buyer": "BPSG", "price": 76.8, "time": "08:29:05 GMT", "spread": "F", "volume": 25 },
+      { "seller": "MERCURIARESOURCES", "buyer": "BPSG", "price": 76.8, "time": "08:29:14 GMT", "spread": "F", "volume": 25 },
+      { "seller": "VITOLSG", "buyer": "METS", "price": 76.9, "time": "08:29:47 GMT", "spread": "F", "volume": 25 },
+      { "seller": "VITOLSG", "buyer": "METS", "price": 76.9, "time": "08:29:59 GMT", "spread": "F", "volume": 25 }
+    ]
+  },
+  "declarations": [],
+  "cashMurban": [
+    { "value": 0.90, "direction": "Over", "month": "September", "time": "08:33:48Z" },
+    { "value": 0.90, "direction": "Over", "month": "September", "time": "08:34:38Z" }
+  ],
+  "cashOman": [
+    { "value": -0.20, "direction": "Against", "month": "September", "time": "08:33:44Z" },
+    { "value": -0.15, "direction": "Against", "month": "September", "time": "08:34:28Z" }
+  ],
+  "errorTrades": [],
+  "notionals": {
+    "sepDubai": 75.76,
+    "sepCashDubaiFuturesSpread": -1.14,
+    "sepDubaiDerivatives": 76.9,
+    "sepMurbanDubai": 1.24,
+    "sepBrentDubaiEFS": 7.53,
+    "octBrentDubaiEFS": 6.44,
+    "augSepDubaiSwaps": 0.40,
+    "sepOctDubaiSwaps": 0.18,
+    "octNovDubaiSwaps": 0.14,
+    "balJulAugDubaiSwaps": -1.54
+  },
+  "finalsOnClose": {
+    "bids": "PLATTS DUBAI: SEP26: TRAFIGURA BIDS AT $75.50 FOR 25KB; MITSUI BIDS AT $75.10 FOR 25KB; PHILLIPS 66 BIDS AT $75.10 FOR 25KB; SHELL BIDS AT $75.00 FOR 25KB; BP BIDS AT $74.90 FOR 25KB",
+    "offers": "PLATTS DUBAI: SEP26: VITOL OFFERS AT $78.00 FOR 25KB; MERCURIA OFFERS AT $78.00 FOR 25KB; BP OFFERS AT $78.00 FOR 25KB; UNIPEC OFFERS AT $78.10 FOR 25KB"
+  },
+  "source": "Platts eWindow API + Platts News Insights Heards",
+  "generatedAt": "2026-07-17T08:36:00Z"
+}

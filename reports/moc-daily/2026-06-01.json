@@ -1,0 +1,270 @@
+{
+  "date": "2026-06-01",
+  "fetchedAt": "2026-06-01T08:38:08.631Z",
+  "ewindow": {
+    "offers": {
+      "rows": [],
+      "meta": {
+        "count": 0,
+        "pagesize": 500,
+        "page": 1,
+        "maxid": "17803030809610830",
+        "total_pages": 0,
+        "query_time": "478ms"
+      },
+      "errors": []
+    },
+    "trades": {
+      "rows": [],
+      "meta": {
+        "count": 0,
+        "pagesize": 500,
+        "page": 1,
+        "maxid": "17803030812175010",
+        "total_pages": 0,
+        "query_time": "1084ms"
+      },
+      "errors": []
+    }
+  },
+  "heards": {
+    "declarations": {
+      "q": "declares+crude",
+      "status": 200,
+      "rows": [],
+      "rawCount": 0
+    },
+    "deals": {
+      "q": "DUBAI+PARTIALS",
+      "status": 200,
+      "rows": [],
+      "rawCount": 50
+    },
+    "murban": {
+      "q": "Cash+Murban+Heard+At",
+      "status": 200,
+      "rows": [],
+      "rawCount": 50
+    },
+    "oman": {
+      "q": "Cash+Oman+Heard+At",
+      "status": 200,
+      "rows": [],
+      "rawCount": 50
+    },
+    "finalsBids": {
+      "q": "ME+SOUR+CRUDE+BIDS+FINALS+ON+CLOSE",
+      "status": 200,
+      "rows": [],
+      "rawCount": 50
+    },
+    "finalsOffers": {
+      "q": "ME+SOUR+CRUDE+OFFERS+FINALS+ON+CLOSE",
+      "status": 200,
+      "rows": [],
+      "rawCount": 50
+    },
+    "errors": {
+      "q": "executed+in+error+Dubai+partials",
+      "status": 200,
+      "rows": [],
+      "rawCount": 50
+    },
+    "convergence": {
+      "q": "Mideast+Sour+Crude+Convergences",
+      "status": 200,
+      "rows": [],
+      "rawCount": 50
+    }
+  },
+  "fluxOfficials": {
+    "error": null,
+    "raw": [
+      {
+        "id": "2060447772789121258",
+        "text": "May Euro Monthly Report\nPrices hope for peace - but we've been spun that story before... A long May with little progress\nRead here: https://t.co/UL415aFGJ9\n#OOTT #TheOfficials #Oil https://t.co/tA230yb2c8",
+        "createdAt": "Fri May 29 19:46:44 +0000 2026",
+        "replyCount": 0,
+        "retweetCount": 0,
+        "likeCount": 0,
+        "conversationId": "2060447772789121258",
+        "author": {
+          "username": "FluxOfficials",
+          "name": "The Officials"
+        },
+        "authorId": "1870094034816925696",
+        "media": [
+          {
+            "type": "photo",
+            "url": "https://pbs.twimg.com/media/HJgt9t8WwAMYvEj.jpg",
+            "width": 1402,
+            "height": 1122,
+            "previewUrl": "https://pbs.twimg.com/media/HJgt9t8WwAMYvEj.jpg:small"
+          }
+        ]
+      },
+      {
+        "id": "2060409751092015472",
+        "text": "The Officials MOC: Date 29/5/2026\nDated Brent Assessment: $93.44/bbl\nPhysical differential: $0.745/bbl\nKey events: Glencore offers Midland, Eni lifts Troll from Phillips\nSubscribe: https://t.co/FZC1yoNY22\n#OOTT #TheOfficials #Oil https://t.co/RENATb4mOc",
+        "createdAt": "Fri May 29 17:15:39 +0000 2026",
+        "replyCount": 0,
+        "retweetCount": 0,
+        "likeCount": 0,
+        "conversationId": "2060409751092015472",
+        "author": {
+          "username": "FluxOfficials",
+          "name": "The Officials"
+        },
+        "authorId": "1870094034816925696",
+        "media": [
+          {
+            "type": "photo",
+            "url": "https://pbs.twimg.com/media/HJgLdFmWoAECjBf.png",
+            "width": 810,
+            "height": 412,
+            "previewUrl": "https://pbs.twimg.com/media/HJgLdFmWoAECjBf.png:small"
+          }
+        ]
+      },
+      {
+        "id": "2060394632681304320",
+        "text": "Less AIS nonsense but The Peering Eye shows less activity around Hormuz\nRead here: https://t.co/r3nYqM0YAl\n#OOTT #TheOfficials #Oil https://t.co/Wvh7xJ6PY6",
+        "createdAt": "Fri May 29 16:15:35 +0000 2026",
+        "replyCount": 0,
+        "retweetCount": 0,
+        "likeCount": 0,
+        "conversationId": "2060394632681304320",
+        "author": {
+          "username": "FluxOfficials",
+          "name": "The Officials"
+        },
+        "authorId": "1870094034816925696",
+        "media": [
+          {
+            "type": "photo",
+            "url": "https://pbs.twimg.com/media/HJf96o_WsAIujQf.jpg",
+            "width": 1236,
+            "height": 614,
+            "previewUrl": "https://pbs.twimg.com/media/HJf96o_WsAIujQf.jpg:small"
+          }
+        ]
+      },
+      {
+        "id": "2060380357950681561",
+        "text": "May Asia Monthly Report\nDead Dubai... Lawsuits all over the shop... And more headlines than the market knows what to do with...\nRead here: https://t.co/04c2kga5rp\n#OOTT #TheOfficials #Oil https://t.co/MuKrGVkpvo",
+        "createdAt": "Fri May 29 15:18:52 +0000 2026",
+        "replyCount": 0,
+        "retweetCount": 0,
+        "likeCount": 3,
+        "conversationId": "2060380357950681561",
+        "author": {
+          "username": "FluxOfficials",
+          "name": "The Officials"
+        },
+        "authorId": "1870094034816925696",
+        "media": [
+          {
+            "type": "photo",
+            "url": "https://pbs.twimg.com/media/HJfw_0XXkAALRVf.jpg",
+            "width": 1402,
+            "height": 1122,
+            "previewUrl": "https://pbs.twimg.com/media/HJfw_0XXkAALRVf.jpg:small"
+          }
+        ]
+      },
+      {
+        "id": "2060272694155755974",
+        "text": "The Officials MOC: Date 29/5/2026\nDubai Assessment: $103.70/bbl\nPhysical premium: $19.40/bbl\nKey events: No convergences\nSubscribe here: https://t.co/FZC1yoNY22\n#OOTT #Oil #Dubai https://t.co/656grUSN0u",
+        "createdAt": "Fri May 29 08:11:02 +0000 2026",
+        "replyCount": 0,
+        "retweetCount": 1,
+        "likeCount": 8,
+        "conversationId": "2060272694155755974",
+        "author": {
+          "username": "FluxOfficials",
+          "name": "The Officials"
+        },
+        "authorId": "1870094034816925696",
+        "media": [
+          {
+            "type": "photo",
+            "url": "https://pbs.twimg.com/media/HJePAKSWIAYEl53.png",
+            "width": 2048,
+            "height": 835,
+            "previewUrl": "https://pbs.twimg.com/media/HJePAKSWIAYEl53.png:small"
+          }
+        ]
+      },
+      {
+        "id": "2060051735637377517",
+        "text": "More of nothing! Headlines come and go but nothing changes... Dated keeps getting slapped - and maybe Oman will too! \n28-May-2026, Volume 3, Issue 101 (Euro)\nRead here: https://t.co/bTVgWMP3VB\n#OOTT #TheOfficials #Oil https://t.co/XeGQ00cyGJ",
+        "createdAt": "Thu May 28 17:33:02 +0000 2026",
+        "replyCount": 0,
+        "retweetCount": 0,
+        "likeCount": 1,
+        "conversationId": "2060051735637377517",
+        "author": {
+          "username": "FluxOfficials",
+          "name": "The Officials"
+        },
+        "authorId": "1870094034816925696",
+        "media": [
+          {
+            "type": "photo",
+            "url": "https://pbs.twimg.com/media/HJbGDyyW0AM-eqB.png",
+            "width": 785,
+            "height": 413,
+            "previewUrl": "https://pbs.twimg.com/media/HJbGDyyW0AM-eqB.png:small"
+          }
+        ]
+      },
+      {
+        "id": "2060036920818663654",
+        "text": "The Officials MOC: Date 28/5/2026\nDated Brent Assessment: $97.03/bbl\nPhysical differential: $1.655/bbl\nKey events: Glencore offers Midland, Phillips offers Troll\nSubscribe: https://t.co/FZC1yoNY22\n#OOTT #TheOfficials #Oil https://t.co/m5cPQUqOqK",
+        "createdAt": "Thu May 28 16:34:10 +0000 2026",
+        "replyCount": 0,
+        "retweetCount": 0,
+        "likeCount": 5,
+        "conversationId": "2060036920818663654",
+        "author": {
+          "username": "FluxOfficials",
+          "name": "The Officials"
+        },
+        "authorId": "1870094034816925696",
+        "media": [
+          {
+            "type": "photo",
+            "url": "https://pbs.twimg.com/media/HJa4komXAAEJcxW.png",
+            "width": 814,
+            "height": 416,
+            "previewUrl": "https://pbs.twimg.com/media/HJa4komXAAEJcxW.png:small"
+          }
+        ]
+      },
+      {
+        "id": "2059962800999403587",
+        "text": "Sanctions galore as the wrangling to control Hormuz escalates...\n28-May-2026, Volume 3, Issue 100 (Asia)\nRead here: https://t.co/lHjltT3oKv\n#OOTT #TheOfficials #Oil https://t.co/LKlY7B0nE5",
+        "createdAt": "Thu May 28 11:39:38 +0000 2026",
+        "replyCount": 0,
+        "retweetCount": 0,
+        "likeCount": 0,
+        "conversationId": "2059962800999403587",
+        "author": {
+          "username": "FluxOfficials",
+          "name": "The Officials"
+        },
+        "authorId": "1870094034816925696",
+        "media": [
+          {
+            "type": "photo",
+            "url": "https://pbs.twimg.com/media/HJZ09pRWoAM8GBV.png",
+            "width": 779,
+            "height": 424,
+            "previewUrl": "https://pbs.twimg.com/media/HJZ09pRWoAM8GBV.png:small"
+          }
+        ]
+      }
+    ],
+    "stdout": "[\n  {\n    \"id\": \"2060447772789121258\",\n    \"text\": \"May Euro Monthly Report\\nPrices hope for peace - but we've been spun that story before... A long May with little progress\\nRead here: https://t.co/UL415aFGJ9\\n#OOTT #TheOfficials #Oil https://t.co/tA230yb2c8\",\n    \"createdAt\": \"Fri May 29 19:46:44 +0000 2026\",\n    \"replyCount\": 0,\n    \"retweetCount\": 0,\n    \"likeCount\": 0,\n    \"conversationId\": \"2060447772789121258\",\n    \"author\": {\n      \"username\": \"FluxOfficials\",\n      \"name\": \"The Official"
+  }
+}

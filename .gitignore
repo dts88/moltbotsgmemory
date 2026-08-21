@@ -13,6 +13,16 @@ node_modules/
 # Logs
 *.log
 
+# Local recoverable trash
+.trash/
+
+# Oil knowledge base runtime data
+knowledge/data/raw/**
+knowledge/data/runtime/**
+!knowledge/data/raw/.gitkeep
+!knowledge/data/runtime/.gitkeep
+!knowledge/data/runtime/jobs/.gitkeep
+
 # OS
 .DS_Store
 
@@ -24,3 +34,6 @@ reports/**/*.xlsx
 # Twilio credentials
 .config/twilio/
 .config/gmail/
+
+# Google calendar service account (secret)
+.config/google/calendar-service-account.json

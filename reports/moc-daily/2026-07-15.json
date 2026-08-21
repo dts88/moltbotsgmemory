@@ -1,0 +1,62 @@
+{
+  "date": "2026-07-15",
+  "generatedAt": "2026-07-15T08:36:00Z",
+  "fluxOfficials": {},
+  "declarations": [],
+  "partialsTrades": [
+    { "buyer": "TRAFI", "seller": "BPSG", "price": 80.80, "volume": 25, "contract": "Sep26", "time": "08:26:34 GMT" },
+    { "buyer": "TRAFI", "seller": "BPSG", "price": 80.60, "volume": 25, "contract": "Sep26", "time": "08:27:18 GMT" },
+    { "buyer": "TRAFI", "seller": "BPSG", "price": 80.20, "volume": 25, "contract": "Sep26", "time": "08:27:52 GMT" },
+    { "buyer": "TRAFI", "seller": "BPSG", "price": 80.00, "volume": 25, "contract": "Sep26", "time": "08:28:29 GMT" },
+    { "buyer": "METS", "seller": "VITOLSG", "price": 79.60, "volume": 25, "contract": "Sep26", "time": "08:28:54 GMT" },
+    { "buyer": "METS", "seller": "MERCURIARESOURCES", "price": 79.50, "volume": 25, "contract": "Sep26", "time": "08:29:06 GMT" }
+  ],
+  "partialsBids": [
+    { "company": "MITSUI", "price": 80.00, "volume": 25, "contract": "Sep26" },
+    { "company": "TRAFIGURA", "price": 80.00, "volume": 25, "contract": "Sep26" },
+    { "company": "BP", "price": 80.00, "volume": 25, "contract": "Sep26" },
+    { "company": "PHILLIPS 66", "price": 80.00, "volume": 25, "contract": "Sep26" }
+  ],
+  "partialsOffers": [
+    { "company": "VITOL", "price": 82.50, "volume": 25, "contract": "Sep26" },
+    { "company": "MERCURIA", "price": 82.50, "volume": 25, "contract": "Sep26" },
+    { "company": "BP", "price": 82.50, "volume": 25, "contract": "Sep26" },
+    { "company": "UNIPEC", "price": 82.60, "volume": 25, "contract": "Sep26" },
+    { "company": "SHENGHONG", "price": 84.90, "volume": 25, "contract": "Sep26" }
+  ],
+  "cashMurban": [
+    { "value": -0.32, "direction": "Minus", "benchmark": "September Dubai Futures", "time": "2026-07-15T08:32:02Z" },
+    { "value": -0.80, "direction": "Minus", "benchmark": "September Dubai Futures", "time": "2026-07-15T08:33:06Z" }
+  ],
+  "cashOman": [
+    { "value": 0.00, "direction": "parity", "benchmark": "September Dubai Futures", "time": "2026-07-15T08:31:55Z" },
+    { "value": 0.80, "direction": "Over", "benchmark": "September Dubai Futures", "time": "2026-07-15T08:33:03Z" }
+  ],
+  "errorTrades": [],
+  "finalsOnClose": {
+    "bids": "MITSUI $80.00, TRAFIGURA $80.00, BP $80.00, PHILLIPS 66 $80.00",
+    "offers": "VITOL $82.50, MERCURIA $82.50, BP $82.50, UNIPEC $82.60, SHENGHONG $84.90"
+  },
+  "eWindow": {
+    "lastMinuteOffers": [
+      { "time": "08:29:08", "company": "VITOLSG", "price": 80.00 },
+      { "time": "08:29:16", "company": "VITOLSG", "price": 79.90 },
+      { "time": "08:29:23", "company": "VITOLSG", "price": 79.80 },
+      { "time": "08:29:28", "company": "VITOLSG", "price": 79.70 },
+      { "time": "08:29:33", "company": "VITOLSG", "price": 79.60 },
+      { "time": "08:29:41", "company": "VITOLSG", "price": 79.50 },
+      { "time": "08:29:48", "company": "VITOLSG", "price": 79.40 },
+      { "time": "08:29:56", "company": "VITOLSG", "price": 79.30 },
+      { "time": "08:30:05", "company": "VITOLSG", "price": 79.30 },
+      { "time": "08:29:48", "company": "MERCURIARESOURCES", "price": 79.50 },
+      { "time": "08:29:57", "company": "MERCURIARESOURCES", "price": 79.40 },
+      { "time": "08:30:08", "company": "MERCURIARESOURCES", "price": 79.40 },
+      { "time": "08:29:10", "company": "UNIPECASIA", "price": 80.90 },
+      { "time": "08:29:40", "company": "UNIPECASIA", "price": 80.80 },
+      { "time": "08:30:10", "company": "UNIPECASIA", "price": 80.80 },
+      { "time": "08:30:00", "company": "BPSG", "price": 80.50 }
+    ],
+    "offerHighLow": { "min": 79.30, "max": 85.00 }
+  },
+  "notes": "FluxOfficials 数据暂不可用。Mideast Sour Crude Convergences 文章尚未发布（窗口关闭 ~40分钟后）。Dubai Assessment 待官方确认。无 cargo declarations 记录于本日报告生成时。"
+}

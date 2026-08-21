@@ -1,0 +1,11 @@
+{
+  "lastDeliveryDate": "2026-08-21",
+  "lastSentAt": "2026-08-21T00:00:50.018Z",
+  "lastMessageSha256": "7caeff3d271cb3037a5340fbedf147a30eb3d13407537f620444af0d93ce8048",
+  "firstLine": "8月20日 ",
+  "delivery": {
+    "channel": "whatsapp",
+    "to": "+6592716786",
+    "mode": "direct-script"
+  }
+}
