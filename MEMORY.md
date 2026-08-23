@@ -280,7 +280,7 @@ MEMORY.md 这里只保留入口,不再保存 API 端点、目录说明、信息�
 - Dubai Cracking Margin (DBSCM00):详见 `skills/crude-cracking-margin/`
 - MEMORY.md 只保留索引和稳定结论,不再保存大段研究过程、公式推导和阶段性验证表。
 
-## Promoted From Short-Term Memory (2026-08-22)
+## Promoted From Short-Term Memory (2026-08-23)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-08-19.md:3:6 -->
-- Tianshu 要求用 EIA API 整理过去 3 年美国从加拿大、委内瑞拉进口原油量，并生成 Excel。; 已新增一次性脚本 `scripts/eia-country-crude-imports-excel.mjs`，使用 EIA `/petroleum/move/wimpc/data/`，产品 `EPC0`、流程 `IM0`，国家 `NUS-NCA` / `NUS-NVE`。; 输出文件：`reports/eia/us-crude-imports-canada-venezuela-2023-08-19_to_2026-08-19.xlsx`。包含官方周度、由周度均值派生的月度、EIA 原始数据和 README。; 后续 Tianshu 追问 PADD 维度：新增 `scripts/eia-padd3-country-crude-imports-excel.mjs` 和 `scripts/eia-all-padds-country-crude-imports-excel.mjs`，使用 EIA `/petroleum/move/impcp/data/` 月度正式数据，process `IP0`。全 PADD 输出为 `reports/eia/all-padds-crude-imports-canada-venezuela-2023-08_to_2026-08.xlsx`。 [score=0.826 recalls=0 avg=0.620 source=memory/2026-08-19.md:3-6]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-19.md:7:10 -->
+- 发现并修正 first weekly workbook bug：EIA `wimpc` 对 Venezuela 早期周度返回 `value: null`，旧脚本用 `Number(null)` 误转成 0。已改为保留空白；第一条非空周度为 2024-09-27（297 kb/d）。PADD 月度 `impcp` 2023-08 起有委内瑞拉正式月度数据，两者口径不同。; Tianshu 要求按同样国家/三年条件进一步区分 crude grade。确认 EIA `wimpc`/`impcp` 只有 product/process/duoarea/series，不含 grade；改用 EIA Company Level Imports / Crude Import Tracking Tool 数据。新增 `scripts/eia-company-crude-imports-by-grade-excel.mjs`，从 companylevel archive 下载 2023/2024 年度文件和 2025/2026 月度文件，过滤 `PROD_CODE=025`、Canada/Venezuela，并用 APIGRAVITY + SULFUR 派生 gradeId/gradeName（LSW/LSO/MED/HSW/HSO）。输出... [score=0.811 recalls=0 avg=0.620 source=memory/2026-08-19.md:7-10]
