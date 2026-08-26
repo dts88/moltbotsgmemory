@@ -280,7 +280,9 @@ MEMORY.md 这里只保留入口,不再保存 API 端点、目录说明、信息�
 - Dubai Cracking Margin (DBSCM00):详见 `skills/crude-cracking-margin/`
 - MEMORY.md 只保留索引和稳定结论,不再保存大段研究过程、公式推导和阶段性验证表。
 
-## Promoted From Short-Term Memory (2026-08-23)
+## Promoted From Short-Term Memory (2026-08-26)
 
-<!-- openclaw-memory-promotion:memory:memory/2026-08-19.md:7:10 -->
-- 发现并修正 first weekly workbook bug：EIA `wimpc` 对 Venezuela 早期周度返回 `value: null`，旧脚本用 `Number(null)` 误转成 0。已改为保留空白；第一条非空周度为 2024-09-27（297 kb/d）。PADD 月度 `impcp` 2023-08 起有委内瑞拉正式月度数据，两者口径不同。; Tianshu 要求按同样国家/三年条件进一步区分 crude grade。确认 EIA `wimpc`/`impcp` 只有 product/process/duoarea/series，不含 grade；改用 EIA Company Level Imports / Crude Import Tracking Tool 数据。新增 `scripts/eia-company-crude-imports-by-grade-excel.mjs`，从 companylevel archive 下载 2023/2024 年度文件和 2025/2026 月度文件，过滤 `PROD_CODE=025`、Canada/Venezuela，并用 APIGRAVITY + SULFUR 派生 gradeId/gradeName（LSW/LSO/MED/HSW/HSO）。输出... [score=0.811 recalls=0 avg=0.620 source=memory/2026-08-19.md:7-10]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-21.md:2:3 -->
+- Platts monitor (2026-08-21 23:29 UTC): refresh_token age 164.2h, 警告可能已失效; token 10分钟后过期; 扫描结果 NO_NEW_INSIGHTS，未发送 [score=0.847 recalls=0 avg=0.620 source=memory/2026-08-21.md:2-3]
+<!-- openclaw-memory-promotion:memory:memory/2026-08-22.md:4:6 -->
+- Crude Daily Snippet (08:00 SGT trigger): Cron e1670577 (direct sender trigger) fired at 08:00 SGT Sat.; Ran `scripts/crude-daily-snippet-send-whatsapp.mjs` → stdout `SENT`，已直接投递 WhatsApp +6592716786，无需额外消息。; 旧 job 571fb419 保持 disabled（gpt-5.6-sol 模型不兼容 Codex，已被 direct sender 取代），HEARTBEAT 检查通过。 [score=0.847 recalls=0 avg=0.620 source=memory/2026-08-22.md:4-6]
